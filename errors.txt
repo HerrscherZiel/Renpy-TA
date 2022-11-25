@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 155: expected statement.
+    health = round((hunger+energy+vit) / 3)
+           ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090405
+Fri Nov 25 18:26:25 2022
