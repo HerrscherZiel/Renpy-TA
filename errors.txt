@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 155: expected statement.
-    health = round((hunger+energy+vit) / 3)
-           ^
+File "game/map_screen.rpy", line 30: expected ':' not found.
+    else
+        ^
+
+File "game/map_screen.rpy", line 44: expected ':' not found.
+    else
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Fri Nov 25 18:26:25 2022
+Mon Dec  5 20:30:52 2022

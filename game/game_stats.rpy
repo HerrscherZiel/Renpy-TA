@@ -1,4 +1,4 @@
-screen game_stats:
+screen stats_screen:
     imagebutton:
         xalign 1.0
         yalign 0.0
