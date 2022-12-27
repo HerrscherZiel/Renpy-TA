@@ -7,9 +7,11 @@
 #     call screen confirm(message="Proceed to play the game?", yes_action=Return(), no_action=Quit(confirm=False))
 #     return
 
-define v = Character("Vivy")
+define r = Character("Rissa", image="r")
 # define mc = Character("Mc", image="mc") 
 define mc = Character("You", image="mc")
+define w1 = Character("Warga")
+define pa = Character("Pad Andy")
 
 
 #stats
@@ -28,7 +30,7 @@ default Community = 1
 default Relations = 1
 default Social = Friend+Community+Relations /3
 
-default vivy_fond = 0
+default rissa_fond = 0
 
 #days
 default day = 1
@@ -41,6 +43,11 @@ default timephase = 1
 
 #keys
 default firstMart = True
+default firstKos = True
+default firstKampung = True
+default firstKampus = True
+
+default rotiAwal = False
 
 default place_list = ["campus", "street", "minimart", "dorm"]
 
@@ -69,6 +76,8 @@ label start:
 
     pause 2.0
 
+    "....................."
+
     "..........."
 
     "......"
@@ -91,7 +100,7 @@ label start:
         xalign 0.5 yalign 0.5
     with dissolve
 
-    pause 1.5
+    pause 2.5
 
     hide day1 pro with dissolve
 
@@ -99,12 +108,14 @@ label start:
         xalign 0.5 yalign 0.5
     with dissolve
 
-    pause 1.5
+    pause 2.5
 
     # hide day1 pro 
     # with dissolve
 
-    scene bg street with dissolve
+    scene bg streets with dissolve
+
+    play music "audio/bgm/Aerosol of my Love.mp3" loop volume 0.1
 
     "Setelah keluar dari ruang kelas, mahasiswa baru menyebar ke berbagai arah sesuai dengan kepentingan masing-masing."
     
@@ -114,29 +125,32 @@ label start:
 
     "Mahasiswa itu berjalan sendirian tidak seperti kebanyakan mahasiswa lain yang bersenda gurau dengan teman di sebelah mereka." 
     
-    mc normal2  "Akhirnya selesai juga, capek juga seminggu ini orientasinya."
+    show mc normal jacket:
+        xalign 0.2 yalign -0.3
+    
+    mc "Akhirnya selesai juga, capek juga seminggu ini orientasinya."
 
     mc  "Tapi seru juga sih, dapet pengalaman baru, ga sabar nanti kuliahnya kaya apa."
 
     mc  "Mampir beli minum dulu gak ya? Tapi gak tau dimana minimarket sekitar sini..."
 
-    v   "Halooo… Permisi!!"
+    "Halooo… Permisi!!"
 
     "{i}Tak sadar, tiba-tiba ada seorang perempuan yang berdiri di depanku{/i}"
 
-    show v normal:
+    show r normal2:
         xalign 0.0 yalign 0.0
         linear 0.8 xalign 0.9
 
     mc  "Ohh.. maaf-maaf ada apa ya?"
 
-    v   "Tidak apa-apa kok, cuma mau manggil saja, kamu tadi diam tiba-tiba pas di depanku."
+    r   "Tidak apa-apa kok, cuma mau manggil saja, kamu tadi tiba-tiba berhenti tepat di depanku."
 
     mc  "Maaf-maaf hehehe…."
 
-    v   "Oh iya, aku Vivy, aku mahasiswa baru juga, dari Vokasi jurusan TRPL."
+    r   "Oh iya, aku Rissa, aku mahasiswa baru juga, dari Vokasi jurusan TRPL."
 
-    v   "Kamu juga mahasiswa baru juga kan?"
+    r   "Kamu juga mahasiswa baru juga kan?"
 
     "Game ini memiliki fitur {b}pengambilan keputusan{/b} sesuai pilihan pemain."
 
@@ -146,7 +160,7 @@ label start:
 
     "Jadi pastikan dulu pilihanmu sebelum memilih."
 
-    "Perempuan yang memperkenalkan dirinya dengan nama {i}Vivy{/i} tiba-tiba menyulurkan tangannya ke arahmu."
+    "Perempuan yang memperkenalkan dirinya dengan nama {i}Rissa{/i} tiba-tiba menyulurkan tangannya ke arahmu."
 
     "Kamu memilih untuk..."
 
@@ -154,7 +168,7 @@ label start:
 
         "Bersalaman":
 
-            $ vivy_fond += 15
+            $ rissa_fond += 15
             
             "Kamu ikut menyulurkan tanganmu dan bersalaman dengan perempuan yang ada di depanmu."
 
@@ -169,25 +183,25 @@ label start:
 
     mc  "Iya aku mahasiswa baru juga, aku {i}{b}[name]{/b}{/i}, kebetulan aku juga dari TRPL, salam kenal."
 
-    v   "Wah teman satu angkatan kita ternyata hehehe. Oh ya kenapa tadi tiba-tiba berhenti mendadak? Ada yang jatuh kah?"
+    r   "Wah teman satu angkatan kita ternyata hehehe. Oh ya kenapa tadi tiba-tiba berhenti mendadak? Ada yang jatuh kah?"
 
     mc  "Oh tidak, tadi cuma kepikiran mau mampir ke minimarket, tapi aku belum tau minimarket yang dekat disini dimana."
 
-    v   "Owhh… kalau gitu ikut aja aku, lumayan deket kok dari sini, tidak perlu pakai motor juga."
+    r   "Owhh… kalau gitu ikut aja aku, lumayan deket kok dari sini, tidak perlu pakai motor juga."
 
     mc  "Kamu sudah jalan-jalan daerah sekitar ya? Kok sudah tau daerah dekat sini."
 
-    v   "Hahaha… tidak kok, kebetulan rumahku dekat daerah sini saja, jadi ya tahu daerah sini."
+    r   "Hahaha… tidak kok, kebetulan rumahku dekat daerah sini saja, jadi ya tahu daerah sini."
 
     mc  "Pantas saja sudah tau."
 
-    v   "Kalau kamu dari mana [name]?"
+    r   "Kalau kamu dari mana [name]?"
 
     mc  "Aku dari luar kota, baru 3 hari sebelum orientasi aku datang kesini."
 
     mc  "Oh ya, tidak apa kamu mengantarku ke minimarket?"
 
-    v   "Aku juga mau beli sesuatu kok, jadi santai aja."
+    r   "Aku juga mau beli sesuatu kok, jadi santai aja."
 
     mc  "Oke kalau begitu."
 
@@ -217,7 +231,189 @@ label start:
 
     jump first_map
 
-    # This ends the game.
+    return
+
+label day2:
+
+    $ day += 1
+
+    scene bg black
+    with Dissolve(2.0)
+
+    pause 2.0
+
+    show day2 pro:
+        xalign 0.5 yalign 0.5
+    with dissolve
+
+    pause 3.0
+
+    hide day2 pro with dissolve
+
+    show day2 kosmorn:
+        xalign 0.5 yalign 0.5
+    with dissolve
+
+    pause 3.0
+
+    scene bg kosmorn with dissolve
+
+    show screen days_screen with dissolve
+
+    show screen stats_screen with dissolve
+
+    #alarm sound
+
+    "Kringgggg"
+
+    "Kringgg"
+
+    "Kringgg"
+
+    "Alarmmu berbunyi beberapa kali sebelum kamu bangun dan mematikannya."
+
+    "Dengan mata yang masih sipit, kamu meraba-raba di sekeliling tempat tidurmu."
+
+    "Menggenggam ponsel, kamu melihat banyak notifikasi dari grup chat LANEmu. Kamu mengabaikannya dan matamu fokus untuk mencari waktu yang sudah menunjukan pukul 5 pagi."
+
+    "Melihat sinar matahari yang sudah masuk melalui jendela kamarmu, kamu bangun dan merapikan tempat tidurmu."
+
+    "Setelah selesai merapikan tempat tidur, kemudian kamu berjalan ke arah kamar mandi untuk membasuh mukamu."
+
+    mc normal2"Uahhhh….. Masih ngantuk…"
+
+    mc "{i}tapi disini pagi hari begini tidak dingin tapi malah keringatan begini ya?!{/i}"
+
+    "Sesampainya di kamar mandi kamu langsung membasuh muka dan menggosok gigimu."
+
+    mc "Enggak enak sekali bangun bangun muka berminyak seperti ini."
+
+    # Sfx grumbling
+
+    "Grugggg"
+
+    mc "…. Laparr…."
+
+    "{b}!Stats drop tutorial{/b}!"
+
+    "Beberapa stats yang dimiliki {b}dapat berkurang{/b}."
+
+    "Penyebab berkurangnya stats yang ada dapat dikarenakan oleh {b}pemilihan pilihan{/b} maupun berkurang {b}secara otomatis{/b}."
+
+    "Pemilihan pilihan seperti kegiatan {i}olahraga{/i} dapat mengurangi tingkat {b}energimu{/b} namun menambah tingkat {b}fit{/b}mu."
+
+    "Sementara stats dapat berkurang secara otomatis jika hari berganti, stats yang dapat berkurang secara otomatis adalah main {b}stats kesehatan{/b}."
+
+    mc "aku masih punya makanan sisa tidak ya?"
+
+    "Kamu mencari makanan yang ada di kamar kosmu."
+
+    if rotiAwal == True:
+        
+        mc "Oh iyaa, kemarin aku masih menyimpan roti, lumayanlah buat sarapan."
+
+        "Kamu mengambil roti yang kamu beli di Minimart kemarin dan langsung memakannya."
+
+        "{b}!Stats berubah!{/b}"
+
+    else:
+        mc "Yahhh tidak ada apa-apa, roti yang kubeli kemarin juga langsung aku makan."
+
+        mc "Apa boleh buat, sekalian nanti siang sajalah makannya."
+
+    "Kemudian kamu mengingat terdapat banyak notifikasi dari grup chat LANE ketika bangun tadi."
+
+    "Merebahkan tubuhmu di kasur, kamu mengambil ponselmu dan mulai men scroll chat-chat yang ada di grup."
+
+    show phone chat:
+        yalign 0.5 
+    with moveinbottom
+
+    "Seperti grup chat pada umumnya, terdapat beberapa orang yang selalu muncul dan memulai chat."
+
+    "Kemudian anggota grup lainnya mulai muncul membalas dengan chat maupun hanya dengan sticker."
+
+    "Scroll-scroll-scroll"
+
+    "Kamu mulai membaca chat dengan timestamp pagi hari ini."
+
+    "Beberapa chat masih berisi candaan antar anggota grup, namun pada beberapa chat terakhir terdapat chat dengan text bold yang dikirimkan oleh Rosianne."
+
+    mc "{i}Untuk mahasiswa dengan DPA Pak Andy, diharapkan dapat hadir di kampus siang ini untuk melakukan bimbingan bersama{/b}."
+
+    "Kemudian kamu membaca chat balasan yang ada di bawah chat tersebut."
+
+    "{i}DPA itu apa guyss?{i}"
+
+    "{i}Maaf, cara cek punya DPA siapa dimana ya{/i}??"
+
+    "{i}DPAku Pak Andy juga nihh, jadinya jam berapa itu siangnya?{/i}"
+
+    "Pertanyaan yang ada tersebut dijawab oleh pengirim pesan tersebut sekaligus."
+
+    "{i}DPA itu Dosen Pembimbing Akademik, intinya yang intinya ya yang bimbing kegiatan akademik kamu selama berkuliah. Kalau mau konsultasi, bimbingan, maupun tanya yang lain baiknya sama DPA kamu{/i}."
+
+    "{i}Kalau mau cek siapa DPA kamu, bisa lihat di website akademik kita {b}Simaster{/b}. Di simasternya nanti pilih menu {b}Akademik kemahasiswaan{/b} => {b}Akademik{/b} => {b}Diskusi DPA{/b}.{/i}."
+
+    mc "{i}Ohh begitu ya cara lihatnya, aku coba dulu lah{/i}."
+
+    hide phone chat with fade
+    
+    show simaster with fade
+
+    mc "Terus menu akademik kemahasiswaan, akademik, terus diskusi DPA."
+
+    show menuSimaster with dissolve
+
+    mc "Ohhh ternyata DPAku juga Pak Andy."
+
+    show DPA with dissolve
+
+    "Setelah mengecek siapa DPAmu di Simaster, kamu melanjutkan scrolling chat di grupmu."
+
+    "Untuk jam berapanya masih kutanyakan ya teman-temann."
+
+    "{i}Okee Annee{/i}."
+
+    "Chat selanjutnya masih dilanjutkan dengan candaan oleh beberapa tokoh yang ada di grup."
+
+    mc "{i}hmmm sepertinya si Rosianne ini bakal jadi tokoh ketua kelas di angkatan deh{/i}."
+
+    "Scroll-scroll-scroll"
+
+    "{i}Oh ini teman-teman Pak Andy sudah bales chatku!{/i}"
+
+    "{i}Jam berapa tuh Anne?{/i}"
+
+    "{i}Iya jam berapa?{/i}"
+
+    "{i}Kalau yang bukan Pak Andy kita kapan gengs?{/i}"
+
+    mc "{i}Ohh ternyata tidak semua Pak Andy ya?{/i}"
+
+    "{i}Kata Pak Andy nanti siang antara jam 12 sampai jam 1 nih, di Lab TRPL katanya{/i}."
+
+    "{i}Waduh dimana itu..{/i}"
+
+    "{i}Iya dimana itu?{/i}"
+
+    "Chat yang di grup masih bermunculan satu persatu, namun kamu mengabaikannya."
+
+    "Kamu melirik melihat jam yang ada di ponselmu."
+
+    "07.30 adalah waktu yang ditunjukan."
+
+    mc "{i}masih nanti siang yaa, mau apa dulu ya pagi ini?{/i}"
+
+    "Melihat waktu yang masih pagi, dan bimbingan akan diadakan di siang hari kamu memutuskan untuk mengisi waktu pagimu."
+
+    "Kamu memutuskan untuk…."
+
+    hide screen days_screen
+
+    hide screen stats_screen
+
+    call screen mapUI
 
     return
 
@@ -227,63 +423,6 @@ label nothing:
 
     "nothing here, you're wrong"
 
-# label alvea:
-
-#     show cg_alvea with dissolve
-
-#     e "This is Alvea"
-
-#     e "Alvea is just a character that you drew few months back then."
-
-#     hide cg_alvea with dissolve
-
-#     show eileen happy
-
-#     e "Anyaway after this i will show you what is parameter looks like"
-
-#     mc normal2 " Wow im thrilled for sure."
-
-#     e "Button on the top right corner is a button to see all your stats throughthout the game"
-
-#     e "Try to click it [name], you can go back with return arrow if you're in stats screen"
-
-#     e "How was it?"
-
-#     mc "Sound convenient."
-
-#     e "Then answer this question, see if it affect your stast"
-
-#     e "What would you choose ?"
-
-#     menu:
-
-#         "Eat":
-#             call choose_eat
-
-#         "Sleep":
-#             $ energy += 30
-#             $ hunger -= 20
-#             $ health = round((hunger+energy+vit) / 3)
-    
-#     e "Now see your stats again quick"
-
-#     e "How's your stat now?"
-
-#     e "See the difference?"
-
-#     mc "Yeah my stats are changed"
-
-#     e "See.. anyway come with me please [name]"
-
-#     mc "Where?"
-
-#     e "Just follow me!"
-
-#     mc "Aye aye maam"
-
-#     jump test_hunger
-
-#     return
 
 # label kaga:
 
@@ -338,60 +477,5 @@ label nothing:
 #     hide eileen happy with dissolve
 
 #     call maps
-
-#     return
-
-# label choose_eat:
-#     $ energy += 15
-#     $ hunger += 25
-#     $ health = round((hunger+energy+vit) / 3)
-
-#     "You got your lunch!"
-#     "Stats affected"
-#     return
-
-# label test_hunger:
-
-#     if hunger >= 50:
-#         e "your'e already eat don't you?"
-        
-#         mc "Hehe i just want to eat again"
-    
-#     elif hunger <= 50:
-#         e "Are you have your lunch yet?"
-
-#         mc "No, haven't get my lunch yet."
-
-#         e "Then go order something here."
-    
-#     return
-
-# label maps:
-
-#     call screen mapUI
-
-#     "Click the Map button"
-
-#     return
-
-# label minimart:
-
-#     show bg grey
-
-#     "This is minimart"
-
-#     e "Welcome to the Minimart"
-
-#     mc "WHoaa"
-
-#     jump endd
-
-#     return
-
-# label endd:
-
-#     show bg lime
-
-#     e "This is it, Thank You"
 
 #     return

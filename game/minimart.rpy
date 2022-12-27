@@ -161,9 +161,15 @@ label minimart_pertama:
 
         "Menyimpannya untuk besok pagi.":
 
+            $ rotiAwal = True
             mc  "Buat besok sajalah makannya, nanti keburu malam."
     
-    "Tidak lama kemudian, kamu melanjutkan perjalananmu ke arah parkiran motor kampus untuk mengambil motor dan pulang."
+    "Kemudian kamu bergegas ke arah parkiran motor kampus dan segera mengendarai motormu untuk pulang."
+
+    "Pilih {b}Ikon Kos{/b} untuk pulang ke kosanmu."
+
+    hide screen days_screen
+    hide screen stats_screen
 
     call screen mapUI
 

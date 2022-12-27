@@ -136,31 +136,32 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox8.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox_plain.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     # xpos gui.name_xpos
-    xpos 410
+    xpos 270
     xanchor gui.name_xalign
     xsize gui.namebox_width
     # ypos gui.name_ypos
-    ypos 10
+    ypos -33
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/namebox1.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
-    properties gui.text_properties("name", accent=True)
+    properties gui.text_properties("name")
     xalign gui.name_xalign
     yalign 0.5
+    color '#28282a'
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
     # xpos gui.dialogue_xpos
-    xpos 430
-    ypos 85
+    xpos 340
+    ypos 67
     xsize gui.dialogue_width
     # ypos gui.dialogue_ypos
 
@@ -250,14 +251,14 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            yoffset -15
+            # yoffset -15
             xalign 0.9
-            yalign 1.0
+            yalign 0.95
 
             # textbutton _("Back") action Rollback()
             # textbutton _("History") action ShowMenu('history')
             # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            # textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
             # textbutton _("Q.Save") action QuickSave()
             # textbutton _("Q.Load") action QuickLoad()
@@ -427,11 +428,11 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
-    font "fonts/Montserrat-VariableFont_wght.ttf"
+    font "fonts/ToThePointRegular-n9y4.ttf"
 
 style hnavigation_button_text:
     xalign 0.5
-    font "fonts/Montserrat-VariableFont_wght.ttf"
+    font "fonts/ToThePointRegular-n9y4.ttf"
     # color gui.text_color
 
 ## Main Menu screen ############################################################
@@ -478,7 +479,7 @@ style main_menu_frame:
     yfill True
 
     # background "gui/overlay/bg.png"
-    background "gui/overlay/overlay_menu_bawah.png"
+    background "gui/overlay/overlay_bawah.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -590,7 +591,7 @@ style return_button_text is navigation_button_text
 style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
-    background "gui/overlay/overlay_game_menu.png"
+    background "gui/overlay/bg_game_menu.png"
     # background "gui/overlay/overlay_garis_game_menu.png"
 
 style game_menu_navigation_frame:

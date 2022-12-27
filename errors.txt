@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/map_screen.rpy", line 30: expected ':' not found.
-    else
-        ^
-
-File "game/map_screen.rpy", line 44: expected ':' not found.
-    else
-        ^
+File "game/screens.rpy", line 157: expected 'simple_expression' not found.
+    color = '#101011'
+          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Mon Dec  5 20:30:52 2022
+Tue Dec 27 18:36:23 2022
