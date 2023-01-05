@@ -114,7 +114,7 @@ screen say(who, what):
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
     if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0 yoffset -13 xoffset 15
+        add SideImage() xalign 0.0 yalign 1.0 xoffset 15
 
 
 ## Make the namebox available for styling through the Character object.
@@ -140,7 +140,7 @@ style window:
 
 style namebox:
     # xpos gui.name_xpos
-    xpos 270
+    xpos 530
     xanchor gui.name_xalign
     xsize gui.namebox_width
     # ypos gui.name_ypos
@@ -160,8 +160,8 @@ style say_dialogue:
     properties gui.text_properties("dialogue")
 
     # xpos gui.dialogue_xpos
-    xpos 340
-    ypos 67
+    xpos 475
+    ypos 57
     xsize gui.dialogue_width
     # ypos gui.dialogue_ypos
 
@@ -253,7 +253,7 @@ screen quick_menu():
 
             # yoffset -15
             xalign 0.9
-            yalign 0.95
+            yalign 0.98
 
             # textbutton _("Back") action Rollback()
             # textbutton _("History") action ShowMenu('history')
@@ -563,9 +563,16 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    textbutton _("Return"):
-        style "return_button"
+    # textbutton _("Return"):
+    #     style "return_button"
 
+    #     action Return()
+
+    imagebutton:
+        xpos 70
+        ypos 950
+        idle "menuUI/stats/return_idle.png"
+        hover "menuUI/stats/return_hover.png"
         action Return()
 
     label title

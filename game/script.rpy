@@ -20,15 +20,15 @@ default energy = 50
 default vit = 50
 default health = round((hunger+energy+vit) / 3)
 
-default Knowledge = 1
-default Practice = 1
-default Cappability = 1
-default Education = Knowledge+Practice+Cappability /3
+default knowledge = 1
+default practice = 1
+default application = 1
+default academic = round((knowledge+practice+application) / 3)
 
-default Friend = 1
-default Community = 1
-default Relations = 1
-default Social = Friend+Community+Relations /3
+default friend = 1
+default community = 1
+default public = 1
+default social = round((friend+community+public) /3)
 
 default rissa_fond = 0
 
@@ -36,22 +36,29 @@ default rissa_fond = 0
 default day = 1
 
 #time
-#0 = morning, #1 = noon/evening, #2 = night
+#1 = morning, #2 = noon/evening, #3 = night
 default timephase = 1
 
 #place
 
 #keys
+default prologue = True
+default prologueCount = 1
 default firstMart = True
 default firstKos = True
 default firstKampung = True
 default firstKampus = True
+default placeKeys = 1
 
+#sub keys
 default rotiAwal = False
 
-default place_list = ["campus", "street", "minimart", "dorm"]
+default maps = False
+
 
 # The game starts here.
+
+
 
 label start:
     $ my_task.addTask(task_eat_your_first_food)
@@ -60,15 +67,6 @@ label start:
     $ my_task.addTask(task_survive_too_long)
 
     # show screen tasks_screen
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
     # These display lines of dialogue.
 
     scene bg black
@@ -127,6 +125,7 @@ label start:
     
     show mc normal jacket:
         xalign 0.2 yalign -0.3
+    with dissolve
     
     mc "Akhirnya selesai juga, capek juga seminggu ini orientasinya."
 
@@ -139,8 +138,9 @@ label start:
     "{i}Tak sadar, tiba-tiba ada seorang perempuan yang berdiri di depanku{/i}"
 
     show r normal2:
-        xalign 0.0 yalign 0.0
+        xalign 0.0 yalign 1.0
         linear 0.8 xalign 0.9
+    with dissolve
 
     mc  "Ohh.. maaf-maaf ada apa ya?"
 
@@ -221,15 +221,35 @@ label start:
 
     "Setelah melakukan aktivitas pada {b}Malam hari{/b}, maka {b}hari akan berubah.{/b}"
 
-    "Game ini akan berjalan selama {b}30 hari{/b}." 
-
-    "Setelah hari ke 30 selesai, pemain akan mendapatkan ending dari game ini."
-
     "Hari, Waktu, dan Tempat dapat dilihat pada bagian {b}kiri atas layar{/b}."
 
     show screen days_screen
 
+    "Game ini akan berjalan selama {b}30 hari{/b}." 
+
+    "Setelah hari ke 30 selesai, pemain akan mendapatkan ending dari game ini."
+
+    "Untuk berpindah ke minimarket, pilih icon minimarket kemudian klik kiri pada icon."
+
     jump first_map
+
+    return
+
+label first_map:
+
+    scene bg black
+    with fade
+
+    pause 2.0
+    
+    "Untuk memilih kegiatan yang akan dilakukan selanjutnya, kamu dapat mengarahkan pointer ke arah icon yang ada pada {b}Map{/b}."
+
+    "Untuk sekarang pilihlah Icon Minimart, kemudian tekan klik kiri."
+
+    hide screen days_screen
+
+    call screen mapUI
+    # ($day, $timephase)
 
     return
 
@@ -257,8 +277,6 @@ label day2:
     pause 3.0
 
     scene bg kosmorn with dissolve
-
-    show screen days_screen with dissolve
 
     show screen stats_screen with dissolve
 
@@ -408,8 +426,6 @@ label day2:
     "Melihat waktu yang masih pagi, dan bimbingan akan diadakan di siang hari kamu memutuskan untuk mengisi waktu pagimu."
 
     "Kamu memutuskan untuk…."
-
-    hide screen days_screen
 
     hide screen stats_screen
 

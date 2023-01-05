@@ -1,22 +1,37 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/minimart.rpy", line 38, in script
-    v   "[name] ! Itu minimartnya ada di seberang jalan."
-Exception: Sayer 'v' is not defined.
+  File "renpy/common/00library.rpy", line 28, in script call
+    call _errorhandling
+  File "renpy/common/00library.rpy", line 28, in script call
+    call _errorhandling
+  File "game/days_screen.rpy", line 3, in label_callback
+    devlog.info(name)
+NameError: name 'devlog' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/minimart.rpy", line 38, in script
-    v   "[name] ! Itu minimartnya ada di seberang jalan."
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'v' is not defined.
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "renpy/common/00library.rpy", line 28, in script call
+    call _errorhandling
+  File "renpy/common/_errorhandling.rpym", line 46, in script
+    init label _errorhandling:
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "renpy/common/00library.rpy", line 28, in script call
+    call _errorhandling
+  File "renpy/common/_errorhandling.rpym", line 46, in script
+    init label _errorhandling:
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 1082, in execute
+    renpy.config.label_callback(self.name, renpy.game.context().last_abnormal)
+  File "game/days_screen.rpy", line 3, in label_callback
+    devlog.info(name)
+NameError: name 'devlog' is not defined
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090405
 Simulasi Kehidupan Kuliah 1.0
-Wed Dec 28 01:35:08 2022
+Wed Jan  4 21:38:47 2023

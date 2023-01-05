@@ -89,7 +89,7 @@ define gui.title_text_size = 40
 
 ## The images used for the main and game menus.
 define gui.main_menu_background = "gui/bg.png"
-define gui.game_menu_background = "gui/main_menu.png"
+define gui.game_menu_background = "gui/game_menu.png"
 
 
 ## Dialogue ####################################################################
@@ -102,7 +102,7 @@ define gui.textbox_height = 278
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
-define gui.textbox_yalign = 0.95
+define gui.textbox_yalign = 0.98
 
 
 ## The placement of the speaking character's name, relative to the textbox.

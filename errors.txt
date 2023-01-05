@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 157: expected 'simple_expression' not found.
-    color = '#101011'
-          ^
+File "game/map_screen.rpy", line 4: 'maps' is not a keyword argument or valid child for the screen statement.
+    maps = True
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Tue Dec 27 18:36:23 2022
+Wed Jan  4 22:36:03 2023

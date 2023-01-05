@@ -1,8 +1,10 @@
 
-label first_boarding_house:
+label first_kos:
 
     $ firstKos = False
-    $ timephase += 1
+    # $ timephase += 1
+
+    scene bg black
 
     show day1 kosnight:
         xalign 0.5 yalign 0.5
@@ -76,9 +78,9 @@ label first_boarding_house:
 
     "......"
 
-    hide screen days_screen
+    # hide screen days_screen
 
-    hide screen stats_screen
+    # hide screen stats_screen
 
     jump day2
 

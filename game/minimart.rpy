@@ -1,22 +1,4 @@
 
-label first_map:
-
-    scene bg black
-    with fade
-
-    pause 2.0
-    
-    "Untuk memilih kegiatan yang akan dilakukan selanjutnya, kamu dapat mengarahkan pointer ke arah icon yang ada pada {b}Map{/b}."
-
-    "Untuk sekarang pilihlah Icon Minimart, kemudian tekan klik kiri."
-
-    hide screen days_screen
-
-    call screen mapUI
-    # ($day, $timephase)
-
-    return
-
 label minimart_pertama:
 
     $ firstMart = False
@@ -27,58 +9,70 @@ label minimart_pertama:
 
     pause 2.0
 
-    scene bg minimartout
+    scene bg minimart_out
     with fade
 
     show screen days_screen
     
-    show v normal at right
+    show r normal2 at right
     with dissolve
 
-    v   "[name] ! Itu minimartnya ada di seberang jalan."
+    r   "[name] ! Itu minimartnya ada di seberang jalan."
 
     "Tidak ada 5 menit setelah berjalan dari kampus, terlihat sebuah bangunan bertingkat di seberang jalan."
 
-    "Vivy kembali melambai-lambaikan tangannya kepadamu, menyuruhmu untuk mendekat selagi menunggu jalanan sepi."
+    "Rissa kembali melambai-lambaikan tangannya kepadamu, menyuruhmu untuk mendekat selagi menunggu jalanan sepi."
 
-    mc normal2 "Dekat juga ya ternyata."
+    show mc normal jacket:
+        xalign 0.2 yalign -0.3
 
-    v   "Iya sudah kubilangkan, minimartnya tidak jauh dari kampus."
+    mc "Dekat juga ya ternyata."
 
-    v   "Aku ingin beli alat tulis untuk besok, apa yang ingin kamu beli [name]?"
+    r   "Iya sudah kubilangkan, minimartnya tidak jauh dari kampus."
+
+    r   "Aku ingin beli alat tulis untuk besok, apa yang ingin kamu beli [name]?"
 
     mc  "Cuma makanan dan minuman untuk nanti malam."
 
-    v   "Camilan malam kayaknya enak juga ya, jadi pengin."
+    r   "Camilan malam kayaknya enak juga ya, jadi pengin."
 
-    v   "Sebelum masuk, kita harus menitipkan barang kita dulu ke tempat penitipan disana."
+    r   "Sebelum masuk, kita harus menitipkan barang kita dulu ke tempat penitipan disana."
 
-    "Setelah menunjuk ke arah tempat penitipan barang, Vivy berjalan kearah tempat penitipan."
+    "Setelah menunjuk ke arah tempat penitipan barang, Rissa berjalan kearah tempat penitipan."
 
-    "Kamu mengikuti Vivy untuk ikut menitipkan barangmu."
+    "Kamu mengikuti Rissa untuk ikut menitipkan barangmu."
 
-    "Setelah selesai menitipkan barang bawaan, dan mendapatkan nomor pengambilan kamu dan Vivy memasuki minimart."
+    "Setelah selesai menitipkan barang bawaan, dan mendapatkan nomor pengambilan kamu dan Rissa memasuki minimart."
 
-    scene bg minimartin
+    scene bg black
+    with dissolve
+
+    scene bg minimart_in
     with dissolve
 
     "Setelah berada di dalam minimart, kamu melihat berbagai barang yang terpampang di sektor masing-masing."
 
-    mc  normal2 "Woww, ternyata di dalam sangat luas yaa.."
+    show mc normal jacket:
+        xalign 0.2 yalign -0.5
+
+    mc  "Woww, ternyata di dalam sangat luas yaa.."
+
+    show r normal2 at right
+    with dissolve
     
-    v   "Iya, meskipun luas seperti ini, jika sedang ramai tetap saja penuh."
+    r   "Iya, meskipun luas seperti ini, jika sedang ramai tetap saja penuh."
 
     mc  "Apakah di sini biasanya sering ramai?"
 
-    v   "Hahaha, kamu perlu merasakannya sendiri ketika sudah memasuki waktu kuliah normal."
+    r   "Hahaha, kamu perlu merasakannya sendiri ketika sudah memasuki waktu kuliah normal."
 
     mc "hmmmm...."
 
-    v   "Oh ya, kalau begitu aku ke lantai 2 dulu ya, temanku sudah menunggu di sana."
+    r   "Oh ya, kalau begitu aku ke lantai 2 dulu ya, temanku sudah menunggu di sana."
 
     mc  "Oh sudah janjian sama teman, makasih sudah mengantarku kesini ya..."
 
-    v   "Sama-sama, sampai ketemu besok [name], bye!"
+    r   "Sama-sama, sampai ketemu besok [name], bye!"
 
     mc  "Sampai ketemu!"
 
@@ -88,13 +82,21 @@ label minimart_pertama:
 
     "......"
 
-    "Setelah melihat Vivy pergi, kamu berjalan ke sektor makanan dan minuman."
+    hide r normal2 with dissolve
+
+    "Setelah melihat Rissa pergi, kamu berjalan ke sektor makanan dan minuman."
 
     "Game ini memiliki fitur {b}stats{/b}, terdapat tiga stat utama yaitu {b}Kesehatan{/b}, {b}Akademik{/b}, dan {b}Social{/b}."
 
-    "Stats yang ada akan {b}dipengaruhi oleh pilihan kegiatan{/b} yang dipilih. Semisal makan akan memengaruhi stat kesehatan."
+    "Stats yang ada akan {b}dipengaruhi oleh pilihan kegiatan{/b} yang dipilih." 
+    
+    "Semisal {b}makan{/b} akan memengaruhi stat {b}kesehatan{/b}."
 
-    "Buatlah stats yang ada menjadi sebaik mungkin, karena {b}stats terakhir{/b} yang ada pada hari ke 30 akan {b}menentukan ending{/b} yang di dapatkan pada game ini."
+    "Menghadiri {b}kelas{/b} akan memengaruhi stat {b}akademik{/b}."
+
+    "Menghadiri {b}acara organisasi{/b} akan memengaruhi stat {b}sosial{/b}."
+
+    "Buatlah stats yang ada menjadi sebaik mungkin, karena {b}kondisi terakhir stats{/b} yang ada pada hari ke 30 akan {b}menentukan ending{/b} yang di dapatkan pada game ini."
 
     "Stats {b}kesehatan{/b} dapat dilihat pada bagian {b}kanan atas layar{/b}, sementara untuk stats Akademik dan Social, dapat dilihat dengan cara membuka {b}menu stats{/b} dengan {b}tombol all stats{/b} yang ada di bagian kanan atas layar."
 
@@ -135,7 +137,7 @@ label minimart_pertama:
 
     "..."
 
-    scene bg street
+    scene bg streets
     with dissolve
 
     "Setelah selesai membayar, ketika keluar dari minimart terlihat matahari sudah hampir terbenam, dan hari sudah menjadi gelap."
@@ -147,30 +149,36 @@ label minimart_pertama:
     menu:
 
         "Mengkonsumsi apa yang kamu beli.":
+
+            show mc normal jacket:
+                xalign 0.2 yalign -0.5
             
             mc  "Langsung kumakan sekarang saja lah, sudah agak lapar juga."
-
-            $ energy += 10
-            $ hunger += 15
-            $ health = round((hunger+energy+vit) / 3)
         
             "Kamu duduk di kursi umum yang ada di pinggir jalan untuk menikmati apa yang dibeli di minimart sebelumnya."
 
             "Kamu memakan roti yang kamu beli!"
             "Stats berubah!"
 
+            $ energy += 10
+            $ hunger += 15
+            $ health = round((hunger+energy+vit) / 3)
+
         "Menyimpannya untuk besok pagi.":
 
             $ rotiAwal = True
             mc  "Buat besok sajalah makannya, nanti keburu malam."
+
+            show mc normal jacket:
+                xalign 0.2 yalign -0.5
     
     "Kemudian kamu bergegas ke arah parkiran motor kampus dan segera mengendarai motormu untuk pulang."
 
     "Pilih {b}Ikon Kos{/b} untuk pulang ke kosanmu."
 
-    hide screen days_screen
-    hide screen stats_screen
-
+    # hide screen days_screen
+    # hide screen stats_screen
+    $ prologueCount +=1
     call screen mapUI
 
     return
