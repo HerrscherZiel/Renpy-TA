@@ -1,11 +1,11 @@
 
 screen mapUI:
 
-    add "menuUI/bg grey.png"
+    add "bg black.png"
     add "map/map.png" 
 
     if prologue == True:
-        if prologueCount == 1 or prologueCount == 5:
+        if prologueCount == 1 or prologueCount == 6:
             imagebutton:
                 xpos 1250
                 ypos 760
@@ -36,18 +36,20 @@ screen mapUI:
                 idle "map/kampus idle.png"
                 hover "map/kampus hover.png"
                 action Jump("go_to_campus")
+
+        elif KRS3 == True:
+            imagebutton:
+                xpos 900
+                ypos 450
+                idle "map/perpustakaan idle.png"
+                hover "map/perpustakaan hover.png"
+                action Jump("go_to_library") 
     
     else:
         pass
     
 label go_to_minimart:
-    # init python:
-    #     def label_callback(name, abnormal):
-    #         store.last_label = name
 
-    #     config.label_callback = label_callback
-    # scene bg black with dissolve
-    # $maps 
     $ maps = True
 
     menu:
@@ -57,16 +59,21 @@ label go_to_minimart:
             if timephase != 3:
                 $ timephase += 1
 
-
             else:
                 $ timephase = 1
 
             if firstMart == True:
-                $maps = False
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase                
+                window show
                 jump minimart_pertama
             
             else:
-                $maps = False
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                # window show
                 jump nothing
 
         "Tunggu dulu...":
@@ -74,9 +81,10 @@ label go_to_minimart:
 
 label go_to_kos:
 
-    scene bg black with dissolve
-    
     $ maps = True
+
+    # scene bg black with dissolve
+    
     menu:
         "Pergi ke Kos":
             $ placeKeys = 3
@@ -87,11 +95,17 @@ label go_to_kos:
                 $ timephase = 1
 
             if firstKos == True:
-                $maps = False
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                window show
                 jump first_kos
             
             else:
-                $maps = False
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                # window show
                 jump nothing
                 
         "Tunggu dulu...":
@@ -100,6 +114,8 @@ label go_to_kos:
 label go_to_kampung:
 
     $ maps = True
+    # scene bg black with dissolve
+
     menu:
         "Pergi Jalan-jalan?":
             $ placeKeys = 4
@@ -110,11 +126,18 @@ label go_to_kampung:
                 $ timephase = 1
 
             if firstKampung == True:
-                $maps = False
+                $ maps = False
+                $ timephase -= 1
+                call screen trans_screen with dissolve
+                call change_timephase
+                window show
                 jump first_kampung
             
             else:
-                $maps = False
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                # window show
                 jump nothing
                 
         "Tunggu dulu...":
@@ -123,6 +146,8 @@ label go_to_kampung:
 label go_to_campus:
 
     $ maps = True
+    # scene bg black with dissolve
+
     menu:
         "Pergi ke Kampus":
             $ placeKeys = 8
@@ -133,11 +158,48 @@ label go_to_campus:
                 $ timephase = 1            
 
             if firstKampus == True:
-                $maps = False
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                window show
                 jump first_kampus
             
             else:
-                $maps = False
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                # window show
+                jump nothing
+                
+        "Tunggu dulu...":
+            call screen mapUI()
+
+label go_to_library:
+
+    $ maps = True
+    # scene bg black with dissolve
+
+    menu:
+        "Pergi ke Perpustakaan":
+            $ placeKeys = 6
+
+            if timephase != 3:
+                $ timephase += 1
+            else:
+                $ timephase = 1            
+
+            if KRS3 == True:
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                window show
+                jump krs
+            
+            else:
+                $ maps = False
+                call screen trans_screen with dissolve
+                call change_timephase
+                # window show
                 jump nothing
                 
         "Tunggu dulu...":

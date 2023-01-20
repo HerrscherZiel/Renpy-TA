@@ -114,7 +114,7 @@ screen say(who, what):
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
     if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0 xoffset 15
+        add SideImage() xalign 0.0 yalign 1.0 
 
 
 ## Make the namebox available for styling through the Character object.
@@ -1454,7 +1454,7 @@ style nvl_window:
     xfill True
     yfill True
 
-    background "gui/nvl.png"
+    background "gui/nvl2.png"
     padding gui.nvl_borders.padding
 
 style nvl_entry:
@@ -1486,6 +1486,7 @@ style nvl_thought:
     xsize gui.nvl_thought_width
     min_width gui.nvl_thought_width
     text_align gui.nvl_thought_xalign
+    # yalign gui.nvl_thought_yalign
     layout ("subtitle" if gui.nvl_text_xalign else "tex")
 
 style nvl_button:

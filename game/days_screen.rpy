@@ -39,9 +39,9 @@ screen days_screen:
                     elif placeKeys == 3:
                         text "Kos" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                     elif placeKeys == 4:
-                        text "Warmindo" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-                    elif placeKeys == 5:
                         text "Kampung" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+                    elif placeKeys == 5:
+                        text "Warmindo" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                     elif placeKeys == 6:
                         text "Perpustakaan" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                     elif placeKeys == 7:

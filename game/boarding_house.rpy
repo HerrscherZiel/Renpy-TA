@@ -2,31 +2,25 @@
 label first_kos:
 
     $ firstKos = False
-    # $ timephase += 1
-
-    scene bg black
-
-    show day1 kosnight:
-        xalign 0.5 yalign 0.5
-    with dissolve
-
-    pause 2.0
 
     scene bg kos night
     with fade
 
-    show screen days_screen
-    show screen stats_screen 
+    # show screen days_screen
+    # show screen stats_screen 
+
     
     "Malam hari setelah rangkaian kegiatan orientasi berakhir, kamu merebahkan diri di kasur kosmu."
 
-    "Sebelum memejamkan mata, kamu meluangkan waktu untuk membuka ponselmu."
+    "Sebelum memejamkan mata, kamu meluangkan waktu untuk membuka HPmu."
 
     "Kamu melihat banyak notifikasi dari aplikasi LANE, kamu memutuskan untuk membukanya."
 
     "Notifikasi yang ada berasal dari grup chat angkatanmu. Setelah membaca beberapa baris chat, dari berbagai macam topik chat yang ada kamu mengikuti percakapan mengenai bimbingan dengan dosen pembimbing."
 
-    show phone groupchat 
+    show phone groupchat:
+        xalign 0.5
+        yalign 0.6 
     with moveinbottom
 
     "Beberapa mahasiswa di angkatanmu membicarakan untuk melakukan bimbingan dengan dosen pembimbing mereka."
@@ -42,8 +36,15 @@ label first_kos:
     "Selain itu kamu juga ingin menanyakan mengenai pengambilan SKS pada dosen pembimbingmu."
 
     "Kamu mengingat perkataan pemandumu selama kegiatan orientasi."
+    
+    show phone groupchat:
+        linear 0.8 xalign 0.8
+        ease 50
 
-    mc normal2 "Sebelum memulai kegiatan perkuliahan, kalian nantinya harus melakukan pengambilan SKS terlebih dahulu setiap awal semesternya."
+    show mc normal jacket:
+        xalign 0.2 yalign -0.3
+
+    mc "Sebelum memulai kegiatan perkuliahan, kalian nantinya harus melakukan pengambilan SKS terlebih dahulu setiap awal semesternya."
 
     mc  "Dalam pengambilan SKS nantinya kalian akan memilih kode mata kuliah yang akan kalian dapatkan selama satu semester."
 
@@ -55,12 +56,12 @@ label first_kos:
 
     mc  "UAHHHHHH… ngantuk."
 
-    "Kamu meletakan ponselmu, kemudian mematikan lampu kamarmu"
+    "Kamu meletakan HPmu, kemudian mematikan lampu kamarmu"
 
     hide phone groupchat
     with moveoutbottom
 
-    show bg kos dark
+    show bg kos night dark with dissolve
 
     "Mending sekalian aku tanyakan besok sajalah waktu bimbingan."
 
@@ -78,11 +79,16 @@ label first_kos:
 
     "......"
 
-    # hide screen days_screen
+    hide screen days_screen
 
-    # hide screen stats_screen
+    hide screen stats_screen
 
     jump day2
 
     return
+
+label kos_krs:
+
+    "aloo"
+
 

@@ -27,7 +27,7 @@ screen stats_screen:
                 ypos 14
             
             bar:
-                value energy
+                value vit
                 range 100
                 left_bar "menuUI/stats/left_bar.png"
                 right_bar "menuUI/stats/right_bar.png"
@@ -36,7 +36,7 @@ screen stats_screen:
                 ypos 50
 
             bar:
-                value vit
+                value energy
                 range 100
                 left_bar "menuUI/stats/left_bar.png"
                 right_bar "menuUI/stats/right_bar.png"
@@ -112,7 +112,7 @@ screen stats:
             ypos 505
         
         bar:
-            value energy
+            value vit
             range 100
             left_bar "menuUI/stats/bigleft_bar.png"
             right_bar "menuUI/stats/bigright_bar.png"
@@ -121,7 +121,7 @@ screen stats:
             ypos 625
 
         bar:
-            value vit
+            value energy
             range 100
             left_bar "menuUI/stats/bigleft_bar.png"
             right_bar "menuUI/stats/bigright_bar.png"

@@ -5,11 +5,11 @@ label first_kampus:
 
     scene bg black
 
-    with dissolve(2.0)
+    with Dissolve(2.0)
 
-    show day2 kampusnoon:
-        xalign 0.5 yalign 0.5
-    with dissolve(3.0)
+    # show day2 kampusnoon:
+    #     xalign 0.5 yalign 0.5
+    # with dissolve(3.0)
 
     scene bg campus hall with dissolve
 
@@ -23,19 +23,23 @@ label first_kampus:
 
     "Sempat kamu menengok ke kanan dan ke kiri untuk mencari gerombolan mahasiswa, namun masih tidak terlihat satupun mahasiswa kecuali kamu."
 
-    mc normal2 "Huh masih setengah 12, apa mungkin aku kepagian ya datangnya?"
+    mc normal jacket "Huh masih setengah 12, apa mungkin aku kepagian ya datangnya?"
 
-    "11.35 terlihat dari ponselmu yang baru saja kamu ambil dari saku."
+    "11.35 terlihat dari HPmu yang baru saja kamu ambil dari saku."
 
     "Ada beberapa notif dari grup chat yang belum kamu buka lagi dari pagi tadi."
 
-    mc "{i}Paling juga basa-basi terusan tadi pagi, kalau tidak salah juga jam 12 sampai jam 1an, mungkin jam set 1 kali ya?{/i}"
+    mc "{i}Paling juga basa-basi seperti pagi tadi, kalau tidak salah juga jam 12 sampai jam 1an kan janjian ketemuannya.{/i}"
+    
+    mc  "{i}Mungkin jam setengah 1 kali ya? Aku cari ruang kelasnya.{/i}"
 
-    "Mengabaikan notif dari grup chat yang ada kamu mengeklik icon dari salah satu game yang ada di ponselmu."
+    "Mengingat janji jam pertemuan yang ada pada grup chat, kamu memutuskan untuk tidak langsung mencari ruang kelas pertemuan."
 
-    mc "{i}Login harian dulu aja lah, sambil nyicil daily.{/i}"
+    "Mengabaikan notif dari grup chat yang ada kamu mengeklik icon dari salah satu game yang ada di HPmu."
 
-    "Kamu duduk kursi yang ada di pinggir lobby dan mulai memainkan gamemu."
+    mc "{i}Login harian dulu aja lah, sambil nyelesain daily mission.{/i}"
+
+    "Kamu duduk kursi yang ada di pinggir lobby dan mulai memainkan permainan yang ada di hpmu."
 
     "..............."
 
@@ -57,7 +61,7 @@ label first_kampus:
 
     mc "{i}Yaudahlah mending cari ruangnya dulu.{/i}"
 
-    "Memasukan ponsel ke dalam saku, kamu mulai bergerak mencari Lab TRPL yang disebutkan di chat grup Lane tadi pagi."
+    "Memasukan HP ke dalam saku, kamu mulai bergerak mencari Lab TRPL yang disebutkan di chat grup Lane tadi pagi."
 
     "Gedung HY sendiri memiliki bentuk seperti huruf  UU, dan memiliki 2 lantai."
 
@@ -65,69 +69,101 @@ label first_kampus:
 
     "Kamu kemudian berjalan menuju lantai 2 menggunakan tangga di dekat lobby yang terletak di tengah gedung."
 
-    "Setelah menaiki anak tangga, kamu berjalan ke arah kiri."
+    scene bg campus upper hall with fade
 
-    "Pada sisi kiri gedung kamu melihat beberapa ruangan, dan salah satu pintu ruangan itu terbuka."
+    "Setelah menaiki anak tangga, kamu berjalan menelusuri lorong lantai 2."
 
-    mc "Disitu kah ?"
+    "Pada sisi kiri gedung kamu melihat beberapa ruangan, dan terdapat satu ruangan dengan pintu terbuka."
+
+    mc normal jacket "Yang mana ya?, ternyata diatas juga banyak ruangan begini."
+
+    mc "{i} Apa yang pintunya terbuka itu ya?{/i}"
+
+    "Melewati beberapa kelas yang pintunya tertutup, kamu berjalan menuju kelas dengan pintu yang terbuka."
 
     "Ketika berjalan mendekati ruangan tersebut, tiba-tiba pintu ruangan yang ada dibelakangmu terbuka."
 
     "Kamu menoleh kebelakang, dan melihat seorang mahasiswa yang kamu kenal."
 
-    mc "Vivy kamu sedang cari ruanganya juga?"
+    mc "Rissa kamu sedang cari ruanganya juga?"
 
-    v "Ohh halo [name], engga kok, itu disitu ruangannya, Pak Andy sudah masuk juga, sudah mulai sekitar 10 menit lalu."
+    r normal2"Ohh halo [name], engga kok, itu disitu ruangannya, Pak Andy sudah masuk juga, sudah mulai sekitar 10 menit lalu."
 
     mc "Sudah mulai ??"
 
-    v "Iyaa, di grup kan sudah kubilang kata Pak Andy dimajuin bimbingannya."
+    r "Iyaa, di grup kan sudah kubilang kata Pak Andy dimajuin bimbingannya."
 
     mc "Kamu chat begitu di grup?"
 
-    "Kamu langsung mengambil ponsel dalam sakumu dan membuka grup chat Lane."
+    "Kamu langsung mengambil HP dalam sakumu dan membuka grup chat Lane."
 
-    "Scroll-scroll-scroll"
+    show phone groupchat:
+        xalign 0.5
+        yalign 0.6 
+    with moveinbottom
 
-    "Terdapat chat dari Rosianne dengan text yang di bold."
+    "Scroll"
+
+    "Scroll"
+
+    "Scroll"
+
+    "Terdapat chat dari Rossaine dengan text yang di bold."
 
     "Teman-teman kata Pak Andy bimbingannya jadi sekitar jam setengah 12an yaa.."
+
+    hide phone groupchat
+    with moveoutbottom
         
-    v "Iyaa kann??"
+    r "Iyaa kann??"
 
     mc "Baru buka HP aku, pantas saja kutunggu engga ada mahasiswa yang masuk gedung."
 
-    v "Hahaha, sudah kuduga, cepat masuk sana, aku mau cari toilet dulu."
+    r "Hahaha, sudah kuduga, cepat masuk sana, aku mau cari toilet dulu."
 
     mc "Iya iya."
 
-    v "Oh iya [name] kamu tahu toilet paling dekat ada dimana?"
+    r "Oh iya [name] kamu tahu toilet paling dekat ada dimana?"
 
     mc "Kalau tidak salah di bawah kita ini terus dipojokan ke arah sana yang paling dekat."
 
-    v "Oh oke oke makasih ya."
+    r "Oh oke oke makasih ya."
 
-    "Vivy langsung berjalan menuju arah yang kamu tunjukan."
+    "Rissa langsung berjalan menuju arah yang kamu tunjukan."
 
-    "Sementara kamu mendekati ruangan yang baru saja Vivy keluar dari ruangan tersebut."
+    "Sementara kamu mendekati ruangan yang baru saja Rissa keluar dari ruangan tersebut."
 
     "Knock knock knock"
 
+    scene bg campus class with fade
+
     # Sfx knock
 
-    mc "Permisi"
+    mc normal jacket "Permisi"
 
-    "Memasuki ruangan terlihat seorang perempuan yang sedang duduk dan beberapa mahasiswa yang sedang mendengarkan perempuan tersebut."
+    show pa normal
 
-    pa "Oh ada yang masuk lagi ini teman-teman."
+    # show r normal2 at left
+
+    "Memasuki ruangan terlihat seorang pria muda yang sedang duduk dan beberapa mahasiswa yang sedang mendengarkan pria tersebut."
+
+    hide pa normal with dissolve
+
+    pa normal"Oh ada yang masuk lagi ini teman-teman."
 
     mc "Permisi pak."
 
-    pa "Iya, karena baru masuk mungkin bisa perkenalan dulu? Supaya teman-teman dan saya juga tahu?"
+    pa "Masuk saja mas, silahkan mau duduk dimana terserah."
+
+    "Kamu melihat hampir semua kursi yang ada di kursi belakang sudah dipenuhi oleh mahasiswa lain."
+
+    pa "Nha, karena baru masuk mungkin bisa perkenalan dulu? Supaya teman-teman yang ada disini dan saya juga tahu masnya?"
+
+    "Kamu berdiri di depan kelas, kemudian menghadap ke arah teman-temanmu."
 
     mc "Baik pak, Perkenalkan nama saya [name]."
 
-    pa "Baik mas [name], silahkan duduk disamping teman-temannya, sembari menunggu teman-teman yang belum datang."
+    pa "Baik mas [name], silahkan duduk, sembari menunggu teman-teman yang belum datang."
 
     "Mengangguk, kamu berjalan menuju kursi kosong yang ada di barisan depan."
 
@@ -138,9 +174,9 @@ label first_kampus:
     "...."
 
     scene bg black 
-    with Dissolve(2.0)
+    with Dissolve(1.0)
 
-    scene ng classroom 
+    scene bg campus class 
     
     with dissolve
 
@@ -154,7 +190,7 @@ label first_kampus:
 
     "Salah satunya adalah mahasiswa yang kemarin sore kamu lihat di minimart, yang bernama Joji."
 
-    pa "Yak karena sudah jam segini, bapak mulai saja."
+    pa normal "Yak karena sudah jam segini, bapak mulai saja."
 
     pa "Jadi sebelumnya kalau bimbingan seperti ini, biasanya satu persatu, bisa bareng-bareng tapi nanti biasanya satu persatu karena yang ditanyakan berbeda-beda."
 
@@ -162,12 +198,39 @@ label first_kampus:
 
     pa "Besok-besok kalau mau bimbingan tinggal chat saya saja, tanya bisanya kapan, nanti saya tentukan, atau bisa juga lewat {i}Simaster{/i} nanti saya jelaskan."
 
-    pa "Nah, jadi perkuliahan itu semester gasal itu dimulai biasanya dimulai dari bulan x-y, kemudian semester genap dimulai dari bulan z-a."
+    show semester:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve
+    
+    pa "Nah, jadi perkuliahan itu semester gasal itu dimulai biasanya dimulai dari bulan Agustus sampai Desember."
 
-    pa "Selama satu semester itu terdapat {b}12 minggu pertemuan{/b}, ditambah {b}satu minggu{/b} masing-masing untuk {b}UTS{/b} dan {b}UAS{/b}."
+    pa "Setelah Desember nanti akan ada libur panjang semester."
+    
+    pa "Kemudian semester genap dimulai dari bulan Febuari sampai bulan Juni."
+
+    hide semester
+    
+    show pertemuan:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve
+
+    pa "Selama satu semester itu terdapat {b}14 minggu pertemuan total{/b}."
+    
+    pa "Ditambah {b}satu minggu{/b} masing-masing untuk {b}UTS{/b} dan {b}UAS{/b}."
+
+    pa "{b}UTS{/b} dan {b}UAS{/b} akan dilakukan setelah 7 pekan perkualiahan normal"
+
+    hide pertemuan
+
+    show krs:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve
 
     pa "Sebelum mulai kuliah kalian bisa melakukan pengisian KRS, KRS sendiri itu merupakan singkatan dari {b}{i}Kartu Rencana Studi{/i}{/b}."
-
+    
     pa "Seperti namanya, KRS merupakan rencana studi kamu yang akan diambil selama {b}satu semester{/b}."
 
     pa "Jadi nanti yang dimaksut pengisian KRS adalah {b}{i}proses memilih mata kuliah untuk satu semester kedepan{/i}{/b}."
@@ -175,15 +238,54 @@ label first_kampus:
     pa "Untuk kalian di semester pertama, baiknya memilih mata kuliah yang sudah di {b}wajibkan{/b} oleh kampus."
 
     pa "Karena ada beberapa mata kuliah yang {b}wajib{/b} untuk diambil, dan ada juga mata kuliah yang {b}bisa di ambil setelah menyelesaikan mata kuliah sebelumnya{/b}."
-
+    
     pa "Mata kuliah wajib merupakan mata kuliah yang wajib diselesaikan selama kamu berkuliah."
 
     pa "Sementara contoh mata kuliah yang bisa diambil setelah menyelesaikan mata kuliah sebelumnya adalah, contoh mata kuliah {b}{i}Basis Data II bisa diambil setelah menyelesaikan Basis Data I{/i}{/b}."
 
-    pa "Kemudian untuk pengisian KRS sendiri bisa dilakukan lewat {b}{i}Simaster{/i}{/b} melalui menu, {b}Akademik Kemahasiswaan{/b} => {b}Akademik{/b} => {b}Pengisian KRS{/b}."
+    hide krs
+
+    show home simaster:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve
+    
+    pa "Kemudian untuk pengisian KRS sendiri bisa dilakukan lewat {b}{i}Simaster{/i}{/b}"
+
+    hide home simaster
+
+    show home akademik:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve 
+    
+    pa "melalui menu, {b}Akademik Kemahasiswaan{/b} lalu pilih sub menu {b}Akademik{/b}."
+
+    hide home akademik
+
+    show home akademik krs:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve 
+    
+    pa "Pada sub menu akademik, pilih menu {b}Pengisian KRS{/b}."
+
+    hide home akademik krs
+
+    show pengisian krs:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve 
 
     pa "Pada halaman {i}Pengisian KRS{/i}, kamu dapat memilih periode pengisian KRS, kemudian setelah mengklik maka kamu akan melihat banyak nama mata kuliah beserta kode mata kuliahnya."
 
+    hide pengisian krs
+
+    show krs 1:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve 
+    
     pa "Di halaman itu kamu tinggal memilih mata kuliah sesuai dengan nama atau kode mata kuliahnya, disitu juga terdapat keterangan kelas dan dosen pengampunya."
 
     pa "Mata kuliah yang masih memiliki kapasitas bisa kalian pilih. Setiap Mata kuliah memiliki beban atau SKSnya masing-masing."
@@ -192,15 +294,51 @@ label first_kampus:
 
     pa "Untuk menyelesaikan kuliah S1 sendiri memerlukan 144-148 SKS untuk bisa lulus."
 
+    hide krs 1
+
+    show krs 2:
+        xalign 0.5
+        yalign 0.4
+    with dissolve 
+
     pa "Nah setelah kalian memilih semua mata kuliah yang diambil. Kalian menunggu persetujuan  dari dosen pembimbing akademik kalian."
 
     pa "Kalian baiknya menginformasikan mata kuliah yang kalian ambil ke dosen pembimbing, untuk meminta persetujuan dan jika ingin bertanya mengenai mata kuliah yang dipilih."
 
     pa "Sekiranya untuk KRS seperti itu, nanti saya beri tahu mata kuliah apa saja yang kalian ambil di semester ini."
 
-    pa "Kemudian, mengenai Bimbingan DPA sendiri kalian bisa melakukannya lewat {b}{i}Simaster{/i}{/b} melalui menu {b}Akademik Kemahasiswaan{/b} => {b}Akademik{/b} => {b}Diskusi DPA{/b}."
+    hide krs 2
 
-    pa "Kalian juga bisa langsung mengechat saya untuk bimbingan."
+    show home akademik:
+        xalign 0.5
+        yalign 0.4
+    with dissolve
+
+    pa "Kemudian, mengenai Bimbingan DPA sendiri kalian bisa melakukannya lewat {b}{i}Simaster{/i}{/b} melalui menu {b}Akademik Kemahasiswaan{/b}"
+    
+    pa "Lalu pilih sub menu {b}Akademik{/b}."
+
+    hide home akademik
+
+    show home akademik dpa:
+        xalign 0.5
+        yalign 0.4
+    with dissolve
+    
+    pa "Pada sub menu akademik, pilih {b}Diskusi DPA{/b}."
+
+    hide home akademik dpa
+
+    show diskusi dpa:
+        xalign 0.5
+        yalign 0.4
+    with dissolve
+
+    pa "Pada halaman tersebut, kalian bisa menulis pesan disitu untuk menghubungi saya."
+
+    pa "Atau kalau saya sendiri, jika kalian mau juga bisa langsung mengechat saya melalui nomor telepon untuk bimbingan."
+
+    hide diskusi dpa
 
     pa "Di bimbingan sendiri, kalian bisa tanya mengenai berbagai macam seputar perkuliahan."
 
@@ -210,9 +348,9 @@ label first_kampus:
 
     pa "Hmm apalagi ya? Sudah ngomong banyak saya, mungkin dari teman-teman ada yang ingin ditanyakan?"
 
-    mc "{i}Tanya apa yaa, baru dikasih tahu informasi sebanyak itu, masih pada memproses.{/i}"
+    mc normal jacket "{i}Tanya apa yaa, baru dikasih tahu informasi sebanyak itu, masih memproses informasi aku.{/i}"
 
-    v "Oh iya pak, saya waktu orientasi kemarin sempat denger, ada kantin kejujuran ya pak disini?"
+    r normal2"Oh iya pak, saya waktu orientasi kemarin sempat denger, ada kantin kejujuran ya pak disini?"
 
     pa "Oh iyaa, itu nanti tempatnya kalian lurus saja, ada di lantai 2 kok, perbatasan antara gedung X dan gedung HY."
 
@@ -222,15 +360,15 @@ label first_kampus:
 
     pa "Ada lagi kah pertanyaannya?"
 
-    v "Pak Andy, untuk UTS dan UASnya kalau di perkuliahan bagaimana ya?"
+    r "Pak Andy, untuk UTS dan UASnya kalau di perkuliahan bagaimana ya?"
 
-    pa "Sebenarnya seperti kalau kalian di sekolah sebelumnya, kalian dapat jadwal, ada no kursi, dan tinggal mengerjakan."
+    pa "Sebenarnya seperti kalau kalian di sekolah sebelumnya, kalian dapat jadwal, ada nomor kursi, dan tinggal mengerjakan."
 
     pa "Kalau mekanismenya untuk UTS atau UAS sendiri tergantung dosen pengampunya juga."
 
     pa "Mungkin bisa ditanyakan sebelum UTS atau UAS kepada dosen pengampu mata kuliahnya."
 
-    pa "Seperti itu kurang lebihnya, mungkin ada pertanyaan lain kah? Dari yang lain mungkin, kok mbaknya terus yang tanya."
+    pa "Seperti itu kurang lebihnya untuk UTS dan UAS, mungkin ada pertanyaan yang lain kah?"
 
     "Kemudian satu persatu mahasiswa lainnya mulai bertanya mengenai kehidupan perkuliahan."
 
@@ -238,35 +376,41 @@ label first_kampus:
 
     pause 2.0
 
-    scene bg hall with dissolve
+    scene bg campus hall with dissolve
 
     "Ketika waktu sudah menunjukan pukul 12.30 Pak Andy mengakhiri sesi bimbingan yang dilakukan."
 
-    "Sebelum meninggalkan ruangan, Pak Andy berkata akan menitipkan daftar mata kuliah yang akan digunakan untuk memilih KRS kepada Rosianne."
+    "Sebelum meninggalkan ruangan, Pak Andy berkata akan menitipkan daftar mata kuliah yang akan digunakan untuk memilih KRS kepada Rosainne."
 
-    "Rosianne yang ada dalam grup chat Lane bukan lain adalah Vivy."
+    "Rosainne yang ada dalam grup chat Lane ternyata adalah Rissa."
 
-    "Setelah Pak Andy meninggalkan ruangan, para mahasiswa lain saling berkenalan dan mengakrabkan diri."
+    "Setelah Pak Andy meninggalkan ruangan, mahasiswa lain saling berkenalan dan mengakrabkan diri satu sama lain, meskipun terdapat beberapa mahasiswa yang langsung meningalkan ruangan."
 
-    "Kamu juga ikut bersosialisasi dengan teman-teman barumu."
+    "Kamu sendiri ikut bersosialisasi dengan teman-teman barumu."
 
-    "Beberapa dari mahasiswa yang ada menyuarakan untuk makan bersama di suatu tempat makan."
+    "Melakukan perbincangan ringan dan mengobrol mengenai kehidupan kuliah nantinya."
 
-    "Ada beberapa mahasiswa yang merespon dengan positif, ada juga beberapa yang pamit untuk pulang, salah satunya adalah kamu."
+    "Setelah beberapa menit berbincang, beberapa mahasiswa memutuskan untuk pulang."
 
-    mc "Aku duluan ya teman-teman, aku gabisa ikut makan-makan."
+    "Beberapa dari mahasiswa juga ada yang mengusulkan untuk makan bersama di suatu tempat makan."
 
-    v "Gak ikut kamu [name]?"
+    "Ada beberapa mahasiswa yang merespon dengan positif, ada juga beberapa yang lebih memilih untuk pulang, salah satunya adalah kamu."
 
-    mc "Engga Vy, ada urusan lain aku."
+    mc normal jacket"Aku duluan ya teman-teman, aku gabisa ikut makan-makannya."
+
+    r normal2 "Beneran gak ikut kamu [name]?"
+
+    mc "Engga Ris, ada urusan lain aku."
 
     mc "{i}Tentu saja cuma alasan hahaha{/i}"
 
-    v "Wahh gak seru nih, yasudah hati-hati yaa!"
+    r "Wahh gak seru nih, yasudah hati-hati yaa!"
 
-    mc "Besok besok kalau ada lagi ikut aku. Duluan ya."
+    mc "Besok besok kalau ada lagi mungkin ikut aku." 
+    
+    mc "Yaudah, duluan yaa."
 
-    v "Okee"
+    r "Okee"
 
     "............"
 
@@ -280,57 +424,91 @@ label first_kampus:
 
     mc "Oh iya ngisi KRSnya sudah bisa mulai besok kan ya? Kalau gak salah."
 
-    mc "Tinggal nanti malem tanya si Vivy aja lah gimananya."
+    mc "Tinggal nanti malem tanya si Rissa aja lah gimananya."
 
     mc "Sekarang yang penting tidur duluuu."
 
-    "Setelah sampai di kamar kosmu, kamu langsung merebahkan badan."
+    #makan!
 
-    "Belum sempat melakukan hal lainnya, matamu sudah terlelap dan kamu tertidur dengan pulas."
+    scene bg black with dissolve
+
+    "Dalam perjalanan kamu menyempatkan diri untuk berhenti di warmindo yang ada dekat dengan kampusmu."
+
+    "Perutmu yang sudah keroncongan memakasamu untuk mengisinya terlebih dahulu sebelum mengistirahatkan badan."
+
+    "Kamu memesan dan memakannya di tempat, kemudian langsung melanjutkan perjalanan ke kos karena merasakan badanmu yang sudah sangat lelah."
+
+    $ energy += 15
+
+    $ hunger += 25
+
+    scene bg black with dissolve
+
+    window hide
+    
+    $placeKeys = 3
+
+    call screen trans_screen with dissolve
+
+    "Setelah sampai di kamar kosmu, kamu merasakan rasa lelah yang membuatmu mengantuk."
+
+    "Meletakan barang bawaanmu di meja belajar, tanpa mengganti pakaian kamu langsung merebahkan tubuhmu diatas kasur."
+
+    "Tidak lama setelah merebahkan badan kesadaranmu mulai menghilang dengan cepat"
+    
+    "Belum sampai beberapa menit dirimu sudah terlelap dan tertidur dengan pulas."
 
     scene bg black
 
     pause 2.0
 
-    show day2 kosnight:
-        xalign 0.5
-        yalign 0.5
+    $timephase +=1
 
-    with dissolve
+    call screen trans_screen with dissolve
 
-    hide day2 kosnight
+    $ vit -= 5
+    $ energy -= 10
+    $ hunger -= 10
 
-    with dissolve
-
-    scene bg kos night
-
-    with dissolve(2.0)
+    scene bg kos night with dissolve
 
     "Kamu terbangun setelah matahari sudah tak terlihat lagi."
 
     "Karena langsung tertidur, kamu belum sempat melakukan aktivitas lain di siang harinya."
 
-    "Perutmu yang masih kosong mulai mengeluarkan bunyi geumuruh."
+    "Perutmu yang siang tadi sudah kamu isi, sudah mengeluarkan suara gemuruh lagi."
 
-    mc normal2 "Aduhh tidurku kelamaan, sudah malem begini."
+    mc normal jacket "Aduhh tidurku kelamaan, sudah malem begini."
 
     mc "Laper banget lagi…"
 
-    mc "Makan apa ya? Ke Warmindo aja lah."
+    mc "Makan apa ya? Apa ke Warmindo lagi aja yah?"
 
-    mc "Mandi dulu tapi ya, keringetan begini."
+    mc "Mandi dulu mungkin ya, keringetan begini."
 
-    "Memutuskan untuk mandi terlebih dahulu, kamu berjalan ke arah kamar mandi kosmu."
+    "Memutuskan untuk mandi terlebih dahulu, kamu bangun dari tempat tidur dan mengambil pakaian ganti di dalam lemari."
+    
+    "Kemudian kamu berjalan ke arah kamar mandi kos."
+
+    ".............."
+
+    "........."
+
+    "...."
 
     "Kos yang kamu tempati merupakan kos khusus laki-laki."
 
-    "Kos tersebut memeliki 5 buah kamar dan 2 kamar mandi."
+    "Kos tersebut memeliki 7 buah kamar dan 2 kamar mandi."
 
-    "Selama beberapa hari menempati kos, pada awalnya hanya kamu sendiri yang sedang berada disana."
+    "Selama beberapa hari menempati kos, hanya dirimu yang sudah datang dan menempati kos." 
+    
+    "Sementara kamar yang lain masih terlihat gelap dan terkunci."
 
     "Namun beberapa hari terakhir, para penghuni kos lainnya mulai berdatangan."
 
-    "Masih terlihat satu kamar yang masih gelap gulita, sementara yang lain sudah nampak suara dari dalam kamar kos."
+    "Satu demi satu penghuni mulai datang dan meramaikan tempat kos."
+
+    "Masih terlihat satu kamar yang masih gelap gulita, sementara yang lain sudah terdengar suara dari dalam kamar kos."
 
     "Melihat kamar mandi yang terlihat kosong, kamu langsung masuk ke dalamnya dan mandi."
 
@@ -340,46 +518,66 @@ label first_kampus:
 
     # Sfx shower
 
-    scene bg black
+    scene bg black with dissolve
 
-    with dissolve
+    pause 1.0
 
-    pause 1.5
-
-    scene bg kosnight
-
-    with dissolve
+    scene bg kos night with dissolve
 
     "......."
 
     "............."
 
-    "Selesai mandi dan berganti pakaian, ketika ingin keluar dari kamar kosmu kamu melihat kotak box putih yang terletak di atas meja."
+    "Selesai mandi dan kembali ke kamar, ketika ingin keluar dari kamar kosmu kamu teringat box putih yang diberikan kepadamu pagi tadi."
 
-    mc normal2 "Oh iyaa, tadi pagi aku dapet ini yaa."
+    "Box putih itu kamu letakan di atas meja belajar."
+
+    mc normal jacket "Oh iyaa, tadi pagi aku dapet ini yaa."
 
     "Kamu mengambil kotak box tersebut dan membukanya."
 
-    mc "Donatttt… banyak lagi, nggak usah keluar lah, makan ini aja kenyang juga."
+    mc "Donatttt… banyak lagi, nggak usah keluar lah."
+    
+    mc "Makan semua udah kenyang ini."
 
-    mc "Oh iya sambil makan sambil lihat chat grup Lane."
+    "Setelah membuka box putih yang ternyata berisi banyak donat, kamu mengurungkan niatmu untuk pergi ke warmindo."
 
-    show phone chat:
+    mc "Oh iya sambil makan sambil lihat chat grup Lane kalau ada info baru lagi."
+
+    show phone groupchat:
         xalign 0.5
 
         yalign 0.5
 
     with dissolve
 
-    "Scroll-scroll-scroll"
+    "Scroll"
+    
+    "Scroll"
+    
+    "Scroll"
 
-    mc "Hmm belum ada chat dari Vivy, berarti Pak Andy belum mengirim ya?"
+    mc "Hmm belum ada chat dari Rissa, berarti Pak Andy belum jadi mengirim kode mata kuliah ya?"
 
-    mc "Terus malem ini ngapain ya?"
+    # mc "Kalau belum "
+
+    mc "Terus malem ini ngapain ya enaknya?"
 
     hide phone chat with dissolve
 
     mc "hmmm…"
+
+    "Memikirkan apa yang ingin kamu lakukan malam itu, kamu membuka laptop dan menyalakannya."
+
+    "Menunggu proses booting selesai, tanpa sadar kamu sudah menghabiskan semua donat yang ada di dalam box putih."
+
+    $energy += 10
+
+    $hunger += 20
+
+    "Setelah laptopmu selesai booting, kamu kemudian membuka aplikasi Stem dan masuk menggunakan akunmu."
+
+    "Dalam library game yang ada pada akun Stemmu, kamu memilih MonHan kemudian menekan tombol {i}Play{/i}"
 
     mc "Maen MonHan asik kayaknya…"
 
@@ -387,14 +585,26 @@ label first_kampus:
 
     "Kamu mengirim chat itu ke salah satu kontak yang ada di Lanemu."
 
-    "Kemudian kamu menghabiskan waktu malammu di depan laptop, dan bermain game sampai malam suntuk."
+    "Kamu menghabiskan waktu malammu di depan laptop, dan bermain game sampai malam suntuk."
 
-    "Jam 1 lebih, kamu baru berhenti bermain game, dan menutup laptopmu."
+    scene bg black with dissolve
 
-    "Lalu kamu langsung berbaring di atas kasurmu, sambil mendengarkan lagu dari ponselmu."
+    "Ketika waktu sudah menunjukan pukul 1 pagi lebih, kamu mematikan laptopmu."
 
-    "Tidak lama kemudian kamu mulai terlelap untuk kedua kalinya di hari itu."
+    "Mematikan lampu kamar, kemudian membaringkan tubuh di atas kasur."
+
+    "Seperti biasa, sebelum terlelap kamu memainkan playlist lagu yang ada di HPmu."
+
+    "Tidak lupa untuk mengecek apakah jam alarm sudah pada waktu yang tepat atau belum."
+
+    "Tidak lama menutup mata, kamu sudah tertidur pulas untuk yang kedua kalinya di hari itu."
 
     "Hari ke 2 selesai."
+
+    hide screen days_screen
+
+    hide screen stats_screen
+
+    jump day3
 
     return
