@@ -2,113 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/library.rpy", line 577: expected statement.
-    Kemudian kamu membantu Rissa dalam pengisian KRSnya.
-                                                       ^
+File "game/script.rpy", line 1063: expected statement.
+    ??? "Permisi.."
+    ^
 
-File "game/library.rpy", line 579: expected statement.
-    Tidak banyak masalah selama proses pengisian KRS. Pada akhirnya kelas untuk suatu mata kuliah rata-rata terbagi menjadi 2 kelas. Tidak ada atau setidaknya belum ada mahasiswa yang tidak mendapatkan kelas mata kuliah.
-                                                    ^
+File "game/script.rpy", line 1067: expected statement.
+    ??? "Oh ini saya bawa makanan dari rumah, buat dibagi untuk anak-anak kos sini."
+    ^
 
-File "game/library.rpy", line 581: expected statement.
-    Setelah selesai dengan pengisian KRSnya, Rissa membantu teman-teman sekelas disekitarmu dalam mengisi KRS mereka. 
-                                           ^
-
-File "game/library.rpy", line 583: expected statement.
-    Tidak lama kemudian, semua orang sudah menyelesaikan pengisian KRS. Selesai mengisi KRS, semua orang berbincang dan mengakrabkan diri lebih lanjut satu sama lain. Kamu ikut menghabiskan waktu bersama teman barumu.
-                       ^
-
-File "game/library.rpy", line 585: expected statement.
-    Wah sudah jam 2 aja, perasaan tadi kita selesai ngisi jam 12an.
-                       ^
-
-File "game/library.rpy", line 587: expected statement.
-    Iya juga ya cepet banget rasanya.
-                                    ^
-
-File "game/library.rpy", line 589: expected statement.
-    Udah jam segini ya, waktunya pulang nih keburu hujan.
-                      ^
-
-File "game/library.rpy", line 591: expected statement.
-    Kok bisa hujan cerah sama panas banget begini.
-                                                 ^
-
-File "game/library.rpy", line 593: expected statement.
-    Katanya kalau cerah begini nanti jadi hujan deras ya?
-                                                        ^
-
-File "game/library.rpy", line 595: expected statement.
-    Iyasih biasanya begitu.
-                          ^
-
-File "game/library.rpy", line 597: expected statement.
-    Yaudah pulang yuk, gak bawa jas hujan aku.
-                     ^
-
-File "game/library.rpy", line 599: expected statement.
-    Aku bonceng kamu ya!.
-                       ^
-
-File "game/library.rpy", line 601: expected statement.
-    r Begitu katanya, kamu langsung pulang juga [name]?
-                    ^
-
-File "game/library.rpy", line 603: expected statement.
-    mc Kalau begitu sih mending pulang langsung aku.
-                                                   ^
-
-File "game/library.rpy", line 605: expected statement.
-    r Aku juga langsung pulang juga.
-                                   ^
-
-File "game/library.rpy", line 607: expected statement.
-    r Oke temen-temen, makasih ya sudah dateng kesini, kumpul sama KRSan bareng. Hati-hati di jalan pulangnyaa!
-                     ^
-
-File "game/library.rpy", line 609: expected statement.
-    Satu-persatu orang mengemas barang-barang mereka yang ada di atas meja dan pergi satu persatu.
-                                                                                                 ^
-
-File "game/library.rpy", line 611: expected statement.
-    r Kalau begitu aku duluan ya [name], sampai ketemu lusa di kelas!
-                                 ^
-
-File "game/library.rpy", line 613: expected statement.
-    mc Okee, hati-hati.
-           ^
-
-File "game/library.rpy", line 615: expected statement.
-    r Byee.
-          ^
-
-File "game/library.rpy", line 617: expected statement.
-    mc Byee
-           ^
-
-File "game/library.rpy", line 619: expected statement.
-    Hanya tersisa dirimu yang masih ada di lantai 3 gedung perpustakaan.
-                                                                       ^
-
-File "game/library.rpy", line 621: expected statement.
-    Kamu memasukan laptop ke dalam tas, dan berjalan menuju tangga turun.
-                                      ^
-
-File "game/library.rpy", line 623: expected statement.
-    Sampai di luar gedung perpustakaan kamu merasakan sengatan panas matahari.
-                                                                             ^
-
-File "game/library.rpy", line 625: expected statement.
-    mc Gila, bisa beda begini di dalam sama diluar gedung.
-           ^
-
-File "game/library.rpy", line 627: expected statement.
-    mc Tapi katanya nanti bakal hujan kah? Tapi cuaca cerah panas begini hmmm
-                                         ^
-
-File "game/library.rpy", line 629: expected statement.
-    mc Hujan atau enggak, mending pulang sajalah panas begini.
-                        ^
+File "game/script.rpy", line 1075: expected statement.
+    ??? "Saya Kevin mas, masnya baru masuk kos tahun in ya?"
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Fri Jan 20 21:16:19 2023
+Sun Jan 29 19:35:15 2023

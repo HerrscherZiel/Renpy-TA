@@ -179,152 +179,306 @@ label minimart_pertama:
     # hide screen days_screen
     # hide screen stats_screen
     $ prologueCount +=1
+    window hide
     call screen mapUI with dissolve
 
     return
 
 label mini2S:
 
-    # BG Minimart Out
+    scene bg minimart_in
 
-    # mc Hahhh… bisa segar begini di dalem, diluar panasnya gak masuk akal gilaaa.
+    mc normal jacket "Hahhh… bisa segar begini di dalem, diluar panasnya gak masuk akal gilaaa."
 
-    # Di dalam kamu merasakan suhu yang berbanding terbalik 180O. Matahari terik panas tanpa ada satupun awan yang menutup sinarnya.
+    "Kamu baru saja memasuki minimarket, dan merasakan perbedaan suhu yang signifikan."
 
-    # Sementara di dalam minimart kamu merasakan sejuknya ruangan ber AC.
+    "Di dalam kamu merasakan suhu yang berbanding terbalik 180 derajat. Matahari bersinar terik tanpa ada satupun awan yang menghalangi sinarnya."
 
-    # Suhu yang tinggi membuat berkeringat, di dalam minimart hal yang pertama kali kamu lakukan adalah mencari tempat duduk.
+    "Sementara di dalam minimart kamu merasakan kesejukan ruangan ber AC."
 
-    # If $day3 is True
+    "Karena panasanya suhu diluar ruangan, tubuhmu berada dalam kondisi yang berkeringat."
 
-    # Terdapat beberapa tempat duduk yang ditempatkan pada sisi minimart.
+    "Oleh karena itu, hal yang pertama kali kamu lakukan di dalam minimart adalah mencari tempat untuk mendinginkan tubuh dan beristirahat."
 
-    # Entah karena minimart ini biasa dipenuhi oleh pembeli, atau karena memang desain awal minimart ini sudah menyiapkan ruang untuk tempat duduk.
+    "Tidak perlu jauh-jauh berjalan, kamu menenemukan beberapa tempat duduk umum yang berada di sektor foodcourt di dalam minimart."
 
-    # Meskipun disebut dengan mini-mart, namun apa yang ada di dalamnya sudah tidak termasuk mini lagi.
+    "Meskipun disebut dengan mini-mart, ketika masuk ke dalam bangunannya akan terasa seperti mini-mall."
 
-    # Terdapat sektor pembelanjaan, baik kebutuhan harian, food court, maupun kebutuhan lain. 
+    "Di dalam minimart terbagi menjadi sektor pembelanjaan. Sektor-sektor yang berbeda itu terletak di lantai yang berbeda."
 
-    # Mendapatkan tempat duduk kosong di dekat food court di dalam minimart, pandanganmu tertuju ke berbagai penjuru ruangan mengamati apa yang ada didalamnya.
+    "Terdapat sektor pembelanjaan, baik kebutuhan harian, food court, maupun kebutuhan lain."
 
-    # mc Mini apanya? Ini sih sudah bisa dibilang seperti mall- mini-mall sih.
+    scene bg foodcourt with fade 
 
-    # Setelah mendinginkan badan sejenak, kamu beranjak mendekati salah satu stall yang menjual minuman.
+    "Mendapatkan tempat duduk kosong di dekat food court di dalam minimart, pandanganmu tertuju ke berbagai penjuru ruangan mengamati apa yang ada didalamnya."
 
-    # Mendekati stall minuman tersebut kamu tidak melihat satu orang pun yang berada di dalam stall.
+    "Suasana minimart saat ini sedang tidak dipenuhi oleh pengunjung. Terdapat beberapa pengunjung yang keluar masuk ke dalam minimart."
 
-    # mc Hmm lagi isoma mungkin kali ya?
+    "Setelah duduk mendingkan tubuh selama beberapa menit, kamu berjalan mendekati stand minuman yang ada di depanmu tertarik dengan minuman yang ada."
 
-    # Kamu mendekati stall itu dan melihat daftar menu yang ada.
+    "Berada di depan stand minuman tersebut kamu tidak menemui satu orang pun yang berada di dalam stand."
 
-    # mc Teh tarik.. Kopi… Es degan… hmm mending beli apa nih?
+    mc "Hmm lagi isoma mungkin kali ya?"
 
-    # stall Ada yang bisa dibantu kak?
+    "Kamu mendekati papan menu yang ada di bagian samping stand untuk melihat minuman yang dijual."
 
-    # Tiba-tiba ada yang memanggilmu dari belakang.
+    mc "Teh tarik.. Kopi… Es degan… hmm mending beli apa ya?"
 
-    # mc Oh ah ini kak, mau pesan minum.
+    siapa "Ada yang bisa dibantu kak?"
 
-    # stall pesan apa kak, ada macam-macam teh, kopi, es buah dan es degan.
+    "Mendengar suara dari belakangmu, kamu menoleh ke arah suara tersebut."
 
-    # stall Oh iya kak, kebetulan lagi ada promo, untuk setiap pembelian satu kopi dapat tambahan 1 kopi free kak.
+    mc "Oh... ah ini kak, mau pesan minum."
 
-    # mc boleh itu, yaudah kak pesen kopinya satu.
+    "Asal dari suara tersebut ternyata merupakan suara dari penjaga stand minuman yang ada di depanmu."
 
-    # stall Tapi ada syaratnya kak, harus follow EG nya duluu..
+    stall "Mau pesan apa kak? Disini ada macam-macam variasi minuman teh, kopi, es buah dan es degan."
 
-    # mc Oh gitu, EG nya yang disini ya kan kak?
+    stall "Oh iya kak, kebetulan lagi ada promo, untuk setiap pembelian satu variasi kopi akan mendapatkan 1 kopi free kak."
 
-    # stall iya itu kak, ini kopinya es atau hangat ya?
+    mc "Boleh itu, pesen kopinya satu berarti."
 
-    # mc Es kak dua dua nya, lagi pengin ya dingin-dingin panas begini.
+    stall "Tapi ada syaratnya kak, harus follow EG nya duluu.. setelah buat story dan tag akun EG kami kak."
 
-    # mc Oh iya, ini udah ku follow ya.
+    mc "Oh begitu, EG nya yang ada disini ya kan kak?"
 
-    # stall oke siap! Tunggu sebentar ya kak.
+    stall "Iya itu kak, Oh iya ini kopinya es atau hangat ya?"
 
-    # Stall tadi sudah nunggu lama ya kak?
+    mc "Es kak dua dua nya ya kak."
 
-    # mc Oh belum kok, baru datang tadi. Di luar panas banget kak ngadem dulu tadi hahaha.
+    mc "Oh iya, ini udah ku follow ya."
 
-    # stall iyasih emang, kalau jam segini lagi panas-panasnya di luar.
+    stall "Oke siap! Mohon ditunggu sebentar ya kak."
 
-    # mc Ini lagi musimnya panas kaya gini, atau biasanya kak disini?
+    mc "Okee."
 
-    # stall Ya lagi musimnya, panas-panas begini nanti sorenya hujan.
+    stall "Tadi sudah menunggu lama ya kak?"
 
-    # mc Wah payah juga, kalau habis panas hujan gitu.
+    mc "Oh belum kok, baru aja datang tadi."
 
-    # Stall ya anehnya begita kak, malah kalau mendung gitu ga hujan-hujan.
+    stall "Oh maaf ya tadi baru saja istirahat saya."
 
-    # mc bisa begitu juga ya hahaha
+    mc "Oh enggak apa kok."
 
-    # stall kuliah di situ juga ya kak?
+    mc "Ini lagi musimnya panas kaya begini, atau memang biasanya kaya gini disini?"
 
-    # mc Iya, baru masuk tahun ini aku.
+    stall "Ya lagi musimnya kalau sekarang, biasanya siang panas-panas begini nanti sore atau malemnya bakalan hujan."
 
-    # stall Wah mahasiswa baru dong, jurusan apa kak?
+    mc "Oh begitu yaa..."
 
-    # mc Iya, di komputer begitu, di vokasi aku.
+    stall "Kuliah di situ juga ya kak?"
 
-    # stall Wah sering-sering mampir sini kak, dekat kan kampusnya.
+    "Penjaga stand minuman tersebut menunjuk ke arah gedung kampusmu yang berada di dekat lokasi minimart."
 
-    # mc Hahaha siap.
+    mc "Iya, baru masuk tahun ini aku."
 
-    # Beberapa menit kemudian, setelah lama berbincang dengan penjaga stall minuman kamu menerima pesananmu dan kembali ke tempat duduk semula.
+    stall "Wah mahasiswa baru dong, jurusan apa kak?"
 
-    # stall Oke, terimakasih kak.
+    mc "Program Studi D4 Teknologi Rekayasa Perangkat Lunak, ya intinya komputer begitu kak."
 
-    # Else 👍
+    stall "Sering-sering mampir sini kak, dekat kan kampusnya."
 
-    #     Setelah mendapatkan tempat duduk, kamu berdiam menikmati udara dingin sebelum selanjutnya memutuskan untuk membeli minuman di stall minuman terdekat.
+    mc "Hahaha siap."
 
-    #     mc Kak es kopi ya, large satu.
+    "Beberapa menit kemudian, setelah lama berbincang dengan penjaga stand minuman kamu menerima pesananmu."
+    
+    mc "Ini ya kak Uangnya."
 
-    #     stall1 oke kak, ditunggu sebentar ya.
+    stall "Oke, terimakasih kak."
 
-    #     mc Tumben ya siang-siang begini sudah ramai disini.
+    "Setelah itu kamu kembali ke tempat duduk semula."
 
-    #     Stall1 iya kak, kayaknya karena di bagian kebutuhan harian lagi ada diskon mingguan, karena terbatas ya jadi rebutan begitu.
+    "Sampai di tempat duduk, kamu langsung mengeluarkan HPmu, dan membuka salah satu permainan yang ada di dalamnya."
 
-    #     mc Diskon sih emang menarik sih ya hahaha
+    "Mengamati sekelilingmu kamu melihat beberapa orang sedang menikmati jam istirahat siang mereka."
 
-    #     stall1 Ya begitu, namanya anak kuliahan kan, bukan anak kuliahan semua juga sih. Kalau namanya diskon ya pasti banyak yang mau.
+    "Terdapat berbagai macam pengunjung yang sedang beristirahat di sektor foodcourt minimart."
 
-    #     mc Memang banyak diskon ya disini.
+    "Pekerja kantoran, anak kuliahan, bahkan anak SMA terlihat asyik menikmati waktu mereka." 
+    
+    "Memakan makan siang, berbincang dengan teman, dan tentu saja terdapat orang yang membuka laptop untuk melanjutkan pekerjaan mereka di sela-sela waktu."
 
-    #     stall1 iya kak, narik pelanggan biasa.
+    "Sambil menyeruput es kopi yang kamu beli dari stall minuman, kamu fokus kembali pada layar HPmu yang sedang membuka permainan."
 
-    #     stall1 Oh ini kak, es kopi latte cup largenya. Terimakasih.
+    "Henshin tertulis pada loading screen layar HPmu."
 
-    #     Setelah membayar untuk kopimu, kamu kembali ke tempat dudukmu di bagian food court minimart.
+    "Begitu layar pada HPmu sudah berganti dari layar loading screen, kamu langsung berfokus memainkan game yang ada."
 
-    # Setelah kembali ke tempat duduk, kamu langsung mengeluarkan smartphonemu, dan membuka salah satu permainan yang ada di dalamnya.
+    mc "Siang-siang begini selesain daily quest lumayan lah."
 
-    # Di sekelilingmu kamu juga melihat beberapa orang menikmati jam istirahat siang mereka.
+    scene bg foodcout with fade
 
-    # Pekerja kantoran, anak kuliahan, bahkan anak SMA terlihat asyik menikmati waktu mereka. Memakan makan siang, berbincang dengan teman, dan tentu saja terdapat orang membuka laptop untuk melanjutkan pekerjaan mereka di sela-sela waktu.
+    "Seru dalam duniamu sendiri, tak sadar satu cup kopi yang kamu beli sudah habis."
 
-    # Sambil menyeruput es kopi yang kamu beli dari stall minuman, kamu fokus kembali pada layar smartphonemu.
+    "Indikator baterai dari HPmu juga sudah berubah menjadi warna merah. Kamu menutup permainan dan memasukan HPmu ke dalam saku."
 
-    # Henshin Effect tertulis pada loading screen layar smartphonemu
+    mc "niat mau beli minum sebentar malah jadi nongkrong lama begini huhhhhh."
+    
+    "Kamu menyesal menghabiskan waktumu terlalu lama di minimart. Sekarang jam sudah menunjukan pukul 4 Sore, dan dirimu hanya menghabiskan waktu siangmu berada di minimart."
+    
+    "Langit sudah mulai berubah warna. Kamu memutuskan untuk kembali ke kosan."
 
-    # If $day3 is true 
-    # Henshin merupakan permainan yang akhir-akhir ini populer di khalayak luas. Permainan open world yang memiliki grafis dan gameplay yang menyegarkan mata dan fitur yang paling menarik adalah gacha.
+    mc "Kopinya enak juga, besok kalau kesini lagi aku beli lah."
 
-    # mc Siang-siang begini selesain daily quest lumayan lah.
+    "Membawa satu bungkus kopi yang kamu dapat dari promo, kamu keluar dari minimart dan mengendarai motor ke kos."
 
-    # mc Bentar-bentar questnya dimana aja ini…, Wohh lets goo deket-deket semua gausah travel.
+    call drink
 
-    # Seru dalam duniamu sendiri, tak sadar satu cup yang kamu beli sudah habis.
+    $prologueCount+=1
 
-    # Baterai smartphone juga sudah menjadi merah, kamu menutup permainan dan memasukan smartphonemu ke dalam saku.
+    jump kos_krs3
 
-    # mc niat mau beli minum sebentar malah jadi nongkrong lama begini, diluar juga kayaknya sudah enggak sepanas tadi, waktunya pulang.
+    return
 
-    # mc Kopinya enak juga, besok kalau kesini lagi aku beli lah.
+
+label mart_scene_pick:
+
+    # return a random integer between 1 and 20
+    $ d3roll = renpy.random.randint(1, 3)
+
+    if d3roll == 1:
+        if timephase == 1:
+            jump mart_mornS1
+        elif timephase == 2:
+            jump mart_dayS1
+        else:
+            jump mart_nightS1
+    elif d3roll == 2:
+        if timephase == 1:
+            jump mart_mornS2
+        elif timephase == 2:
+            jump mart_dayS2
+        else:
+            jump mart_nightS2
+    else:
+            if timephase == 1:
+                jump mart_mornS3
+            elif timephase == 2:
+                jump mart_dayS3
+            else:
+                jump mart_nightS3
+
+label mart_mornS1:
+
+    "mart morn 1"
+
+label mart_mornS2:
+
+    "mart morn 2"
+
+label mart_mornS3:
+
+    "mart morn 3"
+
+label mart_dayS1:
+
+    call screen trans_screen
+
+    scene bg minimart_out with dissolve
+
+    "Pada siang hari, kamu pergi menuju minimarket dimana biasanya kamu berbelanja."
+
+    "Siang hari ini, matahari bersinar terik membuat suhu di luar ruangan menjadi sangat panas."
+
+    "Sesampainya di minimarket, kamu bersegera masuk ke dalam bangunan."
+
+    mc normal jacket "Hahhh… bisa segar begini di dalem, diluar panasnya gak masuk akal gilaaa."
+
+    "Di dalam kamu merasakan suhu yang berbanding terbalik 180 derajat. Matahari bersinar terik tanpa ada satupun awan yang menghalangi sinarnya."
+
+    "Sementara di dalam minimart kamu merasakan kesejukan ruangan ber AC."
+
+    "Karena panasanya suhu diluar ruangan, tubuhmu berada dalam kondisi yang berkeringat."
+
+    "Oleh karena itu, hal yang pertama kali kamu lakukan di dalam minimart adalah mencari tempat untuk mendinginkan tubuh dan beristirahat."
+
+    "Tidak perlu jauh-jauh berjalan, kamu menenemukan beberapa tempat duduk umum yang berada di sektor foodcourt di dalam minimart."
+
+    scene bg foodcourt with fade
+
+    "Kamu duduk di dekat bagian food court di dalam minimart, pandanganmu tertuju ke berbagai penjuru ruangan mengamati apa yang ada didalamnya."
+
+    "Suasana minimart saat ini sedang tidak dipenuhi oleh pengunjung. Terdapat beberapa pengunjung yang keluar masuk ke dalam minimart."
+
+    "Setelah duduk dan mendingkan tubuh selama beberapa menit, kamu berjalan mendekati stand minuman yang ada di depanmu untuk membeli minum."
+
+    "Sesampainya di stand minuman, kamu memesan minuman dingin untuk menyegarkan tubuhmu."
+
+    "Sembari menunggu, kamu menghabiskan waktu dengan berbincang dengan penjaga stand minuman."
+
+    "Tidak lama kemudian pesananmu selesai dibuat."
+
+    stall "Ini kak pesanannya."
+
+    "Kamu membayar pesananmu dan menerimanya."
+
+    mc normal jacket "Terimakasih."
+
+    stall "Sama-sama kak, jangan lupa mampir lagi."
+
+    "Menganggukkan kepala, kamu berjalan kembali ke tempat dudukmu sebelumnya."
+
+    "Sampai di tempat duduk, kamu langsung mengeluarkan HP dan membuka salah satu permainan yang ada di dalamnya."
+
+    "Dengan layar HP yang sedang menunjukan tampilan {i}loading{/i} kamu mengalihkan pandanganmu dari layar HP menuju lingkungan sekitarmu."
+    
+    "Mengamati sekelilingmu kamu melihat beberapa orang sedang menikmati jam istirahat siang mereka."
+
+    "Terdapat berbagai macam pengunjung yang sedang beristirahat di sektor foodcourt minimart."
+
+    "Pekerja kantoran, anak kuliahan, bahkan anak SMA terlihat asyik menikmati waktu mereka." 
+    
+    "Memakan makan siang, berbincang dengan teman, dan tentu saja terdapat orang yang membuka laptop untuk melanjutkan pekerjaan mereka di sela-sela waktu."
+
+    "Sambil menyeruput minuman dingin yang kamu beli dari stand minuman, kamu mengarahkan kembali perhatianmu pada layar Hpmu."
+
+    "Begitu layar pada HPmu sudah berganti dari layar {i}loading{/i} screen, kamu langsung berfokus memainkan game yang ada."
+
+    mc "Siang-siang begini selesain daily quest lumayan lah."
+
+    scene bg foodcout with fade
+
+    "Seru dalam duniamu sendiri, tak sadar satu cup kopi yang kamu beli sudah habis."
+
+    "Indikator baterai dari HPmu juga sudah berubah menjadi warna merah. Kamu menutup permainan dan memasukan HPmu ke dalam saku."
+
+    mc normal jacket "niat mau beli minum sebentar malah jadi nongkrong lama begini huhhhhh."
+    
+    "Kamu menyesal menghabiskan waktumu terlalu lama di minimart. Sekarang jam sudah menunjukan pukul 4 Sore, dan dirimu hanya menghabiskan waktu siangmu berada di minimart."
+    
+    "Langit sudah mulai berubah warna. Kamu memutuskan untuk kembali ke kosan."
+
+    mc "Kopinya enak juga, besok kalau kesini lagi aku beli lah."
+
+    "Membawa satu bungkus kopi yang kamu dapat dari promo, kamu keluar dari minimart dan mengendarai motor ke kos."
+
+    call drink
+
+    jump kos_krs4_night
+
+label mart_dayS2:
+
+    "mart day 2"
+
+label mart_dayS3:
+
+    "mart day 3"
+
+    return
+    # call screen mapUI
 
 
     # stat +
 
+label mart_nightS1:
+
+    "mart night 1"
+
+label mart_nightS2:
+
+    "mart night 2"
+
+label mart_nightS3:
+
+    "mart night 3"
 

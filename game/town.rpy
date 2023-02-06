@@ -38,8 +38,8 @@ label first_kampung:
 
     "{i}Gubrakkk!!!{/i}"
 
-# Sfx things fell
-# Shake
+    # Sfx things fell
+    # Shake
 
     "Tiba-tiba kamu mendengar suara yang keras dari arah di depanmu."
 
@@ -134,6 +134,128 @@ label first_kampung:
     call screen mapUI with dissolve
 
     return
+
+label first_kota:
+
+    call screen trans_screen
+
+    scene kos depan with dissolve
+
+    "Pada siang harinya, kamu memutuskan untuk pergi berkeliling area sekitar untuk mengisi waktu luangmu."
+
+    "Mengendarai sepeda motormu, kamu mulai menarik gas secara perlahan." 
+    
+    "Tanpa tujuan yang pasti kemana kamu akan pergi dengan motormu, kamu mengendari motor keluar dari parkiran kosan."
+
+    "Cuaca yang cerah pada siang hari ini mempermudah untuk orang-orang berpergian." 
+    
+    "Langit biru dihiasi awan Cirrocumulus dengan sinar matahari yang bersinar terik terlihat ketika kamu menengok ke atas."
+
+    scene town street 2 with dissolve
+    
+    mc normal jacket "Cuaca cerah seperti ini, memang cocok buat jalan-jalan."
+
+    mc "Kemarin habis hujan juga, sekarang jadi segar cuacanya."
+
+    mc "Hmmm... pergi kemana ya? Ke kota apa daerah kampus ya? Hmmm..."
+
+    "Melewati gapura dan keluar dari jalanan kampung, kamu melihat kondisi jalan raya yang ramai dipenuhi oleh kendaraan-kendaraan pribadi."
+
+    "Mungkin karena sekarang merupakan musim liburan yang hampir berakhir, jadi orang-orang menggunakan kesempatan terakhir mereka untuk berpergian sebelum kembali kerutinitas harian masing-masing."
+
+    "Meski jalanan dipenuhi oleh kendaraan-kendaraan yang berlalu-lalang, tapi tidak terlihat adanya kemacetan. Hanya ada antrian yang lumayan panjang di area yang dekat dengan lampu lalu lintas."
+
+    "Dengan lincahnya kamu mengemudikan sepeda motormu untuk melewati beberapa kendaraan yang ada di depanmu."
+
+    scene bg black with dissolve
+
+    scene bg road 1 with fade
+
+    "Berkendara selama beberapa menit, pandanganmu teralihkan setelah melihat sebuah bangunan tinggi yang sedang dalam proses pembangunan."
+
+    "Beberapa kendaraan dan alat konstruksi bangunan terlihat berada di sekitar kawasan proyek."
+
+    "Kamu menyempatkan waktumu untuk menepi di pinggiran jalan dan mengamati konstruksi yang ada di depanmu matamu itu."
+
+    "Gedung yang mungkin akan menjadi apartemen dengan perkiraan memiliki puluhan lantai terlihat sedang dibangun."
+
+    "Tower Crane yang terlihat sedang mengangkat material-material berat pada proyek konstruksi. Kontraktor bangunan juga terlihat berlalu langan di sekitar area proyek. "
+
+    "Kamu juga melihat beberapa kontraktor bangunan sedang beristirahat di warung-warung makanan kaki lima di sekitar jalan di dekat lokasi proyek."
+
+    "Setelah beberapa menit mengamati konstruksi kamu meneruskan perjalananmu."
+
+    scene bg black with dissolve
+
+    scene bg road 2 with fade
+
+    "Tidak jauh kamu mengendarai sepeda motormu, kamu melihat sebuah rumah sakit yang berada di dekat gedung-gedung kampus di universitasmu."
+
+    "Satu dua mobil ambulance datang datang mengantarkan ataupun pergi untuk menjemput pasien."
+
+    "Tepat di seberang jalan atau lebih tepatnya di depan rumah sakit, kamu melihat gedung kampus yang memiliki papan nama bertuliskan Fakultas Kedokteran, Kesehatan Masyarakat dan Keperawatan."
+
+    "Mungkin karena lokasi rumah sakit yang berada di seberang gedung kampus, kamu melihat beberapa orang yang terlihat seperti mahasiswa berlalu-lalang di dekat area rumah sakit."
+
+    "Entah karena mereka memiliki urusan di rumah sakit ataupun mereka memiliki urusan di gedung kampus mereka."
+
+    "Selesai mengamati, kamu meneruskan perjalananmu."
+
+    scene bg minimart_out fade
+
+    "Kamu mengendarai motormu melewati gedung kampusmu." 
+    
+    "Tidak jauh dari gedung kampusmu terdapat minimarket dimana kamu dan Rissa pergi kesana ketika kegiatan orientasi berakhir."
+
+    "Melewati minimarket kamu melihat bangunan rumah sakit lain." 
+
+    scene bg road 3 with fade
+    
+    "Sama seperti bangunan rumah sakit yang sebelumnya, rumah sakit yang ada di depanmu itu juga terletak berseberangan dengan bangunan dari kampusmu.."
+
+    "Melihat bagian depan rumah sakit itu, terlihat masih sangat rapi dan baru membuatmu berpikir itu merupakan rumah sakit yang baru saja selesai dibangun atau paling tidak baru saja selesai direnovasi."
+
+    "Tidak berhenti lama, setelah mengamati rumah sakit itu selama beberapa waktu kamu melanjutkan perjalananmu."
+
+    scene bg road 4 with fade
+
+    "Setelah berkendara selama beberapa menit, kamu mencapai {i}landmark{/i} berikutnya."
+
+    "Terlihat sebuah masjid besar berada di sebelah kirimu. Masjid yang berada di sebelah kiri jalan itu merupakan masjid kampus."
+
+    "Tidak jauh dari masjid kampus, kamu melihat track untuk jogging, yang berada disepanjang pinggir jalan. Kamu juga melihat beberapa bangunan yang digunakan untuk olahraga indoor beberapa puluh meter di depanmu."
+
+    scene bg road 5 with fade
+    
+    "Lapangan untuk softball juga nampak pada sisi kiri jalan. Meskipun untuk menuju lapangan tersebut tidak ada jalan langsung dari jalan, dan harus mencari jalan masuk lain."
+
+    "Setelah lapangan softball kamu juga melihat bangunan yang nampak seperti stadion. Kamu tidak dapat melihat bangunan apa itu sepenuhnya dari pinggir jalan."
+
+    "Selain dibatasi dengan pagar pembatas, bangunan itu juga terletak di samping pepohonan yang tinggi dan rimbun. Terdapat banyak tumbuhan merambat yang ikut menutupi pandanganmu."
+
+    "Di sepanjang sisi kiri jalan kamu melihat berbagai fasilitas untuk olahraga, dan taman yang dipenuhi banyak tumbuhan."
+
+    "Sementara tidak jauh setelah mengendarai sepeda motormu untuk beberapa puluh meter kedepan, kamu melihat gedung kampus di sisi kanan jalan raya."
+
+    "Namun gedung kampus yang terdapat pada sisi kanan jalan tersebut bukanlah gedung kampus milik universitas dimana kamu berkuliah. Melainkan gedung kampus dari universitas lainnya, yang memang bertempat bersebelahan dengan universitasmu."
+
+    "Sama seperti sebelumnya, di dekat gedung kampus kamu juga melihat beberapa orang yang nampak seperti mahasiswa berlalu-lalang."
+
+    "Kemudian kamu melanjutkan perjalananmu untuk menjelajahi area disekitar kampusmu."
+
+    scene bg town street 3 with fade
+
+    "Tidak hanya jalan raya yang kamu lalui, kamu juga mengendarai sepeda motormu untuk masuk ke area perkampungan."
+
+    "Terlihat banyak sekali rumah-rumah kos yang berada di perkampungan sekitar. Hal tersebut merupakan hal yang wajar, mengingat dekatnya perkampungan dengan kampus yang ada."
+
+    "Lama berputar-putar mengelilingi area sekitar, warna langit yang semula biru laut sudah berubah menjadi warna orange."
+
+    "Siang yang sudah berubah menjadi sore membuatmu memtuskan untuk kembali ke kosan."
+
+    jump to kos_krs4_night
+
+
 
 label ambil_jatuh:
 

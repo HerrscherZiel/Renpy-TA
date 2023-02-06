@@ -661,7 +661,9 @@ label krs:
     mc "Gampanglah nanti di jalan."
 
     "Menyalakan motor yang ada di parkiran, kamu melanjutkan perjalananmu selanjutnya."
+    
+    # call screen mapUI
 
-    jump kos_krs
+    jump kos_krs3
 
     return

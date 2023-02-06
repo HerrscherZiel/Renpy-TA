@@ -5,7 +5,7 @@ screen mapUI:
     add "map/map.png" 
 
     if prologue == True:
-        if prologueCount == 1 or prologueCount == 6:
+        if prologueCount == 1 or prologueCount == 5:
             imagebutton:
                 xpos 1250
                 ypos 760
@@ -13,7 +13,7 @@ screen mapUI:
                 hover "map/minimart hover.png"
                 action Jump("go_to_minimart")
         
-        elif prologueCount == 2:
+        elif prologueCount == 2 or prologueCount == 6:
             imagebutton:
                 xpos 1150
                 ypos 10
@@ -23,7 +23,7 @@ screen mapUI:
         
         elif prologueCount == 3:
             imagebutton:
-                xpos 1250
+                xpos 1500
                 ypos 150
                 idle "map/kampung idle.png"
                 hover "map/kampung hover.png"
@@ -46,7 +46,91 @@ screen mapUI:
                 action Jump("go_to_library") 
     
     else:
-        pass
+
+        if timephase == 3:
+            #Night to Morning
+            imagebutton:
+                    xpos 1150
+                    ypos 10
+                    idle "map/house idle.png"
+                    hover "map/house hover.png"
+                    action Jump("go_to_kos")
+            
+            imagebutton:
+                    xpos 1500
+                    ypos 150
+                    idle "map/kampung idle.png"
+                    hover "map/kampung hover.png"
+                    action Jump("go_to_kampung")
+
+            imagebutton:
+                    xpos 300
+                    ypos 760
+                    idle "map/kampus idle.png"
+                    hover "map/kampus hover.png"
+                    action Jump("go_to_campus")
+
+            # pass
+        elif timephase == 1:
+            #Morning to Noon
+            imagebutton:
+                xpos 1250
+                ypos 760
+                idle "map/minimart idle.png"
+                hover "map/minimart hover.png"
+                action Jump("go_to_minimart")
+        
+            imagebutton:
+                    xpos 1150
+                    ypos 10
+                    idle "map/house idle.png"
+                    hover "map/house hover.png"
+                    action Jump("go_to_kos")
+            
+            imagebutton:
+                    xpos 1500
+                    ypos 150
+                    idle "map/kampung idle.png"
+                    hover "map/kampung hover.png"
+                    action Jump("go_to_kampung")
+
+            imagebutton:
+                    xpos 300
+                    ypos 760
+                    idle "map/kampus idle.png"
+                    hover "map/kampus hover.png"
+                    action Jump("go_to_campus")
+
+            imagebutton:
+                    xpos 900
+                    ypos 450
+                    idle "map/perpustakaan idle.png"
+                    hover "map/perpustakaan hover.png"
+                    action Jump("go_to_library") 
+
+        else:
+            #Noon to Night
+            imagebutton:
+                xpos 1250
+                ypos 760
+                idle "map/minimart idle.png"
+                hover "map/minimart hover.png"
+                action Jump("go_to_minimart")
+        
+            imagebutton:
+                    xpos 1150
+                    ypos 10
+                    idle "map/house idle.png"
+                    hover "map/house hover.png"
+                    action Jump("go_to_kos")
+            
+            imagebutton:
+                    xpos 1500
+                    ypos 150
+                    idle "map/kampung idle.png"
+                    hover "map/kampung hover.png"
+                    action Jump("go_to_kampung")
+
     
 label go_to_minimart:
 
@@ -56,23 +140,24 @@ label go_to_minimart:
         "Pergi ke minimart":
             $ placeKeys = 2
 
-            if timephase != 3:
-                $ timephase += 1
-
-            else:
-                $ timephase = 1
-
             if firstMart == True:
                 $ maps = False
-                call screen trans_screen with dissolve
-                call change_timephase                
+                call change_timephase
+                call screen trans_screen with dissolve             
                 window show
                 jump minimart_pertama
+
+            elif KRS4 == True:
+                $ maps = False
+                call change_timephase
+                call screen trans_screen with dissolve              
+                window show
+                jump mini2S
             
             else:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
+                call screen trans_screen with dissolve
                 # window show
                 jump nothing
 
@@ -89,22 +174,17 @@ label go_to_kos:
         "Pergi ke Kos":
             $ placeKeys = 3
             
-            if timephase != 3:
-                $ timephase += 1
-            else:
-                $ timephase = 1
-
             if firstKos == True:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
-                window show
+                call screen trans_screen with dissolve
+                # window show
                 jump first_kos
             
             else:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
+                call screen trans_screen with dissolve
                 # window show
                 jump nothing
                 
@@ -120,23 +200,17 @@ label go_to_kampung:
         "Pergi Jalan-jalan?":
             $ placeKeys = 4
 
-            if timephase != 3:
-                $ timephase += 1
-            else:
-                $ timephase = 1
-
             if firstKampung == True:
                 $ maps = False
-                $ timephase -= 1
+                # call change_timephase
                 call screen trans_screen with dissolve
-                call change_timephase
-                window show
+                # window show
                 jump first_kampung
             
             else:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
+                call screen trans_screen with dissolve
                 # window show
                 jump nothing
                 
@@ -150,24 +224,19 @@ label go_to_campus:
 
     menu:
         "Pergi ke Kampus":
-            $ placeKeys = 8
-
-            if timephase != 3:
-                $ timephase += 1
-            else:
-                $ timephase = 1            
+            $ placeKeys = 8         
 
             if firstKampus == True:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
-                window show
+                call screen trans_screen with dissolve
+                # window show
                 jump first_kampus
             
             else:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
+                call screen trans_screen with dissolve
                 # window show
                 jump nothing
                 
@@ -181,24 +250,19 @@ label go_to_library:
 
     menu:
         "Pergi ke Perpustakaan":
-            $ placeKeys = 6
-
-            if timephase != 3:
-                $ timephase += 1
-            else:
-                $ timephase = 1            
+            $ placeKeys = 6       
 
             if KRS3 == True:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
-                window show
+                call screen trans_screen with dissolve
+                # window show
                 jump krs
             
             else:
                 $ maps = False
-                call screen trans_screen with dissolve
                 call change_timephase
+                call screen trans_screen with dissolve
                 # window show
                 jump nothing
                 

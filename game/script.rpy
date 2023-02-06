@@ -13,7 +13,10 @@ define mc = Character("You", image="mc")
 define w = Character("Warga", image="w")
 define pa = Character("Pak Andy", image="pa")
 define aa1 = Character("Aa'", image="aa")
+define kev = Character("Kevin'", image="kev")
 define t = "Teman"
+define stall = Character("Stall", image="stl")
+define siapa = "Siapa"
 
 #nvl
 define n = nvl_narrator
@@ -913,10 +916,252 @@ label day3:
         jump persiapan_krs
     
     else:
-        jump mini2S
+        $prologueCount += 1
+        $KRS4 = True
+        call screen mapUI
+
+    return
+
+label day4:
+
+    scene bg black
+    with Dissolve(1.0)
+
+    pause 2.0
+
+    show day4 pro:
+        xalign 0.5 yalign 0.5
+    with dissolve
+
+    pause 2.0
+
+    hide day4 pro with dissolve
+
+    call screen trans_screen with dissolve
+
+    pause 2.0
+
+    scene bg kos morn with dissolve
+
+    show screen stats_screen with dissolve
+
+    show screen days_screen with dissolve
+
+    scene bg kos with fade
+
+    #SFX alarm
+
+    "Nggtttt"
+
+    "Nggttttt"
+
+    "Ngtttttttt"
+
+    "HPmu bergetar selama beberapa detik sebelum pada suara ringtone alarm mengeluarkan bunyi yang membuatmu terbangun dari tidur."
+
+    mc normal jacket "Hmmhhh..."
+
+    "Membuka mata kamu memaksama badanmu bangun dan berada dalam posisi duduk."
+
+    "Meraba-raba disekitar tempat tidurmu, kamu mencari hp yang masih terus mengeluarkan suara." 
+    
+    "Kamu mengambilnya kemudian menggeser layar HP ke atas untuk menghentikan alarm yang aktif."
+
+    "Jam digital yang ada pada HPmu sudah menunjukan pukul 05.10. Jam dimana biasanya kamu bangun tidur setiap harinya."
+
+    mc "Huahhhhh"
+
+    "Menguap, kamu beranjak dari tempat tidur dan berjalan menuju ke kamar mandi."
+    
+    "Berjalan sembari mengusap-usap mukamu, kamu menengok ke arah kamar-kamar kos yang ada disekitar."
+
+    mc "Emang yang punya kamar belum dateng, apa kosong sih itu kamar? Perasaan pas mau ambil ini kos ibu kos cuma bilang 1 kamar aja yang kosong."
+
+    "Kamu masih melihat terdapat satu kamar yang masih terkunci rapat dan belum ada tanda penghuni yang menempatinya."
+
+    "Sampai di kamar mandi, kamu melakukan kebiasan pagi harimu."
+
+    "Setelah menyelsaikan kegiatan di kamar mandi, kamu berjalan kembali menuju kamar."
+    
+    "Ketika berjalan, terdengar suara mesin motor yang mendekati bangunan kosmu."
+
+    "Pengemudi motor itu berhenti tepat di depan pintu gerbang masuk ke dalam kos."
+
+    "Srekkkkkkkk"
+
+    "Tak lama setelah pintu gerbang dibuka, pengemudi motor itu masuk mendorong motornya."
+
+    "Menengok ke arahmu, kalian berdua saling bertatap muka."
+
+    "Menyadari dirimu yang berada diluar kamar, pengemudi motor itu menganggukkan kepalanya kepadamu." 
+    
+    "Kamupun membalas anggukan kepala kepada pengemudi motor yang baru saja masuk itu."
+
+    "Setelah menganggukkan kepalamu, kamu masuk ke dalam kamar."
+
+    scene bg kos with fade
+
+    "Seperti biasa setelah kembali dari kamar mandi, kegiatanmu di pagi hari selanjutnya adalah mengecek chat yang ada di grup Lane."
+
+    "Scrolll"
+
+    "Scrolll"
+
+    "Scrolll"
+
+    "Kamu membaca beberapa chat mengenai pengisian KRS." 
+    
+    "Rata-rata teman seangkatanmu mempertanyakan mengenai proses pengisiannya, kemudian satu persatu pertanyaan itu dijawab oleh Rissa."
+
+    if KRS3 == True:
+
+        "Belum melakukan KRS, kamu membaca satu persatu pertanyaan mengenai proses pengisian KRS itu."
+        
+        "Membaca satu persatu pertanyaan dan jawaban dari Rissa dengan teliti." 
+        
+        "Setelah memahami informasi tambahan mengenai pengisian KRS tersebut, kamu kemudian mencatat langkah-langkah penting pada kertas note."
+
+        "Selesai mencatat informasi yang ada di group chat, kamu menutup aplikasi Lane lalu mengeklik icon aplikasi sosial media lain yang ada di HPmu."
+
+    else :
+
+        "Selesai membaca dan mencari informasi yang ada di group chat, kamu mengeklik icon aplikasi sosial media lain yang ada di hpmu."
+
+    "Kamu membuka aplikasi PhoGram dimana orang-orang dapat mengunggah foto atau video mereka ke sosial media. Kemudian pengguna lain melihat apa yang kamu unggah pada aplikasi, lali dapat berinteraksi dengan unggahan yang ada."
+
+    "Terdapat berbagai macam konten yang ada pada sosial media tersebut yang membuatmu memainkan dengan waktu yang lama."
+    
+    "Terlalu menikmati konten yang ada, tanpa sadar waktu telah cepat berlalu tanpa kamu menyadarinya, hingga kamu tersadar setelah perutmu berbunyi."
+
+    "GRUGRUGRUGRU"
+
+    mc "Ughhh… oh iya, sarapan-sarapan."
+
+    mc "Nonton konten isinya makanan semua begini jadi keinget belum sarapan."
+
+    mc "Makan kemana ya? Kalo pesen jam segini masih sedikit."
+
+    "Kamu sempat memikirkan untuk mengorder makanan. Namun pilihan makanan yang ada ketika pagi hari kamu rasa kurang banyak, sehingga kamu mengurung niatmu."
+
+    "Jam digital yang ada pada HPmu masih menunjukkan pukul 8.30."
+
+    mc "Keluar pakai motor males, ke warmindo aja lah."
+
+    "Pada akhirnya kamu memutuskan untuk sarapan di warmindo yang ada di dekat kosan."
+
+    "Memutuskan untuk pergi sarapan di warmindo yang ada di dekat tempat kosmu, kamu beranjak dari tempat tidurmu dan berjalan menuju warmindo."
+
+    "Tokk tokk tokk"
+
+    #SFX knock
+
+    "Belum sampai kamu membuka pintu kamar, terdengar suara seseorang mengetuk pintu kamar kosmu dari luar."
+
+    mc "Sebentar..."
+
+    "Membuka pintu kamar, terdapat seorang laki-laki yang tidak kamu kenal berdiri di depan kamarmu."
+
+    siapa "Permisi.."
+
+    mc "Iya mas, ada apa ya?"
+
+    siapa "Oh ini saya bawa makanan dari rumah, buat dibagi untuk anak-anak kos sini."
+
+    "Tetangga kosmu itu terlihat membawa kantong plastik besar yang di dalamnya terdapat box-box putih."
+
+    "Mengambil salah satu box dari dalam kantong plastik, kemudian ia mengulurkan tangannya yang memegang box putih itu kepadamu."
+
+    mc "Wah makasih banget mas, kebetulan pas mau cari makan juga hehe. Oh iya ini sama mas siapa ya? Saya [name]"
+
+    siapa "Saya Kevin mas, masnya baru masuk kos tahun in ya?"
+
+    mc "Iya, mahasiswa baru saya, kalau masnya?"
+
+    Kevin  "Tahun kemarin masuk sini saya, kamar saya yang pojok deket kamar mandi yang bagian kiri itu mas."
+
+    mc "Ohh disitu…"
+
+    Kevin "Kalau gitu yaudah mas, tak bagiin ke yang lain juga ya."
+
+    mc "Oke mas, makasih ya ini makanannya."
+
+    Kevin "Iya mas, sama-sama."
+
+    "Cklekk"
+
+    mc "Lumayan..... rezeki emang enggak kemana. Dari kemarin dapat makan gratis terus."
+
+    "Menutup pintu, kamu duduk dan menaruh box makanan itu di meja belajar." 
+    
+    "Dengan hati yang senang, kamu segera membuka apa yang ada di dalam kotak makanan itu."
+
+    "Meletakan hp di meja belajar, kamu memutar video di internet untuk menemani sarapanmu."
+
+    "Setelah selesai sarapan, tepatnya pukul 9 lebih kamu mengambil handuk yang ada pada gantungan pakaian dan keluar kamar untuk mandi pagi."
+
+    if KRS3 == True:
+
+        scene bg kos with fade
+
+        "Siang harinya selesai mandi, kamu merasa bosan karena tidak ada satupun hal yang bisa kamu lakukan." 
+        
+        "Kamu berniat melakukan kegiatan untuk mengisi waktu di siang hari ini."
+
+        "Kamu memutuskan untuk:"
+
+        call screen mapUI
+    
+    else:
+
+        hide screen days_screen
+
+        hide screen stats_screen
+
+        jump kos_krs4
     
     return
 
+label day5:
+
+    call change_day
+
+    call trans_screen
+
+    
+
+    "persiapan pagi"
+
+label days:
+
+    call change_day
+
+    if day == 8:
+
+        "first free day"
+    
+    elif day == 9:
+
+        "himakomsi"
+    
+    elif day == 13:
+
+        "UTS"
+
+    elif day == 17:
+
+        "ban bocor"
+
+    elif day == 25:
+
+        "UAS"
+
+    elif day == 27:
+
+        "ban bocor"
+    else:
+        "ending"
+
+    
     
 
 label nothing:
@@ -939,7 +1184,23 @@ label eat:
 
     return
 
+label drink:
+
+    $energy +=5
+    $hunger += 15
+
+    call stat_change
+
+    "Stat Berubah!!!"
+
+    return
+
 label change_timephase:
+
+    if timephase != 3:
+        $ timephase += 1
+    else:
+        $ timephase = 1   
 
     $ vit -= 5
     $ energy -= 10
@@ -976,6 +1237,47 @@ label stat_change:
         $weakCount +=1 
     
     return
+
+label change_day:
+
+    $ day += 1
+    if timephase != 3:
+        $ timephase += 1
+    else:
+        $ timephase = 1   
+
+    $ energy += 30
+    $ hunger -= 25
+    $ vit -= 10
+
+    call stat_change
+
+    return
+
+label nap:
+
+    $ energy += 15
+    $ hunger -= 10
+    $ vit -= 5
+    call stat_change
+
+    return
+
+
+# label change_time:
+
+#     if timephase != 3:
+#         $ timephase += 1
+#     else:
+#         $ timephase = 1   
+
+#     $ energy += 30
+#     $ hunger -= 25
+#     $ vit -= 10
+
+#     call stat_change
+
+#     return
 
 
 
