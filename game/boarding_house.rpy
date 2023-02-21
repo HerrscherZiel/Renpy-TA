@@ -89,8 +89,8 @@ label first_kos:
 
 label kos_krs3:
 
-    if krs3 == True:
-
+    if KRS3 == True:
+        $placeKeys = 3
         call screen trans_screen
 
         scene bg black with dissolve
@@ -113,6 +113,7 @@ label kos_krs3:
 
         scene bg black with dissolve
 
+        call change_timephase
         call screen trans_screen
 
         scene bg kos night with fade
@@ -174,10 +175,12 @@ label kos_krs3:
         jump day4
     
     else:
+        $placeKeys = 3
+        window hide
 
-        call trans_screen
+        call screen trans_screen
         
-        scene bg kos with dissolve
+        scene bg kos morn with dissolve
 
         "Kembali ke kosan, kamu menghabiskan sisa waktu siangmu dengan tidur siang."
 
@@ -186,6 +189,8 @@ label kos_krs3:
         "Merasakan sejuknya angin yang berhembus dari kipas angin membuat kesadaranmu mulai memudar."
 
         "Tidak memakan waktu yang lama untuk tertidur dengan pulas."
+
+        call change_timephase
 
         scene bg kos night with fade
 
@@ -258,6 +263,7 @@ label kos_krs3:
     hide screen days_screen
 
     hide screen stats_screen
+    window hide
 
     jump day4
 
@@ -267,7 +273,7 @@ label kos_krs4:
 
     call screen trans_screen
 
-    scene bg kos with dissolve
+    scene bg kos morn with dissolve
 
     "Selesai mandi, kewajiban melakukan pengisian KRS masih ada dalam to do listmu hari ini."
     
@@ -452,7 +458,7 @@ label kos_krs4:
 
             # screen KRS    
 
-    scene bg kos with fade
+    scene bg kos morn with fade
 
     "Mematikan laptop, kamu bersandar di tembok pojok tempat tidurmu sambil bermain game yang ada di hpmu."
 
@@ -620,7 +626,7 @@ label kos_dayS1:
 
     call screen trans_screen
 
-    scene bg kos with dissolve
+    scene bg kos morn with dissolve
 
     "Setelah melakukan kegiatan di pagi hari, kamu berbaring lemas di atas tempat tidurmu."
 
@@ -685,7 +691,7 @@ label kos_dayS1:
     call nap
     
     if KRS3 is True:
-        KRS3 = False
+        $KRS3 = False
         jump kos_krs4_night
 
     else:

@@ -253,7 +253,7 @@ label first_kota:
 
     "Siang yang sudah berubah menjadi sore membuatmu memtuskan untuk kembali ke kosan."
 
-    jump to kos_krs4_night
+    jump kos_krs4_night
 
 
 

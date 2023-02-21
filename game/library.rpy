@@ -514,7 +514,11 @@ label krs:
 
             call screen isi_krs
 
+            # jump starting
+
             # screen KRS
+
+label fin_krs: 
 
     scene bg black with fade
 

@@ -80,8 +80,12 @@ default placeKeys = 1
 
 #sub keys
 default rotiAwal = False
+default capa = '1'
+default note = ""
 
 default maps = False
+
+
 
 
 # The game starts here.
@@ -666,7 +670,7 @@ label day3:
     n "SVPL01014 - Basis Data I - PL1AA"
     n "SVPL02013 - Pemrograman Web I - PL1AB"
     n "SVPL01016 - Pemrograman Berbasis Objek I - PL1AA"
-    n "SVPL02013 - Jaringan Komputer I - PL1AB"
+    n "SVPL02014 - Jaringan Komputer I - PL1AB"
     
     nvl clear
     
@@ -803,11 +807,13 @@ label day3:
 
         "Ikut KRS Bersama":
             $KRS3 = True
+            $KRS = False
 
             mc "Mungkin ikut nanti, kabari ya kalau sudah pada sampai sana Riss."
 
         "KRSan Sendiri":
             $KRS3 = False
+            $KRS4 = True
             mc "Kayaknya enggak dulu deh, aku tanya aja ya kalau bingung ke kamu hahaha."
     
     mc "Kirim."
@@ -923,19 +929,19 @@ label day3:
     return
 
 label day4:
-
+    call change_day
     scene bg black
     with Dissolve(1.0)
 
     pause 2.0
 
-    show day4 pro:
+    show day3 pro:
         xalign 0.5 yalign 0.5
     with dissolve
 
     pause 2.0
 
-    hide day4 pro with dissolve
+    hide day3 pro with dissolve
 
     call screen trans_screen with dissolve
 
@@ -947,7 +953,7 @@ label day4:
 
     show screen days_screen with dissolve
 
-    scene bg kos with fade
+    scene bg kos morn with fade
 
     #SFX alarm
 
@@ -999,7 +1005,7 @@ label day4:
 
     "Setelah menganggukkan kepalamu, kamu masuk ke dalam kamar."
 
-    scene bg kos with fade
+    scene bg kos morn with fade
 
     "Seperti biasa setelah kembali dari kamar mandi, kegiatanmu di pagi hari selanjutnya adalah mengecek chat yang ada di grup Lane."
 
@@ -1077,15 +1083,15 @@ label day4:
 
     mc "Iya, mahasiswa baru saya, kalau masnya?"
 
-    Kevin  "Tahun kemarin masuk sini saya, kamar saya yang pojok deket kamar mandi yang bagian kiri itu mas."
+    kev  "Tahun kemarin masuk sini saya, kamar saya yang pojok deket kamar mandi yang bagian kiri itu mas."
 
     mc "Ohh disitu…"
 
-    Kevin "Kalau gitu yaudah mas, tak bagiin ke yang lain juga ya."
+    kev "Kalau gitu yaudah mas, tak bagiin ke yang lain juga ya."
 
     mc "Oke mas, makasih ya ini makanannya."
 
-    Kevin "Iya mas, sama-sama."
+    kev "Iya mas, sama-sama."
 
     "Cklekk"
 
@@ -1101,7 +1107,7 @@ label day4:
 
     if KRS3 == True:
 
-        scene bg kos with fade
+        scene bg kos morn with fade
 
         "Siang harinya selesai mandi, kamu merasa bosan karena tidak ada satupun hal yang bisa kamu lakukan." 
         
@@ -1161,6 +1167,8 @@ label days:
     else:
         "ending"
 
+    return
+
     
     
 
@@ -1203,7 +1211,7 @@ label change_timephase:
         $ timephase = 1   
 
     $ vit -= 5
-    $ energy -= 10
+    $ energy -= 20
     $ hunger -= 10
 
     call stat_change

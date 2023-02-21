@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1063: expected statement.
-    ??? "Permisi.."
-    ^
-
-File "game/script.rpy", line 1067: expected statement.
-    ??? "Oh ini saya bawa makanan dari rumah, buat dibagi untuk anak-anak kos sini."
-    ^
-
-File "game/script.rpy", line 1075: expected statement.
-    ??? "Saya Kevin mas, masnya baru masuk kos tahun in ya?"
-    ^
+File "game/krs_screen.rpy", line 63: 'matkulcount' is not a keyword argument or valid child for the screen statement.
+    matkulcount+=1
+               ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Sun Jan 29 19:35:15 2023
+Tue Feb 21 23:07:45 2023
