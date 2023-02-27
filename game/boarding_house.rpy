@@ -91,17 +91,17 @@ label kos_krs3:
 
     if KRS3 == True:
         $placeKeys = 3
-        call screen trans_screen
+        call screen trans_screen with dissolve
 
         scene bg black with dissolve
 
         "Menghabiskan hampir seluruh waktu siang harimu berada di perpustakaan, hampir tidak ada energi lagi yang tersisa untuk melakukan aktivitas lain pada siang ini."
 
-        "10 menit kurang perjalanan pulang yang dilalui menjadi semakin berat dengan panas terik yang terus menanak tubuhmu."
+        "10 menit kurang lebih perjalanan pulang yang dilalui menjadi semakin berat dengan panas terik yang terus menanak tubuhmu."
 
-        "Belum lagi perutmu yang sudah keroncongan dan dahaga terasa di keorongkonganmu."
+        "Belum lagi perutmu yang sudah keroncongan dan dahaga terasa di kerongkonganmu."
 
-        "Dengan sisa-sisa energimu, kamu mampir ke warmindo yang berada di dekat dengan kosan membungkus makanan untuk makan di kos nanti."
+        "Dengan sisa-sisa energimu, kamu mampir ke warmindo yang berada di dekat dengan kosan membungkus makanan untuk makan malam nanti."
 
         "Sesampainya di kos, setelah memarkir motor kamu langsung menuju ke kamarmu."
 
@@ -114,13 +114,15 @@ label kos_krs3:
         scene bg black with dissolve
 
         call change_timephase
-        call screen trans_screen
+        call screen trans_screen with dissolve
 
         scene bg kos night with fade
 
         pause 2.0
 
         "Merasa cukup dengan tidurmu, matamu terbuka ketika matahari telah turun dari katulistiwa."
+
+        hide screen kod_matkul_btn
 
         "Suara gemuruh dan angin yang berhembus kencang adalah hal yang pertama kamu dengarkan setelah bangun dari tidurmu."
 
@@ -130,7 +132,7 @@ label kos_krs3:
 
         "GRUGRUGRUGRUGRU"
 
-        "Bukan hanya suara petir yang bergemmuruh, tampkanya perutmu juga meminta untuk diisi."
+        "Bukan hanya suara petir yang bergemuruh, tampkanya perutmu juga memberontak meminta jatah makanan."
 
         mc normal jacket "Oh iya, tadi belum sempet makan malah ketiduran… Huhhh...."
 
@@ -144,7 +146,7 @@ label kos_krs3:
         
         "Meskipun terlindung dari guyuran hujan secara langsung, bagian dalam dari bangunan kos terlihat dibasahi oleh percikan air hujan."
         
-        "Atas asbes yang seharusnya melindungi dari air hujan tidak dapat melindungi dari percikan air yang masuk terbawa oleh angin."
+        "Atap asbes yang seharusnya melindungi dari air hujan tidak dapat melindungi dari percikan air yang masuk terbawa oleh angin."
 
         "Kamu segera mengambil makanan yang kamu beli tadi di cantolan motormu."
 
@@ -166,14 +168,10 @@ label kos_krs3:
 
         "Seperti biasa, kamu menyetel alarm dan memainkan playlist lagu penuntun tidurmu."
 
-        "Dengan senandung lullaby yang terdengar dari HPmu, kamu tertidur dan menyudahi harimu."
+        "Dengan senandung lullaby yang terdengar dari HPmu, kamu tertidur dan mengakhiri harimu."
 
         "Day 3 End"
-
-        "aloo"
-
-        jump day4
-    
+   
     else:
         $placeKeys = 3
         window hide
@@ -182,7 +180,7 @@ label kos_krs3:
         
         scene bg kos morn with dissolve
 
-        "Kembali ke kosan, kamu menghabiskan sisa waktu siangmu dengan tidur siang."
+        "Sesampainya di kamar kos, kamu menghabiskan sisa waktu siangmu dengan tidur siang."
 
         "Karena merasa gerah, kamu melepas bajumu dan mengarahkan kipas angin ke arah tubuhmu yang sudah lemas di tempat tidur."
 
@@ -246,7 +244,7 @@ label kos_krs3:
 
         "Belum sempat membuka browser untuk mencoba KRSmu, terdapat pesan yang masuk pada Lanemu."
 
-        "Oiii broo.. Ayo mabar lah mumpung pada on nih, tunggu di discred ya, yang lain nunggu!"
+        "{i}Oiii broo.. Ayo mabar lah mumpung pada on nih, tunggu di discred ya, yang lain nunggu!{/i}"
 
         mc "Sering banget kalau orang mau produktif malah diajak main, huhhhh....." 
         
@@ -271,7 +269,7 @@ label kos_krs4:
 
     call change_timephase
 
-    call screen trans_screen
+    call screen trans_screen with dissolve
 
     scene bg kos morn with dissolve
 
@@ -306,6 +304,8 @@ label kos_krs4:
 
     mc "Lalu dari halaman beranda simaster, harusnya selanjutnya aku memilih menu:"
 
+    hide home simaster
+
     menu:
         "Pilih menu Akademik Kemahasiswaan":
 
@@ -323,7 +323,6 @@ label kos_krs4:
 
             mc "Ohhh pilih Menu Akademik Kemahasiswaan."
 
-    hide home simaster
 
     show home akademik:
         xalign 0.5
@@ -334,6 +333,9 @@ label kos_krs4:
     mc "Setelah memilih menu Akademik Kemahasiswaan, akan muncul banyak pilihan sub menu."
 
     mc "Disini kemudian kita memilih:"
+
+    hide home akademik
+
 
     menu: 
         
@@ -351,7 +353,6 @@ label kos_krs4:
 
             mc "Harusnya habis milih sub menu Akademik, aku milih menu Pengisian KRS."
 
-    hide home akademik
 
     show home akademik krs:
         xalign 0.5
@@ -361,6 +362,8 @@ label kos_krs4:
 
     mc "Kemudian, setelah masuk halaman Pengisian KRS, langkah selanjutnya yaitu."
 
+    hide home akademik krs
+
     menu: 
 
         "Pilih aksi pada periode pengisian KRS yang ada":
@@ -369,7 +372,6 @@ label kos_krs4:
 
             mc "Tambah KRS kan berarti ini, di periode Pengisian KRS yang ada."
 
-    hide home akademik krs
 
     show pengisian krs:
         xalign 0.5
@@ -380,6 +382,8 @@ label kos_krs4:
     mc "Setelah memilih aksi pada periode pengisian KRS yang terbuka, kita akan dapat melakukan pemilihan mata kuliah yang ditawarkan."
 
     mc "Hmmmm... Mata kuliah apa saja sih yang seharusnya dipilih?"
+
+    hide pengisian krs
 
     menu:
 
@@ -405,13 +409,26 @@ label kos_krs4:
 
             "Setelah beberapa kali menggeser-geser layar hpmu, kamu melihat chat yang dikirim oleh Rissa." 
             
-            "Chat tersebut berisikan nama mata kuliah beserta kode mata kuliah juga kelas untuk tiap mata kuliah. Chat tersebut diketik dengan bold sehingga terlihat lebih mencolok ketimbang chat lainnya."
+            "Chat tersebut berisikan nama mata kuliah beserta kode mata kuliah juga kelas untuk tiap mata kuliah."
+            
+            "Chat tersebut diketik dengan bold sehingga terlihat lebih mencolok ketimbang chat lainnya."
 
             mc "Ohh oke-oke ketemu, berarti tinggal dipilih yang ada disini kan ya."
 
+            mc "Hmmm mending kusalin dulu aja ke noteku, biar gampang lihatnya nanti."
+
+            "Kamu menulis chat yang di kirimkan oleh Rissa itu pada notemu."
+
+            scene bg black with fade
+
+            #sfx writing
+
+            pause 1.0
+
             window hide
 
-            call screen kode_matkul
+            call screen kode_matkul with dissolve
+
             show screen kod_matkul_btn
 
             # pause
@@ -420,21 +437,25 @@ label kos_krs4:
 
             "Setelah melihat kode mata kuliah yang ada pada catatan grup Lane, kamu mencoba memilih mata kuliah sesuai kode mata kuliah yang ada."
 
-            call screen isi_krs
+            call screen isi_krs with fade
 
             "Setelah selesai memilih mata kuliah sesuai kode mata kuliah yang ada di chat group kamu mencari save untuk menyimpan pilihanmu. Namun setelah lama mencari kamu masih belum menemukan tombol save."
 
-            mc "Ini emang gabisa disave atau error ya? Hmmm enggak ada tombol save ini, apa aku tanya Rissa aja ya? Tanya aja lah biar cepet selesai."
+            scene bg kos morn with fade
+
+            hide screen kod_matkul_btn with dissolve
+            
+            mc normal jacket "Ini emang gabisa disave atau error ya? Hmmm enggak ada tombol save ini, apa aku tanya Rissa aja ya? Tanya aja lah biar cepet selesai."
 
             "Mengambil ponselmu, kamu mencari kontak Rissa pada aplikasi lane."
 
-            mc "Eh Ris, mau tanya itu yang pengisian KRS memang enggak ada tombol save kah?"
+            mc "{i}Eh Ris, mau tanya itu yang pengisian KRS memang enggak ada tombol save kah?{/i}"
 
             "Setelah mengirimkan chat itu, belum sampai kamu meletakan kembali HPmu di meja, indikator chat sudah berubah menjadi warna biru."
 
             "Tidak lama kemudian chat balasan dari Rissa muncul di layar Hpmu."
 
-            r "{i}Pasti belum baca di grup yaa hahahaha{/i}"
+            r normal2"{i}Pasti belum baca di grup yaa hahahaha{/i}"
 
             mc "{i}Di grup? Emang ada ya?{/i}"
 
@@ -462,7 +483,7 @@ label kos_krs4:
 
     "Mematikan laptop, kamu bersandar di tembok pojok tempat tidurmu sambil bermain game yang ada di hpmu."
 
-    mc "Sudah selesai pengisian KRS jadi kerasa tenang begini."
+    mc normal jacket "Sudah selesai pengisian KRS jadi kerasa tenang begini."
     
     mc "Aman juga sih, tadi enggak banyak masalah selama KRSan."
 
@@ -478,13 +499,15 @@ label kos_krs4:
 
     return
 
-
-
 label kos_krs4_night:
+
+    pause 1.4
 
     call change_timephase
 
-    call screen trans_screen
+    $ placeKeys = 3 
+
+    call screen trans_screen with dissolve
 
     scene bg kos night with dissolve
 
@@ -504,23 +527,28 @@ label kos_krs4_night:
 
     "Mendengar suara notfikasi pesan masuk, kamu mengambil HPmu yang kamu letakan di sebelah laptop."
 
-    "{i}Teman-teman untuk KRSnya kata Pak Andy sudah di approve yaa!{/i}"
+    show phone groupchat:
+        xalign 0.5
+        yalign 0.5
+    with dissolve
 
-    "{i}Coba cek punya kalian masing-masing ya!{/i}"
+    r normal2"{i}Teman-teman untuk KRSnya kata Pak Andy sudah di approve yaa!{/i}"
 
-    "{i}Caranya : Masuk Simaster => Akademik Kemahasiswaan => Akademik => Rencana Studi{/i}"
+    r "{i}Coba cek punya kalian masing-masing ya!{/i}"
 
-    "{i}Nanti di kolom approval, dicek sudah di approve belum yaa.{/i}"
+    r "{i}Caranya : Masuk Simaster => Akademik Kemahasiswaan => Akademik => Rencana Studi{/i}"
+
+    r "{i}Nanti di kolom approval, dicek sudah di approve belum yaa.{/i}"
 
     "Seperti biasanya, Rissa sebagai {i}tokoh penting{/i} dalam kelas mengirim chat informasi di grup Lane." 
     
     "Kemudian satu persatu teman-temanmu menanggapi apa yang di kirim oleh Rissa."
 
-    "{i}Clear punyaku.{/i}"
+    t "{i}Clear punyaku.{/i}"
 
-    "{i}Punyaku sudah hijau semuaa.{/i}"
+    t "{i}Punyaku sudah hijau semuaa.{/i}"
 
-    "{i}Sipp sudah di approve.{/i}"
+    t "{i}Sipp sudah di approve.{/i}"
 
     "Melihat apa yang dikirim Rissa, kamu juga ikut mengecek apakah KRSmu sudah di setujui atau belum."
 
@@ -616,6 +644,8 @@ label kos_krs4_night:
 
     "DAY 4 END"
 
+    jump day5
+
     return
 
 #Common Day Case
@@ -695,7 +725,6 @@ label kos_dayS1:
         jump kos_krs4_night
 
     else:
-
         call screen mapUI
     return
 

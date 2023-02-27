@@ -1,7 +1,7 @@
 
 label first_kampung:
 
-    $ first_kampung = False
+    $ firstKampung = False
 
 
     scene bg town street 2 with Dissolve(2.0)
@@ -137,9 +137,11 @@ label first_kampung:
 
 label first_kota:
 
-    call screen trans_screen
+    call change_timephase
 
-    scene kos depan with dissolve
+    call screen trans_screen with dissolve
+
+    scene bg town street 1 with dissolve
 
     "Pada siang harinya, kamu memutuskan untuk pergi berkeliling area sekitar untuk mengisi waktu luangmu."
 
@@ -151,7 +153,7 @@ label first_kota:
     
     "Langit biru dihiasi awan Cirrocumulus dengan sinar matahari yang bersinar terik terlihat ketika kamu menengok ke atas."
 
-    scene town street 2 with dissolve
+    scene bg town street 3 with dissolve
     
     mc normal jacket "Cuaca cerah seperti ini, memang cocok buat jalan-jalan."
 

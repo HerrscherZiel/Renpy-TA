@@ -10,13 +10,13 @@
 define r = Character("Rissa", image="r")
 # define mc = Character("Mc", image="mc") 
 define mc = Character("You", image="mc")
-define w = Character("Warga", image="w")
+define w = Character("Warga", image="anonM")
 define pa = Character("Pak Andy", image="pa")
-define aa1 = Character("Aa'", image="aa")
-define kev = Character("Kevin'", image="kev")
-define t = "Teman"
-define stall = Character("Stall", image="stl")
-define siapa = "Siapa"
+define aa1 = Character("Aa'", image="anonM")
+define kev = Character("Kevin", image="anonM")
+define t = Character("Teman", image="anonM")
+define stall = Character("Stall", image="anonM")
+define siapa = "Suara"
 
 #nvl
 define n = nvl_narrator
@@ -846,7 +846,7 @@ label day3:
 
     "Selagi asik memilih menu, kamu melihat salah satu menu yang belum pernah kamu lihat sebelumnya."
     
-    "Menu tersebut yaitu mie dog dog."
+    "Menu tersebut yaitu mie dok dok."
 
     mc normal jacket "Mas mie dok-dok itu gimana ya?"
 
@@ -924,7 +924,7 @@ label day3:
     else:
         $prologueCount += 1
         $KRS4 = True
-        call screen mapUI
+        call screen mapUI with dissolve
 
     return
 
@@ -935,13 +935,13 @@ label day4:
 
     pause 2.0
 
-    show day3 pro:
+    show day4 pro:
         xalign 0.5 yalign 0.5
     with dissolve
 
     pause 2.0
 
-    hide day3 pro with dissolve
+    hide day4 pro with dissolve
 
     call screen trans_screen with dissolve
 
@@ -963,13 +963,13 @@ label day4:
 
     "Ngtttttttt"
 
-    "HPmu bergetar selama beberapa detik sebelum pada suara ringtone alarm mengeluarkan bunyi yang membuatmu terbangun dari tidur."
+    "HPmu bergetar selama beberapa detik sebelum mengeluarkan suara ringtone alarm mengeluarkan bunyi yang membuatmu terbangun dari tidur."
 
     mc normal jacket "Hmmhhh..."
 
-    "Membuka mata kamu memaksama badanmu bangun dan berada dalam posisi duduk."
+    "Membuka mata, kamu memaksa badanmu untuk bangun dan duduk di pinggir tempat tidurmu."
 
-    "Meraba-raba disekitar tempat tidurmu, kamu mencari hp yang masih terus mengeluarkan suara." 
+    "Meraba-raba disekitar tempat tidurmu, mencari HPmu yang masih terus mengeluarkan suara." 
     
     "Kamu mengambilnya kemudian menggeser layar HP ke atas untuk menghentikan alarm yang aktif."
 
@@ -981,21 +981,21 @@ label day4:
     
     "Berjalan sembari mengusap-usap mukamu, kamu menengok ke arah kamar-kamar kos yang ada disekitar."
 
-    mc "Emang yang punya kamar belum dateng, apa kosong sih itu kamar? Perasaan pas mau ambil ini kos ibu kos cuma bilang 1 kamar aja yang kosong."
+    mc "Emang yang punya kamar belum dateng ya, apa kosong sih itu kamar? Perasaan waktu mau ambil ini kos ibu kos cuma bilang 1 kamar aja yang kosong."
 
     "Kamu masih melihat terdapat satu kamar yang masih terkunci rapat dan belum ada tanda penghuni yang menempatinya."
 
-    "Sampai di kamar mandi, kamu melakukan kebiasan pagi harimu."
+    "Sampai di kamar mandi, seperti biasa kamu melakukan kebiasan pagi harimu."
 
-    "Setelah menyelsaikan kegiatan di kamar mandi, kamu berjalan kembali menuju kamar."
+    "Setelah menyelesaikan kegiatan di kamar mandi, kamu kembali menuju kamarmu."
     
-    "Ketika berjalan, terdengar suara mesin motor yang mendekati bangunan kosmu."
+    "Ketika berjalan, terdengar suara mesin motor yang mendekati bangunan kos."
 
-    "Pengemudi motor itu berhenti tepat di depan pintu gerbang masuk ke dalam kos."
+    "Suara motor itu berhenti tepat di depan pintu gerbang masuk ke dalam kos."
 
     "Srekkkkkkkk"
 
-    "Tak lama setelah pintu gerbang dibuka, pengemudi motor itu masuk mendorong motornya."
+    "Tak lama kemudian gerbang masuk kos dibuka, setelah pintu gerbang dibuka, pengemudi motor itu masuk mendorong motornya."
 
     "Menengok ke arahmu, kalian berdua saling bertatap muka."
 
@@ -1021,6 +1021,11 @@ label day4:
 
     if KRS3 == True:
 
+        "Selesai membaca dan mencari informasi yang ada di group chat, kamu mengeklik icon aplikasi sosial media lain yang ada di hpmu."
+
+
+    else :
+
         "Belum melakukan KRS, kamu membaca satu persatu pertanyaan mengenai proses pengisian KRS itu."
         
         "Membaca satu persatu pertanyaan dan jawaban dari Rissa dengan teliti." 
@@ -1028,10 +1033,6 @@ label day4:
         "Setelah memahami informasi tambahan mengenai pengisian KRS tersebut, kamu kemudian mencatat langkah-langkah penting pada kertas note."
 
         "Selesai mencatat informasi yang ada di group chat, kamu menutup aplikasi Lane lalu mengeklik icon aplikasi sosial media lain yang ada di HPmu."
-
-    else :
-
-        "Selesai membaca dan mencari informasi yang ada di group chat, kamu mengeklik icon aplikasi sosial media lain yang ada di hpmu."
 
     "Kamu membuka aplikasi PhoGram dimana orang-orang dapat mengunggah foto atau video mereka ke sosial media. Kemudian pengguna lain melihat apa yang kamu unggah pada aplikasi, lali dapat berinteraksi dengan unggahan yang ada."
 
@@ -1041,13 +1042,13 @@ label day4:
 
     "GRUGRUGRUGRU"
 
-    mc "Ughhh… oh iya, sarapan-sarapan."
+    mc normal jacket "Ughhh… oh iya, sarapan-sarapan."
 
     mc "Nonton konten isinya makanan semua begini jadi keinget belum sarapan."
 
-    mc "Makan kemana ya? Kalo pesen jam segini masih sedikit."
+    mc "Makan kemana ya? Kalo pesen jam segini masih sedikit pilihannya."
 
-    "Kamu sempat memikirkan untuk mengorder makanan. Namun pilihan makanan yang ada ketika pagi hari kamu rasa kurang banyak, sehingga kamu mengurung niatmu."
+    "Kamu sempat memikirkan untuk mengorder makanan. Namun pilihan makanan yang ada ketika pagi hari kamu rasa kurang banyak, sehingga kamu mengurungkan niatmu."
 
     "Jam digital yang ada pada HPmu masih menunjukkan pukul 8.30."
 
@@ -1055,7 +1056,7 @@ label day4:
 
     "Pada akhirnya kamu memutuskan untuk sarapan di warmindo yang ada di dekat kosan."
 
-    "Memutuskan untuk pergi sarapan di warmindo yang ada di dekat tempat kosmu, kamu beranjak dari tempat tidurmu dan berjalan menuju warmindo."
+    "Memutuskan untuk pergi sarapan di warmindo yang ada di dekat kos, kamu beranjak dari tempat tidurmu dan berjalan menuju warmindo."
 
     "Tokk tokk tokk"
 
@@ -1089,7 +1090,7 @@ label day4:
 
     kev "Kalau gitu yaudah mas, tak bagiin ke yang lain juga ya."
 
-    mc "Oke mas, makasih ya ini makanannya."
+    mc "Oke mas, makasih ya ini."
 
     kev "Iya mas, sama-sama."
 
@@ -1131,9 +1132,7 @@ label day5:
 
     call change_day
 
-    call trans_screen
-
-    
+    call screen trans_screen with dissolve
 
     "persiapan pagi"
 

@@ -1,11 +1,11 @@
 
 #day
 
-label olahraga_dayS1:
+label sport_dayS1:
 
     call screen trans_screen
 
-    scene bg kos with dissolve
+    scene bg kos morn with dissolve
 
     "Merasakan tubuhmu yang sudah mulai pegal dan kaku, kamu berencana untuk melakukan olahraga untuk kembali menyegarkan tubuhmu."
 
@@ -18,6 +18,8 @@ label olahraga_dayS1:
     "Tidak lupa juga membawa botol minuman yang sebelumnya telah  diisi dengan air mineral."
 
     "Setelah siap, kamu keluar dari kamar kos kemudian duduk di teras depan kamar kos untuk memakai sepatu olahraga."
+
+    scene bg town street 1 with dissolve
 
     "Selesai mengenakan sepatu olahraga, kamu tidak langsung memulai jogging namun melakukan pemanasan terlebih dahulu."
 
@@ -49,7 +51,7 @@ label olahraga_dayS1:
 
     "Tidak lama kemudian, dengan keringat yang bercucur deras dari dalam tubuhmu. Kamu mulai merasakan rasa haus dalam setiap langkahmu."
 
-    mc "Huhhh huhhhh huhhh huhhhh huhhhh"
+    mc normal jacket "Huhhh huhhhh huhhh huhhhh huhhhh"
 
     mc "Kurang olahraga staminaku jadi kurang begini…."
 
@@ -64,3 +66,11 @@ label olahraga_dayS1:
     "Hal pertama yang kamu lakukan setelah sampai di kosmu adalah melakukan pendinginan, sebelum kembali beristirahat hingga keringat selesai bercucuran dari dalam tubuhmu. "
 
     "Setelah itu kamu mandi untuk membersihkan tubuh dan menyudahi aktivitas di siang harimu."
+
+    if day == 4:
+
+        jump kos_krs4_night
+    
+    else:
+
+        call screen mapUI

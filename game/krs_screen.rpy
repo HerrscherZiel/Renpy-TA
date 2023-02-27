@@ -311,11 +311,20 @@ screen isi_krs:
             action ShowMenu("kode_matkul")
 
         if matkulcount > 7:
-            imagebutton:
-                xalign 0.0
-                yalign 1.0 
-                idle "trans/layer.png"
-                action Jump('fin_krs')  
+
+            if day < 4:
+                imagebutton:
+                    xalign 0.0
+                    yalign 1.0 
+                    idle "trans/layer.png"
+                    action Jump('fin_krs')
+            
+            else:
+                imagebutton:
+                    xalign 0.0
+                    yalign 1.0 
+                    idle "trans/layer.png"
+                    action Return()
         else:
             pass
 

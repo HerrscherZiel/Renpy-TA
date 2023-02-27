@@ -1,4 +1,4 @@
-
+#prologue fist mart
 label minimart_pertama:
 
     $ firstMart = False
@@ -183,10 +183,10 @@ label minimart_pertama:
     call screen mapUI with dissolve
 
     return
+#prologue 3rd day noon
+label mini3N:
 
-label mini2S:
-
-    scene bg minimart_in
+    scene bg minimart_in with fade
 
     mc normal jacket "Hahhh… bisa segar begini di dalem, diluar panasnya gak masuk akal gilaaa."
 
@@ -200,7 +200,7 @@ label mini2S:
 
     "Oleh karena itu, hal yang pertama kali kamu lakukan di dalam minimart adalah mencari tempat untuk mendinginkan tubuh dan beristirahat."
 
-    "Tidak perlu jauh-jauh berjalan, kamu menenemukan beberapa tempat duduk umum yang berada di sektor foodcourt di dalam minimart."
+    "Tidak perlu jauh-jauh berjalan, kamu menenemukan beberapa tempat duduk umum yang berada di sektor foodcourt di area minimart."
 
     "Meskipun disebut dengan mini-mart, ketika masuk ke dalam bangunannya akan terasa seperti mini-mall."
 
@@ -218,7 +218,7 @@ label mini2S:
 
     "Berada di depan stand minuman tersebut kamu tidak menemui satu orang pun yang berada di dalam stand."
 
-    mc "Hmm lagi isoma mungkin kali ya?"
+    mc normal jacket"Hmm lagi isoma mungkin kali ya?"
 
     "Kamu mendekati papan menu yang ada di bagian samping stand untuk melihat minuman yang dijual."
 
@@ -238,7 +238,7 @@ label mini2S:
 
     mc "Boleh itu, pesen kopinya satu berarti."
 
-    stall "Tapi ada syaratnya kak, harus follow EG nya duluu.. setelah buat story dan tag akun EG kami kak."
+    stall "Tapi ada syaratnya kak, harus follow PhoGram nya duluu.. setelah buat story dan tag akun PhoGram kami kak."
 
     mc "Oh begitu, EG nya yang ada disini ya kan kak?"
 
@@ -260,7 +260,7 @@ label mini2S:
 
     mc "Oh enggak apa kok."
 
-    mc "Ini lagi musimnya panas kaya begini, atau memang biasanya kaya gini disini?"
+    mc "Ngomong-ngomong ini memang lagi musimnya panas kaya begini, atau memang begini kalau disini ya kak?"
 
     stall "Ya lagi musimnya kalau sekarang, biasanya siang panas-panas begini nanti sore atau malemnya bakalan hujan."
 
@@ -274,9 +274,13 @@ label mini2S:
 
     stall "Wah mahasiswa baru dong, jurusan apa kak?"
 
-    mc "Program Studi D4 Teknologi Rekayasa Perangkat Lunak, ya intinya komputer begitu kak."
+    mc "Program Studi D4 Teknologi Rekayasa Perangkat Lunak."
 
-    stall "Sering-sering mampir sini kak, dekat kan kampusnya."
+    stall "Itu mempelajari apa kak jurusannya?"
+
+    mc "Macem-macem sih kak, teknologi begitu, ya gampangnya komputer begitu kak."
+
+    stall "Ohhh kaya Ilmu Komputer begitu ya... Sering-sering mampir sini kak, dekat kan kampusnya."
 
     mc "Hahaha siap."
 
@@ -306,13 +310,13 @@ label mini2S:
 
     mc "Siang-siang begini selesain daily quest lumayan lah."
 
-    scene bg foodcout with fade
+    scene bg foodcourt with fade
 
     "Seru dalam duniamu sendiri, tak sadar satu cup kopi yang kamu beli sudah habis."
 
     "Indikator baterai dari HPmu juga sudah berubah menjadi warna merah. Kamu menutup permainan dan memasukan HPmu ke dalam saku."
 
-    mc "niat mau beli minum sebentar malah jadi nongkrong lama begini huhhhhh."
+    mc normal jacket "Niatnya cuma mau beli minum sebentar malah jadi nongkrong lama begini huhhhhh."
     
     "Kamu menyesal menghabiskan waktumu terlalu lama di minimart. Sekarang jam sudah menunjukan pukul 4 Sore, dan dirimu hanya menghabiskan waktu siangmu berada di minimart."
     
@@ -329,8 +333,7 @@ label mini2S:
     jump kos_krs3
 
     return
-
-
+#mart normal scenario picker
 label mart_scene_pick:
 
     # return a random integer between 1 and 20
@@ -371,8 +374,6 @@ label mart_mornS3:
     "mart morn 3"
 
 label mart_dayS1:
-
-    call screen trans_screen
 
     scene bg minimart_out with dissolve
 
@@ -453,6 +454,8 @@ label mart_dayS1:
     "Membawa satu bungkus kopi yang kamu dapat dari promo, kamu keluar dari minimart dan mengendarai motor ke kos."
 
     call drink
+
+    window hide
 
     jump kos_krs4_night
 

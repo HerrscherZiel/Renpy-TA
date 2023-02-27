@@ -104,7 +104,7 @@ label persiapan_krs:
 
 label krs:
 
-    scene bg perpustakaan with fade
+    scene bg perpus out with fade
 
     "Setelah melewati jalur yang sudah kamu tentukan sebelumnya dari gmaps." 
     
@@ -125,29 +125,29 @@ label krs:
         yalign 0.4
     with dissolve
 
-    "{i}Udah sampai nih, aku di depan sama si X,Y,Z.{/i}"
+    t "{i}Udah sampai nih, aku udah sampai di depan sama yang lain.{/i}"
 
-    "{i}Ohh oke sebentar aku hampir sampai.{/i}"
+    t "{i}Ohh oke sebentar aku sudah hampir sampai.{/i}"
 
-    "{i}Bentar masih dijalan aku.{/i}"
+    t "{i}Tunngguin ya! Masih dijalan aku.{/i}"
 
-    "{i}Nanti ditunggu di tempat duduk depan gedungnya yaa…{/i}"
+    t "{i}Nanti ditunggu di tempat duduk depan gedung perpustakaannya yaa…{/i}"
 
-    "{i}Okee…{/i}"
+    t "{i}Okee…{/i}"
 
-    "{i}Nihh si L udah dateng, yang belum yukk{/i}"
+    t "{i}Nihh si L udah dateng, yang belum yukk{/i}"
 
     hide phone groupchat
 
-    mc normal jacket "{i}Ohh jadi memang itu mereka yang kumpul.{/i}"
+    mc normal jacket "{i}Ohh jadi memang itu mereka yang sedang berkumpul.{/i}"
 
     "Setelah memastikan kerumunan orang yang berada di depanmu merupakan teman kelasmu, kamu berjalan mendekati mereka."
 
-    "Ketika sudah cukup dekat dengan mereka, saat ingin menyapa temanmu tiba-tiba ada seseorang yang berlari ke arah mereka dari dalam gedung perpustakaan."
+    "Ketika sudah cukup dekat dengan mereka, saat ingin menyapa temanmu tiba-tiba terdapat seseorang yang berlari keluar dari dalam gedung perpustakaan menghampiri mereka."
     
-    r normal2 "Eh ayoo, masuk sekarang aja temen-temen." 
+    r normal2 "Teman-teman masuk sekarang aja ya." 
     
-    t "Gimana Riss? Ada tempat kosong kah di dalam?"
+    t "Gimana Riss? Ada tempat kosong kah di dalam kah?"
 
     r "Iyaa tapi di lantai atas, nanti masuk terus naik ke lantai 3 ya."
 
@@ -159,9 +159,11 @@ label krs:
     
     t "Yukk naik yukk"
 
-    t "Pakai elevator yuk capek aku kalau naik tangga."
+    t "Pakai elevator aja nanti naiknya ya, capek aku kalau naik tangga."
 
     t "Ngikut dahh"
+
+    "Kemudian teman-temanmu bergegas masuk ke dalam bangunan."
 
     "Tidak lama kemudian hanya kamu dan Rissa yang masih ada di depan gedung perpustakaan."
 
@@ -169,11 +171,13 @@ label krs:
 
     "Menyadari adanya dirimu, Rissa berjalan mendekatimu."
 
-    mc "Baru aja sampai aku." 
-    
-    mc "Enggak sekalian naik kita Ris?"
+    mc "Baru aja sampai sini aku." 
 
-    r "Aku nunggu disini dulu, nunggu kalau ada yang datang lagi nanti. Takutnya dikira enggak jadi kalau udah enggak ada yang kelihatan disini."
+    "Menengok ke arah dalam bangunan, kemudian kamu berkata."
+    
+    mc "Kita enggak sekalian naik aja Ris?"
+
+    r "Aku masih nunggu disini dulu, nunggu kalau ada anak kelas yang datang lagi nanti. Takutnya dikira enggak jadi kalau udah enggak ada yang kelihatan disini."
 
     "Melirik sepintas ke arah jam digital pada HPmu."
 
@@ -188,17 +192,17 @@ label krs:
         "Ikut menunggu bersama Rissa":
             $rissa_fond += 10
 
-            mc "Kalau begitu aku juga ikut nunggu luar saja lah, sambil cari angin juga hehehe."
+            mc "Kalau begitu aku juga ikut nunggu diluar saja lah, sambil cari angin juga hehehe."
 
             r "Bener? Gapapa kok kalau mau masuk duluan [name]."
 
-            mc "Iya mau lihat-lihat suasana di luar gedung seperti apa kok."
+            mc "Gak apa, mau lihat-lihat suasana di sekitar sini aku."
 
             r "Yaudah, tapi kalau mau masuk duluan, tinggal masuk aja oke?"
 
             mc "Siap, Oke-oke!"
 
-            scene bg perpustakaan with fade
+            scene bg perpus out with fade
 
             "Setelah percakapan barusan, kalian berdua hanya terduduk diam di bangku umum depan gedung perpustakaan."
 
@@ -208,31 +212,31 @@ label krs:
 
             "Sementara Rissa asik bermain dengan HP yang sedang ia pegang."
 
-            "Merasa canggung, karena tidak ada percakapan yang terjadi. Dirimu mencoba membuka percakapan."
+            "Merasa canggung, karena tidak ada percakapan yang terjadi. Kamu mencoba membuka percakapan."
 
-            mc normal jacket"Oh iya Ris, usernamemu di Lane itu yang Rossaine itu kan ya?"
+            mc normal jacket "Oh iya Ris, usernamemu di Lane itu yang Rossaine itu kan ya?"
 
-            r normal2"Iya, nama panjangku itu, agak aneh ya? Hehe"
+            r normal2 "Iya, nama panjangku itu, kenapa emang? Hehe"
 
             mc "Engga sih, cuma bingung aja awalnya aku, ku kira tadinya orang lain."
 
-            r "Ahhh… iya nama panjangku Clarissa Rossaine, dari dulu panggilanku Rossa, sekarang mau ganti panggilan saja hehehe."
+            r "Ahhh… iya nama panjangku Clarissa Rossaine, dari dulu aku sering dipanggil Rossa, entah kenapa kuliah ini pengin ganti panggilan aja hehehe."
 
             r "Makanya waktu kenalan kemarin aku nyebut namaku Rissa, begituuu..."
 
-            mc "Rossa? Kayaknya ada yang pernah manggil kamu begitu di grup ya?"
+            mc "Ohhhh.... Rossa? Kayaknya ada yang pernah manggil kamu begitu di grup ya?"
 
             r "Iya, itu temen SMAku dulu, kebetulan masuk satu jurusan juga."
 
             mc "Hoo…"
 
-            "Setelah itu, kalian mulai mengobrol mengenai hal-hal lain yang terpintas di pikiran kalian."
+            "Setelah percakapan yang kamu buka itu, kalian mulai mengobrol mengenai hal-hal lain yang terpintas di pikiran kalian."
 
-            "Selama 10 menit kamu berbincang dengan Rissa, tidak ada satupun temanmu yang lain yang datang ke gedung perpustakaan."
+            "Selama 10 menit kamu berbincang dengan Rissa sembari menunggu temanmu yang lain datang, namun tidak ada satupun temanmu yang datang ke gedung perpustakaan."
 
             "Kalian berdua kemudian memutuskan untuk masuk ke dalam gedung perpustakaan." 
             
-            "Naik ke tempat teman-temanmu yang lain yang sudah terlebih dahulu memasuki gedung perpustakaan."
+            "Naik menyusul dimana tempat teman-temanmu yang lain yang sudah terlebih dahulu memasuki gedung perpustakaan."
             
             "Sesampainya di lantai 3, kalian berdua melihat teman-teman kelasmu sudah menempati bagian kiri gedung."
             
@@ -245,29 +249,33 @@ label krs:
 
             mc "Kalau begitu aku naik duluan ya Riss."
 
-            r "Okeyy bilangin ke temen-temen yang lain aku masih nunggu yang belum dateng di bawah ya.."
+            r "Okeyy nanti bilangin ke temen-temen yang lain ya, aku masih mau nunggu yang belum dateng dulu."
 
             mc "Siap, nanti ku bilangin ke temen-temen."
 
-            "Kemudian kamu berjalan masuk ke dalam gedung perpustakaan. Memasuki gedung, kamu melihat banyak mahasiswa lain yang sedang berada di dalam."
+            scene bg perpus_in with fade
+
+            "Meninggalkan Rissa, kamu berjalan masuk ke dalam gedung perpustakaan. Memasuki gedung, kamu melihat banyak mahasiswa lain yang sedang berada di dalam."
 
             "Kamu menengok ke atas dan melihat gedung perpustakaan dimana sekarang kamu sedang berada memiliki, sekitar 5 lantai atau lebih."
 
-            "Terdapat tangga melingkar menuju lantai berikutnya." 
+            "Terdapat tangga melingkar menuju lantai yang berada diatasnya." 
             
-            "Sepasang elevator juga ditempatkan untuk dapat digunakan untuk naik ke lantai atas."
+            "Sepasang elevator juga ditempatkan untuk dapat digunakan menuju lantai atas."
 
-            "Kamu memutuskan untuk:"
+            "Mengetahui terdapat dua cara untuk menuju lantai atas, kamu lebih memilih untuk:"
 
             menu:
 
                 "Naik menggunakan elevator":
 
-                    mc "Pakai elevator sajalah, bakal capek ke lantai 3 kalau naik tangga."
+                    mc normal jacket "Pakai elevator sajalah, bakal capek ke lantai 3 kalau naik tangga."
+
+                    "Berjalan mendekat, kemudian kamu menekan tombol untuk menaiki elevator."
 
                     "Znnnnnnn"
 
-                    "Setelah pintu elevator terbuka kamu segera masuk kedalamnya."
+                    "Tidak menunggu lama, pintu elevator terbuka dan kamu segera masuk kedalamnya."
 
                     "Di dalam kamu menekan tombol untuk naik ke lantai 3."
 
@@ -280,11 +288,13 @@ label krs:
 
                 "Naik melewati tangga":
 
-                    mc "Mungkin lewat tangga saja kali ya?"
+                    mc normal jacket "Mungkin lewat tangga saja kali ya?"
 
                     mc "Sudah lama enggak olahraga, itung-itung olahraga ringan hehehe."
 
                     "Memutuskan untuk naik melewati tangga, kamu mulai mengangkat kakimu menaikai anak tangga yang ada."
+
+                    "Kamu menaiki satu persatu anak tangga untuk menuju lantai atas."
 
                     "Huhhh Huhhh Huhhh"
 
@@ -302,13 +312,15 @@ label krs:
 
                     pause 2.0
 
-            scene bg perpustakaan with fade
+            scene bg perpus_in with fade
                 
             "Sesampainya di lantai 3, terlihat teman-temanmu sudah duduk berkelompok menempati meja-meja yang ada." 
             
             "Hanya tersisa satu meja kosong yang berada paling dekat dengan jendela."
 
             "Tanpa pikir panjang kamu duduk dan membuka HPmu untuk menghabiskan waktu sampai Rissa dan temanmu yang lain menyusul."
+
+            "Sebelum kamu duduk, tidak lupa kamu menyampaikan pesan titipan dari Rissa."
 
             "........."
 
@@ -320,21 +332,21 @@ label krs:
 
             "Tidak ada satu orang pun yang datang bersama Rissa, berarti tidak ada temanmu yang lain yang datang ke perpustakaan. Kecuali mereka yang sudah datang sebelum dirimu."
 
-            "Melihat meja lain sudah digunakan oleh teman-temanmu lain, Rissa berjalan mendekatimu."
+            "Melihat meja lain sudah penuh ditempati oleh teman-temanmu yang lain, Rissa berjalan mendekatimu."
 
-            r normal2"Aku duduk sini yaa, kosong kan?"
+            r normal2 "Aku duduk sini yaa, kosong kan?"
 
-            mc normal jacket "Iya kosong kok."
+            mc normal jacket "Iya kosong kok, duduk aja."
 
             "Rissa duduk disebelahmu dan langsung mengeluarkan laptopnya."
 
-    scene bg perpustakaan with fade
+    scene bg perpus_in with fade
 
     "Setelah semuanya siap untuk melakukan pengisian KRS, Rissa memimpin semua orang dalam pengisian KRS dengan memberikan arahan."
 
     r normal2 "Teman-teman cara buka sampai ke halaman pengisian KRS sudah pada tahu kan ya?"
 
-    "Rissa menanyakan kepada teman kelasmu yang sudah siap dengan laptop mereka masing-masing."
+    "Rissa menanyakan kepada teman kelasmu yang sudah siap dengan laptop mereka masing-masing. Satu persatu temanmu menanggapi pertanyaan Rissa."
 
     t "Sudahh"
 
@@ -356,19 +368,19 @@ label krs:
 
     "Melihat temanmu yang lain mulai mencoba melakukan pengisian KRS, kamu ikut mengeluarkan laptop dari dalam tas."
 
-    mc normal jacket"Kamu udah coba-coba kah Riss?"
+    mc normal jacket "Kamu udah coba-coba kah Riss?"
 
     r "Ohh, belum aku, ya cuma lihat-lihat aja belum sampai milih. Kamu gimana udah nyoba?"
 
     mc "Sama juga, cuma sampai yang milih periode pengisian krs itu."
 
-    r "Coba kamu cobain sekarang, sekalian aku ketik di group chat arahan ke temen-temen, aku sedikit lupa."
+    r "Coba kamu cobain sekarang, sekalian aku ketik di group chat panduannya ke temen-temen, aku sedikit lupa."
 
     mc "Oh oke-oke…"
 
     "Rissa memintamu untuk mempraktikkan cara mengakses sampai halaman pengisian KRS. "
     
-    "Setelah laptopmu selesai dari keadaan Booting, kamu membuka browser kemudian kamu mencoba mempraktikkannya:"
+    "Setelah laptopmu selesai dari melakukan Booting, kamu membuka browser kemudian kamu mencoba mempraktikkannya:"
 
     r "Langkah pertama:"
 
@@ -520,11 +532,13 @@ label krs:
 
 label fin_krs: 
 
-    scene bg black with fade
+    hide screen kod_matkul_btn
 
-    mc normal jacket"Sudah semua kan ini? Apa aku masih ada yang kurang?"
+    scene bg perpus_in with fade
 
-    r normal2"Coba kamu hitung, apakah benar sudah ada 8 mata kuliah?"
+    mc normal jacket "Sudah semua kan ini? Apa aku masih ada yang kurang?"
+
+    r normal2 "Coba kamu hitung, apakah benar sudah ada 8 mata kuliah?"
 
     mc "Sebentar-sebentar aku teliti lagi..."
 
@@ -534,11 +548,11 @@ label fin_krs:
 
     r "Coba kulihat dulu."
 
-    "Rissa berdiri dan meneliti apa yang kamu pilih."
+    "Rissa mendekatimu dan menatap layar laptop untuk mengecek ulang apa yang kamu pilih."
 
     r "Harusnya sih sudah, sudah 24 SKS juga itu tulisannya."
 
-    mc "Oke-oke kalau gitu."
+    mc "Oke-oke kalau begitu."
 
     mc "Ini emang enggak ada tombol simpannya ya kalau sudah selesai?"
 
@@ -548,29 +562,31 @@ label fin_krs:
 
     r "Oke, oke tunggu bentar ya.."
 
+    scene bg perpus_in with fade
+
     "Kemudian semua menunggu jawaban dari Pak Andy mengenai penyimpanan pengisian KRS."
 
     "Tak berselang lama, Rissa mendapatkan balasan dari Pak Andy."
 
-    r "Eh ini Pak Andy sudah bales chatnya, ku foward ke grup chat Lane aja ya."
+    r normal2 "Eh ini Pak Andy sudah bales chatnya, ku foward ke grup chat Lane aja ya."
 
     "Tuingg"
 
     "Kamu membuka notifikasi yang ada di HPmu"
 
-    "{i}Jadi kalau sudah memilih mata kulaih dan sudah memilih captcha itu sudah otomatis kesimpan.{/i}"
+    pa normal"{i}Jadi kalau sudah memilih mata kulaih dan sudah memilih captcha itu sudah otomatis kesimpan.{/i}"
 
-    "{i}Kalau mau dibatalin, pilih opsi batal di pilihannya.{/i}"
+    pa "{i}Kalau mau dibatalin, pilih opsi batal di pilihannya.{/i}"
 
-    "{i}Kalau tidak ada pilihan kelas karena kelas penuh bisa bilang ke bagian akademik, nanti akan ditambah kelas baru.{/i}"
+    pa "{i}Kalau tidak ada pilihan kelas karena kelas penuh bisa bilang ke bagian akademik, nanti akan ditambah kelas baru.{/i}"
 
-    "{i}Kalau sudah memilih memilih semua, nanti tinggal tunggu DPA menyetujui saja.{/i}"
+    pa "{i}Kalau sudah memilih memilih semua, nanti tinggal tunggu DPA menyetujui saja.{/i}"
 
     r "Jadi begitu temen-temen, kalau sudah semua ngisi KRSnya nanti kubilangin ke Pak Andy lagi, kalau ada yang kesusahan tanya aja ya, selagi masih pada disini."
 
     "Rissa berbicara ke seluruh teman sekelas yang sedang mengisi KRS"
 
-    mc "Ini sudah begini aja kan Riss?"
+    mc normal jacket "Ini sudah begini aja kan Riss?"
 
     r "Iya, begitu aja tinggal nunggu disetujuin saja sama DPA punyamu KRSnya."
 
@@ -581,8 +597,6 @@ label fin_krs:
     "Setelah kamu selesai dengan Pengisian KRS, kamu meminjamkan laptopmu kepada Rissa."
 
     "Kini giliran dirimu membantu Rissa untuk mengisi KRSnya."
-
-    scene bg perpustakaan with fade
 
     "Tidak banyak masalah selama proses pengisian KRS." 
     
@@ -597,6 +611,8 @@ label fin_krs:
     "Selesai mengisi KRS, semua orang berbincang dan mengakrabkan diri lebih lanjut satu sama lain." 
     
     "Kamu ikut menghabiskan waktu bersama teman barumu."
+
+    scene bg perpus_in with fade
 
     t "Wah sudah jam 2 aja, perasaan tadi kita selesai ngisi jam 12an."
 
@@ -616,25 +632,25 @@ label fin_krs:
 
     "Selesai mengobrol dengan teman sekelas, Rissa berjalan kembali ke arahmu."
 
-    r normal2"Begitu katanya, kamu langsung pulang juga [name]?"
+    r normal2 "Begitu katanya, kamu mau langsung pulang juga [name]?"
 
     "Menyambung obrolan teman-teman mengenai hujan, Rissa menanyakannya kepadamu."
 
-    mc normal jacket"Kalau begitu sih mending pulang langsung aku."
+    mc normal jacket "Hmmm.. iya, aku langsung pulang juga, kalaupun nanti enggak hujan males kalau panas-panas begini."
 
-    r "Hmmm, kalau begitu aku juga langsung pulang juga."
+    r "Iya juga sih.... kalau begitu aku juga langsung pulang juga."
 
-    r "Yaudah aku tutup dulu kali ya?"
+    r "Yaudah aku tutup dulu kali ya teman-teman?"
 
-    "Rissa kembali berdiri, meminta perhatian kemudian mulai berbicara."
+    "Rissa kembali berdiri, menarik perhatian teman-teman disekitarmu kemudian mulai berbicara."
 
-    r "Oke temen-temen, makasih ya sudah dateng kesini, sudah kumpul sama KRSan bareng. Berhubung sudah semakin siang, kalau mau pulang dipersilahkan. Hati-hati di jalan jangan lupa!"
+    r "Oke temen-temen, makasih ya sudah dateng kesini, sudah kumpul sama KRSan bareng. Berhubung sudah semakin siang, kalau mau pulang dipersilahkan. Hati-hati di jalan dan sampai ketemu lagi!"
 
-    "Setelah itu satu-persatu temanmu mengemas barang-barang yang mereka bawa."
+    "Setelah itu satu-persatu temanmu mengemas barang-barang yang mereka bawa dan mulai meninggalkan perpustakaan."
 
     "Kamu juga ikut mengemas barang bawaanmu."
     
-    scene bg perpustakaan with fade
+    scene bg perpus out with fade
 
     r normal2 "Kalau begitu aku duluan ya [name], sampai ketemu esok di kelas!"
 
@@ -644,13 +660,13 @@ label fin_krs:
 
     mc "Byee"
 
-    "Setelah Rissa meninggalkanmu, kini hanya ada dirimu yang masih tersisa di lantai 3 gedung perpustakaan."
+    "Setelah Rissa meninggalkanmu, kini hanya ada dirimu yang masih tersisa di area gedung perpustakaan."
 
-    "Tidak lama kemudian dirimu juga bergegas keluar."
+    "Tidak lama kemudian dirimu juga bergegas pergi."
 
     "Sampai di luar gedung perpustakaan kamu merasakan perbedaan suhu yang sangat jelas."
     
-    "Di dalam gedung terdapat air conditioner sehingga  udara terasa sejuk, sementara setelah berada di luar kamu merasakan sengatan panas matahari."
+    "Di dalam gedung terdapat air conditioner sehingga  udara terasa sejuk, sementara setelah berada di luar kamu merasakan sengatan sinar matahari."
 
     mc "Gila, bisa beda banget begini rasanya di dalam sama di luar gedung."
 
@@ -658,7 +674,7 @@ label fin_krs:
 
     mc "Tapi kata temen-temen tadi nanti bakal hujan deras kah? Tapi masak iya, langit cerah-cerah begini."
 
-    mc "Hujan atau enggak, mending pulang ajalah panas begini."
+    mc "Hujan atau enggak, mending pulang juga sih kalau panas begini."
 
     mc "Oh iya, beli bensin sekalian makan apa ya?"
 

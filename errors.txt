@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/krs_screen.rpy", line 63: 'matkulcount' is not a keyword argument or valid child for the screen statement.
-    matkulcount+=1
-               ^
+File "game/boarding_house.rpy", line 510: expected 'comma or end of line' not found.
+    with dissolve
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Tue Feb 21 23:07:45 2023
+Fri Feb 24 00:53:49 2023

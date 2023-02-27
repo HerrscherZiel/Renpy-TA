@@ -5,7 +5,7 @@ screen mapUI:
     add "map/map.png" 
 
     if prologue == True:
-        if prologueCount == 1 or prologueCount == 5:
+        if prologueCount == 1 or prologueCount == 5 and day !=4:
             imagebutton:
                 xpos 1250
                 ypos 760
@@ -37,13 +37,46 @@ screen mapUI:
                 hover "map/kampus hover.png"
                 action Jump("go_to_campus")
 
-        elif KRS3 == True:
+        elif KRS3 == True and day !=4 :
             imagebutton:
                 xpos 900
                 ypos 450
                 idle "map/perpustakaan idle.png"
                 hover "map/perpustakaan hover.png"
-                action Jump("go_to_library") 
+                action Jump("go_to_library")
+
+        elif day == 4 :
+            imagebutton:
+                xpos 1250
+                ypos 760
+                idle "map/minimart idle.png"
+                hover "map/minimart hover.png"
+                action Jump("go_to_minimart")
+
+            imagebutton:
+                xpos 1500
+                ypos 150
+                idle "map/kampung idle.png"
+                hover "map/kampung hover.png"
+                action Jump("go_to_kampung")
+
+            imagebutton:
+                xpos 1150
+                ypos 10
+                idle "map/house idle.png"
+                hover "map/house hover.png"
+                action Jump("go_to_kos")
+
+            imagebutton:
+                xpos 1000
+                ypos 210
+                idle "map/house idle.png"
+                hover "map/house hover.png"
+                action Jump("go_do_sport")
+
+        else:
+            pass
+
     
     else:
 
@@ -147,12 +180,19 @@ label go_to_minimart:
                 window show
                 jump minimart_pertama
 
-            elif KRS4 == True:
+            elif KRS3 == False:
                 $ maps = False
                 call change_timephase
                 call screen trans_screen with dissolve              
                 window show
-                jump mini2S
+                jump mini3N
+
+            elif day == 4:
+                $ maps = False
+                call change_timephase
+                call screen trans_screen with dissolve              
+                window show
+                jump mart_dayS1
             
             else:
                 $ maps = False
@@ -180,6 +220,13 @@ label go_to_kos:
                 call screen trans_screen with dissolve
                 # window show
                 jump first_kos
+
+            elif day == 4:
+                $ maps = False
+                call change_timephase
+                call screen trans_screen with dissolve
+                # window show
+                jump kos_dayS1
             
             else:
                 $ maps = False
@@ -200,12 +247,40 @@ label go_to_kampung:
         "Pergi Jalan-jalan?":
             $ placeKeys = 4
 
-            if firstKampung == True:
+            if firstKampung == True and day != 4:
                 $ maps = False
-                # call change_timephase
+                call change_timephase
+                call screen trans_screen with dissolve
+                jump first_kampung
+
+            elif day == 4:
+                $ maps = False
+                call screen trans_screen with dissolve
+                jump first_kota
+            
+            else:
+                $ maps = False
+                call change_timephase
                 call screen trans_screen with dissolve
                 # window show
-                jump first_kampung
+                jump nothing
+                
+        "Tunggu dulu...":
+            call screen mapUI()
+
+label go_do_sport:
+
+    $ maps = True
+
+    menu:
+        "Pergi Jalan-jalan?":
+            $ placeKeys = 4
+
+            if day == 4:
+                $ maps = False
+                call change_timephase
+                call screen trans_screen with dissolve
+                jump sport_dayS1
             
             else:
                 $ maps = False
