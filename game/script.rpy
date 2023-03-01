@@ -14,7 +14,7 @@ define w = Character("Warga", image="anonM")
 define pa = Character("Pak Andy", image="pa")
 define aa1 = Character("Aa'", image="anonM")
 define kev = Character("Kevin", image="anonM")
-define t = Character("Teman", image="anonM")
+define t = Character("Teman", image="t")
 define stall = Character("Stall", image="anonM")
 define siapa = "Suara"
 
@@ -192,6 +192,8 @@ label start:
 
     "Jadi pastikan dulu pilihanmu sebelum memilih."
 
+    call screen tutorial_choices1 with dissolve
+
     "Perempuan yang memperkenalkan dirinya dengan nama {i}Rissa{/i} tiba-tiba menyulurkan tangannya ke arahmu."
 
     "Kamu memilih untuk..."
@@ -237,15 +239,17 @@ label start:
 
     mc  "Oke kalau begitu."
 
-    "Vivy berjalan dan melambaikan tangannya kepadamu, menyuruhmu untuk mengikutinya."
+    "Rissa berjalan dan melambaikan tangannya kepadamu, menyuruhmu untuk mengikutinya."
 
-    "Kamu berjalan di belakang Vivy, kamu mengikutinya ke arah minimarket"
+    "Kamu berjalan di belakang Rissa, kamu mengikutinya ke arah minimarket"
 
-    "Dalam game ini, terdapat {b}menu map{/b}, dimana pemain dapat {b}memilih kegiatan{/b} apa yang selanjutnya akan dilakukan, bedasarkan lokasi yang dipilih di map."
+    "Dalam game ini, terdapat {b}menu MAP{/b}, dimana pemain dapat {b}memilih kegiatan{/b} apa yang selanjutnya akan dilakukan, bedasarkan lokasi yang dipilih di map."
 
     "Pemain dapat memilih kegiatan dengan cara {b}memilih icon{/b} yang ada di map." 
 
     "Pemain akan berpindah ke lokasi yang dituju, dan melakukan kegiatan sesuai icon yang dipilih."
+
+    call screen tutorial_maps1 with dissolve
 
     "Setiap memilih suatu kegiatan pada map, maka {b}waktu akan berganti{/b} menjadi fase waktu berikutnya." 
     
@@ -255,13 +259,13 @@ label start:
 
     "Hari, Waktu, dan Tempat dapat dilihat pada bagian {b}kiri atas layar{/b}."
 
-    show screen days_screen
-
     "Game ini akan berjalan selama {b}30 hari{/b}." 
 
     "Setelah hari ke 30 selesai, pemain akan mendapatkan ending dari game ini."
 
-    "Untuk berpindah ke minimarket, pilih icon minimarket kemudian klik kiri pada icon."
+    call screen tutorial_daytimes1 with dissolve
+
+    "Sekarang cobalah menggunakan menu Map untuk berpindah ke lokasi berikutnya."
 
     jump first_map
 
@@ -277,6 +281,8 @@ label first_map:
     "Untuk memilih kegiatan yang akan dilakukan selanjutnya, kamu dapat mengarahkan pointer ke arah icon yang ada pada {b}Map{/b}."
 
     "Untuk sekarang pilihlah Icon Minimart, kemudian tekan klik kiri."
+
+    "Lalu pilih opsi pertama untuk menuju lokasi selanjutnya."
 
     # hide screen days_screen
 
@@ -321,12 +327,14 @@ label day2:
     show screen days_screen with dissolve
 
     #alarm sound
+    "{i}Kringgggg!!!{/i}"
+    with vpunch
 
-    "Kringgggg"
+    "{i}Kringgg!!!{/i}"
+    with vpunch
 
-    "Kringgg"
-
-    "Kringgg"
+    "{i}Kringgg!!!{/i}"
+    with vpunch
 
     "Alarmmu berbunyi beberapa kali sebelum kamu bangun dan mematikannya."
 
@@ -346,17 +354,17 @@ label day2:
 
     "Sambil menguap, kamu mengggosok-gosok matamu dengan tangan"
 
-    mc "{i}tapi disini pagi hari begini tidak dingin tapi malah keringatan begini ya?!{/i}"
+    mc "{i}Disini pagi hari begini tidak begitu dingin tapi kok malah keringatan begini ya?!{/i}"
 
-    "Kamu menyadarinya ketika wajahmu yang dipenuhi dengan minyak"
+    "Kamu menyadarinya ketika kamu merasakan mukamu dipenuhi dengan minyak"
 
     mc "Enggak enak sekali bangun bangun muka berminyak seperti ini."
 
     "Sesampainya di kamar mandi kamu langsung membasuh muka dan menggosok gigimu."
 
     # Sfx grumbling
-
     "Grugggg"
+    with vpunch
 
     mc "…. Laparr…."
 
@@ -370,6 +378,8 @@ label day2:
 
     "Sementara stats dapat berkurang secara otomatis jika hari berganti, stats yang dapat berkurang secara otomatis adalah main {b}stats kesehatan{/b}."
 
+    call screen tutorial_statsdrops1 with dissolve
+    
     "Setelah selesai membasuh muka dan menggosok gigi, kamu kembali ke kamar kosmu."
     
     mc "aku masih punya makanan sisa tidak ya?"
@@ -410,7 +420,11 @@ label day2:
 
     "Kemudian anggota grup lainnya mulai muncul membalas dengan chat maupun hanya dengan sticker."
 
-    "Scroll-scroll-scroll"
+    "Scroll"
+
+    "Scroll"
+
+    "Scroll"
 
     "Kamu mulai membaca chat dengan timestamp pagi hari ini."
 
@@ -420,11 +434,11 @@ label day2:
 
     "Kemudian kamu membaca beberapa balasan dari chat itu."
 
-    "{i}DPA itu apa guyss?{i}"
+    t normal "{i}DPA itu apa guyss?{i}"
 
-    "{i}Maaf, cara cek punya DPA siapa dimana ya{/i}??"
+    t "{i}Maaf, cara cek punya DPA siapa dimana ya{/i}??"
 
-    "{i}DPAku Pak Andy juga nihh, jadinya jam berapa itu siangnya?{/i}"
+    t "{i}DPAku Pak Andy juga nihh, jadinya jam berapa itu siangnya?{/i}"
 
     "Pertanyaan yang ada tersebut dijawab oleh pengirim pesan tersebut sekaligus."
 
@@ -434,30 +448,36 @@ label day2:
 
     "Scroll"
 
-    "{i}DPA itu {b}Dosen Pembimbing Akademik{/b}, intinya yang intinya ya yang bimbing kegiatan akademik kamu selama berkuliah. Kalau mau konsultasi, bimbingan, maupun tanya yang lain baiknya sama DPA kamu{/i}."
+    t "{i}DPA itu {b}Dosen Pembimbing Akademik{/b}, intinya yang intinya ya yang bimbing kegiatan akademik kamu selama berkuliah. Kalau mau konsultasi, bimbingan, maupun tanya yang lain baiknya sama DPA kamu{/i}."
 
-    "{i}Kalau mau cek siapa DPA kamu, bisa lihat di website akademik kita {b}Simaster{/b}.{/i}"
+    t "{i}Kalau mau cek siapa DPA kamu, bisa lihat di website akademik kita {b}Simaster{/b}.{/i}"
     
-    "{i}Di simasternya nanti pilih menu {b}Akademik kemahasiswaan{/b}.{/i}"
+    t "{i}Di simasternya nanti pilih menu {b}Akademik kemahasiswaan{/b}.{/i}"
     
-    "{i}Lalu akan muncul beberapa submenu, disitu nanti pilih menu {b}Akademik{/b}.{/i}"
+    t "{i}Lalu akan muncul beberapa submenu, disitu nanti pilih menu {b}Akademik{/b}.{/i}"
     
-    "{i}Kemudian akan muncul lagi banyak sub menu, pilih menu {b}Diskusi DPA{/b}, nanti akan kelihatan siapa DPA kita.{/i}."
+    t "{i}Kemudian akan muncul lagi banyak sub menu, pilih menu {b}Diskusi DPA{/b}, nanti akan kelihatan siapa DPA kita.{/i}."
 
-    mc "{i}Ohh begitu ya cara lihatnya, aku coba dulu lah{/i}."
+    mc "{i}Ohh begitu ya cara lihatnya, apa aku coba juga ya?{/i}."
 
-    "Membaca chat dari "
+    call screen simaster_dpa with dissolve
+
+    "Setelah membaca informasi yang kamu dapat dari grup chat, kamu ikut mencoba mengecek siapa dosen pembimbingmu."
+
+    hide phone chat with moveoutbottom
+
+    "Membuka browsermu, kamu berhasil masuk kedalam beranda Simaster."
 
     window show
 
-    hide phone chat with moveoutbottom
-    
     show home simaster:
         xalign 0.9
         yalign 0.4     
     with dissolve
 
-    mc "Terus menu akademik kemahasiswaan."
+    mc "Dari beranda kemudian...."
+
+    mc "Oh iya pilih menu Akademik Kemahasiswaan."
 
     hide home simaster
 
@@ -466,7 +486,9 @@ label day2:
         yalign 0.4     
     with dissolve
 
-    mc "Habis itu pilih menu akademik...."
+    mc "Dari menu Akademik terus apa ya?"
+
+    mc "{i}Habis itu pilih Menu Akademik {/i} Ohhh iya...."
 
     hide home akademik
 
@@ -545,7 +567,7 @@ label day2:
 
     $ prologueCount += 1
 
-    call screen mapUI
+    call screen mapUI with dissolve
 
     return
 

@@ -3,14 +3,10 @@ label minimart_pertama:
 
     $ firstMart = False
 
-    # show day1 miniout:
-    #     xalign 0.5 yalign 0.5
-    # with dissolve
-
-    pause 2.0
-
     scene bg minimart_out
     with fade
+
+    show screen days_screen with dissolve
 
     # show screen days_screen
     
@@ -102,9 +98,14 @@ label minimart_pertama:
 
     "Stats yang berubah akan terlihat ketika kamu berganti fase waktu."
 
-    show screen stats_screen with dissolve
+    window hide
+
+    call screen tutorial_stats1 with dissolve
 
     mc  "Beli apa ya? Roti atau Minum hmmm…."
+
+    show screen stats_screen with dissolve
+
 
     "Kamu memutuskan untuk:"
 
@@ -137,25 +138,36 @@ label minimart_pertama:
 
     "..."
 
-    scene bg streets
-    with dissolve
+    "Seusai membayar roti yang kamu pilih, ketika keluar dari minimart terlihat matahari sudah hampir terbenam, dan hari sudah menjadi gelap."
 
-    "Setelah selesai membayar, ketika keluar dari minimart terlihat matahari sudah hampir terbenam, dan hari sudah menjadi gelap."
+    "Kamu langsung mengambil tas yang dititipkan pada penitipan barang yang ada diluar minimart dan langsung berjalan kearah gedung kampus."
 
-    "Kamu bergegas kembali ke parkiran motor yang ada di kampus."
+    scene bg minimart_out with fade
 
-    "Selagi berjalan kamu memilih:"
+    pause 1.0
+
+    scene bg streets with fade
+
+    "Melewati jalan yang sama seperti yang kamu lalui bersama dengan Rissa, kamu sudah berada di lingkungan area gedung kampusmu."
+
+    "Kamu bergegas berjalan menuju parkiran motor yang ada di kampus."
+    
+    "Selagi berjalan menuju parkiran kampus, kamu berpikiran untuk memakan roti yang baru saja kamu beli."
+
+    call screen tutorial_statschange1 with dissolve
+    
+    "Kemudian kamu memutuskan untuk:"
 
     menu:
 
-        "Mengkonsumsi apa yang kamu beli.":
+        "Mengkonsumsi roti yang kamu beli.":
 
             show mc normal jacket:
                 xalign 0.2 yalign -0.5
             
             mc  "Langsung kumakan sekarang saja lah, sudah agak lapar juga."
         
-            "Kamu duduk di kursi umum yang ada di pinggir jalan untuk menikmati apa yang dibeli di minimart sebelumnya."
+            "Kamu duduk di kursi umum yang berada di pinggir jalan untuk menikmati roti yang dibeli di minimart sebelumnya."
 
             "Kamu memakan roti yang kamu beli!"
             "Stats berubah!"
@@ -167,10 +179,10 @@ label minimart_pertama:
         "Menyimpannya untuk besok pagi.":
 
             $ rotiAwal = True
-            mc  "Buat besok sajalah makannya, nanti keburu malam."
 
             show mc normal jacket:
                 xalign 0.2 yalign -0.5
+            mc  "Buat besok sajalah makannya, nanti keburu petang."
     
     "Kemudian kamu bergegas ke arah parkiran motor kampus dan segera mengendarai motormu untuk pulang."
 

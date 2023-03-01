@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/boarding_house.rpy", line 510: expected 'comma or end of line' not found.
-    with dissolve
-    ^
+File "game/simaster/simaster_dpa.rpy", line 61: end of line expected.
+    textbutton: "Beranda" xpos 950 ypos 150
+                ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Fri Feb 24 00:53:49 2023
+Thu Mar  2 03:39:37 2023

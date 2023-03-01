@@ -54,9 +54,17 @@ label first_kos:
 
     mc  "Bicara apalagi ya waktu itu… lupa aku."
 
-    mc  "UAHHHHHH… ngantuk."
+    "Mencoba mengingat perkataan pemandu kegiatan orientasimu namun kamu tetap tidak bisa mengingatnya, kemudian kamu hanya terdiam melihat langit-langit kamarmu."
 
-    "Kamu meletakan HPmu, kemudian mematikan lampu kamarmu"
+    "....................."
+
+    "............"
+
+    "......"
+
+    mc  "UAHHHHHH… ngantuk. Jam berapa sih udah ngantuk begini..."
+
+    "Melihat waktu menunjukan 12.30 pada jam digital yang ada pada HPmu. Kamu meletakan HP disebelahmu, kemudian mematikan lampu kamar."
 
     hide phone groupchat
     with moveoutbottom

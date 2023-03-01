@@ -68,13 +68,13 @@ screen stats_screen:
             auto "menuUI/button/stats_%s.png"
             action ShowMenu("stats")
 
-        imagebutton:
-            xpos 1655
-            ypos 133
-            # xoffset -30
-            # yoffset 30
-            auto "menuUI/button/task_%s.png"
-            action ShowMenu("stats")
+        # imagebutton:
+        #     xpos 1655
+        #     ypos 133
+        #     # xoffset -30
+        #     # yoffset 30
+        #     auto "menuUI/button/task_%s.png"
+        #     action ShowMenu("stats")
 
 screen stats:
 
