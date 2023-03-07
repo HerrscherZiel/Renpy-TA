@@ -94,6 +94,7 @@ screen stats:
             xpos 360
             ypos 355
             spacing 450
+            $ health = round((hunger+energy+vit) / 3)
             text "[health]" size 40 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
             text "[academic]" size 40 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
         

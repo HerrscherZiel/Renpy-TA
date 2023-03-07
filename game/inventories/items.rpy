@@ -23,6 +23,17 @@ screen get_box2:
     
     timer 4.0 action Hide("get_box2", dissolve)
 
+screen get_bread:
+
+    frame:
+        xsize 1920
+        ysize 1080
+        xpos 1300
+        ypos 30
+        background "items/breads_get.png"
+    
+    timer 4.0 action Hide("get_bread", dissolve)
+
     # #close
     # imagebutton:
     #     xpos 70

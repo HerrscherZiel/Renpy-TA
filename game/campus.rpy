@@ -459,17 +459,17 @@ label first_kampus:
 
     mc "Sekarang yang penting tidur duluuu."
 
-    #makan!
-
     scene bg black with dissolve
 
     "Dalam perjalanan kamu menyempatkan diri untuk berhenti di warmindo yang ada dekat dengan kampusmu."
 
-    "Perutmu yang sudah keroncongan memakasamu untuk mengisinya terlebih dahulu sebelum mengistirahatkan badan."
+    "Perutmu yang sudah keroncongan memaksamu untuk mengisinya terlebih dahulu sebelum mengistirahatkan badan."
 
-    "Kamu memesan dan memakannya di tempat, kemudian langsung melanjutkan perjalanan ke kos karena merasakan badanmu yang sudah sangat lelah."
+    "Kamu memesan dan memakannya di tempat."
 
     call eat
+
+    "Kemudian setelah makanan yang kamu pesan habis, kamu langsung melanjutkan perjalanan ke kos karena merasakan badanmu yang sudah sangat lelah."
 
     scene bg black with fade
 
@@ -478,6 +478,8 @@ label first_kampus:
     $placeKeys = 3
 
     show screen trans_screen with dissolve
+
+    pause 2.0
 
     "Setelah sampai di kamar kosmu, kamu merasakan rasa lelah yang membuatmu mengantuk."
 
@@ -491,15 +493,13 @@ label first_kampus:
 
     pause 2.0
 
-    $timephase +=1
+    call change_timephase
 
     show screen trans_screen with dissolve
 
-    $ vit -= 5
-    $ energy -= 10
-    $ hunger -= 10
-
     scene bg kos night with dissolve
+
+    pause 2.0
 
     "Kamu terbangun setelah matahari sudah tak terlihat lagi."
 
@@ -565,11 +565,11 @@ label first_kampus:
 
     "Kamu mengambil kotak box tersebut dan membukanya."
 
-    mc "Donatttt… banyak lagi, nggak usah keluar lah."
+    mc "Wohh nasi kotak !!"
     
-    mc "Makan semua udah kenyang ini."
+    mc "Udah sama aja makan malam ini, gaperlu keluar nyari makan jadinya."
 
-    "Setelah membuka box putih yang ternyata berisi banyak donat, kamu mengurungkan niatmu untuk pergi ke warmindo."
+    "Setelah membuka box putih yang ternyata berisi satu paket nasi kotak, kamu mengurungkan niatmu untuk pergi ke warmindo."
 
     mc "Oh iya sambil makan sambil lihat chat grup Lane kalau ada info baru lagi."
 
@@ -598,11 +598,9 @@ label first_kampus:
 
     "Memikirkan apa yang ingin kamu lakukan malam itu, kamu membuka laptop dan menyalakannya."
 
-    "Menunggu proses booting selesai, tanpa sadar kamu sudah menghabiskan semua donat yang ada di dalam box putih."
+    "Menunggu proses booting selesai, tanpa sadar kamu sudah menghabiskan apa yang ada di dalam box makanan tersebut."
 
-    $energy += 10
-
-    $hunger += 20
+    call eat
 
     "Setelah laptopmu selesai booting, kamu kemudian membuka aplikasi Stem dan masuk menggunakan akunmu."
 

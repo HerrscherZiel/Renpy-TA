@@ -161,7 +161,7 @@ label start:
 
     mc  "Mampir beli minum dulu gak ya? Tapi gak tau dimana minimarket sekitar sini..."
 
-    "Halooo… Permisi!!"
+    siapa "Halooo… Permisi!!"
 
     "{i}Tak sadar, tiba-tiba ada seorang perempuan yang berdiri di depanku{/i}"
 
@@ -289,15 +289,6 @@ label first_map:
 
 label day2:
 
-    $ day += 1
-    if timephase != 3:
-        $ timephase += 1
-    else:
-        $ timephase = 1   
-
-    $ energy += 30
-    $ hunger -= 25
-    $ vit -= 10
 
     scene bg black
     with Dissolve(2.0)
@@ -311,6 +302,8 @@ label day2:
     pause 3.0
 
     hide day2 pro with dissolve
+
+    call change_day
 
     show screen trans_screen with dissolve
 
@@ -378,7 +371,7 @@ label day2:
     
     "Setelah selesai membasuh muka dan menggosok gigi, kamu kembali ke kamar kosmu."
     
-    mc "aku masih punya makanan sisa tidak ya?"
+    mc "Aku masih punya makanan sisa tidak ya?"
 
     "Kamu mencari makanan yang ada di kamar kosmu."
 
@@ -388,11 +381,7 @@ label day2:
 
         "Kamu mengambil roti yang kamu beli di Minimart kemarin dan langsung memakannya."
 
-        $ energy += 15
-        $ hunger += 30
-        $ vit += 10
-
-        "{b}!Stats berubah!{/b}"
+        call eat
 
         "Lumayan buat ganjel perut hehehe."
 
@@ -520,7 +509,7 @@ label day2:
 
     "Chat yang ada dibawahnya dilanjutkan dengan candaan oleh beberapa orang yang ada di grup."
 
-    mc "{i}hmmm sepertinya si Claris ini bakal jadi tokoh ketua di angkatan deh{/i}."
+    mc "{i}Hmmm sepertinya si Claris ini bakal jadi tokoh ketua di angkatan deh{/i}."
 
     mc "{i}Belum masuk kuliah aja sudah jadi informan begini..{/i}"
 
@@ -552,7 +541,7 @@ label day2:
 
     "Waktu telah menunjukan pukul 07.30."
 
-    mc "{i}masih nanti siang yaa bimbingannya, mau ngapain dulu ya pagi ini?{/i}"
+    mc "{i}Masih nanti siang yaa bimbingannya, mau ngapain dulu ya pagi ini?{/i}"
 
     "Melihat waktu yang masih pagi, dan bimbingan akan diadakan di siang hari kamu memutuskan untuk mengisi waktu pagimu."
 
@@ -568,16 +557,6 @@ label day2:
 
 label day3:
 
-    $ day += 1
-    if timephase != 3:
-        $ timephase += 1
-    else:
-        $ timephase = 1   
-
-    $ energy += 30
-    $ hunger -= 25
-    $ vit -= 10
-
     scene bg black
     with Dissolve(1.0)
 
@@ -590,6 +569,8 @@ label day3:
     pause 2.0
 
     hide day3 pro with dissolve
+
+    call change_day
 
     show screen trans_screen with dissolve
 
@@ -1206,12 +1187,12 @@ label nothing:
 label eat:
 
     $energy +=10
-    $hunger +=30
+    $hunger +=25
     $vit +=5
 
     call stat_change
-
     "Stats Berubah!!!"
+    show screen stats_changer("eat", 0)
 
     return
 

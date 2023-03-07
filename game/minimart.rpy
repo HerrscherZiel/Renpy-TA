@@ -6,9 +6,9 @@ label minimart_pertama:
     scene bg minimart_out
     with fade
 
-    show screen days_screen with dissolve
+    pause 2.0
 
-    # show screen days_screen
+    show screen days_screen with dissolve
     
     show r normal2 at right
     with dissolve
@@ -132,6 +132,8 @@ label minimart_pertama:
 
     "Beberapa menit mengantri akhirnya tiba giliranmu untuk melakukan pembayaran."
 
+    show screen get_bread with dissolve
+
     "..............."
 
     "........"
@@ -172,9 +174,8 @@ label minimart_pertama:
             "Kamu memakan roti yang kamu beli!"
             "Stats berubah!"
 
-            $ energy += 10
-            $ hunger += 15
-            $ health = round((hunger+energy+vit) / 3)
+            call eat
+            
 
         "Menyimpannya untuk besok pagi.":
 
@@ -198,7 +199,8 @@ label minimart_pertama:
 #prologue 3rd day noon
 label mini3N:
 
-    scene bg minimart_in with fade
+    scene bg minimart_in with dissolve
+    pause 2.0
 
     mc normal jacket "Hahhh… bisa segar begini di dalem, diluar panasnya gak masuk akal gilaaa."
 
@@ -326,6 +328,8 @@ label mini3N:
 
     "Seru dalam duniamu sendiri, tak sadar satu cup kopi yang kamu beli sudah habis."
 
+    call drink
+
     "Indikator baterai dari HPmu juga sudah berubah menjadi warna merah. Kamu menutup permainan dan memasukan HPmu ke dalam saku."
 
     mc normal jacket "Niatnya cuma mau beli minum sebentar malah jadi nongkrong lama begini huhhhhh."
@@ -337,8 +341,6 @@ label mini3N:
     mc "Kopinya enak juga, besok kalau kesini lagi aku beli lah."
 
     "Membawa satu bungkus kopi yang kamu dapat dari promo, kamu keluar dari minimart dan mengendarai motor ke kos."
-
-    call drink
 
     $prologueCount+=1
 

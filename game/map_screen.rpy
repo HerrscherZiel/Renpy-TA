@@ -176,14 +176,12 @@ label go_to_minimart:
                 $ maps = False
                 call change_timephase
                 show screen trans_screen with dissolve             
-                window show
                 jump minimart_pertama
 
             elif KRS3 == False:
                 $ maps = False
                 call change_timephase
                 show screen trans_screen with dissolve              
-                window show
                 jump mini3N
 
             elif day == 4:

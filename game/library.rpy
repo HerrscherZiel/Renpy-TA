@@ -108,6 +108,8 @@ label krs:
 
     scene bg perpus out with fade
 
+    pause 2.0
+
     "Setelah melewati jalur yang sudah kamu tentukan sebelumnya dari gmaps." 
     
     "Kurang dari 10 menit perjalanan kamu sudah memarkirkan motormu di parkiran perpustakaan."

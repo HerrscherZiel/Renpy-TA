@@ -111,18 +111,7 @@ label first_kampung:
 
     "Tanpa sadar kamu langsung menerima kotak box putih dari warga tersebut."
 
-    # Bg box putih
-
     show screen get_box with dissolve
-
-    # show box_get:
-    #     xpos 0.85
-    #     ypos 0.6
-    # with moveinright
-    # pause(1.5)
-
-    # hide box_get
-    # with moveoutright
 
     mc normal jacket "Wah terimakasih ya mas"
 
@@ -138,7 +127,7 @@ label first_kampung:
 
     "Mengeluarkan HP dari saku celanamu kamu melihat jam yang sudah menunjukan pukul 10.00."
 
-    mc "habis ini sampai kos, istirahat langsung mandi lalu siap-siap ke kampus berarti."
+    mc "Habis ini sampai kos, istirahat langsung mandi lalu siap-siap ke kampus berarti."
 
     "Setelah menentukan tujuan selanjutnya kamu pulang ke kosmu."
 

@@ -3,8 +3,8 @@ label first_kos:
 
     $ firstKos = False
 
-    scene bg kos night
-    with fade
+    scene bg kos night with dissolve
+    pause 2.0
 
     # show screen days_screen
     # show screen stats_screen 
@@ -190,7 +190,9 @@ label kos_krs3:
         $placeKeys = 3
         window hide
 
-        show screen trans_screen
+        show screen trans_screen with dissolve
+
+        pause 2.0
         
         scene bg kos morn with dissolve
 
@@ -203,10 +205,12 @@ label kos_krs3:
         "Tidak memakan waktu yang lama untuk tertidur dengan pulas."
 
         call change_timephase
-
+        pause 1.0
         scene bg kos night with fade
+        pause 1.0
 
         mc normal jacket "HAccihhh!!! Huuuu kok dingin banget sih. Hhuhuuuuu tadi siang perasaan gerah banget."
+        with vpunch
 
         "Terbangun dari tidur siang, tubuhmu menggigil merasakan dinginnya kondisi saat ini."
 
@@ -258,7 +262,7 @@ label kos_krs3:
 
         "Belum sempat membuka browser untuk mencoba KRSmu, terdapat pesan yang masuk pada Lanemu."
 
-        "{i}Oiii broo.. Ayo mabar lah mumpung pada on nih, tunggu di discred ya, yang lain nunggu!{/i}"
+        t normal "{i}Oiii broo.. Ayo mabar lah mumpung pada on nih, tunggu di discred ya, yang lain nunggu!{/i}"
 
         mc "Sering banget kalau orang mau produktif malah diajak main, huhhhh....." 
         
@@ -281,11 +285,13 @@ label kos_krs3:
 
 label kos_krs4:
 
+    scene bg kos morn with dissolve
+
     call change_timephase
 
     show screen trans_screen with dissolve
 
-    scene bg kos morn with dissolve
+    pause 2.0
 
     "Selesai mandi, kewajiban melakukan pengisian KRS masih ada dalam to do listmu hari ini."
     
@@ -346,7 +352,7 @@ label kos_krs4:
 
     mc "Setelah memilih menu Akademik Kemahasiswaan, akan muncul banyak pilihan sub menu."
 
-    mc "Disini kemudian kita memilih:"
+    mc "Disini kemudian harusnya memilih:"
 
     hide home akademik
 

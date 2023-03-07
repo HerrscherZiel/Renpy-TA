@@ -100,7 +100,7 @@ screen simaster_pengisiankrs_image:
         elif (simaster_pengisiankrs == 3):
             xpos 744
             ypos 289
-            background "simaster/home akademik dpa.png"
+            background "simaster/home akademik krs.png"
 
         else:
             xpos 744
