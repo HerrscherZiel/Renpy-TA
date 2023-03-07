@@ -1,3 +1,4 @@
+
 screen stats_screen:
     if renpy.get_screen("mapUI"):
         pass

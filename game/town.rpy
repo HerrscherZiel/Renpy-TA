@@ -3,7 +3,6 @@ label first_kampung:
 
     $ firstKampung = False
 
-
     scene bg town street 2 with Dissolve(2.0)
 
     # show screen days_screen with dissolve
@@ -12,61 +11,69 @@ label first_kampung:
 
     "Kamu memutuskan untuk menghabiskan waktu pagimu dengan berjalan mengelilingi lingkungan sekitar."
 
-    "Berganti menggenakan celana panjang, kamu keluar dari kamar kosmu."
+    "Mengganti celanamu dengan celana panjang, kamu keluar dari kamar kos."
 
-    "Tidak ada destinasi khusus yang ingin kamu tuju."
+    "Tidak ada destinasi atau tujuan khusus yang ingin kamu tuju."
 
-    "Hanya berjalan sembari mengamati kondisi lingkungan disekitar dirimu."
+    "Hanya berjalan sembari mengamati kondisi lingkungan disekitar area kos."
 
-    "Selama berjalan mengilingi lingkungan sekitar, kamu banyak berjumpa dengan orang-orang yang sedang berjogging."
+    "Selama berjalan mengilingi lingkungan sekitar, kamu banyak menjumpai orang-orang yang sedang berolahraga.
+        Beberapa orang sedang berlari kecil, ada juga yang mengendarai sepeda mengitari kampung."
 
-    "Kamu juga banyak melihat banyak bangunan kos, baik kos perempuan maupun kos laki-laki."
+    "Selain menjumpai banyak orang, kamu juga mengamati macam-macam bangunan yang ada disekitar.
+        Kamu banyak melihat banyak bangunan kos, baik kos perempuan maupun kos laki-laki."
 
     "Selain bangunan kos juga terdapat banyak warung makan, mulai dari warung makan kecil sampai warung makan yang lumayan besar."
 
-    "Warung makan kecil yang banyak bertuliskan Warmindo, bahkan kamu menemui banyak Warmindo di tengah-tengah kampung, ada juga yang lokasinya berseberangan jalan."
+    "Warung makan kecil yang banyak bertuliskan Warmindo, bahkan kamu menemui banyak Warmindo di tengah-tengah kampung, ada juga yang lokasinya berseberangan jalan.
+        Sementara warung makan yang lebih besar biasanya terletak di pinggir jalan besar."
 
-    "Sementara warung makan yang lebih besar biasanya terletak di pinggir jalan besar."
-
-    "Selain warung makan, banyak juga kamu melihat tempat-tempat yang menyediakan banyak layanan untuk mahasiswa nantinya."
-
-    "Seperti tempat print, alat tulis, toko sehari-hari, dan tempat laundry pakaian."
+    "Selain warung makan, banyak juga kamu melihat tempat-tempat yang menyediakan banyak layanan untuk para mahasiswa nantinya.
+        Seperti tempat untuk print, toko alat tulis, toko sehari-hari, dan tempat laundry pakaian."
 
     scene bg town street 1 with fade
 
     "Kamu terus berjalan sembari mengamati keadaan disekitarmu."
 
     "{i}Gubrakkk!!!{/i}"
-
+    with vpunch
+    with vpunch
     # Sfx things fell
     # Shake
 
-    "Tiba-tiba kamu mendengar suara yang keras dari arah di depanmu."
+    "Tiba-tiba kamu mendengar suara keras dari arah pertigaan yang ada di depanmu."
 
-    "Setelah mendekatinya, kamu melihat kerumunan orang di dekat sebuah mobil angkut."
+    "Merasa penasaran, kamu mendekati asal suara tersebut."
 
-    show w normal
+    "Setelah beberapa langkah mendekat, kamu melihat kerumunan orang di dekat sebuah mobil angkut."
+
+    # show w normal
 
     "Penasaran, kamu mendekati kerumunan yang ada di depanmu dan bertanya kepada salah seorang yang ada disana."
 
     mc normal jacket  "Ada apa ini mas?"
 
-    hide w normal with dissolve
+    # hide w normal with dissolve
 
-    w normal"Ohh ini mas, ada yang lagi angkut, angkut pindahan mahasiswa baru itu."
+    w normal "Ohh ini mas, ada yang lagi angkut-angkut barang pindahan mahasiswa baru itu."
 
-    w  "Diangkut pake mobil waktu mau ambil barang-barang yang ada di mobil angkut, malah ban mobilnya jeblos diselokan mas. Jadi barang-barangnya pada jatuh.
-    Kamu melihat barang-barang berserakan di sekeliling mobil angkut."
+    w  "Diangkut pake mobil waktu mau ambil barang-barang yang ada di mobil angkut, malah ban mobilnya jeblos diselokan mas. Jadi barang-barangnya pada jatuh."
+    
+    "Melihat kearah mobil yang terpelosot dalam selokan, kamu melihat banyak barang berserakan di sekeliling mobil angkut itu."
 
-    "{b}!Social stats tutorial!{/b}"
+    "{b}!Special event tutorial!{/b}"
 
-    "Kegiatan dengan masyarakat luas maupun organisasi dapat meningkatkan stats {b}Sosial{/b}mu."
+    "Terkadang ketika memilih suatu kegiatan kamu akan menjumpai {b}Special Event{/b}."
 
-    "Stats sosial yang tinggi terkadang akan menampilkan {b}event tertentu{/b} dalam game."
+    "{b}Special Event{/b} dapat ditemukan karena dua hal yaitu {b}Poin Stats yang cukup{/b}, juga {b}waktu dan hari yang tepat{/b}."
 
-    "Selain menampilkan event tertentu, terkadang dengan melakukan kegiatan sosial kamu akan mendapatkan {b}hadiah{/b} tertentu."
+    "Selain menampilkan event tertentu, terkadang dengan menemukan {b}Special Event{/b} kamu bisa mendapatkan sebuah {b}hadiah{/b} tertentu."
 
-    "Kamu memutuskan untuk:"
+    "{b}Hadiah{/b} yang didapat, dapat berupa macam bentuknya, semisal {b}Makanan{/b}, {b}Barang{/b}, {b}Stats{/b}, dan hal lainnya."
+
+    call screen tutorial_specialevents1 with dissolve
+    
+    "Melihat barang-barang yang berserakan di tanah dan mobil yang terjeblos di selokan, kamu memutuskan untuk:"
 
     menu: 
         "Membantu mengambil barang-barang yang terjatuh":
@@ -78,49 +85,64 @@ label first_kampung:
     
     "Beberapa menit kemudian semua masalah sudah berhasil di selesaikan."
 
-    "Kini orang-orang yang ikut membantu mengeluarkan mobil yang terjeblos juga mengambil barang-barang yang terjatuh di jalanan sedang beristirahat di teras rumah."
+    "Kini orang-orang yang ikut membantu mengeluarkan mobil yang terjeblos dan juga orang-orang yang ikut mengambil barang-barang yang terjatuh di jalanan sedang beristirahat di teras rumah."
 
-    "Kamu yang juga ikut membantu juga beristirahat di teras rumah bersama warga lain."
+    "Kamu juga ikut mengistirahatkan tubuhmu dan berteduh dari sinar matahari di teras rumah pemilik barang, bersama dengan warga yang lainnya."
     
-    "Setelah beberapa menit beristirahat dan mengobrol bersama warga, kamu memutuskan untuk kembali ke kosmu."
+    "Setelah beberapa menit beristirahat dan mengobrol bersama warga, kamu memutuskan untuk kembali ke kos."
 
-    "Tidak melihat warga yang tadi kamu temui di awal tadi, kamu berpamitan kepada warga yang ada disekitarmu."
+    "Kamu berniat untuk berpamitan dengan warga yang tadi kamu temui."
 
-    "Kemudian kamu meninggalkan rumah warga tersebut dan berjalan ke arah kosmu."
+    "Setelah menunggu beberapa waktu, karena tidak melihat warga yang kamu cari, kamu hanya berpamitan kepada warga yang ada disekitarmu."
+
+    "Seusai berpamitan, kamu meninggalkan rumah warga tersebut dan berjalan ke arah kos."
 
     "......"
 
-    "Beberapa langkah berjalan, ada yang memanggilmu dari belakang."
+    "..."
 
-    "Kamu melihat bapak-bapak yang sebelumnya kamu ajak bicara berjalan mendekatimu."
+    "Beberapa langkah berjalan, tiba-tiba ada yang memanggilmu dari belakang."
 
-    w normal"Kok keburu pulang saja mas, ini yang punya barang tadi memberi ini buat yang bantu-bantu tadi."
+    "Kamu melihat warga yang sebelumnya kamu ajak bicara berjalan mendekatimu."
 
-    "Melihat kebelakang, kamu melihat warga yang awal kamu temui di awal tadi."
+    w normal "Kok keburu pulang saja mas, ini yang punya barang tadi memberi ini buat yang bantu-bantu tadi."
 
-    "Warga itu membawa sebuah kotak box putih, dan memberikan itu kepadamu."
+    "Warga itu membawa sebuah kotak box putih pada kedua tangannya, kemudian ia menyulurkan tangan dan memberikan box putih tersebut kepadamu."
 
-    "Kamu menerima kotak box putih dari bapak-bapak tersebut."
+    "Tanpa sadar kamu langsung menerima kotak box putih dari warga tersebut."
 
     # Bg box putih
 
-    mc normal jacket "Terimakasih mas"
+    show screen get_box with dissolve
 
-    w "Tidak apa, malah saya yang terimakasih mas, tadi sudah dibantu segala sudah merepoti sayanya."
+    # show box_get:
+    #     xpos 0.85
+    #     ypos 0.6
+    # with moveinright
+    # pause(1.5)
 
-    mc "Tidak apa kok mas, kalau begitu saya pamit pulang dulu mas."
+    # hide box_get
+    # with moveoutright
 
-    w "Oh ya ya, hati-hati mas."
+    mc normal jacket "Wah terimakasih ya mas"
 
-    "Kamu berjalan pulang ke arah kosmu."
+    w "Tidak apa, malah saya yang terimakasih mas, tadi sudah dibantu sama masnya saya. Malah saya minta maaf sudah ngerepoti."
 
-    "Mengeluarkan ponsel dari saku celanamu kamu melihat jam yang sudah menunjukan pukul 10.00."
+    mc "Tidak apa kok mas, ya kalau ada yang bisa dibantu yang ikut membantu kan mas. Ini bener-bener makasih mas, udah dikasih segala."
+    
+    w "Ya sama-sama mas, hati-hati dijalan."
 
-    mc "habis ini terus pulang, mandi lalu siap-siap ke kampus."
+    mc "Iya mas, saya pamit dahulu."
+
+    "Kemudian kamu melanjutkan perjalananmu pulang ke arah kos."
+
+    "Mengeluarkan HP dari saku celanamu kamu melihat jam yang sudah menunjukan pukul 10.00."
+
+    mc "habis ini sampai kos, istirahat langsung mandi lalu siap-siap ke kampus berarti."
 
     "Setelah menentukan tujuan selanjutnya kamu pulang ke kosmu."
 
-    scene bg black
+    scene bg black with fade
 
     "Selesai mandi dan telah bersiap-siap, kamu menyalakan motormu untuk pergi kekampus."
 
@@ -137,11 +159,13 @@ label first_kampung:
 
 label first_kota:
 
+    scene bg town street 1 with dissolve
+
     call change_timephase
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
 
-    scene bg town street 1 with dissolve
+    pause 3.0
 
     "Pada siang harinya, kamu memutuskan untuk pergi berkeliling area sekitar untuk mengisi waktu luangmu."
 
@@ -171,7 +195,7 @@ label first_kota:
 
     scene bg black with dissolve
 
-    scene bg road 1 with fade
+    scene bg project with fade
 
     "Berkendara selama beberapa menit, pandanganmu teralihkan setelah melihat sebuah bangunan tinggi yang sedang dalam proses pembangunan."
 
@@ -189,7 +213,7 @@ label first_kota:
 
     scene bg black with dissolve
 
-    scene bg road 2 with fade
+    scene bg hospital 1 with fade
 
     "Tidak jauh kamu mengendarai sepeda motormu, kamu melihat sebuah rumah sakit yang berada di dekat gedung-gedung kampus di universitasmu."
 
@@ -203,7 +227,7 @@ label first_kota:
 
     "Selesai mengamati, kamu meneruskan perjalananmu."
 
-    scene bg minimart_out fade
+    scene bg minimart_out with fade
 
     "Kamu mengendarai motormu melewati gedung kampusmu." 
     
@@ -211,7 +235,7 @@ label first_kota:
 
     "Melewati minimarket kamu melihat bangunan rumah sakit lain." 
 
-    scene bg road 3 with fade
+    scene bg hospital 2 with fade
     
     "Sama seperti bangunan rumah sakit yang sebelumnya, rumah sakit yang ada di depanmu itu juga terletak berseberangan dengan bangunan dari kampusmu.."
 
@@ -219,17 +243,21 @@ label first_kota:
 
     "Tidak berhenti lama, setelah mengamati rumah sakit itu selama beberapa waktu kamu melanjutkan perjalananmu."
 
-    scene bg road 4 with fade
+    scene bg mosque 1 with fade
 
     "Setelah berkendara selama beberapa menit, kamu mencapai {i}landmark{/i} berikutnya."
 
     "Terlihat sebuah masjid besar berada di sebelah kirimu. Masjid yang berada di sebelah kiri jalan itu merupakan masjid kampus."
 
+    scene bg jog spot with fade
+
     "Tidak jauh dari masjid kampus, kamu melihat track untuk jogging, yang berada disepanjang pinggir jalan. Kamu juga melihat beberapa bangunan yang digunakan untuk olahraga indoor beberapa puluh meter di depanmu."
 
-    scene bg road 5 with fade
+    scene bg softball with fade
     
     "Lapangan untuk softball juga nampak pada sisi kiri jalan. Meskipun untuk menuju lapangan tersebut tidak ada jalan langsung dari jalan, dan harus mencari jalan masuk lain."
+
+    scene bg sport building with fade
 
     "Setelah lapangan softball kamu juga melihat bangunan yang nampak seperti stadion. Kamu tidak dapat melihat bangunan apa itu sepenuhnya dari pinggir jalan."
 
@@ -247,6 +275,10 @@ label first_kota:
 
     scene bg town street 3 with fade
 
+    pause 1.0
+
+    scene bg town street 1 with fade
+
     "Tidak hanya jalan raya yang kamu lalui, kamu juga mengendarai sepeda motormu untuk masuk ke area perkampungan."
 
     "Terlihat banyak sekali rumah-rumah kos yang berada di perkampungan sekitar. Hal tersebut merupakan hal yang wajar, mengingat dekatnya perkampungan dengan kampus yang ada."
@@ -256,8 +288,6 @@ label first_kota:
     "Siang yang sudah berubah menjadi sore membuatmu memtuskan untuk kembali ke kosan."
 
     jump kos_krs4_night
-
-
 
 label ambil_jatuh:
 

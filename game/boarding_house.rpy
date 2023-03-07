@@ -99,7 +99,7 @@ label kos_krs3:
 
     if KRS3 == True:
         $placeKeys = 3
-        call screen trans_screen with dissolve
+        show screen trans_screen with dissolve
 
         scene bg black with dissolve
 
@@ -122,7 +122,7 @@ label kos_krs3:
         scene bg black with dissolve
 
         call change_timephase
-        call screen trans_screen with dissolve
+        show screen trans_screen with dissolve
 
         scene bg kos night with fade
 
@@ -139,6 +139,7 @@ label kos_krs3:
         #sfx grumbling
 
         "GRUGRUGRUGRUGRU"
+        with vpunch
 
         "Bukan hanya suara petir yang bergemuruh, tampkanya perutmu juga memberontak meminta jatah makanan."
 
@@ -156,15 +157,20 @@ label kos_krs3:
         
         "Atap asbes yang seharusnya melindungi dari air hujan tidak dapat melindungi dari percikan air yang masuk terbawa oleh angin."
 
-        "Kamu segera mengambil makanan yang kamu beli tadi di cantolan motormu."
+        "Kamu segera mengambil makanan yang kamu beli tadi di cantolan motormu dan bergegas kembali kedalam kamar."
 
         mc "Tadi panas banget, sekarang bisa hujan deras kaya begini hhhuuuuuu…"
 
-        scene bg kos night with dissolve
+        "Dengan badan yang menggigil, kamu mengambil selimut dari tempat tidur untuk menghatkan tubuhmu."
 
-        "Video yang diputar pada Utube menemani makan malammu."
+        "Kemudian setelah meletakan makanan pada piring, dan menghidupkan laptopmu, kamu mulai memutar video yang ada pada Utube."
+
+        scene bg kos night with fade
+
+        "Video yang diputar pada Utube menjadi teman yang menemaniw makan malammu."
 
         call eat
+        show screen stats_changer("eat", 0)
 
         "Merasa santai karena sudah melakukan kewajiban Pengisian KRS, kamu berniat untuk menikmati malammu dengan menonton film semalaman."
 
@@ -184,7 +190,7 @@ label kos_krs3:
         $placeKeys = 3
         window hide
 
-        call screen trans_screen
+        show screen trans_screen
         
         scene bg kos morn with dissolve
 
@@ -277,7 +283,7 @@ label kos_krs4:
 
     call change_timephase
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
 
     scene bg kos morn with dissolve
 
@@ -509,13 +515,13 @@ label kos_krs4:
 
 label kos_krs4_night:
 
-    pause 1.4
-
     call change_timephase
 
     $ placeKeys = 3 
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
+
+    pause 1.4
 
     scene bg kos night with dissolve
 
@@ -552,7 +558,7 @@ label kos_krs4_night:
     
     "Kemudian satu persatu teman-temanmu menanggapi apa yang di kirim oleh Rissa."
 
-    t "{i}Clear punyaku.{/i}"
+    t normal "{i}Clear punyaku.{/i}"
 
     t "{i}Punyaku sudah hijau semuaa.{/i}"
 
@@ -659,10 +665,9 @@ label kos_krs4_night:
 #Common Day Case
 
 #Case1
-
 label kos_dayS1:
 
-    call screen trans_screen
+    pause 2.0 
 
     scene bg kos morn with dissolve
 
@@ -690,7 +695,7 @@ label kos_dayS1:
 
     "Scroll"
 
-    mc "Belum ada informasi baru, cuma obrolan teman-teman saja."
+    mc "Enggak ada informasi baru tentang kuliah, cuma obrolan teman-teman saja."
 
     "Menutup aplikasi lane, lalu kamu menekan icon aplikasi phogram dan mulai menikmati konten yang ada di fypmu."
 
@@ -724,9 +729,15 @@ label kos_dayS1:
 
     "Pada akhirnya kamu hanya menghabiskan sisa waktu di siang harimu dengan kembali tertidur pulas."
 
-    "Tidak melakukan hal produktif seperti yang kamu inginkan. Tapi paling tidak kamu menambah energimu untuk kegiatan selanjutnya."
-
     call nap
+
+    "Tidak melakukan hal produktif seperti yang kamu inginkan. Tapi paling tidak, kamu telah menambah energi untuk melakukan kegiatan selanjutnya."
+
+    "........."
+
+    "....."
+
+    "..."
     
     if KRS3 is True:
         $KRS3 = False

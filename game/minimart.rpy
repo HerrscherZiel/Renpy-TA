@@ -372,7 +372,7 @@ label mart_scene_pick:
                 jump mart_dayS3
             else:
                 jump mart_nightS3
-
+#morn
 label mart_mornS1:
 
     "mart morn 1"
@@ -385,9 +385,12 @@ label mart_mornS3:
 
     "mart morn 3"
 
+#noon
 label mart_dayS1:
 
     scene bg minimart_out with dissolve
+
+    pause 2.0
 
     "Pada siang hari, kamu pergi menuju minimarket dimana biasanya kamu berbelanja."
 
@@ -449,13 +452,15 @@ label mart_dayS1:
 
     mc "Siang-siang begini selesain daily quest lumayan lah."
 
-    scene bg foodcout with fade
+    scene bg foodcourt with fade
+
+    call drink
 
     "Seru dalam duniamu sendiri, tak sadar satu cup kopi yang kamu beli sudah habis."
 
     "Indikator baterai dari HPmu juga sudah berubah menjadi warna merah. Kamu menutup permainan dan memasukan HPmu ke dalam saku."
 
-    mc normal jacket "niat mau beli minum sebentar malah jadi nongkrong lama begini huhhhhh."
+    mc normal jacket "Niat mau beli minum sebentar malah jadi nongkrong lama begini huhhhhh."
     
     "Kamu menyesal menghabiskan waktumu terlalu lama di minimart. Sekarang jam sudah menunjukan pukul 4 Sore, dan dirimu hanya menghabiskan waktu siangmu berada di minimart."
     
@@ -464,8 +469,6 @@ label mart_dayS1:
     mc "Kopinya enak juga, besok kalau kesini lagi aku beli lah."
 
     "Membawa satu bungkus kopi yang kamu dapat dari promo, kamu keluar dari minimart dan mengendarai motor ke kos."
-
-    call drink
 
     window hide
 
@@ -485,6 +488,7 @@ label mart_dayS3:
 
     # stat +
 
+#night
 label mart_nightS1:
 
     "mart night 1"

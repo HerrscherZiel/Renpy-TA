@@ -243,58 +243,22 @@ label first_kampus:
 
     pa "Sementara contoh mata kuliah yang bisa diambil setelah menyelesaikan mata kuliah sebelumnya adalah, contoh mata kuliah {b}{i}Basis Data II bisa diambil setelah menyelesaikan Basis Data I{/i}{/b}."
 
-    hide krs
-
-    show home simaster:
-        xalign 0.5
-        yalign 0.4    
-    with dissolve
-    
-    pa "Kemudian untuk pengisian KRS sendiri bisa dilakukan lewat {b}{i}Simaster{/i}{/b}"
-
-    hide home simaster
-
-    show home akademik:
-        xalign 0.5
-        yalign 0.4    
-    with dissolve 
-    
-    pa "melalui menu, {b}Akademik Kemahasiswaan{/b} lalu pilih sub menu {b}Akademik{/b}."
-
-    hide home akademik
-
-    show home akademik krs:
-        xalign 0.5
-        yalign 0.4    
-    with dissolve 
-    
-    pa "Pada sub menu akademik, pilih menu {b}Pengisian KRS{/b}."
-
-    hide home akademik krs
-
-    show pengisian krs:
-        xalign 0.5
-        yalign 0.4    
-    with dissolve 
-
-    pa "Pada halaman {i}Pengisian KRS{/i}, kamu dapat memilih periode pengisian KRS, kemudian setelah mengklik maka kamu akan melihat banyak nama mata kuliah beserta kode mata kuliahnya."
-
-    hide pengisian krs
+    hide krs with dissolve
 
     show krs 1:
         xalign 0.5
         yalign 0.4    
     with dissolve 
-    
-    pa "Di halaman itu kamu tinggal memilih mata kuliah sesuai dengan nama atau kode mata kuliahnya, disitu juga terdapat keterangan kelas dan dosen pengampunya."
 
-    pa "Mata kuliah yang masih memiliki kapasitas bisa kalian pilih. Setiap Mata kuliah memiliki beban atau SKSnya masing-masing."
+    pa "Setiap mata kuliah memiliki kapasitasnya masing-masing. Kapasitas yang dimaksud adalah jumlah mahasiswa per kelasnya."
+
+    pa "Setiap mata kuliah juga memiliki nilai atau bebas SKSnya masing-masing."
 
     pa "SKS adalah Satuan Kredit Semester, dimana dalam satu semester kalian paling banyak dapat memiliki sebanyak 24 SKS."
 
-    pa "Untuk menyelesaikan kuliah S1 sendiri memerlukan 144-148 SKS untuk bisa lulus."
+    pa "Untuk menyelesaikan kuliah S1 sendiri diperlukan 144-148 SKS untuk bisa lulus."
 
-    hide krs 1
+    hide krs 1 with dissolve
 
     show krs 2:
         xalign 0.5
@@ -307,16 +271,81 @@ label first_kampus:
 
     pa "Sekiranya untuk KRS seperti itu, nanti saya beri tahu mata kuliah apa saja yang kalian ambil di semester ini."
 
-    hide krs 2
+    hide krs 2 with dissolve
+
+    call screen trivia_perkuliahan1 with dissolve
+
+    pa "Bagaimana apakah ada pertanyaan mengenai alur perkuliahan ?"
+
+    pa "Bapak tunggu kalau ada...."
+
+    ".........."
+
+    "......"
+
+    "..."
+
+    pa "Ya karena sepertinya belum ada, bapak lanjut menjelaskan mengenai pengisian KRS."
+
+    show home simaster:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve
+    
+    pa "Pertama, untuk melakukan pengisian KRS kalian bisa membuka website {b}{i}Simaster{/i}{/b}"
+
+    pa "Masuk menggunakan akun masing-masing yang sudah diberi oleh kampus ya."
+
+    hide home simaster
+
+    show home akademik:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve 
+
+    pa "Kemudian kalian pilih menu {b}Akademik Kemahasiswaan{/b} yang ada pada bagian atas kiri."
+    
+    pa "Melalui menu {b}Akademik Kemahasiswaan{/b} nanti kalian pilih sub menu {b}Akademik{/b}."
+
+    hide home akademik
+
+    show home akademik krs:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve 
+    
+    pa "Pada sub menu akademik, kemudian kalian pilih menu {b}Pengisian KRS{/b}."
+
+    hide home akademik krs
+
+    show pengisian krs:
+        xalign 0.5
+        yalign 0.4    
+    with dissolve 
+
+    pa "Nah ini halaman Pengisian KRSnya."
+
+    pa "Pada halaman {i}Pengisian KRS{/i}, kamu dapat memilih periode pengisian KRS, kemudian setelah mengklik maka kalian akan melihat banyak nama mata kuliah beserta kode mata kuliahnya.
+        Disitulah kalian melakukan pengisian KRS."
+    
+    pa "Di halaman itu kalian tinggal memilih mata kuliah sesuai dengan nama atau kode mata kuliahnya, disitu juga terdapat keterangan kelas dan dosen pengampunya."
+
+    hide pengisian krs
+  
+    call screen simaster_pengisiankrs with dissolve
+
+    pa "Kurang lebih seperti itu untuk Pengisian KRSnya."
+
+    pa "Oh iya, untuk bimbingan bersama DPA yang melalui Simaster sekalian bapak jelasin juga."
 
     show home akademik:
         xalign 0.5
         yalign 0.4
     with dissolve
 
-    pa "Kemudian, mengenai Bimbingan DPA sendiri kalian bisa melakukannya lewat {b}{i}Simaster{/i}{/b} melalui menu {b}Akademik Kemahasiswaan{/b}"
+    pa "Pertama dari halaman beranda di {b}{i}Simaster{/i}{/b} kalian memilih menu {b}Akademik Kemahasiswaan{/b}."
     
-    pa "Lalu pilih sub menu {b}Akademik{/b}."
+    pa "Sama seperti pengisian KRS, kemudian kalian pilih sub menu {b}Akademik{/b}."
 
     hide home akademik
 
@@ -325,7 +354,9 @@ label first_kampus:
         yalign 0.4
     with dissolve
     
-    pa "Pada sub menu akademik, pilih {b}Diskusi DPA{/b}."
+    pa "Nah disini bedanya kalian memilih sub menu yang berbeda."
+
+    pa "Pada sub menu akademik, pilihlah {b}Diskusi DPA{/b}."
 
     hide home akademik dpa
 
@@ -438,17 +469,15 @@ label first_kampus:
 
     "Kamu memesan dan memakannya di tempat, kemudian langsung melanjutkan perjalanan ke kos karena merasakan badanmu yang sudah sangat lelah."
 
-    $ energy += 15
+    call eat
 
-    $ hunger += 25
-
-    scene bg black with dissolve
+    scene bg black with fade
 
     window hide
     
     $placeKeys = 3
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
 
     "Setelah sampai di kamar kosmu, kamu merasakan rasa lelah yang membuatmu mengantuk."
 
@@ -464,7 +493,7 @@ label first_kampus:
 
     $timephase +=1
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
 
     $ vit -= 5
     $ energy -= 10

@@ -3,7 +3,7 @@
 
 label sport_dayS1:
 
-    call screen trans_screen
+    pause 2.0
 
     scene bg kos morn with dissolve
 
@@ -61,7 +61,11 @@ label sport_dayS1:
 
     "Merasakan keletihan yang sudah mulai menghilang, kamu meneruskan larimu. Karena dirasa sudah cukup jauh berlari kamu memutuskan untuk kembali ke kos."
 
-    "Setelah beberapa menit berlari, akhirnya kamu sampai di kosmu."
+    "Setelah beberapa menit berlari, akhirnya kamu sampai di area kosmu."
+
+    scene bg town street 1 with fade
+
+    call jog
 
     "Hal pertama yang kamu lakukan setelah sampai di kosmu adalah melakukan pendinginan, sebelum kembali beristirahat hingga keringat selesai bercucuran dari dalam tubuhmu. "
 

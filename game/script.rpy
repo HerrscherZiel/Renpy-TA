@@ -10,7 +10,7 @@
 define r = Character("Rissa", image="r")
 # define mc = Character("Mc", image="mc") 
 define mc = Character("You", image="mc")
-define w = Character("Warga", image="anonM")
+define w = Character("Warga", image="w")
 define pa = Character("Pak Andy", image="pa")
 define aa1 = Character("Aa'", image="anonM")
 define kev = Character("Kevin", image="anonM")
@@ -85,11 +85,7 @@ default note = ""
 
 default maps = False
 
-
-
-
 # The game starts here.
-
 
 
 label start:
@@ -316,7 +312,7 @@ label day2:
 
     hide day2 pro with dissolve
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
 
     pause 2.0
 
@@ -510,63 +506,62 @@ label day2:
 
     mc "Ohhh ternyata DPAku juga Pak Andy."
 
-    "Setelah mengecek siapa DPAmu di Simaster, kamu melanjutkan scrolling chat di grupmu."
-
-    "Untuk jam berapanya masih kutanyakan ya teman-temann."
-
-    "{i}Okee Clariss{/i}."
-
-    "Scroll"
-
-    "Scroll"
-
-    "Chat selanjutnya masih dilanjutkan dengan candaan oleh beberapa tokoh yang ada di grup."
-
-    mc "{i}hmmm sepertinya si Claris ini bakal jadi tokoh ketua kelas di angkatan deh{/i}."
-
-    mc "{i}Belum masuk aja sudah jadi penghubung begini..{/i}"
-
-    "Scroll"
-
-    "Scroll"
-
-    "{i}Oh ini teman-teman Pak Andy sudah bales chatku!{/i}"
-
-    "{i}Jam berapa tuh Claris?{/i}"
-
-    "{i}Iya jam berapa?{/i}"
-
-    "{i}Kalau yang bukan Pak Andy kita kapan gengs?{/i}"
-
-    mc "{i}Ohh ternyata tidak semua Pak Andy ya?{/i}"
-
-    mc "{i}Hmmm iya juga sih, satu angkatan banyak mahasiswa kalau dosen pembimbingnya cuma satu gamungkin sih...{/i}"
-
-    "{i}Kata Pak Andy nanti siang antara jam 12 sampai jam 1 nih, di Lab TRPL katanya{/i}."
-
-    "{i}Waduh dimana itu..{/i}"
-
-    "{i}Iya dimana itu?{/i}"
-
-    "Chat yang di grup masih bermunculan satu persatu, namun kamu mengabaikannya."
+    "Setelah mengecek siapa DPAmu di Simaster, kamu kembali membuka groupchat Lanemu untuk membaca chat yang ada dibawahnya."
 
     hide diskusi dpa with dissolve
 
-    "Kamu melirik melihat jam yang ada di ponselmu."
+    t "{i}Untuk jam berapanya masih kutanyakan ya teman-temann{/i}."
 
-    "07.30 adalah waktu yang ditunjukan."
+    t "{i}Okee Clariss{/i}."
 
-    mc "{i}masih nanti siang yaa, mau apa dulu ya pagi ini?{/i}"
+    "Scroll"
+
+    "Scroll"
+
+    "Chat yang ada dibawahnya dilanjutkan dengan candaan oleh beberapa orang yang ada di grup."
+
+    mc "{i}hmmm sepertinya si Claris ini bakal jadi tokoh ketua di angkatan deh{/i}."
+
+    mc "{i}Belum masuk kuliah aja sudah jadi informan begini..{/i}"
+
+    "Scroll"
+
+    "Scroll"
+
+    t "{i}Oh ini teman-teman Pak Andy sudah bales chatku!{/i}"
+
+    t "{i}Jam berapa tuh Claris?{/i}"
+
+    t "{i}Iya jam berapa?{/i}"
+
+    t "{i}Kalau yang bukan Pak Andy kita bimbingannya kapan gengs?{/i}"
+
+    mc "{i}Ohh ternyata tidak semua mahasiswa DPAnya Pak Andy ya?{/i}"
+
+    mc "{i}Hmmm iya juga sih, satu angkatan banyak mahasiswa kalau dosen pembimbingnya cuma satu gamungkin sih...{/i}"
+
+    t "{i}Kata Pak Andy nanti siang antara jam 12 sampai jam 1 nih, di Lab TRPL katanya{/i}."
+
+    t "{i}Waduh dimana itu..{/i}"
+
+    t "{i}Iya dimana itu?{/i}"
+
+    "Chat yang ada di grup masih bermunculan satu persatu, namun kamu mengabaikannya."
+
+    "Kamu melirik melihat jam yang ada di HPmu."
+
+    "Waktu telah menunjukan pukul 07.30."
+
+    mc "{i}masih nanti siang yaa bimbingannya, mau ngapain dulu ya pagi ini?{/i}"
 
     "Melihat waktu yang masih pagi, dan bimbingan akan diadakan di siang hari kamu memutuskan untuk mengisi waktu pagimu."
 
     "Kamu memutuskan untuk…."
 
-    # hide screen stats_screen
     window hide
 
     $ prologueCount += 1
-
+    #go to kampung
     call screen mapUI with dissolve
 
     return
@@ -596,7 +591,7 @@ label day3:
 
     hide day3 pro with dissolve
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
 
     pause 2.0
 
@@ -710,29 +705,29 @@ label day3:
 
     "Melanjutkan membaca chat yang ada di grup, terdapat beberapa balasan dari teman seangkatanmu."
 
-    "{i}Rosa perpustakaan pusat itu yang deket sama Graha itu kan?{/i}"
+    t normal "{i}Rosa perpustakaan pusat itu yang deket sama Graha itu kan?{/i}"
 
-    "{i}Iya, nanti kalau udah disana ku share lokasinya.{/i}"
+    r normal2 "{i}Iya, nanti kalau udah disana ku share lokasinya.{/i}"
 
-    "{i}Jam berapa tuuh?{/i}"
+    t "{i}Jam berapa tuuh?{/i}"
 
-    "{i}Enaknya jam berapa man-temans?{/i}"
+    r normal2"{i}Enaknya jam berapa man-temans?{/i}"
 
-    "{i}Agak siangan aja Ros.{/i}"
+    t "{i}Agak siangan aja Ros.{/i}"
 
-    "{i}Aku jam 9 lebih baru bisa gas.{/i}"
+    t "{i}Aku jam 9 lebih baru bisa gas.{/i}"
 
-    "{i}Jangan siang-siang tapi, takut kalau hujan maless…{/i}"
+    t "{i}Jangan siang-siang tapi, takut kalau hujan maless…{/i}"
 
-    "{i}Jam 10 sih bisaa, gimana yang lain?{/i}"
+    r "{i}Jam 10 sih bisaa, gimana yang lain?{/i}"
 
-    "{i}Iya jam 10 aja gimana? {/i}"
+    t "{i}Iya jam 10 aja gimana? {/i}"
 
-    "{i}Okee gass.{/i}"
+    t "{i}Okee gass.{/i}"
 
-    "{i}Siappp{/i}"
+    t "{i}Siappp{/i}"
 
-    "{i}Jam 10 ya noted.{/i}"
+    r "{i}Jam 10 ya noted.{/i}"
 
     mc "Apa aku sekalian kucoba sekarang aja apa ya?"
 
@@ -781,8 +776,10 @@ label day3:
         xalign 0.5
         yalign 0.4    
     with dissolve 
-
+    
     "{i}GRUGRUGRUGRUGRU{/i}"
+
+    with vpunch
 
     mc "Ughhhh"
 
@@ -857,6 +854,7 @@ label day3:
     mc "Apa coba warmindo sebelah ya?"
 
     "GRUGRUGRUGRU"
+    with vpunch
 
     mc "Yaudahlah, sambil nyoba siapa tahu enak."
 
@@ -951,7 +949,6 @@ label day3:
     return
 
 label day4:
-    call change_day
     scene bg black
     with Dissolve(1.0)
 
@@ -965,7 +962,7 @@ label day4:
 
     hide day4 pro with dissolve
 
-    call screen trans_screen with dissolve
+    call change_day
 
     pause 2.0
 
@@ -975,15 +972,18 @@ label day4:
 
     show screen days_screen with dissolve
 
-    scene bg kos morn with fade
+    # scene bg kos morn with fade
 
     #SFX alarm
 
     "Nggtttt"
+    with hpunch
 
     "Nggttttt"
+    with hpunch
 
     "Ngtttttttt"
+    with hpunch
 
     "HPmu bergetar selama beberapa detik sebelum mengeluarkan suara ringtone alarm mengeluarkan bunyi yang membuatmu terbangun dari tidur."
 
@@ -1063,6 +1063,7 @@ label day4:
     "Terlalu menikmati konten yang ada, tanpa sadar waktu telah cepat berlalu tanpa kamu menyadarinya, hingga kamu tersadar setelah perutmu berbunyi."
 
     "GRUGRUGRUGRU"
+    with vpunch
 
     mc normal jacket "Ughhh… oh iya, sarapan-sarapan."
 
@@ -1116,15 +1117,21 @@ label day4:
 
     kev "Iya mas, sama-sama."
 
+    show screen get_box2 with dissolve
+
     "Cklekk"
 
-    mc "Lumayan..... rezeki emang enggak kemana. Dari kemarin dapat makan gratis terus."
-
     "Menutup pintu, kamu duduk dan menaruh box makanan itu di meja belajar." 
+
+    mc "Lumayan..... rezeki emang enggak kemana. Dari kemarin dapat makan gratis terus."
     
     "Dengan hati yang senang, kamu segera membuka apa yang ada di dalam kotak makanan itu."
 
+    "Kotak yang barusan kamu buka tersebut berisikan berbagai macam donat, tanpa pandang bulu kamu mulai mengambilnya satu persatu."
+
     "Meletakan hp di meja belajar, kamu memutar video di internet untuk menemani sarapanmu."
+
+    call small_eat
 
     "Setelah selesai sarapan, tepatnya pukul 9 lebih kamu mengambil handuk yang ada pada gantungan pakaian dan keluar kamar untuk mandi pagi."
 
@@ -1153,8 +1160,6 @@ label day4:
 label day5:
 
     call change_day
-
-    call screen trans_screen with dissolve
 
     "persiapan pagi"
 
@@ -1189,10 +1194,7 @@ label days:
         "ending"
 
     return
-
-    
-    
-
+  
 label nothing:
 
     scene bg black
@@ -1204,7 +1206,7 @@ label nothing:
 label eat:
 
     $energy +=10
-    $hunger +=35
+    $hunger +=30
     $vit +=5
 
     call stat_change
@@ -1213,14 +1215,35 @@ label eat:
 
     return
 
-label drink:
+label small_eat:
 
-    $energy +=5
-    $hunger += 15
+    $hunger +=15
 
     call stat_change
 
+    "Stats Berubah!!!"
+    show screen stats_changer("small_eat", 0)
+
+    return
+
+label drink:
+
+    $energy +=10
+    $hunger += 10
+    show screen stats_changer("drink", 0)
+    call stat_change
+
     "Stat Berubah!!!"
+
+    return
+
+label nap:
+
+    $ energy += 25
+    $ hunger -= 10
+    $ vit += 5
+    call stat_change
+    show screen stats_changer("nap", 0)
 
     return
 
@@ -1233,11 +1256,46 @@ label change_timephase:
 
     $ vit -= 5
     $ energy -= 20
-    $ hunger -= 10
+    $ hunger -= 15
 
+    show screen stats_changer("change_timephase", 0)
     call stat_change
 
     return
+
+label change_day:
+
+    $ day += 1
+    if timephase != 3:
+        $ timephase += 1
+    else:
+        $ timephase = 1   
+
+    $ energy += 45
+    $ hunger -= 25
+    $ vit -= 10
+
+    show screen trans_screen with dissolve
+
+    show screen stats_changer("change_day", 0)
+    call stat_change
+
+    return
+
+#sport
+label jog:
+
+    $ vit += 25
+    $ energy -= 20
+    $ hunger -= 15
+
+    call stat_change
+
+    "Stats Berubah!!!"
+    show screen stats_changer("jog", 0)
+
+    return
+
 
 label stat_change:
 
@@ -1266,32 +1324,6 @@ label stat_change:
         $weakCount +=1 
     
     return
-
-label change_day:
-
-    $ day += 1
-    if timephase != 3:
-        $ timephase += 1
-    else:
-        $ timephase = 1   
-
-    $ energy += 30
-    $ hunger -= 25
-    $ vit -= 10
-
-    call stat_change
-
-    return
-
-label nap:
-
-    $ energy += 15
-    $ hunger -= 10
-    $ vit -= 5
-    call stat_change
-
-    return
-
 
 # label change_time:
 

@@ -111,13 +111,13 @@ screen trans_screen:
                 else:
                     pass
 
-        imagebutton:
-            xalign 0.5
-            yalign 0.5
-            idle "trans/layer.png"
-            action Return()
+        # imagebutton:
+        #     xalign 0.5
+        #     yalign 0.5
+        #     idle "trans/layer.png"
+        #     action Return()
 
-    # timer 5.0 action [return]
+    timer 2.5 action Hide("trans_screen", dissolve)
 
 
 

@@ -23,7 +23,7 @@ label persiapan_krs:
 
     "Terdapat satu pesan yang dikirim oleh Rissa."
 
-    "{i}Ini disini ya.{/i}"
+    r normal2 "{i}Ini disini ya.{/i}"
 
     "Rissa mengirim pesan dan alamat lokasi yang akan digunakan untuk melakukan pengisian KRS bersama."
 
@@ -51,17 +51,17 @@ label persiapan_krs:
 
     "Tuingg"
 
-    "{i}Baru 4 orang sih, mungkin molor sedikit seperti biasa hahaha.{/i}"
+    r "{i}Baru 4 orang sih, mungkin molor sedikit seperti biasa hahaha.{/i}"
 
     mc "{i}Emang kira-kira yang berangkat ke perpustakaan berapa nanti?{/i}"
 
-    "{i}Mungkin 10an anak atau belasan, yang kontakan sama aku cuma segituan sih.{/i}"
+    r "{i}Mungkin 10an anak atau belasan, yang kontakan sama aku cuma segituan sih.{/i}"
 
     mc "{i}Oh oke, aku sekitar jam 10.15an paling sampai sananya nanti.{/i}"
 
-    "{i}Okey okey, Jangan lupa bawa laptop.{/i}"
+    r "{i}Okey okey, Jangan lupa bawa laptop.{/i}"
 
-    "{i}Siap Siap{/i}"
+    mc "{i}Siap Siap{/i}"
 
     mc "Gak rame-rame banget lah kalau cuma sepulugan orang, kukira bakal lebih banyak."
 
@@ -85,11 +85,13 @@ label persiapan_krs:
 
     mc normal jacket "Oh iyaa… lupa belum jadi isi bensin aku." 
     
-    mc "apa nanti habis krsan ya? Kayaknya masih cukup kalau cuma ke perpustakaan."
+    mc "Apa nanti habis krsan ya? Kayaknya masih cukup kalau cuma ke perpustakaan."
 
     mc "Coba kucek aja dulu tangki bensinnya."
 
     "Clug clug"
+
+    "Kamu mengecek isi dari tangki bensin motormu."
 
     mc "Masih-masih, yaudah tinggal berangkat aja berarti."
 
@@ -125,7 +127,7 @@ label krs:
         yalign 0.4
     with dissolve
 
-    t "{i}Udah sampai nih, aku udah sampai di depan sama yang lain.{/i}"
+    t normal "{i}Udah sampai nih, aku udah sampai di depan sama yang lain.{/i}"
 
     t "{i}Ohh oke sebentar aku sudah hampir sampai.{/i}"
 
@@ -190,7 +192,8 @@ label krs:
     menu:
 
         "Ikut menunggu bersama Rissa":
-            $rissa_fond += 10
+            show screen stats_changer("fond",10)
+            $rissa_fond +=10
 
             mc "Kalau begitu aku juga ikut nunggu diluar saja lah, sambil cari angin juga hehehe."
 
@@ -348,7 +351,7 @@ label krs:
 
     "Rissa menanyakan kepada teman kelasmu yang sudah siap dengan laptop mereka masing-masing. Satu persatu temanmu menanggapi pertanyaan Rissa."
 
-    t "Sudahh"
+    t normal"Sudahh"
 
     t "Lewat simaster itu kan?"
 
@@ -558,7 +561,7 @@ label fin_krs:
 
     r "Hmm emang enggak ada ya? Coba aku tanya ke Pak Andy dulu."
 
-    t "Iyaa coba tanyain ke Pak Andy buat mastiinnya"
+    t normal"Iyaa coba tanyain ke Pak Andy buat mastiinnya"
 
     r "Oke, oke tunggu bentar ya.."
 
@@ -614,7 +617,7 @@ label fin_krs:
 
     scene bg perpus_in with fade
 
-    t "Wah sudah jam 2 aja, perasaan tadi kita selesai ngisi jam 12an."
+    t normal"Wah sudah jam 2 aja, perasaan tadi kita selesai ngisi jam 12an."
 
     t "Iya juga ya cepet banget rasanya."
 
