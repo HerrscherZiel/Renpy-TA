@@ -1,37 +1,217 @@
-Wed Mar  8 01:01:31 2023
+Wed Mar  8 22:40:28 2023
 Windows-10-10.0.19044
 Ren'Py 8.0.3.22090405
  
 
-Bootstrap to the start of init.init took 0.15s
-Early init took 0.01s
-Loader init took 0.13s
-Loading error handling took 0.09s
-Loading script took 1.03s
-Loading save slot metadata. took 0.21s
+Bootstrap to the start of init.init took 0.08s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.04s
+Loading script took 0.73s
+Loading save slot metadata. took 0.13s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.34s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.01s
+Running init code took 0.11s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
-Dump and make backups. took 0.15s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.05s
+Initial gc. took 0.03s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 1.21s
+Creating interface object took 0.65s
 Cleaning stores took 0.00s
-Init translation took 0.18s
-Build styles took 0.03s
-Load screen analysis took 0.13s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.06s
+Prepare screens took 0.20s
+Save pyanalysis. took 0.05s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.15s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 144.52s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.06s
+Loading script took 0.39s
+Loading save slot metadata. took 0.07s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.73s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.12s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.28s
+Prepare screens took 0.25s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.10s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 192.00s
+Early init took 0.00s
+Loader init took 0.10s
+Loading error handling took 0.07s
+Loading script took 0.33s
+Loading save slot metadata. took 0.09s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.64s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.07s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 237.09s
+Early init took 0.00s
+Loader init took 0.09s
+Loading error handling took 0.05s
+Loading script took 0.47s
+Loading save slot metadata. took 0.12s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.08s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.12s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.10s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.71s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.04s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 479.12s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.03s
+Loading script took 0.39s
+Loading save slot metadata. took 0.07s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.04s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.09s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.76s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.08s
+Prepare screens took 0.23s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.19s
@@ -47,171 +227,170 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 99.46s
+Bootstrap to the start of init.init took 684.75s
 Early init took 0.00s
-Loader init took 0.10s
-Loading error handling took 0.08s
-Loading script took 0.84s
-Loading save slot metadata. took 0.12s
+Loader init took 0.04s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.06s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.08s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
+Running init code took 0.09s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.16s
+Dump and make backups. took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.09s
+Initial gc. took 0.07s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.93s
+Creating interface object took 0.39s
 Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
+Init translation took 0.06s
+Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.07s
-Prepare screens took 0.25s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 264.28s
-Early init took 0.00s
-Loader init took 0.15s
-Loading error handling took 0.06s
-Loading script took 0.74s
-Loading save slot metadata. took 0.18s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.11s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.14s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.14s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 1.09s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 288.42s
-Early init took 0.00s
-Loader init took 0.12s
-Loading error handling took 0.07s
-Loading script took 0.84s
-Loading save slot metadata. took 0.13s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.08s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.16s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.83s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.23s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 406.78s
-Early init took 0.00s
-Loader init took 0.17s
-Loading error handling took 0.07s
-Loading script took 0.81s
-Loading save slot metadata. took 0.12s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.67s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
+Analyze screens took 0.02s
 Save screen analysis took 0.04s
-Prepare screens took 0.16s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 715.55s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.02s
+Loading script took 0.28s
+Loading save slot metadata. took 0.06s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.10s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 766.14s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata. took 0.05s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.08s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 528.24'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 769.34s
+Early init took 0.00s
+Loader init took 0.04s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata. took 0.05s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.08s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.07s
@@ -227,614 +406,22 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 426.30s
-Early init took 0.01s
-Loader init took 0.25s
-Loading error handling took 0.05s
-Loading script took 0.53s
-Loading save slot metadata. took 0.13s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.08s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.13s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.20s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.84s
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 729.26s
-Early init took 0.00s
-Loader init took 0.05s
-Loading error handling took 0.02s
-Loading script took 0.26s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.42s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 752.34s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.03s
-Loading script took 0.25s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.40s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 826.20s
-Early init took 0.00s
-Loader init took 0.05s
-Loading error handling took 0.02s
-Loading script took 0.26s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 855.72s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.23s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 892.88s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.25s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.52s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1034.94s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.25s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.39s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1101.14s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.24s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.42s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init took 1850.02s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.30s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.07s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2022.35s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.02s
-Loading script took 0.32s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.40s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2028.91s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.24s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.40s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2246.61s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.24s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.40s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2250.01s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.33s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.44s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2529.41s
+Bootstrap to the start of init.init took 893.17s
 Early init took 0.00s
 Loader init took 0.04s
 Loading error handling took 0.02s
 Loading script took 0.18s
-Loading save slot metadata. took 0.05s
+Loading save slot metadata. took 0.06s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
+Running init code took 0.08s
 Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Dump and make backups. took 0.06s
+Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.07s
+Initial gc. took 0.08s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
@@ -845,1164 +432,12 @@ Build styles took 0.00s
 Load screen analysis took 0.06s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.10s
+Prepare screens took 0.12s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2659.17s
-Early init took 0.00s
-Loader init took 0.05s
-Loading error handling took 0.04s
-Loading script took 0.24s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2670.25s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.26s
-Loading save slot metadata. took 0.11s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2726.97s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.27s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.43s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2848.01s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.29s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.42s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2865.10s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.30s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 2973.94s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.31s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.47s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 3036.82s
-Early init took 0.00s
-Loader init took 0.05s
-Loading error handling took 0.02s
-Loading script took 0.36s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.42s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 3057.11s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.27s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.38s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 3167.23s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.42s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.04s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 3219.53s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.03s
-Loading script took 0.27s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.08s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.39s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4284.52s
-Early init took 0.00s
-Loader init took 0.11s
-Loading error handling took 0.05s
-Loading script took 0.62s
-Loading save slot metadata. took 0.16s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.12s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.17s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.11s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.92s
-Cleaning stores took 0.00s
-Init translation took 0.15s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.07s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4389.85s
-Early init took 0.00s
-Loader init took 0.09s
-Loading error handling took 0.14s
-Loading script took 2.88s
-Loading save slot metadata. took 0.83s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.23s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.12s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.84s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.01s
-Analyze screens took 0.05s
-Save screen analysis took 0.07s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4398.05s
-Early init took 0.00s
-Loader init took 0.08s
-Loading error handling took 0.04s
-Loading script took 0.59s
-Loading save slot metadata. took 0.13s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.10s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.72s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.20s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4450.85s
-Early init took 0.00s
-Loader init took 0.08s
-Loading error handling took 0.03s
-Loading script took 0.56s
-Loading save slot metadata. took 0.17s
-Loading persistent took 0.00s
-
-File "game/campus.rpy", line 472: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        "Kemudian setelah makanan yang kamu pesan habis, kamu langsung melanjutkan perjalanan ke kos karena merasakan badanmu yang sudah sangat lelah.""
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.88s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4461.76s
-Early init took 0.00s
-Loader init took 0.13s
-Loading error handling took 0.05s
-Loading script took 0.63s
-Loading save slot metadata. took 0.08s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.10s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.15s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.16s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.82s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4486.85s
-Early init took 0.00s
-Loader init took 0.11s
-Loading error handling took 0.03s
-Loading script took 0.45s
-Loading save slot metadata. took 0.09s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.13s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.10s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.97s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.05s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4536.68s
-Early init took 0.00s
-Loader init took 0.09s
-Loading error handling took 0.04s
-Loading script took 0.51s
-Loading save slot metadata. took 0.11s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.12s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.11s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.64s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.04s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4543.55s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.41s
-Loading save slot metadata. took 0.12s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.12s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.60s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.04s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4550.33s
-Early init took 0.00s
-Loader init took 0.10s
-Loading error handling took 0.04s
-Loading script took 0.41s
-Loading save slot metadata. took 0.10s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.65s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.18s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4651.04s
-Early init took 0.00s
-Loader init took 0.12s
-Loading error handling took 0.04s
-Loading script took 0.45s
-Loading save slot metadata. took 0.11s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.73s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4664.04s
-Early init took 0.00s
-Loader init took 0.25s
-Loading error handling took 0.10s
-Loading script took 0.61s
-Loading save slot metadata. took 0.13s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.60s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4675.67s
-Early init took 0.00s
-Loader init took 0.11s
-Loading error handling took 0.04s
-Loading script took 0.43s
-Loading save slot metadata. took 0.09s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.61s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.18s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4704.12s
-Early init took 0.00s
-Loader init took 0.10s
-Loading error handling took 0.04s
-Loading script took 0.37s
-Loading save slot metadata. took 0.09s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.21s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.11s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.81s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.06s
-Prepare screens took 0.20s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4774.22s
-Early init took 0.00s
-Loader init took 0.10s
-Loading error handling took 0.05s
-Loading script took 0.46s
-Loading save slot metadata. took 0.08s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.13s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.11s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.80s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.05s
-Prepare screens took 0.20s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 4913.79s
-Early init took 0.00s
-Loader init took 0.10s
-Loading error handling took 0.09s
-Loading script took 0.61s
-Loading save slot metadata. took 0.09s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.09s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.78s
-Cleaning stores took 0.00s
-Init translation took 0.11s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.08s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 528.24'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 5041.99s
-Early init took 0.00s
-Loader init took 0.08s
-Loading error handling took 0.03s
-Loading script took 0.55s
-Loading save slot metadata. took 0.12s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.14s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.10s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.57s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.17s
-Save pyanalysis. took 0.04s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)

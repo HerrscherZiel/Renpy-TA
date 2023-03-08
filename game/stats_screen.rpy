@@ -77,6 +77,14 @@ screen stats_screen:
         #     auto "menuUI/button/task_%s.png"
         #     action ShowMenu("stats")
 
+        imagebutton:
+            xpos 1655
+            ypos 133
+            # xoffset -30
+            # yoffset 30
+            auto "menuUI/button/task_%s.png"
+            action ShowMenu("trivia")
+
 screen stats:
 
     # add "menuUI/bg grey.png"

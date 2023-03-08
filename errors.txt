@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/campus.rpy", line 472: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        "Kemudian setelah makanan yang kamu pesan habis, kamu langsung melanjutkan perjalanan ke kos karena merasakan badanmu yang sudah sangat lelah.""
+File "game/trivia/game/characters_screen.rpy", line 3: expected statement.
+    characters_screen:
+                     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Wed Mar  8 02:15:43 2023
+Wed Mar  8 22:29:19 2023

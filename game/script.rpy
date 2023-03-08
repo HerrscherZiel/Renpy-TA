@@ -1306,23 +1306,6 @@ label stat_change:
     
     return
 
-# label change_time:
-
-#     if timephase != 3:
-#         $ timephase += 1
-#     else:
-#         $ timephase = 1   
-
-#     $ energy += 30
-#     $ hunger -= 25
-#     $ vit -= 10
-
-#     call stat_change
-
-#     return
-
-
-
 
 # label kaga:
 
