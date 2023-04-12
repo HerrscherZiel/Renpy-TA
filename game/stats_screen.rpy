@@ -44,14 +44,6 @@ screen stats_screen:
                 xysize(272,16)
                 xpos 60
                 ypos 90
-            # bar:
-            #     value hunger
-            #     range 100
-            #     left_bar "menuUI/stats/left_bar.png"
-            #     right_bar "menuUI/stats/right_bar.png"
-            #     xysize(272,16)
-            #     xpos 60
-            #     ypos 100
 
         imagebutton:
             xalign 1.0
@@ -92,10 +84,7 @@ screen stats:
     frame:
         xsize 1920
         ysize 1080
-        # xalign 0.5
-        # yalign 0.5
-        # xpadding 30
-        # ypadding 30
+
         background "menuUI/stats/stats screen.png"
 
         hbox:

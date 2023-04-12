@@ -6,9 +6,6 @@ label first_kos:
     scene bg kos night with dissolve
     pause 2.0
 
-    # show screen days_screen
-    # show screen stats_screen 
-
     
     "Malam hari setelah rangkaian kegiatan orientasi berakhir, kamu merebahkan diri di kasur kosmu."
 
@@ -464,6 +461,10 @@ label kos_krs4:
             scene bg kos morn with fade
 
             hide screen kod_matkul_btn with dissolve
+
+            show screen stats_screen with dissolve
+
+            show screen days_screen with dissolve
             
             mc normal jacket "Ini emang gabisa disave atau error ya? Hmmm enggak ada tombol save ini, apa aku tanya Rissa aja ya? Tanya aja lah biar cepet selesai."
 
@@ -650,6 +651,8 @@ label kos_krs4_night:
 
     "Lama menatapi langit tidak terasa es kopi yang ada di bungkus plastik yang kamu pegang sudah habis. Badanmu juga sudah mulai merasakan dinginnya malam di kota yang baru ini."
 
+    call drink
+    
     "Membuang sampah pada tempat sampah yang ada di depan kos, kamu kemudian kembali ke dalam kamar kos."
 
     "Waktu telah cepat berlalu semenjak kamu duduk di teras kamarmu."
@@ -668,9 +671,344 @@ label kos_krs4_night:
 
     return
 
-#Common Day Case
 
-#Case1
+label persiapan_kuliah:
+
+    call screen trans_screen with dissolve
+    
+    scene bg kos morn with fade
+    pause 2.0
+
+    "Setelah menyelesaikan aktivitas pada pagi harimu, sekarang sudah waktunya untuk dirimu mempersiapkan diri sebelum kuliah."
+    
+    "Saat ini waktu sudah menunjukkan pukul 06.45, kamu segera pergi ke kamar mandi sebelum terlalu siang."
+
+    "Merasakan segarnya air di pagi hari, membuat pikiranmu kembali fresh, kamu tidak sabar untuk segera berkuliah."
+
+    "Mengguyur tubuhmu dengan air sembari bersiul-siul untuk menghilangkan rasa dingin yang dirasakan, 
+    tidak memerlukan 10 menit untukmu keluar dari kamar mandi dan kembali ke kamarmu."
+
+    "Selesai mengenakan pakaian yang kamu siapkan sebelumnya, kamu berdiri terdiam di depan cermin yang menggantung pada almari pakaian."
+
+    mc normal jacket "Huh akhirnya aku masuk kuliah… huhhh good luck me!!"
+
+    "Kamu menepuk kedua sisi wajahmu untuk menyiapkan dirimu berangkat menuju kelas kuliah pertamamu." 
+    
+    "Kemudian kamu mengenakan tas dan mengambil kunci motor yang kamu gantungkan di gantungan pakaian, 
+    setelah mengambilnya kamu segera keluar dari kamar."
+
+    scene bg town street 2 with dissolve
+
+    "Brmmm brmmm"
+
+    "Memanaskan motor selama beberapa menit, kamu mendorongnya sampai depan pintu masuk kosan."
+
+    "Terlihat beberapa kamar kos masih terbuka, dan masih mterdengar suara guyuran air dari dalam kamar mandi."
+
+    mc normal jacket "Apa mungkin mereka berangkat siang ya? Kok pada belum siap begitu? Apa mereka enggak takut telat?"
+
+    mc "Ahh…. ngomong-ngomong tentang telat…."
+
+    "Tersadar kelas pertamamu dimulai pukul 07.15, kamu panik dan segera mengambil HP untuk melihat waktu saat ini."
+
+    "07.02"
+
+    mc "Haaaaa…. Kupikir sudah mepet banget ternyata masih lumayan lah ya…. sekitar 15 menit lagi..."
+
+    mc "Perjalanan dari sini ke kampus juga paling sekitar 10 menitan…. Yasudah berangkat saja lah…"
+
+    "BRUMMMM"
+
+    "Menarik gas motor, kamu mengendarai sepeda motormu keluar dari lingkungan kampung menuju jalan raya."
+
+    scene bg town street 3 with fade
+
+    "Berbeda dengan pagi-pagi sebelumnya, pagi hari ini kamu melihat jalanan dipenuhi oleh mahasiswa yang sedang berangkat kuliah." 
+    
+    "Terlihat sebagian dari mereka ada yang berjalan kaki, mengendarai sepeda atau sepeda motor, menaiki alat transportasi umum, 
+    maupun menggunakan ojek online."
+
+    "Jalanan terasa lebih ramai dari biasanya, meskipun begitu kamu dengan handal mengendarai sepeda motormu melaju dengan lancar."
+
+    scene bg campus parking lot with fade
+    $ placeKeys = 8
+
+    "Sekitar 10 menit mengendarai sepeda motormu, kamu telah sampai di parkiran motor yang ada di area kampus."
+
+    "Banyak mahasiswa yang datang bersamaan denganmu, tampaknya banyak juga mahasiswa yang memiliki kelas dipagi hari."
+
+    "Kamu turun dari motor lalu mengambil HP dari saku celanamu untuk mengecek waktu saat ini."
+
+    mc normal jacket "Sekarang jam…"
+
+    "07.11"
+
+    mc "Ohhh udah hampir 07.15, aku harus cepat-cepat cari ruang kelasnya!"
+
+    mc "Oh iya… kalau tidak salah tadi Rissa sudah sempat ngirim pesan ruang kelasnya di group chat, sebentar aku cek."
+
+    "Sembari berjalan ke arah gedung kampusmu, terdapat banyak chat yang memenuhi group chat."
+
+    "Kamu terus menscroll pesan yang ada untuk mencari chat dari Rissa mengenai ruangan yang ditempati untuk kelas nanti." 
+    
+    "Setelah lama menscroll di group chat, akhirnya kamu menemukan pesan tersebut."
+
+    "{i}HY U-203, lantai dua ruangan ketiga dari Lab TRPL.{/i}"
+
+    "Setelah membaca chat tersebut, kamu memasukan HP kembali ke dalam saku, lalu bergegas ke ruangan yang ada pada pesan itu."
+
+    jump first_class
+
+label kos_d5N:
+    
+    call screen trans_screen with dissolve
+
+    scene bg kos morn with dissolve
+
+    # Materi+link tugas
+
+    "Sesampainya di kosan, merasa sangat lelah kamu langsung merubuhkan tubuhmu ke tempat tidur."
+
+    "Menghadap ke langit-langit kamu sempat memikirkan kejadian dan pelajaran saat kelas tadi."
+
+    "Namun kesadaranmu lambat laun memudar."
+    
+    "Kamu memejamkan mata dan tak lama kemudian dirimu terlelap dalam mimpi."
+    
+    scene bg black with fade
+
+    pause 2.0
+
+    scene bg kos morn with dissolve
+
+    "Bangun dari tidurmu, kamu melihat dari celah jendela matahari sudah mulai tenggelam." 
+    
+    "Langit yang semula berwarna biru sudah berubah warna menjadi orange."
+
+    "Merasa sangat jenuh kamu memutuskan untuk mandi dan menyegarkan tubuhmu." 
+    
+    "Kamu mengambil handuk dan peralatan mandi lalu pergi menuju kamar mandi."
+
+    #sfx shower
+
+    scene bg black with fade
+
+    call change_timephase
+
+    call screen trans_screen with dissolve
+
+    scene bg kos night with dissolve
+
+    "Selesai mandi dan berganti pakaian, kamu merapikan tempat tidurmu dan menghabiskan waktu hingga matahari sepenuhnya tenggelam."
+
+    "Kamu membaca chat baru yang dikirim pada group chat Lane."
+
+    "Terdapat pesan dari Rissa, mengenai {b}{i}Tugas {/i}{/b} dan {b}{i}Materi {/i}{/b}."
+
+    r normal "Temen-temen ini aku udah buatin link G-drive buat materi tadi siang dan folder buat link pengiriman tugas ya."
+
+    "Terdapat teks tautan berwarna biru dengan nama PTI-TRPL23. Kemudian anak kelas mulai menanggapi satu persatu."
+
+    mc normal jacket "Oh iya, tadi waktu kelas Pak Andy ninggalin tugas ya buat kita..."
+
+    "Kamu mencoba mengecek berapa temanmu yang sudah mengerjakan tugas yang diberikan oleh Pak Andy."
+
+    "Setelah mengeklik link yang dikirim oleh Rissa dan melihat isi dari folder tugas PTI, hanya terlihat 6 file dari mahasiswa."
+
+    mc "Hmmm baru tadi siang udah ngumpulin aja mereka."
+
+    "{b}!!TUGAS!!{/b}"
+
+    "{i}Untuk mengerjakan tugas kamu dapat memilih tombol {b}'TASK'{/b} yang terletak pada kanan atas layar{/i}."
+
+    mc "Hmmm... aku ngerjain kapan ya? Deadlinenya juga masih minggu depan."
+
+    "Berpikir karena tidak ada kegiatan pasti yang harus kamu lakukan malam ini."
+    
+    "Untuk mengisi waktu malam hari, kamu memutuskan untuk melakukan kegiatan pada waktu luangmu."
+
+    "Kamu memutuskan untuk:"
+
+    kos
+    dll
+
+    bg kos night
+
+    Sekarang waktu sudah menunjukan pukul 11.30 malam, kamu sudah bersiap untuk tidur.
+
+    Mengubah alarm pagimu yang semula untuk jam 5 pagi, menjadi jam 4 pagi agar kamu dapat melakukan aktivitas lain dipagi hari.
+
+    Setelah mengecek group chat untuk terakhir kalinya, tidak informasi penting selain jadwal untuk esok hari. Kamu menutup Lane dan menaruh HPmu disebalah tempat tidurmu.
+
+    Kamu memejamkan mata mencoba untuk mengakhiri hari.
+
+    Sebelum kesadaranmu hilang, kamu sempat mengingat apa yang kamu alami pada hari pertama kuliah. 
+
+    Kamu merasa senang dan tidak sabar untuk menerima pelajaran mata kuliah yang lainnya.
+
+    Beberapa menit kemudian kamu telah tertidur pulas.
+
+    Day 5 END
+
+
+#Common Day Case
+label choice_kos_morn:
+
+    call screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    "Pada sisa waktu di pagi harimu, kamu memilih untuk tetap berada di kos."
+
+    "Beberapa hal dapat kamu lakukan pagi hari ini, kamu memilih untuk:"
+
+    menu:
+        "Merebahkan tubuh pada tempat tidur":
+            jump kos_mornS1
+        
+        "Browsing internet":
+            jump kos_mornS2
+
+        "Mengerjakan tugas":
+            jump kos_mornS3
+
+label choice_kos_noon:
+
+    call screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    "Kamu memilih untuk menghabiskan waktu siangmu di kosan saja."
+
+    "Ada beberapa hal yang dapat kamu lakukan siang ini, pada akhirnya kamu memilih untuk:"
+
+    menu:
+        "Merebahkan tubuh pada tempat tidur":
+            jump kos_dayS1
+        
+        "Menghabiskan waktu merapikan dan membersihkan area kos":
+            jump kos_noonS2
+
+        "Membugarkan tubuhmu":
+            jump kos_noonS3
+
+label choice_kos_night:
+
+    call screen trans_screen with dissolve
+    scene bg kos night with dissolve
+    pause 2.0
+
+    "Kamu memilih untuk menghabiskan sisa waktumu pada hari ini di kosan."
+
+    "Ada beberapa hal yang dapat kamu lakukan malam ini, pada akhirnya kamu memilih untuk:"
+
+    menu:
+        "Menyudahi harimu lebih awal":
+            jump kos_nightS1
+        
+        "Menikmati angin malam":
+            jump kos_nightS2
+
+        "Menghabiskan waktu dengan teman onlinemu":
+            jump kos_nightS3
+    
+#morn
+label kos_mornS1:
+
+    pause 2.0 
+
+    scene bg kos morn with dissolve
+
+    "Setelah melakukan kegiatan di pagi hari, kamu berbaring lemas di atas tempat tidurmu."
+
+    "Bukan karena lelah, bukan juga karena lapar, kamu hanya berbaring lemas di atas tempat tidurmu karena malas melakukan kegiatan lain."
+
+    "Dengan tatapan kosong kamu melihat ke arah atas, hanya melihat ke langit-langit kamar tanpa memikirkan apapun."
+
+    mc normal jacket "Hmmm…. Bosan banget, enaknya ngapain ya?"
+
+    mc "Mau keluar males, di kos juga nggak ada aktivitas lain selain main HP sama laptop... Hmmmm."
+
+    mc "Cobalah ku cek dulu kalo ada informasi di grup Lane angkatan."
+
+    "Setelah mengumpulkan niat, kamu berdiri kemudian mengambil HPmu yang sedang dicharge di atas meja belajar."
+
+    "Setelah mengambil HP, kamu kembali merubuhkan tubuhmu di atas tempat tidur."
+
+    "Dengan posisi badan tengkurap, kamu membuka lock yang ada di hp kemudian membuka aplikasi Lane."
+
+    "Scroll"
+
+    "Scroll"
+
+    "Scroll"
+
+    mc "Enggak ada informasi baru tentang kuliah, cuma obrolan teman-teman saja."
+
+    "Menutup aplikasi lane, lalu kamu menekan icon aplikasi phogram dan mulai menikmati konten yang ada di fypmu."
+
+    "Setelah merasa bosan dengan konten-konten yang ada, kamu menutup phogram dan menekan icon aplikasi lain."
+
+    "Kali ini kamu membuka permainan yang ada di HPmu. Melakukan misi harian selama beberapa menit, lalu menutup permainanmu itu."
+
+    "Merasa bosan dan tidak tahu ingin melakukan apa, kamu hanya berpindah dari satu aplikasi ke aplikasi lain."
+
+    "Selama beberapa menit kamu melakukan hal ini secara berulang-ulang."
+
+    "Tidak lama kemudian kamu beralih memainkan lock screen di HPmu."
+
+    mc "Hmmmm..."
+
+    mc "Hahhh..."
+    
+    mc "Bosan banget… "
+
+    mc "Butuh musik penyemangat kayaknya aku, biar jadi produktif."
+
+    "Membuka aplikasi musik kamu memainkan playlistmu yang berjudul Rock. Berharap dengan mendengarkan lagu yang ada di playlist itu dapat membuatmu mendapatkan energi untuk melakukan aktivitas lain."
+
+    "Setelah suara musik mulai berdendang, kamu membalik badanmu menghadap kembali menghadap langit-langit kamar."
+
+    "Beberapa menit musik berputar, bukannya menambah semangat, kamu malah merasakan sebaliknya dan merasa semakin lemas."
+
+    "Sedikit demi sedikit rasa kantuk kembali kamu rasakan."
+
+    "Silau sinar matahari yang masuk lewat celah-celah jendela ditambah hembusan kipas angin yang kamu hidupkan membuat matamu tertutup secara perlahan."
+
+    "Pada akhirnya kamu hanya menghabiskan sisa waktu di siang harimu dengan kembali tertidur pulas."
+
+    call nap
+
+    "Tidak melakukan hal produktif seperti yang kamu inginkan. Tapi paling tidak, kamu telah menambah energi untuk melakukan kegiatan selanjutnya."
+
+    "........."
+
+    "....."
+
+    "..."
+    
+    if KRS3 is True:
+        $KRS3 = False
+        jump kos_krs4_night
+
+    else:
+        call screen mapUI
+    return
+
+label kos_mornS2:
+
+    "Mengambil peralatan kebersihan, kamu membersihkan area kosmu."
+
+    return
+
+label kos_mornS3:
+
+    "Kamu menyempatkan waktumu untuk mengerjakan tugas."
+
+    return
+
+
+#noon1
 label kos_dayS1:
 
     pause 2.0 
@@ -753,7 +1091,40 @@ label kos_dayS1:
         call screen mapUI
     return
 
+label kos_noonS2:
 
+    "Mengambil peralatan kebersihan, kamu membersihkan area kosmu."
+
+    return
+
+label kos_noonS3:
+
+    jump sport_noonS2
+
+#night
+label kos_nightS1:
+
+    "Waktu menunjukkan pukul 08.30 malam."
+    
+    "Dari pada melakukan aktivitas lainnya pada malam hari ini, kamu lebih memilih untuk menyudahi harimu lebih awal."
+
+    call nap
+
+    return
+
+label kos_nightS2:
+
+    "Kamu memutuskan untuk menikmati angin malam(beli makan asongan) duduk di depan kos"
+
+    call small_eat
+
+    return
+
+label kos_nightS3:
+
+    "Membuka laptop, lalu bermain gim dengan teman temanmu"
+
+    return
 
 
 

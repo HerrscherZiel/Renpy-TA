@@ -11,22 +11,19 @@ screen days_screen:
     else:
         frame:
             background "menuUI/days.png"
-            # xpadding 10
-            # ypadding 5
+
             xalign 0.0
             yalign 0.0
             xsize 600
             ysize 200
-            # xoffset 30
-            # yoffset 20
+
 
             hbox:
                 spacing 20
 
                 vbox xpos 200 ypos 62:
                     spacing 10
-                    # ypadding 10
-                    # text "Day" size 26
+
                     text "[day]" size 30 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                     
                 
@@ -45,7 +42,7 @@ screen days_screen:
                     elif placeKeys == 6:
                         text "Perpustakaan" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                     elif placeKeys == 7:
-                        text "Parkiran" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+                        text "Kota" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                     elif placeKeys == 8:
                         text "Kampus" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                     elif placeKeys == 9:
@@ -54,10 +51,6 @@ screen days_screen:
                         pass
 
         frame:
-            # xpadding 10
-            # ypadding 5
-            # xalign 0.5
-            # yalign 0.0
             xpos 5
             ypos 10
             xsize 1920
@@ -68,5 +61,4 @@ screen days_screen:
                 background "menuUI/time/noon.png"
             else:
                 background "menuUI/time/night.png"
-            # xoffset 30
-            # yoffset 20
+

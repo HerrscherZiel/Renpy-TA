@@ -1,6 +1,26 @@
 
+
 #day
 
+
+#morning
+label sport_mornS1:
+
+    "Mengambil sepatu larimu, kamu mulai berlari kecil mengelilingi kampung."
+
+    call jog
+
+    return
+
+label sport_mornS2:
+
+    "Keluar dari kamar, kamu berjalan menuju warmindo yang dekat dengan kosan."
+
+    call eat
+
+    return
+
+#noon
 label sport_dayS1:
 
     pause 2.0
@@ -78,3 +98,27 @@ label sport_dayS1:
     else:
 
         call screen mapUI
+    
+label sport_noonS2:
+
+    "Untuk mengembalikan kebugaran tubuhmu, kamu memutuskan untuk melakukan senam lantai."
+
+    return
+
+
+#night
+label sport_nightS1:
+
+    "Kamu memutuskan untuk berolahraga malam, jogging di malam hari mengelilingi area kampus."
+
+    call jog
+
+    return
+
+label sport_nightS2:
+
+    "Kamu mendapatkan ajakan untuk bermain futsal bersama dengan teman sekelasmu."
+
+    call futsal
+
+    return

@@ -6,11 +6,6 @@ label first_kampus:
     scene bg black
 
     with Dissolve(2.0)
-
-    # show day2 kampusnoon:
-    #     xalign 0.5 yalign 0.5
-    # with dissolve(3.0)
-
     scene bg campus hall with dissolve
 
     "Setelah memarkir motormu di parkiran, kamu berjalan memasuki gedung kampus."
@@ -635,3 +630,131 @@ label first_kampus:
     jump day3
 
     return
+
+label first_class:
+
+    call change_timephase
+
+    call screen trans_screen with dissolve
+
+    scene bg campus class
+    pause 2.0
+
+    "Ceklek"
+
+    "Setelah berjalan mencari ruang kelas yang dimaksud, akhirnya kamu menemukannya."
+
+    "Memasuki ruang kelas tersebut, sudah terdapat banyak mahasiswa yang hadir. 
+    Sebagian dari mereka sudah duduk mengelompok dengan {i}circle{/i} mereka tersendiri."
+
+    "Kebanyakan dari mahasiswa memilih duduk di kursi bagian tengah dan belakang, 
+    tentu saja ada mahasiswa yang memilih untuk duduk di barisan paling depan."
+
+    "Salah satu dari mahasiswa yang duduk pada barisan paling depan itu adalah Rissa, dia berada pada bangku paling depan bersama teman-temannya."
+
+    "Saat melewati Rissa, ia melambaikan tangannya kepadamu, kamupun membalas lambaian tangnnya dengan menganggukan kepala."
+
+    "Setelah itu, kamu memilih untuk menempati bangku kosong yang ada pada barisan ketiga. 
+    Kamu menempati bangku paling pojok yang berada dekat dengan jendela."
+
+    "Bangku yang di duduki merupakan bangku yang memiliki alas tangan atau meja kecil yang dapat digunakan untuk meletakan sesuatu. 
+    Sehingga tidak ada meja yang diperlukan dalam ruang kelas."
+
+    scene bg campus class
+
+    "Setelah duduk menunggu selama beberapa menit, akhirnya kamu melihat [PA] memasuki ruang kelas."
+
+    "Semua mata mahasiswa langsung tertuju kepada [PA], dan suara ramai dari mahasiswa mulai meredup."
+
+    pa normal "Selamat pagi teman-teman, selamat datang di perkuliahan kita dipagi hari ini. Ini juga merupakan kelas pertama untuk kalian semua iya kan?"
+
+    r normal2 "Iya pak, ini baru kelas pertama yang kami hadiri."
+
+    pa "Iya-iya, bagaimana jadi mahasiswa baru? Jadi untuk kelas pagi hari ini bapak akan menjelaskan dulu seputar peraturan dalam kelas di perkuliahan."
+
+    pa "Oh iya… Sebelumnya disini bapak akan mengajar mata kuliah Pengantar Teknologi Informasi."
+
+    pa "Oke… bapak jelaskan dulu mengenai kelas perkuliahan di program jurusan TRPL ini yaa.."
+
+    "Semua mahasiswa yang ada di dalam kelas diam dan memperhatikan apa yang dikatakan oleh [PA], ada juga beberapa mahasiswa yang mencatatnya."
+
+    pa "Jadi setiap mata kuliah itu nanti ada 14 pertemuan, ditambah pertemuan untuk UTS dan UAS yang biasanya dialokasikan selama 2 minggu."
+
+    pa "Setiap pertemuan mahasiswa harus melakukan absen kehadiran sebagai syarat nanti untuk mengikuti UTS dan UAS." 
+    
+    pa "Mahasiswa dengan absen kehadiran yang tidak mencukupi kehadiran minimal 75% tidak dapat mengikuti kegiatan UAS."
+
+    pa "Biasanya untuk satu mata kuliah kalian bisa tidak menghadirinya sebanyak 3 kali, atau mungkin bisa berbeda tergantung mata kuliahnya."
+
+    pa "Untuk izin sendiri kalian bisa menghubungi dosen mata kuliah tersebut dengan menyertakan alasan, semisal sakit mungkin bisa melihatkan surat dokternya yaa."
+
+    pa "Nha untuk jam perkuliahan, itu berbeda sekali dengan saat kalian berada pada SMA atau pun jenjang sebelumnya."
+
+    pa "Perkuliahan di TRPL sendiri, biasa terbagi menjadi 4 sesi waktu, jam 7, jam 9, jam 12, dan jam 2 siang. Kelas normal biasanya akan mulai dari sekiranya jam segitu.
+    Meskipun kadang-kadang ada jadwal yang bisa berubah waktunya tergantung dari dosen pengampu mata kuliah tersendiri."
+
+    pa "Itu berarti secara normalnya dalam sehari kalian bisa mendapatkan kelas 4 mata kuliah, namun tentu saja tidak tergantung dengan jadwal yang kalian terima. 
+    Berbeda dengan pendidikan kalian sebelumnya, kalau kuliah ya cuma masuk ketika ada jadwal kelas saja, seperti itu."
+
+    pa "Nha itu kelas saya, kalau kelas pagi saya mulai dengan jam 7.15, lalu ada waktu tambahan 20 menit kalau kalian telat masuk ke kelas. Bagaimana itu maksutnya? 
+    Itu berarti kalau kalian terlambat masuk kelas saya lebih dari 20 menit, kalian tidak bisa melakukan absensi kehadiran."
+
+    pa "Lalu untuk penilaian dari suatu mata kuliah kalau dari saya sendiri, dari UTS 25 %, UAS 35%, Quiz 15 %, Kehadiran 10%, Keaktifan 15%. 
+    Itu presentase penilaian dari saya sendiri, tapi ini bisa berbeda-beda tiap dosen yaa…"
+
+    pa "Oh iya, saya belum menjelaskan quiz itu apa ya? Jadi quiz itu kalau ibarat dulu waktu SMA mungkin bisa dibilang ulangan ya… Itu bisa diberi tahu terlebih dahulu, dan bisa juga tiba-tiba."
+
+    pa "Selain quiz mungkin bisa ada pre-test untuk mengukur pengetahuan kalian sebelum materi, 
+    dan post-test untuk mengetest seberapa jauh materi yang kalian tangkap setelah dijelaskan."
+
+    pa "Oh iya untuk lama waktu dalam satu kelas itu tergantung berapa bobot SKSnya, 
+    biasanya mata kuliah berbobot 2 SKS itu sekitar 100 menit atau bisa dibilang setiap 1 SKSnya berarti 50 menit pertemuan tatap muka."
+
+    pa "Lalu untuk grade nilai dari saya sendiri, mulai dari yang paling bawah, E itu tidak ada nilainya, D itu untuk 40~60, C itu untuk 61~70, B itu untuk 71-80, A itu untuk 81 ke atas. 
+    Ingat itu dari saya, semua tergantung dari dosen pengampu mata kuliah masing-masing."
+
+    pa "Ummm… apa lagi ya? Mungkin dari kalian ada pertanyaan?"
+
+    r "Pak untuk nilai dari mata kuliah terus sangkut pautnya dengan Indeks Prestasi itu bagaimana ya ?"
+
+    pa "Oh pertanyaan bagus… Jadi kan kalian sudah tahu apa itu IPK, nha IPK kan itu kumulatif dari semua semester, 
+    pada tiap semesternya juga ada tentunya, bisa disebut IPS atau Indeks Prestasi Semester."
+
+    pa "IPS itu adalah jumlah setiap nilai mata kuliah yang dikalikan dengan bobot SKS mata kuliah tersebut lali dibagi dengan jumlah SKS yang kalian ambil dalam semester itu."
+
+    pa "Jadi semisal ambil 2 mata kuliah A dan B, tiap mata kuliah itu 2 SKS, dan kalian mendapatkan nilai A pada mata kuliah A dan B pada mata kuliah B. 
+    Menghitungnya berarti seperti ini, nilai A = 4 point, B = 3 point, jadi… ((2x4) + (2x3)) / 4 = 3.5."
+
+    pa "Sehingga Indeks Prestasi kalian 3.5 seperti itu."
+
+    pa "Ada pertanyaan lain?"
+
+    t "Pak semisal sedang kelas kemudian ingin izin keluar dari kelas ke toilet seperti itu, bagaimana pak?"
+
+    pa "Kalau kalian ingin ke toilet atau keluar kelas seperti itu, kalian bisa langsung keluar kelas saja kalau di kelas saya, tidak perlu izin takutnya malah mengganggu kegiatan pengajaran kan."
+
+    t "Pak bagaimana dengan aturan penggunaan HP atau Laptop pak?"
+
+    pa "Ohh kalau di kelas saya, saya bebaskan penggunaannya tapi untuk penggunaan misal seperti mencari materi seperti itu ya! Karena sudah pada dewasa ya saya percaya kalian saja."
+
+    pa "Apa ada pertanyaan lain sebelum kita masuk ke materi?"
+
+    "Setelah itu ada beberapa pertanyaan sebelum materi perkuliahan dimulai."
+
+    "{i}Tutorial perkuliahan{/i}"
+
+    "{i}Dalam game ini, satu minggu perkuliahan akan ada dalam 3 hari game, setelah itu akan terdapat 1 hari bebas(libur).{/i}"
+
+    "{i}Kelas mata kuliah yang dijalani akan ada setiap fase waktu siang hari, pada 3 hari kuliah.{/i}"
+
+    "{i}Pada hari ke-1 dan ke-2 dalam satu minggu kuliah akan memiliki 3 mata kuliah, sementara hari ke-3 hanya akan memiliki 2 mata kuliah.{/i}"
+
+    "{i}Ingat!! Mengingkuti pertemuan perkuliahan meningkatkan point akademik kalian, namun ketika tidak mengikutinya dapat memiliki dampak yang negatif.{/i}"
+
+    "{i}Jadwal perkuliahan dapat dilihat dari menu jadwal, yang dapat digunakan untuk melihat jadwal yang ada dalam minggu perkuliahan.{/i}"
+
+    "{i}Kalender pada game dapat dilihat dari menu kalender, yang dapat digunakan untuk melihat informasi mengenai hari yang ada.{/i}"
+
+    jump pti_1
+
+

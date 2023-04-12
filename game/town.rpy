@@ -1,151 +1,4 @@
 
-label first_kampung:
-
-    $ firstKampung = False
-
-    scene bg town street 2 with Dissolve(2.0)
-
-    # show screen days_screen with dissolve
-
-    # show screen stats_screen with dissolve
-
-    "Kamu memutuskan untuk menghabiskan waktu pagimu dengan berjalan mengelilingi lingkungan sekitar."
-
-    "Mengganti celanamu dengan celana panjang, kamu keluar dari kamar kos."
-
-    "Tidak ada destinasi atau tujuan khusus yang ingin kamu tuju."
-
-    "Hanya berjalan sembari mengamati kondisi lingkungan disekitar area kos."
-
-    "Selama berjalan mengilingi lingkungan sekitar, kamu banyak menjumpai orang-orang yang sedang berolahraga.
-        Beberapa orang sedang berlari kecil, ada juga yang mengendarai sepeda mengitari kampung."
-
-    "Selain menjumpai banyak orang, kamu juga mengamati macam-macam bangunan yang ada disekitar.
-        Kamu banyak melihat banyak bangunan kos, baik kos perempuan maupun kos laki-laki."
-
-    "Selain bangunan kos juga terdapat banyak warung makan, mulai dari warung makan kecil sampai warung makan yang lumayan besar."
-
-    "Warung makan kecil yang banyak bertuliskan Warmindo, bahkan kamu menemui banyak Warmindo di tengah-tengah kampung, ada juga yang lokasinya berseberangan jalan.
-        Sementara warung makan yang lebih besar biasanya terletak di pinggir jalan besar."
-
-    "Selain warung makan, banyak juga kamu melihat tempat-tempat yang menyediakan banyak layanan untuk para mahasiswa nantinya.
-        Seperti tempat untuk print, toko alat tulis, toko sehari-hari, dan tempat laundry pakaian."
-
-    scene bg town street 1 with fade
-
-    "Kamu terus berjalan sembari mengamati keadaan disekitarmu."
-
-    "{i}Gubrakkk!!!{/i}"
-    with vpunch
-    with vpunch
-    # Sfx things fell
-    # Shake
-
-    "Tiba-tiba kamu mendengar suara keras dari arah pertigaan yang ada di depanmu."
-
-    "Merasa penasaran, kamu mendekati asal suara tersebut."
-
-    "Setelah beberapa langkah mendekat, kamu melihat kerumunan orang di dekat sebuah mobil angkut."
-
-    # show w normal
-
-    "Penasaran, kamu mendekati kerumunan yang ada di depanmu dan bertanya kepada salah seorang yang ada disana."
-
-    mc normal jacket  "Ada apa ini mas?"
-
-    # hide w normal with dissolve
-
-    w normal "Ohh ini mas, ada yang lagi angkut-angkut barang pindahan mahasiswa baru itu."
-
-    w  "Diangkut pake mobil waktu mau ambil barang-barang yang ada di mobil angkut, malah ban mobilnya jeblos diselokan mas. Jadi barang-barangnya pada jatuh."
-    
-    "Melihat kearah mobil yang terpelosot dalam selokan, kamu melihat banyak barang berserakan di sekeliling mobil angkut itu."
-
-    "{b}!Special event tutorial!{/b}"
-
-    "Terkadang ketika memilih suatu kegiatan kamu akan menjumpai {b}Special Event{/b}."
-
-    "{b}Special Event{/b} dapat ditemukan karena dua hal yaitu {b}Poin Stats yang cukup{/b}, juga {b}waktu dan hari yang tepat{/b}."
-
-    "Selain menampilkan event tertentu, terkadang dengan menemukan {b}Special Event{/b} kamu bisa mendapatkan sebuah {b}hadiah{/b} tertentu."
-
-    "{b}Hadiah{/b} yang didapat, dapat berupa macam bentuknya, semisal {b}Makanan{/b}, {b}Barang{/b}, {b}Stats{/b}, dan hal lainnya."
-
-    call screen tutorial_specialevents1 with dissolve
-    
-    "Melihat barang-barang yang berserakan di tanah dan mobil yang terjeblos di selokan, kamu memutuskan untuk:"
-
-    menu: 
-        "Membantu mengambil barang-barang yang terjatuh":
-            call ambil_jatuh
-        "Membantu mengeluarkan ban mobil yang jeblos":
-            call mobil_jeblos
-
-    scene bg town street 1 with dissolve
-    
-    "Beberapa menit kemudian semua masalah sudah berhasil di selesaikan."
-
-    "Kini orang-orang yang ikut membantu mengeluarkan mobil yang terjeblos dan juga orang-orang yang ikut mengambil barang-barang yang terjatuh di jalanan sedang beristirahat di teras rumah."
-
-    "Kamu juga ikut mengistirahatkan tubuhmu dan berteduh dari sinar matahari di teras rumah pemilik barang, bersama dengan warga yang lainnya."
-    
-    "Setelah beberapa menit beristirahat dan mengobrol bersama warga, kamu memutuskan untuk kembali ke kos."
-
-    "Kamu berniat untuk berpamitan dengan warga yang tadi kamu temui."
-
-    "Setelah menunggu beberapa waktu, karena tidak melihat warga yang kamu cari, kamu hanya berpamitan kepada warga yang ada disekitarmu."
-
-    "Seusai berpamitan, kamu meninggalkan rumah warga tersebut dan berjalan ke arah kos."
-
-    "......"
-
-    "..."
-
-    "Beberapa langkah berjalan, tiba-tiba ada yang memanggilmu dari belakang."
-
-    "Kamu melihat warga yang sebelumnya kamu ajak bicara berjalan mendekatimu."
-
-    w normal "Kok keburu pulang saja mas, ini yang punya barang tadi memberi ini buat yang bantu-bantu tadi."
-
-    "Warga itu membawa sebuah kotak box putih pada kedua tangannya, kemudian ia menyulurkan tangan dan memberikan box putih tersebut kepadamu."
-
-    "Tanpa sadar kamu langsung menerima kotak box putih dari warga tersebut."
-
-    show screen get_box with dissolve
-
-    mc normal jacket "Wah terimakasih ya mas"
-
-    w "Tidak apa, malah saya yang terimakasih mas, tadi sudah dibantu sama masnya saya. Malah saya minta maaf sudah ngerepoti."
-
-    mc "Tidak apa kok mas, ya kalau ada yang bisa dibantu yang ikut membantu kan mas. Ini bener-bener makasih mas, udah dikasih segala."
-    
-    w "Ya sama-sama mas, hati-hati dijalan."
-
-    mc "Iya mas, saya pamit dahulu."
-
-    "Kemudian kamu melanjutkan perjalananmu pulang ke arah kos."
-
-    "Mengeluarkan HP dari saku celanamu kamu melihat jam yang sudah menunjukan pukul 10.00."
-
-    mc "Habis ini sampai kos, istirahat langsung mandi lalu siap-siap ke kampus berarti."
-
-    "Setelah menentukan tujuan selanjutnya kamu pulang ke kosmu."
-
-    scene bg black with fade
-
-    "Selesai mandi dan telah bersiap-siap, kamu menyalakan motormu untuk pergi kekampus."
-
-    # hide screen days_screen
-
-    # hide screen stats_screen
-
-    $ prologueCount += 1
-    window hide
-
-    call screen mapUI with dissolve
-
-    return
-
 label first_kota:
 
     scene bg town street 1 with dissolve
@@ -278,45 +131,142 @@ label first_kota:
 
     jump kos_krs4_night
 
-label ambil_jatuh:
+label choice_kota_morn:
 
-    mc "Kalau begitu saya bantu ambil barang-barang yang jatuh pak."
+    if day == 5:
+        jump town_mornS1
+    else:
+        pass
 
-    w "Maaf mas, merepotkan saja."
+    call screen trans_screen with dissolve
+    scene bg town street 2 with dissolve
+    pause 2.0
 
-    mc "Tidak apa-apa kok pak."
+    "Pada pagi hari kamu lebih memilih untuk keluar dari kos dan menghabiskan waktu di kota."
 
-    w "Terimakasih ya mas."
+    "Ada beberapa hal yang dapat kamu lakukan di kota pada pagi hari, pada akhirnya kamu memilih untuk:"
 
-    "Kamu mulai mengambil barang-barang yang terjatuh di dekat mobil."
+    menu:
+        "Mencari sarapan di warung pagi hari":
+            jump kota_mornS1
+        
+        "Berjalan-jalan memutari kota":
+            jump kota_mornS2
 
-    "Barang-barang seperti kipas angin, rice cooker, galon dan barang rumahan yang sepertinya akan dipakai oleh anak kosan terlihat di depanmu."
+label choice_kota_noon:
 
-    "Bersama dengan beberapa orang yang ada disekitar lokasi, kamu mulai mengambil barang yang jatuh satu persatu."
+    call screen trans_screen with dissolve
+    scene bg town street 2 with dissolve
+    pause 2.0
 
-    $ energy -= 10
+    "Siang harinya kamu memilih menghabiskan waktumu di kota."
 
-    $ public += 10
+    "Ada beberapa hal yang dapat kamu lakukan di kota pada siang hari, kamu memilih untuk:"
 
-    scene bg black with dissolve
+    menu:
+        "Mengunjungi Mall":
+            jump kota_noonS1
+        
+        "Mencari dan mencoba makanan":
+            jump kota_noonS2
 
+label choice_kota_night:
+
+    call screen trans_screen with dissolve
+    scene bg town street 2 with dissolve
+    pause 2.0
+
+    "Merasa penat berada di kosan, kamu memilih untuk mengunjungi kota pada malam harinya."
+
+    "Ada beberapa hal yang dapat kamu lakukan di kota pada malam hari, pada akhirnya kamu memilih untuk:"
+
+    menu:
+
+        "Mengelilingi kota mencari angin malam":
+            jump kota_nightS1
+        
+        "Menonton film di bioskop":
+            jump kota_nightS2
+
+        if day > 7 and day%4 ==0:
+            "Bermain futsal dengan teman sekelas":
+                jump kota_nightS3
+        else:
+            pass
+
+
+#morn
+label kota_mornS1:
+
+    scene bg town street 3 with dissolve
+    pause 2.0
+
+    "Kamu memutuskan untuk mencari sarapan di warung-warung makan kali lima yang ada disekitaran kota."
+
+    call eat
+
+    "Selesai menghabiskan sarapanmu, kamu segera kembali kos bersiap-siap untuk kuliah nanti."
 
     return
 
-label mobil_jeblos:
-    
-    mc "Kalau begitu saya bantu tarik mobilnya pak."
+label kota_mornS2:
 
-    w "Oh ya mas, ayo tarik bareng-bareng."
+    scene bg town street 2 with dissolve
 
-    "Kamu dan beberapa warga mulai berbaris menggenggam tali tambang yang sudah diikatkan pada mobil."
+    "Kamu memutuskan untuk mengelilingi sekitaran kota sembari menikmati segarnya udara pagi."
 
-    "Pada hitungan ke 3 secara bersama-sama kamu dan warga lainnya menarik mobil yang jeblos sampai pada akhirnya ban mobil yang jeblos dapat dikeluarkan dari selokan."
+    scene bg town street 3 with fade
 
-    $ energy -= 15
+    "melewati ...."
 
-    $ public += 10
+    scene bg town street 1 with fade
 
-    scene bg black with dissolve
+    "Merasa cukup mengelilingi kota, kamu memutar arah motormu melaju dan mengendarainya menuju dimana tempat kosmu berada."
 
     return
+
+label town_mornS3:
+
+    "nothing"
+
+    return
+
+
+#noon
+label kota_noonS1:
+
+    "Mengendarai motor menuju salah satu Mall yang ada di kota."
+
+    return
+
+label kota_noonS2:
+
+    "Melihat salah satu konten makanan yang ada di aplikasi Phogram, membuat perutmu keroncongan."
+
+    "Kamu ingin mencoba merasakan rasa makanan yang terdapat pada konten tersebut."
+
+    "Mengunjungi restoran yang menyajikan menu makanan itu."
+
+    call eat
+
+    return
+
+
+#night
+label kota_nightS1:
+
+    "Kamu memutuskan untuk berjalan-jalan mengelilingi kota untuk mencari angin."
+
+    return
+
+label kota_nightS2:
+
+    "Kamu memutuskan untuk menonton film di bioskop"
+
+    call small_eat
+
+    return
+
+label kota_nightS3:
+
+    call sport_nightS2

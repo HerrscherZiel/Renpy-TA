@@ -40,7 +40,7 @@ screen trans_screen:
                 elif placeKeys == 6:
                     text "Perpustakaan" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 7:
-                    text "Parkiran" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+                    text "Kota" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 8:
                     text "Kampus" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 9:
@@ -72,7 +72,7 @@ screen trans_screen:
                 elif placeKeys == 6:
                     text "Perpustakaan" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 7:
-                    text "Parkiran" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+                    text "Kota" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 8:
                     text "Kampus" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 9:
@@ -103,7 +103,7 @@ screen trans_screen:
                 elif placeKeys == 6:
                     text "Perpustakaan" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 7:
-                    text "Parkiran" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+                    text "Kota" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 8:
                     text "Kampus" size 55 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
                 elif placeKeys == 9:
@@ -111,11 +111,6 @@ screen trans_screen:
                 else:
                     pass
 
-        # imagebutton:
-        #     xalign 0.5
-        #     yalign 0.5
-        #     idle "trans/layer.png"
-        #     action Return()
 
     timer 2.5 action Hide("trans_screen", dissolve)
 

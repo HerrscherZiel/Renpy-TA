@@ -70,8 +70,6 @@ screen isi_krs:
                 draggable True mousewheel True
                 # scrollbars vertical
                 child_size 1920, 2778
-                # xmaximum 1920
-                # ymaximum 2778
                 image "images/krs/krs2.png"
                 text "[name]" size 20 color "#000000" xpos 980 ypos 318
 

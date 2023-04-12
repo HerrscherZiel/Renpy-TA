@@ -12,6 +12,7 @@ define r = Character("Rissa", image="r")
 define mc = Character("You", image="mc")
 define w = Character("Warga", image="w")
 define pa = Character("Pak Andy", image="pa")
+define bn = Character("Bu Nira", image="bn")
 define aa1 = Character("Aa'", image="anonM")
 define kev = Character("Kevin", image="anonM")
 define t = Character("Teman", image="t")
@@ -953,8 +954,6 @@ label day4:
 
     show screen days_screen with dissolve
 
-    # scene bg kos morn with fade
-
     #SFX alarm
 
     "Nggtttt"
@@ -1141,8 +1140,54 @@ label day4:
 label day5:
 
     call change_day
+    pause 2.0
+    show screen stats_screen with dissolve
+    show screen days_screen with dissolve
+    scene bg kos morn with dissolve
 
-    "persiapan pagi"
+    "Udara dingin dipagi hari membuatmu terbangun dari tidurmu. 
+    Rasa dingin yang terasa menusuk tulang dan suara kokokan ayam yang saling berpadu tidak memberimu kesempatan lain untuk kembali tidur."
+
+    "Duduk termenung di tempat tidur, kamu mengambil HP yang terletak disebelahmu. 
+    Tidak ada alasan khusus yang membuatmu harus melihat layar HP ketika baru saja bangun dari tidur, hanya kebiasaanmu mengisi waktu ketika baru saja terbangun."
+
+    "Kamu tidak melihat adanya satupun notifikasi khusus, hanya terlihat tulisan note yang ada di HPmu."
+
+    "{b}Masuk kuliah! jam 7.15{/b}"
+
+    mc normal jacket "Ahh iya, hari ini aku sudah mulai ada kelas kuliah ya.... Huh...."
+
+    "Rasa gugup dan tidak sabar saat ini sedang mengisi perasaanmu. 
+    Gugup karena tidak tahu apa yang nanti akan kamu dapatkan dan lakukan pada perkuliahan, 
+    dan tidak sabar menunggu untuk melakukan aktivitas perkuliahan itu sendiri."
+
+    "Beranjak dari tempat tidurmu, pagi hari ini kamu berinisiatif untuk mengemas apa yang kamu perlukan di perkuliahan nanti."
+
+    mc "Kira-kira aku perlu bawa laptop enggak ya? Apa nggak usah? 
+    Tapi biasanya di kuliah-kuliah orang-orang kan pada bawa laptop ya? Apa kubawa aja lah, siapa tahu kepakai…"
+
+    "Setelah berdebat dengan pikiranmu sendiri, kamu memutuskan untuk membawa laptopmu ke kelas nanti. 
+    Kemudian kamu mulai menyiapkan apa yang sekiranya kamu butuhkan waktu perkuliahan."
+
+    mc "Buku, alat tulis, ohh iya nanti buku pelajaran pakai apa ya kalau kuliah? Kalau waktu dulu kan di sekolah dipinjami sama perpus... Hmmm"
+
+    "Selesai mempersiapkan semua yang dirasa perlu dibawa untuk kuliah, kamu membuka kembali group chat Lanemu."
+
+    r normal2 "Teman-teman untuk kelas PLIAA nanti kuliahnya di ruang U203 yaa!!! Semangat hari pertama masukk!!"
+
+    "Rissa mengirim pesan informasi untuk kelas nanti, dibawah chat Rissa juga sudah banyak balasan dari teman-teman kelasmu yang lain."
+
+    "Matamu melirik ke arah jam digital yang ada di HPmu. Sekarang waktu sudah menunjukkan pukul 04.30 pagi."
+
+    "Kamu terbangun pukul 4 kurang tadi pagi, dan menggunakan waktumu untuk mempersiapkan peralatan untuk kuliah hingga beberapa waktu lalu."
+
+    "Karena kelas pagi dimulai pukul 07.15 dan masih ada sekitar 2 jam lebih sebelum kelas dimulai kamu memikirkan untuk melakukan aktivitas lainnya untuk mengisi waktu terlebih dahulu."
+
+    "Sebelum memutuskan kegiatan selanjutnya, seperti biasa kamu melakukan kebiasaan pagi harimu di kamar mandi."
+
+    $prologue = False
+
+    call screen mapUI with dissolve
 
 label days:
 
@@ -1184,10 +1229,13 @@ label nothing:
 
     return
 
+
+
+#activities
 label eat:
 
     $energy +=10
-    $hunger +=25
+    $hunger +=35
     $vit +=5
 
     call stat_change
@@ -1198,7 +1246,7 @@ label eat:
 
 label small_eat:
 
-    $hunger +=15
+    $hunger +=20
 
     call stat_change
 
@@ -1210,7 +1258,7 @@ label small_eat:
 label drink:
 
     $energy +=10
-    $hunger += 10
+    $hunger += 15
     show screen stats_changer("drink", 0)
     call stat_change
 
@@ -1277,6 +1325,30 @@ label jog:
 
     return
 
+label futsal:
+
+    $ vit += 35
+    $ public += 10
+    $ energy -= 30
+    $ hunger -= 25
+
+    call stat_change
+
+    "Stats Berubah!!!"
+    show screen stats_changer("futsal", 0)
+
+    return
+
+#class
+label attend_class:
+
+    $ knowledge +=1
+    $ practice +=1
+    show screen stats_changer("class", 0)
+
+    "Stat Berubah!!!"
+
+    return
 
 label stat_change:
 

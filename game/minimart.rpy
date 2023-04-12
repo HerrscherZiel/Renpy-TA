@@ -374,21 +374,43 @@ label mart_scene_pick:
                 jump mart_dayS3
             else:
                 jump mart_nightS3
-#morn
-label mart_mornS1:
 
-    "mart morn 1"
+label choice_mart_noon:
 
-label mart_mornS2:
+    call screen trans_screen with dissolve
+    scene bg minimart_out with dissolve
+    pause 2.0
 
-    "mart morn 2"
+    "Siang harinya, kamu memilih menggunakan waktumu untuk pergi ke minimart."
 
-label mart_mornS3:
+    "Ada beberapa hal yang dapat kamu lakukan di minimart pada siang hari, kamu memilih untuk:"
 
-    "mart morn 3"
+    menu:
+        "Pergi ke foodcourt":
+            jump mart_noonS1
+        
+        "Belanja keperluan sehari-hari":
+            jump mart_noonS2
+
+label choice_mart_night:
+
+    call screen trans_screen with dissolve
+    scene bg minimart_out with dissolve
+    pause 2.0
+
+    "Malam harinya, kamu memilih untuk pergi ke minimart."
+
+    "Ada beberapa hal yang dapat kamu lakukan di minimart pada malam hari, kamu memilih untuk:"
+
+    menu:
+        "Membeli snack untuk camilan":
+            jump mart_nightS1
+        
+        "Berkumpul bersama teman":
+            jump mart_nightS2
 
 #noon
-label mart_dayS1:
+label mart_noonS1:
 
     scene bg minimart_out with dissolve
 
@@ -474,32 +496,33 @@ label mart_dayS1:
 
     window hide
 
-    jump kos_krs4_night
+    if day == 4:
 
-label mart_dayS2:
+        jump kos_krs4_night
 
-    "mart day 2"
-
-label mart_dayS3:
-
-    "mart day 3"
+    else:
+        pass
 
     return
-    # call screen mapUI
 
+label mart_noonS2:
 
-    # stat +
+    "Teringat ada beberapa barang yang perlu kamu beli, kamu "
+
+    return
 
 #night
 label mart_nightS1:
 
-    "mart night 1"
+    "Membeli camilan"
+
+    call small_eat
+
+    return
 
 label mart_nightS2:
 
-    "mart night 2"
+    "Membaca pesan dari group Lane, kamu ikut bergabung bersama teman sekelasmu di minimart"
 
-label mart_nightS3:
-
-    "mart night 3"
+    return
 
