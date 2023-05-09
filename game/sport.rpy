@@ -9,17 +9,21 @@ label sport_mornS1:
     "Mengambil sepatu larimu, kamu mulai berlari kecil mengelilingi kampung."
 
     call jog
-
-    return
+    jump mandi
 
 label sport_mornS2:
 
     "Keluar dari kamar, kamu berjalan menuju warmindo yang dekat dengan kosan."
 
     call eat
+    jump mandi
 
-    return
+label sport_mornS3:
 
+    "Keluar dari kamar, kamu berjalan menuju warmindo yang dekat dengan kosan."
+
+    call jog
+    jump mandi
 #noon
 label sport_dayS1:
 
@@ -105,15 +109,24 @@ label sport_noonS2:
 
     return
 
-
-#night
-label sport_nightS1:
-
-    "Kamu memutuskan untuk berolahraga malam, jogging di malam hari mengelilingi area kampus."
+label sport_noonS3:
+    "Ketika matahari sudah terlihat redup, kamu keluar dari kos dan menuju ke area grha di kampusmu."
+    
+    "Mengenakan sepatu lari dan celana training, kamu berniat berjogging di sore hari mengelilingi area kampus."
 
     call jog
 
     return
+
+#night
+label sport_nightS1:
+
+    "Kamu memutuskan untuk berolahraga malam, jogging di malam hari mengelilingi area kota."
+
+    call jog
+
+    jump sleep
+  
 
 label sport_nightS2:
 
@@ -121,4 +134,5 @@ label sport_nightS2:
 
     call futsal
 
-    return
+    jump sleep
+  

@@ -377,7 +377,7 @@ label mart_scene_pick:
 
 label choice_mart_noon:
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg minimart_out with dissolve
     pause 2.0
 
@@ -394,7 +394,7 @@ label choice_mart_noon:
 
 label choice_mart_night:
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg minimart_out with dissolve
     pause 2.0
 
@@ -518,11 +518,13 @@ label mart_nightS1:
 
     call small_eat
 
-    return
+    jump sleep
+  
 
 label mart_nightS2:
 
     "Membaca pesan dari group Lane, kamu ikut bergabung bersama teman sekelasmu di minimart"
 
-    return
+    jump sleep
+  
 

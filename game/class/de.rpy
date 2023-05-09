@@ -6,7 +6,7 @@ default a_deTS = 0
 default a_deAS = 0
 default a_deN = 0
 
-label istirahat:
+label istirahat_1:
 
     scene bg campus upper hall with dissolve
 
@@ -49,6 +49,8 @@ label istirahat:
 
     call small_eat
 
+    $vit += 10
+
     "Lama menunggu kini jam digital yang ada di hpmu sudah menunjukan pukul 11.50."
 
     "Kamu dan teman sekelasmu melihat jadwal yang dikirimkan oleh Rissa untuk mengetahui ruang kelas untuk kelas selanjutnya."
@@ -71,9 +73,11 @@ label de_1:
 
     "Selesai menyambungkan laptop dengan proyektor Pak Andy langsung memulai menjelaskan materi perkuliahan."
 
-    pa "Yak selamat siang teman-teman, kita bertemu lagi hari ini meskipun disini mata kuliahnya beda ya."
+    pa normal "Yak selamat siang teman-teman, kita bertemu lagi hari ini meskipun disini mata kuliahnya beda ya."
 
     pa "Di mata kuliah Desain Elementer pertemuan pertama ini, bapak akan menjelaskan pengertian dan elemen-elemen dasar pada desain elementer."
+
+    show screen de_1_1 with dissolve
 
     pa "Pertama, desain elementer itu apa sih? Jadi Desain elementer adalah mata kuliah yang mempelajari mengenai unsur-unsur dasar seni rupa seperti garis, warna, bentuk, tipografi, dan juga strategi penyusunannya agar dapat dinikmati dengan baik."
 
@@ -87,6 +91,10 @@ label de_1:
     
     pa "Berbagai macam bentuk garis seperti lurus, tebal, tipis, dan lain sebagainya memiliki arti tersendiri. Semisal garis lurus horizontal memiliki arti atau kesan yang stabil."
 
+    hide screen de_1_1
+
+    show screen de_1_2 with fade
+    
     pa "Selanjutnya ada Bidang, bidang juga merupakan gabungan dari beberapa garis yang membentuk kesatuan dan membuat ruang yang tertutup. Bidang menempati ruang dua dimensi. Bidang dapat digunakan untuk menggambarkan sebuah objek."
     
     pa "Bidang terdapat bidang geometris seperti persegi, segitiga, lingkaran dan lain sebagainya, dan bidang non geometris seperti bidang yang berbentuk bebas."
@@ -97,6 +105,10 @@ label de_1:
      
     pa "Sementara pemakaian warna yang terlalu banyak atau terlalu mencorok dapat menyebabkan suatu desain terlihat norak dan kurang enak dipandang."
 
+    hide screen de_1_2
+
+    show screen de_1_3 with fade
+    
     pa "Unsur berikutnya adalah Tekstur, tekstur dapat memberikan kesan yang menarik."
     
     pa "Terdapat tekstur yang bisa dirasakan dengan pengelihatan atau tekstur visual, dan tekstur yang dapat dirasakan dengan pengerabaan dan pengelihatan atau tekstur taktil."
@@ -109,9 +121,11 @@ label de_1:
 
     "Kelas berjalan dengan tenang hingga waktu pertemuan telah berakhir."
 
+    hide screen de_1_3
+
     scene bg campus class with fade
 
-    pa "Yak terimakasih telah menghadiri pertemuan hari ini, sampai jumpa di pertemuan kita yang selanjutnya."
+    pa normal "Yak terimakasih telah menghadiri pertemuan hari ini, sampai jumpa di pertemuan kita yang selanjutnya."
 
     t normal "terimakasih pak"
 
@@ -131,7 +145,106 @@ label de_1:
 
     "Brummmm"
 
-    jump kosan
+    call attend_de
+    call attend_class
 
+    call change_timephase
+    call screen mapUI
 
+label de_2:
+
+    scene bg campus class with dissolve
+
+    pa normal "Bertemu lagi dengan saya pada hari ini untuk perkuliahan mata kuliah Desain Elementer pada pertemuan yang kedua."
+
+    "[pa] memasuki ruang kelas dan langsung memulai perkuliahan pada siang hari ini."
+
+    pa "Pertemuan Desain Elementer yang kedua ini kita akan membahas mengenai prinsip-prinsip yang digunakan pada seni rupa."
+
+    pa "Kemudian kita juga akan membahas mengenai warna."
+
+    pa "Pertama saya akan menerangkan mengenai prinsip seni."
+
+    show screen de_2_1 with fade
+
+    pa "Prinsip Kesatuan atau Unity, prinsip ini menekankan pada bagian-bagian pada karya seni yang merupakan suatu kesatuan untuk saling mendukung dan sistematik dalam membentuk suatu karya seni."
+
+    pa "Kemudian Prinsip Keseimbangan, prinsip ini berkaitan dengan bobot yang ada pada karya seni. 
+    Bobot yang dimaksud bukan selalu mengenai berat namun keseimbangan antara unsur-unsur yang ada pada suatu karya seni."
+
+    pa "Lalu Prinsip Irama pada seni biasanya berkaitan dengan penggunaan unsur secara berulang-ulang. Pengulangan unsur tersebut bisa dilakukan dengan perubahan ataupun secara kontinyu."
+
+    pa "Prinsip seni yang berikutnya adalah Prinsip Penekanan, prinsip ini menekankan atas unsur-unsur yang ada dalam seni rupa memiliki prioritas atas unsur-unsur yang lain. Sehingga suatu unsur terasa lebih dominan daripada unsur lainnya."
+
+    hide screen de_2_1
+
+    show screen de_2_2 with fade   
+
+    pa "Setelah itu Prinsip Proporsi, prinsip memperlihatkan perbandingan antara suatu unsur dengan unsur lainnya. 
+    Perbandingan tersebut dapat berupa pertimbangan seperti besar-kecil, luas sempit, panjang pendek dan lain sebagainya."
+
+    pa "Prinsip keselarasan, prinsip ini juga dikenal sebagai prinsip harmoni dimana unsur-unsur yang digunakan pada karya seni memiliki kesamaan, kesesuaian, dan tidak adanya pertentangan antar unsur."
+
+    pa "Kurang lebih untuk prinsip pada seni seperti itu ya. Kita akan lanjut ke Teori Warna dan Roda Warna."
+
+    pa "Teori Warna merupakan sebuah pedoman penggunaan warna yang dapat digunakan untuk mengkomunikasikan dan menyampaikan pesan melalui warna secara visual."
+
+    pa "Sir Isaac Newton menumukan apa yang dinamakan Roda Warna, Roda Warna mengkelompokan warna dengan tiga kelompok yaitu Warna Primer, Warna Sekunder, dan Warna Tersier."
+
+    hide screen de_2_2
+
+    show screen de_2_3 with fade
+
+    pa "Warna Primer, warna primer merupakan warna dasar yang tidak bisa dibuat menggunakan gabungan warna lainnya. Contoh warna primer adalah warna merah, biru, dan kuning."
+
+    pa "Warna Sekunder, merupakan warna yang didapatkan setelah menggabungkan dua atau lebih warna primer. Contoh warna sekunder adalah warna hijau dari gabungan warna kuning dan biru."
+
+    pa "Warna Tersier, adalah warna yang diciptakan dengan menggabungkan warna primer dan sekunder. Contoh warna tersier adalah warna magenta yang didapatkan dari gabungan warna merah dan ungu."
+
+    "[pa] memberikan beberapa contoh warna dan menjelaskannya."
+
+    "Tidak lama kemudian, [pa] melihat ke arah jam yang ada di dinding."
+
+    hide screen de_2_3
+
+    pa normal "Karena sudah jam segini dan kebetulan saya ada tugas dan harus meninggalkan kampus jadi saya akan meninggalkan tugas untuk dikumpulkan minggu depan ya."
+
+    pa "Nanti saya kirim keperwakilan kelas."
+
+    pa "Kelas sekarang saya tutup, cukup sekian dan terimakasih atas partisipasinya."
+
+    t normal "Terimakasih pak."
+
+    r normal2 "Terimakasih."
+
+    pa "Sampai jumpa dipertemuan selanjutnya teman-teman."
+
+    "Kemudian [pa] meninggalkan ruang kelas, kuliah hari ini pun berakhir."
+
+    "Setelah mengemas barang-barang dan mengobrol untuk sebentar bersama teman sekelasmu, kamupun meninggalkan ruangan untuk pulang."
+
+    call attend_de
+    call attend_class
+
+    call change_timephase
+    call screen mapUI
+
+label de_3:
+
+    "DE 3"
+
+    call screen mapUI with dissolve
+
+label de_4:
+
+    "DE 4"
+
+    call screen mapUI with dissolve
+
+label attend_de:
+
+    $ a_deA +=1
+    $ a_deN +=8
+
+    return
 

@@ -634,10 +634,8 @@ label first_kampus:
 label first_class:
 
     call change_timephase
-
-    call screen trans_screen with dissolve
-
-    scene bg campus class
+    show screen trans_screen with dissolve
+    scene bg campus class with dissolve
     pause 2.0
 
     "Ceklek"
@@ -660,11 +658,18 @@ label first_class:
     "Bangku yang di duduki merupakan bangku yang memiliki alas tangan atau meja kecil yang dapat digunakan untuk meletakan sesuatu. 
     Sehingga tidak ada meja yang diperlukan dalam ruang kelas."
 
-    scene bg campus class
+    scene bg campus class with fade
 
-    "Setelah duduk menunggu selama beberapa menit, akhirnya kamu melihat [PA] memasuki ruang kelas."
+    "Setelah duduk menunggu selama beberapa menit, akhirnya kamu melihat [pa] memasuki ruang kelas."
 
-    "Semua mata mahasiswa langsung tertuju kepada [PA], dan suara ramai dari mahasiswa mulai meredup."
+    show pa normal:
+        xalign 1.0 yalign 1.0
+        linear 1.0 xalign 0.0
+    with ease
+
+    "Semua mata mahasiswa langsung tertuju kepada [pa], dan suara ramai dari mahasiswa mulai meredup."
+
+    hide pa normal with fade
 
     pa normal "Selamat pagi teman-teman, selamat datang di perkuliahan kita dipagi hari ini. Ini juga merupakan kelas pertama untuk kalian semua iya kan?"
 
@@ -676,13 +681,13 @@ label first_class:
 
     pa "Oke… bapak jelaskan dulu mengenai kelas perkuliahan di program jurusan TRPL ini yaa.."
 
-    "Semua mahasiswa yang ada di dalam kelas diam dan memperhatikan apa yang dikatakan oleh [PA], ada juga beberapa mahasiswa yang mencatatnya."
+    "Semua mahasiswa yang ada di dalam kelas diam dan memperhatikan apa yang dikatakan oleh [pa], ada juga beberapa mahasiswa yang mencatatnya."
 
     pa "Jadi setiap mata kuliah itu nanti ada 14 pertemuan, ditambah pertemuan untuk UTS dan UAS yang biasanya dialokasikan selama 2 minggu."
 
     pa "Setiap pertemuan mahasiswa harus melakukan absen kehadiran sebagai syarat nanti untuk mengikuti UTS dan UAS." 
     
-    pa "Mahasiswa dengan absen kehadiran yang tidak mencukupi kehadiran minimal 75% tidak dapat mengikuti kegiatan UAS."
+    pa "Mahasiswa dengan absen kehadiran yang tidak mencukupi kehadiran minimal 75 persen tidak dapat mengikuti kegiatan UAS."
 
     pa "Biasanya untuk satu mata kuliah kalian bisa tidak menghadirinya sebanyak 3 kali, atau mungkin bisa berbeda tergantung mata kuliahnya."
 
@@ -699,7 +704,7 @@ label first_class:
     pa "Nha itu kelas saya, kalau kelas pagi saya mulai dengan jam 7.15, lalu ada waktu tambahan 20 menit kalau kalian telat masuk ke kelas. Bagaimana itu maksutnya? 
     Itu berarti kalau kalian terlambat masuk kelas saya lebih dari 20 menit, kalian tidak bisa melakukan absensi kehadiran."
 
-    pa "Lalu untuk penilaian dari suatu mata kuliah kalau dari saya sendiri, dari UTS 25 %, UAS 35%, Quiz 15 %, Kehadiran 10%, Keaktifan 15%. 
+    pa "Lalu untuk penilaian dari suatu mata kuliah kalau dari saya sendiri, dalam persen dari UTS 25, UAS 35, Quiz 15, Kehadiran 10, Keaktifan 15. 
     Itu presentase penilaian dari saya sendiri, tapi ini bisa berbeda-beda tiap dosen yaa…"
 
     pa "Oh iya, saya belum menjelaskan quiz itu apa ya? Jadi quiz itu kalau ibarat dulu waktu SMA mungkin bisa dibilang ulangan ya… Itu bisa diberi tahu terlebih dahulu, dan bisa juga tiba-tiba."
@@ -729,7 +734,7 @@ label first_class:
 
     pa "Ada pertanyaan lain?"
 
-    t "Pak semisal sedang kelas kemudian ingin izin keluar dari kelas ke toilet seperti itu, bagaimana pak?"
+    t normal"Pak semisal sedang kelas kemudian ingin izin keluar dari kelas ke toilet seperti itu, bagaimana pak?"
 
     pa "Kalau kalian ingin ke toilet atau keluar kelas seperti itu, kalian bisa langsung keluar kelas saja kalau di kelas saya, tidak perlu izin takutnya malah mengganggu kegiatan pengajaran kan."
 
@@ -738,8 +743,6 @@ label first_class:
     pa "Ohh kalau di kelas saya, saya bebaskan penggunaannya tapi untuk penggunaan misal seperti mencari materi seperti itu ya! Karena sudah pada dewasa ya saya percaya kalian saja."
 
     pa "Apa ada pertanyaan lain sebelum kita masuk ke materi?"
-
-    "Setelah itu ada beberapa pertanyaan sebelum materi perkuliahan dimulai."
 
     "{i}Tutorial perkuliahan{/i}"
 
@@ -755,6 +758,235 @@ label first_class:
 
     "{i}Kalender pada game dapat dilihat dari menu kalender, yang dapat digunakan untuk melihat informasi mengenai hari yang ada.{/i}"
 
+    call screen trivia_perkuliahan2 with dissolve
+
+    "Setelah itu ada beberapa pertanyaan sebelum materi perkuliahan dimulai."
+
     jump pti_1
 
+label datang_kampus:
+
+    scene bg campus parking lot with dissolve
+    pause 2.0
+    $ placeKeys = 8
+
+    "Sekitar 10 menit mengendarai sepeda motor, kamu telah sampai di parkiran motor yang ada di area kampus."
+
+    "Tampak banyak mahasiswa yang memiliki jadwal dipagi hari, mereka berjalan memasuki gedung kampus secara tergesa-gesa"
+
+    "Kamu turun dari motor lalu mengambil HP dari saku celanamu untuk mengecek waktu saat ini."
+
+    mc normal jacket "Emang udah siang banget ya? kok pada lari..."
+
+    mc "Whooopss udah jam segini ternyata, harus buru-buru juga nihh..."
+
+    "Meletakan helm yang dipakai, kamu langsung bergegas berjalan menuju gedung kampus."
+
+    "Sembari berjalan cepat, kamu sempat membuka jadwal untuk melihat dimana kelas pada pagi hari ini akan dilaksanakan."
+
+    "Setelah mengetahui kelas yang akan digunakan untuk pembelajaran, kamu langsung berjalan menuju kelas tersebut."
+    
+    jump class_finder
+
+label class_finder:
+
+    if day % 4 == 1:
+        if day == 9:
+            jump pti_2
+        elif day == 17:
+            jump pti_3
+        else:
+            jump pti_4
+
+    elif day % 4 == 2:
+        if day == 6:
+            jump strukdat_1
+        elif day == 10:
+            jump strukdat_2
+        elif day == 18:
+            jump strukdat_3
+        else:
+            jump strukdat_4        
+
+    else:
+        if day == 7:
+            jump pbo_1
+        elif day == 11:
+            jump pbo_2
+        elif day == 19:
+            jump pbo_3
+        else:
+            jump pbo_4  
+
+label awal_kelas:
+
+    "Memasuki ruang kelas kamu melihat sudah banyak mahasiswa yang telah hadir."
+
+    "Seperti biasa, tempat duduk yang berposisi di tengah barisan dan terletak di dekat jendela adalah pilihanmu."
+
+    "Setelah menempati tempat duduk, sembari menunggu dosen pengajar memasuki ruangan kamu mengeluarkan hpmu."
+
+    "Beberapa menit menunggu dengan bermain HP dan mengobrol dengan teman kelasmu, akhirnya dosen pengajar memasuki ruang kelas."
+
+    return
+
+label istirahat:
+
+    show screen trans_screen with dissolve
+    scene bg campus hall with fade
+    pause 2.0
+
+    "Memasuki waktu istirahat, kamu keluar dari kelas sebelumnya dan duduk di bangku yang terdapat di dalam gedung."
+
+    "Sebelum memutuskan kegiatanmu pada selang waktu ini, kamu mengamati kondisi yang ada terlebih dahulu."
+
+    "Terdapat satu jam lebih sebelum kelas yang berikutnya dimulai."
+
+    "Kamu melihat beberapa temanmu memilih beberapa hal yang berbeda."
+
+    "Terdapat beberapa dari temanmu yang menunggu di kampus, namun juga terdapat beberapa dari mereka yang langsung meninggalkan kampus."
+
+    "Memikirkan kegiatan apa saja yang dapat kamu lakukan pada selang waktu satu jam ini, pada akhirnya kamu memilih:"
+
+    menu:
+
+        "Menunggu di kampus dan pergi ke kantin untuk mengisi perutmu":
+
+            "Kamu memilih untuk tetap berada di kampus, dan pergi ke kantin untuk mengisi perutmu."
+
+            "Mendekati salah satu kerumpulan temanmu yang juga menunggu di kampus, kamu mengajaknya untuk pergi ke kantin."
+
+            mc normal jacket "Bro kantin nggak ?"
+
+            t normal "Aku enggak dulu dah, yang lain coba?"
+
+            mc "Ohh okey..."
+
+            "Ajakanmu ditolak, kamu berpindah ke salah satu temanmu yang sering kamu lihat sedang bermain HP terus."
+
+            mc "Gimana bro mau ke kantin enggak?"
+
+            t "Cuss, laper juga aku, habis ini tapi ya nanggung."
+
+            mc "Ealah... yaudah buruan keburu laper nih."
+
+            "Menunggu temanmu selesai bermain Crush or Clutch, kamu juga membuka HPmu untuk mengisi waktu."
+
+            scene bg canteen with dissolve
+
+            "Sampai di kantin, kamu mengambil beberapa jajanan yang ada."
+
+            "Kamu mengambil arem-arem, risol mayo, dan sebuah sosis."
+
+            "Tidak lupa juga mengambil susu kedelai untuk menghilangkan dahagamu."
+
+            "Tentu saja setelah mengambil kamu langsung membayar pada kotak uang masing-masing."
+
+            "Kamu dan temanmu memilih untuk menyantap jajanan itu di area kantin."
+
+            "Kalian berdua duduk di kursi yang terdapat disekitar kantin, lalu menikmati jajanan yang dibeli sambil bergurau."
+
+            call small_eat
+
+            scene bg canteen with fade
+
+            "Seusai menyantap jajananmu, kalian kembali ke kerumpulan teman-temanmu yang masih menunggu di kampus."
+
+            "Menunggu hingga masuk waktu kelas berikutnya dimulai."
+
+        "Meninggalkan kampus dan beristirahat sejenak di kos":
+
+            "Kamu lebih memilih untuk meninggalkan kampus dan kembali ke kos."
+
+            "Merasa cukup lelah, kamu ingin membaringkan tubuhmu di atas kasur."
+
+            "Berjalan keluar dari gedung, kamu berjalan menuju tempat parkir."
+
+            scene bg campus parking lot with fade
+
+            "Memakai helm, menyalakan mesin sepeda motor, kamu langsung mengendarainya keluar dari kampus."
+
+            "Cuaca yang sangat panas membuat dirimu ingin segera pulang dan mendinginkan tubuhmu di kos."
+
+            "Kamu mengendarai sepeda motormu dengan lihai melewati jalanan."
+
+            scene bg town street 2 with fade
+            pause 0.5
+            scene bg town street 1 with fade
+            pause 0.5
+            scene bg kos morn with fade
+
+            "Setelah beberapa menit mengendarai motor, akhirnya kamu sampai di kos."
+
+            "Meletakan tas ransel, kamu langsung merebahkan tubuh di atas kasur."
+
+            mc normal jacket "Capek gini ikut kelas... tidur siang bentar aja lah ya..."
+
+            "Setelah itu kamu memejamkan mata dan memanfaatkan waktu istirahatmu untuk tidur siang."
+
+            call nap
+
+            scene bg black with fade
+            pause 2.0
+
+            "Tepat pukul 11.45 kamu sudah terbangun dari tidur siangmu."
+
+            "Kamu langsung bersiap-siap untuk berangkat menuju kampus lagi."
+
+            "Setelah siap, kamu langsung mengendarai motormu menuju kampus."
+
+        "Meninggalkan kampus dan mencari tempat makan untuk makan siang":
+
+            "Merasa cukup lapar, kamu memilih untuk meninggalkan kampus untuk mencari makan siang."
+
+            "Ketika akan keluar dari gedung kampus, kamu berjalan bersama salah satu temanmu yang juga akan meninggalkan kampus."
+
+            "Mendekatimu, ia mengajakmu untuk mencari makan siang bersama."
+
+            t normal "[name] bro, ikut gak? Mau cari makan nih."
+
+            mc normal jacket "Mau cari makan juga?"
+
+            t "Iya, lu juga mau cari makan toh?"
+
+            mc "Iya bro, laper nihh"
+
+            t "Yaudah ikut aku aja, ada yang enak dideket sini gausah pakai motor."
+
+            mc "Okey gass"
+
+            scene bg warkop with fade
+
+            "Sesampainya di warung makan, kamu langsung mengantri untuk memesan."
+
+            "Terdapat berbagai macam lauk yang disediakan pada warung makan."
+
+            "Ketika giliranmu tiba, kamu memesan nasi telur dengan sup dan juga es teh manis."
+
+            "Kamu menikmati makan siang bersama temanmu."
+
+            call eat
+
+            scene bg warkop with fade
+
+            "Beberapa menit berlalu setelah kamu menghabiskan makan siangmu."
+
+            "Kamu menunggu temanmu yang sedang mengantri untuk membayar."
+
+            "Rasa masakan yang enak, dan harga yang cukup terjangkau membuatmu ingin makan siang disini lagi pada esok hari."
+
+            t normal "Cuss... balik kampus kita, udah hampir jam 12 nih."
+
+            mc normal jacket "Ohh.. udah selesai tah.. yuk balik gass..."
+
+            "Kalian kembali ke kampus, dan bersiap untuk kelas yang berikutnya."
+
+    return
+
+#hari ke 3 minggu ke 1
+label pre_libur:
+
+    "Sebelum libur"
+
+    return
 

@@ -8,6 +8,7 @@
 #     return
 
 define r = Character("Rissa", image="r")
+define j = Character("TriJe", image="t")
 # define mc = Character("Mc", image="mc") 
 define mc = Character("You", image="mc")
 define w = Character("Warga", image="w")
@@ -16,6 +17,7 @@ define bn = Character("Bu Nira", image="bn")
 define aa1 = Character("Aa'", image="anonM")
 define kev = Character("Kevin", image="anonM")
 define t = Character("Teman", image="t")
+define k = Character("Kating", image="t")
 define stall = Character("Stall", image="anonM")
 define siapa = "Suara"
 
@@ -60,9 +62,11 @@ default weak = False
 
 #friends
 default rissa_fond = 0
+default trije_fond = 0
 
 #days
 default day = 1
+default k_days = 1
 
 #time
 #1 = morning, #2 = noon/evening, #3 = night
@@ -85,6 +89,7 @@ default capa = '1'
 default note = ""
 
 default maps = False
+default hima = False
 
 # The game starts here.
 
@@ -126,19 +131,13 @@ label start:
     show day1 pro:
         xalign 0.5 yalign 0.5
     with dissolve
-
     pause 2.5
-
     hide day1 pro with dissolve
 
     show day1 street:
         xalign 0.5 yalign 0.5
     with dissolve
-
     pause 2.5
-
-    # hide day1 pro 
-    # with dissolve
 
     scene bg streets with dissolve
 
@@ -1186,7 +1185,7 @@ label day5:
     "Sebelum memutuskan kegiatan selanjutnya, seperti biasa kamu melakukan kebiasaan pagi harimu di kamar mandi."
 
     $prologue = False
-
+    # $ timephase = 3
     call screen mapUI with dissolve
 
 label days:
@@ -1195,11 +1194,11 @@ label days:
 
     if day == 8:
 
-        "first free day"
+        call bangun_libur
     
-    elif day == 9:
+    elif day == 11:
 
-        "himakomsi"
+        "first himakomsi"
     
     elif day == 13:
 
@@ -1217,10 +1216,189 @@ label days:
 
         "ban bocor"
     else:
-        "ending"
+
+        jump bangun
 
     return
-  
+
+label sleep:
+
+    $placeKeys = 3
+    show screen trans_screen with dissolve
+    scene bg kos night
+    pause 2.0
+
+    "Seusai selesai dengan kegiatan malammu, kini kamu sudah berada di atas tempat tidur."
+
+    "Memegang hp, kamu memastikan alarm sudah di set pada waktu yang tepat."
+
+    "Lalu untuk jaga-jaga kamu membuka aplikasi Lanemu mencari informasi jika ada info tertentu."
+
+    #check info baru
+
+    "Namun setelah menscroll pesan yang ada di group kelas hingga pesan yang paling baru, kamu tidak menemukan adanya informasi khusus."
+
+    "Kemudian kamu menutup Lane dan menaruh HPmu disebelah tempat tidurmu"
+
+    "Karena tidak ada hal lain yang perlu dilakukan malam ini, kamu memutuskan untuk tidur."
+
+    "Memejamkan matamu, kamu mengingat apa yang terjadi hari ini."
+
+    #stat info
+
+    if day == 5:
+
+        "Kamu merasa senang dengan hari pertama kuliahmu hari ini, dan tidak sabar untuk menerima mengikuti kuliah selanjutnya."
+
+    elif day == 7:
+
+        "Sebelum tertidur, kamu mengingat informasi dari [r] mengenai himpunan mahasiswa."
+
+        "Kamu memikirkan apa saja keuntungan dan kerugian yang mungkin dirasakan ketika dirimu bergabung dalam himpunan."
+
+        "Tentu saja pengalaman, pengetahuan, relasi, dan pengembangan diri lainnya akan kamu rasakan ketika dirimu aktif dalam berorganisasi."
+
+        "Namun untuk selalu aktif kamu juga perlu mengorbankan waktumu, 
+        kamu takut jika dirimu akan terlalu disibukan dengan organisasi sehingga melalaikan kewajiban utamamu sebagai mahasiswa."
+
+        "Terjadi perdebatan pada pikiranmu yang membuat dirimu berpikir, akan tetapi rasa kantuk lah yang memenangkan perdebatan pada malam ini."
+    
+    elif day == 8:
+
+        if hima == True:
+
+            "Sebelum tertidur, kamu mengingat apa yang kamu lakukan hari ini."
+
+            "Kamu mencoba mendaftar untuk bergabung menjadi pengurus himpunan mahasiswa pada program studimu."
+
+            "Kamu memutuskan untuk mendaftarkan karena banyak keuntungan yang bisa kamu dapatkan, terutama pengalaman."
+
+            "[k] menjelaskan tugas, kewajiban, event kegiatan yang dilakukan oleh himpunan mahasiswa pada program studimu."
+
+            "Hari ini kamu berkenalan dengan [j] yang ternyata sangat friendly."
+
+            "[j] juga mendaftar menjadi pengurus himpunan mahasiswa."
+
+            "Kamu terkejut karena wawancara yang dilakukan hanya sebentar saja."
+
+        else:
+
+            "Sebelum tertidur, kamu mengingat apa yang kamu lakukan hari ini."
+
+            "Kamu tidak memutuskan untuk mendaftar menjadi pengurus himpunan mahasiswa pada program studimu."
+
+            "Kamu takut akan meneledorkan akademikmu karena waktu yang tersita untuk berorganisasi."
+
+            "Tidak banyak hal yang kamu lakukan setelah itu."
+    
+    else:
+        pass
+
+    "Mengingat apa yang kamu lakukan seharian membuatmu tambah mengantuk."
+
+    "Kemudian tidak lama berselang, kesadaranmu perlahan mulai menghilang."
+
+    "Kamupun tertidur pulas malam hari ini."
+
+    "Day [day] END"
+
+    jump days
+
+label mandi:
+
+    $placeKeys = 3
+    show screen trans_screen with dissolve
+    scene bg kos morn
+    pause 2.0
+
+    "Selesai melakukan aktivitas dipagi harimu, kamu mengambil peralatan mandi dan berjalan menuju kamar mandi."
+
+    "Menggantung handukmu lalu tidak lupa untuk menggosok gigimu."
+
+    "Setelah itu kamu mulai mengguyur tubuhmu dengan air yang ada di bak mandi."
+
+    "Terasa dingin untuk beberapa saat, namun setelah itu rasa dingin yang dirasakan berubah menjadi rasa segar."
+
+    #sfx mandi
+
+    scene bg kos morn with fade
+
+    "Selesai mandi, kamu kembali ke kamar kos."
+
+    "Mengenakan pakaian ganti, dan bersiap melakukan aktivitas untuk mengisi harimu."
+    call change_timephase
+    call screen mapUI with dissolve
+
+label bangun:
+
+    show screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    "RINGGG RINGGG RINGGG"
+    #sfx alarm
+
+    "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
+
+    "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidurm yang disebelah kepalamu untuk mencari HPmu."
+
+    "Setelah menemukannya, kamu langsung mematikan alarm yang terus berdenging nyaring."
+
+    "Melihat waktu yang masih pagi, sebenarnya kamu masih merasa ngantuk."
+
+    "Namun kamu paksakan tubumu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk itu."
+
+    "Beberapa menit kemudian, kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
+
+    "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini."
+
+    call screen mapUI with dissolve
+
+label bangun_libur:
+
+    show screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    "RINGGG RINGGG RINGGG"
+    #sfx alarm
+
+    "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
+
+    "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidurm yang disebelah kepalamu untuk mencari HPmu."
+
+    "Setelah menemukannya, kamu langsung mematikan alarm yang terus berdenging nyaring."
+
+    "Melihat waktu yang masih pagi, sebenarnya kamu masih merasa ngantuk."
+
+    "Namun kamu paksakan tubumu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk itu."
+
+    "Beberapa menit kemudian, kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
+
+    "Hari ini merupakan hari libur, saatnya dirimu untuk bersenang-senang dan melupakan kuliah untuk sementara."
+
+    "Merasa tidak ada dorongan untuk segera beranjak dari tempat tidurmu, kamu kembali merebahkan tubuhmu di kasur untuk beberapa menit lagi."
+
+    #case
+
+    if day ==8:
+
+        "Membuka matamu untuk kedua kalinya pada pagi hari ini, kamu teringat ada perekrutan anggota himpunan mahasiswa baru siang ini."
+
+        "Menghela nafas... kamu beranjak dari tempat tidur."
+
+        mc normal jacket "Mending ikut engga ya?"
+
+        mc "Pengin tapi kok males juga...."
+
+        mc "huh....."
+
+        mc "Siap-siap dulu dah, dari pada tiduran mulu...."
+
+    "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini."
+
+    call screen mapUI with dissolve
+
 label nothing:
 
     scene bg black
@@ -1238,7 +1416,6 @@ label eat:
     $hunger +=35
     $vit +=5
 
-    call stat_change
     "Stats Berubah!!!"
     show screen stats_changer("eat", 0)
 
@@ -1247,8 +1424,6 @@ label eat:
 label small_eat:
 
     $hunger +=20
-
-    call stat_change
 
     "Stats Berubah!!!"
     show screen stats_changer("small_eat", 0)
@@ -1260,7 +1435,6 @@ label drink:
     $energy +=10
     $hunger += 15
     show screen stats_changer("drink", 0)
-    call stat_change
 
     "Stat Berubah!!!"
 
@@ -1271,7 +1445,6 @@ label nap:
     $ energy += 25
     $ hunger -= 10
     $ vit += 5
-    call stat_change
     show screen stats_changer("nap", 0)
 
     return
@@ -1284,7 +1457,7 @@ label change_timephase:
         $ timephase = 1   
 
     $ vit -= 5
-    $ energy -= 20
+    $ energy -= 30
     $ hunger -= 15
 
     show screen stats_changer("change_timephase", 0)
@@ -1304,6 +1477,8 @@ label change_day:
     $ hunger -= 25
     $ vit -= 10
 
+    $k_days +=1
+
     show screen trans_screen with dissolve
 
     show screen stats_changer("change_day", 0)
@@ -1318,8 +1493,6 @@ label jog:
     $ energy -= 20
     $ hunger -= 15
 
-    call stat_change
-
     "Stats Berubah!!!"
     show screen stats_changer("jog", 0)
 
@@ -1331,8 +1504,6 @@ label futsal:
     $ public += 10
     $ energy -= 30
     $ hunger -= 25
-
-    call stat_change
 
     "Stats Berubah!!!"
     show screen stats_changer("futsal", 0)

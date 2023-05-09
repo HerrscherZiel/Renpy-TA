@@ -10,12 +10,8 @@ screen stats_screen:
         frame:
             xsize 1920
             ysize 1080
-
-            # xpadding 10
-            # ypadding 5
             xpos 1555
             ypos -2
-            # xsize 365
             background "menuUI/stats/stats.png"
 
             bar:
@@ -48,38 +44,28 @@ screen stats_screen:
         imagebutton:
             xalign 1.0
             ypos 133
-            # xoffset -30
-            # yoffset 30
             auto "menuUI/button/menu_%s.png"
             action ShowMenu("stats")
 
         imagebutton:
             xpos 1740
             ypos 133
-            # xoffset -30
-            # yoffset 30
             auto "menuUI/button/stats_%s.png"
             action ShowMenu("stats")
-
-        # imagebutton:
-        #     xpos 1655
-        #     ypos 133
-        #     # xoffset -30
-        #     # yoffset 30
-        #     auto "menuUI/button/task_%s.png"
-        #     action ShowMenu("stats")
 
         imagebutton:
             xpos 1655
             ypos 133
-            # xoffset -30
-            # yoffset 30
             auto "menuUI/button/task_%s.png"
+            action ShowMenu("task")
+
+        imagebutton:
+            xpos 1569
+            ypos 133
+            auto "menuUI/button/trivia_%s.png"
             action ShowMenu("trivia")
 
 screen stats:
-
-    # add "menuUI/bg grey.png"
 
     frame:
         xsize 1920

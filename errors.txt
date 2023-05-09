@@ -2,9 +2,37 @@
 errors listed below, and try again.
 
 
-File "game/town.rpy", line 140: expected ':' not found.
-    else pass
-         ^
+File "game/class/de.rpy", line 210: expected statement.
+    pa Karena sudah jam segini dan kebetulan saya ada tugas dan harus meninggalkan kampus jadi saya akan meninggalkan tugas untuk dikumpulkan minggu depan ya.
+                                                                                                                                                             ^
+
+File "game/class/de.rpy", line 212: expected statement.
+    pa Nanti saya kirim keperwakilan kelas.
+                                          ^
+
+File "game/class/de.rpy", line 214: expected statement.
+    pa Kelas sekarang saya tutup, cukup sekian dan terimakasih atas partisipasinya.
+                                ^
+
+File "game/class/de.rpy", line 216: expected statement.
+    t normal Terimakasih pak.
+                            ^
+
+File "game/class/de.rpy", line 218: expected statement.
+    r normal2 Terimakasih.
+                         ^
+
+File "game/class/de.rpy", line 220: expected statement.
+    pa Sampai jumpa dipertemuan selanjutnya teman-teman.
+                                                       ^
+
+File "game/class/de.rpy", line 222: expected statement.
+    Kemudian [pa] meninggalkan ruang kelas, kuliah hari ini pun berakhir.
+                                          ^
+
+File "game/class/de.rpy", line 224: expected statement.
+    Setelah mengemas barang-barang dan mengobrol untuk sebentar bersama teman sekelasmu, kamupun meninggalkan ruangan untuk pulang.
+                                                                                       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Thu Apr  6 22:31:54 2023
+Mon May  8 19:21:52 2023

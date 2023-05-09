@@ -3,6 +3,63 @@ screen mapUI:
 
     add "bg black.png"
     add "map/map.png" 
+    frame:
+        background "menuUI/days.png"
+
+        xalign 0.0
+        yalign 0.0
+        xsize 600
+        ysize 200
+
+
+        hbox:
+            spacing 20
+
+            vbox xpos 200 ypos 62:
+                spacing 10
+
+                text "[day]" size 30 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+                
+            
+            # vbox xpos 120:
+            #     spacing 10
+            #     if placeKeys == 1:
+            #         text "Jalan Kampus" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 2:
+            #         text "Minimarket" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 3:
+            #         text "Kos" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 4:
+            #         text "Kampung" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 5:
+            #         text "Warmindo" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 6:
+            #         text "Perpustakaan" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 7:
+            #         text "Kota" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 8:
+            #         text "Kampus" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     elif placeKeys == 9:
+            #         text "Kelas" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            #     else:
+            #         pass
+
+    frame:
+        xpos 5
+        ypos 10
+        xsize 1920
+        ysize 1080
+        if timephase == 1:
+            background "menuUI/time/morning.png"
+        elif timephase == 2:
+            background "menuUI/time/noon.png"
+        else:
+            background "menuUI/time/night.png"
+    imagebutton:
+        xpos 320
+        ypos 60
+        auto "map/tasks_%s.png"
+        action ShowMenu("task_list")
 
     if prologue == True:
         if prologueCount == 1 or prologueCount == 5 and day !=4 and KRS3 == False:
@@ -78,118 +135,110 @@ screen mapUI:
             pass
 
     else:
-
+        
         if timephase == 3:
-            #Night to Morning
+            #night
+            #kos
             imagebutton:
                     xpos 1150
                     ypos 10
                     idle "map/house idle.png"
                     hover "map/house hover.png"
                     action Jump("go_to_kos")
-            
+            #kampung
             imagebutton:
                     xpos 1500
                     ypos 150
                     idle "map/kampung idle.png"
                     hover "map/kampung hover.png"
                     action Jump("go_to_kampung")
-
+            #kota
             imagebutton:
                     xpos 300
                     ypos 760
                     idle "map/kampus idle.png"
                     hover "map/kampus hover.png"
                     action Jump("go_to_kota")
-
-            # pass
-
-        elif timephase == 1:
-            #Morning to Noon
-
-            imagebutton:
-                    xpos 1150
-                    ypos 10
-                    idle "map/house idle.png"
-                    hover "map/house hover.png"
-                    action Jump("go_to_kos")
-            
-            imagebutton:
-                    xpos 1500
-                    ypos 150
-                    idle "map/kampung idle.png"
-                    hover "map/kampung hover.png"
-                    action Jump("go_to_kampung")
-
-            imagebutton:
-                    xpos 600
-                    ypos 760
-                    idle "map/kampus idle.png"
-                    hover "map/kampus hover.png"
-                    action Jump("go_to_kota")
-            # imagebutton:
-            #     xpos 1250
-            #     ypos 760
-            #     idle "map/minimart idle.png"
-            #     hover "map/minimart hover.png"
-            #     action Jump("go_to_minimart")
-        
-            # imagebutton:
-            #         xpos 1150
-            #         ypos 10
-            #         idle "map/house idle.png"
-            #         hover "map/house hover.png"
-            #         action Jump("go_to_kos")
-            
-            # imagebutton:
-            #         xpos 1500
-            #         ypos 150
-            #         idle "map/kampung idle.png"
-            #         hover "map/kampung hover.png"
-            #         action Jump("go_to_kampung")
-
-            # imagebutton:
-            #         xpos 300
-            #         ypos 760
-            #         idle "map/kampus idle.png"
-            #         hover "map/kampus hover.png"
-            #         action Jump("go_to_campus")
-
-            # imagebutton:
-            #         xpos 900
-            #         ypos 450
-            #         idle "map/perpustakaan idle.png"
-            #         hover "map/perpustakaan hover.png"
-            #         action Jump("go_to_library") 
-
-        else:
-            #Noon to Night
+            #mart
             imagebutton:
                 xpos 1250
                 ypos 760
                 idle "map/minimart idle.png"
                 hover "map/minimart hover.png"
                 action Jump("go_to_minimart")
-        
+
+        elif timephase == 1:
+            #morn
+            #kos            
             imagebutton:
                     xpos 1150
                     ypos 10
                     idle "map/house idle.png"
                     hover "map/house hover.png"
                     action Jump("go_to_kos")
-            
+            #kampung
             imagebutton:
                     xpos 1500
                     ypos 150
                     idle "map/kampung idle.png"
                     hover "map/kampung hover.png"
                     action Jump("go_to_kampung")
+            #kota
+            imagebutton:
+                    xpos 600
+                    ypos 760
+                    idle "map/kampus idle.png"
+                    hover "map/kampus hover.png"
+                    action Jump("go_to_kota")
 
+        else:
+            #noon
+            #mart
+            imagebutton:
+                xpos 1250
+                ypos 760
+                idle "map/minimart idle.png"
+                hover "map/minimart hover.png"
+                action Jump("go_to_minimart")
+            #kos
+            imagebutton:
+                    xpos 1150
+                    ypos 10
+                    idle "map/house idle.png"
+                    hover "map/house hover.png"
+                    action Jump("go_to_kos")
+            #kampung
+            imagebutton:
+                    xpos 1500
+                    ypos 150
+                    idle "map/kampung idle.png"
+                    hover "map/kampung hover.png"
+                    action Jump("go_to_kampung")
+            #kota
+            imagebutton:
+                    xpos 600
+                    ypos 760
+                    idle "map/kampus idle.png"
+                    hover "map/kampus hover.png"
+                    action Jump("go_to_kota")
+            #campuss
+            imagebutton:
+                xpos 300
+                ypos 760
+                idle "map/kampus idle.png"
+                hover "map/kampus hover.png"
+                action Jump("go_to_campus")
+            #library
+            imagebutton:
+                xpos 900
+                ypos 450
+                idle "map/perpustakaan idle.png"
+                hover "map/perpustakaan hover.png"
+                action Jump("go_to_library")
     
 label go_to_minimart:
 
     $ maps = True
-
     menu:
         "Pergi ke minimart":
             $ placeKeys = 2
@@ -200,7 +249,7 @@ label go_to_minimart:
                 show screen trans_screen with dissolve             
                 jump minimart_pertama
 
-            elif KRS3 == False:
+            elif KRS3 == False and day ==3:
                 $ maps = False
                 call change_timephase
                 show screen trans_screen with dissolve              
@@ -214,10 +263,13 @@ label go_to_minimart:
             
             else:
                 $ maps = False
-                call change_timephase
                 show screen trans_screen with dissolve
-                # window show
-                jump nothing
+                if timephase == 2:
+                    jump choice_mart_noon
+                elif timephase == 3:
+                    jump choice_mart_night
+                else:
+                    pass
 
         "Tunggu dulu...":
             call screen mapUI()
@@ -245,7 +297,12 @@ label go_to_kos:
             else:
                 $ maps = False
                 show screen trans_screen with dissolve
-                jump nothing
+                if timephase == 2:
+                    jump choice_kos_noon
+                elif timephase == 3:
+                    jump choice_kos_night
+                else:
+                    jump choice_kos_morn
                 
         "Tunggu dulu...":
             call screen mapUI()
@@ -253,12 +310,11 @@ label go_to_kos:
 label go_to_kampung:
 
     $ maps = True
-
     menu:
-        "Pergi Jalan-jalan?":
+        "Pergi keluar?":
             $ placeKeys = 4
 
-            if firstKampung == True and day != 4:
+            if firstKampung == True and day < 4:
                 $ maps = False
                 show screen trans_screen with dissolve
                 jump first_kampung
@@ -269,9 +325,13 @@ label go_to_kampung:
             
             else:
                 $ maps = False
-                # call change_timephase
                 show screen trans_screen with dissolve
-                jump nothing
+                if timephase == 2:
+                    jump choice_kampung_noon
+                elif timephase == 3:
+                    jump choice_kampung_night
+                else:
+                    jump choice_kampung_morn
                 
         "Tunggu dulu...":
             call screen mapUI()
@@ -279,7 +339,6 @@ label go_to_kampung:
 label go_do_sport:
 
     $ maps = True
-
     menu:
         "Pergi Berolahraga?":
             $ placeKeys = 4
@@ -292,9 +351,7 @@ label go_do_sport:
             
             else:
                 $ maps = False
-                call change_timephase
                 show screen trans_screen with dissolve
-                # window show
                 jump nothing
                 
         "Tunggu dulu...":
@@ -303,25 +360,30 @@ label go_do_sport:
 label go_to_campus:
 
     $ maps = True
-    # scene bg black with dissolve
-
     menu:
         "Pergi ke Kampus":
             $ placeKeys = 8         
 
-            if firstKampus == True:
+            if firstKampus == True and day <5:
                 $ maps = False
                 call change_timephase
                 show screen trans_screen with dissolve
-                # window show
                 jump first_kampus
-            
+
+            elif day == 8:
+                $ maps = False
+                show screen trans_screen with dissolve
+                jump join_hima
+
+            elif day>7 and day%4 == 0:
+                $ maps = False
+                show screen trans_screen with dissolve
+                jump sport_noonS3
+
             else:
                 $ maps = False
-                call change_timephase
                 show screen trans_screen with dissolve
-                # window show
-                jump nothing
+                jump datang_kampus
                 
         "Tunggu dulu...":
             call screen mapUI()
@@ -329,8 +391,6 @@ label go_to_campus:
 label go_to_library:
 
     $ maps = True
-    # scene bg black with dissolve
-
     menu:
         "Pergi ke Perpustakaan":
             $ placeKeys = 6       
@@ -339,14 +399,12 @@ label go_to_library:
                 $ maps = False
                 call change_timephase
                 show screen trans_screen with dissolve
-                # window show
                 jump krs
             
             else:
                 $ maps = False
                 call change_timephase
                 show screen trans_screen with dissolve
-                # window show
                 jump nothing
                 
         "Tunggu dulu...":

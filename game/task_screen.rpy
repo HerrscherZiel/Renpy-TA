@@ -24,6 +24,8 @@ default task_eat_your_first_food = Task("Eat!!!", "Eat up man!")
 default task_choose_best_girl = Task("Choose one!!!", "MAN up!")
 default task_dont_be_greedy = Task("Greed is good", "Are you a greedy one?")
 default task_survive_too_long = Task("Survived!", "Can you?")
+default task_pti_1 = Task("Pilih dan pasangan yang benar!", "Pilih suatu objek dan pasangkan dengan deskripsi yang tepat!")
+default task_web_1 = Task("Pilih jawaban yang benar!", "Dari informasi yang ada manakah pernyataan yang benar!")
 
 default my_task = TaskList()
 

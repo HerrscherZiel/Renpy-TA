@@ -134,11 +134,11 @@ label first_kota:
 label choice_kota_morn:
 
     if day == 5:
-        jump town_mornS1
+        jump kota_mornS1
     else:
         pass
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg town street 2 with dissolve
     pause 2.0
 
@@ -155,7 +155,7 @@ label choice_kota_morn:
 
 label choice_kota_noon:
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg town street 2 with dissolve
     pause 2.0
 
@@ -172,27 +172,36 @@ label choice_kota_noon:
 
 label choice_kota_night:
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg town street 2 with dissolve
     pause 2.0
 
     "Merasa penat berada di kosan, kamu memilih untuk mengunjungi kota pada malam harinya."
 
     "Ada beberapa hal yang dapat kamu lakukan di kota pada malam hari, pada akhirnya kamu memilih untuk:"
+    
+    if day > 7 and day%4 ==0:
 
-    menu:
+        menu:
+            "Mengelilingi kota mencari angin malam":
+                jump kota_nightS1
+            
+            "Menonton film di bioskop":
+                jump kota_nightS2
 
-        "Mengelilingi kota mencari angin malam":
-            jump kota_nightS1
-        
-        "Menonton film di bioskop":
-            jump kota_nightS2
-
-        if day > 7 and day%4 ==0:
             "Bermain futsal dengan teman sekelas":
                 jump kota_nightS3
-        else:
-            pass
+
+    else:
+        menu:
+            "Mengelilingi kota mencari angin malam":
+                jump kota_nightS1
+            
+            "Menonton film di bioskop":
+                jump kota_nightS2
+            
+            "Jogging menikmati suasana malam kota":
+                jump sport_nightS1
 
 
 #morn
@@ -207,7 +216,10 @@ label kota_mornS1:
 
     "Selesai menghabiskan sarapanmu, kamu segera kembali kos bersiap-siap untuk kuliah nanti."
 
-    return
+    if day == 5:
+        jump persiapan_kuliah
+    else:
+        jump mandi
 
 label kota_mornS2:
 
@@ -222,14 +234,7 @@ label kota_mornS2:
     scene bg town street 1 with fade
 
     "Merasa cukup mengelilingi kota, kamu memutar arah motormu melaju dan mengendarainya menuju dimana tempat kosmu berada."
-
-    return
-
-label town_mornS3:
-
-    "nothing"
-
-    return
+    jump mandi
 
 
 #noon
@@ -257,7 +262,8 @@ label kota_nightS1:
 
     "Kamu memutuskan untuk berjalan-jalan mengelilingi kota untuk mencari angin."
 
-    return
+    jump sleep
+
 
 label kota_nightS2:
 
@@ -265,7 +271,7 @@ label kota_nightS2:
 
     call small_eat
 
-    return
+    jump sleep
 
 label kota_nightS3:
 

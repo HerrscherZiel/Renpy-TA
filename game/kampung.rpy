@@ -5,10 +5,6 @@ label first_kampung:
 
     scene bg town street 2 with Dissolve(2.0)
 
-    # show screen days_screen with dissolve
-
-    # show screen stats_screen with dissolve
-
     "Kamu memutuskan untuk menghabiskan waktu pagimu dengan berjalan mengelilingi lingkungan sekitar."
 
     "Mengganti celanamu dengan celana panjang, kamu keluar dari kamar kos."
@@ -193,9 +189,13 @@ label mobil_jeblos:
 #daily 
 label choice_kampung_morn:
 
-    call screen trans_screen with dissolve
     scene bg town street 1 with dissolve
     pause 2.0
+
+    if day == 5:
+        jump kamp_mornS2
+    else:
+        pass
 
     "Pada pagi hari kamu lebih memilih untuk keluar dari kos dan menghabiskan waktu di sekitaran kampung."
 
@@ -210,7 +210,6 @@ label choice_kampung_morn:
 
 label choice_kampung_noon:
 
-    call screen trans_screen with dissolve
     scene bg town street 1 with dissolve
     pause 2.0
 
@@ -227,7 +226,6 @@ label choice_kampung_noon:
 
 label choice_kampung_night:
 
-    call screen trans_screen with dissolve
     scene bg black with dissolve
     pause 2.0
 
@@ -251,12 +249,14 @@ label kamp_mornS1:
 
 label kamp_mornS2:
 
-    "Keluar dari kamar, kamu berjalan menuju warmindo yang dekat dengan kosan."
+    "Keluar dari kamar, kamu berjalan menuju warmindo yang berada dekat dengan kosan."
 
     call eat
 
-    return
-
+    if day == 5:
+        jump persiapan_kuliah
+    else:
+        jump mandi
 
 #night
 label kamp_noonS1:
@@ -280,11 +280,12 @@ label kamp_nightS1:
 
     call eat
 
-    return
-
+    jump sleep
+  
 label kamp_nightS2:
 
     "Penat berada di dalam kamar kos terus menerus, kamu keluar dari kamar dan berjalan di sekitaran kampung untuk menikmati angin malam."
 
-    return
+    jump sleep
+  
 

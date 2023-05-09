@@ -1,75 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 170, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 170, in <module>
-    $ ui.interact()
-  File "game/trivia_screen.rpy", line 38, in execute
-    screen trivia_game:
-  File "game/trivia_screen.rpy", line 38, in execute
-    screen trivia_game:
-  File "game/trivia_screen.rpy", line 40, in execute
-    frame:
-  File "game/trivia_screen.rpy", line 45, in execute
-    vbox:
-  File "game/trivia_screen.rpy", line 51, in execute
-    textbutton "Study" action ToggleScreen[Show("trivia_study"), Hide('trivia_game'), Hide('trivia')] hovered tt.Action("Informasi mengenai semua {b}MATA KULIAH{/b} dan setiap sesi pertemuan yang ada")
-  File "game/trivia_screen.rpy", line 51, in keywords
-    textbutton "Study" action ToggleScreen[Show("trivia_study"), Hide('trivia_game'), Hide('trivia')] hovered tt.Action("Informasi mengenai semua {b}MATA KULIAH{/b} dan setiap sesi pertemuan yang ada")
-  File "game/trivia_screen.rpy", line 51, in <module>
-    textbutton "Study" action ToggleScreen[Show("trivia_study"), Hide('trivia_game'), Hide('trivia')] hovered tt.Action("Informasi mengenai semua {b}MATA KULIAH{/b} dan setiap sesi pertemuan yang ada")
-TypeError: 'type' object is not subscriptable
+  File "game/kampung.rpy", line 246, in script call
+    call sport_mornS1
+  File "game/kampung.rpy", line 246, in script call
+    call sport_mornS1
+  File "game/script.rpy", line 1196, in script call
+    call bangun_libur
+  File "game/kampung.rpy", line 246, in script call
+    call sport_mornS1
+  File "game/script.rpy", line 1267, in script
+    if hima == True:
+  File "game/script.rpy", line 1267, in <module>
+    if hima == True:
+NameError: name 'hima' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 170, in script
-    $ ui.interact()
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00gamemenu.rpy", line 170, in <module>
-    $ ui.interact()
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/trivia_screen.rpy", line 38, in execute
-    screen trivia_game:
-  File "game/trivia_screen.rpy", line 38, in execute
-    screen trivia_game:
-  File "game/trivia_screen.rpy", line 40, in execute
-    frame:
-  File "game/trivia_screen.rpy", line 45, in execute
-    vbox:
-  File "game/trivia_screen.rpy", line 51, in execute
-    textbutton "Study" action ToggleScreen[Show("trivia_study"), Hide('trivia_game'), Hide('trivia')] hovered tt.Action("Informasi mengenai semua {b}MATA KULIAH{/b} dan setiap sesi pertemuan yang ada")
-  File "game/trivia_screen.rpy", line 51, in keywords
-    textbutton "Study" action ToggleScreen[Show("trivia_study"), Hide('trivia_game'), Hide('trivia')] hovered tt.Action("Informasi mengenai semua {b}MATA KULIAH{/b} dan setiap sesi pertemuan yang ada")
-  File "game/trivia_screen.rpy", line 51, in <module>
-    textbutton "Study" action ToggleScreen[Show("trivia_study"), Hide('trivia_game'), Hide('trivia')] hovered tt.Action("Informasi mengenai semua {b}MATA KULIAH{/b} dan setiap sesi pertemuan yang ada")
-TypeError: 'type' object is not subscriptable
+  File "game/kampung.rpy", line 246, in script call
+    call sport_mornS1
+  File "game/kampung.rpy", line 246, in script call
+    call sport_mornS1
+  File "game/script.rpy", line 1196, in script call
+    call bangun_libur
+  File "game/kampung.rpy", line 246, in script call
+    call sport_mornS1
+  File "game/script.rpy", line 1267, in script
+    if hima == True:
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2115, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 1267, in <module>
+    if hima == True:
+NameError: name 'hima' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090405
 Simulasi Kehidupan Kuliah 1.0
-Thu Apr  6 02:44:14 2023
+Mon May  8 17:53:13 2023

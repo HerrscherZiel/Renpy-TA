@@ -651,7 +651,7 @@ label kos_krs4_night:
 
     "Lama menatapi langit tidak terasa es kopi yang ada di bungkus plastik yang kamu pegang sudah habis. Badanmu juga sudah mulai merasakan dinginnya malam di kota yang baru ini."
 
-    call drink
+    call eat
     
     "Membuang sampah pada tempat sampah yang ada di depan kos, kamu kemudian kembali ke dalam kamar kos."
 
@@ -671,11 +671,10 @@ label kos_krs4_night:
 
     return
 
-
 label persiapan_kuliah:
 
-    call screen trans_screen with dissolve
-    
+    $ placeKeys = 3
+    show screen trans_screen
     scene bg kos morn with fade
     pause 2.0
 
@@ -697,7 +696,7 @@ label persiapan_kuliah:
     "Kemudian kamu mengenakan tas dan mengambil kunci motor yang kamu gantungkan di gantungan pakaian, 
     setelah mengambilnya kamu segera keluar dari kamar."
 
-    scene bg town street 2 with dissolve
+    scene bg town street 1 with dissolve
 
     "Brmmm brmmm"
 
@@ -829,32 +828,15 @@ label kos_d5N:
 
     "Kamu memutuskan untuk:"
 
-    kos
-    dll
+    call screen mapUI with dissolve
 
-    bg kos night
 
-    Sekarang waktu sudah menunjukan pukul 11.30 malam, kamu sudah bersiap untuk tidur.
-
-    Mengubah alarm pagimu yang semula untuk jam 5 pagi, menjadi jam 4 pagi agar kamu dapat melakukan aktivitas lain dipagi hari.
-
-    Setelah mengecek group chat untuk terakhir kalinya, tidak informasi penting selain jadwal untuk esok hari. Kamu menutup Lane dan menaruh HPmu disebalah tempat tidurmu.
-
-    Kamu memejamkan mata mencoba untuk mengakhiri hari.
-
-    Sebelum kesadaranmu hilang, kamu sempat mengingat apa yang kamu alami pada hari pertama kuliah. 
-
-    Kamu merasa senang dan tidak sabar untuk menerima pelajaran mata kuliah yang lainnya.
-
-    Beberapa menit kemudian kamu telah tertidur pulas.
-
-    Day 5 END
 
 
 #Common Day Case
 label choice_kos_morn:
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg kos morn with dissolve
     pause 2.0
 
@@ -874,7 +856,7 @@ label choice_kos_morn:
 
 label choice_kos_noon:
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg kos morn with dissolve
     pause 2.0
 
@@ -894,7 +876,7 @@ label choice_kos_noon:
 
 label choice_kos_night:
 
-    call screen trans_screen with dissolve
+    show screen trans_screen with dissolve
     scene bg kos night with dissolve
     pause 2.0
 
@@ -992,21 +974,18 @@ label kos_mornS1:
         jump kos_krs4_night
 
     else:
-        call screen mapUI
-    return
+        jump mandi
 
 label kos_mornS2:
 
     "Mengambil peralatan kebersihan, kamu membersihkan area kosmu."
-
-    return
+    
+    jump mandi
 
 label kos_mornS3:
 
     "Kamu menyempatkan waktumu untuk mengerjakan tugas."
-
-    return
-
+    jump mandi
 
 #noon1
 label kos_dayS1:
@@ -1110,7 +1089,7 @@ label kos_nightS1:
 
     call nap
 
-    return
+    jump sleep
 
 label kos_nightS2:
 
@@ -1118,13 +1097,13 @@ label kos_nightS2:
 
     call small_eat
 
-    return
+    jump sleep
 
 label kos_nightS3:
 
     "Membuka laptop, lalu bermain gim dengan teman temanmu"
 
-    return
+    jump sleep
 
 
 
