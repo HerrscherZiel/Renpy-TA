@@ -2,37 +2,32 @@
 errors listed below, and try again.
 
 
-File "game/class/de.rpy", line 210: expected statement.
-    pa Karena sudah jam segini dan kebetulan saya ada tugas dan harus meninggalkan kampus jadi saya akan meninggalkan tugas untuk dikumpulkan minggu depan ya.
-                                                                                                                                                             ^
+File "game/class/basdat.rpy", line 244: is not terminated with a newline. (Check strings and parenthesis.)
+        ("Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya)"
 
-File "game/class/de.rpy", line 212: expected statement.
-    pa Nanti saya kirim keperwakilan kelas.
-                                          ^
+File "game/class/de.rpy", line 276: Menu does not contain any choices.
+    menu:
+         ^
 
-File "game/class/de.rpy", line 214: expected statement.
-    pa Kelas sekarang saya tutup, cukup sekian dan terimakasih atas partisipasinya.
-                                ^
+File "game/class/pbo.rpy", line 291: expected statement.
+    "D. Abstract":
+                 ^
 
-File "game/class/de.rpy", line 216: expected statement.
-    t normal Terimakasih pak.
-                            ^
+File "game/class/pti.rpy", line 263: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian."
+                                                                                      ^
 
-File "game/class/de.rpy", line 218: expected statement.
-    r normal2 Terimakasih.
-                         ^
+File "game/class/pti.rpy", line 276: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "A. Jumlah murid."
+                      ^
 
-File "game/class/de.rpy", line 220: expected statement.
-    pa Sampai jumpa dipertemuan selanjutnya teman-teman.
-                                                       ^
+File "game/class/pti.rpy", line 289: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya."
+                                                                                                 ^
 
-File "game/class/de.rpy", line 222: expected statement.
-    Kemudian [pa] meninggalkan ruang kelas, kuliah hari ini pun berakhir.
-                                          ^
-
-File "game/class/de.rpy", line 224: expected statement.
-    Setelah mengemas barang-barang dan mengobrol untuk sebentar bersama teman sekelasmu, kamupun meninggalkan ruangan untuk pulang.
-                                                                                       ^
+File "game/class/web.rpy", line 362: choice menuitem expects a non-empty block.
+    "A. Tag, Element, dan Atribut.":
+                                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Mon May  8 19:21:52 2023
+Wed Jul 19 00:06:50 2023

@@ -782,9 +782,9 @@ label datang_kampus:
 
     "Meletakan helm yang dipakai, kamu langsung bergegas berjalan menuju gedung kampus."
 
-    "Sembari berjalan cepat, kamu sempat membuka jadwal untuk melihat dimana kelas pada pagi hari ini akan dilaksanakan."
+    "Sembari berjalan cepat, kamu sempat membuka jadwal untuk melihat dimana kelas yang harus kamu tuju."
 
-    "Setelah mengetahui kelas yang akan digunakan untuk pembelajaran, kamu langsung berjalan menuju kelas tersebut."
+    "Setelah mengetahui kelas yang akan kamu tuju, kamu langsung berjalan menuju kelas tersebut."
     
     jump class_finder
 
@@ -793,6 +793,8 @@ label class_finder:
     if day % 4 == 1:
         if day == 9:
             jump pti_2
+        elif day == 13:
+            jump uts_1
         elif day == 17:
             jump pti_3
         else:
@@ -803,6 +805,8 @@ label class_finder:
             jump strukdat_1
         elif day == 10:
             jump strukdat_2
+        elif day == 14:
+            jump uts_strukdat
         elif day == 18:
             jump strukdat_3
         else:
@@ -813,6 +817,8 @@ label class_finder:
             jump pbo_1
         elif day == 11:
             jump pbo_2
+        elif day == 15:
+            jump uts_pbo
         elif day == 19:
             jump pbo_3
         else:
@@ -836,7 +842,7 @@ label istirahat:
     scene bg campus hall with fade
     pause 2.0
 
-    "Memasuki waktu istirahat, kamu keluar dari kelas sebelumnya dan duduk di bangku yang terdapat di dalam gedung."
+    "Memasuki waktu istirahat, kamu keluar dari kelas sebelumnya dan duduk di bangku yang terdapat di dalam kampus."
 
     "Sebelum memutuskan kegiatanmu pada selang waktu ini, kamu mengamati kondisi yang ada terlebih dahulu."
 
@@ -983,6 +989,109 @@ label istirahat:
 
     return
 
+label uts_1:
+
+    scene bg campus hall with dissolve
+
+    scene bg campus class with fade
+
+    "Sampai di kelas dimana UTS akan dilangsungkan, terlihat kertas berisi posisi duduk masing-masing mahasiswa sudah ditempelkan di pintu kelas tersebut."
+
+    "Mengeluarkan kartu ujianmu, kamu memeriksa nomor tempat dudukmu. Mengetahui posisi dudukmu, kamu memasuki ruang kelas."
+
+    "Setelah memasuki ruang kelas, kamu dan mahasiswa lainnya harus meletakan tas di depan kelas sebelum duduk di posisi yang telah ditentukan."
+
+    "Di tempat dudukmu kamu hanya membawa peralatan tulis dan kartu ujianmu saja."
+
+    "Menempati tempat duduk soal ujian tidak langsung dibagikan. Kamu harus menunggu hingga waktu yang telah ditentukan sebelum kertas ujian dibagikan."
+
+    "Sebelum mulai mengerjakan ujian, kamu sempat menutup mata dan berdoan untuk diberi kemudahan."
+
+    jump uts_pti
+
+label uts_akhir:
+
+    scene bg campus hall with dissolve
+
+    mc normal jacket "Huhhh akhirnya kelar juga...."
+
+    mc "Habis ini ngapain ya? masih jam segini juga."
+
+    "Tiba-tiba ada seseorang yang menepuk pundakmu dari belakang. Setelah kamu menoleh kamu melihat mahasiswa yang tidak asing bagimu."
+
+    r normal2 "Yeyyy udah kelar ujiannya [name]!"
+
+    mc "Ohh [r], iya akhirnya kelar juga hahaha."
+
+    r "Bisa nggak seminggu ini ngerjainnya?"
+
+    mc "Yaa gitu dehh, bisa-bisa engga."
+
+    r "Masa sih? Paling ez semua kan buatmu?"
+
+    mc "Engga lah... itu kan kamu [r] heheheh."
+
+    r "Ya yang penting udah kelar sih ahahah.... btw [name]"
+
+    mc "Iya ada apa?"
+
+    r "Ini tadi temen-temen ngobrol kan, karena masih jam segini juga jadi pada ngajak makan-makan."
+
+    mc "Habis ini?"
+
+    r "Iyaa... katanya ngajak ke foodcourt di minimart sih. Mau ikut engga?"
+
+    mc "{i}Hmmm masih jam segini sih... kalau pulang palingan juga langsung tidur, ikut gak ya?{/i}"
+
+    r "Oiiiii gimana, ditanya malah diem ajaa hahaha."
+
+    mc "Maaf-maaf lagi mikir barusan."
+
+    r "So? ikut engga?"
+
+    menu:
+        "Ikut":
+
+            mc "Boleh sihh, mumpung lagi jam segini juga bisa main-main dulu."
+
+            r "Yeyyy tambah rameee!"
+
+            $rissa_fond+=15
+            $public +=10
+
+            r "Habis ini langsung aja kesana ya?"
+
+            mc "Oke-oke."
+
+            "Setelah berjanji untuk mengikuti acara makan-makan bersama teman sekelasmu, kamu mengambil waktumu sejenak untuk duduk dan bermain HP."
+
+            "Beberapa menit kemudian setelah melihat temanmu sudah mulai berangkat menuju minimart, kamu ikut menyusul."
+
+            "Meskipun jarak minimart dari gedung kampusmu tidak terlalu jauh, kamu lebih memilih untuk mengendarai motormu karena setelah makan-makan berakhir tidak ada agenda selain dirimu untuk pulang."
+
+            jump makan_makan
+        
+        "Kayaknya engga dulu deh":
+
+            mc "Kayaknya engga dulu deh, pengin langsung rebahan aku hahaha."
+
+            r "Yahhh... ayolah sesekali ikut."
+
+            mc "Engga dulu bener hahahah next time mungkin."
+
+            r "Yahhhh.... gak asik.... paling entar juga next time lagi sihh"
+
+            r "Yaudah, kalo mau pulang hati-hati ya!"
+
+            mc "Maaf-maaf... okee duluan ya."
+
+            "Setelah itu kamu langsung pulang menuju kosan."
+
+            "Beristirahat dengan tenang karena ujian tengah semester telah berakhir."
+
+            jump nonton_film
+        
+    
 #hari ke 3 minggu ke 1
 label pre_libur:
 

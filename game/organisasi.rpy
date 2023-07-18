@@ -495,3 +495,300 @@ label join_hima:
     call change_timephase
     call screen mapUI with dissolve
             #call eat
+
+label pengumuman_hima:
+
+    scene bg campus class with dissolve
+
+    "Sebelum meninggalkan ruang kelas, tiba-tiba [r] berdiri di depan kelas dan meminta perhatian kepada seluruh teman sekelas."
+
+    r normal2 "Uhmm teman-teman minta perhatiannya sebentar, buat yang kemarin daftar jadi pengurus himpunan, pengumumannya udah keluar."
+
+    "Mendengar [r] mengumumkan pengumuman untuk para pendaftar himpunan, mahasiswa yang tidak mendaftar meninggalkan ruang kelas."
+
+    r "Pengumumannya aku share ya, nanti kalian bisa cek nama kalian masing-masing."
+
+    t normal "Ohh okee..."
+
+    "Tinggg"
+
+    "Suara notifikasi masuk, terdapat pesan baru yang terikirim pada group chat Lanemu."
+
+    "Mengambil HP yang masih tergeletak diatas meja, kamu langsung membuka aplikasi Lane."
+
+    "Terlihat satu pesan dari [r] yang berisi link bertuliskan pengumuman hasil penerimaan pengurus himpunan baru."
+
+    "Kamu langsung mengklik link tersebut yang mengantarkanmu pada suatu halaman Gugel Sheet berisikan list nama-nama mahasiswa pendaftar"
+
+    "Mencermati satu-persatu nama yang ada dalam list, akhirnya kamu menemukan namamu."
+
+    "Pada kolom hasil pada namamu kamu melihat tulisan 'diterima'."
+
+    "Hal itu berarti kamu diterima masuk dalam himpunan, kamu merasa senang, namun juga bingung."
+
+    "Senang kamu dapat diterima masuk menjadi pengurus himpunan dan bingung akan langkah berikutnya yang harus kamu lakukan."
+
+    "Setelah itu kamu mencoba melihat daftar nama-nama mahasiswa lain yang mendaftar, kamu melihat [j] dan [r] juga diterima menjadi pengurus."
+
+    r "Untuk yang terpilih besok setelah jam kuliah kedua berakhir nanti kumpul di kelas ya."
+
+    t "Okee Risss."
+
+    t "Emang ada apa [r] besok?"
+
+    r "Kurang tahu juga aku, besok datang aja dah."
+
+    t "Siappp."
+
+    "Setelah [r] selesai mengumumkan, ia berjalan ke arahmu."
+
+    r "[name]! Selamat yaaa kamu diterima kan..."
+
+    mc normal jacket "Iya hehe... sama kamu juga kan?"
+
+    r "Iya juga hehee..."
+
+    mc "Itu besok tau kita ngapain [r]?"
+
+    r "Kurang tau sih, paling cuma kenalan atau selamatan mungkin sihh..."
+
+    mc "Hmmm... moga aja gak banyak aktivitas dah nanti, males hahahaha..."
+
+    r "Ha gimana? Banyak aktivitas lah namanya juga organisasi hehehe.."
+
+    mc "Ya kali aja kan ya?"
+
+    r "Ada-ada aja... Eh btw kamu udah tahu kan besok udah mau UTS jangan lupa belajar ya."
+
+    mc "Pasti dong sering nyatet juga sih aku."
+
+    r "Pokoknya jangan lupa belajar aja dah."
+
+    mc "Okeee...."
+
+    r "Aku sama temen yang lain mau ngadain belajar kelompok tiap sore atau malem sehari sebelum ujian, kalo mau ikut datang aja ke foodcourt minimart ya!"
+
+    mc "Ohh okee, sama temen kelas?"
+
+    r "Iyaa yang mau ikut aja sihh..."
+
+    mc "Oke-oke kalau bisa aku dateng nanti."
+
+    r "Yaudah, aku pulang duluan ya, sampai ketemu besok [name]!"
+
+    mc "Hati-hati di jalan Riss..."
+
+    "Setelah itu [r] meninggalkan kelas, tidak lama kemudian setelah mengemas barang-barangmu kamu juga ikut meninggalkan kelas untuk pulang."
+
+    "Kamu meninggalkan ruang kelas dan langsung menuju tempat parkir."
+
+    scene bg black with dissolve
+
+    "Setelah menyalakan mesin motormu, kosan bukanlah tempat pertama yang kamu tuju."
+
+    "Kamu mengendarai motor menuju tempat untuk mengeprint kartu ujian."
+
+    "Setelah selesai mengeprint kosan merupakan tempat selanjutnya yang kamu tuju."
+
+    return
+
+label penerimaan_hima:
+
+    scene bg campus hall with dissolve
+
+    "Setelah perkuliahan berakhir, kamu teringat kamu masih memiliki satu agenda lain."
+
+    "Kamu teringat bagi mahasiswa yang terpilih menjadi pengurus himpunan mahasiswa ada kegiatan untuk berkumpul bersama."
+
+    "Tapi kamu merasa agak capek dan lapar, terpikir olehmu untuk tidak mengikuti kegiatan pertamamu setelah masuk menjadi pengurus himpunan mahasiswa."
+
+    "Namun kamu juga merasa tidak enak ketika tidak hadir pada pertemuan pertama pengurus yang baru."
+
+    "Kamu berdiam diri, dan memikirkan apa yang akan kamu lakukan pada sisa harimu ini."
+
+    "Setelah lama berpikir pada akhirnya kamu memutuskan untuk:"
+
+    menu:
+
+        "Mengikuti pertemuan pertama pengurus himpunan mahasiswa baru.":
+
+            $ hima_intro = True
+
+            $community += 20
+
+            mc normal jacket "Yaudahlah lagian baru pertama masak aku gaikut."
+
+            "Memutuskan untuk mengikuti acara pertemuan pengurus himpunan mahasiswa baru itu, kamu kembali berjalan ke ruang kelas."
+
+            scene bg campus class with fade
+
+            r normal2 "Ohhh [name] kirain ga dateng kamu?"
+
+            "Ketika masuk, kamu sudah melihat beberapa mahasiswa termasuk yang bukan dari kelasmu sudah hadir, [r] juga menyapamu."
+
+            mc normal jacket "Ya kali ga hadir kannn hahaha..."
+
+            mc "Udah mau mulai kah?"
+
+            r "Belum kok, masih nunggu kakak tingkatnya ini."
+
+            mc "Ohh okey kirain udah mau mulai kegiatannya."
+
+            "Kamu memilih tempat duduk kosong yang berada beberapa baris dibelakang [r]."
+
+            "Tanpa kamu sadari, tepat dibelakangmu juga terdapat seseorang yang kamu kenal."
+
+            j normal "Yo bro, diterima juga tah kamu."
+
+            mc "Ohhh [j] kamu juga diterima juga bro hahaha."
+
+            j "Ini hari ini kita ngapain dah?"
+
+            mc "Kurang tahu juga, pertemuan pertama sih ya."
+
+            j "Sebenernya udah mau gak berangkat aku ahaha."
+
+            mc "Sama sih, tapi pertemuan pertama jadi kaya gimana gitu kalau enggak ikut."
+
+            j "Iyaa hahaha...."
+
+            "Kemudian kalian berdua menghabiskan waktu dengan mengobrol hingga kakak tingkat himpunan mahasiswa datang."
+
+            scene bg campus class with fade
+
+            k "Selamat siang semua, semoga hari ini kalian dalam kondisi sehat dan berbahagia."
+
+            k "Tentu saja harus berbahagia karena sudah diterima menjadi pengurus pada himpunan mahasiswa di program studi kita!"
+
+            "Kakak tingkat memberikan beberapa kalimat pembuka sebelum pada akhirnya masuk pada acara yang sesungguhnya."
+
+            scene bg black with dissolve
+            pause 1.5
+
+            "Pada acara ini, tidak lebih karena baru pertama kali bertemu dengan pengurus baru himpunan mahasiswa sebagian besar acara adalah pengenalan."
+
+            "Kelas terasa sangat penuh, tidak hanya semua pengurus baru yang berkumpul, namun pengurus dari tahun ajaran sebelumnya juga ikut berkumpul."
+
+            "Satu persatu anggota saling memperkenalkan diri, dimulai dari angkatan yang lebih tua terlebih dahulu."
+
+            "Setelah semua memperkenalkan diri, sama seperti acara pendaftaran masing-masing perwakilan dari divisi yang ada dalam himpunan menjelaskan
+            dan memperkenalkan lebih lanjut."
+
+            "Tidak lupa juga terdapat pemberitahuan informasi mengenai divisi apa dan apa kewajiban tiap divisi yang dimasuki oleh pengurus yang baru saja terdaftar."
+
+            scene bg campus class with dissolve
+
+            "Kamu berada pada divisi yang sama dengan [j]."
+
+            j normal "Yo bro kita satu divisi nih ahahaha."
+
+            mc normal jacket "Eh tadi kita tu tiap minggunya ngapain ya?"
+
+            j "Kalo ga salah sih {b}{i}setelah hari ketiga perkuliahan, ada kegiatan tambahan pelajaran.{/i}{/b}"
+
+            mc "Jadi harusnya saat ini kan kita ngelakuinnya?"
+
+            j "Iya tapi dimulai minggu depan."
+
+            mc "Terus yang ngisi siapa?"
+
+            j "{b}{i}Diisi oleh kakak tingkat atau orang yang berpengalaman pada hal tersebut.{/i}{/b}"
+
+            mc "Ohhh oke dah."
+
+            "Acara dilanjutkan dengan acara-acara tambahan mengenai apa saja yang akan dilakukan pada tahun ini."
+
+            "Kamu mengamati dan memerhatikan semua penjelasan yang ada sembari mengobrol dengan [j]."
+
+            scene bg campus class with fade
+
+            k normal "Yak terimakasih buat semua yang sudah hadir, semoga kita dapat berkerja bersama dengan baik dan mampu mendapatkan ilmu dan pengalaman bersama."
+
+            k "Cukup sekian untuk hari ini, untuk pertanyaan lebih lanjut mungkin bisa ditanyakan pada grup chat untuk himpunan ya."
+
+            k "Sampai jumpa pada kesempatan berikutnya dan hati-hati di jalan!"
+
+            "Sekitar pukul 15.30 pertemuan ditutup, beberapa dari pengurus himpunan masih ada yang berkumpul dan mengobrol."
+
+            "Beberapa pengurus meninggalkan ruang kelas untuk melakukan aktivitas masing-masing, termasuk dirimu."
+
+            "Setelah puas mengobrol dengan [j] kamu memutuskan untuk pulang ke kosan."
+
+            "Mengendarai motor yang kamu parkir di parkiran kampus, tujuan berikutnya adalah kosan."
+
+            scene bg black with fade
+            pause 1.5
+
+            "Sebelum pulang ke kos kamu sempat mampir pada suatu warung makan untuk mengisi perutmu."
+
+            call eat
+
+            "Setelah perutmu terisi, kamar kos merupakan tujuan selanjutnya pada siang hari ini."
+
+            "Menyegarkan tubuhmu adalah salah satu hal yang ingin kamu lakukan ketika matahari bersinar terik."
+
+            "Kamu melanjutkan perjalanan dan pulang ke kos."
+
+            call change_timephase
+            call screen mapUI with dissolve
+
+        "Memilih untuk tidak mengikuti pertemuan pertama himpunan mahasiswa baru":
+
+
+            mc normal jacket "Sepertinya aku tidak ikut dulu dah..."
+
+            mc "Tapi mending gimana ya alesannya nanti kalau dicari ?"
+
+            mc "Bilang ke siapa juga belum tahu hmmm....."
+
+            "Kemudian sewaktu berpikir kamu teringat [r] yang memberi informasi untuk berkumpul pada hari ini."
+
+            mc "Oh iya... Kan bisa titip omongin ke Rissa ya hahahaha..."
+
+            mc "Tapi gimana ya ngomongnya? hmmmm..."
+
+            "Setelah memikirkan pesan yang akan kamu kirimkan kepada [r] selama beberapa menit, akhirnya kamu mengirimkannya."
+
+            mc "Send.... yah gak enak sih sama kakak tingkat sama temen-temen yang lain... tapi ya mau gimana lagi masih pertemuan pertama juga haha."
+
+            mc "Yaudah cuss pulang, mampir warmindo dulu makan yahaha."
+
+            "Kamu berjalan menuju tempat parkir untuk mengambil motormu, kemudian mengendarainya untuk pulang ke kosan."
+
+            "Meninggalkan kewajiban pertamamu untuk datang pada pertemuan pengurus himpunan mahasiswa dengan alasan yang kamu titipkan ke [r]."
+
+            "Tanpa rasa bersalah yang berlebih kamu mengendarai motormu untuk pulang sambil bersiul di jalanan."
+
+            "Sementara itu di dalam ruang kelas dimana para pengurus baru himpunan mahasiswa program studimi berkumpul."
+
+            scene bg campus class with fade
+            pause 0.5
+
+            "Ting-Ting."
+
+            r normal2 "Hmm ada chat masuk..."
+
+            "[r] mengambil HP dari dalam sakunya, kemudian membaca nama pengirim pesan tersebut."
+
+            r "Huh si [name]? Oh iyaa... ngomong-ngomong aku belum lihat dia disini..."
+
+            r "{i}[r] aku lagi enggak enak badan, bisa omongin ke kakak tingkat dulu gak? Aku izin dulu.{/i}"
+
+            r "Haduhh ini beneran sakit apa emang izin ini anak hahahaha..."
+
+            r "{i}Yaudah okee, aku bilangin ke kakak tingkat, kalau ada info aku kasih tahu nanti.{/i}"
+
+            "Setelah selesai mengetik, [r] langsung membalas pesan itu kepadamu, namun tidak lama kemudian."
+
+            "Ting-Ting"
+
+            r "{i}Okee... Makasihh yaa!{/i}"
+
+            r "Ini anak katanya sakit tapi fast respond begini hahahaha."
+
+            "Setelah itu [r] mengikuti acara pertemuan pertama himpunan mahasiswa baru sementara dirimu pulang ke kosan."
+
+            call change_timephase
+            call screen mapUI with dissolve
+
+

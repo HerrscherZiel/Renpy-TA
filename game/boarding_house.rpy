@@ -848,7 +848,7 @@ label choice_kos_morn:
         "Merebahkan tubuh pada tempat tidur":
             jump kos_mornS1
         
-        "Browsing internet":
+        "Membersihkan Kosmu":
             jump kos_mornS2
 
         "Mengerjakan tugas":
@@ -979,6 +979,11 @@ label kos_mornS1:
 label kos_mornS2:
 
     "Mengambil peralatan kebersihan, kamu membersihkan area kosmu."
+
+    $vit += 5
+    $energy -= 15
+    $hunger -= 10
+    $public +=5
     
     jump mandi
 
@@ -1106,5 +1111,6 @@ label kos_nightS3:
     jump sleep
 
 
+label nonton_film:
 
-
+    

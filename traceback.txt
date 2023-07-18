@@ -5,15 +5,18 @@ While running game code:
     call sport_mornS1
   File "game/kampung.rpy", line 246, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1196, in script call
+  File "game/script.rpy", line 1199, in script call
     call bangun_libur
   File "game/kampung.rpy", line 246, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1267, in script
-    if hima == True:
-  File "game/script.rpy", line 1267, in <module>
-    if hima == True:
-NameError: name 'hima' is not defined
+  File "game/minimart.rpy", line 584, in script call
+    call belajar_pti_1
+  File "game/minimart.rpy", line 907, in script
+    show screen pti_2_1 with dissolve
+  File "renpy/common/000statements.rpy", line 588, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+Exception: Screen pti_2_1 is not known.
+
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -22,23 +25,28 @@ Full traceback:
     call sport_mornS1
   File "game/kampung.rpy", line 246, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1196, in script call
+  File "game/script.rpy", line 1199, in script call
     call bangun_libur
   File "game/kampung.rpy", line 246, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1267, in script
-    if hima == True:
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2115, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 1267, in <module>
-    if hima == True:
-NameError: name 'hima' is not defined
+  File "game/minimart.rpy", line 584, in script call
+    call belajar_pti_1
+  File "game/minimart.rpy", line 907, in script
+    show screen pti_2_1 with dissolve
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2232, in execute
+    self.call("execute")
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2220, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\statements.py", line 281, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 588, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 1185, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen pti_2_1 is not known.
+
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090405
 Simulasi Kehidupan Kuliah 1.0
-Mon May  8 17:53:13 2023
+Wed May 31 14:42:33 2023

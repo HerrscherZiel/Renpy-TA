@@ -229,6 +229,135 @@ label de_2:
     call change_timephase
     call screen mapUI
 
+label uts_de:
+
+    scene bg campus class with dissolve
+
+    "Setelah menikmati waktu istirahat, kini sudah waktunya kamu untuk melakukan UTS terakhir pada hari ini. "
+
+    "Seperti sebelumnya ketika mendekati ruang UTS kamu melihat lembar berisikan informasi posisi tempat duduk masing-masing mahasiswa peserta UTS yang ditempel pada pintu kelas."
+
+    "Setelah memastikan dimana posisi tempat dudukmu, kamu memasuki ruang kelas tersebut."
+
+    "Sesuai instruksi dosen pengawas UTS, tas-tas mahasiswa diletakkan di depan kelas secara rapi."
+
+    "Mahasiswa hanya perlu membawa peralatan tulis dan kartu ujian di bangku masing-masing."
+
+    "Seperti sebelumnya, setelah kamu duduk kertas ujian tidak langsung dibagikan namun menunggu waktu yang telah ditentukan terlebih dahulu."
+
+    "Ketika waktu sudah menunjukan jam mulai yang tertera pada soal ujian, dosen pengawas mulai berputar mengelilingi kelas sembari membacakan peraturan ujian kali ini."
+
+    bn normal "Selamat siang teman-teman kita memasuki waktu UTS terakhir pada hari ini."
+
+    bn "Saya disini akan mengawasi berjalannya UTS mata kuliah Desain Elementer pada siang hari ini, saya harap kalian sudah mempersiapkan diri untuk ujian hari ini."
+
+    bn "Soal akan saya bagikan, tolong kartu ujiannya ditaruh di meja dan nanti kalau ada pertanyaan bisa langsung ditanyakan."
+
+    bn "Saya harap kejujuran dari kalian dan semangat dan selamat mengerjakan."
+
+    "Setelah menerima lembar soal dan lembar jawaban untuk UTS mata kuliah Desain Elementer ini, kamu memejamkan matamu sebentar berdoa dan mempersiapkan diri untuk mengerjakan."
+
+    "Merasa cukup dengan persiapanmu, kamu mulai mengisi biodatamu pada lembar jawab sebelum mulai menelaah soal-soal UTS yang ada."
+
+    "(Pada {b}game ini{/b} UTS hanya akan memiliki 5 soal pilihan ganda!)"
+
+    "(Setiap pertanyaan akan ditampilkan dan bisa dijawab dalam waktu 90 detik)"
+
+    "(Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya)"
+
+    "(Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal)"
+
+    "(Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.)"
+
+    "(Perlu diketahui UTS pada kampus dapat dilaksankan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.)"
+
+    "(Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.)"
+
+    menu:
+        "Mulai!"
+
+    "1. Unsur seni paling dasar dan merupkan satuan paling kecil yaitu?"
+    menu:
+        "A. Garis.":
+            "A. Garis."
+        "B. Ruang.":
+            "B. Ruang."
+        "C. Titik.":
+            "C. Titik."
+            $a_deTS += 20 
+        "D. Warna.":
+            "D. Warna."
+        "E. Bidang.":
+            "E. Bidang."
+    "2. Kenapa ketika kita membuat sebuah seni atau desain kita memerlukan untuk mengetahui unsur-unsur seni yang ada didalamnya kecuali?"
+    menu:
+        "A. Agar karya seni yang dibuat lebih dapat bisa dinikmati lebih baik.":
+            "A. Agar karya seni yang dibuat lebih dapat bisa dinikmati lebih baik."
+        "B. Sehingga unsur yang ada dalam karya seni mencipatakan harmoni satu sama lain.":
+            "B. Sehingga unsur yang ada dalam karya seni mencipatakan harmoni satu sama lain."
+        "C. Sehingga karya seni mampu menampilkan seni yang lebih menarik.":
+            "C. Sehingga karya seni mampu menampilkan seni yang lebih menarik."
+        "D. Sehingga karya seni menjadi lebih mahal.":
+            "D. Sehingga karya seni menjadi lebih mahal."
+            $a_deTS += 20
+        "E. Agar karya seni mampu menampilkan unsur-unsurnya secara lebih jelas.":
+            "E. Agar karya seni mampu menampilkan unsur-unsurnya secara lebih jelas."
+    "3. Penggunaan suatu unsur seni agar lebih menonjol atau lebih dominan pada suatu unsur ketimbang unsur lainnya merupakan penjelasan dari prinsip seni?"
+    menu:
+        "A. Kesatuan.":
+            "A. Kesatuan."
+        "B. Harmoni.":
+            "B. Harmoni."
+        "C. Penekanan.":
+            "C. Penekanan."
+            $a_deTS += 20
+        "D. Irama.":
+            "D. Irama."
+        "E. Proprosi.":
+            "E. Proprosi."
+    "4. Pernyataan yang benar mengenai teori warna pada suatu desain?"
+    menu:
+        "A. Pengaplikasian teori warna yang baik pada desain mampu menjadikan desain lebih bermakna atau lebih jelas.":
+            "A. Pengaplikasian teori warna yang baik pada desain mampu menjadikan desain lebih bermakna atau lebih jelas."
+            $a_deTS += 20
+        "B. Teori warna tidak begitu berpengaruh pada desain.":
+            "B. Teori warna tidak begitu berpengaruh pada desain."
+        "C. Teori warna membuat desain lebih tidak menarik.":
+            "C. Teori warna membuat desain lebih tidak menarik."
+        "D. Dengan teori warna desain menjadi lebih rumit.":
+            "D. Dengan teori warna desain menjadi lebih rumit."
+        "E. Teori warna tidak memiliki banyak manfaat pada desain.":
+            "E. Teori warna tidak memiliki banyak manfaat pada desain."
+    "5. Contoh warna dari kelompok warna primer adalah?"
+    menu:
+        "A. Merah, Ungu, Kuning.":
+            "A. Merah, Ungu, Kuning."
+        "B. Biru, Ungu, Merah.":
+            "B. Biru, Ungu, Merah."
+        "C. Kuning, Biru, Ungu.":
+            "C. Kuning, Biru, Ungu."
+        "D. Kuning, Merah, Biru.":
+            "D. Kuning, Merah, Biru."
+            $a_deTS += 20
+        "E. Kuning, Merah, Putih.":
+            "E. Kuning, Merah, Putih."        
+            
+    "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
+
+    "Mengumpulkan kertas ujianmu, kamu memasukan barang-barangmu pada tas yang sebelumnya dikelompokan dengan rapi di depan kelas."
+
+    "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
+
+    "Menyelesaikan semua UTS pada hari ini, kamu merasa sangat lelah. Bukan hanya tubuhmu yang merasa lelah namun pikiranmu juga terasa sangat penuh."
+
+    "Setelah mengobrol dengan teman-temanmu untuk beberapa menit, kamu memutuskan untuk pulang ke kosan."
+
+    "Istirahat merupakan hal yang kamu perlukan saat ini. Setelah berpamitan dengan teman-temanmu kamu meninggalkan kampus."
+
+    call change_timephase
+    call screen mapUI
+
+
 label de_3:
 
     "DE 3"

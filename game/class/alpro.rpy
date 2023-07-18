@@ -230,6 +230,129 @@ label alpro_2:
 
     jump de_2
 
+label uts_alpro:
+
+    scene bg campus class with dissolve
+
+    "Memasuki jam ujian yang kedua, kamu sudah berada di depan ruang ujian yang sebentar lagi akan digunakan."
+
+    "Sama seperti ruang kelas UTS sebelumnya, pada pintu masuk kelas sudah ditempel lembar berisikan informasi posisi tempat duduk masing-masing mahasiswa peserta UTS."
+
+    "Setelah memastikan dimana posisi tempat dudukmu, kamu memasuki ruang kelas."
+
+    "Sesuai yang diperintahkan dosen penjaga UTS, tas-tas mahasiswa diletakkan di depan kelas secara rapi."
+
+    "Mahasiswa hanya perlu membawa peralatan tulis dan kartu ujian di bangku masing-masing."
+
+    "Seperti sebelumnya, setelah kamu duduk kertas ujian tidak langsung dibagikan namun menunggu waktu yang telah ditentukan terlebih dahulu."
+
+    "Ketika waktu sudah menunjukan jam mulai yang tertera pada soal ujian, dosen pengawas mulai berputar mengelilingi kelas sembari membacakan peraturan ujian kali ini."
+
+    pa normal "Selamat pagi teman-teman pada pagi hari ini kita akan melanjutkan ujian tengah semester untuk mata kuliah Algoritma Pemrograman."
+
+    pa "Bapak harap kalian sudah mempersiapkan diri untuk ujian hari ini."
+
+    pa "Soal akan bapak bagikan, tolong kartu ujiannya ditaruh di meja dan nanti kalau ada pertanyaan bisa langsung ditanyakan."
+
+    pa "Bapak harap kejujuran dari kalian dan semangat dan selamat mengerjakan."
+
+    "Setelah menerima lembar soal dan lembar jawaban untuk UTS mata kuliah Algoritma Pemrograman ini, kamu memejamkan matamu sebentar berdoa dan mempersiapkan diri untuk mengerjakan."
+
+    "Merasa cukup dengan persiapanmu, kamu mulai mengisi biodatamu pada lembar jawab sebelum mulai menelaah soal-soal UTS yang ada."
+
+    "(Pada {b}game ini{/b} UTS hanya akan memiliki 5 soal pilihan ganda!)"
+
+    "(Setiap pertanyaan akan ditampilkan dan bisa dijawab dalam waktu 90 detik)"
+
+    "(Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya)"
+
+    "(Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal)"
+
+    "(Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.)"
+
+    "(Perlu diketahui UTS pada kampus dapat dilaksankan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.)"
+
+    "(Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.)"
+
+    menu: 
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS"
+
+    "1. Terdapat 3 tingkat atau level dari bahasa pemrograman, manakah dibawah ini yang merupakan bahasa pemrograman tingkat tinggi?"
+    menu:
+        "A. Biner.":
+            "A. Biner."
+        "B. Add.":
+            "B. Add."
+        "C. SUB.":
+            "C. SUB."
+        "D. Assembly.":
+            "D. Assembly."
+        "E. Java.":
+            "E. Java."
+            $a_alproTS +=20
+    "2. Dari beberapa pernyataan dibawah, manakah yang benar mengenai ciri suatu algoritma?"
+    menu:
+        "A. Sebuah algoritma memiliki jumlah langkah yang tentu dan tidak ambigu.":
+            "A. Sebuah algoritma memiliki jumlah langkah yang tentu dan tidak ambigu."
+            $a_alproTS +=20
+        "B. Algoritma dapat melakukan perintah-perintah meskipun tidak tertulis pada perintah awal.":
+            "B. Algoritma dapat melakukan perintah-perintah meskipun tidak tertulis pada perintah awal."
+        "C. Algoritma tidak memerlukan sebuah keluaran.":
+            "C. Algoritma tidak memerlukan sebuah keluaran."
+        "D. Algoritma yang baik tidak perlu memerhatikan keefektivitasan karena hal terpenting adalah algoritma menyelesaikan masalah.":
+            "D. Algoritma yang baik tidak perlu memerhatikan keefektivitasan karena hal terpenting adalah algoritma menyelesaikan masalah."
+        "E. Algoritma tidak memerlukan suatu stopping point.":
+            "E. Algoritma tidak memerlukan suatu stopping point."
+    "3. Dari beberapa pernyataan dibawah, manakah yang salah mengenai ciri suatu algoritma?"
+    menu:
+        "A. Sebuah algoritma bisa memiliki jumlah langkah yang tak terbatas.":
+            "A. Sebuah algoritma bisa memiliki jumlah langkah yang tak terbatas."
+            $a_alproTS +=20
+        "B. Algoritma akan berhenti setelah melakukan perintah-perintah yang ada.":
+            "B. Algoritma akan berhenti setelah melakukan perintah-perintah yang ada."
+        "C. Algoritma harus memiliki suatu keluaran.":
+            "C. Algoritma harus memiliki suatu keluaran."
+        "D. Sebuah instruksi efektif dibutuhkan agar instruksi tersebut dapat dijalankan oleh pemroses.":
+            "D. Sebuah instruksi efektif dibutuhkan agar instruksi tersebut dapat dijalankan oleh pemroses."
+        "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu.":
+            "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu."
+    "4. Dari beberapa algoritma dibawah manakah yang termasuk algoritma percabangan?"
+    menu:
+        "A. Algoritma cara memasak nasi goreng.":
+            "A. Algoritma cara memasak nasi goreng."
+        "B. Algoritma menjemur cucian basah.":
+            "B. Algoritma menjemur cucian basah."
+        "C. Algoritma pengelompokan siswa berdasarkan umur.":
+            "C. Algoritma pengelompokan siswa berdasarkan umur."
+            $a_alproTS +=20
+        "D. Algoritma mencari luas segitiga.":
+            "D. Algoritma mencari luas segitiga."
+        "E. Algoritma membuat kopi.":
+            "E. Algoritma membuat kopi."
+    "5. Manakah dibawah yang merupakan sebuah Pseudocode untuk mencari volume sebuah balok?"
+    menu:
+        "A. Algoritma mencari volume balok | Input sisi, tinggi | volume = sisi*tinggi":
+            "A. Algoritma mencari volume balok | Input sisi, tinggi | volume = sisi*tinggi"
+        "B. Input panjang, lebar, tinggi | volume = panjang*lebar*tinggi":
+            "B. Input panjang, lebar, tinggi | volume = panjang*lebar*tinggi"
+        "C. Algoritma mencari volume balok | Input panjang*lebar*tinggi | output = volume":
+            "C. Algoritma mencari volume balok | Input panjang*lebar*tinggi | output = volume"
+        "D. Algoritma mencari volume balok | Input panjang*lebar*tinggi | volume = panjang*lebar*tinggi | output = volume":
+            "D. Algoritma mencari volume balok | Input panjang*lebar*tinggi | volume = panjang*lebar*tinggi | output = volume"
+            $a_alproTS += 20
+        "E. Algoritma mencari volume balok | Input sisi*sisi*tinggi | volume = sisi*sisi*tinggi | output = volume":
+            "E. Algoritma mencari volume balok | Input sisi*sisi*tinggi | volume = sisi*sisi*tinggi | output = volume"
+
+    "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
+
+    "Mengumpulkan kertas ujianmu, kamu memasukan barang-barangmu pada tas yang sebelumnya dikelompokan dengan rapi di depan kelas."
+
+    "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
+
+    call istirahat
+    jump uts_de
+
 label alpro_3:
 
     "ALPRO 3"

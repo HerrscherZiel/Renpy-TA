@@ -21,7 +21,7 @@ label pti_1:
 
     "Terlihat proyektor memperlihatkan slide suatu file powerpoint."
 
-    show screen pti_1
+    show screen pti_1 with fade
 
     pa "Pada mata kuliah Pengantar Tekonologi Informasi ini kita akan mempelajari tentang pengetahuan mengenai teknologi dasar dan komunikasi."
 
@@ -67,7 +67,7 @@ label pti_1:
 
     pa "Carilah masing-masing 2 teknologi informasi modern dan implementasinya dalam bidang Kesehatan dan Pendidikan."
 
-    "{i}Tutorial tugas!{i}"
+    "{i}Tutorial tugas!{/i}"
 
     "Tugas terkadang akan diberikan oleh dosen pada suatu mata kuliah."
 
@@ -75,7 +75,7 @@ label pti_1:
 
     "Informasi mengenai Tugas dapat diakses menggunakan menu tugas, dan dapat dikerjakan ketika kalian memilih ikon mengerjakan tugas pada menu {b}MAP{/b}."
 
-    "Mengerjakan tugas akan menghabiskan satu fase waktu, jadi pilihlah waktu yang tepat!!"
+    p"Mengerjakan tugas akan menghabiskan satu fase waktu, jadi pilihlah waktu yang tepat!!"
 
     "Pada satu waktu pengerjaan tugas kalian dapat mengerjakan 2 tugas."
 
@@ -190,6 +190,125 @@ label pti_2:
 
     pause 1.5
     jump alpro_2
+
+label uts_pti:
+
+    scene bg campus class with dissolve
+
+    show screen trans_screen with dissolve
+    pause 2.0
+
+    pa normal "Selamat pagi teman-teman pada pagi hari ini kita akan melakukan ujian tengah semester untuk mata kuliah pengantar teknologi informasi."
+
+    pa "Bapak harap kalian sudah mempersiapkan diri untuk ujian hari ini."
+
+    pa "Soal saya bagikan, tolong kartu ujiannya ditaruh di meja dan nanti kalau ada pertanyaan bisa langsung ditanyakan."
+
+    pa "Bapak harap kejujuran dari kalian dan semangat dan selamat mengerjakan."
+
+    "Kamu memandang soal ujian, terdapat keterangan seperti nama mata kuliah, tanggal ujian, jam ujian, dan waktu ujian."
+
+    "(Pada {b}game ini{/b} UTS hanya akan memiliki 5 soal pilihan ganda!)"
+
+    "(Setiap pertanyaan akan ditampilkan dan bisa dijawab dalam waktu 90 detik)"
+
+    "(Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya)"
+
+    "(Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal)"
+
+    "(Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.)"
+
+    "(Perlu diketahui UTS pada kampus dapat dilaksankan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.)"
+
+    "(Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.)"
+
+    "Setelah paham dengan peraturan ujian kali ini, kamu mulai menulis biodatamu pada lembar jawaban yang telah diterima."
+
+    "Kemudian kamu bersiap menjawab pertanyaan yang ada."
+
+    "Mulai UTS?"
+
+    menu: 
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS"
+    
+    "1. Manakah dari pernyataan dibawah yang benar dan sebaiknya kita lakukan mengenai teknologi informasi?"
+    menu:
+        "A. Teknologi Informasi merupakan teknologi-teknologi yang bisa dan hanya bisa membantu dalam bidang kesehatan.":
+            "A. Teknologi Informasi merupakan teknologi-teknologi yang bisa dan hanya bisa membantu dalam bidang kesehatan."
+        "B. Teknologi Informasi baiknya kita jauhi karena hanya dapat memberi dampak-dampak yang buruk.":
+            "B. Teknologi Informasi baiknya kita jauhi karena hanya dapat memberi dampak-dampak yang buruk."
+        "C. Teknologi Informasi sudah layaknya tidak kita gunakan, lebih baik menggunakan cara yang lebih tradisional.":
+            "C. Teknologi Informasi sudah layaknya tidak kita gunakan, lebih baik menggunakan cara yang lebih tradisional."
+        "D. Teknologi Informasi adalah semua teknologi yang dapat digunakan untuk dapat digunakan oleh manusia untuk dapat membuat, mengubah, menyimpan, memproses, dan menyebarkan serta menerima informasi.":
+            "D. Teknologi Informasi adalah semua teknologi yang dapat digunakan untuk dapat digunakan oleh manusia untuk dapat membuat, mengubah, menyimpan, memproses, dan menyebarkan serta menerima informasi."
+            $a_ptiTS +=20
+        "E. Teknologi Informasi baiknya hanya kita gunakan hanya dalam bidang pendidikan.":
+            "E. Teknologi Informasi baiknya hanya kita gunakan hanya dalam bidang pendidikan."
+    "2. Manakah dari teknologi informasi dibawah yang dapat kita gunakan untuk membantu kita dalam berkomunikasi jarak jauh dengan teman kita yang berada pada pulau yang berbeda?"
+    menu:
+        "A. Handphone.":
+            "A. Handphone."
+            $a_ptiTS +=20
+        "B. Mobil.":
+            "B. Mobil."
+        "C. Kereta.":
+            "C. Kereta."
+        "D. Kamera":
+            "D. Kamera."
+        "E. Teropong.":
+            "E. Teropong."
+    "3. Apakah yang dimaksud dengan Informasi?"
+    menu:
+        "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian."
+            "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian."
+        "B. Informasi merupakan data lapangan dari suatu kegiatan praktik."
+            "B. Informasi merupakan data lapangan dari suatu kegiatan praktik."
+        "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan."
+            "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan."
+        "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu."
+            "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu."
+            $a_ptiTS +=20
+        "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi."
+            "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi."
+    "4. Dari beberapa opsi dibawah ini apakah yang termasuk data yang diambil dari lingkungan sekolah?"
+    menu:
+        "A. Jumlah murid."
+            "A. Jumlah kendaraan."
+        "B. Jumlah guru."
+            "B. Jumlah guru."
+        "C. Jumlah ruang kelas."
+            "C. Jumlah ruang kelas."
+        "D. Jumlah mata pelajaran."
+            "D. Jumlah mata pelajaran."
+        "E. Jumlah kendaraan."
+            "E. Jumlah kendaraan."
+            $a_ptiTS +=20
+    "5. Manakah dari pernyataan dibawah ini yang merupakan fungsi sebuah Sistem Operasi?"
+    menu:
+        "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya."
+            "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya."
+        "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi."
+            "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi."
+        "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer."
+            "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer."
+            $a_ptiTS +=20
+        "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi."
+            "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi."
+        "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras."
+            "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras."
+
+    "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
+
+    "Mengumpulkan kertas ujianmu, kamu memasukan barang-barangmu pada tas yang sebelumnya dikelompokan dengan rapi di depan kelas."
+
+    "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
+
+    "Di luar ruangan, kamu dan temanmu yang telah selesai mengerjakan UTS Pengantar Teknologi Informasi sempat membahas mengenai jawaban dari masing-masing soal yang ada."
+
+    "Lalu sembari menunggu mahasiswa lain selesai mengerjakan dan UTS mata kuliah berikutnya dilakukan kamu mengobrol santai dan membaca materi dari mata kuliah yang akan di UTSkan berikutnya."
+
+    jump uts_alpro
 
 label pti_3:
 

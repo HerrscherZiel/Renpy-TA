@@ -402,6 +402,13 @@ label choice_mart_night:
 
     "Ada beberapa hal yang dapat kamu lakukan di minimart pada malam hari, kamu memilih untuk:"
 
+    if day == 12:
+        jump belajar_1
+    elif day ==13:
+        jump belajar_2
+    elif day == 14:
+        jump belajar_3
+
     menu:
         "Membeli snack untuk camilan":
             jump mart_nightS1
@@ -503,13 +510,15 @@ label mart_noonS1:
     else:
         pass
 
-    return
+    call change_timephase
+    call screen mapUI with dissolve
 
 label mart_noonS2:
 
     "Teringat ada beberapa barang yang perlu kamu beli, kamu "
 
-    return
+    call change_timephase
+    call screen mapUI with dissolve
 
 #night
 label mart_nightS1:
@@ -519,7 +528,6 @@ label mart_nightS1:
     call small_eat
 
     jump sleep
-  
 
 label mart_nightS2:
 
@@ -527,4 +535,1111 @@ label mart_nightS2:
 
     jump sleep
   
+#belajarUTS
 
+label belajar_1:
+
+    scene bg foodcourt with dissolve
+
+    "Malam harinya kamu memutuskan untuk mengikuti kegiatan belajar bersama dengan teman sekelasmu untuk mempersiapkan UTS esok hari."
+
+    "Kamu membawa buku catatanmu menuju ke foodcourt yang ada di minimart."
+
+    "Sesampainya di minimart kamu melihat beberapa kerumpulan orang sedang membuka laptop maupun buku."
+
+    "Kamu mengamati untuk beberapa waktu untuk memastikan kamu tidak mendatangi kerumpulan yang salah, 
+    sampai akhirnya kamu melihat [r] pada salah satu kerumpulan yang ada."
+
+    r normal2 "Oh hai [name] kamu datang ya..."
+
+    mc normal jacket "Udah pada dateng tadi ya?"
+
+    r "Udah sih nggak tadi-tadi banget tapi."
+
+    mc "Udah mulai?"
+
+    r "Baru tuker-tukeran catatan aja sih."
+
+    mc "Ohhh okey-okey."
+
+    "Disekitar kamu melihat teman sekelasmu yang sudah datang, sudah memesan makanan dan minuman dari foodcourt sebagai teman belajar."
+
+    mc "Aku pesan dulu aja dah, bentar ya [r]."
+
+    r "Santai ini kita nggak buru-buru juga kok."
+
+    "Kemudian kamu berjalan menuju salah satu stand dan memesan menu yang ada."
+
+    scene bg black with dissolve
+    pause 1.0
+
+    scene bg foodcourt with dissolve
+
+    "Setelah beberapa menit menunggu pesananmu telah siap, selesai membayar kamu kembali ke kerumpulan teman sekelasmu membawa apa yang kamu pesan."
+
+    "Ketika kembali, [r] sedang mulai menjelaskan mengenai mata kuliah 'Pengantar Teknologi Informasi' yang akan menjadi mata kuliah pertama pada jadwal UTS besok."
+
+    r normal2 "Jadi langsung kujelaskan ya kisi-kisinya."
+
+    call belajar_pti_1
+
+    r "Kemudian pada pertemuan kedua PTI yang dipelajari adalah:"
+
+    call belajar_pti_2
+
+    r normal2 "Kurang lebih itu yang pernah kita pelajari pada mata kuliah pengantar teknologi informasi, 
+    sekiranya soal yang keluar untuk uts ada pada esok hari dari materi pelajaran tersebut."
+
+    r "Kemudian kita lanjut mengenai materi-materi pada mata kuliah Algoritma Pemrograman."
+
+    call belajar_alpro_1
+
+    r normal2"Kemudian pada pertemuan kedua Alpro yang dipelajari adalah"
+
+    call belajar_alpro_2
+
+    r normal2"Itu semua merupakan hal yang sudah kita pelajari pada mata kuliah Alpro, kemudian mata kuliah terakhir yang akan di UTSkan besok adalah Desain Elementer."
+
+    r "Berikut materi yang sudah kita terima pada mata kuliah DE pada pertemuan pertama"
+
+    call belajar_de_1
+
+    r normal2"Kemudian pada pertemuan kedua DE yang dipelajari adalah"
+
+    call belajar_de_2
+
+    r normal2"Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Desain Elementer."
+
+    r "Itu juga semua materi yang mungkin akan menjadi bahan untuk soal UTS besok."
+
+    r "Karena sekarang juga sudah hampir jam 10 malam, mungkin sampai sini dulu ya?"
+
+    r "Kalau ada pertanyaan sharing aja di grup temen-temen."
+
+    t normal "Okey-okey makasih [r]"
+
+    "Kemudian kegiatan belajar bersama untuk malam ini diakhiri. Teman-temanmu mulai meninggalkan foodcourt satu persatu."
+
+    "Namun tidak semua temanmu pergi untuk pulang, masih ada dari mereka yang berlanjut belajar bersama di tempat yang lain."
+
+    mc normal jacket"Makasih ya [r], besok ada lagi kah?"
+
+    r "Ada sih, kalau mau ikut ikut aja besok tinggal dateng kok."
+
+    mc "Okey-okey, yaudah pulang duluan ya aku."
+
+    r "Sip, hati-hati di jalan [name]."
+
+    "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
+
+    jump sleep
+
+label belajar_2:
+
+    scene bg foodcourt with dissolve
+
+    "Malam hari kedua sewaktu minggu ujian kamu memutuskan untuk mengikuti kegiatan belajar bersama dengan teman sekelasmu untuk kedua kalinya."
+
+    "Kamu membawa buku catatanmu menuju ke foodcourt yang ada di minimart."
+
+    "Sesampainya di minimart kamu melihat beberapa kerumpulan orang sedang membuka laptop maupun buku."
+
+    r normal2 "Halo [name] kamu datang lagi ya..."
+
+    mc normal jacket "Iya hehe...?"
+
+    r "Gimana uts tadi ? Bisa kan?"
+
+    mc "Ya gitu dahh hahaha... lumayan sih"
+
+    r "Bagus kalau gitu, makanya kesini ikut belajar kan hahaha."
+
+    mc "Kamu gimana? Kalo kamu mah pasti ezepeze kan [r]?"
+
+    r "Hahaha nggak segitunya lahh... tapi ya bisa kan udah belajar."
+
+    "Setelah mengobrol untuk beberapa waktu, kamu pergi menuju stand minuman sembari menunggu teman-teman kelasmu yang lain untuk datang."
+
+    "Kamu memesan minuman dingin untuk menemanimu belajar pada malam hari ini."
+
+    "Menunggu hingga beberapa teman kelasmu datang, akhirnya kegiatan belajar bersama dimulai."
+
+    scene bg black with dissolve
+    pause 1.0
+
+    scene bg foodcourt with dissolve
+
+    r normal2 "Karena sudah agak malem, kubagikan ya, materi yang pernah diajarkan ke kita beberapa minggu lalu."
+
+    r "Untuk besok yang pertama ada Struktur Data, jadi pada minggu pertama materi yang kita dapatkan adalah:"
+
+    call belajar_strukdat_1
+
+    r "Kemudian pada pertemuan kedua Struktur Data yang dipelajari adalah:"
+
+    call belajar_strukdat_2
+
+    r "Kurang lebih itu yang pernah kita pelajari pada mata kuliah Struktur Data, 
+    sekiranya soal yang keluar untuk uts ada pada esok hari dari materi pelajaran tersebut."
+
+    r "Kemudian kita lanjut pada mata kuliah kedua besok yaitu Basis Data."
+
+    r "Minggu pertama pada mata kuliah Basis Data adalah:"
+
+    call belajar_basdat_1
+
+    r "Kemudian pada pertemuan kedua Basis Data yang dipelajari adalah:"
+
+    call belajar_basdat_2
+
+    r "Itu semua merupakan hal yang sudah kita pelajari pada mata kuliah Basis Data, kemudian mata kuliah terakhir yang akan diujikan besok adalah Pemrograman Web."
+
+    r "Berikut materi yang sudah kita terima pada mata kuliah Web pada pertemuan pertama:"
+
+    call belajar_web_1
+
+    r "Kemudian pada pertemuan kedua Web yang dipelajari adalah:"
+
+    call belajar_de_2
+
+    r "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Pemrograman Web."
+
+    r "Itu juga semua materi yang mungkin akan menjadi bahan untuk soal ujian besok."
+
+    r "Karena sekarang juga sudah hampir jam 10 malam, mungkin sampai sini dulu ya belajarnya?"
+
+    r "Kalau ada pertanyaan sharing aja di grup kelas kita temen-temen."
+
+    t normal "Okey-okey makasih [r]"
+
+    "Kemudian kegiatan belajar bersama untuk malam ini ditutup. Teman-temanmu mulai meninggalkan foodcourt satu persatu."
+
+    "Namun tidak semua temanmu pergi untuk pulang, masih ada dari mereka yang berlanjut belajar bersama di tempat yang lain."
+
+    mc "Makasih ya [r], besok ada lagi kan ya?"
+
+    r "Ada sih, kalau mau ikut lagi ikut aja besok tinggal dateng kok."
+
+    mc "Okey-okey, yaudah aku pulang duluan ya."
+
+    r "Sip, hati-hati di jalan [name]."
+
+    "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
+
+    jump sleep
+
+label belajar_3:
+
+    scene bg foodcourt with dissolve
+
+    "Besok merupakan hari terakhir ujian tengah semester dilaksankan. 
+    Kamu lebih memilih untuk menghabiskan malam ini mengikuti kegiatan belajar bersama."
+
+    "Membawa buku catatan dan peralatan tulis, kamu berangkat menuju tempat kegiatan tersebut dilakukan."
+
+    "Sama seperti hari-hari sebelumnya, kamu melihat berbagai kerumpulan orang yang memiliki tujuan yang sama dengan dirimu."
+
+    "Setelah mengamati untuk beberapa waktu, kamu melihat [r] dan berjalan menghampirinya."
+
+    mc normal jacket "Halo [r], udah mulai kah?"
+
+    r normal2 "Halo [name] iya ini, karena cuma dua besok jadi pengen pada cepet selesai hahaha"
+
+    mc normal jacket "Wajar sih, pengen cepet selesai juga aku."
+
+    "Melihat teman-temanmu sudah mulai membuka dan membaca materi, kamu ikut mengeluarkan buku dari ranselmu."
+
+    "[r] mendatangimu dengan membawa kertas materi untuk ujian besok."
+
+    r "Btw ini materi yang udah dibahas tadi ya"
+
+    mc "Ohhh okey, makasih [r]."
+
+    "Karena sudah tertinggal kamu langsung membaca materi yang diberikan oleh [r]"
+
+    scene bg black with dissolve
+    pause 1.0
+
+    scene bg foodcourt with dissolve
+
+    "Mata kuliah yang akan diujikan pertama untuk besok adalah Pemrograman berorientasi objek(PBO)."
+
+    "Materi untuk minggu pertama pertemuan mata kuliah tersebut adalah sebagai berikut:"
+
+    call belajar_pbo_1
+
+    "Kemudian pada pertemuan kedua PBO yang dipelajari adalah:"
+
+    call belajar_pbo_2
+
+    "Selesai membaca materi PBO, kamu sudah menyusul teman-temanmu yang sedang membahas materi mata kuliah yang selanjutnya."
+
+    r normal2 "Teman-teman materi ini materi yang kita pelajari ya untuk mata kuliah Jaringan Komputer."
+
+    "Membagikan kertas berisikan materi, kemudian [r] lanjut menjelaskan materi-materi yang ada."
+
+    r "Materi pada minggu pertama pertemuan mata kuliah Jaringan Komputer adalah:"
+
+    call belajar_jarkom_1
+
+    r "Kemudian pada pertemuan kedua Jaringan Komputer yang dipelajari adalah:"
+
+    call belajar_jarkom_2
+
+    r "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Jaringan Komputer."
+
+    r "Itu juga semua materi yang mungkin akan menjadi bahan untuk soal ujian besok."
+
+    r "Karena besok cuma dua mata kuliah kurasa cukup itu aja materi yang dibahas temen-temen"
+
+    r "Mungkin kalau ada pertanyaan bisa langsung ditanyain aja, mumpung masih ada waktu ini."
+
+    "Setelah itu kegiatan belaja berubah menjadi sesi tanya jawab."
+
+    "Teman-temanmu saling bertukar pertanyaan hingga dirasa cukup untuk malam ini."
+
+    scene bg foodcourt with fade
+
+    "Kemudian kegiatan belajar bersama untuk malam ini disudahi."
+
+    "Berbeda dengan malam sebelumnya, kini karena masih belum terlalu malam kamu dan teman-temanmu menghabiskan waktu bersama untuk mengobrol terlebih dahulu."
+
+    #public ++
+
+    t "Akhirnyaa belajar terakhir selesai yeyyyy"
+
+    t "Jadi bisa males-malesan lagi hahaha."
+
+    t "Jangan gitu, masih besok lho selesainya hati-hati nanti kepleset ahahaha."
+
+    t "Ihh kok gitu sihh? Kalau doa tuh yang baik-baik gitu hahaha."
+
+    "Teman-temanmu sudah tidak sabar untuk mengakhiri ujian kali ini."
+
+    "Kalian memesan makanan dan bergurau hingga larut malam."
+
+    r "Makasih ya teman-teman, kegiatan belajar untuk ujian kali ini selesai."
+
+    r "Semoga kegiatan ini membantu kita semua dalam mengerjakan ujian yang sebelumnya dan juga besok."
+
+    r "Semoga kita mendapatkan hasil yang memuaskan sesuai dengan apa yang kita usahakan."
+
+    t "Makasih [r]! Besok-besok agendakan lagi ya hahaha."
+
+    t "Iyaa, setiap ada ujian agendakan dongg."
+
+    r "Kalau pada mau sih oke-oke aja aku."
+
+    t "Yeyy bisa nongki-nongki lagi kalau malem jadinya hahaha."
+
+    t "Belajar oii belajar hahaha."
+
+    r "Yaudah, aku tutup kalau pada mau pulang silahkan yang mau main lagi juga silahkan."
+
+    "[r] kemudian berjalan mendekatimu."
+
+    r "Makasih ya udah ikut kegiatan ini terus [name]!"
+
+    mc "Makasih juga, aku dapet materi buat belajar juga hahaha."
+
+    r "Hahaha yaudah kalau mau pulang dulu, tiati di jalan ya!"
+
+    "Melihatmu sudah mengkemas barang-barangmu [r] sudah mengira kamu akan segera pulang."
+
+    mc "Kamu gak langsung pulang kah?"
+
+    r "Aku mau main dulu sih ahahah, habis belajar kan biar gak kaku begitu."
+
+    mc "Hahaha, oke aku pulang dulu ya."
+
+    r "Siapp hati-hati!"
+
+    "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
+
+    jump sleep
+
+label belajar_pti_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Pengantar Teknologi Informasi kita membahas mengenai."
+
+    show screen pti_1 with dissolve
+
+    "Pengertian dan Perkembangan Teknologi Informasi."
+
+    "Apa itu teknologi informasi dan perkembangan teknologi informasi tiap zaman dibahas pada pertemuan ini."
+
+    hide screen pti_1
+
+    show screen pti_1_2 with fade
+
+    "Selain itu kita juga sedikiti membahas mengenai penggunaan teknologi informasi pada kehidupan sehari-hari."
+
+    "Apa pentingnya dan bagaimana sebaiknya kita menggunakan teknologi informasi dibahas disini."
+
+    ""
+
+    hide screen pti_1_2
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah PTI pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_pti_1
+
+label belajar_pti_2:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu kedua mata kuliah Pengantar Teknologi Informasi kita membahas mengenai."
+
+    show screen pti_2 with dissolve
+
+    "Pengertian data, informasi, dan pengetahuan."
+
+    "Apa itu data, apa itu informasi, dan apa itu pengetahuan dibahas pada pertemuan ini."
+
+    hide screen pti_2
+    show screen pti_2_2 with fade
+
+    "Selain itu pertemuan ini juga membahas mengenai pengertian Sistem Operasi, beberapa fungsi sistem operasi."
+
+    "Apa itu sistem informasi dan fungsi sistem operasi bagi perangkat lunak dibahas disini."
+
+    hide screen pti_2_2
+
+    show screen pti_2_3 with fade
+
+    "Sebelum pertemuan berakhir, contoh dan penjelasan Sistem operasi juga sempat dibahas."
+
+    "Beberapa contoh sistem operasi beserta penjelasan dibahas pada pertemuan ini."
+
+    ""
+
+    hide screen pti_2_3
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah PTI pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_pti_2
+
+label belajar_alpro_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Algoritma Pemrograman kita membahas mengenai."
+
+    show screen alpro_1_1 with dissolve
+
+    "Pengertian program, dan 3 level bahasa pemrograman."
+
+    "Apa itu program, dan penjelasan mengenai 3 level bahasa pemrograman dibahas pada pertemuan ini."
+
+    hide screen alpro_1_1
+
+    show screen alpro_1_2 with fade
+
+    "Selain itu pertemuan ini juga membahas mengenai pengertian Algoritma beserta ciri-ciri sebuah algoritma."
+
+    "Apa itu algoritma dan apa saja ciri-ciri dari sebuah algoritma dibahas disini."
+    
+    ""
+    hide screen alpro_1_2
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah Alpro pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_alpro_1
+
+label belajar_alpro_2:
+
+    scene bg foodcourt with fade
+
+    "Kemudian pada minggu kedua mata kuliah Algoritma Pemrograman kita membahas mengenai."
+
+    show screen alpro_2_1 with dissolve
+
+    "Macam-macam konstruksi yang ada pada algoritma."
+
+    "Pengertian algoritma sekuensial, percabangan, dan pengulangan dibahas pada pertemuan ini."
+
+    hide screen alpro_2_1
+
+    show screen alpro_2_2 with fade
+
+    "Selain itu pertemuan ini juga membahas mengenai Pseudocode dan Flowchart."
+
+    "Pengertian dan penjelasan mengenai Pseudocode dan Flowchart dibahas disini."
+
+    hide screen alpro_2_2
+
+    show screen alpro_2_3 with fade
+
+    "Sebelum pertemuan berakhir, contoh dan penjelasan dari Pseudocode dan Flowchart juga sempat dibahas."
+
+    "Berikut contoh Pseudocode dan Flowchart juga dibahas pada pertemuan ini."
+
+    ""
+
+    hide screen alpro_2_3
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah Alpro pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_alpro_2
+
+label belajar_de_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Desain Elementer kita membahas mengenai."
+
+    show screen de_1_1 with dissolve
+
+    "Pengertian Desain Elementer dan Unsur-unsur yang ada didalamnya."
+
+    "Apa itu Desain elementer, dan unsur-unsur seni dibahas pada pertemuan ini."
+
+    hide screen de_1_1
+
+    show screen de_1_2 with fade
+
+    "Unsur Bidang dan Warna dijelaskan pada bagian ini."
+
+    ""
+
+    ""
+
+    hide screen de_1_2
+
+    show screen de_1_3 with fade
+
+    "Unsur Tekstur dan Ruang dijelaskan pada bagian ini."
+
+    ""
+
+    ""
+
+    hide screen de_1_3
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah DE pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_de_1
+
+label belajar_de_2:
+
+    scene bg foodcourt with fade
+
+    "Kemudian pada minggu kedua mata kuliah Desain elementer kita membahas mengenai."
+
+    show screen de_2_1 with dissolve
+
+    "Prinsip-prinsip seni."
+
+    "Pengertian prinsip Kesatuan, Keseimbangan, Irama, Penekanan, Proporsi, dan Keselarasan dibahas pada pertemuan ini."
+
+    hide screen de_2_1
+
+    show screen de_2_2 with fade
+
+    "Selain itu pertemuan ini juga membahas mengenai Teori Warna dan Roda Warna."
+
+    "Pengertian dan penjelasan mengenai Teori Warna dan Roda Warna dibahas disini."
+
+    hide screen de_2_2
+
+    show screen de_2_3 with fade
+
+    "Sebelum pertemuan berakhir, contoh dan penjelasan dari Warna Primer, Sekunder, dan Tersier juga sempat dijelaskan."
+
+    "Berikut penjelasan mengenai hal tersebut pada pertemuan ini."
+
+    ""
+
+    hide screen de_2_3
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah Alpro pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_de_2
+
+label belajar_strukdat_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Pengantar Teknologi Informasi kita membahas mengenai."
+
+    show screen strukdat_1_1 with dissolve
+
+    "Pengertian Struktur Data dan contohnya."
+
+    "Apa itu struktur data dan penjelasan contoh struktur data Array dijelaskan disini."
+
+    hide screen strukdat_1_1
+
+    show screen strukdat_1_2 with fade
+
+    "Selain itu kita juga membahas mengenai struktur data Stack dan Queue."
+
+    "Penjelasan mengenai struktur data Stack dan Queue kita dapatkan disini."
+
+    ""
+
+    hide screen strukdat_1_2
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah struktur data pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_strukdat_1
+
+label belajar_strukdat_2:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu kedua mata kuliah Struktur Data kita membahas mengenai."
+
+    show screen strukdat_2_1 with dissolve
+
+    "Kita membahas lanjut jenis struktur data yang sudah dibahas diminggu sebelumnya."
+
+    "Apa itu struktur data Tree, Linked List, dan Graph dibahas pada pertemuan ini."
+
+    hide screen strukdat_2_1
+
+    show screen strukdat_2_2 with fade
+
+    "Slide ini menjelaskan lanjutan penjelasan mengenai struktur data Tree."
+
+    "Selain itu pada slide ini terdapat juga penjelasan mengenai struktur data Graph"
+
+    hide screen strukdat_2_2
+
+    show screen strukdat_2_3 with fade
+
+    "Sebelum pertemuan berakhir, manfaat penggunaan atau pengaplikasian struktur data juga sempat dibahas."
+
+    "Beberapa manfaat dari struktur data dibahas pada pertemuan ini."
+
+    ""
+
+    hide screen strukdat_2_3
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah struktur data pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_strukdat_2
+
+label belajar_basdat_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Basis Data kita membahas mengenai."
+
+    show screen basdat_1_1 with dissolve
+
+    "Pengertian basis data."
+
+    "Apa itu basis data? Apa yang dapat dilakukan basis data? Dibahas pada pertemuan ini."
+
+    hide screen basdat_1_1
+
+    show screen basdat_1_2 with fade
+
+    "Selain itu pertemuan ini juga membahas mengenai manfaat dan pentingnya basis data."
+
+    "Beberapa manfaat basis data dan penjelasannya dijelaskan pada slide ini."
+    
+    ""
+    hide screen basdat_1_2
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah basis data pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_basdat_1
+
+label belajar_basdat_2:
+
+    scene bg foodcourt with fade
+
+    "Kemudian pada minggu kedua mata kuliah Basis Data kita membahas mengenai."
+
+    show screen basdat_2_1 with dissolve
+
+    "Sistem manajemen basis data."
+
+    "Pengertian mengenai sistem manajemen basis data juga kelebihan dan kekurangan dari penggunaannya dibahas pada pertemuan ini."
+
+    hide screen basdat_2_1
+
+    show screen basdat_2_2 with fade
+
+    "Selain itu pertemuan ini juga membahas mengenai contoh sistem manajemen basis data dan komponen pentingnya."
+
+    "Contoh-contoh dan komponen-komponen sistem manajemen basis data dibahas disini."
+
+    hide screen basdat_2_2
+
+    show screen basdat_2_3 with fade
+
+    "Sebelum pertemuan berakhir, Data Definition Language(DDL) dan Data Manipulative Language(DML) juga sempat dibahas."
+
+    "Sedikit penjelasan mengenai DDL dan DML dijelaskan pada slide ini."
+
+    ""
+
+    hide screen basdat_2_3
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah basis data pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_basdat_2
+
+label belajar_web_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Pemrograman Web kita membahas mengenai."
+
+    show screen web_1_1 with dissolve
+
+    "Pengertian Web, Websites, dan cara kerja."
+
+    "Penjelasan singkat mengenai web dan websites juga penjelasan mengenai bagaimana mengakses sebuah web dijelaskan pada slide ini."
+
+    hide screen web_1_1
+
+    show screen web_1_2 with fade
+
+    "Pertemuan ini juga menjelaskan mengenai HTTP, URL, dan jenis web dijelaskan pada bagian ini."
+
+    ""
+
+    ""
+
+    hide screen web_1_2
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah Web pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_web_1
+
+label belajar_web_2:
+
+    scene bg foodcourt with fade
+
+    "Kemudian pada minggu kedua mata kuliah Pemrograman Web kita membahas mengenai."
+
+    show screen web_2_1 with dissolve
+
+    "Teknologi-teknologi pada pengembangan web."
+
+    "Pengertian mengenai browser dan HTML dibahas pada pertemuan ini."
+
+    hide screen web_2_1
+
+    show screen web_2_2 with fade
+
+    "Penjelasan mengenai komponen-komponen HTML juga dijelaskan pada slide ini."
+
+    "Komponen-komponen seperti Tag, Atribut, dan Element."
+
+    hide screen web_2_2
+
+    show screen web_2_3 with fade
+
+    "Kemudian terdapat penjelasan mengenai fungsi-fungsi dari HTML."
+
+    ""
+
+    hide screen web_2_3
+
+    show screen web_2_4 with fade
+
+    "Bahasa pemrograman seperti CSS dan Javascript dijelaskan pada slide ini."
+
+    ""
+
+    hide screen web_2_4
+
+    show screen web_2_5 with fade
+
+    "Sebelum kuliah berakhir, dijelaskan juga mengenai Client Side Programming dan Server Side Programming."
+
+    ""
+    hide screen web_2_5
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah Pemrograman Web pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_web_2
+
+label belajar_pbo_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Pemrograman Berorientasi Objek kita membahas mengenai."
+
+    show screen pbo_1_1 with dissolve
+
+    "Pengertian dan Konsep yang ada pada PBO."
+
+    "Pengertian mengenai PBO dan konsep seperti kelas dan objek pada PBO dijelaskan disini."
+
+    hide screen pbo_1_1
+
+    show screen pbo_1_2 with fade
+
+    "Selain itu kita juga membahas mengenai karakteristik dari objek dijelaskan."
+
+    "Penjelasan mengenai State dan Behaviour dijelaskan pada slide ini."
+
+    ""
+
+    hide screen pbo_1_2
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah PBO pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_pbo_1
+
+label belajar_pbo_2:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu kedua mata kuliah Pemrogrmaan Berbasis Objek kita membahas mengenai."
+
+    show screen pbo_2_1 with dissolve
+
+    "Kita membahas prinsip-prinsip yang ada dalam PBO."
+
+    "Prinsip enkapsulasi dan abtraksi dijelaskan pada slide ini."
+
+    hide screen pbo_2_1
+
+    show screen pbo_2_2 with fade
+
+    "Slide ini menjelaskan lanjutan penjelasan mengenai prinsip-prinsip yang ada pada PBO."
+
+    "Prinsip inheritance dan polymorphism dijelaskan pada slide ini."
+
+    hide screen pbo_2_2
+
+    show screen pbo_2_3 with fade
+
+    "Sebelum pertemuan berakhir, manfaat penggunaan atau pengaplikasian PBO juga sempat dibahas pada pertemuan ini."
+
+    "Beberapa manfaat dari PBO dibahas pada slide ini."
+
+    ""
+
+    hide screen pbo_2_3
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah struktur data pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_pbo_2
+
+label belajar_jarkom_1:
+
+    scene bg foodcourt with fade
+
+    "Pertama pada minggu pertama mata kuliah Jaringan Komputer kita membahas mengenai."
+
+    show screen jarkom_1_1 with dissolve
+
+    "Pengertian mengenai jaringan komputer dan jenis jaringan komputer."
+
+    "Pengertian jaringan komputer dan jenis jaringan berdasarkan geografisnya dijelaskan pada pertemuan ini."
+
+    hide screen jarkom_1_1
+
+    show screen jarkom_1_2 with fade
+
+    "Kemudian pada slide selanjutnya terdapat lanjutan mengenai jenis jaringan komputer berdasarkan geografisnya dijelaskan."
+
+    "Jaringan MAN dan WAN dijelaskan pada slide ini."
+    
+    ""
+    hide screen jarkom_1_2
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah jaringan komputer pertemuan 1?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_jarkom_1
+
+label belajar_jarkom_2:
+
+    scene bg foodcourt with fade
+
+    "Kemudian pada minggu kedua mata kuliah Jaringan Komputer kita membahas mengenai."
+
+    show screen jarkom_2_1 with dissolve
+
+    "Jenis jaringan komputer berdasarkan fungsinya."
+
+    "Pengertian mengenai jaringan client server dibahas pada slide ini."
+
+    hide screen jarkom_2_1
+
+    show screen jarkom_2_2 with fade
+
+    "Masih pada jenis jaringan komputer berdasarkan fungsinya."
+
+    "Pengertian mengenai jaringan peer-to-peer dibahas disini."
+
+    hide screen jarkom_2_2
+
+    show screen jarkom_2_3 with fade
+
+    "Kemudian masih ada materi mengenai jenis jaringan komputer berdasarkan distribusi datanya."
+
+    "Slide ini membahas mengenai jaringan dengan distribusi data Terpusat dan Terdistribusi."
+
+    hide screen jarkom_2_3
+
+    show screen jarkom_2_4 with fade
+
+    "Sebelum pertemuan berakhir, jenis jaringan komputer berdasarkan media transmisinya juga sempat dibahas."
+
+    "Sedikit penjelasan mengenai jaringan komputer dengan media berkabel dan nirkabel dijelaskan pada slide ini."
+
+    ""
+
+    hide screen jarkom_2_4
+
+    "Apakah kalian sudah mengerti mengenai kisi-kisi dari pertemuan pertama mata kuliah jaringan komputer pertemuan 2?"
+
+    menu:
+
+        "Sudah paham":
+
+            "Sudah paham, lanjut saja."
+
+            return
+
+        "Belum, ulang dong!":
+
+            "Belum, bisa diulaingi sekali lagi?"
+
+            call belajar_jarkom_2
+
+label makan_makan:
+
+    scene bg minimart_out with dissolve
+
+    "Panas terik hari ini membuat dirimu ingin segera memasuki minimart."
+
+    "Jalanan tidak terlalu ramai, namun antrian kendaraan yang memanjang tetap tidak terhindarkan di area perempatan."
+
+    "Setelah bergelut dengan terik matahari, akhirnya kamu sampai di area parkir minimart."
+
+    "Memarkir motormu, kamu segera memasuki minimart."
+
+    scene bg minimart_in with fade
+
+    scene bg foodcourt with fade
+
+    "Setelah berada dalam minimart, foodcourt merupakan tempat pertama yang kamu tuju."
+
+    "Sesampai di foodcourt beberapa temanmu melambaikan tangannya kepadamu menunjukkan dimana tempat kalian duduk bersama."
+
+    "Mendekati teman-teman kelasmu kamu melihat sekitar sepertiga dari kelasmu mengikuti acara makan-makan ini."
+
+    t normal "[name] gimana ujiannya bisa kan?"
+
+    mc normal jacket "Ya gitu dah, lu gimana?"
+
+    t "Hahaha ya sama gitu dahh."
+
+    t "Udah-udah pesen dulu aja, yang udah selesai biarin, punyaku aja entah gimana nilainya ahahaha."
+
+    "Kemudian kamu diberikan kertas menu yang sudah berisikan beberapa pesanan temanmu."
+
+    "Memutuskan untuk memilih menu ayam bakar geprek dan es kopi susu, kamu menulis menu tersebut pada kertas pesanan dan memberikannya kepada temanmu yang juga belum menulis."
+
+    r normal2 "Ini udah semua kan yang pesen? Kukasih sana ya?"
+
+    t "Udahhh..."
+
+    t "Okee makasih [r]!"
+
+    "[r] mengantar kertas pesanan untuk semua temanmu."
+
+    "Meskipun disebut acara makan-makan, pada dasarnya acara ini hanya digunakan untuk berkumpul bersama dengan teman sekelas."
+
+    "Dari awal hingga akhir acara hanya diisi dengan cerita-cerita teman kelasmu sebagai pelampiasan stress ujian dari beberapa hari lalu."
+
+    call eat
+
+    "Acara berakhir ketika matahari sudah mulai terbenam."
+
+    "Satu persatu temanmu mulai meninggalkan minimart, tidak lama kemudian kamupun ikut menyusul."
+
+    call change_timephase
+    call screen mapUI with dissolve

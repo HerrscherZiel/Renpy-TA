@@ -18,7 +18,7 @@ define aa1 = Character("Aa'", image="anonM")
 define kev = Character("Kevin", image="anonM")
 define t = Character("Teman", image="t")
 define k = Character("Kating", image="t")
-define stall = Character("Stall", image="anonM")
+define stall = Character("Kak Stand", image="anonM")
 define siapa = "Suara"
 
 #nvl
@@ -90,6 +90,8 @@ default note = ""
 
 default maps = False
 default hima = False
+default hima_intro = False
+
 
 # The game starts here.
 
@@ -1195,14 +1197,37 @@ label days:
     if day == 8:
 
         call bangun_libur
-    
-    elif day == 11:
 
-        "first himakomsi"
-    
     elif day == 13:
 
-        "UTS"
+        show screen trans_screen with dissolve
+        scene bg kos morn with dissolve
+        pause 2.0
+
+        "RINGGG RINGGG RINGGG"
+        #sfx alarm
+
+        "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
+
+        "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidurm yang disebelah kepalamu untuk mencari HPmu."
+
+        "Setelah menemukannya, kamu langsung mematikan alarm yang terus berdenging nyaring."
+
+        "Melihat waktu yang masih pagi, sebenarnya kamu masih merasa ngantuk."
+
+        "Namun kamu paksakan tubuhmu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk itu."
+
+        "Beberapa menit kemudian, kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
+
+        "Hari ini merupakan hari pertama UTS dimulai, kamu ingin mempersiapkan tubuh dan pikiranmu semantap mungkin sebelum UTS dimulai."
+
+        "Agar tidak terburu-buru kamu mulai mempersiapkan peralatan yang dibutuhkan untuk ujian nanti, kartu ujianpun kamu masukan ke dalam tas agar tidak terlupa."
+
+        "Setelah merasa persiapan untuk ujian nanti selesai, kamu beranjak dari tempat tidurmu."
+
+        "Berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini."
+
+        call screen mapUI with dissolve
 
     elif day == 17:
 
@@ -1235,6 +1260,27 @@ label sleep:
     "Lalu untuk jaga-jaga kamu membuka aplikasi Lanemu mencari informasi jika ada info tertentu."
 
     #check info baru
+
+    if day == 11 and hima_intro == False:
+        "Kamu teringat hari ini ada pertemuan pertama untuk pengurus himpunan mahasiswa program studimu yang kamu tidak hadiri."
+
+        "Terdapat chat dari [r] yang berisi '[name] ini ada informasi kamu masuk aja di grup ini."
+
+        "Dalam chat [r] terdapat link untuk bergabung pada grup himpunan mahasiswa program studimu."
+
+        "Setelah mengklik link tersebut, kamu masuk ke dalam grup dimana kamu melihat hasil pertemuan tadi siang."
+
+        "Kamu melihat note untuk hasil pertemuan tadi siang kebanyakan besar hanyalah perkenalan dari masing-masing anggota."
+
+        "Setelah menscroll lebih jauh kamu melihat namamu masuk kedalam suatu divisi, dalam divisi tersebut juga terdapat [j]."
+
+        "Divisi yang kamu masuki memiliki tugas mingguan yaitu {b}{i}Melakukan kegiatan pelajaran tambahan pada hari ketiga perkuliahan.{/i}{/b}"
+
+        "Pelajaran tambahan akan diisi oleh {b}{i}Kakak tingkat atau yang berpengalaman dalam bidang tersebut.{/i}{/b}"
+
+        "Itu merupakan informasi penting yang ada dalam grup selain informasi-informasi tambahan yang tidak terlalu penting."
+
+        "Menelaah lebih lanjut informasi yang ada, setelah dirasa cukup kamu menutup aplikasi Lane dan bersiap untuk tidur."
 
     "Namun setelah menscroll pesan yang ada di group kelas hingga pesan yang paling baru, kamu tidak menemukan adanya informasi khusus."
 
@@ -1291,14 +1337,75 @@ label sleep:
 
             "Tidak banyak hal yang kamu lakukan setelah itu."
     
+    elif day == 11:
+
+        if hima_intro == True:
+
+            "Sebelum tertidur, kamu mengingat apa yang kamu lakukan hari ini."
+
+            "Kamu mengikuti pertemuan pertama pengurus himpunan mahasiswa pada program studimu."
+
+            "Kegiatan tersebut kebanyakan besar berisi perkenalan dan pengenalan tugas divisi-divisi yang ada."
+
+            "Kamu berada dalam satu divisi dengan [j] yang memiliki kegiatan mingguan untuk melakukan pembelajaran tambahan."
+
+            "Selain kegiatan pertemuan pengurus, kamu mengingat perkataan [r] yang akan mengadakan belajar bersama untuk persiapan UTS."
+
+            "Belajar bersama dengan [r] dan teman sekelasmu akan diadakan setiap hari seblum UTS pada malam hari di foodcourt minimart."
+
+        else:
+
+            "Sebelum tertidur, kamu mengingat apa yang kamu lakukan hari ini."
+
+            "Kamu tidak menghadiri pertemuan pertama pengurus himpunan mahasiswa pada program studimu."
+
+            "Setelah mengirimkan pesan alasan ketidakhadiranmu pada [r] kamupun pulang untuk beristirahat."
+
+            "Tidak banyak hal yang kamu lakukan setelah berada di kos."
+
+            "Selain kegiatan pertemuan pengurus, kamu mengingat perkataan [r] yang akan mengadakan belajar bersama untuk persiapan UTS."
+
+            "Belajar bersama dengan [r] dan teman sekelasmu akan diadakan setiap hari seblum UTS pada malam hari di foodcourt minimart."
+    
+    elif day == 12:
+
+        "Kamu teringat besok merupakan hari pertama untuk UTS dimulai."
+
+        "Kamu sudah mempersiapkan kartu untuk ujianmu untuk ujian esok hari."
+
+        "Terasa sedikit gelisah karena besok merupakan kali pertama kamu menjalani UTS pada masa kuliah."
+
+        "Dalam hatimu, kamu berdoa agar dapat melewati dan mendapatkan hasil yang memuaskan selama UTS berlangsung."
+
+    elif day == 13:
+
+        "Kamu telah menyelesaikan hari pertama ujian tengah semestermu."
+
+        "Rasa cemas menghantuimu, kamu takut jika hasil ujianmu mengecewakan."
+
+        "Namun kamu merasa sudah berusaha semaksimal mungkin sewaktu melaksankan ujian."
+
+        "Kamu berpikir kamu dapat mendapatkan hasil yang lebih maksimal jika kamu lebih giat dalam belajar."
+
+        "Namun kamu harus tetap berfokus untuk ujian yang masih akan berlangsung selama beberapa hari lagi."
+
+    elif day == 15:
+
+        "Hari ini ujian tengah semester telah berakhir."
+
+        "Kamu merasa lega karena ujian telah berakhir meskipun rasa cemas akan hasil ujian masih kamu rasakan."
+
+        "Paling tidak minggu-minggu ujian telah berakhir, dan kamu kembali menjalani aktivitas kuliah seperti biasanya."
+
+ 
     else:
         pass
 
-    "Mengingat apa yang kamu lakukan seharian membuatmu tambah mengantuk."
+    "Mengingat apa yang ada dalam pikiranmu dalam sehari ini membuatmu tambah mengantuk."
 
-    "Kemudian tidak lama berselang, kesadaranmu perlahan mulai menghilang."
+    "Kemudian tidak lama berselang, kesadaranmupun perlahan mulai menghilang."
 
-    "Kamupun tertidur pulas malam hari ini."
+    "Setelah mata terutup dan pandanganmu menjadi gelap, kamu tertidur pulas pada malam hari ini."
 
     "Day [day] END"
 
@@ -1346,7 +1453,7 @@ label bangun:
 
     "Melihat waktu yang masih pagi, sebenarnya kamu masih merasa ngantuk."
 
-    "Namun kamu paksakan tubumu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk itu."
+    "Namun kamu paksakan tubuhmu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk itu."
 
     "Beberapa menit kemudian, kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
 
@@ -1394,6 +1501,24 @@ label bangun_libur:
         mc "huh....."
 
         mc "Siap-siap dulu dah, dari pada tiduran mulu...."
+
+    elif day == 12:
+
+        "Beberapa menit kemudian kamu terbangun untuk kedua kalinya pada pagi hari ini."
+
+        "Terdapat beberapa chat yang masuk pada grup chat Lane kelasmu. Chat-chat tersebut berisi pembahasan tentang UTS yang akan dimulai besok."
+
+        "Perbincangan tersebut membicarakan mengenai jadwal dan kisi-kisi UTS yang akan dilaksanakan."
+
+        "Salah satu chat dari [r] yang dikirimkan pada grup memiliki informasi yang penting."
+
+        "{b}Jadwal UTS yang dilakukan sama dengan jadwal kuliah seperti biasa.{/b}"
+
+        "{b}Materi yang akan keluar pada UTS adalah materi yang sudah pernah dipelajari pada perkuliahan biasa.{/b}"
+
+        "Selain informasi tersebut ada juga ajakan untuk belajar bersama di foodcourt sama seperti ajakan [r] kepadamu."
+
+        "Merasa cukup dengan informasi yang didapatkan, kamu menutup aplikasi dan meletakan hpmu kemudian beranjak dari tempat tidur."
 
     "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini."
 
