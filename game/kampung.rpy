@@ -185,6 +185,134 @@ label mobil_jeblos:
 
     return
 
+label kerja_bakti:
+
+    scene bg kos morn with fade
+
+    "Jam sudah menunjukan pukul 7.30, sudah saatnya kamu keluar dari kosan dan berangkat menuju kegiatan kerja bakti."
+
+    "Kamu mengganti pakaianmu dengan kaos lengan pendek dan celana trainingmu."
+
+    "Setelah selesai mengganti pakaian, kamu segera keluar dari kamar kosmu."
+
+    "Diluar kamar, meskipun sebagian kamar kos masih tertutup rapat kamu melihat beberapa penghuni kosan juga sudah bersiap untuk mengikuti kerja bakti."
+
+    "Salah satu penghuni kos yang juga akan mengikuti kegiatan kerja bakti adalah [kev]"
+
+    "[kev] juga memakai pakaian yang sama denganmu, dengan celana training berwarna biru."
+
+    kev normal "Yoo [name], ikut juga?"
+
+    mc normal jacket "Yo [kev], iya nih, kamu juga ikut?"
+
+    kev "Yoiii, oiya kita gak usah bawa peralatan sendiri kan?"
+
+    mc "Tadi sih dipengumumannya gak usah bawa peralatan masing-masing, katanya udah disiapkan disananya nanti."
+
+    kev "Oke kalau gitu, malah enak gaperlu peralatan sendiri."
+
+    kev "Yaudah yuk berangkat [name]"
+
+    mc "Ayo..."
+
+    "Kalian berdua berangkat menuju tempat dimana kerja bakti akan dilaksanakan."
+
+    "Dibelakang kalian, beberapa penghuni kos lainnya berjalan mengikuti."
+
+    scene bg town street 1 with dissolve
+
+    "Berjalan sembari mengobrol dengan [kev] dan teman kosanmu yang lain, tidak terasa kamu sudah sampai ke keramaian yang kamu tuju."
+
+    "Sudah banyak anak kosan lain dan warga sekitar lingkungan yang sudah berkumpul."
+
+    "Terlihat juga peralatan-peralatan yang sudah disiapkan untuk kegiatan kerja bakti."
+
+    "Peralatan seperti cangkul, sabit, sekop, sapu lidi, dan lain sebagainya sudah disiapkan untuk kegiatan kerja bakti."
+
+    "Kerja bakti kali ini bertujuan untuk menjaga kebersihan lingkungan dan terutama selokan agar tidak mampat dan menyebabkan banjir."
+
+    "Setelah menunggu beberapa menit menunggu peserta kegiatan kerja bakti yang lain datang, salah seorang warga menjelaskan tata cara kegiatan 
+    agar kerja bakti menjadi lebih efektif dan efisien."
+
+    "Semua peserta mendengarkan penjelasan yang diberikan sebelum satu persatu mengambil posisi dan peralatan masing-masing."
+
+    "Kamupun bersiap pada posisi yang kamu ambil, kamu memilih untuk membantu dalam:"
+
+    menu:
+        "Membersihkan selokan.":
+
+            "Mencincing celana panjangmu, kamu masuk kedalam selokan membawa sekop untuk mengeruk sampah-sampah pada dasar selokan."
+
+            "Bersama dengan warga dan anak kosan lainnya kamu saling membantu membersihkan dasar selokan."
+
+            "Ada beberapa dari kalian yang mengambil sampah yang mengambang pada selokan."
+
+            "Ada juga yang membantu mengumpulkan sampah yang sebelumnya diambil dari selokan kemudian mengumpulkannya dengan sampah-sampah yang lain."
+
+            "Meskipun tidak kenal, kamu mampu bekerja sama dengan baik dengan peserta kerja bakti lainnya."
+
+            "Tidak terasa waktu sudah menjelang siang, dan selokanpun sudah menjadi lebih bersih."
+
+            "Kamu dan peserta lainnya yang berada di selokan segera menyudahi aktivitas dan beristirahat di tempat yang sudah disediakan."
+        
+        "Membersihkan rumput dan sampah disekitar area kerja bakti.":
+
+            "Mengambil sabit, dan memakai sapu tangan kamu bergerak menuju tepi jalanan yang ditumbuhi rumput-rumput liar."
+
+            "Sabit kamu gunakan untuk memotong rumput-rumput yang panjang serta untuk mengkorek rerumputan kecil yang terdapat pada sela-sela jalanan."
+
+            "Ketika kamu membersihkan rerumputan dari jalanan, terkadang terdapat orang yang membawa karung sampah dimana sampah rerumputan yang kamu kumpulkan 
+            akan dimasukan."
+
+            "Tidak perlu waktu yang lama, rerumputan liar yang berada dijalanan sudah hampir semuanya dicabut."
+
+            "Kamu meletakan sabitmu, dan dengan tanganmu kamu memungut sampah rerumputan yang kamu kais sendiri."
+
+            "Setelah dirasa cukup bersih kamu meletakan sampah yang sudah kamu masukan karung ketumpukan sampah-sampah lainnya."
+
+            "Lalu setelah membersihkan diri dan meletakan peralatan yang kamu pakai, kamu beristirahat bersama peserta kerja bakti lainnya pada tempat yang sudah disediakan."
+
+    scene bg town street 1 with fade
+
+    w normal "Terimakasih atas partisipasinya dalam kerja bakti hari ini. Silahkan dimakan snack yang sudah disiapkan, kalau mau minum juga silahkan diambil."
+
+    "Pada tempat untuk beristirahat sudah disiapkan banyak makanan kecil dan minuman berbungkus untuk peserta kerja bakti."
+
+    "Kamu ikut mengambil apa yang ada dihadapanmu dan menyantapnya bersama peserta kerja bakti lainnya."
+
+    kev normal "Gimana tadi? Lancar aja kan?"
+
+    mc normal jacket "Yah gitu dah, kamu tadi ngapain bro?"
+
+    kev "Bantu-bantu milah sampah, katanya sebagian mau dirongsokin."
+
+    mc "Lumayan juga sih kalau dirongsokin, tadi aku liat banyak botol-botol sama besi."
+
+    kev "Iya dapet lumayan banyak kok, lupa berapa kilonya tapi."
+
+    "Kamu mengisi waktu istirahatmu mengobrol dengan [kev] dan peserta kerja bakti lainnya."
+
+    "Hingga pada akhirnya peserta kerja bakti dipersilahkan untuk pulang."
+
+    "Sebelum pulang, peserta kerja bakti mendapatkan box makanan untuk dibawa pulang."
+
+    show screen get_box with dissolve
+
+    "Setelah menerima box makanan milikmu, kamu bergegas pulang untuk mandi."
+
+    "Matahari yang sudah mulai menyengat ditambah keringat setelah melakukan aktivitas sebelumnya membuatmu harus segera mandi."
+
+    call kerja_bakti_kampung
+
+    "Sama seperti waktu berangkat, kamu berjalan pulang menuju kosan sambil mengobrol bersama kawan kosmu."
+
+    "Sesampainya di kosan, kamu langsung menuju kamar mandi sebelum penghuni kosan lainnya mendahuluimu."
+
+    "Selesai mandi, kamu bersiap untuk mengisi waktu siang harimu."
+
+    call change_timephase
+    call screen mapUI with dissolve
+
 
 #daily 
 label choice_kampung_morn:

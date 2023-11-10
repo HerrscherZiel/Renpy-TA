@@ -274,8 +274,8 @@ label uts_de:
     "(Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.)"
 
     menu:
-        "Mulai!"
-
+        "Mulai!":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS."
     "1. Unsur seni paling dasar dan merupkan satuan paling kecil yaitu?"
     menu:
         "A. Garis.":
@@ -360,15 +360,356 @@ label uts_de:
 
 label de_3:
 
-    "DE 3"
+    scene bg campus class with dissolve
 
-    call screen mapUI with dissolve
+    "Setelah jam istirahat berakhir, kamu dan teman-temanmu mulai memasuki kelas yang akan digunakan untuk pembelajaran terakhir pada hari ini."
+
+    "Ketika memasuki ruang kelas, [pa] yang mengajar mata kuliah desain elementer telah berada di dalam ruang kelas."
+
+    pa normal "Selamat siang teman-teman, silahkan masuk sembari menunggu teman-teman yang lain masuk kelas."
+
+    "Tidak memakan waktu lama, satu persatu teman kelasmu memasuki ruangan, setelah dirasa mahasiswa yang berada dalam ruangan sudah banyak, [pa] membuka pertemuan pada siang hari ini."
+
+    pa "Selamat siang, sepertinya sudah pada masuk ya… Kalau begitu bapak mulai kelas pada siang hari ini."
+
+    pa "Bertemu lagi kita pada mata kuliah Desain Elementer pertemuan ke 3. Pada pertemuan siang hari ini, kita akan membahas lebih detail mengenai apa yang telah kita bahas pada pertemuan sebelumnya."
+
+    pa "Ya pada pertemuan sebelumnya kita telah sedikit membahas mengenai warna, di siang hari ini kita akan membahasnya lagi secara lebih mendetail."
+
+    pa "Apa itu warna?"
+
+    show screen de_3_1 with fade
+
+    pa "Warna merupakan salah satu aspek visual yang terdapat pada spektrum cahaya. 
+    Identitas warna dapat diketahui melalui panjang gelombang yang dimiliki. 
+    Semisal panjang gelombang 711 nanometer merupakan panjang gelombang dari warna hijau."
+
+    pa "Seperti yang kita tahu, mempelajari warna memiliki banyak manfaat pada kehidupan kita. 
+    Warna dapat berpengaruh dalam berbagai bidang seperti seni, desain, psikologi, ilmu pengetahuan, teknologi, dan budaya."
+
+    pa "Bapak akan mengulang sedikit materi mengenai warna yang telah disampaikan pada pertemuan sebelumnya."
+
+    pa "Sir Isaac Newton menemukan apa yang dinamakan Roda Warna, sementara Brewster mengelompokkan warna menjadi empat kelompok yaitu Warna Primer, Warna Sekunder, Warna Tersier, dan Netral."
+
+    hide screen de_3_1
+
+    show screen de_3_2 with fade
+
+    pa "Warna Primer, warna primer merupakan warna dasar yang tidak bisa dibuat menggunakan gabungan warna lainnya. Contoh warna primer adalah warna merah, biru, dan kuning."
+
+    pa "Warna Sekunder, merupakan warna yang didapatkan setelah menggabungkan dua atau lebih warna primer. Contoh warna sekunder adalah warna hijau dari gabungan warna kuning dan biru."
+
+    pa "Warna Tersier, adalah warna yang diciptakan dengan menggabungkan warna primer dan sekunder. Contoh warna tersier adalah warna magenta yang didapatkan dari gabungan warna merah dan ungu."
+
+    pa "Selain ketiga warna tersebut, pada teori yang dikenalkan oleh Brewster terdapat satu golongan warna lagi, yaitu warna netral."
+
+    pa "Warna netral merupakan warna yang digunakan untuk menyeimbangkan dan membantu warna lain agar terlihat lebih fokus. "
+
+    pa "Contoh dari warna netral adalah warna monokrom atau hitam dan putih, dan warna earth tone seperti krem, cokelat, dan warna-warna yang menyerupai bumi lainnya."
+
+    pa "Kemudian setelah membahas macam-macam pengelompokkan kategori warna, kita akan membahas mengenai skema warna."
+
+    hide screen de_3_2
+
+    show screen de_3_3 with fade
+
+    pa "Skema warna merupakan perpaduan atau kombinasi warna yang digunakan dalam seni dan desain."
+
+    pa "Contoh dari skema warna adalah sebagai berikut:"
+
+    pa "Monokromatik, skema warna monokromatik merupakan skema warna yang masih menggunakan rona atau hue yang sama. Skema ini terdiri dari suatu rona dengan variasi yang lebih cerah atau gelap."
+
+    pa "Analog, skema warna analog merupakan skema warna yang menggunakan warna yang bersebelahan pada roda warna. Letaknya yang bersebelahan membuat warna yang digunakan terlihat mirip."
+
+    pa "Complementary, skema warna yang berbeda dengan skema analog yang menggunakan warna yang bersebelahan pada roda warna. Skema ini menggunakan warna yang kontradiktif atau berlawanan dengan warna yang digunakan pada roda warna."
+
+    pa "Triadic, merupakan skema warna yang menggunakan tiga warna pada roda warna. Warna-warna yang digunakan pada skema ini memiliki jarak yang sama antara satu sama lainnya."
+
+    pa "Masih ada beberapa skema warna yang lain, namun pada siang hari ini kita akan membahas seputar 4 skema itu dulu ya."
+
+    hide screen de_3_3
+
+    show screen de_3_4 with fade
+
+    pa "Lalu pembahasan mengenai warna yang berikutnya adalah mengenai Tint, Tone, dan Shades."
+
+    pa "Apa itu Tint? Tint merupakan sebuah variasi warna yang didapatkan dari kombinasi sebuah warna dengan warna putih yang akan memberikan sebuah variasi kecerahan dari sebuah warna."
+
+    pa "Apa itu Tone? Berbeda dengan Tint yang mendapatkan kombinasi sebuah warna dengan mencampurkan warna putih, Tone mendapatkan variasi keburaman sebuah warna dengan menambahkan warna abu-abu pada suatu warna."
+
+    pa "Lalu yang terakhir adalah Shades, Shades merupakan variasi warna yang didapatkan ketika menambahkan warna hitam ke suatu warna. Shades akan menghasilkan variasi gelapnya suatu warna."
+
+    pa "Mungkin itu saja pembahasan kita di siang hari ini, selanjutnya bapak akan memperlihatkan contoh-contoh dari apa yang bapak terangkan barusan."
+
+    "[pa] kemudian memperlihatkan slide power point yang berisi gambar-gambar mengenai materi yang diterangkan sebelumnya."
+
+    hide screen de_3_4
+
+    scene bg campus class with fade
+
+    "Setelah sesi tanya selesai, [pa] mengakhiri kelas pada siang hari ini."
+
+    pa normal "Mungkin itu saja ya untuk siang hari ini. Kita lanjutkan untuk minggu depan kelasnya."
+
+    pa "Oh iya untuk kelas minggu depan kita isi dengan quiz yaa."
+
+    t normal "Waahhhh"
+
+    t "Materi apa saja pak nanti di quiz?"
+
+    t "Yahhh harus belajar dong"
+
+    "Mendengarkan informasi mengenai quiz yang akan dilakukan pada minggu depan, mahasiswa mulai mengutarakan keluh kesah mereka."
+
+    pa "Hahaha enggak susah kok, anggap aja buat latihan ujian akhir semester nanti kan."
+
+    pa "Untuk materinya dari yang bapak sudah ajarkan ya teman-teman."
+
+    r normal2 "Berarti dari materi sebelum uts pak?"
+
+    pa "Iya, dari materi yang awal ya."
+
+    t "Yahhhh"
+
+    t "Banyak banget dong pak."
+
+    pa "Udah tinggal belajar saja, enggak susah kok nanti."
+
+    pa "Yaudah kalo begitu bapak tutup ya pertemuan siang hari ini."
+
+    pa "Terimakasih telah mengikuti pelajaran siang hari ini, sampai berjumpa pada pertemuan selanjutnya teman-teman."
+
+    t "Terimakasih pak."
+
+    t "Terimakasihhhh"
+
+    t "Sekarang waktunya pulang-pulangg"
+
+    mc normal jacket "Huh minggu akhir malah ada quiz begini."
+
+    "Kelas ditutup dan mahasiswa mulai keluar dari ruang kelas. Tidak ada kelas lagi siang hari ini, pertanda sudah waktunya dirimu untuk pulang."
+
+    call attend_de
+    call attend_class
+
+    call change_timephase
+    call screen mapUI
 
 label de_4:
 
-    "DE 4"
+    scene bg campus class with dissolve
 
-    call screen mapUI with dissolve
+    "Istirahat telah usai, kini telah memasuki jam untuk kelas terakhir yang ada pada hari ini."
+
+    "Mata kuliah selanjutnya adalah Desain Elementer. Kamu teringat pada pertemuan kali hari ini, mata kuliah desain elementer akan diadakan quiz."
+
+    "Setelah memasuki ruang kelas, kamu langsung mempersiapkan dirimu untuk membaca ulang beberapa materi yang telah diajarkan."
+
+    "Selama beberapa menit kamu membaca ulang materi, akhirnya [pa] memasuki ruang kelas."
+
+    pa normal "Selamat siang teman-teman, kita bertemu lagi pada siang hari ini. Apa ada yang ingat apa yang akan kita lakukan hari ini?"
+
+    t normal "Quiz kan pak?"
+
+    t "Enggak jadi quiz hari ini kan pak?"
+
+    pa "Ahahaha jadi dong, iya hari ini kita akan melakukan quiz pada siang hari ini."
+
+    pa "Langsung saja untuk menyingkat waktu, soal dapat kalian akses pada laman berikut."
+
+    "[pa] menulis alamat sebuah laman pada whiteboard yang berisi soal-soal untuk quiz pada siang hari ini."
+
+    pa "Kalian kerjakan saja pada kertas, tulis nama dan NIM kalian lalu kumpulkan ketika jam telah usai ya."
+
+    "Kamu membuka alamat laman yang ditulis oleh [pa] menggunakan HPmu, setelah membuka laman tersebut kamu mulai menyiapkan secarik kertas dan bolpoinmu."
+
+    "Kamu mulai mengerjakan soal yang terdapat pada layar HPmu. Kamu melihat terdapat 5 soal yang ada lembar quiz."
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    "Gabungan dari beberapa garis yang membentuk suatu kesatuan dan membuat ruang yang tertutup merupakan pengertian dari unsur seni?"
+
+    mc normal jacket "Hmmm kalau gabungan unsur titik itu kan garis, kalau gabungan garis berarti…"
+
+    menu:
+        "a. Unsur Tekstur":
+            "a. Unsur Tekstur"
+
+            mc "Ini mah unsur tekstur"
+
+        "b. Unsur Bidang":
+            "b. Unsur Bidang"
+
+            mc "Unsur bidang kan ya?"
+
+        "c. Unsur Ruang":
+            "c. Unsur Ruang"
+
+            mc "Seharusnya sih unsur ruang"
+
+    "Selesai menjawab pertanyaan pertama, kamu kemudian melanjutkan ke pertanyaan kedua."
+
+    "2. 	Manakah dibawah ini yang bukan merupakan prinsip-prinsip seni?"
+
+    mc "Kalau enggak salah waktu itu diterangin 6 prinsip seni, masih inget enggak ya?"
+
+    menu:
+
+        "Prinsip Kesatuan":
+
+            "a. Prinsip Kesatuan"
+
+            mc "Prinsip kesatuan? Kayaknya bukan salah satu prinsip seni deh."
+
+        "Prinsip Penekanan":
+
+            "b. Prinsip Penekanan"
+
+            mc "Prinsip penekanan hmm… prinsip penekanan? Bukan-bukann"
+
+        "Prinsip Keselarasan":
+
+            "c. Prinsip keselarasan"
+
+            mc "Kalau yang satu ini pasti bukan prinsip seni dah"
+
+        "Prinsip Perbedaan":
+
+            d. Prinsip Perbedaan
+
+            mc "Prinsip perbedaan itu bukan salah satu prinsip seni."
+
+    "Menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+
+    "3. Teori warna mengelompokkan warna menjadi beberapa golongan warna, manakah dibawah ini yang bukan merupakan warna dalam satu golongan warna pada teori warna?"
+
+    menu:
+        
+        "Merah, Hitam, Ungu":
+
+            "a. Merah, Hitam, Ungu"
+
+            mc "Ini sih ga dalam satu golongan warna."
+
+        "Hitam, Putih, Cokelat":
+
+            "b. Hitam, Putih, Cokelat"
+
+            mc "Kok ada cokelat sih, bukan dalam satu golongan ini."
+
+        "Orange, Hijau, Ungu":
+
+            "c. Orange, Hijau, Ungu"
+
+            mc "Golongan warna apaan ini, random banget sih berarti jawabannya ini nih."
+
+    "Setelah menjawab pertanyaan nomor 3, tinggal 2 pertanyaan lagi yang tersisa."
+
+    "Merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+
+    "4. 	Menggunakan warna-warna yang bersebelahan satu sama lain pada roda warna merupakan contoh pengaplikasian dari skema warna?"
+
+    menu:
+        "Komplementer":
+
+            "a. Komplementer"
+
+            mc "Kalau engga salah ini skema komplementer sihh…"
+
+        "Monokromatik":
+
+            "b. Monokromatik"
+
+            mc "Monokromatik kalo ga salah warnanya mirip-mirip gitu kan? Kalau bersebelahan harusnya warnanya mirip."
+
+        "Analog":
+
+            "c. Analog"
+
+            mc "Analog itu merupakan skema warna yang menggunakan warna yang bersebelahan pada roda warna."
+
+        "Triadic":
+
+            "d. Triadic"
+
+            mc "Duh lupaaa…. Jawab yang ini saja lah."
+
+    "Selesai menjawab, kini ada satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan quiz pada siang hari ini."
+
+    "5. Variasi warna yang dapat kita dapatkan dengan mencampur warna putih, hitam, atau abu-abu disebut dengan warna… kecuali."
+
+    menu:
+        "Shades":
+
+            "a. Shades"
+
+            mc "Shades?"
+
+        "Monokrom":
+
+            "b. Monokrom"
+
+            mc "Kalau monokrom berarti hitam putih kan…	"
+
+        "Tint":
+
+            "c. Tint"
+
+            mc "Kayaknya yang ini dehhh…"
+
+        "Tone":
+
+            "d. Tone"
+
+            mc "Tone kayaknya bukan deh."
+
+    scene bg campus class with fade
+
+    "Dengan memilih jawaban terakhir, semua soal yang terdapat pada lembar soal sudah semuanya kamu selesaikan."
+
+    "Kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawabanmu."
+
+    "Tidak lupa sebelumnya kamu menulis nama dan NIM mu pada lembar jawaban."
+
+    "Melihat sekelilingmu kamu melihat beberapa dari temanmu masih mengerjakan quiz yang ada. Meskipun sebagian besar dari temanmu telah menyelesaikan quiz yang diberikan."
+
+    "Setelah mengumpulkan lembar jawaban, kamu kembali ke bangkumu dan menunggu hingga semua temanmu menyelesaikan quiz yang diberikan."
+
+    scene bg campus class with dissolve
+
+    "Kurang lebih 30 menit, semua mahasiswa telah menyelesaikan quiz yang diberikan. Kini [pa] sedang menjelaskan mengenai materi yang akan digunakan sebagai bahan soal untuk ujian akhir semester."
+
+    pa normal "Jadi nanti untuk ujian akhir semester, materinya adalah semua materi yang telah bapak berikan ya."
+
+    pa "Mungkin bisa jadi bapak mengambil dari soal yang digunakan untuk quiz nanti."
+
+    pa 'Jadi selamat belajar ya teman-teman.'
+
+    t normal "Jangan susah-susah ya pak."
+
+    t "Hmmm berarti materi-materi tadi ya…"
+
+    t "Kalau soal yang tadi sih aku lumayan bisa, semoga aja mirip-mirip."
+
+    r normal2 "Berarti ringkasan materi yang dulu masih bisa digunain yeyyy"
+
+    pa "Kalau begitu bapak tutup ya, pertemuan hari ini. Selamat belajar dan semoga mendapatkan hasil yang diinginkan pada ujian nanti."
+
+    pa "Terimakasih sudah mengikuti kelas sampai pertemuan kali ini, sampai jumpa pada pertemuan selanjutnya teman-teman."
+
+    t "Terimakasih pak."
+
+    t "Terimakasihhh"
+
+    r "Terimakasih juga pak."
+
+    "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. Kamu keluar dari ruangan kelas dan melanjutkan aktivitasmu berikutnya."
+
+    call attend_de
+    call attend_class
+
+    call change_timephase
+    call screen mapUI
 
 label attend_de:
 

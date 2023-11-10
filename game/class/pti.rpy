@@ -260,42 +260,42 @@ label uts_pti:
             "E. Teropong."
     "3. Apakah yang dimaksud dengan Informasi?"
     menu:
-        "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian."
+        "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian.":
             "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian."
-        "B. Informasi merupakan data lapangan dari suatu kegiatan praktik."
+        "B. Informasi merupakan data lapangan dari suatu kegiatan praktik.":
             "B. Informasi merupakan data lapangan dari suatu kegiatan praktik."
-        "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan."
+        "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan.":
             "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan."
-        "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu."
+        "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu.":
             "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu."
             $a_ptiTS +=20
-        "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi."
+        "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi.":
             "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi."
     "4. Dari beberapa opsi dibawah ini apakah yang termasuk data yang diambil dari lingkungan sekolah?"
     menu:
-        "A. Jumlah murid."
+        "A. Jumlah murid.":
             "A. Jumlah kendaraan."
-        "B. Jumlah guru."
+        "B. Jumlah guru.":
             "B. Jumlah guru."
-        "C. Jumlah ruang kelas."
+        "C. Jumlah ruang kelas.":
             "C. Jumlah ruang kelas."
-        "D. Jumlah mata pelajaran."
+        "D. Jumlah mata pelajaran.":
             "D. Jumlah mata pelajaran."
-        "E. Jumlah kendaraan."
+        "E. Jumlah kendaraan.":
             "E. Jumlah kendaraan."
             $a_ptiTS +=20
     "5. Manakah dari pernyataan dibawah ini yang merupakan fungsi sebuah Sistem Operasi?"
     menu:
-        "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya."
+        "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya.":
             "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya."
-        "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi."
+        "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi.":
             "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi."
-        "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer."
+        "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer.":
             "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer."
             $a_ptiTS +=20
-        "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi."
+        "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi.":
             "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi."
-        "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras."
+        "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras.":
             "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras."
 
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
@@ -312,14 +312,315 @@ label uts_pti:
 
 label pti_3:
 
-    "PTI 3"
+    scene bg campus class with fade
 
+    # Keamanan, contoh kejahatan, contoh malware
+
+
+    "Kamu masuk ke dalam ruang kelas, di dalam kelas belum terlihat banyak mahasiswa yang telah menempati tempat duduknya."
+
+    "Mungkin karena hari ini merupakan hari pertama perkuliahan dimulai kembali setelah dilaksanakannya ujian tengah semester pada minggu lalu."
+
+    "Seperti sebelum-sebelumnya, kamu memilih untuk duduk pada bangku yang terletak dekat dengan jendela dan berada pada barisan tengah kelas."
+
+    "Sembari menunggu kamu mengeluarkan HPmu dan memainkan beberapa aplikasi yang terdapat di dalam HPmu."
+
+    "Kemudian selagi kamu sibuk dengan HPmu, satu persatu mahasiswa mulai memasuki ruang kelas, sebelum pada akhirnya [PA] juga memasuki ruangan."
+
+    "Hari ini merupakan pertemuan ke-3 mata kuliah PTI" 
+    
+    "Kelas dimulai setelah [PA] selesai mengatur peralatannya."
+
+    scene bg class room with dissolve
+
+    pa normal "Selamat pagi teman-teman kita bertemu lagi setelah minggu kemarin kalian telah melaksanakan ujian tengah semester."
+
+    pa "Pagi ini kita bertemu lagi pada mata kuliah PTI pertemuan ke-3, dimana kita akan membahas mengenai keamanan teknologi informasi,
+    meningkatkan keamanan data, contoh kejahatan cybercrime, dan contoh malware."
+
+    pa "Sebelumnya, sebenarnya mengapa keamanan teknologi informasi itu penting? Ada yang mau jawab?"
+
+    menu:
+        "Acungkan Jari":
+
+            mc normal jacket "Karena dengan memiliki keamanan yang memadai, kita bisa terhindar dari kemungkinan tindakan-tindakan yang berhubungan dengan teknologi informasi yang dapat merugikan kita?"
+
+            pa "Ya apa yang kamu katakan itu ada benarnya, karena sesuai namanya keamanan akan terhubung dengan tindakan atau kegiatan yang dapat merugikan."
+
+            pa "Dengan keamanan teknologi informasi tersebut kita dapat mencegah maupun menanggulangi kejahatan cyber yang mungkin terjadi."
+
+            $a_ptiC += 5
+
+        "Menunggu mahasiswa lain mengacungkan jari":
+
+            t normal"Untuk menjauhkan data kita dari tindakan atau kejahatan cyber yang dapat merugikan kita pak."
+
+            pa "Ya apa yang kamu katakan itu ada benarnya, karena sesuai namanya keamanan akan terhubung dengan tindakan atau kegiatan yang dapat merugikan."
+
+            pa "Dengan keamanan teknologi informasi tersebut kita dapat mencegah maupun menanggulangi kejahatan cyber yang mungkin terjadi."
+
+            pa "Untuk lebih lengkapnya bapak mulai saja perkuliahannya, perhatikan slide-slide berikut teman-teman."
+
+    "[pa] membuka slide yang berisikan materi pengajaran PTI untuk hari ini."
+
+    show screen pti_3_1
+
+    pa "Menurut G.J. Simmons, keamanan sistem informasi merupakan langkah-langkah pencegahan yang dilakukan pada suatu sistem berbasis 
+    informasi yang berbentuk non-fisik dengan tujuan untuk mencegah tindakan-tindakan penipuan."
+
+    pa "Dapat kita simpulkan juga keamanan sistem informasi merupakan sebuah prosedur yang dapat digunakan dalam mencegah kegiatan-kegiatan yang mampu merugikan 
+    sistem-sistem informasi seperti tindakan pencurian data, akses tidak sah, merusak bagian sistem, dan lain sebagainya."
+
+    pa "Sistem keamanan yang dapat kita gunakan dalam melindungi sistem informasi kita meliputi perangkat keras, perangkat lunak, jaringan komunikasi, dan data yang kita miliki."
+
+    pa "Itu sedikit pengertian mengenai keamanan sistem informasi, sekarang kita akan membahas mengenai hal-hal 
+    yang dapat dilakukan untuk meningkatkan keamanan sistem informasi."
+
+    hide screen pti_3_1
+
+    show screen pti_3_2 with fade
+
+    pa "Untuk meningkatkan keamanan pada sistem informasi yang kita miliki kita dapat melakukan beberapa hal."
+
+    pa "Hal yang dapat kita lakukan untuk mencegah atau meminimalisir terjadinya hal-hal yang tidak kita inginkan adalah."
+
+    pa "1. Memiliki sistem keamanan untuk memisahkan klasifikasi data, sehingga data-data dapat dipisahkan mana yang dapat diakses oleh banyak orang dan mana data yang bersifat rahasia dimana hanya beberapa orang saja yang dapat mengakses."
+
+    pa "2. Pastikan data terenkripsi ketika melakukan transfer data. Hal ini penting karena jika data tidak terenkripsi ketika melakukan transfer data terdapat kemungkinan dimana data tersebut bocor dan dapat dilihat pihak yang tidak diinginkan."
+
+    pa "3. Memiliki autentikasi berlapis, hal ini diperlukan sehingga akun atau proses yang dimiliki tidak mudah untuk dibobol oleh orang lain. Contohnya adalah penggunaan password dan OTP ketika melakukan proses log in."
+
+    pa "4. Ketika melakukan akses terhadap data-data yang sangat rahasia, baiknya kita menggunakan perangkat keras pribadi, untuk menghindari kebocoran data atau akses dari pihak yang tidak diinginkan."
+
+    pa "5. Menggunakan perangkat lunak anti malware. Hal ini dapat membantu kita dalam mencegah perangkat lunak lain yang dapat berakibat negatif masuk dalam sistem informasi kita."
+
+    pa "Kurang lebih seperti itu hal-hal yang dapat kita lakukan untuk memperkuat keamanan sistem kita, sebenarnya masih banyak lagi jika kita cari tahu lebih dalam."
+
+    pa "Selanjutnya kita akan membahas mengenai contoh-contoh dari kejahatan digital atau cybercrime."
+
+    hide screen pti_3_2
+
+    show screen pti_3_3 with fade
+
+    pa "Cybercrime merupakan bentuk kejahatan yang terjadi di dunia maya. Contoh atau bentuk tindakan kejahatan yang dapat terjadi adalah sebagai berikut:"
+
+    pa "1. {b}Serangan Malware{/b}, atau Malicious Ware yang merupakan sebuah perangkat lunak yang berisikan kode berbahaya ketika masuk ke dalam sistem, jaringan, maupun server yang kita miliki. "
+
+    pa "Malware dapat masuk melalui berbagai macam cara, seperti email, data yang kita unduh, aplikasi palsu, maupun web-web tidak aman yang kita kunjungi."
+
+    pa "2. {b}Phising{/b}, phising merupakan sebuah cybercrime yang biasanya menargetkan data pribadi seseorang seperti password, kartu kredit, maupun data pribadi lainnya. Phising dapat dilakukan dengan menyamar atau mengirimkan sebuah pesan palsu yang mirip dengan yang asli sehingga korban tertipu dan menuliskan data pribadinya."
+
+    pa "3. {b}Hacking{/b}, hacking merupakan tindak cybercrime dimana pelaku masuk kedalam sistem melalui celah keamanan kemudian mencuri data, merusak sistem, atau mengekspos data yang ditemukan."
+
+    hide screen pti_3_3
+
+    show screen pti_3_4 with fade
+
+    pa "4. {b}DDoS atau Distributed Denial-of-Service{/b}, merupakan sebuah cybercrime yang menargetkan sebuah jaringan, web, atau server dengan cara meningkatkan trafik target menjadi sangat tinggi yang akan menyebabkan overload atau kelebihan kapasitas sehingga target tidak dapat dikunjungi atau diakses."
+
+    pa "5. {b}Pembajakan{/b}, banyak sekali ditemui penyebaran seperti film bajakan yang dengan mudah bisa di download oleh khalayak umum. Tentu saja pembajakan seperti akan menyebabkan kerugian material bagi produsen itu sendiri."
+
+    pa "Itu merupakan beberapa contoh kejahatan digital atau cyber. Baiknya setelah kita mengetahui hal-hal tersebut kita dapat menjadi lebih berhati-hati sehingga terhindar dari segala bentuk kejahatan cyber."
+
+    pa "Karena tadi juga sempat dijelaskan mengenai malware, kita juga akan membahas mengenai beberapa malware."
+
+    hide screen pti_3_4
+
+    show screen pti_3_5 with fade
+
+    pa "1. Virus, virus merupakan sebuah malware yang mampu menduplikasi dirinya sendiri. Ketika masuk ke dalam sebuah folder dalam komputer serangkaian kode virus akan bekerja dan mampu memodifikasi dan menginfeksi file-file yang terdapat di dalamnya. "
+
+    pa "Virus dapat disebarkan melalui berbagai macam cara seperti, e-mail, file unduhan, jaringan yang kita sambungkan, bahkan melalui port usb yang kita gunakan."
+
+    pa "2. Keylogger, sesuai namanya malware yang satu ini mampu menyimpan aktivitas pengetikan yang kita lakukan, sehingga pelaku mengetahui data-data sensitif seperti password yang kita ketikan."
+
+    pa "3. Worm, worm merupakan sebuah malware yang mirip dengan virus. Worm mampu menduplikasi dirinya sendiri bahkan tanpa memerlukan bantuan kita. Worm biasanya digunakan untuk menyerang server sebuah website dan database."
+
+    hide screen pti_3_5
+
+    show screen pti_3_6 with fade
+
+    pa "4. Trojan, Trojan merupakan salah satu malware yang mampu mencuri data dan mengakses komputer kita dengan cara menyamar menjadi salah satu perangkat lunak untuk mengelabui kita. Malware ini sering kita temui dari aktivitas phising yang terjadi pada kita."
+
+    pa "5. Ransomware, malware ini mampu membuat kita tidak bisa mengakses file yang kita miliki dalam sistem. Untuk dapat mengakses file kita kembali, biasanya pelaku meminta kita untuk menebus dengan uang tebusan."
+
+    pa "6. Adware, adware sendiri bukanlah sebuah malware yang bisa langsung membahayakan sistem kita. Namun dengan adanya adware, malware-malware bisa memasuki sistem yang kita miliki. Sesuai namanya adware merupakan sebuah malware yang menampilkan banyak iklan-iklan yang terus bermunculan pada layar kita."
+
+    "Kelas dilanjutkan dengan [pa] yang menampilkan contoh-contoh dari malware yang diterangkan."
+
+    hide screen pti_3_5
+
+    "[pa] memberi contoh dengan langsung mencari contoh malware yang bisa ditemukan di internet, kemudian dilanjutkan dengan sesi tanya jawab hingga jam pelajaran usai."
+
+    scene bg class room with fade
+
+    pa normal "Mungkin sampai disini dulu pertemuan kita hari ini." 
+    
+    pa "Terimakasih sudah mengikuti kelas pada pagi hari ini."
+
+    pa "Oh iya sebelum saya tutup, saya mau memberi tahu kalau nilai ujian kemarin sudah keluar ya."
+
+    "Mendengar informasi mengenai hasil ujian tengah semester kemarin, terdapat beberapa reaksi dari teman sekelasmu. Beberapa dari mereka terlihat gembira dan tidak sabar untuk melihat hasil pekerjaan mereka."
+	
+    pa "Untuk mengeceknya kalian bisa membuka simaster, kemudian menu akademik kemahasiswaan, lalu pada sub menu akademik pilih hasil studi."
+
+    pa "Silahkan dilihat sendiri-sendiri ya."
+
+    t normal "Baik pak terimakasih."
+
+    pa "Kalau begitu bapak tutup, cukup sekian dan terimakasih sampai bertemu di pertemuan berikutnya."
+
+    t "Terimakasih."
+
+    r normal2 "Terimakasih pak."
+
+    "Kelas berakhir, mahasiswa satu persatu meninggalkan ruangan. Menunggu untuk beberapa menit sebelum memasuki ruang kelas selanjutnya."
+
+    call attend_pti
+    call attend_class
+
+    pause 1.5
     jump alpro_3
 
 label pti_4:
 
-    "PTI 4"
+    scene bg class room with dissolve
 
+    "Kamu memasuki ruang kelas pertama untuk perkuliahan hari ini, belum terlihat banyak mahasiswa yang sudah berada di dalam kelas."
+
+    "Hari ini merupakan pertemuan terakhir untuk mata kuliah pengantar teknologi informasi."
+
+    "Seperti kelas-kelas biasanya, kamu memilih bangku yang terletak dengan jendela dan berada pada barisan tengah kelas."
+
+    "Sembari menunggu untuk kelas dimulai, kamu mengeluarkan HPmu dan membuka beberapa aplikasi untuk menghabiskan waktu."
+
+    "Satu persatu mahasiswa mulai memasuki ruang kelas, sebelum pada akhirnya [pa] juga memasuki ruang kelas."
+
+    "Hari ini merupakan pertemuan ke-4 mata kuliah PTI, [pa] mengatur peralatan mengajarnya sebelum membuka pertemuan pada pagi hari ini."
+
+    scene bg class room with fade
+
+    pa "normal Selamat pagi teman-teman, pada pagi hari ini kita bertemu lagi pada pertemuan terakhir mata kuliah pengantar teknologi informasi."
+
+    pa "Pada pagi hari ini bapak akan sedikit menerangkan mengenai komponen-komponen sistem informasi."
+
+    show screen pti_4_1
+
+    pa "Komponen yang pertama adalah perangkat keras atau hardware. Sesuai namanya hardware merupakan perangkat fisik yang ada pada sistem."
+
+    pa "Perangkat fisik yang digunakan dapat dikelompokan menjadi beberapa kelompok seperti:"
+
+    pa "Input device, merupakan perangkat keras yang dapat digunakan untuk memasukan data contohnya seperti keyboard, mouse, microphone, dan lain sebagainya."
+
+    pa "Processing device, yang bekerja sebagai pusat atau otak komputer, terdiri atas CPU, graphics card, memory RAM, dan lain sebagainya."
+
+    pa "Output device, merupakan kelompok perangkat keras yang mampu menyajikan atau menampilkan data yang ada, contohnya seperti monitor, speaker, proyektor, dan lain sebagainya."
+
+    pa "Storage, merupakan perangkat keras yang memiliki fungsi sebagai tempat penyimpanan data, contoh dari storage adalah Harddisk, flashdisk, CD, dan lain sebagainya. "
+
+    pa "Itu merupakan penjelasan mengenai salah satu komponen sistem informasi yaitu perangkat keras atau hardware."
+
+    pa "Kita akan melanjutkan pembahasan mengenai komponen selanjutnya."
+    
+    pa "Komponen dari sistem informasi yang kedua adalah perangkat lunak atau sering kita sebut dengan software. "
+
+    hide screen pti_4_1
+
+    show screen pti_4_2 with fade
+
+    pa "Software dapat kita artikan sebagai program yang terdapat dalam komputer yang memiliki fungsi atau tugas tertentu."
+
+    pa "Perangkat lunak juga dapat kita bagi ke beberapa pengelompokkan seperti:"
+
+    pa "Sistem Operasi, perangkat lunak sistem operasi memiliki fungsi sebagai pengatur sistem kerja perangkat keras dan perangkat lunak yang ada di komputer."
+
+    pa "Aplikasi, merupakan sebuah perangkat lunak yang sering kita gunakan untuk menyelesaikan tugas atau kebutuhan tertentu."
+
+    pa "Bahasa pemrograman, perangkat lunak bahasa pemrograman merupakan perangkat lunak yang memiliki fungsi sebagai penerjemah instruksi-instruksi dari bahasa program ke kode bahasa mesin tertentu 
+    melalui sebuah prosedur agar mampu dibaca dan diterima oleh komputer."
+
+    pa "Kurang lebih seperti itu untuk pembahasan komponen perangkat lunak"
+
+    pa "Lalu komponen sistem informasi yang berikutnya adalah Jaringan Telekomunikasi."
+
+    hide screen pti_4_2
+
+    show screen pti_4_3 with fade
+
+    pa "Jaringan telekomunikasi disini memungkinkan komunikasi dan menghubungkan perangkat satu sama lain, baik untuk mendapatkan informasi baru atau saling bertukar informasi."
+
+    pa "Jaringan komunikasi mungkin kalian sudah mendengar dari mata kuliah lain dapat dilakukan menggunakan wired ataupun wireless."
+
+    pa "Jaringan Kabel, merupakan jaringan telekomunikasi yang menggunakan kabel fisik untuk mentransmisikan data."
+
+    pa "Jaringan kabel memiliki kecepatan transfer yang lebih cepat namun lebih rumit dalam pengelolaan dan pemeliharaannya."
+
+    pa "Jaringan Nirkabel(wireless), merupakan jaringan telekomunikasi yang menggunakan gelombang radio atau sinyal mikro dalam mentransmisikan datanya."
+
+    pa "Jaringan Nirkabel memiliki keunggulan dalam mobilitasnya, namun memiliki kecepatan yang lebih rendah daripada jaringan kabel serta rentan terkena gangguan sinyal."
+
+    pa "Masih terdapat dua komponen yang ada setelah komponen jaringan."
+
+    pa "Komponen sistem informasi berikutnya adalah basis data."
+
+    hide screen pti_4_3
+
+    show screen pti_4_4 with fade
+
+    pa "Basis data seperti yang mungkin sudah kalian ketahui dapat digunakan untuk menyimpan semua data-data yang terdapat pada sistem. "
+
+    pa "Dengan penggunaan basis data, akan mempermudah kita dalam berbagai macam hal seperti, penyimpanan data, pengelompokan data, keamanan, analisa, dan lain sebagainya."
+
+    pa "Kemudian komponen sistem informasi yang berikutnya adalah sumber daya manusia."
+
+    pa "Tentu saja manusia sebagai pelaku atau penggerak utama semua komponen-komponen lainnya diperlukan dalam pengoperasian sebuah sistem informasi."
+
+    pa "Komponen-komponen sistem informasi yang disebutkan sebelumnya juga dapat membantu manusia dalam pengoperasian sistem informasi."
+
+    pa "Jadi itu kurang lebih seperti komponen-komponen yang terdapat pada sistem informasi."
+
+    pa "Mulai dari perangkat keras, perangkat lunak, jaringan komunikasi, basis data dan manusia."
+
+    pa "Semua komponen merupakan komponen-komponen yang ada dan membentuk sebuah sistem informasi."
+
+    hide screen pti_4_4
+
+    pa "Mungkin materi pagi hari ini sampai disini dulu ya, mungkin ada yang ingin ditanyakan?"
+
+    "Kelas dilanjutkan dengan sesi tanya jawab hingga kelas waktu pertemuan telah habis."
+
+    scene bg campus class with fade
+
+    pa normal "Karena ini pertemuan terakhir mata kuliah ini jadi bapak ucapkan terimakasih sudah mengikuti mata kuliah ini."
+
+    pa "Untuk materi yang digunakan untuk ujian akhir semester nanti adalah materi yang bapak ajarkan setelah ujian tengah semester kemarin ya?"
+
+    t normal "Berarti materi pertemuan 3 dan hari ini ya pak?"
+
+    pa "Iya benar, materi pertemuan 3 dan 4 ya teman-teman."
+
+    t "Baik pakk."
+
+    pa "Nanti kalau ada pertanyaan tinggal tanya langsung saja ya."
+
+    r normal2 "Baik pak."
+
+    pa "Ya sudah, pertemuan kali ini bapak tutup, sekian dan terimakasih teman-teman."
+
+    t "Terimakasih pak."
+
+    t "Terimakasihhh"
+
+    r "Terimakasih [pa]"
+
+    "Kelas ditutup, [pa] meninggalkan ruang kelas disusul dengan teman-temanmu keluar dari ruang kelas satu persatu."
+
+    "Masih terdapat beberapa menit sebelum kelas selanjutnya dimulai."
+
+    call attend_pti
+    call attend_class
+
+    pause 1.5
     jump alpro_4
 
 label attend_pti:

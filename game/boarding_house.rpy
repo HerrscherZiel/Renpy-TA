@@ -831,8 +831,6 @@ label kos_d5N:
     call screen mapUI with dissolve
 
 
-
-
 #Common Day Case
 label choice_kos_morn:
 

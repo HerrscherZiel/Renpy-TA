@@ -355,7 +355,157 @@ label uts_alpro:
 
 label alpro_3:
 
-    "ALPRO 3"
+
+    scene bg campus hall with dissolve
+
+    "Setelah beristirahat selama beberapa menit di luar ruang kelas, kini telah memasuki jam perkuliahan untuk kelas berikutnya."
+
+    "Ruang kelas yang akan digunakan sudah dibuka karena telah digunakan pada kelas sebelumnya."
+
+    "Kamu dan teman sekelasmu mulai memasuki ruang kelas satu persatu. Seperti biasanya kamu memilih tempat duduk di barisan tengah dan berada di dekat jendela."
+
+    "Kamu menunggu dosen pengajar memasuki ruang kelas dengan memainkan hpmu dan mengobrol dengan teman sebelahmu."
+
+    "Hampir 10 menit berada di dalam ruangan, akhirnya terlihat [bn] berjalan mendekati ruang kelas."
+
+    "Setelah [bn] memasuki ruang kelas, tanda perkuliahan akan segera dimulai."
+
+    bn normal "Selamat pagi teman-teman kita berjumpa lagi pada pagi hari ini dalam perkuliahan Algoritma Pemrograman pertemuan ke 3."
+
+    bn "Ibu sudah memeriksa dan menilai pekerjaan kalian pada ujian tengah semester kemarin. Kalian bisa lihat hasilnya sendiri ya di Simaster."
+
+    bn "Untuk hari ini kita akan membahas mengenai Prosedur dan Fungsi dalam pemrograman."
+
+    bn "Apa itu prosedur dan fungsi, dan bagaimana contohnya akan kita bahas hari ini."
+
+    "Setelah menyambungkan laptopnya dengan proyektor dan materi untuk hari ini sudah terlihat di depan kelas, perkuliahan pun dimulai."
+
+    show screen alpro_3_1 with fade
+    
+    bn "Apa itu prosedur dalam pemrograman? Prosedur merupakan suatu program yang disusun secara terpisah dan memiliki tujuan untuk melakukan suatu tugas atau fungsi tertentu."
+
+    bn "Serangkaian instruksi yang terdapat pada prosedur dapat dipanggil atau dieksekusi oleh program utama atau bagian-bagian lain dari program."
+
+    bn "Prosedur digunakan untuk mengelompokkan instruksi-instruksi tertentu menjadi satu kesatuan yang dapat digunakan kembali."
+
+    bn "Terdapat dua macam prosedur, subrutin dan fungsi."
+
+    hide screen alpro_3_1
+
+    show screen alpro_3_2 with fade
+
+    bn "Subrutin merupakan sebuah bagian dari suatu program yang berjalan terpisah untuk membantu melaksanakan tugas suatu program."
+
+    bn "Fungsi merupakan suatu jenis khusus dari subroutine yang selalu mengembalikan nilai. Fungsi menerima argumen yang dimasukkan dan mengembalikan nilai hasil pemrosesan berdasarkan argumen tersebut kepada program utama."
+
+    bn "Fungsi memiliki output dengan tipe variabel yang kita tentukan sebelumnya, pemakaian fungsi juga memerlukan sebuah parameter tidak seperti sebuah prosedur."
+
+    bn "Untuk memperjelas perbedaan antara prosedur dan fungsi, akan ibu terangkan di bawah ini."
+
+    hide screen alpro_3_2
+
+    show screen alpro_3_3 with fade
+
+    bn "Tujuan utama sebuah prosedur adalah melakukan tugas tertentu."
+
+    bn "Sementara untuk fungsi, tujuan utamanya adalah melakukan perhitungan dan mengembalikan nilai."
+
+    bn "Kemudian terdapat perbedaan pada pengembalian nilai."
+
+    bn "Sebuah prosedur berjalan dan selesai tanpa mengembalikan sebuah nilai."
+
+    bn "Fungsi disisi lain akan selalu mengembalikan sebuah nilai ketika selesai dieksekusi."
+
+    bn "Sebagai contoh, prosedur meiliki tugas untuk mencetak maupun memanipulasi sebuah data."
+
+    bn "Sementara fungsi misal digunakan untuk perhitungan matematis dan pengambilan sebuah data."
+
+    bn "Ibu akan memberikan contoh code dalam bahasa python. "
+
+    hide screen alpro_3_3
+
+    show screen alpro_3_4 with fade
+
+    bn "Contoh untuk prosedur adalah sebagai berikut:"
+
+    "def sapa(nama):"
+
+    bn "Merupakan line yang mendefinisikan prosedur sapa dengan parameter nama"
+    
+    "print('Halo,', nama)"
+
+    bn "Ini adalah contoh prosedur yang mencetak pesan ke layar, dengan mencetak teks {i}Halo {/i} kemudian isi variabel nama."
+
+    "sapa('Alice')"
+
+    bn "Line tersebut memanggil prosedur sapa dengan memasukan nilai 'Alice' pada variabel nama sebagai parameter."
+
+    bn "Kode tersebut akan berjalan sesuai program dan akan mencetak pesan ke layar tanpa mengembalikan nilai."
+
+    bn "Kemudian untuk contoh kode fungsi adalah sebagai berikut:"
+
+    hide screen alpro_3_4
+
+    show screen alpro_3_5 with fade
+
+    bn "Ini adalah contoh fungsi yang menghitung jumlah dua angka"
+
+    "def tambah(a, b):"
+
+    bn "Line tersebut berfungsi untuk mendefinisikan fungsi 'tambah' dengan parameter 'a' dan 'b'."
+
+    "hasil = a + b"
+
+    "return hasil"
+
+    bn "Di dalam fungsi tambah, terdapat penjumlahan nilai 'a' dan 'b' yang disimpan pada variabel 'hasil' yang kemudian dikembalikan nilainya."
+
+    bn "Kemudian kita panggil fungsi tambah dan kemudian menyimpan hasilnya dalam variabel hasil."
+
+    "hasil = tambah(3, 4)"
+
+    "print('Hasil penambahan:', hasil)"
+
+    bn "Kode diatas akan berjalan dan melakukan perhitungan sebelum akhirnya akan mengembalikan hasil dari perhitungan tersebut."
+
+    bn "Kurang lebih seperti itu untuk contoh dari prosedur dan fungsi."
+
+    bn "Sekarang kita akan berlanjut pada manfaat dari prosedur dan fungsi."
+
+    hide screen alpro_3_5
+
+    show screen alpro_3_6 with fade
+
+    bn "Mengapa prosedur dan fungsi kita gunakan dalam program kita? Tentu saja karena manfaat yang bisa kita peroleh dari penggunaannya."
+
+    bn "Manfaat dari penggunaan prosedur dan fungsi adalah:"
+
+    bn "1. Modularitas, yang berarti memungkinkan membagi program menjadi bagian-bagian yang lebih kecil, yang mampu mempermudah pengelolaan dan akan membuat kode menjadi lebih terstruktur dan lebih jelas."
+
+    bn "2. Reuseabilitas, berarti kode yang sudah ada dapat digunakan kembali hanya perlu memanggil nama prosedur atau fungsi yang dibuat agar dapat digunakan kembali. Hal ini mampu mempercepat proses pengkodean."
+
+    bn "3. Mengurangi duplikasi kode, dengan adanya prosedur atau fungsi maka tidak diperlukan lagi untuk mengetik kode yang memiliki fungsi yang sama. Oleh karena itu dapat menghindarkan kita dari duplikasi kode."
+
+    bn "4. Memudahkan pemeliharaan kode, hal ini mungkin terjadi karena dengan adanya prosedur dan fungsi dapat dipisahkan antara tugas-tugas yang berbeda ke dalam prosedur dan fungsi."
+
+    hide screen alpro_3_6
+
+    bn "Kurang lebih seperti itu ya teman-teman, mungkin ada pertanyaan dari teman-teman?"
+
+    "Kemudian kelas dilanjutkan dengan sesi tanya jawab hingga waktu pertemuan berakhir."
+
+    scene bg campuss class with dissolve
+
+    bn normal "Saya tutup pertemuan kali ini, terimakasih sudah berpartisipasi pada kelas hari ini dan sampai jumpa dipertemuan selanjutnya…"
+
+    t normal "Terimakasih buuu…"
+
+    r normal2 "Terimakasih buu.."
+
+    "Kelas berakhir dan setelah ini merupakan jam istirahat, mahasiswa-mahasiswa mulai meninggalkan ruang kelas."
+
+    call attend_alpro
+    call attend_class
 
     call istirahat
 
@@ -363,7 +513,162 @@ label alpro_3:
 
 label alpro_4:
 
-    "ALPRO 4"
+    scene bg campus hall with dissolve
+
+    "Setelah beristirahat selama beberapa menit di luar ruangan, jam perkuliahan berikutnya sudah dimulai."
+
+    "Ruang kelas yang akan digunakan sudah dibuka karena telah digunakan pada kelas sebelumnya."
+
+    "Kamu dan teman sekelasmu mulai memasuki ruang kelas satu persatu. Seperti biasanya kamu memilih tempat duduk di barisan tengah dan berada di dekat jendela."
+
+    "Kamu menghabiskan waktumu dengan memainkan gim yang terdapat pada HPmu. Beberapa menit memainkan gim, dosen pengajar memasuki ruang kelas dan mahasiswa mulai mempersiapkan untuk kelas yang segera akan dimulai."
+
+    bn normal "Selamat pagi teman-teman kita kembali berjumpa lagi pada perkuliahan pagi hari ini dengan mata kuliah Algoritma Pemrograman pertemuan ke 4."
+
+    bn "Pertemuan kali ini merupakan pertemuan terakhir mata kuliah ini sebelum kalian akan melakukan ujian akhir semester."
+
+    bn "Untuk pertemuan kali ini kita akan membahas mengenai algoritma untuk Pencarian(Search) dan Pengurutan(Sort) secara dasar."
+
+    bn "Untuk menyingkat waktu, kita langsung saja mulai perkuliahan hari ini."
+
+    show screen alpro_4_1 with fade
+
+    bn "Apakah algoritma pencarian itu?"
+
+    bn "Algoritma Pencarian adalah sebuah algoritma yang dibuat untuk melakukan sebuah pencarian untuk menemukan sebuah informasi spesifik yang terdapat dalam suatu struktur data yang dimiliki."
+
+    bn "Kenapa algoritma pencarian dibutuhkan ? Beberapa alasan mengapa algoritma pencarian digunakan adalah:"
+
+    bn "1. Pencarian data, sesuai namanya algoritma ini dapat digunakan untuk menemukan elemen-elemen spesifik yang kita butuhkan dalam suatu kumpulan data."
+
+    bn "2. Optimasi kinerja, dengan adanya algoritma pencarian yang efisien akan mampu mengoptimalkan kinerja dari aplikasi. Algoritma yang digunakan tersebut mampu untuk mengurangi eksekusi terutama dalam pencarian dalam skala yang besar. Kecepatan pencarian menjadi sangat dibutuhkan."
+
+    hide screen alpro_4_1
+
+    show screen alpro_4_2 with fade
+
+    bn "3. Fungsionalitas perangkat lunak, seringkali fitur pencarian dibutuhkan atau diminta oleh pengguna sebuah perangkat lunak. Oleh karena itu algoritma pencarian digunakan dalam beberapa perangkat lunak yang membutuhkan fitur pencarian."
+
+    bn "4. Analisis data, dengan adanya algoritma pencarian memungkinkan dan mempermudah kita dalam menemukan sebuah informasi tertentu dalam sebuah kumpulan data."
+
+    bn "Kemudian setelah mengetahui kegunaan-kegunaan dari algoritma pencarian, ibu akan menjelaskan dan memberi contoh tentang algoritma pencarian."
+
+    hide screen alpro_4_2
+
+    show screen alpro_4_3 with fade
+
+    "[bn] mengganti slide, kemudian terlihat contoh-contoh dari algoritma pencarian."
+
+    bn "1. Linear Search, merupakan salah satu contoh algoritma pemrograman yang paling simple. Algoritma ini melakukan pencarian dengan cara mencari dan memeriksa secara urut dalam kumpulan data hingga elemen yang diinginkan didapatkan."
+
+    bn "Algoritma ini akan mengecek satu persatu dari elemen pertama yang terdapat pada daftar, jika menemukan elemen dicari maka akan mengembalikan elemen tersebut, apabila tidak maka proses akan berulang sampai elemen terakhir diperiksa."
+
+    bn "Salah satu alasan menggunakan algoritma linear search adalah karena algoritma ini sederhana dan mudah untuk dipahami."
+
+    hide screen alpro_4_3
+
+    show screen alpro_4_4 with fade
+
+    bn "2. Depth First Search, algoritma pencarian yang satu ini merupakan sebuah algoritma pencarian yang digunakan dalam sebuah tree atau graf, dimana pencarian dilakukan dengan memasukan node kedalam sebuah stack."
+
+    bn "Lalu pencarian dilakukan dengan menelusuri simpul terdalam, apabila hasil yang diinginkan tidak ditemukan maka pencarian akan kembali ke simpul yang telah dikunjungi sebelumnya yang bertetangga dengan simpul yang belum pernah dikunjungi. "
+
+    bn "Pencarian akan berlanjut hingga hasil yang diinginkan ditemukan atau semua simpul telah dikunjungi."
+
+    hide screen alpro_4_4
+
+    show screen alpro_4_5 with fade
+
+    bn "3. Binary Search, merupakan salah satu algoritma pencarian yang dilakukan pada kumpulan data yang telah diurutkan sebelumnya. Pencarian ini dilakukan dengan membagi data menjadi dua bagian dan membandingkan elemen tengah dengan elemen yang dicari. "
+
+    bn "Sehingga memungkinkan kita untuk mengetahui apakah elemen yang dicari berada pada bagian kanan atau kiri dari elemen tengah yang ditemui."
+    
+    bn "Itu diatas merupakan beberapa penjelasan mengenai algoritma pencarian."
+
+    bn "Kini kita akan berlanjut mempelajari tentang algoritma pengurutan."
+
+    hide screen alpro_4_5
+
+    show screen alpro_4_6 with fade
+
+    bn "Apakah algoritma pengurutan itu?"
+
+    bn "Algoritma pengurutan merupakan sebuah algoritma yang digunakan untuk merubah atau mengatur suatu elemen pada suatu struktur data kedalam aturan atau urutan tertentu yang diinginkan."
+
+    bn "Sama seperti sebelumnya, apa kegunaan dari algoritma pengurutan?"
+
+    bn "1. Memudahkan pencarian, kumpulan data yang telah dilakukan algoritma pengurutan sebelumnya akan lebih mudah ketika melakukan pencarian data."
+
+    bn "2. Optimasi kinerja, dengan kemudahan dan kecepatan pengaksesan data yang menjadi lebih efisien maka program akan memiliki kinerja yang lebih optimal."
+
+    bn "3. Lebih mudah membaca informasi, pengaplikasian algoritma pengurutan pada presentasi data dapat mempermudah informasi untuk diterima. Hal ini juga dapat meningkatkan pengalaman yang didapatkan oleh pengguna aplikasi."
+
+    bn "4. Membuat pemrograman menjadi lebih efisien, dengan adanya algoritma pengurutan yang digunakan akan membuat kode yang ditulis menjadi lebih efisien."
+
+    bn "Kemudian pembahasan kita selanjutnya pada hari ini adalah mengenai contoh algoritma pengurutan."
+
+    bn "Berikut adalah contoh dari algoritma pengurutan:"
+
+    hide screen alpro_4_6
+
+    show screen alpro_4_7 with fade
+
+    "[bn] mengganti slide dan slide berganti menjadi penjelasan contoh algoritma pemrograman."
+
+    bn "1. Bubble sort, merupakan salah satu algoritma pengurutan yang bisa dibilang sederhana. Algoritma pengurutan ini cenderung mudah untuk dipahami dan diterapkan. Cara kerja pada algoritma ini adalah melakukan perbandingan dan penukaran terhadap elemen-elemen array yang ada."
+
+    bn "Perbandingan akan terus diulang prosesnya hingga urutan elemen sudah sesuai yang diinginkan dan tidak diperlukannya proses penukaran lagi."
+
+    bn "2. Quick sort, merupakan algoritma pengurutan yang tergolong cepat namun cenderung rumit untuk penggunaannya. Cara kerja algoritma quick sort adalah dengan membagi data yang ada kedalam dua sisi, kiri dan kanan dan menggunakan data yang terdapat di tengah sebagai pusat."
+
+    bn "Algoritma akan membandingkan dan mengurutkan suatu data yang ada dengan data tengah yang menjadi pusat, kemudian data yang lebih kecil daripada data tengahakan dikumpulkan pada sebelah kiri data tengah. Sementara data yang lebih besar dari data tengah akan dikumpulkan dibagian kanan data tengah."
+
+    bn "Memungkinkan pada suatu bagian untuk memiliki data tengah baru untuk melakukan pengurutan terhadap sisi tersebut."
+
+    hide screen alpro_4_7
+
+    show screen alpro_4_8 with fade
+
+    bn "3. Insertion sort, sesuai namanya algoritma yang satu ini bekerja dengan mengambil elemen pertama pada suatu array yang belum diurutkan dan diletakan pada bagian baru dari array yang sudah diurutkan. Proses dilakukan kembali dengan elemen array berikutnya, namun ketika akan diletakan pada array yang sudah diurutkan dilakukan perbandingan."
+
+    bn "Apabila elemen kedua tersebut lebih kecil dari elemen pertama pada array yang sudah diurutkan maka elemen kedua tersebut akan diletakan di kiri elemen pertama. Begitu pula sebaliknya, apabila elemen kedua memiliki nilai yang lebih besar maka akan diletakan pada sisi kanan elemen pertama pada array yang sudah diurutkan."
+
+    bn "Mungkin itu dulu penjelasan yang dapat ibu berikan pada pertemuan kali ini mengenai algoritma pencarian dan pengurutan."
+
+    hide screen alpro_4_8
+
+    bn "Sebelum ibu tutup ibu akan memperlihatkan gambaran mengenai apa yang ibu terangkan sebelumnya."
+
+    "[bn] memperlihatkan slide yang berisi contoh dari algoritma pencarian dan pengurutan."
+
+    "Setelah memperlihatkan slide contoh, kelas dilanjutkan dengan sesi tanya jawab."
+
+    scene bg classroom with fade
+
+    "Waktu pertemuan kelas siang ini sudah berada pada penghujung waktu."
+
+    bn normal "Sebelum ibu tutup pertemuan kali ini, akan kembali ibu ingatkan untuk materi ujian akhir semesternya akan diambil dari materi setelah ujian tengah semester."
+
+    mc normal jacket "Hmm berarti materinya mulai dari pertemuan 3 dan 4 saja ya."
+
+    bn "Selamat belajar, semoga berhasil dan mendapatkan hasil yang memuaskan ya teman-teman."
+
+    bn "Terimakasih sudah mengikuti kelas pada mata kuliah ini, sampai jumpa pada pertemuan di lain waktu."
+
+    t normal "Terimakasih buu!!"
+
+    t "Terimakasihhh"
+
+    r normal2 "Terimakasih juga buu"
+
+    scene bg campus hall with dissolve
+
+    "Kelas telah usai, kamu dan teman-temanmu keluar dari kelas."
+
+    "Sebelum kelas terakhir pada hari ini, terdapat waktu istirahat yang bisa kamu gunakan untuk melakukan aktivitas lain."
+
+    call attend_alpro
+    call attend_class
 
     call istirahat
 

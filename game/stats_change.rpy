@@ -46,6 +46,11 @@ screen stats_changer(tstats, tpoint):
 
         timer 0.1 action [Hide("stats_changer"), Show("class_change", dissolve)]
 
+    #social
+    elif tstats == "kerja_bakti":
+
+        timer 0.1 action [Hide("stats_changer"), show("kerja_bakti_change", dissolve)]
+
     else:
 
         text "How"
@@ -307,3 +312,31 @@ screen class_change:
                 action NullAction()   
 
     timer 4.0 action Hide("class_change", dissolve)
+
+screen kerja_bakti_change:
+
+    frame:
+        xsize 1920
+        ysize 1080
+        xpos 800
+        ypos 30
+        background "menuUI/stats/public_up.png"
+  
+        hbox:
+            spacing 15
+
+            imagebutton:
+                xpos -6
+                ypos -6
+                idle "menuUI/stats/public_up.png"
+                action NullAction()
+
+            imagebutton:
+                idle "menuUI/stats/community_up.png"
+                action NullAction()
+
+            imagebutton:
+                idle "menuUI/stats/fit_up.png"
+                action NullAction()        
+
+    timer 4.0 action Hide("kerja_bakti_change", dissolve)

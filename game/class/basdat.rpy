@@ -241,7 +241,7 @@ label uts_basdat:
 
     "(Setiap pertanyaan akan ditampilkan dan bisa dijawab dalam waktu 90 detik)"
 
-    ("Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya)"
+    "Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya)"
 
     "(Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal)"
 
@@ -333,10 +333,187 @@ label uts_basdat:
     call istirahat
     jump uts_web
 
-
 label basdat_3:
 
-    "Basdat 3"
+    scene bg campus hall with dissolve
+
+    "Setelah beristirahat selama beberapa menit di luar ruangan, kelas berikutnya sudah akan dimulai."
+
+    "Kamu dan teman-temanmu mulai memasuki ruang kelas berikutnya."
+
+    "Setelah memasuki ruang kelas, seperti biasanya kamu memiliki untuk menempati duduk yang berada di dekat jendela."
+
+    "Selagi menunggu dosen yang belum kunjung datang, kamu mengobrol dengan teman yang duduk di sebelahmu untuk menghabiskan waktu ."
+
+    "10 menit berlalu setelah kamu dan teman sekelasmu memasuki ruangan, terlihat [pa] berjalan mendekati ruang kelas  pertanda kelas akan segera dimulai."
+
+    pa normal "Selamat pagi teman-teman kita berjumpa lagi pada hari ini pada pertemuan ke-3  mata kuliah Basis Data."
+
+    pa "Pada pertemuan ke-3 ini kita akan membahas lebih lanjut mengenai materi yang sudah pernah kita bahas sebelumnya, yaitu Data Definition Language."
+
+    "Setelah menyambungkan laptopnya dengan proyektor dan materi untuk hari ini sudah terlihat di depan kelas, perkuliahan pun dimulai."
+
+    scene bg campus class with fade
+
+    pa normal "Data Definition Language, seperti yang kalian tahu merupakan sebuah bahasa dari sistem manajemen basis data yang berfungsi sebagai pendefinisi dan pengelola struktur skema suatu basis data."
+
+    show screen basdat_3_1 with fade
+
+    pa "Data definition language pada basis data sendiri memiliki berbagai macam kegunaan, seperti dapat digunakan untuk menambah, mengubah, menghapus, mengelola indeks, mendefinisikan fungsi, dan lain sebagainya."
+
+    pa "Pada pertemuan hari ini kita akan mengenal lebih lanjut, syntax atau perintah dan kegunaannya. Kali ini kita akan mempelajari data definition language menggunakan basis data MySQL."
+
+    pa "MySQL merupakan sebuah sistem manajemen basis data yang bisa kita gunakan secara gratis."
+
+    pa "Mungkin jika kalian ingin mencoba secara langsung pada MySQL kalian dapat mencari tahu sendiri bagaimana cara menginstallnya di internet."
+
+    pa "Agar tidak terlalu banyak, materi hari ini kita fokuskan untuk mempelajari perintah yang dapat digunakan untuk membuat basis data, membuat table, menghapus table, mengganti nama table, mendefinisikan primary key, dan menambah kolom dalam suatu tabel."
+
+    pa "Sebelumnya agar gambaran kalian mengenai basis data tidak terlalu kosong, akan bapak jelaskan secara singkat ya."
+
+    pa "Basis data seperti yang sudah kalian tahu memiliki fungsi utama untuk menyimpan data secara terorganisir dan terstruktur."
+
+    pa "Bapak akan menjelaskan basis data pada MySQL ya, karena ada beberapa perbedaan juga kalau menggunakan basis data lain."
+
+    hide screen basdat_3_1
+
+    show screen basdat_3_2 with fade
+
+    pa "Basis data dapat dibuat atau ditambahkan dengan cara menuliskan syntax create database nama_db pada command line."
+
+    pa "Syntax tersebut dapat dijelaskan sebagai berikut, create berarti kita menuliskan perintah untuk membuat, lalu database yang berarti kita akan membuat sebuah database atau basis data baru, dan yang terakhir nama_db bebas kita isikan sesuai nama basis data yang ingin kita gunakan."
+
+    pa "Jangan lupa setelah menulis syntax kita harus menutupnya dengan delimiter, atau pemisah pernyataan dalam SQL. Delimiter pada SQL secara default adalah tanda ‘ ; ‘."
+
+    pa "Jadi pagi hari ini, kita akan menulis syntax untuk membuat basis data dengan nama latihan. Maka penulisannya adalah sebagai berikut:"
+
+    "pa create database latihan;"
+
+    pa "Setelah menekan enter, dan jika syntax berhasil dijalankan maka akan terlihat tulisan Query OK, maka basis data berhasil dibuat."
+
+    pa "Kemudian untuk mengecek apakah basis data baru sudah berhasil ditambahkan, kita bisa melihat ke list basis data, 
+    dengan menuliskan syntax show databases; maka akan terlihat tampilan seperti gambar ini."
+
+    pa "Terlihat basis data latihan sudah terdapat pada list basis data, yang berarti basis data latihan berhasil ditambahkan."
+
+    pa "Kemudian, setiap basis data memiliki tabel-tabel yang mewakili entitas-entitas didalamnya."
+
+    pa "Semisal untuk basis data pada sebuah kampus, bernama kampus merdeka memiliki tabel mahasiswa, dosen, dan mata kuliah."
+
+    pa "Tabel-tabel tersebut mewakili entitas mahasiswa, dosen, dan mata kuliah, dimana data-data setiap entitas akan disimpan pada tabel tersebut."
+
+    pa "Setiap tabel juga memiliki kolom dan barisnya, kolom mewakili atribut dari entitas tersebut dan baris mewakili entri individual dalam tabel."
+
+    pa "Semisal pada tabel Mahasiswa terdapat kolom atau atribut nama, NIM, dan program studi."
+
+    pa "Kemudian barisnya terisi dengan data, Budi, 14011, dan TRPL."
+
+    pa "Kurang lebih seperti penjelasan mengenai tabel, kolom, dan baris dalam basis data."
+
+    pa "Berikutnya bapak akan memberi contoh syntax untuk membuat sebuah tabel."
+
+    hide screen basdat_3_2
+
+    show screen basdat_3_3 with fade
+
+    pa "Oh iya, sebelum menulis syntax itu, kita harus memilih basis data mana yang kita akan tambahkan tabelnya. 
+    Karena sebelumnya kita sudah membuat basis data latihan, 
+    kita akan menggunakan basis data tersebut dengan syntax use latihan;"
+
+    pa "Syntax untuk menambah tabel Mahasiswa, dengan kolom nama, NIM, dan program studi adalah sebagai berikut:"
+
+    pa "create table mahasiswa(nama varchar(255), nim varchar(15), prodi varchar(50));"
+
+    pa "Query atau syntax tersebut bisa dijelaskan sebagai berikut, create digunakan untuk membuat, 
+    lalu table berarti kita akan membuat sebuah table. Kemudian mahasiswa merupakan nama table yang ingin kita buat."
+
+    pa "Setelah nama table, kita lanjutkan dengan tanda kurung buka ‘(‘ dan ditutup dengan kurung tutup ‘)’ 
+    lalu kita isi dengan atribut yang ada di dalamnya, atribut pertama adalah nama dengan tipe data varchar dengan batas karakter yang kita inginkan semisal 255. 
+    Atribut berikutnya ditambahkan setelah menambahkan tanda ‘,’ setelah atribut pertama."
+
+    pa "Maka kita akan menuliskannya sebagai berikut (nama varchar(255), nim varchar(15), prodi varchar(50))"
+
+    pa "Secara penuh kita menuliskannya sebagai berikut create table mahasiswa(nama varchar(255), nim varchar(15), prodi varchar(50));"
+
+    pa "Untuk mengecek apakah tabel tersebut telah ditambahkan pada basis data, kita bisa mengeceknya dengan menuliskan syntax show tables;"
+
+    hide screen basdat_3_3
+
+    show screen basdat_3_4 with fade
+
+    pa "Terlihat tabel mahasiswa sudah ditambahkan pada basis data latihan."
+
+    pa "Kemudian untuk melihat struktur atau skema pada tabel mahasiswa kita bisa menuliskan syntax desc mahasiswa;"
+
+    pa "Tabel yang sudah kita buat bisa kita ubah strukturnya, semisal ingin menambahkan sebuah kolom tambahan didalamnya."
+
+    pa "Syntax yang dapat digunakan untuk melakukan hal tersebut adalah sebagai berikut."
+
+    hide screen basdat_3_4
+
+    show screen basdat_3_5 with fade
+
+    pa "alter table mahasiswa add column alamat varchar(255);"
+
+    pa "Syntax tersebut dapat dijelaskan sebagai berikut, mengubah struktur tabel mahasiswa dengan menambah kolom alamat bertipe varchar dengan 255 maksimal karakter."
+
+    pa "Alter disini berfungsi untuk merubah suatu struktur dalam basis data, table berarti kita akan merubah sebuah struktur tabel, add column berarti kita akan menambah kolom pada tabel tersebut, 
+    dan alamat varchar(255) adalah nama kolom beserta tipe datanya."
+
+    pa "Setelah menuliskan syntax tersebut, untuk melihat perbedaannya kita tuliskan kembali desc mahasiswa;"
+
+    pa "Dapat dilihat, kolom alamat sudah berhasil ditambahkan pada tabel mahasiswa."
+
+    pa "Kemudian yang terakhir untuk hari ini, kita akan mempelajari mengenai syntax untuk menghapus sebuah tabel."
+
+    hide screen basdat_3_5
+
+    show screen basdat_3_6 with fade
+
+    pa "Sebelumnya, kita tambahkan dulu tabel matkul pada basis data;"
+
+    pa "Gambar disamping kiri memperlihatkan tabel matkul sudah ada pada basis data latihan."
+
+    pa "Untuk menghapus tabel matkul, kita bisa menuliskan syntax drop table matkul;"
+
+    pa "Penjelasan untuk syntax tersebut adalah, drop berarti kita akan menghilangkan atau menghapus sesuatu dalam basis data, 
+    table matkul berarti apa yang akan kita drop adalah sebuah table bernama matkul;"
+
+    pa "Setelah memasukkan syntax drop table matkul; lalu kita cek dengan syntax show tables; 
+    dapat dilihat tabel matkul sudah tidak ada pada basis data latihan yang berarti kita berhasil menghapus tabel mahasiswa;"
+
+    pa "Hari ini kita mempelajari mengenai membuat basis data, membuat table, menambahkan kolom, dan menghapus tabel."
+
+    hide screen basdat_3_6
+
+    pa "Mungkin itu dulu dari saya, kalian bisa mempelajari kegunaan lebih lanjut dari syntax create, alter, dan drop sendiri ya."
+
+    scene bg campus class with dissolve
+
+    pa normal "Pertemuan selanjutnya kita akan mempelajari mengenai DML atau data manipulative language."
+
+    pa "Sekarang karena masih ada sedikit waktu kalau ada pertanyaan boleh bisa ditanyakan teman-teman."
+
+    "Beberapa mahasiswa mengajukan pertanyaan mengenai materi basis data yang baru saja dibahas."
+
+    "Hingga akhir waktu pertemuan [pa] masih menjelaskan dan menjawab pertanyaan yang diajukan oleh mahasiswa."
+
+    "Setelah semua pertanyaan terjawab [pa] menutup pertemuan pagi hari ini."
+
+    pa normal "Terimakasih teman-teman sudah aktif dalam pertemuan kali ini."
+
+    pa "Saya tutup pertemuan kali ini sampai jumpa di pertemuan selanjutnya."
+
+    t normal "Terimakasih pak."
+
+    r normal2 "Terimakasih…"
+
+    mc normal jacket "Terimakasih…"
+
+    "Kelas selesai dan kini memasuki waktu istirahat sebelum kelas selanjutnya dimulai."
+
+    call attend_basdat
+    call attend_class
 
     call istirahat
 
@@ -344,7 +521,150 @@ label basdat_3:
 
 label basdat_4:
 
-    "Basdat 4"
+    scene bg campus hall with dissolve
+
+    "Setelah menunggu selama beberapa menit di luar ruangan, waktu untuk kelas berikutnya telah dimulai."
+
+    "Kamu dan teman-temanmu mulai memasuki ruang kelas berikutnya."
+
+    "Setelah memasuki ruang kelas, seperti biasanya kamu memilih untuk menempati duduk yang berada di dekat jendela."
+
+    "Selagi menunggu dosen yang belum kunjung datang, kamu mengobrol dengan teman yang duduk di sebelahmu untuk menghabiskan waktu ."
+
+    "10 menit berlalu setelah kamu dan teman sekelasmu memasuki ruangan, terlihat [pa] berjalan mendekati ruang kelas  pertanda kelas akan segera dimulai."
+
+    pa normal "Selamat pagi teman-teman kita berjumpa lagi pada hari ini pada pertemuan ke-4  mata kuliah Basis Data yang juga akan menjadi pertemuan terakhir pada mata kuliah ini."
+
+    pa "Pada pertemuan terakhir ini kita akan membahas lebih lanjut mengenai materi yang sudah bapak beritahu sebelumnya, yaitu Data Manipulation Language."
+
+    "Setelah menyambungkan laptopnya dengan proyektor dan materi untuk hari ini sudah terlihat di depan kelas, perkuliahan pun dimulai."
+
+    scene bg campus class with fade
+
+    pa normal "Data Manipulation Language, seperti yang kalian tahu merupakan sebuah bahasa dari sistem manajemen basis data yang digunakan untuk mengelola dan memanipulasi data dalam suatu basis data."
+
+    show screen basdat_4_1 with fade
+
+    pa "Data manipulation language pada basis data sendiri memiliki berbagai macam kegunaan, seperti dapat digunakan untuk 
+    menyisipkan data(Insert), memperbarui data(update), menghapus data(delete), dan untuk memilih data(select) ."
+
+    pa "Pada pertemuan hari ini kita akan mengenal lebih lanjut, syntax atau perintah dan kegunaannya. 
+    Kali ini kita akan mempelajari data manipulation language menggunakan basis data MySQL."
+
+    pa "Melanjutkan dari basis data latihan yang kita buat pada pertemuan sebelumnya, kita telah membuat sebuah tabel bernama mahasiswa dengan atribut nama, nim, dan prodi."
+
+    pa "Hari ini kita akan mencoba DML dalam tabel mahasiswa, dimana kita akan mencoba menyisipkan, mengubah, menghapus, dan memilih data pada tabel tersebut."
+
+    pa "Oh iya, setelah berhasil masuk pada MySQL untuk memilih basis data latihan tuliskan syntax use latihan;"
+
+    hide screen basdat_4_1
+
+    show screen basdat_4_2 with fade
+
+    pa "Setelah basis data latihan berhasil dipilih, kita akan mencoba memasukan syntax untuk menyisipkan(Insert) data pada tabel mahasiswa, dengan data sebagai berikut."
+
+    pa "nama: Budi, 14011, TRPL."
+
+    pa "Untuk memasukan data tersebut kita bisa menuliskan syntax, INSERT INTO mahasiswa (nama, nim, prodi) VALUES (‘Budi’, ‘14011’, ‘TRPL’);"
+
+    pa "Syntax diatas dapat diterangkan sebagai berikut, INSERT INTO merupakan perintah untuk menyisipkan data pada sebuah tabel, 
+    mahasiswa merupakan target dimana data akan disisipkan pada tabel tersebut, lalu (nama, nim, prodi) merupakan target kolom dimana data-data akan dimasukkan."
+
+    pa "Kemudian, VALUES () berisikan data yang akan dimasukan pada masing-masing kolom yang sudah dituliskan sebelumnya."
+
+    pa "Setelah selesai memasukkan syntax untuk menyisipkan data, kita dapat mengecek apakah data sudah berhasil dimasukkan dengan memasukan syntax untuk memilih data."
+
+    hide screen basdat_4_2
+
+    show screen basdat_4_3 with fade
+
+    pa "Syntax untuk memilih atau melihat data yang ada pada tabel mahasiswa adalah sebagai berikut:"
+
+    pa "SELECT * FROM mahasiswa;"
+
+    pa "Penjelasan untuk syntax diatas adalah, SELECT merupakan perintah untuk memilih atau mengambil data, lalu tanda ‘*’ memiliki arti ALL atau semua, 
+    yang berarti SELECT * FROM mahasiswa memiliki artian pilih semua data yang ada pada (tabel) mahasiswa."
+
+    pa "Dapat kita lihat, data dengan nama Budi telah berhasil kita masukkan."
+
+    pa "Syntax DML berikutnya yang akan kita pelajari adalah cara menghapus data pada tabel mahasiswa."
+
+    hide screen basdat_4_3
+
+    show screen basdat_4_4 with fade
+
+    pa "Namun sebelum itu, bapak akan menambahkan satu data lagi pada tabel mahasiswa yaitu Fandi, 14012, TRPL."
+    
+    pa "Nah, setelah menambahkan data kedua yang dapat dilihat pada gambar bagian kiri, kita akan menghapus data dengan nama Fandi."
+
+    pa "Syntax untuk menghapus data dengan nama Fandi adalah, DELETE FROM mahasiswa WHERE nama=’Fandi’;"
+
+    pa "Penjelasan untuk syntax tersebut adalah, DELETE FROM merupakan perintah untuk menghapus data dari sebuah tabel, 
+    bernama mahasiswa, kemudian setelah menentukan dari tabel apa sebuah data akan dihapus, 
+    kita juga harus menentukan kriteria dari data yang akan dihapus."
+
+    pa "Kriteria yang akan dipilih diawali dengan syntax, WHERE, lalu masukan kriteria yang akan dihapus. 
+    Karena kita akan menghapus data dengan nama Fandi, maka kita masukan nama=’Fandi’;"
+
+    pa "Sehingga syntax untuk menghapus data dengan nama Fandi adalah, DELETE FROM mahasiswa WHERE nama=’Fandi’;"
+
+    pa "Terlihat data dengan nama Fandi telah berhasil dihapus."
+
+    pa "Kemudian yang terakhir pada hari ini, kita akan mempelajari tentang cara mengubah data pada suatu tabel."
+
+    hide screen basdat_4_4
+
+    show screen basdat_4_5 with fade
+
+    pa "Semisal pada tabel mahasiswa, data nama dengan nama Budi akan dirubah menjadi Budiyono, maka kita harus memasukkan syntax;"
+
+    pa "UPDATE mahasiswa SET nama=’Budiyono’ WHERE nama=’Budi’;"
+
+    pa "Penjelasan syntax tersebut adalah, UPDATE merupakan perintah untuk mengubah, mahasiswa merupakan target tabel yang datanya ingin dirubah."
+
+    pa "SET merupakan perintah untuk merubah suatu data menjadi data baru, 
+    nama=’Budiyono’ berarti data nama akan berubah menjadi bernilai ‘Budiyono’."
+
+    pa "WHERE seperti sebelumnya merupakan sebuah perintah untuk menunjukan kriteria, nama=’Budi’ berarti data dengan nama ‘Budi’ yang akan dirubah."
+    
+    pa "Terlihat data dengan nama Budi telah berubah menjadi Budiyono."
+
+    hide screen basdat_4_5
+
+    pa "Hari ini kita telah mempelajari mengenai menambahkan data, melihat data, menghapus data, dan merubah data."
+
+    pa "Mungkin itu dulu dari saya, kalian bisa mempelajari kegunaan lebih lanjut dari sendiri ya."
+
+    scene bg campus class with dissolve
+
+    pa "Ini merupakan pertemuan terakhir, jadi bapak akan memberi tahu materi yang akan digunakan untuk ujian akhir semester nanti."
+
+    pa "Materi untuk ujian nanti adalah materi dari pertemuan ke-3 dan ke-4 ya teman-teman."
+
+    t normal "Baik pakkk"
+
+    pa "Sekarang karena masih ada sedikit waktu kalau ada pertanyaan boleh bisa ditanyakan teman-teman."
+
+    "Beberapa mahasiswa mengajukan pertanyaan mengenai materi basis data yang baru saja dibahas."
+
+    "Hingga akhir waktu pertemuan [pa] masih menjelaskan dan menjawab pertanyaan yang diajukan oleh mahasiswa."
+
+    "Setelah semua pertanyaan terjawab [pa] menutup pertemuan pagi hari ini."
+
+    pa normal "Terimakasih teman-teman sudah aktif dalam pertemuan pada mata kuliah ini."
+
+    pa "Saya tutup pertemuan terakhir pada mata kuliah ini, selamat belajar dan semoga mendapatkan hasil yang diinginkan pada ujian nanti."
+
+    t normal "Terimakasih pak."
+
+    r normal2 "Terimakasih…"
+
+    mc normal jacket "Terimakasih…"
+
+    "Kelas selesai dan kini memasuki waktu istirahat sebelum kelas selanjutnya dimulai."
+
+    call attend_basdat
+    call attend_class
 
     call istirahat
 

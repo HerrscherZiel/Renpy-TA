@@ -379,6 +379,9 @@ label jarkom_3:
 
     "Jarkom 3"
 
+    call attend_jarkom
+    call attend_class
+
     jump pre_libur
 
 label jarkom_4:

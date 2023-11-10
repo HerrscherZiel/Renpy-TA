@@ -276,13 +276,13 @@ label uts_web:
 
     "Ketika waktu sudah menunjukan jam mulai yang tertera pada soal ujian, dosen pengawas mulai berputar mengelilingi kelas sembari membacakan peraturan ujian kali ini."
 
-    "bn normal Selamat siang teman-teman pada siang hari ini kita akan melanjutkan ujian tengah semester untuk mata kuliah Pemrograman Web."
+    bn normal "Selamat siang teman-teman pada siang hari ini kita akan melanjutkan ujian tengah semester untuk mata kuliah Pemrograman Web."
 
-    "bn Saya harap kalian sudah mempersiapkan diri untuk ujian hari ini."
+    bn "Saya harap kalian sudah mempersiapkan diri untuk ujian hari ini."
 
-    "bn Soal akan saya bagikan, tolong kartu ujiannya ditaruh di meja dan nanti kalau ada pertanyaan bisa langsung ditanyakan."
+    bn "Soal akan saya bagikan, tolong kartu ujiannya ditaruh di meja dan nanti kalau ada pertanyaan bisa langsung ditanyakan."
 
-    "bn Saya harap kejujuran dari kalian dan semangat dan selamat mengerjakan."
+    bn "Saya harap kejujuran dari kalian dan semangat dan selamat mengerjakan."
 
     "Setelah menerima lembar soal dan lembar jawaban untuk UTS mata kuliah Basis Data ini, kamu memejamkan matamu sebentar berdoa dan mempersiapkan diri untuk mengerjakan."
 
@@ -352,18 +352,24 @@ label uts_web:
             "B. URL merupakan perangkat lunak yang digunakan untuk menerima dan menyajikan informasi yang ada di web."
         "C. URL merupakan salah satu bahasa pemrograman yang digunakan untuk membuat suatu halaman web menjadi lebih rapi.":
             "C. URL merupakan salah satu bahasa pemrograman yang digunakan untuk membuat suatu halaman web menjadi lebih rapi."
-        "D. URL merupakan sebuah alamat dari suatu website yang ada di internet.":
-            "D. HTTP."
+        "D. Merupakan alamat web yang mengarahkan ke suatu websites, halaman web, atau dokumen tertentu.":
+            "D. Merupakan alamat web yang mengarahkan ke suatu websites, halaman web, atau dokumen tertentu."
             $a_webTS +=20
         "E. URL hanya terdiri dari protokol html saja.":
             "E. Web." 
-    "5. Dibawah ini yang bukan komponen dari HTML adalah?"
+    "5. Dibawah ini yang merupakan komponen dari HTML adalah?"
     menu:
         "A. Tag, Element, dan Atribut.":
+            "A. Tag, Element, dan Atribut."
+            $a_webTS +=20
         "B. Tag, Element, dan Body":
+            "B. Tag, Element, dan Body"
         "C. Head, Body, dan Footer":
+            "C. Head, Body, dan Footer"
         "D. Head, Body, dan Atribut":
+            "D. Head, Body, dan Atribut"
         "E. CSS, JavaScript, PHP":
+            "E. CSS, JavaScript, PHP"
     
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
 
@@ -380,18 +386,294 @@ label uts_web:
     call change_timephase
     call screen mapUI
 
-
-
 label web_3:
 
-    "Web 3"
+    scene bg campus class with dissolve
 
+    "Setelah jam istirahat berakhir, kamu dan teman-temanmu mulai memasuki kelas yang akan digunakan untuk jam perkuliahan terakhir pada hari ini."
+
+    "Ketika memasuki ruang kelas, [pa] yang mengajar mata kuliah Pemrograman Web I telah berada di dalam ruang kelas."
+
+    pa normal "Selamat siang teman-teman, silahkan masuk sembari menunggu teman-teman yang lain masuk kelas."
+
+    "Tidak memakan waktu lama, satu persatu teman kelasmu memasuki ruangan, setelah dirasa mahasiswa yang berada dalam ruangan sudah banyak, [pa] membuka pertemuan pada siang hari ini."
+
+    pa "Selamat siang, sepertinya teman-temannya sudah pada hadir sekarang… Kalau begitu bapak mulai kelas pada siang hari ini."
+
+    pa "Bertemu lagi kita pada mata kuliah Pemrograman Web I pertemuan ke 3. Pada pertemuan siang hari ini, kita akan mencoba membuat sebuah halaman web menggunakan HTML dasar."
+
+    pa "Dimana laman tersebut akan kita isi dengan beberapa tag dasar HTML."
+
+    pa "Kita mulai saja, agar menghemat waktu pertemuan kali ini."
+
+    show screen web_3_1 with fade
+
+    pa "Langkah pertama yang kita lakukan adalah membuat sebuah file pada teks editor seperti, Notepad++, Sublime Text, 
+    Visual Studio Code, dan lain sebagainya kemudian menyimpannya dengan ekstensi .html."
+
+    pa "Dengan membuat file dan menyimpannya dalam ekstensi .html kita berhasil membuat sebuah dokumen html."
+
+    pa "Disini bapak menyimpan file tersebut dengan nama latihan.html ya teman-teman."
+
+    pa "Kemudian setelah itu, pada baris pertama kita tuliskan <!DOCTYPE html>, hal ini merupakan sebuah deklarasi yang menyatakan tipe dokumen, dan dokumen ini menggunakan HTML5."
+
+    pa "Lalu dilanjutkan kan dengan tag buka <html> dan dibaris yang paling bawah pada dokumen ini ditutup dengan tag tutup </html>."
+
+    pa "Kurang lebih seperti pada gambar yang ada ya."
+
+    hide screen web_3_1
+
+    show screen web_3_1g with fade
+
+    pa "Setelah itu kita menambahkan tag <head> dan </head> dalam tag <html> yang sudah ada."
+
+    hide screen web_3_1g
+
+    show screen web_3_2 with fade
+
+    pa "<head> merupakan bagian kepala dari dokumen HTML, bagian ini merupakan bagian yang memiliki fungsi untuk menyertakan informasi tentang dokumen. Informasi tersebut seperti 
+    judul dokumen, metadata, dan kode untuk menghubungkan dokumen dengan file css, js, dan dokumen eksternal lainnya."
+
+    pa "Susunan dokumen html yang kita buat, akan menjadi seperti ini."
+
+    pa "Pada <head> bapak tambahkan tag <title> dengan nama Latihan HTML, yang berfungsi untuk memberi nama dokumen pada tab browser. "
+
+    pa "Kemudian, setelah menyelesaikan tag <head>, dibawahnya kita tambahkan tag <body> yang merupakan bagian isi dari dokumen. "
+
+    pa "Pada bagian <body> kita bisa menambahkan semua konten yang kita inginkan, seperti teks, gambar, tabel, dan elemen lainnya di dalam tag body ini."
+
+    pa "Struktur dokumen yang kita buat akan menjadi seperti ini."
+
+    hide screen web_3_2
+
+    show screen web_3_2g with fade
+
+    pa "Pada hari ini kita mempelajari mengenai tag yang digunakan untuk teks, dan heading, daftar, dan gambar."
+
+    pa "Pertama, kita akan mulai dengan mengisi dokumen dengan teks <h1>, tag tersebut merupakan teks header untuk teks yang ada di dokumen."
+
+    hide screen web_3_2g
+
+    show screen web_3_3 with fade
+
+    pa "Tag header tersebut dapat kita atur ukurannya dengan mengubah angka yang berada setelah huruf ‘h’. 
+    Kita bisa mengubahnya dari angka 1 sampai angka 6, dimana angka 1 merupakan ukuran terbesar dan angka 6 adalah ukuran terkecil."
+
+    pa "Kali ini bapak akan menuliskan teks , “Ini adalah header” menggunakan beberapa macam teks header."
+
+    hide screen web_3_3
+
+    show screen web_3_3g with fade
+
+    pa "Dokumen htmlnya akan menjadi seperti gambar ini."
+
+    pa "Lalu untuk membuka dokumen ini pada browser, kita bisa memilih file dan membukanya dengan browser yang kita punya."
+
+    pa "Setelah kita membuka file tersebut, kita dapat melihat hasilnya seperti pada gambar dibagian kanan."
+
+    pa "<title> yang kita tulis dapat dilihat hasilnya pada judul dari browser tab yaitu, Latihan HTML."
+
+    pa "Lalu kita juga dapat melihat hasil dari teks yang kita tulis memiliki ukuran teks yang berbeda beda, sesuai kode dan tag yang kita tulis."
+
+    pa "Setelah itu, kita akan mencoba menuliskan tag paragraf <p>, tag tersebut memiliki fungsi seperti mengatur paragraf, mengatur spasi, dan penggunaan style ketika menggunakan CSS."
+
+    hide screen web_3_3g
+
+    show screen web_3_4 with fade
+
+    pa "Dokumen html yang kita buat akan menjadi seperti ini."
+
+    pa "Sementara tampilan pada htmlnya akan terlihat seperti ini."
+
+    hide screen web_3_4
+
+    show screen web_3_4g with fade
+
+    pa "Setelah mencoba tag paragraf, yang akan pelajari terakhir pada hari ini adalah menggunakan tag untuk membuat sebuah daftar atau list."
+
+    hide screen web_3_4g
+
+    show screen web_3_5 with fade
+
+    pa "Terdapat dua macam tag yang ada, <ul> merupakan tag untuk membuat daftar yang tak terurut seperti daftar dengan simbol-simbol, 
+    dan <ol> merupakan tag untuk daftar yang terurut seperti dengan nomor."
+
+    pa "Kemudian tiap-tiap elemen yang terdapat dalam daftar, dimasukan menggunakan elemen <li> atau list item."
+
+    pa "Lihat dokumen html yang sudah bapak beri contoh dari daftar yang tidak terurut dan terurut pada gambar setelah ini."
+
+    hide screen web_3_5
+
+    show screen web_3_5g with fade
+
+    pa "Kemudian ketika kita buka pada browser akan terlihat menjadi seperti gambar yang terdapat pada bagian kanan."
+
+    pa "Perbedaan antara penggunaan <ul> dan <ol> bisa dilihat ya, <ul> digunakan untuk list pertama, dan <ol> digunakan untuk list kedua."
+
+    pa "Penggunaan mana yang lebih baik ya tergantung bagaimana kalian ingin menampilkannya saja."
+
+    pa "Kurang lebih begitu untuk tag daftar atau list yang kita bisa gunakan dalam html ya. Jika kalian ingin mengetahui lebih, bisa ditanyakan nanti."
+
+    pa "Jadi hari ini, kita telah mempelajari bagaimana membuat file html, mempelajari tag dan struktur dasar html, lalu mencoba beberapa tag untuk teks, lalu membuat list."
+
+    hide screen web_3_5g
+
+    pa "Mungkin untuk hari ini cukup sampai sini dulu ya, kita lanjutkan lagi untuk besok pembahasan mengenai htmlnya. 
+    Besok kita akan mempelajari mengenai tabel dan form."
+
+    pa  "Untuk perkuliahan hari ini, kita lanjutkan dengan sesi tanya jawab ya, kalau kalian ada pertanyaan untuk materi pada hari ini, 
+    bisa kalian tanyakan sekarang."
+
+    "Pembelajaran berlanjut pada sesi tanya jawab. Sesi tanya jawab masih terus berlangsung pada mahasiswa lain hingga jam perkuliahan selesai."
+
+    pa "Saya kira cukup untuk pertemuan kali ini, terimakasih atas partisipasinya pada perkuliahan hari ini dan sampai ketemu minggu depan teman-teman."
+
+    r normal2 "Terimakasih pak…"
+
+    t normal "Terimakasih…"
+
+    "[pa] meninggalkan ruang kelas, dan pertemuan ke-3 mata kuliah Web I pada hari ini selesai."
+
+    "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk pulang."
+
+    call attend_web
+    call attend_class
+
+    call change_timephase
     call screen mapUI with dissolve
 
 label web_4:
 
-    "Web 4"
+    scene bg campus class with dissolve
 
+    pa "Selamat siang teman-teman, bagaimana kabarnya? Semoga baik-baik saja ya."
+
+    "[pa] memasuki ruang kelas, pertanda perkuliahan mata kuliah Web I akan segera dimulai."
+
+    pa "Seperti yang kalian ketahui, hari ini merupakan hari pertemuan terakhir untuk mata kuliah Web I, dan seperti yang bapak bilang kemarin, 
+    hari ini kita akan mempelajari mengenai table dan form pada HTML"
+
+    pa "Minggu lalu kita sudah membuat sebuah dokumen HTML yang sudah kita coba tambahkan beberapa tag seperti header, paragraf, dan list."
+
+    pa "Minggu ini kita masih akan menggunakan file tersebut untuk mempelajari materi berikutnya teman-teman."
+
+    "[pa] menyiapkan materi yang akan dipaparkan pada perkuliahan. Setelah materi sudah terlihat pada depan kelas, perkuliahan pun dimulai."
+
+    scene bg campus class with dissolve
+
+    pa "Materi pertama yang akan kita pelajari hari ini adalah membuat sebuah tabel menggunakan HTML."
+
+    show screen web_4_1 with fade
+
+    pa "Menggunakan HTML kita bisa membuat sebuah tabel dengan tag <table>, namun kita perlu memasukkan tag lainnya untuk mengatur berapa banyak kolom dan baris yang ada di dalam tabel tersebut. "
+
+    pa "<tr> digunakan untuk membuat baris dalam tabel, sementara <td> dapat kita gunakan untuk menambahkan kolom dalam tabel."
+
+    pa "Pada baris pertama dalam tabel kita bisa menggunakan tag <th> yang merupakan tag untuk membuat baris header dalam sebuah tabel dan menjadi tebal(bold)."
+
+    pa "Bapak sudah menambahkan sebuah tabel pada dokumen HTML yang kita buat kemarin."
+
+    pa "Tabel yang bapak tambahkan adalah tabel mahasiswa dengan 3 kolom di dalamnya yaitu, nama, nim, dan program studi. Tabel tersebut sudah bapak isi dengan 2 data mahasiswa."
+
+    hide screen web_4_1
+
+    show screen web_4_1g with fade
+
+    pa "Berikut dokumen HTML yang sudah bapak tambahkan tabelnya pada gambar bagian kiri."
+    
+    pa "Lalu ketika bapak buka file HTML ini dalam browser, akan terlihat seperti gambar bagian kanan."
+
+    pa "Tabel yang baru saja dibuat telah berhasil dibuat, namun tabel tersebut masih belum jelas bentuknya karena belum memiliki border."
+
+    hide screen web_4_1g
+
+    show screen web_4_2 with fade
+
+    pa "Untuk menambahkan atribut border dalam tabel tersebut, kita bisa menuliskan border setelah tag pembuka <tabel>, dan akan menjadi seperti ini, <table border=”1”>"
+
+    pa "Lalu tampilan dalam browser akan menjadi seperti gambar yang ada dibawah ini."
+
+    pa "Sekarang kalian bisa melihat perbedaannya kan, terdapat border yang memisahkan tiap baris dan kolom dalam tabel tersebut."
+
+    pa "Kurang lebih untuk membuat tabel sederhana seperti itu ya."
+
+    pa "Kalian bisa menambahkan <tr> untuk menambah baris, dan <td> untuk menambah kolom dan data."
+
+    pa "Kemudian kita akan berlanjut pada materi berikutnya yaitu, form."
+
+    hide screen web_4_2
+
+    show screen web_4_3 with fade
+
+    pa "Form dapat kita gunakan untuk membuat formulir interaktif dalam sebuah laman yang memungkinkan untuk memasukan data atau mengirimkan data pada suatu server."
+
+    pa "Kali ini kita hanya akan mempelajari bagaimana cara untuk membuat form, namun hanya tampilan saja tanpa ada perpindahan data pada server."
+
+    pa "Tag yang bisa kita gunakan untuk membuat sebuah form adalah <form>. Kemudian terdapat <label> yang berfungsi untuk menampilkan instruksi atau teks yang ada sebelum elemen input."
+
+    pa "Lalu elemen yang kita gunakan untuk memasukan data adalah <input>, <input> sendiri memiliki berbagai macam atribut yang dapat digunakan untuk menentukan tipe input yang kita inginkan."
+
+    pa "Semisal kita ingin memasukan input dengan tipe data teks, kita dapat menggunakan atribut “text”, ketika ingin memasukan tanggal pada form kita dapat menggunakan tipe input “date”, 
+    dan masih banyak lagi tipe input yang dapat kita gunakan sesuai kebutuhan kita."
+
+    pa "Bapak disini sudah memberi contoh membuat sebuah form, yang berisikan 3 input yaitu nama, nomor induk, dan program studi."
+
+    hide screen web_4_3
+
+    show screen web_4_3g with fade
+
+    pa "Dapat dilihat, pada label “Nama”, terdapat input dengan tipe “text”. 
+    Lalu dibelakangnya jika kalian memperhatikan ada required, required menandakan input tersebut harus diisi sebelum bisa di submit."
+
+    pa "Dibawahnya terdapat label dan input untuk “NIM”, dan “Prodi”. Kemudian pada baris terakhir sebelum form berakhir, terdapat input dengan 
+    tipe <submit> yang merupakan sebuah tombol yang dapat ditekan untuk mengirimkan data yang dituliskan pada kolom input sebelumnya."
+
+    pa "Hasil dari form yang dituliskan pada browser tampak seperti gambar diatas."
+
+    pa "Terdapat label Nama, NIM, dan Prodi dengan masing-masing kolom inputnya."
+
+    pa "Lalu pada bagian terakhir terdapat tombol submit untuk memasukan atau mengirimkan data yang kita input."
+
+    pa "Ya untuk pengenalan form pada HTML sekiranya segini dulu ya, 
+    untuk informasi yang lebih kalian dapat mencari tahu di internet sendiri."
+
+    hide screen web_4_3g
+
+    pa "Karena waktu yang sudah mepet, jika kalian ingin bertanya mengenai materi bisa ditanyakan ya."
+
+    "Tidak lama kemudian, [r] langsung mengangkat tangannya dan langsung ditunjuk oleh [pa]."
+
+    r normal2 "Pak, untuk materi ujian akhirnya dari mana ya pak?"
+
+    pa "Materi untuk ujian akhir semesternya dapat dimulai dari materi setelah UTS ya teman-teman."
+
+    t normal "Berarti materi pertemuan ke-3 dan hari ini ya pak?"
+
+    pa "Yak, betull."
+
+    t "Baik pak terimakasih."
+
+    "Sesi pertanyaan masih berlanjut hingga waktu perkuliahan berakhir."
+
+    "Setelah waktu perkuliahan telah habis, [pa] kemudian menutup pertemuan terakhir pada hari ini."
+
+    pa "Kalau begitu bapak tutup pertemuan hari ini. Selamat belajar dan semoga mendapatkan hasil yang diinginkan pada ujian nanti."
+
+    pa "Terimakasih sudah mengikuti kelas sampai pertemuan kali ini, sampai jumpa pada pertemuan selanjutnya teman-teman."
+
+    t "Terimakasih pak."
+
+    t "Terimakasihhh"
+
+    r "Terimakasih juga pak."
+
+    "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. 
+    Kamu keluar dari ruangan kelas dan melanjutkan aktivitasmu berikutnya."
+
+    call attend_web
+    call attend_class
+
+    call change_timephase
     call screen mapUI with dissolve
 
 label attend_web:

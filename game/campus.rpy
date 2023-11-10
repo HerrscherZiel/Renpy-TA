@@ -1088,8 +1088,8 @@ label uts_akhir:
             "Setelah itu kamu langsung pulang menuju kosan."
 
             "Beristirahat dengan tenang karena ujian tengah semester telah berakhir."
-
-            jump nonton_film
+            
+            call screen mapUI with dissolve
         
     
 #hari ke 3 minggu ke 1

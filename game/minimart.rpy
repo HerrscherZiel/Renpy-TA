@@ -675,11 +675,11 @@ label belajar_2:
 
     call belajar_strukdat_1
 
-    r "Kemudian pada pertemuan kedua Struktur Data yang dipelajari adalah:"
+    r normal2 "Kemudian pada pertemuan kedua Struktur Data yang dipelajari adalah:"
 
     call belajar_strukdat_2
 
-    r "Kurang lebih itu yang pernah kita pelajari pada mata kuliah Struktur Data, 
+    r normal2 "Kurang lebih itu yang pernah kita pelajari pada mata kuliah Struktur Data, 
     sekiranya soal yang keluar untuk uts ada pada esok hari dari materi pelajaran tersebut."
 
     r "Kemudian kita lanjut pada mata kuliah kedua besok yaitu Basis Data."
@@ -688,21 +688,21 @@ label belajar_2:
 
     call belajar_basdat_1
 
-    r "Kemudian pada pertemuan kedua Basis Data yang dipelajari adalah:"
+    r normal2 "Kemudian pada pertemuan kedua Basis Data yang dipelajari adalah:"
 
     call belajar_basdat_2
 
-    r "Itu semua merupakan hal yang sudah kita pelajari pada mata kuliah Basis Data, kemudian mata kuliah terakhir yang akan diujikan besok adalah Pemrograman Web."
+    r normal2 "Itu semua merupakan hal yang sudah kita pelajari pada mata kuliah Basis Data, kemudian mata kuliah terakhir yang akan diujikan besok adalah Pemrograman Web."
 
     r "Berikut materi yang sudah kita terima pada mata kuliah Web pada pertemuan pertama:"
 
     call belajar_web_1
 
-    r "Kemudian pada pertemuan kedua Web yang dipelajari adalah:"
+    r normal2"Kemudian pada pertemuan kedua Web yang dipelajari adalah:"
 
-    call belajar_de_2
+    call belajar_web_2
 
-    r "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Pemrograman Web."
+    r normal2 "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Pemrograman Web."
 
     r "Itu juga semua materi yang mungkin akan menjadi bahan untuk soal ujian besok."
 
@@ -716,7 +716,7 @@ label belajar_2:
 
     "Namun tidak semua temanmu pergi untuk pulang, masih ada dari mereka yang berlanjut belajar bersama di tempat yang lain."
 
-    mc "Makasih ya [r], besok ada lagi kan ya?"
+    mc normal jacket "Makasih ya [r], besok ada lagi kan ya?"
 
     r "Ada sih, kalau mau ikut lagi ikut aja besok tinggal dateng kok."
 
@@ -782,11 +782,11 @@ label belajar_3:
 
     call belajar_jarkom_1
 
-    r "Kemudian pada pertemuan kedua Jaringan Komputer yang dipelajari adalah:"
+    r normal2 "Kemudian pada pertemuan kedua Jaringan Komputer yang dipelajari adalah:"
 
     call belajar_jarkom_2
 
-    r "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Jaringan Komputer."
+    r normal2 "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Jaringan Komputer."
 
     r "Itu juga semua materi yang mungkin akan menjadi bahan untuk soal ujian besok."
 
@@ -806,7 +806,7 @@ label belajar_3:
 
     #public ++
 
-    t "Akhirnyaa belajar terakhir selesai yeyyyy"
+    t normal "Akhirnyaa belajar terakhir selesai yeyyyy"
 
     t "Jadi bisa males-malesan lagi hahaha."
 
@@ -818,7 +818,7 @@ label belajar_3:
 
     "Kalian memesan makanan dan bergurau hingga larut malam."
 
-    r "Makasih ya teman-teman, kegiatan belajar untuk ujian kali ini selesai."
+    r normal2 "Makasih ya teman-teman, kegiatan belajar untuk ujian kali ini selesai."
 
     r "Semoga kegiatan ini membantu kita semua dalam mengerjakan ujian yang sebelumnya dan juga besok."
 
@@ -840,7 +840,7 @@ label belajar_3:
 
     r "Makasih ya udah ikut kegiatan ini terus [name]!"
 
-    mc "Makasih juga, aku dapet materi buat belajar juga hahaha."
+    mc normal jacket "Makasih juga, aku dapet materi buat belajar juga hahaha."
 
     r "Hahaha yaudah kalau mau pulang dulu, tiati di jalan ya!"
 

@@ -317,13 +317,434 @@ label uts_strukdat:
             
 label strukdat_3:
 
-    "Strukdat 3"
+    scene bg campus class with dissolve
+
+    "[bn] memasuki ruang kelas beberapa menit setelah dirimu menyandarkan tubuh pada bangkumu."
+
+    "Ruang kelas masih belum terisi penuh oleh mahasiswa, hanya sekitar setengah dari temanmu yang sudah berada dalam ruang kelas."
+
+    "[bn] duduk di bangku dosen, dan mempersiapkan laptop dan materi yang akan disampaikan pada pagi hari ini."
+
+    "Kelas pagi hari ini akan dimulai ketika mahasiswa yang hadir dirasa sudah cukup banyak."
+
+    "Masih ada beberapa menit lagi untuk menunggu temanmu yang lain memasuki ruang kelas."
+
+    "Satu persatu mahasiswa memasuki ruang kelas, sebelum pada akhirnya [bn] memulai perkuliahan pagi hari ini."
+
+    scene bg class room with fade
+
+    bn normal "Selamat pagi teman-teman kita bertemu lagi setelah minggu kemarin melakukan ujian tengah semester."
+
+    bn "Pagi ini kita bertemu lagi pada mata kuliah Struktur data pertemuan ke-3, pada pertemuan hari ini kita akan membahas mengenai tipe data."
+
+    bn "Sebenarnya pembahasan mengenai tipe data ini seharusnya kita bahas pada awal pertemuan, tapi ya mungkin sudah dipelajari juga pada mata kuliah lain."
+
+    bn "Pagi hari ini juga saya tidak sampai selesai ya, mohon maaf karena ada urusan mendadak jadi harus pergi."
+
+    t normal "Baik buuu."
+
+    bn "Kita mulai saja ya, karena tadi juga sudah lumayan lama menunggu teman-teman, supaya tidak tambah molor juga."
+
+    "[bn] menyalakan proyektor, dan materi yang akan dibahas pada pagi hari ini terlihat di depan kelas."
+
+    bn "Sebelumnya, apa itu tipe data?"
+
+    show screen strukdat_3_1 with fade
+
+    bn "Tipe data dalam pemrograman merupakan sebuah konsep pengklasifikasian sebuah data dimana klasifikasi tersebut mampu menggambarkan jenis nilai yang dapat disimpan atau dioperasikan dalam sebuah program."
+
+    bn "Ada banyak macam tipe data yang terdapat dalam pemrograman, dibawah ini merupakan sedikit contoh dan pembahasan mengenai tipe data."
+
+    bn "Pada pagi hari ini ibu akan sedikit membahas mengenai tipe data Bilangan bulat, pecahan yang digunakan untuk bilangan."
+
+    bn "Kemudian ada tipe data teks, yang digunakan menyimpan data teks."
+
+    bn "Boolean merupakan tipe data yang dapat digunakan untuk menentukan 'True' dan 'False'"
+
+    bn "Kemudian masih ada tipe data lain seperti 'Date and Time' dan 'Strktur'"
+
+    hide screen strukdat_3_1
+
+    show screen strukdat_3_2 with fade
+
+    bn  "1. Tipe data bilangan bulat, terdapat beberapa tipe data yang termasuk tipe data bilangan bulat seperti tipe data byte, short, integer, dan long."
+
+    bn "Tipe data byte merupakan tipe data bilangan bulat dengan rentang paling kecil (8-bit) diantara tipe data bilangan bulat lainnya, data type ini akan berguna ketika digunakan untuk menyimpan memori dalam array yang besar."
+
+    bn "Tipe data short, merupakan tipe data bilangan bulat yang memiliki kapasitas 16-bit, yang berarti tipe data short memiliki rentang yang lebih besar dari tipe data byte namun lebih kecil dari integer dan long."
+
+    bn "Tipe data integer, Integer atau singkatnya int merupakan tipe data yang paling umum digunakan dalam pemrograman dan merepresentasikan bilangan bulat dalam pemrograman. "
+
+    bn "Tipe data long, tipe data ini merupakan tipe data bilangan bulat yang digunakan untuk menyimpan bilangan bulat yang lebih besar daripada range yang dapat digunakan pada tipe data integer."
+
+    bn "Itu penjelasan singkat untuk tipe data bilangan bulat, lalu kita akan berlanjut pada tipe data yang selanjutnya."
+
+    hide screen strukdat_3_2
+
+    show screen strukdat_3_3 with fade
+
+    bn "Kemudian 2. Tipe data pecahan, sesuai namanya jenis tipe data yang satu ini mampu digunakan untuk menampung data yang bernilai pecahan atau desimal."
+
+    bn "Tipe data float, tipe data ini merupakan tipe data yang mampu menyimpan bilangan pecahan. Floats memiliki presisi terbatas, yang berarti dalam beberapa kasus, ada pembulatan dan potensi kehilangan presisi saat melakukan operasi matematika yang kompleks."
+
+    bn "Tipe data double, merupakan tipe data yang mampu menyimpan bilangan pecahan dengan tingkat presisi lebih tinggi daripada tipe data float, namun juga menggunakan memori lebih banyak."
+
+    bn "Lalu jenis tipe data yang selanjutnya adalah,"
+
+    hide screen strukdat_3_3
+
+    show screen strukdat_3_4 with fade
+
+    bn "3. Tipe data teks, tipe data dengan jenis ini biasa digunakan untuk menyimpan data teks ataupun karakter, disini saya akan menjelaskan mengenai tipe data char dan string."
+
+    bn "Tipe data Char, tipe data ini merupakan tipe data yang digunakan untuk menyimpan karakter tunggal, seperti karakter ‘A’,‘@’, dan semacamnya."
+
+    bn "Tipe data String, tipe data string umumnya digunakan untuk menyimpan data yang bertipe teks, baik dari satu karakter maupun sampai banyak kata."
+
+    bn "Sebenarnya masih ada beberapa tipe data lain yang dapat digunakan untuk menyimpan data tipe teks, namun untuk hari ini cukup dua itu saja dulu."
+
+    hide screen strukdat_3_4
+
+    show screen strukdat_3_5 with fade
+
+    bn "4. Jenis tipe data yang berikutnya adalah tipe data logika yaitu Boolean, tipe data ini hanya memiliki nilai ‘True’ dan ‘False’. "
+
+    bn "Tipe data boolean sangat berguna ketika kita akan mengambilkan sebuah keputusan, dengan menentukan apakah itu ‘True’ atau ‘False’."
+
+    bn "Tipe data boolean menjadi tipe data pilihan ketika kita ingin memutuskan suatu hal yang hanya memiliki dua kemungkinan."
+
+    bn "Kemudian tipe data yang selanjutnya adalah 'Date and Time'."
+
+    hide screen strukdat_3_5
+
+    show screen strukdat_3_6 with fade
+
+    bn "5. Tipe data Date and Time, merupakan jenis tipe data khusus yang digunakan untuk menyimpan sebuah data tanggal dan waktu."
+
+    bn "Tipe data Date and Time dapat mencakup informasi seperti tahun, bulan, hari, jam, menit, detik, dan bahkan milidetik."
+
+    bn "Date and Time sering digunakan dalam aplikasi yang melibatkan jadwal, penanggalan, pemantauan waktu, dan banyak aplikasi lainnya. Contohnya adalah pemakaiannya dalam sistem penyewaan dalam pariwisata dan lain sebagainya."
+
+    hide screen strukdat_3_6
+
+    show screen strukdat_3_7 with fade
+
+    bn "6. Tipe data yang selanjutnya adalah tipe data struktur, ya tipe data yang dimaksud adalah apa yang sebelumnya kita pelajari dalam mata kuliah ini."
+
+    bn "Dalam pemrograman, merujuk pada pengorganisasian data menjadi unit yang lebih besar dan kompleks yang terdiri dari beberapa elemen atau atribut. "
+
+    bn "Tipe data terstruktur digunakan untuk merepresentasikan entitas yang lebih kompleks dan memiliki banyak properti atau atribut yang berbeda."
+
+    bn "Tipe data seperti array merupakan salah satu contoh tipe data struktur. Tipe data ini dapat kita gunakan untuk menyimpan sekumpulan nilai atau elemen yang serupa dalam satu variabel.."
+
+    bn  "Hmmm mungkin hari ini sampai disini saja ya."
+
+    bn "Sebelum saya tutup akan saya sedikit perlihatkan contoh dari tipe data yang ada."
+
+    hide screen strukdat_3_7
+    
+    "[bn] kemudian mengganti slide ke slide berikutnya yang berisi contoh-contoh dari tipe data yang baru saja diterangkan."
+
+    "Teman-temanmu mengamati sambil sesekali melemparkan pertanyaan kepada [bn]."
+
+    "Tanya jawab terjadi selama beberapa menit sebelum [bn] mengumumkan sebuah informasi untuk pertemuan minggu depan."
+
+    scene bg campus class with fade
+
+    bn normal "Oh iya, sebelum ibu tutup ada yang perlu ibu sampaikan."
+
+    bn "Untuk pertemuan minggu depan, kita isi dengan quiz ya teman-teman."
+
+    t normal "Nooooo"
+
+    t "Quiz lagi huhuuu…"
+
+    t "Yahh anggap aja latihan ujian akhir nanti."
+
+    bn "Hahaha… iya anggap saja buat latihan ujian akhir semester nanti."
+
+    bn "Untuk materi, dimulai dari pertemuan yang pertama ya teman-teman."
+
+    bn "Mungkin masih ada yang ingat apa saja?"
+
+    r normal2 "Umm… Pengertian struktur data.., struktur data, array, stack, queue, terus…"
+
+    bn "Ya itu benar, apa lagi ada yang bisa bantu menjawab?"
+
+    menu:
+
+        "Struktur data Tree, Linked List, dan Graph":
+            mc normal jacket "Struktur data Tree, Linked List, dan Graph bu?"
+
+            bn "Iya benar, itu semua yang akan menjadi materi quiz dan ujian akhir semester nanti ya."
+
+        "………":
+
+            t "Struktur data Tree, Graph terus yang satu lagi apa ya?"
+
+            bn "Hayo apalagi kemarin yang sudah dibahas?"
+
+            t "Linked list bu?"
+
+            bn "Iya benar, itu semua yang akan menjadi materi quiz dan ujian akhir semester nanti ya."
+
+    bn "Ingat ya itu semua materi yang digunakan, untuk hari ini cukup sampai sini saja."
+
+    bn "Karena Ibu ada keperluan mendesak lain, ibu akhiri pertemuan siang hari ini."
+
+    bn "Terimakasih atas partisipasinya, dan sampai jumpa pada pertemuan selanjutnya teman-teman."
+
+    t "Terimakasih bu…"
+
+    t "Terimakasihhh"
+
+    "[bn] meninggalkan kelas, tanda kelas pertama pada hari ini telah berakhir."
+
+    "Masih terdapat 2 kelas lain pada hari ini, mahasiswa mulai keluar dari ruang kelas dan berpindah ke kelas selanjutnya."
+
+    call attend_strukdat
+    call attend_class
 
     jump basdat_3
 
 label strukdat_4:
 
-    "Strukdat 4"
+    scene bg campus class with dissolve
+
+    "Memasuki ruang kelas, kamu teringat pertemuan pertama pada hari ini adalah mata kuliah struktur data yang akan diisi dengan quiz."
+
+    "Di dalam ruang kelas sudah terdapat banyak teman-temanmu yang sedang membuka buku catatan mereka, atau sedang menatap layar HP mereka dengan serius."
+
+    "Setelah menempati tempat dudukmu, kamu langsung mempersiapkan dirimu untuk quiz yang sebentar lagi akan kamu kerjakan."
+
+    "Selama beberapa menit kamu membaca materi yang terdapat pada internet, akhirnya [bn] memasuki ruang kelas."
+
+    bn normal "Selamat siang teman-teman, kita bertemu lagi pada pagi hari ini."
+
+    bn "Sesuai apa yang telah saya informasikan sebelumnya, hari ini pertemuan akan diisi dengan quiz. "
+
+    t normal "Tidak susah kan bu quiznya?"
+
+    bn "Ya kalau kalian memperhatikan sewaktu pertemuan harusnya enggak ya."
+
+    bn "Kalau kalian engga belajar ya beda lagi dong."
+
+    t "Semoga mudah ya bu hahahaha"
+
+    r normal2 "Berapa soal bu quiznya?"
+
+    bn "Cukup 5 soal saja, itu untuk menguji apakah kalian memahami apa yang diajarkan atau tidak."
+
+    t "Yeyyy cuma lima aja."
+
+    bn "Mungkin langsung saja ya untuk menyingkat waktu, ibu sudah mempersiapkan soal quiznya di laman ini."
+
+    "[bn] menulis alamat sebuah laman pada whiteboard yang berisi soal-soal untuk quiz pada siang hari ini."
+
+    bn "Kalian kerjakan saja pada kertas, tulis nama dan NIM kalian lalu kumpulkan ketika jam telah usai ya."
+
+    "Kamu membuka alamat laman yang diberikan menggunakan HPmu, setelah membuka laman tersebut kamu mulai menyiapkan secarik kertas dan bolpoinmu."
+
+    "Kamu mulai mengerjakan soal yang terdapat pada layar HPmu."
+
+    "Seperti yang dikatakan oleh [bn] terdapat 5 soal yang ada pada lembar soal."
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    "1. Apakah yang dimaksud dengan Struktur Data dalam pemrograman?"
+
+    menu:
+        "a. Sebuah metode atau cara dalam menyusun, mengatur, dan menyimpan data pada komputer agar menjadi lebih efektif dan efisien":
+
+            "a. Sebuah metode atau cara dalam menyusun, mengatur, dan menyimpan data pada komputer agar menjadi lebih efektif dan efisien."
+            mc "Yupps ini jawabannya."
+
+        "b. Salah satu bahasa pemrograman yang saat ini digunakan pada semua bidang kehidupan.":
+		
+            "b. Salah satu bahasa pemrograman yang saat ini digunakan pada semua bidang kehidupan."
+
+            mc "Kayaknya bukan yang ini deh, tapi apa ya…"
+
+        "c. Sebuah program yang terstruktur dan berisi kumpulan data-data komputer":
+
+            "c. Sebuah program yang terstruktur dan berisi kumpulan data-data komputer"
+
+            mc "Fix ini sih jawabannya."
+
+        "d. Sebuah metode yang dapat digunakan untuk menampilkan grafik data secara menarik":
+            
+            "d. Sebuah metode yang dapat digunakan untuk menampilkan grafik data secara menarik"
+
+            mc "Jawabannya yang ini nihh"
+
+    "Selesai menjawab pertanyaan pertama, kamu kemudian melanjutkan ke pertanyaan kedua."
+
+    "2. 	Struktur data yang memiliki bentuk hierarkis adalah struktur data?"
+
+    mc "Hmmm yang dimaksud hierarkis itu apa ya?"
+
+    menu:
+
+        "Array":
+
+            "a. Array"
+
+            mc "Array itu yang indexnya dimulai dari 0 kan, itu ya yang berarti ."
+
+        "Linked List":
+
+            "b. Linked list"
+
+            mc "Feeling ku yang ini sihh…"
+
+        "Tree":
+
+            "c. Tree"
+
+            mc "Tree kan kalau gak salah dari node paling atas terus ke node yang bawah atau node anaknya. "
+
+        "Queue":
+
+            "d. Queue"
+
+            mc "Hierarkis berarti harus urut gitu kan."
+
+    "Menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+
+    "3. Untuk menyimpan data bilangan bernilai -3.4 , 4.4 , dan 5.0 kita bisa menggunakan tipe data?"
+
+    menu:
+    
+        "Float, Int, Double":
+
+            "a. Float, Int, Double"
+
+            mc "Hmmm kayaknya yang ini sih."
+
+        "Float dan Int":
+
+            "b. Float dan Int"
+
+            mc "Setahuku float bisa desimal, int bisa gak ya?"
+
+        "Int dan Double":
+
+            "c. Int dan Double"
+
+            mc "Cuma tahu doublenya aja, int bisa desimal gak ya?."
+
+        "Float dan Double":
+
+            "d. Float dan Double"
+
+            mc "Float dan double sih yang buat desimal, int bilangan bulat."
+
+    "Setelah menjawab pertanyaan nomor 3, tinggal 2 pertanyaan lagi yang tersisa."
+
+    "Merasa ingin segera menyelesaikan quiz, kamu meneruskan menjawab pertanyaan no 4."
+
+    "4. 	Manakah dibawah ini tipe data yang baik digunakan untuk mengambil keputusan dan hanya memiliki nilai ‘True’ dan ‘False’?"
+
+    menu:
+
+        "Boolean":
+
+            "a. Boolean"
+
+            mc "Iya, aku ingat boolean cuma bisa bernilai ‘True’ dan ‘False’"
+
+        "Date and Time":
+
+            "b. Date and Time"
+
+            mc "Kayaknya bukan yang ini deh…."
+
+        "Char":
+
+            "c. Char"
+
+            mc "Apa yang ini ya? Kalau gak salah char kan hanya bisa diisi satu karakter."
+
+        "String":
+
+            "d. String"
+
+            mc "String bisa buat nyimpen banyak kata kan… berarti baik buat mengambil keputusan nih."
+
+    "Selesai menjawab, kini ada satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan quiz pada siang hari ini."
+
+    "5. Mengapa kita sebaiknya menggunakan tipe data yang tepat dalam sistem kita, kecuali?"
+
+    menu:
+
+        "Tipe data yang tepat dapat mempermudah dalam pemrograman.":
+
+            "a. Tipe data yang tepat dapat mempermudah dalam pemrograman."
+
+            mc "Kayaknya bukan yang ini deh, tipe data ga mempermudah pemrograman."
+
+        "Efisiensi penggunaan memori.":
+
+            "b. Efisiensi penggunaan memori."
+
+            mc "Setahuku tipe data pemakaian memorinya sama semua…	"
+
+        "Kompatibilitas pada kode yang sedang dikembangkan.":
+
+            "c. Kompatibilitas pada kode yang sedang dikembangkan."
+
+            mc "Emang kalo tipe datanya salah jadi gabisa gitu kah?"
+
+        "Meningkatkan estetika program yang dikembangkan.":
+
+            "d. Meningkatkan estetika program yang dikembangkan."
+
+            mc "Estetika? Kan cuma dikodenya, bukan programnnya."
+
+    "Dengan menjawab pertanyaan terakhir, kini semua soal yang ada pada lembar soal telah kamu jawab."
+
+    "Kamu telah menyelesaikan quiz mata kuliah struktur data pada pagi hari ini."
+
+    "Kamu berdiri dan beranjak dari bangkumu kemudian berjalan untuk mengumpulkan lembar jawabanmu."
+
+    "Tidak lupa, sebelum mengumpulkan lembar jawabanmu kamu tuliskan nama dan NIMmu pada lembar jawaban."
+
+    "Kamu mengamati teman-temanmu sebagian besar telah menyelesaikan quiz mereka, hanya tinggal beberapa temanmu saja yang masih sibuk menulis jawaban pada lembar jawab."
+
+    "Setelah mengumpulkan lembar jawaban, kamu kembali menuju bangkumu dan menunggu hingga semua temanmu telah menyelesaikan quiz yang diberikan."
+
+    scene bg campus class with fade
+
+    "Kurang lebih 15 menit, semua mahasiswa telah menyelesaikan quiz yang diberikan. Kini [bn] sedang menjelaskan mengenai materi yang akan digunakan sebagai bahan soal untuk ujian akhir semester."
+
+    bn normal "Teman-teman, mungkin seperti yang telah kalian ketahui, materi yang akan digunakan sebagai materi ujian akhir semester adalah semua materi yang telah diajarkan ya."
+
+    bn "Soal ujian tengah semester kemarin dan soal quiz pada pagi hari ini bisa ibu jadikan soal untuk ujian nanti."
+
+    bn "Jadi selamat belajarnya ya teman-teman."
+
+    t normal "Wahhh lumayan banyak dong."
+
+    t "Hmmm berarti ketambahan materi tipe data itu…"
+
+    t "Kalau soal yang tadi sih aku lumayan bisa, semoga aja mirip-mirip."
+
+    r normal2 "Berarti tinggal ringkasan yang dulu ditambah ringkasan pertemuan 3 aja ya"
+
+    bn "Kalau begitu ibu tutup ya, pertemuan hari ini. Selamat belajar dan semoga mendapatkan hasil yang diinginkan pada ujian nanti."
+
+    bn "Terimakasih sudah mengikuti kelas sampai pertemuan kali ini, sampai jumpa pada pertemuan selanjutnya teman-teman."
+
+    t "Terimakasih bu."
+
+    t "Terimakasihhh"
+
+    r "Terimakasih juga buu."
+
+    "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. Kamu keluar dari ruangan kelas dan bersiap untuk kelas berikutnya."
+
+    call attend_strukdat
+    call attend_class
 
     jump basdat_4
 

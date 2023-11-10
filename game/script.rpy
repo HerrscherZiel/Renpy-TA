@@ -9,13 +9,12 @@
 
 define r = Character("Rissa", image="r")
 define j = Character("TriJe", image="t")
-# define mc = Character("Mc", image="mc") 
 define mc = Character("You", image="mc")
 define w = Character("Warga", image="w")
 define pa = Character("Pak Andy", image="pa")
 define bn = Character("Bu Nira", image="bn")
 define aa1 = Character("Aa'", image="anonM")
-define kev = Character("Kevin", image="anonM")
+define kev = Character("Kevin", image="kev")
 define t = Character("Teman", image="t")
 define k = Character("Kating", image="t")
 define stall = Character("Kak Stand", image="anonM")
@@ -1229,6 +1228,85 @@ label days:
 
         call screen mapUI with dissolve
 
+    elif day == 16:
+
+        show screen trans_screen with dissolve
+        scene bg kos morn with dissolve
+        pause 2.0
+
+        "RINGGG RINGGG RINGGG"
+        #sfx alarm
+
+        "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
+
+        "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidurm yang disebelah kepalamu untuk mencari HPmu."
+
+        "Setelah menemukannya, kamu langsung mematikan alarm yang terus berdenging nyaring."
+
+        "Melihat waktu yang masih pagi, sebenarnya kamu masih merasa ngantuk."
+
+        "Namun kamu paksakan tubuhmu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk itu."
+
+        "Beberapa menit kemudian, kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
+
+        "Kamu bersandar pada salah satu sisi tembok yang ada pada kamarmu."
+
+        "{i}Bzzzzz... Test... Test... 1..2.. 3..{/i}"
+        
+        "{i}Selamat pagi warga.....{/i}"
+
+        "Tiba-tiba terdengar suara toa dari masjid."
+
+        "Kamu diam dan mendengarkan pengumuman yang disiarkan pagi hari itu."
+
+        "............"
+
+        scene bg kos morn with fade
+
+        "Pengumuman tersebut berkumandang selama beberapa menit."
+
+        "Setelah mendengarkan pengumuman dari awal hingga akhir, kamu mengetahui bahwa akan diadakan kerja bakti dilingkungan tempat kosanmu."
+
+        "Kerja bakti itu akan diadakan pagi hari dan selesai ketika matahari sudah berada tepat diatas kepala."
+
+        "Pengumuman tersebut ditujukan bagi para warga dan penghuni kosan yang berada lingkungan sekitar."
+
+        "Tidak perlu membawa peralatan masing-masing, karena sudah disiapkan oleh warga sekitar."
+
+        "Kamu bisa memilih untuk mengikuti kerja bakti tersebut atau tidak."
+
+        "Setelah beberapa waktu berpikir, akhirnya kamu memutuskan untuk:"
+
+            menu:
+
+                "Ikut kerja bakti":
+
+                    mc normal jacket "Tidak ada salahnya aku ikut kegiatan tersebut, anggap aja sambil bersosialisasi sekaligus olahraga hahaha."
+
+                    "Setelah memutuskan untuk mengikuti kegiatan kerja bakti, kamu tidak segera menyiapkan diri dan keluar dari kosan."
+
+                    "Namun kamu kembali berbaring di atas tempat tidurmu, sambil memeluk bantal dan menutupi tubuhmu dengan selimut."
+                    
+                    "Karena kegiatan kerja bakti masih akan dilakukan sekitar satu jam lagi, kamu kembali bermalas-malasan di atas tempat tidur."
+
+                    "Kamu menghabiskan waktu sembari meneruskan tidurmu hingga kegiatan kerja bakti dimulai."
+
+                    jump kerja_bakti
+
+                "Tidak Ikut kerja bakti":
+
+                    mc normal jacket "Pengin ikut sih, tapi kok badan masih kerasa capek begini yaa?"
+
+                    mc "Apa mending gausah ikut aja ya, males juga keluar pagi-pagi gini."
+                
+                    mc "Uahhhhhhhhhhhh"
+
+                    "Kamu menguap dan merangkan badanmu sebelum akhirnya kembali menyelimuti badanmu menggunakan selimut."
+
+                    "Kamu kembali terlelap untuk beberapa menit hingga kamu kembali terbangun dan bersiap melakukan aktivitas pagi harimu."
+
+                    call screen mapUI with dissolve
+                
     elif day == 17:
 
         "ban bocor"
@@ -1646,6 +1724,18 @@ label attend_class:
 
     return
 
+#social
+label kerja_bakti_kampung:
+    $ public += 20
+    $ vit += 15
+    $ community += 10
+    $ hunger += 10
+    show screen stats_changer("kerja_bakti", 0)
+
+    "Stat Berubah!!!"
+
+    return
+
 label stat_change:
 
     if hunger >= 100:
@@ -1673,6 +1763,7 @@ label stat_change:
         $weakCount +=1 
     
     return
+
 
 
 # label kaga:
