@@ -74,10 +74,11 @@ screen stats:
         background "menuUI/stats/stats screen.png"
 
         hbox:
-            xpos 360
+            xpos 370
             ypos 355
             spacing 450
             $ health = round((hunger+energy+vit) / 3)
+            $ academic = round((knowledge+practice+application) / 3)
             text "[health]" size 40 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
             text "[academic]" size 40 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
         
@@ -85,6 +86,7 @@ screen stats:
             xpos 1350
             ypos 355
             spacing 460
+            $ social = round((friend+community+public) / 3)
             text "[social]" size 40 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
         #health
         bar:

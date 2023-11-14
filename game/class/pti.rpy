@@ -75,7 +75,7 @@ label pti_1:
 
     "Informasi mengenai Tugas dapat diakses menggunakan menu tugas, dan dapat dikerjakan ketika kalian memilih ikon mengerjakan tugas pada menu {b}MAP{/b}."
 
-    p"Mengerjakan tugas akan menghabiskan satu fase waktu, jadi pilihlah waktu yang tepat!!"
+    pa "Mengerjakan tugas akan menghabiskan satu fase waktu, jadi pilihlah waktu yang tepat!!"
 
     "Pada satu waktu pengerjaan tugas kalian dapat mengerjakan 2 tugas."
 
@@ -325,13 +325,13 @@ label pti_3:
 
     "Sembari menunggu kamu mengeluarkan HPmu dan memainkan beberapa aplikasi yang terdapat di dalam HPmu."
 
-    "Kemudian selagi kamu sibuk dengan HPmu, satu persatu mahasiswa mulai memasuki ruang kelas, sebelum pada akhirnya [PA] juga memasuki ruangan."
+    "Kemudian selagi kamu sibuk dengan HPmu, satu persatu mahasiswa mulai memasuki ruang kelas, sebelum pada akhirnya [pa] juga memasuki ruangan."
 
     "Hari ini merupakan pertemuan ke-3 mata kuliah PTI" 
     
-    "Kelas dimulai setelah [PA] selesai mengatur peralatannya."
+    "Kelas dimulai setelah [pa] selesai mengatur peralatannya."
 
-    scene bg class room with dissolve
+    scene bg campus class with dissolve
 
     pa normal "Selamat pagi teman-teman kita bertemu lagi setelah minggu kemarin kalian telah melaksanakan ujian tengah semester."
 
@@ -365,7 +365,7 @@ label pti_3:
 
     show screen pti_3_1
 
-    pa "Menurut G.J. Simmons, keamanan sistem informasi merupakan langkah-langkah pencegahan yang dilakukan pada suatu sistem berbasis 
+    pa class "Menurut G.J. Simmons, keamanan sistem informasi merupakan langkah-langkah pencegahan yang dilakukan pada suatu sistem berbasis 
     informasi yang berbentuk non-fisik dengan tujuan untuk mencegah tindakan-tindakan penipuan."
 
     pa "Dapat kita simpulkan juga keamanan sistem informasi merupakan sebuah prosedur yang dapat digunakan dalam mencegah kegiatan-kegiatan yang mampu merugikan 
@@ -448,11 +448,11 @@ label pti_3:
 
     "Kelas dilanjutkan dengan [pa] yang menampilkan contoh-contoh dari malware yang diterangkan."
 
-    hide screen pti_3_5
+    hide screen pti_3_6 with dissolve
 
     "[pa] memberi contoh dengan langsung mencari contoh malware yang bisa ditemukan di internet, kemudian dilanjutkan dengan sesi tanya jawab hingga jam pelajaran usai."
 
-    scene bg class room with fade
+    scene bg campus class with fade
 
     pa normal "Mungkin sampai disini dulu pertemuan kita hari ini." 
     
@@ -461,7 +461,7 @@ label pti_3:
     pa "Oh iya sebelum saya tutup, saya mau memberi tahu kalau nilai ujian kemarin sudah keluar ya."
 
     "Mendengar informasi mengenai hasil ujian tengah semester kemarin, terdapat beberapa reaksi dari teman sekelasmu. Beberapa dari mereka terlihat gembira dan tidak sabar untuk melihat hasil pekerjaan mereka."
-	
+
     pa "Untuk mengeceknya kalian bisa membuka simaster, kemudian menu akademik kemahasiswaan, lalu pada sub menu akademik pilih hasil studi."
 
     pa "Silahkan dilihat sendiri-sendiri ya."
@@ -484,7 +484,7 @@ label pti_3:
 
 label pti_4:
 
-    scene bg class room with dissolve
+    scene bg campus class with dissolve
 
     "Kamu memasuki ruang kelas pertama untuk perkuliahan hari ini, belum terlihat banyak mahasiswa yang sudah berada di dalam kelas."
 
@@ -498,15 +498,15 @@ label pti_4:
 
     "Hari ini merupakan pertemuan ke-4 mata kuliah PTI, [pa] mengatur peralatan mengajarnya sebelum membuka pertemuan pada pagi hari ini."
 
-    scene bg class room with fade
+    scene bg campus class with fade
 
-    pa "normal Selamat pagi teman-teman, pada pagi hari ini kita bertemu lagi pada pertemuan terakhir mata kuliah pengantar teknologi informasi."
+    pa normal "Selamat pagi teman-teman, pada pagi hari ini kita bertemu lagi pada pertemuan terakhir mata kuliah pengantar teknologi informasi."
 
     pa "Pada pagi hari ini bapak akan sedikit menerangkan mengenai komponen-komponen sistem informasi."
 
-    show screen pti_4_1
+    show screen pti_4_1 with dissolve
 
-    pa "Komponen yang pertama adalah perangkat keras atau hardware. Sesuai namanya hardware merupakan perangkat fisik yang ada pada sistem."
+    pa class "Komponen yang pertama adalah perangkat keras atau hardware. Sesuai namanya hardware merupakan perangkat fisik yang ada pada sistem."
 
     pa "Perangkat fisik yang digunakan dapat dikelompokan menjadi beberapa kelompok seperti:"
 
@@ -583,13 +583,13 @@ label pti_4:
 
     pa "Semua komponen merupakan komponen-komponen yang ada dan membentuk sebuah sistem informasi."
 
-    hide screen pti_4_4
+    hide screen pti_4_4 with fade
 
-    pa "Mungkin materi pagi hari ini sampai disini dulu ya, mungkin ada yang ingin ditanyakan?"
+    pa normal "Mungkin materi pagi hari ini sampai disini dulu ya, mungkin ada yang ingin ditanyakan?"
 
     "Kelas dilanjutkan dengan sesi tanya jawab hingga kelas waktu pertemuan telah habis."
 
-    scene bg campus class with fade
+    scene bg campus class with Dissolve(2.0)
 
     pa normal "Karena ini pertemuan terakhir mata kuliah ini jadi bapak ucapkan terimakasih sudah mengikuti mata kuliah ini."
 

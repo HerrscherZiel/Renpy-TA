@@ -987,6 +987,10 @@ label istirahat:
 
             "Kalian kembali ke kampus, dan bersiap untuk kelas yang berikutnya."
 
+    scene bg campus hall with dissolve
+
+    "Sesampainya di kampus kamu langsung berjalan menuju kelas terakhirmu di hari ini."
+
     return
 
 label uts_1:

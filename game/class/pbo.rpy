@@ -331,7 +331,6 @@ label uts_pbo:
 
     jump uts_jarkom
 
-
 label pbo_3:
 
     scene bg campus class with dissolve
@@ -358,7 +357,7 @@ label pbo_3:
 
     show screen pbo_3_1 with fade
 
-    pa "Pertama, kita akan membahas mengenai prinsip Enkapsulasi. Prinsip ini merupakan prinsip yang mencakup pembungkusan suatu atribut atau metode dalam sebuah objek. "
+    pa class "Pertama, kita akan membahas mengenai prinsip Enkapsulasi. Prinsip ini merupakan prinsip yang mencakup pembungkusan suatu atribut atau metode dalam sebuah objek. "
 
     pa "Hal ini menyebabkan adanya pembatasan akses pada atribut atau metode yang ada, sehingga atribut atau metode yang ada tersebut tidak dapat diakses dari luar objek dan mampu menyembunyikan detail implementasi suatu objek."
 
@@ -444,11 +443,11 @@ label pbo_3:
 
     pa "Kurang lebih seperti jika kita mengambil contoh implementasi pada kehidupan sehari-hari ya."
 
-    pa" Dan mungkin itu saja kelas kita untuk hari ini, kita telah mempelajari mengenai prinsip pada PBO yaitu prinsip enkapsulasi dan prinsip abstraksi secara lebih lanjut."
+    pa "Dan mungkin itu saja kelas kita untuk hari ini, kita telah mempelajari mengenai prinsip pada PBO yaitu prinsip enkapsulasi dan prinsip abstraksi secara lebih lanjut."
 
-    hide screen pbo_3_5
+    hide screen pbo_3_5 with dissolve
 
-    pa "Besok pada pertemuan selanjutnya kita akan membahas mengenai sisa prinsip yang belum kita bahas pada hari ini ya."
+    pa normal "Besok pada pertemuan selanjutnya kita akan membahas mengenai sisa prinsip yang belum kita bahas pada hari ini ya."
 
     pa "Karena masih ada waktu, mungkin jika ada pertanyaan bisa ditanyakan sekarang teman-teman."
 
@@ -458,7 +457,7 @@ label pbo_3:
 
     pa "Saya kira cukup untuk pertemuan kali ini, terima kasih telah berpartisipasi pada pertemuan kali ini dan sampai ketemu minggu depan teman-teman."
 
-    r "Terimakasih pak…"
+    r normal2 "Terimakasih pak…"
 
     t normal "Terimakasih…"
 
@@ -474,7 +473,7 @@ label pbo_4:
 
     scene bg campus class with dissolve
 
-    pa "normal Selamat pagi teman-teman, hari ini kita bertemu lagi dengan saya dalam pertemuan terakhir mata kuliah PBO."
+    pa normal "Selamat pagi teman-teman, hari ini kita bertemu lagi dengan saya dalam pertemuan terakhir mata kuliah PBO."
 
     pa "Seperti yang sudah bapak katakan minggu kemarin, kalau kalian masih ingat tentunya. 
     Kita akan mempelajari lebih detail mengenai prinsip-prinsip yang ada dalam PBO."
@@ -495,7 +494,7 @@ label pbo_4:
 
     show screen pbo_4_1 with fade
 
-    pa "Pertama, kita akan membahas mengenai prinsip inheritance dalam PBO."
+    pa class "Pertama, kita akan membahas mengenai prinsip inheritance dalam PBO."
 
     pa "Sesuai yang kalian sudah pelajari sebelumnya, prinsip inheritance atau pewarisan ini memiliki pengertian dimana sebuah kelas dalam PBO 
     dapat menurunkan atau mewariskan atribut dan method yang dimiliki pada kelas lainnya."

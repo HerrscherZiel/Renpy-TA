@@ -343,6 +343,8 @@ label basdat_3:
 
     "Setelah memasuki ruang kelas, seperti biasanya kamu memiliki untuk menempati duduk yang berada di dekat jendela."
 
+    scene bg campus class with fade
+
     "Selagi menunggu dosen yang belum kunjung datang, kamu mengobrol dengan teman yang duduk di sebelahmu untuk menghabiskan waktu ."
 
     "10 menit berlalu setelah kamu dan teman sekelasmu memasuki ruangan, terlihat [pa] berjalan mendekati ruang kelas  pertanda kelas akan segera dimulai."
@@ -359,7 +361,7 @@ label basdat_3:
 
     show screen basdat_3_1 with fade
 
-    pa "Data definition language pada basis data sendiri memiliki berbagai macam kegunaan, seperti dapat digunakan untuk menambah, mengubah, menghapus, mengelola indeks, mendefinisikan fungsi, dan lain sebagainya."
+    pa class "Data definition language pada basis data sendiri memiliki berbagai macam kegunaan, seperti dapat digunakan untuk menambah, mengubah, menghapus, mengelola indeks, mendefinisikan fungsi, dan lain sebagainya."
 
     pa "Pada pertemuan hari ini kita akan mengenal lebih lanjut, syntax atau perintah dan kegunaannya. Kali ini kita akan mempelajari data definition language menggunakan basis data MySQL."
 
@@ -484,7 +486,7 @@ label basdat_3:
 
     pa "Hari ini kita mempelajari mengenai membuat basis data, membuat table, menambahkan kolom, dan menghapus tabel."
 
-    hide screen basdat_3_6
+    hide screen basdat_3_6 with fade
 
     pa "Mungkin itu dulu dari saya, kalian bisa mempelajari kegunaan lebih lanjut dari syntax create, alter, dan drop sendiri ya."
 
@@ -545,7 +547,7 @@ label basdat_4:
 
     show screen basdat_4_1 with fade
 
-    pa "Data manipulation language pada basis data sendiri memiliki berbagai macam kegunaan, seperti dapat digunakan untuk 
+    pa class "Data manipulation language pada basis data sendiri memiliki berbagai macam kegunaan, seperti dapat digunakan untuk 
     menyisipkan data(Insert), memperbarui data(update), menghapus data(delete), dan untuk memilih data(select) ."
 
     pa "Pada pertemuan hari ini kita akan mengenal lebih lanjut, syntax atau perintah dan kegunaannya. 
@@ -629,15 +631,15 @@ label basdat_4:
     
     pa "Terlihat data dengan nama Budi telah berubah menjadi Budiyono."
 
-    hide screen basdat_4_5
+    hide screen basdat_4_5 with dissolve
 
-    pa "Hari ini kita telah mempelajari mengenai menambahkan data, melihat data, menghapus data, dan merubah data."
+    pa normal "Hari ini kita telah mempelajari mengenai menambahkan data, melihat data, menghapus data, dan merubah data."
 
     pa "Mungkin itu dulu dari saya, kalian bisa mempelajari kegunaan lebih lanjut dari sendiri ya."
 
     scene bg campus class with dissolve
 
-    pa "Ini merupakan pertemuan terakhir, jadi bapak akan memberi tahu materi yang akan digunakan untuk ujian akhir semester nanti."
+    pa normal "Ini merupakan pertemuan terakhir, jadi bapak akan memberi tahu materi yang akan digunakan untuk ujian akhir semester nanti."
 
     pa "Materi untuk ujian nanti adalah materi dari pertemuan ke-3 dan ke-4 ya teman-teman."
 
@@ -650,6 +652,10 @@ label basdat_4:
     "Hingga akhir waktu pertemuan [pa] masih menjelaskan dan menjawab pertanyaan yang diajukan oleh mahasiswa."
 
     "Setelah semua pertanyaan terjawab [pa] menutup pertemuan pagi hari ini."
+
+    scene bg black with Dissolve(1.0)
+
+    scene bg campus class with fade
 
     pa normal "Terimakasih teman-teman sudah aktif dalam pertemuan pada mata kuliah ini."
 

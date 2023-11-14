@@ -1277,39 +1277,39 @@ label days:
 
         "Setelah beberapa waktu berpikir, akhirnya kamu memutuskan untuk:"
 
-            menu:
+        menu:
 
-                "Ikut kerja bakti":
+            "Ikut kerja bakti":
 
-                    mc normal jacket "Tidak ada salahnya aku ikut kegiatan tersebut, anggap aja sambil bersosialisasi sekaligus olahraga hahaha."
+                mc normal jacket "Tidak ada salahnya aku ikut kegiatan tersebut, anggap aja sambil bersosialisasi sekaligus olahraga hahaha."
 
-                    "Setelah memutuskan untuk mengikuti kegiatan kerja bakti, kamu tidak segera menyiapkan diri dan keluar dari kosan."
+                "Setelah memutuskan untuk mengikuti kegiatan kerja bakti, kamu tidak segera menyiapkan diri dan keluar dari kosan."
 
-                    "Namun kamu kembali berbaring di atas tempat tidurmu, sambil memeluk bantal dan menutupi tubuhmu dengan selimut."
-                    
-                    "Karena kegiatan kerja bakti masih akan dilakukan sekitar satu jam lagi, kamu kembali bermalas-malasan di atas tempat tidur."
-
-                    "Kamu menghabiskan waktu sembari meneruskan tidurmu hingga kegiatan kerja bakti dimulai."
-
-                    jump kerja_bakti
-
-                "Tidak Ikut kerja bakti":
-
-                    mc normal jacket "Pengin ikut sih, tapi kok badan masih kerasa capek begini yaa?"
-
-                    mc "Apa mending gausah ikut aja ya, males juga keluar pagi-pagi gini."
+                "Namun kamu kembali berbaring di atas tempat tidurmu, sambil memeluk bantal dan menutupi tubuhmu dengan selimut."
                 
-                    mc "Uahhhhhhhhhhhh"
+                "Karena kegiatan kerja bakti masih akan dilakukan sekitar satu jam lagi, kamu kembali bermalas-malasan di atas tempat tidur."
 
-                    "Kamu menguap dan merangkan badanmu sebelum akhirnya kembali menyelimuti badanmu menggunakan selimut."
+                "Kamu menghabiskan waktu sembari meneruskan tidurmu hingga kegiatan kerja bakti dimulai."
 
-                    "Kamu kembali terlelap untuk beberapa menit hingga kamu kembali terbangun dan bersiap melakukan aktivitas pagi harimu."
+                jump kerja_bakti
 
-                    call screen mapUI with dissolve
+            "Tidak Ikut kerja bakti":
+
+                mc normal jacket "Pengin ikut sih, tapi kok badan masih kerasa capek begini yaa?"
+
+                mc "Apa mending gausah ikut aja ya, males juga keluar pagi-pagi gini."
+            
+                mc "Uahhhhhhhhhhhh"
+
+                "Kamu menguap dan merangkan badanmu sebelum akhirnya kembali menyelimuti badanmu menggunakan selimut."
+
+                "Kamu kembali terlelap untuk beberapa menit hingga kamu kembali terbangun dan bersiap melakukan aktivitas pagi harimu."
+
+                call screen mapUI with dissolve
                 
     elif day == 17:
 
-        "ban bocor"
+        jump bangun
 
     elif day == 25:
 
@@ -1475,13 +1475,20 @@ label sleep:
 
         "Paling tidak minggu-minggu ujian telah berakhir, dan kamu kembali menjalani aktivitas kuliah seperti biasanya."
 
- 
+    elif day == 17:
+
+        "Kamu teringat hasil ujian tengah semester sudah keluar dan bisa untuk dilihat."
+
+        "Kamu merasa cukup puas dengan apapun hasil yang kamu dapatkan, karena kamu merasa dirimu sudah cukup berusaha sewaktu ujian kemarin."
+
+        "Meskipun begitu, kamu menyadari jika dirimu masih harus terus lebih giat dalam berkuliah, sehingga hasil yang didapatkan meningkat."
+
     else:
         pass
 
     "Mengingat apa yang ada dalam pikiranmu dalam sehari ini membuatmu tambah mengantuk."
 
-    "Kemudian tidak lama berselang, kesadaranmupun perlahan mulai menghilang."
+    "Kemudian tidak lama berselang, kesadaranmu perlahan mulai menghilang."
 
     "Setelah mata terutup dan pandanganmu menjadi gelap, kamu tertidur pulas pada malam hari ini."
 
@@ -1525,7 +1532,7 @@ label bangun:
 
     "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
 
-    "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidurm yang disebelah kepalamu untuk mencari HPmu."
+    "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidur yang disebelah kepalamu untuk mencari HPmu."
 
     "Setelah menemukannya, kamu langsung mematikan alarm yang terus berdenging nyaring."
 
@@ -1701,6 +1708,17 @@ label jog:
 
     return
 
+label jalan_sehatS:
+
+    $ vit += 35
+    $ energy -= 30
+    $ hunger -= 20
+
+    "Stats Berubah!!!"
+    show screen stats_changer("jalan_sehatS", 0)
+
+    return
+
 label futsal:
 
     $ vit += 35
@@ -1726,6 +1744,7 @@ label attend_class:
 
 #social
 label kerja_bakti_kampung:
+    
     $ public += 20
     $ vit += 15
     $ community += 10
@@ -1735,6 +1754,24 @@ label kerja_bakti_kampung:
     "Stat Berubah!!!"
 
     return
+
+label hangout:
+
+    $ public += 10
+    $ hunger += 10
+    $ friend += 5
+    show screen stats_changer("hangout", 0)
+
+    "Stat Berubah!!!"
+
+label hima_act:
+
+    $ public += 10
+    $ community += 20
+    $ friend += 5
+    show screen stats_changer("hima_act", 0)
+
+    "Stat Berubah!!!"
 
 label stat_change:
 

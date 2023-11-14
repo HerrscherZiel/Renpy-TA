@@ -313,7 +313,6 @@ label uts_strukdat:
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari membaca materi mata kuliah yang akan diujikan setelahnya."
 
     jump uts_basdat
-
             
 label strukdat_3:
 
@@ -331,7 +330,7 @@ label strukdat_3:
 
     "Satu persatu mahasiswa memasuki ruang kelas, sebelum pada akhirnya [bn] memulai perkuliahan pagi hari ini."
 
-    scene bg class room with fade
+    scene bg campus class with fade
 
     bn normal "Selamat pagi teman-teman kita bertemu lagi setelah minggu kemarin melakukan ujian tengah semester."
 
@@ -351,7 +350,7 @@ label strukdat_3:
 
     show screen strukdat_3_1 with fade
 
-    bn "Tipe data dalam pemrograman merupakan sebuah konsep pengklasifikasian sebuah data dimana klasifikasi tersebut mampu menggambarkan jenis nilai yang dapat disimpan atau dioperasikan dalam sebuah program."
+    bn class "Tipe data dalam pemrograman merupakan sebuah konsep pengklasifikasian sebuah data dimana klasifikasi tersebut mampu menggambarkan jenis nilai yang dapat disimpan atau dioperasikan dalam sebuah program."
 
     bn "Ada banyak macam tipe data yang terdapat dalam pemrograman, dibawah ini merupakan sedikit contoh dan pembahasan mengenai tipe data."
 
@@ -478,6 +477,8 @@ label strukdat_3:
 
             bn "Iya benar, itu semua yang akan menjadi materi quiz dan ujian akhir semester nanti ya."
 
+            $ a_strukdatC += 5
+
         "………":
 
             t "Struktur data Tree, Graph terus yang satu lagi apa ya?"
@@ -547,20 +548,26 @@ label strukdat_4:
 
     "Kamu mulai mengerjakan soal yang terdapat pada layar HPmu."
 
+    show screen strukdat_4_0 with fade
+
     "Seperti yang dikatakan oleh [bn] terdapat 5 soal yang ada pada lembar soal."
 
     "Soal pertama yang terdapat lembar soal adalah:"
 
     "1. Apakah yang dimaksud dengan Struktur Data dalam pemrograman?"
 
+    show screen strukdat_4_1 with dissolve
+
     menu:
         "a. Sebuah metode atau cara dalam menyusun, mengatur, dan menyimpan data pada komputer agar menjadi lebih efektif dan efisien":
 
-            "a. Sebuah metode atau cara dalam menyusun, mengatur, dan menyimpan data pada komputer agar menjadi lebih efektif dan efisien."
-            mc "Yupps ini jawabannya."
+            "a. Sebuah metode dalam menyusun, mengatur, dan menyimpan data pada komputer agar menjadi lebih efektif dan efisien."
+            $a_strukdatC += 2
+
+            mc normal jacket "Yupps ini jawabannya."
 
         "b. Salah satu bahasa pemrograman yang saat ini digunakan pada semua bidang kehidupan.":
-		
+
             "b. Salah satu bahasa pemrograman yang saat ini digunakan pada semua bidang kehidupan."
 
             mc "Kayaknya bukan yang ini deh, tapi apa ya…"
@@ -579,9 +586,13 @@ label strukdat_4:
 
     "Selesai menjawab pertanyaan pertama, kamu kemudian melanjutkan ke pertanyaan kedua."
 
+    hide screen strukdat_4_1 with dissolve
+
     "2. 	Struktur data yang memiliki bentuk hierarkis adalah struktur data?"
 
     mc "Hmmm yang dimaksud hierarkis itu apa ya?"
+
+    show screen strukdat_4_2 with dissolve
 
     menu:
 
@@ -600,6 +611,7 @@ label strukdat_4:
         "Tree":
 
             "c. Tree"
+            $a_strukdatC += 2
 
             mc "Tree kan kalau gak salah dari node paling atas terus ke node yang bawah atau node anaknya. "
 
@@ -611,7 +623,11 @@ label strukdat_4:
 
     "Menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
 
+    hide screen strukdat_4_2 with dissolve
+
     "3. Untuk menyimpan data bilangan bernilai -3.4 , 4.4 , dan 5.0 kita bisa menggunakan tipe data?"
+
+    show screen strukdat_4_3 with dissolve
 
     menu:
     
@@ -636,6 +652,7 @@ label strukdat_4:
         "Float dan Double":
 
             "d. Float dan Double"
+            $a_strukdatC += 2
 
             mc "Float dan double sih yang buat desimal, int bilangan bulat."
 
@@ -643,13 +660,18 @@ label strukdat_4:
 
     "Merasa ingin segera menyelesaikan quiz, kamu meneruskan menjawab pertanyaan no 4."
 
+    hide screen strukdat_4_3 with dissolve
+
     "4. 	Manakah dibawah ini tipe data yang baik digunakan untuk mengambil keputusan dan hanya memiliki nilai ‘True’ dan ‘False’?"
+
+    show screen strukdat_4_4 with dissolve
 
     menu:
 
         "Boolean":
 
             "a. Boolean"
+            $a_strukdatC += 2
 
             mc "Iya, aku ingat boolean cuma bisa bernilai ‘True’ dan ‘False’"
 
@@ -673,7 +695,11 @@ label strukdat_4:
 
     "Selesai menjawab, kini ada satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan quiz pada siang hari ini."
 
+    hide screen strukdat_4_4 with dissolve
+
     "5. Mengapa kita sebaiknya menggunakan tipe data yang tepat dalam sistem kita, kecuali?"
+
+    show screen strukdat_4_5 with dissolve
 
     menu:
 
@@ -698,12 +724,17 @@ label strukdat_4:
         "Meningkatkan estetika program yang dikembangkan.":
 
             "d. Meningkatkan estetika program yang dikembangkan."
+            $a_strukdatC += 2
 
             mc "Estetika? Kan cuma dikodenya, bukan programnnya."
 
     "Dengan menjawab pertanyaan terakhir, kini semua soal yang ada pada lembar soal telah kamu jawab."
 
     "Kamu telah menyelesaikan quiz mata kuliah struktur data pada pagi hari ini."
+
+    hide screen strukdat_4_5 with dissolve
+
+    hide screen strukdat_4_0 with dissolve
 
     "Kamu berdiri dan beranjak dari bangkumu kemudian berjalan untuk mengumpulkan lembar jawabanmu."
 

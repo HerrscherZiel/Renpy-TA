@@ -380,7 +380,7 @@ label de_3:
 
     show screen de_3_1 with fade
 
-    pa "Warna merupakan salah satu aspek visual yang terdapat pada spektrum cahaya. 
+    pa class "Warna merupakan salah satu aspek visual yang terdapat pada spektrum cahaya. 
     Identitas warna dapat diketahui melalui panjang gelombang yang dimiliki. 
     Semisal panjang gelombang 711 nanometer merupakan panjang gelombang dari warna hijau."
 
@@ -525,11 +525,15 @@ label de_4:
 
     "Kamu mulai mengerjakan soal yang terdapat pada layar HPmu. Kamu melihat terdapat 5 soal yang ada lembar quiz."
 
+    show screen de_4_0 with fade
+
     "Soal pertama yang terdapat lembar soal adalah:"
 
     "Gabungan dari beberapa garis yang membentuk suatu kesatuan dan membuat ruang yang tertutup merupakan pengertian dari unsur seni?"
 
     mc normal jacket "Hmmm kalau gabungan unsur titik itu kan garis, kalau gabungan garis berarti…"
+
+    show screen de_4_1 with dissolve
 
     menu:
         "a. Unsur Tekstur":
@@ -539,6 +543,7 @@ label de_4:
 
         "b. Unsur Bidang":
             "b. Unsur Bidang"
+            $ a_deC += 2
 
             mc "Unsur bidang kan ya?"
 
@@ -549,9 +554,13 @@ label de_4:
 
     "Selesai menjawab pertanyaan pertama, kamu kemudian melanjutkan ke pertanyaan kedua."
 
+    hide screen de_4_1 with dissolve
+
     "2. 	Manakah dibawah ini yang bukan merupakan prinsip-prinsip seni?"
 
     mc "Kalau enggak salah waktu itu diterangin 6 prinsip seni, masih inget enggak ya?"
+
+    show screen de_4_2 with dissolve
 
     menu:
 
@@ -575,19 +584,25 @@ label de_4:
 
         "Prinsip Perbedaan":
 
-            d. Prinsip Perbedaan
+            "d. Prinsip Perbedaan"
+            $ a_deC += 2
 
             mc "Prinsip perbedaan itu bukan salah satu prinsip seni."
 
     "Menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
 
+    hide screen de_4_2 with dissolve
+
     "3. Teori warna mengelompokkan warna menjadi beberapa golongan warna, manakah dibawah ini yang bukan merupakan warna dalam satu golongan warna pada teori warna?"
+
+    show screen de_4_3 with dissolve
 
     menu:
         
         "Merah, Hitam, Ungu":
 
             "a. Merah, Hitam, Ungu"
+            $ a_deC += 2
 
             mc "Ini sih ga dalam satu golongan warna."
 
@@ -607,7 +622,11 @@ label de_4:
 
     "Merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
 
+    hide screen de_4_3 with dissolve
+
     "4. 	Menggunakan warna-warna yang bersebelahan satu sama lain pada roda warna merupakan contoh pengaplikasian dari skema warna?"
+
+    show screen de_4_4 with dissolve
 
     menu:
         "Komplementer":
@@ -625,6 +644,7 @@ label de_4:
         "Analog":
 
             "c. Analog"
+            $ a_deC += 2
 
             mc "Analog itu merupakan skema warna yang menggunakan warna yang bersebelahan pada roda warna."
 
@@ -636,7 +656,11 @@ label de_4:
 
     "Selesai menjawab, kini ada satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan quiz pada siang hari ini."
 
+    hide screen de_4_4 with dissolve
+
     "5. Variasi warna yang dapat kita dapatkan dengan mencampur warna putih, hitam, atau abu-abu disebut dengan warna… kecuali."
+
+    show screen de_4_5 with dissolve
 
     menu:
         "Shades":
@@ -648,6 +672,7 @@ label de_4:
         "Monokrom":
 
             "b. Monokrom"
+            $ a_deC += 2
 
             mc "Kalau monokrom berarti hitam putih kan…	"
 
@@ -662,6 +687,10 @@ label de_4:
             "d. Tone"
 
             mc "Tone kayaknya bukan deh."
+
+    hide screen de_4_5 with dissolve
+
+    hide screen de_4_0 with dissolve
 
     scene bg campus class with fade
 

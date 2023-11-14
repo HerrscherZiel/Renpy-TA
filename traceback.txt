@@ -1,52 +1,56 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/kampung.rpy", line 246, in script call
+  File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/kampung.rpy", line 246, in script call
+  File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1199, in script call
+  File "game/script.rpy", line 1198, in script call
     call bangun_libur
-  File "game/kampung.rpy", line 246, in script call
+  File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/minimart.rpy", line 584, in script call
-    call belajar_pti_1
-  File "game/minimart.rpy", line 907, in script
-    show screen pti_2_1 with dissolve
-  File "renpy/common/000statements.rpy", line 588, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-Exception: Screen pti_2_1 is not known.
-
+  File "game/kampung.rpy", line 374, in script call
+    call sport_mornS1
+  File "game/kampung.rpy", line 374, in script call
+    call sport_mornS1
+  File "game/town.rpy", line 288, in script call
+    call sport_nightS2
+  File "game/class/alpro.rpy", line 650, in script
+    scene bg black with dissolve(3.0)
+TypeError: 'Dissolve' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/kampung.rpy", line 246, in script call
+  File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/kampung.rpy", line 246, in script call
+  File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1199, in script call
+  File "game/script.rpy", line 1198, in script call
     call bangun_libur
-  File "game/kampung.rpy", line 246, in script call
+  File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/minimart.rpy", line 584, in script call
-    call belajar_pti_1
-  File "game/minimart.rpy", line 907, in script
-    show screen pti_2_1 with dissolve
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2232, in execute
-    self.call("execute")
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2220, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\statements.py", line 281, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 588, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 1185, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen pti_2_1 is not known.
-
+  File "game/kampung.rpy", line 374, in script call
+    call sport_mornS1
+  File "game/kampung.rpy", line 374, in script call
+    call sport_mornS1
+  File "game/town.rpy", line 288, in script call
+    call sport_nightS2
+  File "game/class/alpro.rpy", line 650, in script
+    scene bg black with dissolve(3.0)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 1658, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\exports.py", line 1657, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 2798, in do_with
+    return self.interact(trans_pause=True,
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3752, in interact_core
+    trans = self.ongoing_transition[None](
+TypeError: 'Dissolve' object is not callable
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090405
 Simulasi Kehidupan Kuliah 1.0
-Wed May 31 14:42:33 2023
+Tue Nov 14 11:16:30 2023

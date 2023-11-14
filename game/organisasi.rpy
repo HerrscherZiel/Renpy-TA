@@ -791,4 +791,17 @@ label penerimaan_hima:
             call change_timephase
             call screen mapUI with dissolve
 
+label hima_1:
+
+    "Kamu mengikuti kegiatan organisasimu untuk pertama kali."
+
+    call hima_act
+
+label hima_2:
+
+    "Kamu mengikuti kegiatan organisasimu untuk kedua kalinya."
+
+    call hima_act
+
+    
 

@@ -364,6 +364,8 @@ label alpro_3:
 
     "Kamu dan teman sekelasmu mulai memasuki ruang kelas satu persatu. Seperti biasanya kamu memilih tempat duduk di barisan tengah dan berada di dekat jendela."
 
+    scene bg campus class with fade
+
     "Kamu menunggu dosen pengajar memasuki ruang kelas dengan memainkan hpmu dan mengobrol dengan teman sebelahmu."
 
     "Hampir 10 menit berada di dalam ruangan, akhirnya terlihat [bn] berjalan mendekati ruang kelas."
@@ -382,7 +384,7 @@ label alpro_3:
 
     show screen alpro_3_1 with fade
     
-    bn "Apa itu prosedur dalam pemrograman? Prosedur merupakan suatu program yang disusun secara terpisah dan memiliki tujuan untuk melakukan suatu tugas atau fungsi tertentu."
+    bn class "Apa itu prosedur dalam pemrograman? Prosedur merupakan suatu program yang disusun secara terpisah dan memiliki tujuan untuk melakukan suatu tugas atau fungsi tertentu."
 
     bn "Serangkaian instruksi yang terdapat pada prosedur dapat dipanggil atau dieksekusi oleh program utama atau bagian-bagian lain dari program."
 
@@ -488,13 +490,13 @@ label alpro_3:
 
     bn "4. Memudahkan pemeliharaan kode, hal ini mungkin terjadi karena dengan adanya prosedur dan fungsi dapat dipisahkan antara tugas-tugas yang berbeda ke dalam prosedur dan fungsi."
 
-    hide screen alpro_3_6
+    hide screen alpro_3_6 with dissolve
 
     bn "Kurang lebih seperti itu ya teman-teman, mungkin ada pertanyaan dari teman-teman?"
 
     "Kemudian kelas dilanjutkan dengan sesi tanya jawab hingga waktu pertemuan berakhir."
 
-    scene bg campuss class with dissolve
+    scene bg campus class with dissolve
 
     bn normal "Saya tutup pertemuan kali ini, terimakasih sudah berpartisipasi pada kelas hari ini dan sampai jumpa dipertemuan selanjutnya…"
 
@@ -521,6 +523,8 @@ label alpro_4:
 
     "Kamu dan teman sekelasmu mulai memasuki ruang kelas satu persatu. Seperti biasanya kamu memilih tempat duduk di barisan tengah dan berada di dekat jendela."
 
+    scene bg campus class with fade
+
     "Kamu menghabiskan waktumu dengan memainkan gim yang terdapat pada HPmu. Beberapa menit memainkan gim, dosen pengajar memasuki ruang kelas dan mahasiswa mulai mempersiapkan untuk kelas yang segera akan dimulai."
 
     bn normal "Selamat pagi teman-teman kita kembali berjumpa lagi pada perkuliahan pagi hari ini dengan mata kuliah Algoritma Pemrograman pertemuan ke 4."
@@ -533,7 +537,7 @@ label alpro_4:
 
     show screen alpro_4_1 with fade
 
-    bn "Apakah algoritma pencarian itu?"
+    bn class "Apakah algoritma pencarian itu?"
 
     bn "Algoritma Pencarian adalah sebuah algoritma yang dibuat untuk melakukan sebuah pencarian untuk menemukan sebuah informasi spesifik yang terdapat dalam suatu struktur data yang dimiliki."
 
@@ -635,15 +639,17 @@ label alpro_4:
 
     bn "Mungkin itu dulu penjelasan yang dapat ibu berikan pada pertemuan kali ini mengenai algoritma pencarian dan pengurutan."
 
-    hide screen alpro_4_8
+    hide screen alpro_4_8 with dissolve
 
-    bn "Sebelum ibu tutup ibu akan memperlihatkan gambaran mengenai apa yang ibu terangkan sebelumnya."
+    bn normal "Sebelum ibu tutup ibu akan memperlihatkan gambaran mengenai apa yang ibu terangkan sebelumnya."
 
     "[bn] memperlihatkan slide yang berisi contoh dari algoritma pencarian dan pengurutan."
 
     "Setelah memperlihatkan slide contoh, kelas dilanjutkan dengan sesi tanya jawab."
 
-    scene bg classroom with fade
+    scene bg black with Dissolve(2.0)
+
+    scene bg campus class with fade
 
     "Waktu pertemuan kelas siang ini sudah berada pada penghujung waktu."
 

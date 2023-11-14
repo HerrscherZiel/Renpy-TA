@@ -42,3 +42,28 @@ screen de_3_3:
 screen de_3_4:
 
     add "kelas/de-3/de_3-4.png"
+
+#4
+screen de_4_0:
+
+    add "kelas/de-4/de_4-.png"
+
+screen de_4_1:
+
+    add "kelas/de-4/de_4-1.png"
+
+screen de_4_2:
+
+    add "kelas/de-4/de_4-2.png"
+
+screen de_4_3:
+
+    add "kelas/de-4/de_4-3.png"
+
+screen de_4_4:
+
+    add "kelas/de-4/de_4-4.png"
+
+screen de_4_5:
+
+    add "kelas/de-4/de_4-5.png"

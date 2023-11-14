@@ -692,3 +692,26 @@ label fin_krs:
     jump kos_krs3
 
     return
+
+label choice_libary_noon:
+
+    show screen trans_screen with dissolve
+    scene bg town street 3 with dissolve
+    pause 2.0
+
+    "Siang harinya kamu memilih menghabiskan waktumu di perpustakaan."
+
+    "Ada beberapa hal yang dapat kamu lakukan di kota pada siang hari, kamu memilih untuk:"
+
+    menu:
+        "Mengikuti acara jalan sehat":
+            jump jalan_sehat
+
+label jalan_sehat:
+
+    "Kamu mengikuti acara jalan sehat di perpustakaan."
+
+    call jalan_sehatS
+
+    call change_timephase
+    call screen mapUI with dissolve

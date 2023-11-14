@@ -403,9 +403,9 @@ label go_to_library:
             
             else:
                 $ maps = False
-                call change_timephase
+                # call change_timephase
                 show screen trans_screen with dissolve
-                jump nothing
+                jump choice_libary_noon
                 
         "Tunggu dulu...":
             call screen mapUI()

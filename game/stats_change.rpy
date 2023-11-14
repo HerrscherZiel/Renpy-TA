@@ -36,6 +36,10 @@ screen stats_changer(tstats, tpoint):
     elif tstats == "jog":
 
         timer 0.1 action [Hide("stats_changer"), Show("jog_change", dissolve)]
+        
+    elif tstats == "jalan_sehatS":
+
+        timer 0.1 action [Hide("stats_changer"), Show("jalan_sehat_change", dissolve)]
 
     elif tstats == "futsal":
 
@@ -49,7 +53,15 @@ screen stats_changer(tstats, tpoint):
     #social
     elif tstats == "kerja_bakti":
 
-        timer 0.1 action [Hide("stats_changer"), show("kerja_bakti_change", dissolve)]
+        timer 0.1 action [Hide("stats_changer"), Show("kerja_bakti_change", dissolve)]
+
+    elif tstats == "hangout":
+
+        timer 0.1 action [Hide("stats_changer"), Show("hangout_change", dissolve)]
+
+    elif tstats == "hima_act":
+
+        timer 0.1 action [Hide("stats_changer"), Show("hima_change", dissolve)]
 
     else:
 
@@ -258,6 +270,36 @@ screen jog_change:
 
     timer 4.0 action Hide("jog_change", dissolve)
 
+screen jalan_sehat_change:
+
+    frame:
+        xsize 1920
+        ysize 1080
+        xpos 800
+        ypos 30
+
+        background "menuUI/stats/hunger_down.png"
+  
+
+        hbox:
+            spacing 15
+
+            imagebutton:
+                xpos -6
+                ypos -6
+                idle "menuUI/stats/hunger_down.png"
+                action NullAction()
+
+            imagebutton:
+                idle "menuUI/stats/energy_down.png"
+                action NullAction()
+
+            imagebutton:
+                idle "menuUI/stats/fit_up.png"
+                action NullAction()        
+
+    timer 4.0 action Hide("jalan_sehat_change", dissolve)
+
 screen futsal_change:
 
     frame:
@@ -313,6 +355,7 @@ screen class_change:
 
     timer 4.0 action Hide("class_change", dissolve)
 
+#social
 screen kerja_bakti_change:
 
     frame:
@@ -332,7 +375,7 @@ screen kerja_bakti_change:
                 action NullAction()
 
             imagebutton:
-                idle "menuUI/stats/community_up.png"
+                idle "menuUI/stats/commu_up.png"
                 action NullAction()
 
             imagebutton:
@@ -340,3 +383,56 @@ screen kerja_bakti_change:
                 action NullAction()        
 
     timer 4.0 action Hide("kerja_bakti_change", dissolve)
+
+screen hima_change:
+
+    frame:
+        xsize 1920
+        ysize 1080
+        xpos 800
+        ypos 30
+        background "menuUI/stats/commu_up.png"
+  
+        hbox:
+            spacing 15
+
+            imagebutton:
+                xpos -6
+                ypos -6
+                idle "menuUI/stats/commu_up.png"
+                action NullAction()
+
+            imagebutton:
+                idle "menuUI/stats/public_up.png"
+                action NullAction()
+
+            imagebutton:
+                idle "menuUI/stats/friend_up.png"
+                action NullAction()    
+
+    timer 4.0 action Hide("hima_change", dissolve)         
+
+screen hangout_change:
+
+    frame:
+        xsize 1920
+        ysize 1080
+        xpos 1050
+        ypos 30
+
+        background "menuUI/stats/public_up.png"
+  
+        hbox:
+            spacing 15
+
+            imagebutton:
+                xpos -6
+                ypos -6
+                idle "menuUI/stats/public_up.png"
+                action NullAction()
+
+            imagebutton:
+                idle "menuUI/stats/friend_up.png"
+                action NullAction()   
+
+    timer 4.0 action Hide("hangout_change", dissolve)    

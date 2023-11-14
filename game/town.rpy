@@ -242,6 +242,17 @@ label kota_noonS1:
 
     "Mengendarai motor menuju salah satu Mall yang ada di kota."
 
+    "Sesampainya di Mall kamu hanya menghabiskan waktu untuk berjalan dan mengamati barang-barang yang menarik perhatianmu."
+
+    "Kamu juga sempat membeli jajanan yang dijual di stand-stand makanan yang ada."
+
+    call small_eat
+
+    "Setelah cukup lama menghabiskan waktumu di Mall, kamu memutuskan untuk pulang."
+
+    call change_timephase
+    call screen mapUI with dissolve
+
     return
 
 label kota_noonS2:
@@ -263,7 +274,6 @@ label kota_nightS1:
     "Kamu memutuskan untuk berjalan-jalan mengelilingi kota untuk mencari angin."
 
     jump sleep
-
 
 label kota_nightS2:
 

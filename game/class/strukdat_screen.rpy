@@ -49,5 +49,28 @@ screen strukdat_3_7:
 
     add "kelas/strukdat-3/strukdat_3-7.png"
 
+#4
+screen strukdat_4_0:
 
+    add "kelas/strukdat-4/strukdat_4-0.png"
+
+screen strukdat_4_1:
+
+    add "kelas/strukdat-4/strukdat_4-1.png"
+
+screen strukdat_4_2:
+
+    add "kelas/strukdat-4/strukdat_4-2.png"
+
+screen strukdat_4_3:
+
+    add "kelas/strukdat-4/strukdat_4-3.png"
+
+screen strukdat_4_4:
+
+    add "kelas/strukdat-4/strukdat_4-4.png"
+
+screen strukdat_4_5:
+
+    add "kelas/strukdat-4/strukdat_4-5.png"
 

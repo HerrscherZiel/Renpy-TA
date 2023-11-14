@@ -374,21 +374,403 @@ label uts_jarkom:
 
     jump uts_akhir
 
-
 label jarkom_3:
 
-    "Jarkom 3"
+    scene bg campus class with dissolve
+
+    "Setelah beberapa menit menunggu, sekarang sudah memasuki waktu untuk kelas berikutnya. "
+
+    "Kamu dan teman-temanmu mulai memasuki kelas yang akan digunakan untuk pembelajaran terakhir pada hari ini."
+
+    "Ketika memasuki ruang kelas, [bn] yang akan mengajar kelas berikutnya telah duduk dan menunggu di dalam ruangan."
+
+    bn normal "Selamat siang teman-teman, silahkan masuk sembari menunggu teman-teman yang lain masuk kelas."
+
+    "Tidak memakan waktu yang lama, satu persatu teman kelasmu memasuki ruangan, setelah dirasa banyak mahasiswa yang telah memasuki ruangan, [bn] membuka pertemuan pada siang hari ini."
+
+    bn "Selamat siang, sepertinya sudah pada hadir ya… Kalau begitu ibu mulai kelas pada siang hari ini."
+
+    bn "Bertemu lagi kita pada mata kuliah Jaringan Komputer pertemuan ke 3. Pada pertemuan siang hari ini, kita akan membahas mengenai OSI Layer, apa itu OSI Layer, Fungsi, dan penjelasannya."
+
+    bn "Mungkin langsung ibu jelaskan saja untuk menghemat waktu ya, jadi apa itu OSI Layer?"
+
+    show screen jarkom_3_1 with fade
+
+    bn class "Dalam jaringan, setiap komputer memiliki cara untuk berkomunikasi masing-masing. Namun dengan banyaknya jenis atau cara berkomunikasi 
+    tersebut, maka dibutuhkan sebuah standar yang mampu membuat semua jenis sistem komputer dapat berkomunikasi satu sama lain."
+
+    bn "Maka dibentuklah model OSI (Open Systems Interconnection) yang merupakan sebuah konsep kerja yang memungkinkan agar komputer-komputer 
+    yang terdapat pada jaringan tersebut mampu berinteraksi dan berkomunikasi satu sama lain menggunakan protokol yang sudah distandarisasi."
+
+    bn "Model OSI terdiri dari 7 lapisan yang memiliki fungsi dan tanggung jawab yang berbeda-beda dalam komunikasi jaringan."
+
+    bn "Pengertian dan penjelasan dari ke-7 lapisan abstrak tersebut adalah sebagai berikut:"
+
+    hide screen jarkom_3_1
+
+    show screen jarkom_3_2 with fade
+
+    bn "Lapisan 1, Physical Layer, Lapisan fisik ini merupakan lapisan paling bawah atau lapisan pertama yang terdapat pada OSI model."
+
+    bn "Lapisan ini mengatur semua perangkat fisik yang digunakan dalam transmisi data semisal kabel, konektor, dan perangkat fisik lainnya."
+
+    bn "Menggunakan perangkat fisik tersebut, lapisan ini memiliki tugas untuk mentransmisikan data ke dalam bentuk bit data melalui media transmisi yang ada."
+
+    bn "Kemudian, setelah Lapisan fisik, kita lanjut ke lapisan yang berikutnya."
+
+    bn "Lapisan 2, Data Link Layer, Lapisan data link ini merupakan lapisan yang mengatur jalur komunikasi dalam jaringan yang sama."
+
+    bn  "Lapisan ini mengatur bagaimana data dikemas, lalu bagaimana data dikirimkan masih dalam jaringan lokal, 
+    serta memiliki tugas untuk deteksi dan koreksi kesalahan yang mungkin terjadi ketika transmisi data terjadi."
+
+    bn "Lalu pada lapisan ke-3 terdapat Network Layer."
+
+    hide screen jarkom_3_2
+
+    show screen jarkom_3_3 with fade
+
+    bn "Network Layer atau lapisan jaringan ini merupakan lapisan yang berfokus pada routing data, pengalamatan, dan pengiriman data melalui jaringan-jaringan yang ada."
+
+    bn "Lapisan ini menentukan cara data dikirimkan dari satu titik ke titik yang lain yang berada pada jaringan. "
+
+    bn "Kemudian pada lapisan ke-4, terdapat Transport Layer."
+
+    bn "Transport Layer mengatur komunikasi end-to-end, pengendalian aliran data agar data dapat disampaikan dengan baik, dan pengelolaan koneksi agar lebih optimal."
+
+    bn "Seperti yang disebutkan sebelumnya, lapisan ini memastikan data dapat ditransmisikan dan diterima pada tujuan dengan baik. 
+    Hal tersebut dilakukan dengan segmentasi data dan penyusunan ulang data pada penerima atau user."
+
+    bn "Lanjut pada lapisan ke-5, Session Layer."
+
+    hide screen jarkom_3_3
+
+    show screen jarkom_3_4 with fade
+
+    bn "Session Layer atau lapisan sesi ini mengatur pembukaan dan penutupan sesi serta melakukan pengelolaan sesi komunikasi antar perangkat yang berbeda."
+
+    bn "Lapisan ini memungkinkan dua perangkat mampu berkomunikasi dan berkoordinasi dengan baik satu sama lain. 
+    Dengan kata lain lapisan ini mendefinisikan bagaimana dua perangkat tersebut dapat mengelola koneksi satu sama lain."
+
+    bn "Lapisan ke-6 adalah, Presentation Layer."
+
+    bn "Presentation Layer atau layer presentasi ini mengatur enkripsi, dekripsi, kompresi, dan juga penyandian data."
+
+    bn "Layer ini dapat dikatakan berfungsi sebagai penerjemah atau translator sehingga data yang ditransmisikan dapat ditranslasikan menjadi format yang mampu dibaca oleh penerima."
+
+    bn "Lalu lapisan OSI paling atas atau no 7 adalah, Application Layer."
+
+    hide screen jarkom_3_4
+
+    show screen jarkom_3_5 with fade
+
+    bn "Application Layer atau Lapisan Aplikasi ini merupakan tempat aplikasi berinteraksi dengan jaringan."
+
+    bn "Lapisan ini berfungsi sebagai antarmuka dengan aplikasi dengan fungsionalitas jaringan, mengatur bagaimana aplikasi dapat mengakses jaringan, dan kemudian membuat pesan-pesan kesalahan."
+
+    bn "Itu merupakan penjelasan mengenai 7 lapisan Model OSI."
+
+    bn "Dengan model OSI ini membuat kita menjadi lebih mudah dalam memahami bagaimana komunikasi berjalan, selain itu dengan model OSI ini membaginya menjadi 7 lapisan dengan fungsi-fungsi yang telah terdefinisi dengan baik."
+    
+    bn  "Oleh karena hal tersebut, mampu membuat pengembangan, pemahaman, dan troubleshooting jaringan yang efisien menjadi lebih mudah."
+
+    hide screen jarkom_3_5
+
+    bn "Kurang lebih begitu untuk materi OSI model yang ibu terangkan hari ini."
+
+    bn "Jadi hari ini kita telah membahas pengertian OSI model, dan masing-masing penjelasan dari 7 lapisan OSI model yang ada."
+
+    bn "Mungkin untuk hari ini cukup sampai sini dulu ya, kita lanjutkan lagi untuk besok pembahasan mengenai topologi jaringan. Besok kita akan mempelajari mengenai pengertian dan contoh dari topologi jaringan."
+
+    bn "Untuk perkuliahan hari ini, kita lanjutkan dengan sesi tanya jawab ya, kalau kalian ada pertanyaan untuk materi pada hari ini, bisa kalian tanyakan sekarang."
+
+    "Pembelajaran berlanjut pada sesi tanya jawab. Sesi tanya jawab masih terus berlangsung pada mahasiswa lain hingga jam perkuliahan selesai."
+
+    scene bg campus class with dissolve
+
+    bn normal "Saya kira cukup untuk pertemuan kali ini, terimakasih atas partisipasinya pada perkuliahan hari ini dan sampai ketemu minggu depan teman-teman."
+
+    r normal2 "Terimakasih bu…"
+
+    t normal "Terimakasih…"
+
+    "[bn] meninggalkan ruang kelas, dan pertemuan ke-3 mata kuliah Jaringan Komputer pada hari ini selesai."
+
+    "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk pulang."
 
     call attend_jarkom
     call attend_class
 
-    jump pre_libur
+    if hima == True:
+        call hima_1
+    else:
+        scene bg black with fade
+        pause 1.5
+    call change_timephase
+    call screen mapUI with dissolve
 
 label jarkom_4:
 
-    "Jarkom 4"
+    scene bg campus hall with dissolve
 
-    jump pre_libur
+    scene bg campus upper hall with fade
+
+    scene bg campus class with fade
+
+    bn normal "Selamat siang teman-teman, bagaimana kabarnya? Semoga baik-baik saja ya."
+
+    "[bn] memasuki ruang kelas, pertanda perkuliahan terakhir pada semester ini akan segera dimulai."
+
+    bn "Seperti yang kalian ketahui, hari ini merupakan pertemuan terakhir untuk mata kuliah Jaringan Komputer, dan juga merupakan pertemuan terakhir sebelum ujian akhir dilaksanakan."
+
+    bn "Untuk menghemat waktu mungkin kita mulai saja kelasnya. Minggu lalu kita sudah mempelajari mengenai OSI Model dan 7 layer yang terdapat di dalamnya."
+
+    bn "Minggu ini kita akan mempelajari mengenai Topografi dalam jaringan beserta contoh dan penjelasannya."
+
+    "[bn] menyiapkan materi yang akan dipaparkan pada perkuliahan. Setelah materi telah terlihat di depan kelas, perkuliahan pun dimulai."
+
+    scene bg campus class with dissolve
+
+    bn normal "Jadi karena kita akan mempelajari mengenai topografi jaringan, maka kita harus memahami dulu apa itu topografi jaringan?"
+
+    show screen jarkom_4_1 with fade
+
+    bn class "Topografi jaringan merujuk kepada cara-cara bagaimana perangkat-perangkat yang berada dalam sebuah jaringan dihubungkan satu sama lain."
+
+    bn "Cara bagaimana jaringan dihubungkan satu sama lain tersebut membentuk pola fisik maupun geometris yang masing-masing dari pola tersebut memiliki karakteristik dan pola yang berbeda-beda."
+
+    bn "Ibu akan menjelaskan beberapa contoh dari topologi jaringan yang ada."
+
+    bn "Topologi jaringan yang pertama adalah, topologi bintang."
+
+    hide screen jarkom_4_1
+
+    show screen jarkom_4_2 with fade
+
+    bn "Topologi bintang atau stars ini merupakan topologi jaringan dimana perangkat-perangkat yang terdapat dalam jaringan tersebut terhubung pada suatu pusat atau switch yang terdapat pada pusat."
+
+    bn "Beberapa karakteristik yang terdapat pada topologi ini adalah,"
+
+    bn "Pada topologi bintang hanya terdapat satu pusat kontrol."
+
+    bn "Perangkat-perangkat langsung terhubung pada pusat kontrol yang mampu membuat komunikasi yang lebih efisien."
+
+    bn "Kerusakan atau masalah pada salah satu perangkat user tidak mempengaruhi kinerja jaringan."
+
+    bn "Lalu apa saja keuntungan dari topologi ini?"
+
+    hide screen jarkom_4_2
+
+    show screen jarkom_4_3 with fade
+
+    bn "Topologi bintang relatif mudah untuk dikembangkan ketika diperlukan."
+
+    bn "Dengan hanya adanya satu pusat kontrol, maka akan memudahkan pengelolaan dari jaringan yang ada."
+
+    bn "Selain itu, karena hanya ada satu pusat kontrol dan tiap perangkat terhubung pada pusat kontrol tersebut maka apabila terjadi kegagalan pada suatu perangkat, 
+    perangkat yang lain tidak akan terpengaruh, hal ini juga membuat identifikasi dan perbaikan menjadi lebih mudah."
+
+    bn "Kemudian ibu akan berlanjut pada kerugian penggunaan topologi bintang?"
+
+    bn "Selain menjadi keuntungan, memiliki satu pusat kontrol juga dapat menjadi kekurangan karena apabila pusat kontrol tersebut 
+    mengalami masalah maka semua perangkat pada jaringan tersebut juga akan terkena imbasnya."
+
+    bn "Kemudian kerugian berikutnya adalah biaya yang relatif mahal, karena topologi bintang terbilang boros dalam pemakaian kabel."
+
+    bn "Topologi yang berikutnya adalah topologi bus."
+
+    hide screen jarkom_4_3
+
+    show screen jarkom_4_4 with fade
+
+    bn "Topologi bus merupakan topologi jaringan dimana semua perangkat yang ada pada jaringan terhubung pada satu kabel sentral yang berfungsi sebagai media komunikasi antar jaringan."
+
+    bn "Karakteristik dari topologi bus adalah sebagai berikut."
+
+    bn "Pertama, proses instalasi jaringan terbilang relatif mudah dan sederhana sehingga biaya menjadi lebih ekonomis."
+
+    bn "Lalu topologi bus memiliki satu kabel sentral yang menghubungkan semua perangkat dalam jaringan."
+
+    bn "Tiap-tiap node dihubungkan secara serial dengan kabel dan ditutup dengan terminator."
+
+    bn "Kemudian untuk keuntungan penggunaan topologi bus sendiri adalah,"
+
+    hide screen jarkom_4_4
+
+    show screen jarkom_4_5 with fade
+
+    bn "Topologi bus merupakan topologi dengan desain dan instalasi yang sederhana."
+
+    bn "Topologi bus juga memiliki biaya yang rendah."
+
+    bn "Selain itu, topologi ini juga mudah untuk dikembangkan."
+
+    bn "Lalu kita berlanjut pada kekurangan pada topologi bus."
+
+    bn "Apabila kabel sentral mengalami kegagalan, maka seluruh jaringan juga akan terpengaruh."
+
+    bn "Kinerja topologi ini akan berkurang ketika semakin banyak perangkat yang terhubung dalam jaringan."
+
+    bn "Pada topologi ini tidak mudah untuk menemukan atau mendeteksi kesalahan."
+
+    bn "Kemudian kita akan berlanjut pada topologi yang berikutnya yaitu topologi ring atau cincin."
+
+    hide screen jarkom_4_5
+
+    show screen jarkom_4_6 with fade
+
+    bn "Topologi cincin merupakan topologi dimana perangkat-perangkat yang terdapat dalam jaringan saling terhubung ke dua perangkat yang ada di sebelahnya. "
+
+    bn "Karena perangkat yang terdapat pada jaringan terhubung dengan perangkat yang ada di sebelahnya, 
+    maka bentuk jaringan akan melingkar dan terlihat seperti cincin."
+
+    bn "Karakteristik dari topologi cincin sendiri adalah sebagai berikut."
+
+    bn "Memiliki jalur cincin, dimana data akan mengalir searah sepanjang jalur cincin."
+
+    bn "Lalu karena data mengalir dalam satu arah, maka menghindarkan dari tabrakan atau collision dapat dihindari."
+
+    bn "Kemudian keuntungan yang dapat kita dapatkan dengan menggunakan topologi cincin adalah"
+
+    hide screen jarkom_4_6
+
+    show screen jarkom_4_7 with fade
+
+    bn "Memiliki kinerja yang lebih baik dan optimal dalam mengakses data."
+
+    bn "Kualitas aliran data yang lebih cepat karena data bergerak secara lebih fleksibel."
+
+    bn "Mengurangi resiko terjadinya tabrakan data dengan data yang hanya berputar satu arah."
+
+    bn 'Meskipun begitu, ada beberapa kelemahan pada penggunaan topologi cincin semisal,'
+
+    bn "Susahnya konfigurasi ulang ketika melakukan perubahan dalam jaringan."
+
+    bn "Menambah atau mengurangi perangkat akan menjadi lebih sulit dan membutuhkan biaya lebih."
+
+    bn "Dan apabila terdapat salah satu perangkat yang mengalami masalah, maka seluruh jaringan dapat terkena dampaknya."
+
+    bn "Kemudian kita lanjut pada topologi yang selanjutnya, yaitu topologi mesh."
+
+    hide screen jarkom_4_7
+
+    show screen jarkom_4_8 with fade
+
+    bn "Topologi mesh merupakan sebuah topologi campuran antara topologi star dan topologi ring."
+
+    bn "Pada topologi ini setiap perangkat yang ada akan terhubung dengan semua perangkat yang terdapat dalam jaringan."
+
+    bn "Karakteristik dari topologi mesh adalah sebagai berikut,"
+
+    bn "Memiliki koneksi langsung karena setiap perangkat terhubung dengan satu sama lainnya."
+
+    bn "Redudansi, karena setiap perangkat terhubung satu sama lain maka akan ada banyak redundansi di dalamnya."
+
+    bn "Sementara kelebihan penggunaan topologi ini adalah"
+
+    hide screen jarkom_4_8
+
+    show screen jarkom_4_9 with fade
+
+    bn "Memiliki keandalan yang tinggi, karena apabila ada jalur yang tidak bisa digunakan masih terdapat jalur alternatif lainnya."
+
+    bn "Masalah yang terjadi pada suatu perangkat tidak memengaruhi perangkat lainnya."
+
+    bn "Memiliki kecepatan pengiriman data yang tinggi."
+
+    bn "Sementara itu topologi mesh juga memiliki kelemahan seperti,"
+
+    bn "Membutuhkan biaya yang relatif mahal."
+
+    bn "Instalasi jaringan rumit."
+
+    bn "Serta pengelolaan yang sulit."
+
+    bn "Setelah ini terdapat satu topologi lagi yang ingin ibu jelaskan."
+
+    bn "Topologi terakhir yang akan ibu jelaskan hari ini adalah, Topologi Tree"
+
+    hide screen jarkom_4_9
+
+    show screen jarkom_4_10 with fade
+
+    bn "Topologi tree atau pohon ini merupakan topologi campuran antara topologi star dengan topologi bus."
+
+    bn "Terdapat beberapa perangkat yang terhubung pada switch utama dan beberapa perangkat lainnya terhubung pada switch penghubung."
+
+    bn "Karakteristik dari topologi tree sendiri adalah sebagai berikut,"
+
+    bn "Membentuk sebuah hirarki jaringan, dengan adanya perangkat yang berada di atas perangkat lainnya."
+
+    bn "Memiliki pusat kontrol yang seringkali berupa switch."
+
+    bn "Sementara itu kelebihan dari penggunaan topologi tree sendiri adalah,"
+
+    hide screen jarkom_4_10
+
+    show screen jarkom_4_11 with fade
+
+    bn "Mampu digunakan dalam jaringan yang berskala besar."
+
+    bn "Dengan adanya hirarki dalam jaringan, membuat jaringan menjadi lebih terstruktur dan terorganisasi."
+
+    bn "Penambahan klien pada tingkatan bawah dapat dilakukan secara lebih mudah."
+
+    bn "Namun penggunaan topologi tree juga memiliki kekurangan, seperti…"
+
+    bn "Perawatan pada jaringan akan menjadi lebih sulit dengan adanya banyak perangkat dalam jaringan tersebut."
+
+    bn "Memerlukan biaya yang relatif mahal, apalagi untuk memiliki pusat kontrol yang reliable sehingga jaringan tidak mudah terjadi masalah."
+
+    bn "Kerusakan pada kabel utama dapat memengaruhi seluruh jaringan, begitu pula dengan perangkat yang terdapat pada bagian atas, jika mengalami kerusakan maka bagian bawahnya juga akan terkena dampaknya."
+
+    bn "Mungkin sampai disini dulu pembahasan mengenai topologi jaringan pada hari ini."
+
+    bn "Hari ini kita sudah sedikit membahas mengenai topologi jaringan bintang, jaringan cincin, jaringan bus, jaringan mesh, dan jaringan tree."
+
+    hide screen jarkom_4_11 with dissolve
+
+    bn normal "Apakah ada pertanyaan untuk materi kita hari ini teman-teman?"
+
+    bn "Apabila ada silahkan bertanya selagi waktu masih ada."
+
+    "Kemudian satu persatu teman kelasmu mengacungkan jarinya dan bertanya mengenai materi."
+
+    "Salah satu temanmu yang mengacungkan jarinya adalah rissa."
+
+    r normal2 "Bu, berarti untuk ujian akhirnya sampai ke materi ini ya bu?"
+
+    bn "Iya, nanti ujian akhirnya menggunakan materi dari pertemuan minggu ke-3 dan minggu ke-4."
+
+    r "Oh ya bu terimakasih."
+
+    "Setelah itu masih terdapat beberapa pertanyaan sebelum kelas akhirnya ditutup."
+
+    scene bg campus class with dissolve
+
+    bn "Sekian dari saya untuk pertemuan hari ini. Terimakasih atas partisipasinya sampai pertemuan terakhir ini ya teman-teman."
+
+    bn "Saya tutup pertemuan hari ini, selamat belajar untuk ujian akhir nanti dan semoga mendapatkan hasil yang terbaik."
+
+    scene bg campus class with fade
+
+    "Kelas ditutup, [bn] meninggalkan ruang kelas tidak lama kemudian mahasiswa-mahasiswa juga ikut meninggalkan ruang kelas"
+
+    "Pertemuan kuliah terakhir pada tahun ini telah selesai, hanya tersisa ujian akhir yang menunggumu minggu depan."
+
+    "Bagaimanapun hasil yang akan kamu terima, kamu harus melalui ujian akhir tersebut."
+
+    "Setelah terdiam untuk beberapa waktu di bangkumu memikirkan ujian akhir nanti, akhirnya kamu berdiri dan bergegas untuk pulang."
+
+    call attend_jarkom
+    call attend_class
+
+    if hima == True:
+        call hima_2
+    else:
+        scene bg black with fade
+        pause 1.5
+    call change_timephase
+    call screen mapUI with dissolve
 
 label attend_jarkom:
 

@@ -250,8 +250,7 @@ label web_2:
 
         "Kamu mengendarai motor menuju tempat untuk mengeprint kartu ujian."
 
-        "Setelah selesai mengeprint kosan merupakan tempat selanjutnya yang kamu tuju."
-        
+        "Setelah selesai mengeprint kosan merupakan tempat selanjutnya yang kamu tuju."   
 
     call change_timephase
     call screen mapUI with dissolve
@@ -408,7 +407,7 @@ label web_3:
 
     show screen web_3_1 with fade
 
-    pa "Langkah pertama yang kita lakukan adalah membuat sebuah file pada teks editor seperti, Notepad++, Sublime Text, 
+    pa class "Langkah pertama yang kita lakukan adalah membuat sebuah file pada teks editor seperti, Notepad++, Sublime Text, 
     Visual Studio Code, dan lain sebagainya kemudian menyimpannya dengan ekstensi .html."
 
     pa "Dengan membuat file dan menyimpannya dalam ekstensi .html kita berhasil membuat sebuah dokumen html."
@@ -516,7 +515,7 @@ label web_3:
 
     pa "Jadi hari ini, kita telah mempelajari bagaimana membuat file html, mempelajari tag dan struktur dasar html, lalu mencoba beberapa tag untuk teks, lalu membuat list."
 
-    hide screen web_3_5g
+    hide screen web_3_5g with fade
 
     pa "Mungkin untuk hari ini cukup sampai sini dulu ya, kita lanjutkan lagi untuk besok pembahasan mengenai htmlnya. 
     Besok kita akan mempelajari mengenai tabel dan form."
@@ -546,7 +545,7 @@ label web_4:
 
     scene bg campus class with dissolve
 
-    pa "Selamat siang teman-teman, bagaimana kabarnya? Semoga baik-baik saja ya."
+    pa normal "Selamat siang teman-teman, bagaimana kabarnya? Semoga baik-baik saja ya."
 
     "[pa] memasuki ruang kelas, pertanda perkuliahan mata kuliah Web I akan segera dimulai."
 
@@ -561,11 +560,11 @@ label web_4:
 
     scene bg campus class with dissolve
 
-    pa "Materi pertama yang akan kita pelajari hari ini adalah membuat sebuah tabel menggunakan HTML."
+    pa normal "Materi pertama yang akan kita pelajari hari ini adalah membuat sebuah tabel menggunakan HTML."
 
     show screen web_4_1 with fade
 
-    pa "Menggunakan HTML kita bisa membuat sebuah tabel dengan tag <table>, namun kita perlu memasukkan tag lainnya untuk mengatur berapa banyak kolom dan baris yang ada di dalam tabel tersebut. "
+    pa class "Menggunakan HTML kita bisa membuat sebuah tabel dengan tag <table>, namun kita perlu memasukkan tag lainnya untuk mengatur berapa banyak kolom dan baris yang ada di dalam tabel tersebut. "
 
     pa "<tr> digunakan untuk membuat baris dalam tabel, sementara <td> dapat kita gunakan untuk menambahkan kolom dalam tabel."
 
@@ -637,9 +636,9 @@ label web_4:
     pa "Ya untuk pengenalan form pada HTML sekiranya segini dulu ya, 
     untuk informasi yang lebih kalian dapat mencari tahu di internet sendiri."
 
-    hide screen web_4_3g
+    hide screen web_4_3g with dissolve
 
-    pa "Karena waktu yang sudah mepet, jika kalian ingin bertanya mengenai materi bisa ditanyakan ya."
+    pa normal "Karena waktu yang sudah mepet, jika kalian ingin bertanya mengenai materi bisa ditanyakan ya."
 
     "Tidak lama kemudian, [r] langsung mengangkat tangannya dan langsung ditunjuk oleh [pa]."
 
@@ -657,15 +656,19 @@ label web_4:
 
     "Setelah waktu perkuliahan telah habis, [pa] kemudian menutup pertemuan terakhir pada hari ini."
 
-    pa "Kalau begitu bapak tutup pertemuan hari ini. Selamat belajar dan semoga mendapatkan hasil yang diinginkan pada ujian nanti."
+    scene bg black with Dissolve(1.5)
+
+    scene bg campus class with dissolve
+
+    pa normal "Kalau begitu bapak tutup pertemuan hari ini. Selamat belajar dan semoga mendapatkan hasil yang diinginkan pada ujian nanti."
 
     pa "Terimakasih sudah mengikuti kelas sampai pertemuan kali ini, sampai jumpa pada pertemuan selanjutnya teman-teman."
 
-    t "Terimakasih pak."
+    t normal "Terimakasih pak."
 
     t "Terimakasihhh"
 
-    r "Terimakasih juga pak."
+    r normal2 "Terimakasih juga pak."
 
     "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. 
     Kamu keluar dari ruangan kelas dan melanjutkan aktivitasmu berikutnya."

@@ -533,6 +533,10 @@ label mart_nightS2:
 
     "Membaca pesan dari group Lane, kamu ikut bergabung bersama teman sekelasmu di minimart"
 
+    call hangout
+
+    "Setelah berkumpul cukup lama bersama teman kelasmu, kamu akhirnya memutuskan untuk pulang."
+
     jump sleep
   
 #belajarUTS

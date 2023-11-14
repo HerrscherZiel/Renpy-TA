@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1400: elif clause expects a non-empty block.
-    elif day == 16:
-                   ^
-
-File "game/script.rpy", line 1404: expected statement.
-    else:
-        ^
+File "game/class/pti.rpy", line 592: end of line expected.
+    scene bg campus class with fade 2.0
+                                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Fri Sep  1 16:02:28 2023
+Tue Nov 14 11:05:10 2023

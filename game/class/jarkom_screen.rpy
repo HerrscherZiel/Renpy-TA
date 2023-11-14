@@ -44,3 +44,48 @@ screen jarkom_3_4:
 screen jarkom_3_5:
 
     add "kelas/jarkom-3/jarkom_3-5.png"
+
+#3
+screen jarkom_4_1:
+
+    add "kelas/jarkom-4/jarkom_4-1.png"
+
+screen jarkom_4_2:
+
+    add "kelas/jarkom-4/jarkom_4-2.png"
+
+screen jarkom_4_3:
+
+    add "kelas/jarkom-4/jarkom_4-3.png"
+
+screen jarkom_4_4:
+
+    add "kelas/jarkom-4/jarkom_4-4.png"
+
+screen jarkom_4_5:
+
+    add "kelas/jarkom-4/jarkom_4-5.png"
+
+screen jarkom_4_6:
+
+    add "kelas/jarkom-4/jarkom_4-6.png"
+
+screen jarkom_4_7:
+
+    add "kelas/jarkom-4/jarkom_4-7.png"
+
+screen jarkom_4_8:
+
+    add "kelas/jarkom-4/jarkom_4-8.png"
+
+screen jarkom_4_9:
+
+    add "kelas/jarkom-4/jarkom_4-9.png"
+
+screen jarkom_4_10:
+
+    add "kelas/jarkom-4/jarkom_4-10.png"
+
+screen jarkom_4_11:
+
+    add "kelas/jarkom-4/jarkom_4-11.png"
