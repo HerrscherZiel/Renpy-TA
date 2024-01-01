@@ -26,22 +26,54 @@ init python:
     gallery.image("cg_kaga")
     gallery.condition("persistent.kaga_unlocked")
 
+    gallery.button("akagi")
+    gallery.image("cg_beatrice")
+    gallery.condition("persistent.beatrice_unlocked")
+
     # $ persistent.kaga_unlocked = True
 
 screen gallery():
     tag menu
+    
+    frame:
+        xsize 1920
+        ysize 1080
+        background "gui/overlay/main_menu_overlay.png"
+        use navigation
 
-    hbox:
-        xalign 0.35
-        yalign 0.5
-        spacing 20
+        hbox:
+            vbox:
+                xpos 63
+                ypos 943
+                spacing 20
+                imagebutton:
+                    idle "menuUI/stats/return_idle.png"
+                    hover "menuUI/stats/return_hover.png"
+                    action Return()
+
+            grid 3 2:
+
+                # xfill True
+                # yfill True
+                xpos 720
+                ypos 100
+                # hbox:
+                xalign 0.35
+                yalign 1
+                spacing 35
 
 
-        add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock2.png")
-        add gallery.make_button(name="kaga", unlocked="cg_kaga2.png", locked="lock2.png")
-        add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock2.png")
+                add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                add gallery.make_button(name="kaga", unlocked="cg_kaga2.png", locked="lock.png")
 
-        textbutton "Return" action Return() xalign 0.5 yalign 0.5
+                add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
+
+                add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
+
+
+            
 
 
 # KENEEE

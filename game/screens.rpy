@@ -366,7 +366,7 @@ screen navigation():
         else:
             vbox:
                 style_prefix "navigation"
-                # xalign 0.5
+                xalign 1
                 yalign 0.5           
                 xpos gui.navigation_xpos
 
@@ -414,9 +414,7 @@ screen navigation():
 
         
 
-        
-
-
+    
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
 
@@ -514,6 +512,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     if main_menu:
         add gui.main_menu_background
+
     else:
         add gui.game_menu_background
 
@@ -599,7 +598,7 @@ style return_button_text is navigation_button_text
 style game_menu_outer_frame:
     bottom_padding 45
     top_padding 180
-    background "gui/overlay/bg_game_menu.png"
+    background "gui/overlay/main_menu_overlay.png"
     # background "gui/overlay/overlay_garis_game_menu.png"
 
 style game_menu_navigation_frame:
@@ -663,8 +662,9 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
+            text _("Gim ini dikembangkan menggunakan Ren'Py [renpy.version_only].\n\n Simulasi Kehidupan Kuliah merupakan sebuah novel visual yang dikembangkan untuk memberikan gambaran mengenai kehidupan berkuliah dengan studi kasus program studi Teknologi Rekayasa Perangkat Lunak.")
+# {a=https://www.renpy.org/}
+# [renpy.license!t]
 
 style about_label is gui_label
 style about_label_text is gui_label_text
@@ -695,7 +695,7 @@ screen load():
     tag menu
 
     use file_slots(_("Load"))
-
+    # add gui.save_load_background
 
 screen file_slots(title):
 

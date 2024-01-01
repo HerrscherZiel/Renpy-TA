@@ -623,6 +623,195 @@ label pti_4:
     pause 1.5
     jump alpro_4
 
+label uas_pti:
+
+    scene bg campus class with fade
+
+    "Memasuki ruang kelas ujian, pengawas ujian memberi instruksi kepada mahasiswa untuk meletakkan tas atau ransel di depan kelas secara rapi. 
+    Lalu hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tasmu di depan ruangan, kamu mengambil peralatan tulismu sebelum berjalan menuju bangku ujian."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, dosen pengawas lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    "Pengawas ujian telah memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 90 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+
+        "Mulai":
+
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    "Mengapa keamanan teknologi informasi itu penting?"
+
+    mc normal jacket "Hmmm keamanan teknologi informasi itu segala tindakan, prosedur, langkah-langkah untuk mencegah kegiatan-kegiatan yang merugikan untuk sistem kan, jadi …"
+
+    menu:
+        "A. Menjaga integritas":
+            "a. Keamanan teknologi informasi mampu memastikan dan menyakinkan integritas, ketersediaan dan kerahasiaan dari pengelolaan informasi."
+            mc "Kalau aman seharusnya integritas terjaga kan ya."
+            $ a_ptiAS +=5
+
+        "B. Merapikan struktur data informasi":
+            "b. Dengan informasi yang aman maka data dapat disusun secara lebih terstruktur."
+            mc "Hmmmm?"
+
+        "C. Hemat biaya":
+            "c. Keamanan teknologi informasi tidak memerlukan banyak biaya."
+            mc "Emang hemat biaya ya?"
+
+        "D. Mempermudah operasional sistem":
+            "d. Keamanan teknologi informasi mampu mempermudah aktivitas operasional sebuah sistem."
+            mc "Apakah yang ini?"
+
+    "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+
+    "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+
+    "2. 	Berikut ini yang bukan merupakan langkah pencegahan atau tindakan untuk meminimalisir terjadinya kerusakan atau pencurian data adalah?"
+
+    mc "Yang bukan bentuk tindakan untuk pencegahan ya….?"
+
+    menu:
+
+        "A. Enkripsi Data":
+            "a. Enkripsi data perlu dilakukan untuk menambah keamanan terhadap data terutama ketika melakukan transfer data."
+            mc "Enkripsi ya… hmm"
+        
+        "B. Klasifikasi Data dan Hak Akses":
+            "b. Data-data yang ada perlu diklasifikasikan dan dibuat tingkatan sehingga data hanya dapat diakses oleh yang berwenang saja."
+            mc "Klasifikasi data dan hak akses itu tindakan pencegahan kan."
+
+        "C. Autentikasi Berlapis":
+            "c. Autentikasi berlapis membuat data yang kita miliki menjadi lebih sulit untuk dibobol."
+            mc "Autentikasi itu semisal OTP sama password kalau gak salah…"
+
+        "D. Penggunaan Perangkat Publik untuk Akses Data Privat":
+            "d. Penggunaan perangkat publik ketika mengakses data yang sensitif akan menambah keamanan data."
+            mc "Perangkat publik atau pribadi sih harusnya??"
+            $ a_ptiAS +=5
+
+    "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+
+    "3. Manakah dari malware dibawah ini yang dapat menghilangkan akses terhadap file yang dimiliki dan akses dapat dikembalikan dengan cara membayar tebusan kepada pelaku?"
+
+    menu:
+        "A. Adware":
+            "a. Adware"
+            mc "Ini kalau ga salah malware iklan-iklan itu kan."
+
+        "B. Worm":
+            "b. Worm"
+            mc "Worm itu malware yang bisa menduplikasi diri sendiri hmmm…."
+
+        "C. Ransomware":
+            "c. Ransomware"
+            mc "Ransom itu nebus gitu ya? Harusnya ini sihh…."
+            $ a_ptiAS +=5
+
+        "D. Keylogger":
+            "d. Keylogger"
+            mc "Keylogger berarti yang bisa menyimpan aktivitas pengetikan yang dilakukan, biasanya buat ambil password sih…."
+
+    "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+    "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+
+    "4. 	Manakah dibawah ini merupakan pasangan yang tepat mengenai komponen sistem informasi?"
+
+    menu:
+
+        "A. Input Device, CPU":
+            "a. Input Device, CPU"
+            mc "CPU itu termasuk processing device ga sihh…"
+
+        "B. Storage, Harddisk":
+            "b. Storage, Harddisk"
+            mc "Harddisk itu emang salah satu komponen storage."
+            $ a_ptiAS +=5
+
+        "C. Sistem operasi, Microsoft":
+            "c. Sistem operasi, Microsoft"
+            mc "Sistem operasi itu Microsoft apa Windows huh?"
+
+        "D. Input Device, Speaker":
+            "d. Input Device, Speaker"
+            mc "Gatau tapi pasti yang ini fixx…"
+
+    "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir PTI pada pagi hari ini."
+
+    "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+
+    "5. Berikut yang bukan merupakan pernyataan yang benar mengenai komponen-komponen sistem informasi adalah?."
+
+    menu:
+
+        "A. Output device merupakan komponen informasi yang mampu menampilkan data":
+            "a. Output device merupakan komponen informasi yang mampu menampilkan data"
+            mc "Output Device itu monitor, speaker, print itu-itu kan?"
+
+        "B. Sistem operasi, aplikasi, bahasa pemrograman merupakan komponen perangkat lunak":
+            "b. Sistem operasi, aplikasi, bahasa pemrograman merupakan komponen perangkat lunak"
+            mc "Iya ketiganya itu software semua memang."
+
+        "C. Jaringan nirkabel unggul dalam mobilitas karena penggunaan gelombang radio untuk mentransmisikan data":
+            "c. Jaringan nirkabel unggul dalam mobilitas karena penggunaan gelombang radio untuk mentransmisikan data"
+            mc "Kalo wireless emang lebih enak buat kemana-mana sih…"
+
+        "D. Jaringan kabel memiliki kelemahan dalam pengelolaan, pemeliharaan, serta kecepatannya":
+            "d. Jaringan kabel memiliki kelemahan dalam pengelolaan, pemeliharaan, serta kecepatannya"
+            mc "Kalau pengelolaan dan pemeliharaan jaringan kabel pasti memang susah, tapi kecepatannya bukannya lebih cepat daripada wireless??"
+            $ a_ptiAS +=5
+
+    "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+
+    "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+    "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+    "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+    "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+    "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah PTI, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa 2 ujian akhir mata kuliah lainnya."
+
+    scene bg black with dissolve
+
+    jump uas_alpro
 label attend_pti:
 
     $ a_ptiA +=1

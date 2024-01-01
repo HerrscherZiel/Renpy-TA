@@ -740,6 +740,247 @@ label de_4:
     call change_timephase
     call screen mapUI
 
+label uas_de:
+
+    scene bg campus upper hall with fade
+
+    "Selesai menggunakan jam istirahat, kamu kembali ke area dimana teman-temanmu sedang belajar bersama."
+
+    "Sama seperti sebelumnya, terlihat mahasiswa-mahasiswa lain juga sedang membaca materi perkuliahan yang akan diujikan."
+
+    "Masih tersisa sekitar 10 menit lagi sebelum ujian terakhir pada hari ini dimulai."
+
+    "Kamu duduk bersandar di tembok kelas sembari mengingat materi yang telah kamu pelajari."
+
+    "Mengisi beberapa menit sebelum ujianmu dengan mengingat-ingat materi perkuliahan sebelum mengikuti ujian berikutnya."
+
+    "Tidak lama kemudian pintu ruang kelas ujian dibuka, satu persatu mahasiswa memasuki ruang kelas "
+
+    "Kemudian kamu juga ikut berdiri dan bergegas masuk ke ruang ujian."
+
+    scene bg campus class with dissolve
+
+    pause 1.5
+
+    "Sebelum memasuki ruang kelas ujian tak lupa dirimu sempat mengecek dimana bangku ujian terakhir untuk hari ini."
+
+    "Setelah mengetahui dimana bangku ujian mu, kamu memasuki ruang kelas dan melihat dosen pengawas ujian yang sudah duduk dan siap menjelaskan instruksi ujian."
+
+    "Memasuki ruang kelas ujian, dosen pengawas ujian memberi instruksi kepada mahasiswa seperti instruksi yang ada pada ujian sebelumnya."
+
+    "Meletakkan tas atau ransel di depan kelas secara rapi. Lalu hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tas ransel milikmu di depan ruang kelas, kamu mengambil peralatan tulis sebelum berjalan menuju bangku ujianmu."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, dosen pengawas lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    "Dosen pengawas telah memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 90 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+	    "Mulai":
+	        "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    "1. Penggunaan unsur-unsur yang memiliki kesamaan, kesesuaian, dan tidak memiliki pertentangan unsur merupakan penjelasan dari prinsip?"
+    mc normal jacket "prinsip…"
+
+    menu:
+	    "A. Prinsip Proporsi":
+            "a. Prinsip Proporsi"
+            mc "Proporsi itu perbandingan ukuran gitu gak sih?"
+
+        "B. Prinsip Harmoni":
+            "b. Prinsip Harmoni"
+            mc "Prinsip harmoni itu sama kaya prinsip keselarasan kan."
+            & a_deAS += 5
+
+        "c. Prinsip Irama":
+            "c. Prinsip Irama"
+            mc "Emang prinsip irama yah?"
+
+        "D. Prinsip Keseimbangan":
+            "d. Prinsip Keseimbangan."
+	        mc "Prinsip Keseimbangan itu keseimbangan bobot unsur seni kan?"
+
+    "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+
+    "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+
+    "2. 	Manakah dibawah ini yang bukan merupakan salah satu pengelompokan warna?"
+    mc "Pengelompokan warna itu ada 4….."
+
+    menu:
+
+Warna Primer:
+
+a. Warna Primer
+
+mc Warna primer itu merah, biru, sama kuning.
+
+Warna Sekunder:
+	
+	b. Warna Sekunder
+
+	mc Warna sekunder itu warna hasil pencampuran warna primer, semisal hijau kan.
+	
+Warna Irama:
+
+	c. Warna Irama
+
+	mc Irama kan salah satu prinsip, bukan pengelompokan warna
+
+	+5
+
+Warna Netral:
+
+	d. Warna Netral
+
+	mc Warna netral itu yang hitam, putih, sama warna-warna bumi
+
+Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya.
+
+3. Menggunakan warna-warna yang bersebelahan satu sama lain pada roda warna merupakan contoh pengaplikasian dari skema warna?
+
+Komplementer
+
+a. Komplementer
+
+mc Kalau engga salah ini skema komplementer sihh…
+
+Monokromatik
+
+	b. Monokromatik
+
+	mc Monokromatik kalo ga salah warnanya mirip-mirip gitu kan? Kalau bersebelahan harusnya warnanya mirip.
+
+Analog
+
+	c. Analog
+
+	mc Analog itu merupakan skema warna yang menggunakan warna yang bersebelahan pada roda warna.
+
+	+5
+
+Triadic
+
+	d. Triadic
+
+	mc Duh lupaaa…. Jawab yang ini saja lah.
+	
+Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya.
+
+Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4.
+
+4. 	Gabungan dari beberapa garis yang membentuk suatu kesatuan dan membuat ruang yang tertutup merupakan pengertian dari unsur seni?
+
+
+Titik
+
+a. Titik
+
+mc Titik itu unsur seni paling dasar…
+
+Garis
+
+	b. Garis
+
+	mc Garis itu gabungan dari beberapa titik
+
+Ruang
+
+	c. Ruang
+
+	mc Ruang?? Bener gak yaa?
+
+Bidang
+
+	d. Bidang
+
+	mc Harusnya bidang, karena garis yang membuat ruang tertutup
+
+	+5
+
+Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Desain elementer pada pagi hari ini.
+
+Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian.
+
+5. Manakah dibawah ini yang bukan merupakan istilah yang mengacu pada teori warna?
+
+Monolog
+
+	a. Monolog
+
+	mc Hah monolog?
+
+	+5
+
+Analog
+
+b. Analog
+
+mc Analog itu dalam roda warna itu kan…
+
+Tone
+
+	c. Tone
+
+	mc Tone itu kombinasi warna dengan warna putih itu kalau gak salah.
+
+Warna Kebumian
+
+	d. Warna Kebumian
+
+	mc Warna kebumian itu warna netral kaya coklat, krem, dan yang kaya gitu lah…
+
+Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan.
+
+Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian.
+
+Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar.
+
+Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu.
+
+Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi.
+
+Dengan selesainya ujian desain elementer pada siang hari ini, menandakan berakhirnya ujian pada hari ini.
+
+Setelah menjalani 3 ujian akhir, ujian hari pertama telah usai, kini tersisa dua hari ujian lagi sebelum minggu ujian selesai.
+
+
+
 label attend_de:
 
     $ a_deA +=1

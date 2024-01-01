@@ -747,7 +747,7 @@ label jarkom_4:
 
     scene bg campus class with dissolve
 
-    bn "Sekian dari saya untuk pertemuan hari ini. Terimakasih atas partisipasinya sampai pertemuan terakhir ini ya teman-teman."
+    bn normal"Sekian dari saya untuk pertemuan hari ini. Terimakasih atas partisipasinya sampai pertemuan terakhir ini ya teman-teman."
 
     bn "Saya tutup pertemuan hari ini, selamat belajar untuk ujian akhir nanti dan semoga mendapatkan hasil yang terbaik."
 

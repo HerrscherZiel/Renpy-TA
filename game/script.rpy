@@ -1311,6 +1311,37 @@ label days:
 
         jump bangun
 
+    elif day == 24:
+
+    show screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    "RINGGG RINGGG RINGGG"
+    #sfx alarm
+
+    "Seperti hari-hari biasanya, matamu terbuka setelah mendengarkan bunyi alarm yang keluar dari HPmu."
+
+    "Memandang ke langit-langit kosan sambil mengucek-ucek matamu yang masih terasa berat untuk dibuka."
+
+    "Dengan mata yang masih setengah terbuka, kamu meraba-raba bagian tempat tidur disebelah kepalamu untuk mematikan sumber bunyi yang membuatmu terbangun pada pagi hari ini."
+
+    "Setelah merasakan dingin dari layar hpmu, kamu langsung mematikan alarm yang masih terus berdering nyaring."
+
+    "Dengan mata yang masih mengantuk, kamu menyempatkan dirimu untuk membuka Lane yang terlihat sudah terdapat banyak notifikasi."
+
+    "Salah satu pesan yang terdapat pada layar HPmu, adalah pesan dari [r] bertuliskan '{i}Semangat buat ujian hari ini!!{/i}'"
+
+    "Membaca pesan tersebut, kamu teringat akan ujian yang akan dimulai pada hari ini."
+
+    "Meskipun matamu masih terasa berat, namun kamu paksakan tubuhmu dari yang semula masih berbaring pada tempat tidurmu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk."
+
+    "Setelah duduk untuk sementara waktu, beberapa menit kemudian kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
+
+    "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini, sebelum berangkat menuju kampus dan memulai minggu ujian akhirmu."
+
+    call screen mapUI with dissolve
+
     elif day == 25:
 
         "UAS"
@@ -1360,7 +1391,23 @@ label sleep:
 
         "Menelaah lebih lanjut informasi yang ada, setelah dirasa cukup kamu menutup aplikasi Lane dan bersiap untuk tidur."
 
-    "Namun setelah menscroll pesan yang ada di group kelas hingga pesan yang paling baru, kamu tidak menemukan adanya informasi khusus."
+    elif day == 23:
+
+        "Terlihat terdapat beberapa notifikasi pesan pada grup kelasmu."
+
+        "[r] mengirim beberapa pesan yang berisi ajakan untuk mengikuti kegiatan belajar bersama mempersiapkan ujian akhir yang akan dilaksanakan minggu depan."
+
+        "Beberapa pesan balasan dikirimkan oleh teman-teman sekelasmu menanggapi ajakan dari [r]. Kebanyakan menanggapinya dengan positif dan tidak sabar melakukan kegiatan tersebut,
+        namun juga terdapat beberapa dari teman sekelasmu yang langsung memberikan alasan untuk tidak menghadiri kegiatan belajar bersama."
+
+        "Setelah beberapa percakapan dan pembahasan mengenai kegiatan esok, akhirnya disepakati untuk melakukan kegiatan tersebut pada lokasi yang sama 
+        ketika melakukan kegiatan belajar bersama pada waktu ujian tengah semester."
+
+        "Lalu setelah merasa cukup menerima informasi yang ada pada grup Lane, kamu memutuskan untuk tidur."
+
+    else:
+
+        "Namun setelah menscroll pesan yang ada di group kelas hingga pesan yang paling baru, kamu tidak menemukan adanya informasi khusus."
 
     "Kemudian kamu menutup Lane dan menaruh HPmu disebelah tempat tidurmu"
 
@@ -1483,6 +1530,17 @@ label sleep:
 
         "Meskipun begitu, kamu menyadari jika dirimu masih harus terus lebih giat dalam berkuliah, sehingga hasil yang didapatkan meningkat."
 
+    elif day == 23:
+
+        "Kamu teringat hari ini merupakan hari terakhir pembelajaran kuliah normal pada tahun ini. Besok adalah hari terakhir kamu bisa menikmati liburan, 
+        meskipun kamu juga harus belajar untuk ujian di hari berikutnya."
+
+        "Seperti yang baru saja kamu baca pada aplikasi Lane, kegiatan belajar bersama untuk ujian juga akan diadakan setiap hari sebelum ujian akhir dilaksanakan."
+
+        "[r] menyerukan kepada teman-teman sekelas untuk bergabung dan meramaikan kegiatan belajar sama seperti sewaktu ujian tengah semester."
+
+        "Kamu masih belum tahu apakah dirimu akan mengikuti kegiatan belajar tersebut atau tidak. Sekarang kamu hanya memikirkan apa yang ingin kamu lakukan esok hari."
+
     else:
         pass
 
@@ -1490,7 +1548,7 @@ label sleep:
 
     "Kemudian tidak lama berselang, kesadaranmu perlahan mulai menghilang."
 
-    "Setelah mata terutup dan pandanganmu menjadi gelap, kamu tertidur pulas pada malam hari ini."
+    "Setelah mata tertutup dan pandanganmu menjadi gelap, kamu tertidur pulas pada malam hari ini."
 
     "Day [day] END"
 
@@ -1532,9 +1590,9 @@ label bangun:
 
     "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
 
-    "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidur yang disebelah kepalamu untuk mencari HPmu."
+    "Dengan mata yang masih setengah terbuka, meraba-raba bagian tempat tidur disebelah kepalamu untuk mencari HPmu."
 
-    "Setelah menemukannya, kamu langsung mematikan alarm yang terus berdenging nyaring."
+    "Setelah menemukannya, kamu langsung mematikan alarm yang terus berdering nyaring."
 
     "Melihat waktu yang masih pagi, sebenarnya kamu masih merasa ngantuk."
 

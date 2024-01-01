@@ -680,6 +680,247 @@ label alpro_4:
 
     jump de_4
 
+label uas_alpro:
+
+    scene bg campus hall with dissolve
+
+    "Tidak jauh berbeda dengan suasana sebelum ujian pertama dimulai, mahasiswa-mahasiswa duduk mengelompok di depan ruang kelas ujian dan belajar materi perkuliahan yang akan diujikan."
+
+    "Termasuk dirimu dan teman-teman sekelasmu, kamu melihat [r] dan beberapa teman kelas lainnya saling mengajukan tanya jawab seputar materi ALPRO yang menjadi mata kuliah yang akan diujikan kedua pada hari ini."
+
+    "Masih tersisa sekitar 15 menit lagi sebelum ujian kedua pada hari ini dimulai."
+
+    "Seperti sebelumnya, kamu hanya duduk bersandar di tembok kelas sembari mengingat materi yang telah kamu pelajari."
+
+    t normal "Hei [name] gimana tadi? Lancar gak ngerjainnya?"
+
+    mc normal jacket "Yahh… gitulah ya, harusnya sih oke hasilnya, lu gimana?"
+
+    t "Hahaha jangan tanya, ya jelas sebisanya lahh, semalem baru belajar bentar malah mati listrik kosan gua."
+
+    mc "Lahhh… yaudah belajar lagi sana, masih sisa beberapa menit lagi nihh"
+
+    t "Santaii… masih dikit-dikit inget kok materinya."
+
+    mc "Jiahhh… yakin inget?"
+
+    t "Ingettttt lahhhh…. dikit."
+
+    mc "Hahaha yaudah good luck aja dah"
+
+    "Mengisi beberapa menit sebelum ujianmu dengan mengobrol dengan teman sekelasmu membuat dirimu menjadi lebih tenang sebelum mengikuti ujian berikutnya."
+
+    "Namun obrolan pagi harimu dihentikan ketika suara pintu ruang ujian yang ada didekatmu telah terbuka."
+
+    "Sekarang sudah memasuki waktu ujian akhir yang kedua, kamu berdiri dan bergegas masuk ke ruang ujian."
+
+    scene bg campus upper hall with fade
+
+    pause 2.0
+
+    scene bg campus class with fade
+
+    "Sebelum memasuki ruang kelas ujian tak lupa dirimu sempat mengecek dimana bangku ujian untuk ujian akhir mata kuliah ALPRO kali ini."
+
+    "Setelah mengetahui dimana bangku ujian mu, kamu memasuki ruang kelas dan melihat dosen pengawas ujian yang familiar pada perkuliahanmu."
+
+    pa normal "Selamat pagi teman-teman, bagaimana persiapannya untuk ujian kali ini, bapak harap kalian sudah siap yaa."
+
+    pa "Mungkin seperti yang sudah kalian tahu, bapak akan membaca instruksi untuk ujian kali ini."
+
+    "Memasuki ruang kelas ujian, [pa] selaku pengawas ujian memberi instruksi kepada mahasiswa seperti instruksi yang ada pada ujian sebelumnya."
+
+    "Meletakkan tas atau ransel di depan kelas secara rapi. Lalu hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tas ransel milikmu di depan ruang kelas, kamu mengambil peralatan tulis sebelum berjalan menuju bangku ujianmu."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, [pa] lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    "[pa] telah memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 90 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar {/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+        "Mulai":
+        "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    "1. Berikut merupakan beberapa pernyataan mengenai prosedur dan fungsi, pernyataan yang benar adalah?"
+
+    mc normal jacket "fungsi dan prosedur yaa…"
+
+    menu:
+        "A. Prosedur dan Fungsi mengembalikan nilai":
+            "a. Prosedur dan Fungsi mengembalikan nilai."
+            mc "Emang dua duanya return value ya?"
+
+        "B. Prosedur dan Fungsi tidak mengembalikan nilai":
+            "b. Prosedur dan Fungsi tidak mengembalikan nilai."
+            mc "Hmmmm masa sih keduanya ga ngembaliin nilai?"
+
+        "C. Prosedur tidak mengembalikan nilai":
+            "c.Prosedur tidak mengembalikan nilai."
+            mc "Ya prosedur engga ngereturn value?"
+            $ a_alproAS += 5
+
+        "D. Fungsi tidak mengembalikan nilai":
+            "d. Fungsi tidak mengembalikan nilai."
+            mc "Fungsi harusnya ngembaliin nilai kan?"
+
+    "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+
+    "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+
+    "2. 	Manakah dibawah ini yang bukan merupakan manfaat dari pemanfaatan prosedur dan fungsi?"
+
+    mc "Manfaat-manfaat prosedur dan fungsi itu…."
+
+    menu:
+
+        "A. Modularitas":
+            "a. Modularitas."
+            mc "Modularitas itu kalau gak salah..."
+
+        "B. Reusabilitas":
+            "b. Reusabilitas."
+            mc "Menggunakan prosedur atau fungsi memang bisa dipanggil berkali-kali sih."
+	
+        "C. Memudahkan pemeliharaan kode":
+            "c. Memudahkan pemeliharaan kode."
+            mc "Harusnya juga pemeliharaannya jadi lebih mudah…"
+
+        "D. Menambah estetika kode":
+            'd. Menambah estetika kode.'
+            mc "Kayanya engga ngaruh keestetika juga deh…"
+            $ a_alproAS += 5
+
+    "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+
+    "3. Algoritma pencarian yang dilakukan pada kumpulan data yang telah diurutkan sebelumnya. Pencarian ini dilakukan dengan membagi data menjadi dua bagian dan membandingkan elemen tengah dengan elemen yang dicari.
+    Merupakan penjelasan dari algoritma pencarian....?"
+
+    menu:
+
+        "A. Linear Search":
+            "a. Linear Search"
+            mc "Hmmmmm…."
+
+        "B. Binary Search":
+            "b. Binary Search"
+            mc "Kayaknya kalau diurutin dulu itu yang binary dah…."
+            $ a_alproAS += 5
+
+        "C. Depth First Search":
+            "c. Depth First Search"
+            mc "Ini yang pake node-node itu ga sih?"
+
+        "D. Tree Search":
+            "d. Tree Search"
+            mc "Baru denger ada yang namanya Tree Search…."
+
+    "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+    "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+
+    "4. 	Cara kerja algoritma dengan melakukan perbandingan dan penukaran terhadap elemen-elemen array yang ada hingga semua data terurutkan
+    Merupakan penjelasan dari cara kerja algoritma pengurutan....."
+
+    menu:
+
+        "A. Bubble Sort":
+            "a. Bubble Sort"
+            mc "Kalo ga salah yang paling simple itu bubble sort…"
+            $ a_alproAS += 5
+
+        "B. Insertion Sort":
+            "b. Insertion Sort"
+            mc "Insertion sort itu yang ngesisipin terus dibandingkan itu kan ya?"
+
+        "C. Quick Sort":
+            "c. Quick Sort"
+            mc "Quick Sort?? Hmmm….."
+
+        "D. Depth First Sort":
+            "d. Depth First Sort"
+            mc "Yang ini kali ya?"
+
+    "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir ALPRO pada pagi hari ini."
+
+    "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+
+    "5. Apa manfaat dari penggunaan algoritma pencarian dan pengurutan, kecuali?"
+
+    menu:
+
+        "A. Optimasi kinerja":
+            "a. Optimasi kinerja"
+            mc "Harusnya yang ini bener sih…"
+
+        "B. Memudahkan pencarian":
+            "b. Memudahkan pencarian"
+            mc "Namanya algoritma pencarian, harusnya ya jadi mudah pencariannya."
+
+        "C. Pemrograman lebih efisien":
+            "c. Pemrograman lebih efisien"
+            mc "Lebih simple terus bisa dipakai berkali-kali, bener berarti…"
+
+        "D. Redudansi kode":
+            "d. Redudansi kode"
+            mc "Harusnya kan bikin nggak redundant??"
+            $ alproAS += 5
+
+    "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+
+    "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+    "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+    "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+    "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+    "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah ALPRO, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa 1 ujian akhir mata kuliah Desain Elementer."
+
+    scene bg campus hall with dissolve
+
+    pause 1.5
+
+    call istirahat_uas
+
+    jump uas_de
+
+
 label attend_alpro:
 
     $ a_alproA +=1

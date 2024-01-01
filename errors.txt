@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/class/pti.rpy", line 592: end of line expected.
-    scene bg campus class with fade 2.0
-                                    ^
+File "game/gallery.rpy", line 46: Line is indented, but the preceding yfill statement does not expect a block. Please check this line's indentation.
+    xalign 0.35
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Tue Nov 14 11:05:10 2023
+Mon Nov 20 15:17:41 2023

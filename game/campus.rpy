@@ -797,6 +797,8 @@ label class_finder:
             jump uts_1
         elif day == 17:
             jump pti_3
+        elif day == 25:
+            jump pre_uas
         else:
             jump pti_4
 
@@ -809,6 +811,8 @@ label class_finder:
             jump uts_strukdat
         elif day == 18:
             jump strukdat_3
+        elif day == 26:
+            jump uas_strukdat
         else:
             jump strukdat_4        
 
@@ -821,6 +825,8 @@ label class_finder:
             jump uts_pbo
         elif day == 19:
             jump pbo_3
+        elif day == 27:
+            jump uas_pbo
         else:
             jump pbo_4  
 
@@ -993,6 +999,122 @@ label istirahat:
 
     return
 
+label istirahat_uas:
+    
+    "Selesai dengan ujian akhir yang kedua untuk hari ini, masih tersisa waktu sekitar 60 menit sebelum ujian akhir terakhir pada hari ini dimulai."
+
+    "Beberapa dari temanmu terlihat langsung berjalan menuju parkiran mengendarai motor mereka kemudian pergi meninggalkan daerah kampus."
+
+    "Kamu masih belum memutuskan untuk apa yang ingin kamu lakukan di sela waktu 60 menit ini."
+
+    "Kamu juga masih melihat beberapa temanmu duduk diam di sekitarmu lalu membaca materi untuk ujian nanti."
+
+    "Setelah memikirkan selama beberapa waktu akhirnya kamu memutuskan untuk"
+
+	menu:
+
+		"Menunggu di kampus hingga ujian akhir dimulai":
+
+            scene bg campus upper hall with dissolve
+
+            pause 1.5
+            
+            "Kamu memutuskan untuk menunggu di sekitar ruang kelas ujian berikutnya sembari mengobrol bersama teman-temanmu yang lainnya."
+
+            "Tidak banyak yang kamu lakukan, hanya bergurau sembari saling menjawab pertanyaan yang diajukan untuk materi ujian berikutnya."
+
+            "Tidak terasa, waktu berjalan begitu cepat, kini sudah hampir memasuki waktu ujian untuk ujian akhir yang berikutnya."
+
+            "Kamu dan teman-temanmu berdiri, dan bersiap untuk melaksanakan ujian akhir berikutnya."
+
+		"Pergi ke kantin untuk mencari makan":
+
+            "Kamu memilih untuk tetap berada di kampus, dan pergi ke kantin untuk mengisi perutmu."
+
+            "Mendekati salah satu kerumpulan temanmu yang juga menunggu di kampus, kamu mengajaknya untuk pergi ke kantin."
+
+            mc normal jacket "Bro kantin nggak ?"
+
+            t normal "Aku enggak dulu dah, yang lain coba?"
+
+            mc "Ohh okey..."
+
+            "Ajakanmu ditolak, kamu berpindah ke salah satu temanmu yang sering kamu lihat sedang bermain HP terus."
+
+            mc "Gimana bro mau ke kantin enggak?"
+
+            t "Cuss, laper juga aku, habis ini tapi ya nanggung."
+
+            mc "Ealah... yaudah buruan keburu laper nih."
+
+            "Menunggu temanmu selesai bermain Crush or Clutch, kamu juga membuka HPmu untuk mengisi waktu."
+
+            scene bg canteen with dissolve
+
+            "Sampai di kantin, kamu mengambil beberapa jajanan yang ada."
+
+            "Kamu mengambil arem-arem, risol mayo, dan sebuah sosis."
+
+            "Tidak lupa juga mengambil susu kedelai untuk menghilangkan dahagamu."
+
+            "Tentu saja setelah mengambil kamu langsung membayar pada kotak uang masing-masing."
+
+            "Kamu dan temanmu memilih untuk menyantap jajanan itu di area kantin."
+
+            "Kalian berdua duduk di kursi yang terdapat disekitar kantin, lalu menikmati jajanan yang dibeli sambil bergurau."
+
+            call small_eat
+
+            scene bg canteen with fade
+
+            "Seusai menyantap jajananmu, kalian kembali ke kerumpulan teman-temanmu yang masih menunggu di kampus."
+
+            "Menunggu hingga masuk waktu kelas berikutnya dimulai."
+		
+		"Pulang ke kos dan istirahat sejenak":
+
+            "Kamu lebih memilih untuk meninggalkan kampus dan kembali ke kos."
+
+            "Merasa cukup lelah, kamu ingin membaringkan tubuhmu di atas kasur."
+
+            "Berjalan keluar dari gedung, kamu berjalan menuju tempat parkir."
+
+            scene bg campus parking lot with fade
+
+            "Memakai helm, menyalakan mesin sepeda motor, kamu langsung mengendarainya keluar dari kampus."
+
+            "Cuaca yang sangat panas membuat dirimu ingin segera pulang dan mendinginkan tubuhmu di kos."
+
+            "Kamu mengendarai sepeda motormu dengan lihai melewati jalanan."
+
+            scene bg town street 2 with fade
+            pause 0.5
+            scene bg town street 1 with fade
+            pause 0.5
+            scene bg kos morn with fade
+
+            "Setelah beberapa menit mengendarai motor, akhirnya kamu sampai di kos."
+
+            "Meletakan tas ransel, kamu langsung merebahkan tubuh di atas kasur."
+
+            mc normal jacket "Capek gini ikut kelas... tidur siang bentar aja lah ya..."
+
+            "Setelah itu kamu memejamkan mata dan memanfaatkan waktu istirahatmu untuk tidur siang."
+
+            call nap
+
+            scene bg black with fade
+            pause 2.0
+
+            "Tepat pukul 11.45 kamu sudah terbangun dari tidur siangmu."
+
+            "Kamu langsung bersiap-siap untuk berangkat menuju kampus lagi."
+
+            "Setelah siap, kamu langsung mengendarai motormu menuju kampus."
+		
+    scene bg campus hall with fade
+
+
 label uts_1:
 
     scene bg campus hall with dissolve
@@ -1094,7 +1216,58 @@ label uts_akhir:
             "Beristirahat dengan tenang karena ujian tengah semester telah berakhir."
             
             call screen mapUI with dissolve
-        
+
+label pre_uas:
+
+    show screen trans_screen with dissolve
+    scene bg campus hall with fade
+    pause 2.0
+
+    "Memasuki gedung kampus sudah terlihat banyak mahasiswa-mahasiswa lain baik dari program studimu maupun program studi lainnya telah hadir dan duduk berjajar di area dalam kampus."
+
+    "Kebanyakan dari mereka sedang memegang kertas-kertas maupun handphone masing-masing dan tampak sedang fokus membaca materi perkuliahan."
+
+    "Meskipun ada juga yang hanya duduk dan mengobrol dengan orang disebelah mereka."
+
+    "Kamu berjalan menuju kelas dimana ujian akhir mata kuliah PTI akan dilaksanakan sembari mengamati kondisi disekitarmu."
+
+    scene bg campus upper hall with fade
+
+    "Setelah sampai di area ruangan kelas yang akan digunakan untuk ujian akhir PTI, teman-teman sekelasmu telah ramai duduk mengelompok dan membaca catatan mereka masing-masing."
+
+    r normal2 "Pagi [name]!"
+
+    mc normal jacket "Pagi [r], gimana belajarnya??"
+
+    r "Yaaa udah selesai sihh, semoga bisa ngerjainnya nanti, kamu gimana?"
+
+    mc "Semoga lancar aja nanti hehe…"
+
+    r "Ahaha dasarr…"
+
+    t normal "Oh hii [name]! Baru dateng yaa?"
+
+    mc "Halooo, iya nihh"
+
+    t "Cuss baca-baca materi sebelum ujian mulaii [name], oh iya [r] kalau iniii…."
+
+    "[r] sedang membahas materi bersama teman-teman sekelasmu lainnya."
+
+    "Kamu yang masih berdiri kemudian duduk dan bersandar pada tembok ruang kelas, kemudian melihat jam digital yang ada pada HPmu."
+
+    "Waktu telah menunjukkan pukul 7.25, masih tersisa lima menit sebelum pintu ruang kelas ujian akhir dibuka. "
+
+    "Merasa sudah cukup siap untuk melakukan ujian akhir, kamu hanya duduk diam sambil mengingat-ingat materi yang akan diujikan."
+
+    "scene bg black"
+
+    "Lima menit berlalu dengan cepat, kini dosen pengawas ujian telah membuka pintu ruang ujian."
+
+    "Seperti ujian tengah semester lalu, posisi tempat duduk untuk ujian telah ditentukan dan terlihat pada kertas yang ditempelkan pada pintu ruang kelas."
+
+    "Setelah melihat dimana kamu akan duduk, kamu memasuki ruang kelas untuk melaksanakan ujian akhir pertamamu. "
+
+    jump uas_pti
     
 #hari ke 3 minggu ke 1
 label pre_libur:

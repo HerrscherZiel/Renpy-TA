@@ -30,7 +30,7 @@ define gui.idle_color = '#b6c1de'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#888888'
+define gui.idle_small_color = '#464444'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#fefefe'
@@ -88,8 +88,9 @@ define gui.title_text_size = 40
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/bg.png"
+define gui.main_menu_background = "gui/bg_main.png"
 define gui.game_menu_background = "gui/game_menu.png"
+define gui.save_load_background = "gui/load_save_background.png"
 
 
 ## Dialogue ####################################################################
@@ -227,7 +228,7 @@ define gui.choice_button_text_insensitive_color = "#444444"
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
-define gui.slot_button_text_size = 35
+define gui.slot_button_text_size = 50
 define gui.slot_button_text_xalign = 0.5
 define gui.slot_button_text_idle_color = gui.idle_small_color
 define gui.slot_button_text_selected_idle_color = gui.selected_color
