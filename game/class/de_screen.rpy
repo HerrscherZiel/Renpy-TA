@@ -67,3 +67,27 @@ screen de_4_4:
 screen de_4_5:
 
     add "kelas/de-4/de_4-5.png"
+
+
+#uas
+
+screen deas_1:
+
+    add "kelas/de-uas/uas_de_1.png"
+
+screen deas_2:
+
+    add "kelas/de-uas/uas_de_2.png"
+
+screen deas_3:
+
+    add "kelas/de-uas/uas_de_3.png"
+
+screen deas_4:
+
+    add "kelas/de-uas/uas_de_4.png"
+
+screen deas_5:
+
+    add "kelas/de-uas/uas_de_5.png"
+

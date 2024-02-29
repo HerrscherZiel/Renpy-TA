@@ -41,7 +41,7 @@ screen pbo_3_5:
 
     add "kelas/pbo-3/pbo_3-5.png"
 
-#3
+#4
 screen pbo_4_1:
 
     add "kelas/pbo-4/pbo_4-1.png"
@@ -65,3 +65,25 @@ screen pbo_4_5:
 screen pbo_4_6:
 
     add "kelas/pbo-4/pbo_4-6.png"
+
+#uas
+
+screen pboas_1:
+
+    add "kelas/pbo-uas/uas_pbo_1.png"
+
+screen pboas_2:
+
+    add "kelas/pbo-uas/uas_pbo_2.png"
+
+screen pboas_3:
+
+    add "kelas/pbo-uas/uas_pbo_3.png"
+
+screen pboas_4:
+
+    add "kelas/pbo-uas/uas_pbo_4.png"
+
+screen pboas_5:
+
+    add "kelas/pbo-uas/uas_pbo_5.png"

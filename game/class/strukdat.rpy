@@ -779,6 +779,330 @@ label strukdat_4:
 
     jump basdat_4
 
+label uas_strukdat:
+
+    scene bg campus upper hall with fade
+
+    "Hari ini merupakan hari keduamu dalam minggu ujian akhir, suasana setelah memasuki gedung kampus tidak jauh berbeda dengan hari sebelumnya."
+
+    "Terlihat banyak mahasiswa-mahasiswa lain baik dari program studimu maupun program studi lainnya telah hadir dan duduk berjajar di area dalam kampus."
+
+    "Kebanyakan dari mereka sedang memegang kertas-kertas maupun handphone masing-masing dan tampak sedang fokus membaca materi perkuliahan."
+
+    "Meskipun ada juga yang hanya duduk dan mengobrol dengan orang disebelah mereka."
+
+    "Kamu berjalan menuju kelas dimana ujian akhir mata kuliah Strukdat akan dilaksanakan sambil melihat-lihat kondisi di sekitaran ruang kelas ujian."
+
+    "Setelah sampai di area ruangan kelas yang akan digunakan untuk ujian akhir Strukdat, teman-teman sekelasmu telah ramai duduk mengelompok dan membaca catatan mereka masing-masing."
+
+    r normal2 "Pagi [name]!"
+
+    mc normal jacket "Pagi [r], gimana belajarnya??"
+
+    r "Sudah siap lah ya, gimana kamu? Udah siap belum?"
+
+    mc "Ya siap-siap engga juga sihhh…."
+
+    r "Seperti biasanya berarti hahahaha"
+
+    t normal 'Pagi [r], pagi [name]!'
+
+    mc "Halooo, pagiii"
+
+    r "Pagiiii"
+
+    "Salah satu teman sekelasmu baru saja datang dan menyapa kalian berdua."
+
+    t "[r] mau tanya dongg, soal materi ujian nanti…."
+
+    r "Tanya apa? Sini cobaa…"
+
+    t "Ini nihh… materi ini…."
+
+    "Teman sekelasmu itu langsung duduk disebelah [r] dan mengeluarkan kertas catatan dari dalam ranselnya."
+
+    r "[name] sini sekalian kalo mau ikut bahas materi?"
+
+    t "Iyaa sinii ajaa…"
+
+    mc "Engga lah, aku baca-baca sendiri ajaa…."
+
+    r "Okeyyyy"
+
+    "Kamu yang masih berdiri kemudian duduk dan bersandar pada tembok ruang kelas, kemudian melihat jam digital yang ada pada HPmu."
+
+    "Waktu telah menunjukkan pukul 7.25, masih tersisa lima menit sebelum pintu ruang kelas ujian akhir dibuka. "
+
+    "Merasa sudah cukup siap untuk melakukan ujian akhir, kamu hanya duduk diam sambil mengingat-ingat materi yang akan diujikan."
+
+    scene bg black
+
+    "Lima menit berlalu dengan cepat, kini dosen pengawas ujian telah membuka pintu ruang ujian. [bn] yang akan menjadi dosen pengawas ujian pada ujian Strukdat kali ini."
+
+    "Seperti ujian tengah semester lalu, posisi tempat duduk untuk ujian telah ditentukan dan terlihat pada kertas yang ditempelkan pada pintu ruang kelas."
+
+    "Setelah melihat dimana kamu akan duduk, kamu memasuki ruang kelas untuk melaksanakan ujian akhir pertamamu di hari kedua."
+
+    scene bg campus class with dissolve
+
+    pause 1.5
+
+    "Memasuki ruang kelas ujian, [bn] memberi instruksi kepada mahasiswa untuk meletakkan tas atau ransel di depan kelas secara rapi. Lalu hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tasmu di depan ruangan, kamu mengambil peralatan tulismu sebelum berjalan menuju bangku ujian."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, [bn] lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    bn normal "Sekarang sudah memasuki waktu ujian, kalian bisa mulai mengerjakan soal yang ada pada lembar jawaban."
+
+    bn "Jangan lupa untuk mengisi biodata kalian terlebih dahulu, dan pastikan sudah terisi sesuai."
+
+    bn "Selamat mengerjakan, dan semoga mendapatkan hasil yang memuaskan."
+
+    "Setelah [bn] memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 45 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    label soalstrukdat1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_strukdat1'
+
+        show screen strukdatas_1 with dissolve
+        "1. Root dan child merupakan istilah yang digunakan pada struktur data?"
+        mc normal jacket "Hmmm root dan child ya?"
+        show screen countdown
+        menu:
+
+            "A. Array":
+                "a. Array"
+                mc "Array itu yang indexnya dimulai dari 0 kan, itu ya yang berarti ."
+
+            "B. Linked List":
+                "b. Linked list"
+                mc "Feeling ku yang ini sihh…"
+
+            "C. Tree":
+                "c. Tree"
+                mc "Tree kan kalau gak salah dari node paling atas terus ke node yang bawah atau node anaknya. "
+                $ a_strukdatAs += 5
+
+            "D. Queue":
+                "d. Queue"
+                mc "Hierarkis berarti harus urut gitu kan."
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        hide screen strukdatas_1 with dissolve
+        jump soalstrukdat2
+
+    label telat_strukdat1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+    
+    hide screen strukdatas_1 with dissolve
+
+    label soalstrukdat2:
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+
+        "2. 	Head dan tail merupakan istilah yang digunakan pada struktur data?"
+        mc "Head dan tail, head dan tail…..?"
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_strukdat2'
+
+        show screen strukdatas_2 with dissolve
+        show screen countdown
+        menu:
+
+            "A. Array":
+                "a. Array"
+                mc "mc Array…..."
+
+            "B. Linked List":
+                "b. Linked list"
+                mc "Kayaknya linked list deh, nanti head atau tailnya terus ada hubungannya sama pointer-pointer itu.."
+                $ a_strukdatAs += 5
+
+            "C. Tree":
+                "c. Tree"
+                mc "Tree kan kalau gak salah dari node paling atas terus ke node yang bawah atau node anaknya. "
+
+            "D. Queue":
+                "d. Queue"
+                mc "Queue bukannya yang pakai First In First Out itu ya?."
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen strukdatas_2 with dissolve
+        jump soalstrukdat3
+
+    label telat_strukdat2:
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+    
+    hide screen strukdatas_2 with dissolve
+
+    label soalstrukdat3:
+        "3. Manakah dibawah ini yang merupakan tipe data yang cocok untuk data nama dan umur?"
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_strukdat3'
+
+        show screen strukdatas_3 with dissolve
+        show screen countdown
+        menu:
+
+            "A. Boolean dan Array":
+                "a. Boolean dan Array"
+                mc "Yakin nih aku jawab ini??"
+
+            "B. String dan Date":
+                "b. String dan Date"
+                mc "Date? Bukanlahh…."
+
+            "C. String dan Integer":
+                "c. String dan Integer"
+                mc "Yuppss… string untuk nama, dan integer buat umurnya."
+                $ a_strukdatAs += 5
+
+            "D. Float dan Text":
+                "d. Float dan Text"
+                mc "Masa float sama text sih…."
+        hide screen countdown
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        hide screen strukdatas_3 with dissolve
+        jump soalstrukdat4
+
+    label telat_strukdat3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+    
+    hide screen strukdatas_3 with dissolve
+    
+    label soalstrukdat4:
+        "4. Mengapa kita sebaiknya menggunakan tipe data yang tepat dalam sistem kita, kecuali?"
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_strukdat4'
+
+        show screen strukdatas_4 with dissolve
+        show screen countdown
+        menu:
+
+            "A. Tipe data yang tepat dapat mempermudah dalam pemrograman.":
+                "a. Tipe data yang tepat dapat mempermudah dalam pemrograman."
+                mc "Kayaknya bukan yang ini deh, tipe data ga mempermudah pemrograman."
+
+            "B. Efisiensi penggunaan memori.":
+                "b. Efisiensi penggunaan memori."
+                mc "Setahuku tipe data pemakaian memorinya sama semua…	"
+
+            "C. Kompatibilitas pada kode yang sedang dikembangkan.":
+                "c. Kompatibilitas pada kode yang sedang dikembangkan."
+                mc "Emang kalo tipe datanya salah jadi gabisa gitu kah?"
+
+            "D. Meningkatkan estetika program yang dikembangkan.":
+                "d. Meningkatkan estetika program yang dikembangkan."
+                mc "Estetika? Kan cuma dikodenya, bukan programnnya."
+                $ a_strukdatAs += 5
+        hide screen countdown
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Strukdat pada pagi hari ini."
+
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        hide screen strukdatas_4 with dissolve
+        jump soalstrukdat5
+
+    label telat_strukdat4:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+    
+    hide screen strukdatas_4 with dissolve
+
+    label soalstrukdat5:
+        "5. Yang bukan merupakan tipe data pemrograman yang berada dalam satu kelompok adalah?"
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_strukdat5'
+
+        show screen strukdatas_5 with dissolve
+        show screen countdown
+        menu:
+
+            "A. String, text, char":
+                "a. String, text, char"
+                "mc Hmm… bukannya satu kelompok ya?"
+
+            "B. Float, double, int":
+                "b. Float, double, int"
+                mc "Hmmm sama-sama angka tapi int kan bilangan bulat ya.."
+                $ a_strukdatAs += 5
+
+            "C. Int dan short":
+                "c. Int dan double"
+                mc "Jelas yang ini bener sih……."
+
+            "D. Short, Int, Long":
+                "d. Short, Int, Long"
+                mc "Harusnya ini dalam satu kelompok sih…."
+        hide screen countdown
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        hide screen strukdatas_5 with dissolve
+        jump end_strukdat
+
+    label telat_strukdat5:
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+    
+    hide screen strukdatas_5 with dissolve
+
+    label end_strukdat:
+            
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+        "Ujian pertamamu dalam hari yang kedua telah selesai, kamu berjalan keluar dari ruang kelas ujian"
+
+        "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah Strukdat, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa 2 ujian akhir mata kuliah lainnya."
+
+        jump uas_basdat
+
 label attend_strukdat:
 
     $ a_strukdatA +=1

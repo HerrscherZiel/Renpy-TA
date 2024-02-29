@@ -1011,9 +1011,9 @@ label istirahat_uas:
 
     "Setelah memikirkan selama beberapa waktu akhirnya kamu memutuskan untuk"
 
-	menu:
+    menu:
 
-		"Menunggu di kampus hingga ujian akhir dimulai":
+        "Menunggu di kampus hingga ujian akhir dimulai":
 
             scene bg campus upper hall with dissolve
 
@@ -1027,7 +1027,7 @@ label istirahat_uas:
 
             "Kamu dan teman-temanmu berdiri, dan bersiap untuk melaksanakan ujian akhir berikutnya."
 
-		"Pergi ke kantin untuk mencari makan":
+        "Pergi ke kantin untuk mencari makan":
 
             "Kamu memilih untuk tetap berada di kampus, dan pergi ke kantin untuk mengisi perutmu."
 
@@ -1070,8 +1070,8 @@ label istirahat_uas:
             "Seusai menyantap jajananmu, kalian kembali ke kerumpulan teman-temanmu yang masih menunggu di kampus."
 
             "Menunggu hingga masuk waktu kelas berikutnya dimulai."
-		
-		"Pulang ke kos dan istirahat sejenak":
+
+        "Pulang ke kos dan istirahat sejenak":
 
             "Kamu lebih memilih untuk meninggalkan kampus dan kembali ke kos."
 
@@ -1111,9 +1111,8 @@ label istirahat_uas:
             "Kamu langsung bersiap-siap untuk berangkat menuju kampus lagi."
 
             "Setelah siap, kamu langsung mengendarai motormu menuju kampus."
-		
-    scene bg campus hall with fade
 
+    scene bg campus hall with fade
 
 label uts_1:
 
@@ -1259,7 +1258,7 @@ label pre_uas:
 
     "Merasa sudah cukup siap untuk melakukan ujian akhir, kamu hanya duduk diam sambil mengingat-ingat materi yang akan diujikan."
 
-    "scene bg black"
+    scene bg black with fade
 
     "Lima menit berlalu dengan cepat, kini dosen pengawas ujian telah membuka pintu ruang ujian."
 

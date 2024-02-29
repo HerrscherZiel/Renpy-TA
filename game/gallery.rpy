@@ -63,13 +63,16 @@ screen gallery():
                 spacing 35
 
 
-                add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                # add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
                 add gallery.make_button(name="kaga", unlocked="cg_kaga2.png", locked="lock.png")
 
-                add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                # add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
                 add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
 
-                add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                # add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
+                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
                 add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
 
 

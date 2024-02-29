@@ -2,7 +2,7 @@
 screen mapUI:
 
     add "bg black.png"
-    add "map/map.png" 
+    add "map/map new.png" 
     frame:
         background "menuUI/days.png"
 
@@ -64,23 +64,23 @@ screen mapUI:
     if prologue == True:
         if prologueCount == 1 or prologueCount == 5 and day !=4 and KRS3 == False:
             imagebutton:
-                xpos 1250
-                ypos 760
+                xpos 370
+                ypos 710
                 idle "map/minimart idle.png"
                 hover "map/minimart hover.png"
                 action Jump("go_to_minimart")
         
         elif prologueCount == 2 or prologueCount == 6:
             imagebutton:
-                xpos 1150
+                xpos 1100
                 ypos 10
-                idle "map/house idle.png"
-                hover "map/house hover.png"
+                idle "map/kosan idle.png"
+                hover "map/kosan hover.png"
                 action Jump("go_to_kos")
         
         elif prologueCount == 3:
             imagebutton:
-                xpos 1500
+                xpos 1450
                 ypos 150
                 idle "map/kampung idle.png"
                 hover "map/kampung hover.png"
@@ -88,40 +88,40 @@ screen mapUI:
 
         elif prologueCount == 4:
             imagebutton:
-                xpos 300
-                ypos 760
+                xpos -35
+                ypos 480
                 idle "map/kampus idle.png"
                 hover "map/kampus hover.png"
                 action Jump("go_to_campus")
 
         elif KRS3 == True and day !=4 :
             imagebutton:
-                xpos 900
-                ypos 450
+                xpos 870
+                ypos 350
                 idle "map/perpustakaan idle.png"
                 hover "map/perpustakaan hover.png"
                 action Jump("go_to_library")
 
         elif day == 4 :
             imagebutton:
-                xpos 1250
-                ypos 760
+                xpos 370
+                ypos 710
                 idle "map/minimart idle.png"
                 hover "map/minimart hover.png"
                 action Jump("go_to_minimart")
 
             imagebutton:
-                xpos 1500
+                xpos 1450
                 ypos 150
                 idle "map/kampung idle.png"
                 hover "map/kampung hover.png"
                 action Jump("go_to_kampung")
 
             imagebutton:
-                xpos 1150
+                xpos 1100
                 ypos 10
-                idle "map/house idle.png"
-                hover "map/house hover.png"
+                idle "map/kosan idle.png"
+                hover "map/kosan hover.png"
                 action Jump("go_to_kos")
 
             imagebutton:
@@ -140,98 +140,136 @@ screen mapUI:
             #night
             #kos
             imagebutton:
-                    xpos 1150
+                    xpos 1100
                     ypos 10
-                    idle "map/house idle.png"
-                    hover "map/house hover.png"
+                    idle "map/kosan idle.png"
+                    hover "map/kosan hover.png"
                     action Jump("go_to_kos")
             #kampung
             imagebutton:
-                    xpos 1500
+                    xpos 1450
                     ypos 150
                     idle "map/kampung idle.png"
                     hover "map/kampung hover.png"
                     action Jump("go_to_kampung")
             #kota
             imagebutton:
-                    xpos 300
-                    ypos 760
-                    idle "map/kampus idle.png"
-                    hover "map/kampus hover.png"
+                    xpos 1300
+                    ypos 680
+                    idle "map/kota idle.png"
+                    hover "map/kota hover.png"
                     action Jump("go_to_kota")
+
+            #campuss
+            imagebutton:
+                xpos -35
+                ypos 480
+                idle "map/kampus idle.png"
+                action NullAction()
+
             #mart
             imagebutton:
-                xpos 1250
-                ypos 760
+                xpos 370
+                ypos 710
                 idle "map/minimart idle.png"
                 hover "map/minimart hover.png"
                 action Jump("go_to_minimart")
+
+            #library
+            imagebutton:
+                xpos 870
+                ypos 350
+                idle "map/perpustakaan idle.png"
+                action NullAction()
 
         elif timephase == 1:
             #morn
             #kos            
             imagebutton:
-                    xpos 1150
+                    xpos 1100
                     ypos 10
-                    idle "map/house idle.png"
-                    hover "map/house hover.png"
+                    idle "map/kosan idle.png"
+                    hover "map/kosan hover.png"
                     action Jump("go_to_kos")
             #kampung
             imagebutton:
-                    xpos 1500
+                    xpos 1450
                     ypos 150
                     idle "map/kampung idle.png"
                     hover "map/kampung hover.png"
                     action Jump("go_to_kampung")
             #kota
             imagebutton:
-                    xpos 600
-                    ypos 760
-                    idle "map/kampus idle.png"
-                    hover "map/kampus hover.png"
+                    xpos 1300
+                    ypos 680
+                    idle "map/kota idle.png"
+                    hover "map/kota hover.png"
                     action Jump("go_to_kota")
+
+            #campuss
+            imagebutton:
+                xpos -35
+                ypos 480
+                idle "map/kampus idle.png"
+                action NullAction()
+
+            #mart
+            imagebutton:
+                xpos 370
+                ypos 710
+                idle "map/minimart idle.png"
+                action NullAction()
+
+            #library
+            imagebutton:
+                xpos 870
+                ypos 350
+                idle "map/perpustakaan idle.png"
+                action NullAction()
 
         else:
             #noon
-            #mart
-            imagebutton:
-                xpos 1250
-                ypos 760
-                idle "map/minimart idle.png"
-                hover "map/minimart hover.png"
-                action Jump("go_to_minimart")
             #kos
             imagebutton:
-                    xpos 1150
+                    xpos 1100
                     ypos 10
-                    idle "map/house idle.png"
-                    hover "map/house hover.png"
+                    idle "map/kosan idle.png"
+                    hover "map/kosan hover.png"
                     action Jump("go_to_kos")
             #kampung
             imagebutton:
-                    xpos 1500
+                    xpos 1450
                     ypos 150
                     idle "map/kampung idle.png"
                     hover "map/kampung hover.png"
                     action Jump("go_to_kampung")
             #kota
             imagebutton:
-                    xpos 600
-                    ypos 760
-                    idle "map/kampus idle.png"
-                    hover "map/kampus hover.png"
+                    xpos 1300
+                    ypos 680
+                    idle "map/kota idle.png"
+                    hover "map/kota hover.png"
                     action Jump("go_to_kota")
             #campuss
             imagebutton:
-                xpos 300
-                ypos 760
+                xpos -35
+                ypos 480
                 idle "map/kampus idle.png"
                 hover "map/kampus hover.png"
                 action Jump("go_to_campus")
+
+            #mart
+            imagebutton:
+                xpos 370
+                ypos 710
+                idle "map/minimart idle.png"
+                hover "map/minimart hover.png"
+                action Jump("go_to_minimart")
+
             #library
             imagebutton:
-                xpos 900
-                ypos 450
+                xpos 870
+                ypos 350
                 idle "map/perpustakaan idle.png"
                 hover "map/perpustakaan hover.png"
                 action Jump("go_to_library")

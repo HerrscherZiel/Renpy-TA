@@ -650,7 +650,7 @@ label uas_pti:
 
     "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
 
-    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 90 detik{/i})"
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
     "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
 
@@ -676,142 +676,250 @@ label uas_pti:
 
     "Soal pertama yang terdapat lembar soal adalah:"
 
-    "Mengapa keamanan teknologi informasi itu penting?"
+    label soalpti1:
 
-    mc normal jacket "Hmmm keamanan teknologi informasi itu segala tindakan, prosedur, langkah-langkah untuk mencegah kegiatan-kegiatan yang merugikan untuk sistem kan, jadi …"
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pti1'
 
-    menu:
-        "A. Menjaga integritas":
-            "a. Keamanan teknologi informasi mampu memastikan dan menyakinkan integritas, ketersediaan dan kerahasiaan dari pengelolaan informasi."
-            mc "Kalau aman seharusnya integritas terjaga kan ya."
-            $ a_ptiAS +=5
+        show screen ptias_1 with dissolve
 
-        "B. Merapikan struktur data informasi":
-            "b. Dengan informasi yang aman maka data dapat disusun secara lebih terstruktur."
-            mc "Hmmmm?"
+        "Mengapa keamanan teknologi informasi itu penting?"
 
-        "C. Hemat biaya":
-            "c. Keamanan teknologi informasi tidak memerlukan banyak biaya."
-            mc "Emang hemat biaya ya?"
+        mc normal jacket "Hmmm keamanan teknologi informasi itu segala tindakan, prosedur, langkah-langkah untuk mencegah kegiatan-kegiatan yang merugikan untuk sistem kan, jadi …"
 
-        "D. Mempermudah operasional sistem":
-            "d. Keamanan teknologi informasi mampu mempermudah aktivitas operasional sebuah sistem."
-            mc "Apakah yang ini?"
+        show screen countdown
 
-    "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        menu:
+            "A. Menjaga integritas":
+                "a. Keamanan teknologi informasi mampu memastikan dan menyakinkan integritas, ketersediaan dan kerahasiaan dari pengelolaan informasi."
+                mc "Kalau aman seharusnya integritas terjaga kan ya."
+                $ a_ptiAS +=5
 
-    "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+            "B. Merapikan struktur data informasi":
+                "b. Dengan informasi yang aman maka data dapat disusun secara lebih terstruktur."
+                mc "Hmmmm?"
 
-    "2. 	Berikut ini yang bukan merupakan langkah pencegahan atau tindakan untuk meminimalisir terjadinya kerusakan atau pencurian data adalah?"
+            "C. Hemat biaya":
+                "c. Keamanan teknologi informasi tidak memerlukan banyak biaya."
+                mc "Emang hemat biaya ya?"
 
-    mc "Yang bukan bentuk tindakan untuk pencegahan ya….?"
+            "D. Mempermudah operasional sistem":
+                "d. Keamanan teknologi informasi mampu mempermudah aktivitas operasional sebuah sistem."
+                mc "Apakah yang ini?"
 
-    menu:
+        hide screen countdown
 
-        "A. Enkripsi Data":
-            "a. Enkripsi data perlu dilakukan untuk menambah keamanan terhadap data terutama ketika melakukan transfer data."
-            mc "Enkripsi ya… hmm"
-        
-        "B. Klasifikasi Data dan Hak Akses":
-            "b. Data-data yang ada perlu diklasifikasikan dan dibuat tingkatan sehingga data hanya dapat diakses oleh yang berwenang saja."
-            mc "Klasifikasi data dan hak akses itu tindakan pencegahan kan."
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
 
-        "C. Autentikasi Berlapis":
-            "c. Autentikasi berlapis membuat data yang kita miliki menjadi lebih sulit untuk dibobol."
-            mc "Autentikasi itu semisal OTP sama password kalau gak salah…"
+        hide screen ptias_1 with dissolve
 
-        "D. Penggunaan Perangkat Publik untuk Akses Data Privat":
-            "d. Penggunaan perangkat publik ketika mengakses data yang sensitif akan menambah keamanan data."
-            mc "Perangkat publik atau pribadi sih harusnya??"
-            $ a_ptiAS +=5
+        jump soalpti2
 
-    "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+    label telat_pti1:
 
-    "3. Manakah dari malware dibawah ini yang dapat menghilangkan akses terhadap file yang dimiliki dan akses dapat dikembalikan dengan cara membayar tebusan kepada pelaku?"
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
 
-    menu:
-        "A. Adware":
-            "a. Adware"
-            mc "Ini kalau ga salah malware iklan-iklan itu kan."
+    hide screen ptias_1 with dissolve
 
-        "B. Worm":
-            "b. Worm"
-            mc "Worm itu malware yang bisa menduplikasi diri sendiri hmmm…."
+    label soalpti2:
 
-        "C. Ransomware":
-            "c. Ransomware"
-            mc "Ransom itu nebus gitu ya? Harusnya ini sihh…."
-            $ a_ptiAS +=5
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
 
-        "D. Keylogger":
-            "d. Keylogger"
-            mc "Keylogger berarti yang bisa menyimpan aktivitas pengetikan yang dilakukan, biasanya buat ambil password sih…."
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pti2'
 
-    "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+        show screen ptias_2 with dissolve
 
-    "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        "2. 	Berikut ini yang bukan merupakan langkah pencegahan atau tindakan untuk meminimalisir terjadinya kerusakan atau pencurian data adalah?"
 
-    "4. 	Manakah dibawah ini merupakan pasangan yang tepat mengenai komponen sistem informasi?"
+        mc "Yang bukan bentuk tindakan untuk pencegahan ya….?"
 
-    menu:
+        show screen countdown
 
-        "A. Input Device, CPU":
-            "a. Input Device, CPU"
-            mc "CPU itu termasuk processing device ga sihh…"
+        menu:
 
-        "B. Storage, Harddisk":
-            "b. Storage, Harddisk"
-            mc "Harddisk itu emang salah satu komponen storage."
-            $ a_ptiAS +=5
+            "A. Enkripsi Data":
+                "a. Enkripsi data perlu dilakukan untuk menambah keamanan terhadap data terutama ketika melakukan transfer data."
+                mc "Enkripsi ya… hmm"
+            
+            "B. Klasifikasi Data dan Hak Akses":
+                "b. Data-data yang ada perlu diklasifikasikan dan dibuat tingkatan sehingga data hanya dapat diakses oleh yang berwenang saja."
+                mc "Klasifikasi data dan hak akses itu tindakan pencegahan kan."
 
-        "C. Sistem operasi, Microsoft":
-            "c. Sistem operasi, Microsoft"
-            mc "Sistem operasi itu Microsoft apa Windows huh?"
+            "C. Autentikasi Berlapis":
+                "c. Autentikasi berlapis membuat data yang kita miliki menjadi lebih sulit untuk dibobol."
+                mc "Autentikasi itu semisal OTP sama password kalau gak salah…"
 
-        "D. Input Device, Speaker":
-            "d. Input Device, Speaker"
-            mc "Gatau tapi pasti yang ini fixx…"
+            "D. Penggunaan Perangkat Publik untuk Akses Data Privat":
+                "d. Penggunaan perangkat publik ketika mengakses data yang sensitif akan menambah keamanan data."
+                mc "Perangkat publik atau pribadi sih harusnya??"
+                $ a_ptiAS +=5
 
-    "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir PTI pada pagi hari ini."
+        hide screen countdown
 
-    "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
 
-    "5. Berikut yang bukan merupakan pernyataan yang benar mengenai komponen-komponen sistem informasi adalah?."
+        hide screen ptias_2 with dissolve
 
-    menu:
+        jump soalpti3
 
-        "A. Output device merupakan komponen informasi yang mampu menampilkan data":
-            "a. Output device merupakan komponen informasi yang mampu menampilkan data"
-            mc "Output Device itu monitor, speaker, print itu-itu kan?"
+    label telat_pti2:
 
-        "B. Sistem operasi, aplikasi, bahasa pemrograman merupakan komponen perangkat lunak":
-            "b. Sistem operasi, aplikasi, bahasa pemrograman merupakan komponen perangkat lunak"
-            mc "Iya ketiganya itu software semua memang."
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
 
-        "C. Jaringan nirkabel unggul dalam mobilitas karena penggunaan gelombang radio untuk mentransmisikan data":
-            "c. Jaringan nirkabel unggul dalam mobilitas karena penggunaan gelombang radio untuk mentransmisikan data"
-            mc "Kalo wireless emang lebih enak buat kemana-mana sih…"
+    hide screen ptias_2 with dissolve
 
-        "D. Jaringan kabel memiliki kelemahan dalam pengelolaan, pemeliharaan, serta kecepatannya":
-            "d. Jaringan kabel memiliki kelemahan dalam pengelolaan, pemeliharaan, serta kecepatannya"
-            mc "Kalau pengelolaan dan pemeliharaan jaringan kabel pasti memang susah, tapi kecepatannya bukannya lebih cepat daripada wireless??"
-            $ a_ptiAS +=5
+    label soalpti3:
 
-    "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pti3'
 
-    "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+        show screen ptias_3 with dissolve
 
-    "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+        "3. Manakah dari malware dibawah ini yang dapat menghilangkan akses terhadap file yang dimiliki dan akses dapat dikembalikan dengan cara membayar tebusan kepada pelaku?"
 
-    "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+        show screen countdown
 
-    "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+        menu:
+            "A. Adware":
+                "a. Adware"
+                mc "Ini kalau ga salah malware iklan-iklan itu kan."
 
-    "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah PTI, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa 2 ujian akhir mata kuliah lainnya."
+            "B. Worm":
+                "b. Worm"
+                mc "Worm itu malware yang bisa menduplikasi diri sendiri hmmm…."
 
-    scene bg black with dissolve
+            "C. Ransomware":
+                "c. Ransomware"
+                mc "Ransom itu nebus gitu ya? Harusnya ini sihh…."
+                $ a_ptiAS +=5
 
-    jump uas_alpro
+            "D. Keylogger":
+                "d. Keylogger"
+                mc "Keylogger berarti yang bisa menyimpan aktivitas pengetikan yang dilakukan, biasanya buat ambil password sih…."
+
+        hide screen countdown
+
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+        hide screen ptias_3 with dissolve
+
+        jump soalpti4
+
+    label telat_pti3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+
+    hide screen ptias_3 with dissolve
+
+    label soalpti4:
+
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pti4'
+
+        show screen ptias_4 with dissolve
+
+        "4. 	Manakah dibawah ini merupakan pasangan yang tepat mengenai komponen sistem informasi?"
+
+        show screen countdown
+
+        menu:
+
+            "A. Input Device, CPU":
+                "a. Input Device, CPU"
+                mc "CPU itu termasuk processing device ga sihh…"
+
+            "B. Storage, Harddisk":
+                "b. Storage, Harddisk"
+                mc "Harddisk itu emang salah satu komponen storage."
+                $ a_ptiAS +=5
+
+            "C. Sistem operasi, Microsoft":
+                "c. Sistem operasi, Microsoft"
+                mc "Sistem operasi itu Microsoft apa Windows huh?"
+
+            "D. Input Device, Speaker":
+                "d. Input Device, Speaker"
+                mc "Gatau tapi pasti yang ini fixx…"
+
+        hide screen countdown
+
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir PTI pada pagi hari ini."
+
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+
+        hide screen ptias_4 with dissolve
+
+        jump soalpti5
+
+    label telat_pti4:
+
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+
+    hide screen ptias_4 with dissolve
+
+    label soalpti5:
+
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pti5'
+
+        show screen ptias_5 with dissolve
+
+        "5. Berikut yang bukan merupakan pernyataan yang benar mengenai komponen-komponen sistem informasi adalah?."
+        show screen countdown
+        menu:
+
+            "A. Output device merupakan komponen informasi yang mampu menampilkan data":
+                "a. Output device merupakan komponen informasi yang mampu menampilkan data"
+                mc "Output Device itu monitor, speaker, print itu-itu kan?"
+
+            "B. Sistem operasi, aplikasi, bahasa pemrograman merupakan komponen perangkat lunak":
+                "b. Sistem operasi, aplikasi, bahasa pemrograman merupakan komponen perangkat lunak"
+                mc "Iya ketiganya itu software semua memang."
+
+            "C. Jaringan nirkabel unggul dalam mobilitas karena penggunaan gelombang radio untuk mentransmisikan data":
+                "c. Jaringan nirkabel unggul dalam mobilitas karena penggunaan gelombang radio untuk mentransmisikan data"
+                mc "Kalo wireless emang lebih enak buat kemana-mana sih…"
+
+            "D. Jaringan kabel memiliki kelemahan dalam pengelolaan, pemeliharaan, serta kecepatannya":
+                "d. Jaringan kabel memiliki kelemahan dalam pengelolaan, pemeliharaan, serta kecepatannya"
+                mc "Kalau pengelolaan dan pemeliharaan jaringan kabel pasti memang susah, tapi kecepatannya bukannya lebih cepat daripada wireless??"
+                $ a_ptiAS +=5
+        hide screen countdown
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+
+        hide screen ptias_5 with dissolve
+
+        jump end_pti
+
+    label telat_pti5:
+
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+
+    hide screen ptias_5 with dissolve
+
+    label end_pti:
+
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+        "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah PTI, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa 2 ujian akhir mata kuliah lainnya."
+
+        scene bg black with dissolve
+
+        jump uas_alpro
+    
 label attend_pti:
 
     $ a_ptiA +=1

@@ -66,3 +66,25 @@ screen basdat_4_4:
 screen basdat_4_5:
 
     add "kelas/basdat-4/basdat_4-5.png"
+
+#uas
+
+screen basdatas_1:
+
+    add "kelas/basdat-uas/uas_basdat_1.png"
+
+screen basdatas_2:
+
+    add "kelas/basdat-uas/uas_basdat_2.png"
+
+screen basdatas_3:
+
+    add "kelas/basdat-uas/uas_basdat_3.png"
+
+screen basdatas_4:
+
+    add "kelas/basdat-uas/uas_basdat_4.png"
+
+screen basdatas_5:
+
+    add "kelas/basdat-uas/uas_basdat_5.png"

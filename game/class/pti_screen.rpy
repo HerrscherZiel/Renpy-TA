@@ -66,3 +66,25 @@ screen pti_4_3:
 screen pti_4_4:
 
     add "kelas/pti-4/pti_4-4.png"
+
+#uas
+
+screen ptias_1:
+
+    add "kelas/pti-uas/uas_pti_1.png"
+
+screen ptias_2:
+
+    add "kelas/pti-uas/uas_pti_2.png"
+
+screen ptias_3:
+
+    add "kelas/pti-uas/uas_pti_3.png"
+
+screen ptias_4:
+
+    add "kelas/pti-uas/uas_pti_4.png"
+
+screen ptias_5:
+
+    add "kelas/pti-uas/uas_pti_5.png"

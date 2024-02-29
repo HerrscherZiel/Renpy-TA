@@ -676,6 +676,299 @@ label basdat_4:
 
     jump web_4
 
+label uas_basdat:
+
+    scene bg campus upper hall with dissolve
+
+    pause 1.5
+
+    "Keluar dari ruang ujian, kamu langsung mencari tempat duduk di depan ruang kelas ujian berikutnya yang terletak di sebelah ruang kelas yang baru digunakan untuk ujian."
+
+    "Kamu duduk di sebelah teman-temanmu yang langsung mengeluarkan buku catatan masing-masing untuk mempersiapkan ujian berikutnya."
+
+    "Terlihat [r] yang baru saja keluar dari ruang ujian berjalan menghampirimu. Setelah berada di depanmu ia duduk dan mendekat kepadamu."
+
+    r normal2 "[name] Gimana barusan? Lancar engga ngerjainnya?"
+
+    mc normal jacket "Hmmm… ngerjainnya sih lancar, tapi gatau hasilnya gimana…"
+
+    mc "Kamu gimana? Tumben baru aja keluar, biasanya awal-awal udah keluar duluan."
+
+    r "Huhh… aku bingung pertanyaan yang akhir-akhir itu…. Mikir lamaaaaa…. Terus gatau bener apa engga jawabanku huhu…"
+
+    mc "Yaudah… kata temen SMA ku dulu, yang sudah ya sudah ahahaha"
+
+    r "Dasarrrr huu…."
+
+    "Kamu mengisi sela waktu sebelum ujian selanjutnya dengan mengobrol bersama [r] yang juga tidak mempersiapkan untuk ujian selanjutnya."
+
+    "Setelah mengobrol bersama [r] selama beberapa waktu kini dirimu menjadi lebih tenang untuk mengikuti ujian berikutnya."
+
+    "Sekarang sudah memasuki waktu ujian akhir yang kedua, setelah pintu ujian dibuka kamu dan [r]  berdiri dan bergegas masuk ke ruang ujian."
+
+    scene bg campus upper hall with fade
+
+    pause 1.0
+
+    scene bg campus class with fade
+
+    "Memasuki ruang kelas ujian, dosen pengawas ujian memberi instruksi kepada mahasiswa untuk meletakkan tas atau ransel di depan kelas secara rapi. Lalu hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tasmu di depan ruangan, kamu mengambil peralatan tulismu sebelum berjalan menuju bangku ujian."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, dosen pengawas ujian lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    "Setelah dosen pengawas ujian memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 90 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    label soalbasdat1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_basdat1'
+
+        show screen basdatas_1 with dissolve
+        "1. Manakah dibawah ini yang merupakan kode perintah dari DDL dan DML?"
+        mc "DDL dan DML yaa…..?"
+        show screen countdown
+        menu:
+
+            "A. Create dan Delete":
+                "a. Create dan Delete"
+                mc "Create itu DDL terus Delete itu DML."
+                $ a_basdatAS +=5
+
+            "B. Create dan Drop":
+                "b. Create dan Drop"
+                mc "Create itu DDL kalo Drop itu…"
+
+            "C. Update dan Insert":
+                "c. Update dan Insert"
+                mc "Keduanya DML gak sih? "
+
+            "D. Alter dan Drop":
+                "d. Alter dan Drop"
+                mc "Bukannya keduanya DLL."
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        hide screen basdatas_1 with dissolve
+        jump soalbasdat2
+
+    label telat_basdat1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+
+    hide screen basdatas_1 with dissolve
+
+    label soalbasdat2:
+
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_basdat2'
+
+        show screen basdatas_2 with dissolve
+        "2. 	Pernyataan yang benar mengenai DDL dan DML adalah?"
+
+        mc "Perbedaan… DDL dan DML…..?"
+        show screen countdown
+        menu:
+
+            "A. DDL digunakan untuk mendefinisikan dan memanipulasi basis data":
+                "a. DDL untuk mendefinisikan dan memanipulasi basis data"
+                mc "DLL itu cuma untuk mendefinisikan kalau gak salah…."
+
+            "B. DML digunakan untuk mendefinisikan dan memanipulasi basis data":
+                "b. DML digunakan untuk mendefinisikan dan memanipulasi basis data"
+                mc "DML cuma buat manipulasi data dalam basis data enggak sih?"
+
+            "C. DML digunakan untuk mengelola data dalam suatu basis data":
+                "c. DML digunakan ketika kita ingin mengelola data dalam suatu basis data"
+                mc "Yuppp… yang ini bener…"
+                $ a_basdatAS +=5
+
+            "D. DDL digunakan untuk mengelola data dalam suatu basis data":
+                "d. DDL digunakan untuk mengelola data dalam suatu basis data"
+                mc "Bukannya harusnya DML ya?"
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen basdatas_2 with dissolve
+        jump soalbasdat3
+
+    label telat_basdat2:
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+
+    hide screen basdatas_2 with dissolve
+
+    label soalbasdat3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_basdat3'
+
+        show screen basdatas_3 with dissolve
+        "3. Perintah yang digunakan untuk melakukan pencarian suatu data dalam basis data adalah?"
+        show screen countdown
+        menu:
+
+            "A. Select":
+                "a. Select"
+                mc "Select digunakan untuk memilih data, berarti bener yang ini."
+                $ a_basdatAS +=5
+
+            "B. Drop":
+                "b. Drop"
+                mc "Drop itu digunakan untuk menghapus skema gak sih…"
+
+            "C. Insert":
+                "c. Insert"
+                mc "Insert itu buat masukin data kan?"
+
+            "D. Alter":
+                "d. Alter"
+                mc "Alter bukannya buat ngerubah struktur data ya?"
+        hide screen countdown
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        hide screen basdatas_3 with dissolve
+        jump soalbasdat4
+
+    label telat_basdat3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+
+    hide screen basdatas_3 with dissolve
+
+    label soalbasdat4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_basdat4'
+
+        show screen basdatas_4 with dissolve
+        "4. 	Manakah dibawah ini yang merupakan perintah yang digunakan untuk menghapus suatu entitas pada suatu basis data?"
+        show screen countdown
+        menu:
+
+            "A. Delete":
+                "a. Delete"
+                mc "Delete bukan yaa??"
+
+            "B. Drop":
+                "b. Drop"
+                mc "Drop ya bener drop!"
+                $ a_basdatAS +=5
+
+            "C. Alter":
+                "c. Alter"
+                mc "Alter itu untuk mengubah skema basis data…"
+
+            "D. Update":
+                "d. Update"
+                mc "Update? "
+        hide screen countdown
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Strukdat pada pagi hari ini."
+
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        hide screen basdatas_4 with dissolve
+        jump soalbasdat5
+
+    label telat_basdat4:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+    
+    hide screen basdatas_4 with dissolve
+
+    label soalbasdat5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_basdat5'
+
+        show screen basdatas_5 with dissolve
+        "5. Manakah dibawah ini yang merupakan perintah untuk memasukan data mahasiswa dengan nama ‘Yono’ pada tabel ‘Mahasiswa’?"
+        show screen countdown
+        menu:
+
+            "A. INSERT INTO mahasiswa (nama) VALUES (‘Yono’)":
+                "a. INSERT INTO mahasiswa (nama) VALUES (‘Yono’)"
+                mc "Kayaknya bener…."
+
+            "B. INSERT INTO nama_mahasiswa (‘Yono)":
+                "b. INSERT INTO nama_mahasiswa (‘Yono)"
+                mc "Hmmm….."
+
+            "C. INSERT INTO Mahasiswa (nama) VALUES (‘Yono’)":
+                "c. INSERT INTO Mahasiswa (nama) VALUES (‘Yono’)"
+                "mc Harusnya yang ini bener sih……."
+                $ a_basdatAS +=5
+
+            "D. INSERT INTO Mahasiswa_name (‘Yono’)":
+                "d. INSERT INTO Mahasiswa_name (‘Yono’)"
+                mc "Kaya ada yang salah…."
+        hide screen countdown
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        hide screen basdatas_5 with dissolve
+        jump end_basdat
+
+    label telat_basdat5:
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+
+    hide screen basdatas_5 with dissolve
+
+    label end_basdat:
+
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+        "Ujian pertamamu dalam hari yang kedua telah selesai, kamu berjalan keluar dari ruang kelas ujian"
+
+        "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah Basdat, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa satu ujian akhir mata kuliah lainnya."
+
+        scene bg campus upper hall with fade
+
+        pause 1.5
+
+        call istirahat_uas
+
+        jump uas_web
+
 label attend_basdat:
 
     $ a_basdatA +=1

@@ -606,6 +606,322 @@ label pbo_4:
     call attend_class
     jump jarkom_4
 
+label uas_pbo:
+
+    scene bg campus hall  with dissolve
+
+    "Hari ini merupakan hari terakhir dalam minggu ujian akhir, suasana di sekitaran area gedung kampus tidak jauh berbeda dengan hari-hari sebelumnya."
+
+    "Terlihat banyak mahasiswa-mahasiswa lain baik dari program studimu maupun program studi lainnya telah hadir dan duduk berjajar di area dalam kampus."
+
+    "Kebanyakan dari mereka sedang memegang kertas-kertas maupun handphone masing-masing dan tampak sedang fokus membaca materi perkuliahan."
+
+    "Meskipun ada juga yang hanya duduk dan mengobrol dengan orang disebelah mereka."
+
+    "Kamu berjalan menuju kelas dimana ujian akhir mata kuliah PBO akan dilaksanakan sambil melihat-lihat kondisi di sekitar ruang kelas ujian."
+
+    'Setelah sampai di area ruangan kelas yang akan digunakan untuk ujian akhir Strukdat, teman-teman sekelasmu telah ramai duduk mengelompok dan membaca catatan mereka masing-masing.'
+
+    r normal2 "Pagi [name]!"
+
+    mc normal jacket "Pagi [r], gimana belajarnya??"
+
+    r "Hari terakhir harus siap dongg, kan cuma 2…. Udah siap belum?"
+
+    mc "Sama juga… karena cuma 2 mata kuliah jadi lebih siap hehehe…"
+
+    r "Yaudah aku lanjut belajar sama yang lain dulu yaa…"
+
+    mc "Okeyyy…"
+
+    r "Gaikut??"
+
+    mc "Pakai tanyaaa ahahaha"
+
+    r "Huuu dasar…."
+
+    "[r] membalikkan badannya dan kembali bersama kerumunan teman kelasmu untuk belajar bersama."
+
+    "Kamu yang masih berdiri kemudian duduk dan bersandar pada tembok ruang kelas, kemudian melihat jam digital yang ada pada HPmu."
+
+    "Waktu telah menunjukkan pukul 7.25, masih tersisa lima menit sebelum pintu ruang kelas ujian akhir dibuka. "
+
+    "Merasa sudah cukup siap untuk melakukan ujian akhir, kamu hanya duduk diam sambil mengingat-ingat materi yang akan diujikan."
+
+    scene bg black
+
+    scene bg campus upper hall with dissolve
+
+    "Lima menit berlalu dengan cepat, kini dosen pengawas ujian telah membuka pintu ruang ujian. pa] yang akan menjadi dosen pengawas ujian pada ujian PBO kali ini."
+
+    "Seperti ujian tengah semester lalu, posisi tempat duduk untuk ujian telah ditentukan dan terlihat pada kertas yang ditempelkan pada pintu ruang kelas."
+
+    "Setelah melihat dimana kamu akan duduk, kamu memasuki ruang kelas untuk melaksanakan ujian akhir pertamamu di hari terakhir ini. "
+
+    scene bg campus class with fade
+
+    "Memasuki ruang kelas ujian, [pa] memberi instruksi kepada mahasiswa untuk meletakkan tas atau ransel di depan kelas secara rapi. Lalu hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tasmu di depan ruangan, kamu mengambil peralatan tulismu sebelum berjalan menuju bangku ujian."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, [pa] lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    pa normal "Sekarang sudah memasuki waktu ujian, kalian bisa mulai mengerjakan soal yang ada pada lembar jawaban."
+
+    pa "Jangan lupa untuk mengisi biodata kalian terlebih dahulu, dan pastikan sudah terisi sesuai."
+
+    pa "Selamat mengerjakan, dan semoga mendapatkan hasil yang memuaskan."
+
+    "Setelah [pa] memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 45 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    label soalpbo1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pbo1'
+
+        show screen pboas_1 with dissolve
+        "1. Jika sebuah atribut hanya bisa diakses dari dalam kelas itu sendiri atau kelas turunannya, maka atribut tersebut memiliki access modifiers?"
+
+        mc normal jacket "Hak akses….."
+        show screen countdown
+        menu:
+
+            "A. Public":
+                "a. Public"
+                mc "Harusnya kalo public untuk umum kan? Berarti bisa diakses dari mana saja…"
+
+            "B. Private":
+                "b. Private"
+                mc "Private? Yakin?"
+                
+            "C. Protected":
+                "c. Protected"
+                mc "Ya, harusnya ini jawabnnya. "
+                $ a_pboAS += 5
+
+            "D. Child":
+                "d. Child"
+                mc "Child? Emang ada ya?"
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+        hide screen pboas_1 with dissolve
+        jump soalpbo2
+
+    label telat_pbo1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+
+    hide screen pboas_1 with dissolve
+
+    label soalpbo2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pbo2'
+
+        show screen pboas_2 with dissolve
+        "2. 	Menyimpan informasi mendetail dan hanya menampilkan informasi yang relevan dan yang perlu diketahui saja merupakan penjelasan dari prinsip?"
+
+        mc "Menyimpan detail dan menampilkan yang perlu….."
+        show screen countdown
+        menu:
+
+            "A. Enkapsulasi":
+                "a. Enkapsulasi"
+                mc "Enkapsulasi itu….."
+
+            "B. Abstraksi":
+                "b. Abstraksi"
+                mc "Iyaa.. yang ini.. aku inget!"
+                $ a_pboAS += 5
+
+            "C. Inheritance":
+                "c. Inheritance"
+                mc "Warisan??"
+
+            "D. Polymorphism":
+                "d. Polymorphism"
+                mc "Kayaknya bukan deh…."
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen pboas_2 with dissolve
+        jump soalpbo3
+
+    label telat_pbo2:
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+
+    hide screen pboas_2 with dissolve
+
+    label soalpbo3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pbo3'
+
+        show screen pboas_3 with dissolve
+        "3. Untuk menyatakan sebuah kelas merupakan turunan dari kelas lainnya, kita menggunakan kata kunci?"
+        show screen countdown
+        menu:
+
+            "A. Super":
+                "a. Super"
+                mc "Super??"
+
+            "B. Child":
+                "b. Child"
+                mc "Bukan…."
+
+            "C. Extends":
+                "c. Extends"
+                mc "Yuppss… pakai extends…"
+                $ a_pboAS += 5
+
+            "D. Derived":
+                "d. Derived"
+                mc "Derived class? Itu kelas anak kan?"
+        hide screen countdown
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        hide screen pboas_3 with dissolve
+        jump soalpbo4
+
+    label telat_pbo3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+
+    hide screen pboas_3 with dissolve
+
+    label soalpbo4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pbo4'
+
+        show screen pboas_4 with dissolve
+        "4. 	Konsep dimana objek, variabel, atau metode dapat memiliki berbagai macam bentuk merupakan penjelasan dari konsep?"
+        show screen countdown
+        menu:
+
+            "A. Abstraksi":
+                "a. Abstraksi"
+                mc "Abstraksi bukan deh…."
+
+            "B. Inheritance":
+                "b. Inheritance"
+                mc "Inheritance itu kan pewarisan…."
+
+            "C. Enkapsulasi":
+                "c. Enkapsulasi"
+                mc "Bukan ini…."
+
+            "D. Polymorphism":
+                "d. Polymorphism"
+                mc "Poly itu banyak.. Yang ini berarti…"
+                $ a_pboAS += 5
+        hide screen countdown
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Strukdat pada pagi hari ini."
+
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        hide screen pboas_4 with dissolve
+        jump soalpbo5
+
+    label telat_pbo4:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+
+    hide screen pboas_4 with dissolve
+
+    label soalpbo5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_pbo5'
+
+        show screen pboas_5 with dissolve
+        "5. Yang bukan merupakan keuntungan penggunaan PBO dalam pemrograman adalah?"
+        show screen countdown
+        menu:
+
+            "A. Meningkatkan produktivitas pengembangan perangkat lunak":
+                "a. Meningkatkan produktivitas pengembangan perangkat lunak:"
+                mc "Ya… ini benar…"
+
+            "B. Menambah biaya pengembangan perangkat lunak":
+                "b. Menambah biaya pengembangan perangkat lunak"
+                mc "Masa menambah… berarti yang ini!"
+                $ a_pboAS += 5
+
+            "C. Memudahkan pengembangan dan pemeliharaan perangkat lunak":
+                "c. Memudahkan pengembangan dan pemeliharaan perangkat lunak"
+                mc "Ini juga benar…"
+
+            "D. Mempercepat pengembangan perangkat lunak":
+                "d. Mempercepat pengembangan perangkat lunak"
+                mc "Ini pernyataan yang benar…"
+        hide screen countdown
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        hide screen pboas_5 with dissolve
+        jump end_pbo
+
+    label telat_pbo5:
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+
+    hide screen pboas_5 with dissolve
+
+    label end_pbo:
+
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+        "Ujian pertamamu dalam hari yang kedua telah selesai, kamu berjalan keluar dari ruang kelas ujian"
+
+        "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah PBO, kamu merasa senang namun kamu belum bisa merasa lega karena masih tersisa satu ujian terakhir."
+
+        scene bg campus upper hall with dissolve
+
+        pause 1.5
+
+        jump uas_jarkom
+
 label attend_pbo:
 
     $ a_pboA +=1

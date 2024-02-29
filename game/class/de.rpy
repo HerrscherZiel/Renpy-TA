@@ -357,7 +357,6 @@ label uts_de:
     call change_timephase
     call screen mapUI
 
-
 label de_3:
 
     scene bg campus class with dissolve
@@ -790,7 +789,7 @@ label uas_de:
 
     "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
 
-    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 90 detik{/i})"
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
     "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
 
@@ -809,177 +808,221 @@ label uas_de:
     "Mulai mengerjakan UAS?"
 
     menu: 
-	    "Mulai":
-	        "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
 
     "Soal pertama yang terdapat lembar soal adalah:"
 
-    "1. Penggunaan unsur-unsur yang memiliki kesamaan, kesesuaian, dan tidak memiliki pertentangan unsur merupakan penjelasan dari prinsip?"
-    mc normal jacket "prinsip…"
+    label soalde1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_de1'
+
+        show screen deas_1 with dissolve
+        "1. Penggunaan unsur-unsur yang memiliki kesamaan, kesesuaian, dan tidak memiliki pertentangan unsur merupakan penjelasan dari prinsip?"
+        mc normal jacket "prinsip…"
+        show screen countdown
+        menu:
+            "A. Prinsip Proporsi":
+                "a. Prinsip Proporsi"
+                mc "Proporsi itu perbandingan ukuran gitu gak sih?"
+
+            "B. Prinsip Harmoni":
+                "b. Prinsip Harmoni"
+                mc "Prinsip harmoni itu sama kaya prinsip keselarasan kan."
+                $ a_deAS += 5
+
+            "c. Prinsip Irama":
+                "c. Prinsip Irama"
+                mc "Emang prinsip irama yah?"
+
+            "D. Prinsip Keseimbangan":
+                "d. Prinsip Keseimbangan."
+                mc "Prinsip Keseimbangan itu keseimbangan bobot unsur seni kan?"
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        hide screen deas_1 with dissolve
+        jump soalde2
+
+    label telat_de1:
+
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+
+    hide screen deas_1 with dissolve
+
+    label soalde2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_de2'
+
+        show screen deas_2 with dissolve
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+
+        "2. 	Manakah dibawah ini yang bukan merupakan salah satu pengelompokan warna?"
+        mc "Pengelompokan warna itu ada 4….."
+        show screen countdown
+        menu:
+
+            "A. Warna Primer":
+                "a. Warna Primer"
+                mc "Warna primer itu merah, biru, sama kuning."
+
+            "B. Warna Sekunder":
+                "b. Warna Sekunder"
+                mc "Warna sekunder itu warna hasil pencampuran warna primer, semisal hijau kan."
+                
+            "C. Warna Irama":
+                "c. Warna Irama"
+                mc "Irama kan salah satu prinsip, bukan pengelompokan warna"
+                $ a_deAS += 5
+
+            "D. Warna Netral":
+                "d. Warna Netral"
+                mc "Warna netral itu yang hitam, putih, sama warna-warna bumi"
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen deas_2 with dissolve
+        jump soalde3
+
+    label telat_de2:
+
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+
+    hide screen deas_2 with dissolve
+
+    label soalde3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_de3'
+
+        show screen deas_3 with dissolve
+        "3. Menggunakan warna-warna yang bersebelahan satu sama lain pada roda warna merupakan contoh pengaplikasian dari skema warna?"
+        show screen countdown
+        menu:
+
+            "A. Komplementer":
+                "a. Komplementer"
+                mc "Kalau engga salah ini skema komplementer sihh…"
+
+            "B. Monokromatik":
+                "b. Monokromatik"
+                mc "Monokromatik kalo ga salah warnanya mirip-mirip gitu kan? Kalau bersebelahan harusnya warnanya mirip."
+
+            "C. Analog":
+                "c. Analog"
+                mc "Analog itu merupakan skema warna yang menggunakan warna yang bersebelahan pada roda warna."
+                $ a_deAS += 5
+
+            "D. Triadic":
+                "d. Triadic"
+                mc "Duh lupaaa…. Jawab yang ini saja lah."
+        hide screen countdown
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
 
-    menu:
-	    "A. Prinsip Proporsi":
-            "a. Prinsip Proporsi"
-            mc "Proporsi itu perbandingan ukuran gitu gak sih?"
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        hide screen deas_3 with dissolve
+        jump soalde4
 
-        "B. Prinsip Harmoni":
-            "b. Prinsip Harmoni"
-            mc "Prinsip harmoni itu sama kaya prinsip keselarasan kan."
-            & a_deAS += 5
+    label telat_de3:
 
-        "c. Prinsip Irama":
-            "c. Prinsip Irama"
-            mc "Emang prinsip irama yah?"
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
 
-        "D. Prinsip Keseimbangan":
-            "d. Prinsip Keseimbangan."
-	        mc "Prinsip Keseimbangan itu keseimbangan bobot unsur seni kan?"
+    hide screen deas_3 with dissolve
 
-    "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+    label soalde4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_de4'
 
-    "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+        show screen deas_4 with dissolve
+        "4. 	Gabungan dari beberapa garis yang membentuk suatu kesatuan dan membuat ruang yang tertutup merupakan pengertian dari unsur seni?"
+        show screen countdown
+        menu:
 
-    "2. 	Manakah dibawah ini yang bukan merupakan salah satu pengelompokan warna?"
-    mc "Pengelompokan warna itu ada 4….."
+            "A. Titik":
+                "a. Titik"
+                mc "Titik itu unsur seni paling dasar…"
 
-    menu:
+            "B. Garis":
+                "b. Garis"
+                mc "Garis itu gabungan dari beberapa titik"
 
-Warna Primer:
+            "C. Ruang":
+                "c. Ruang"
+                mc "Ruang?? Bener gak yaa?"
 
-a. Warna Primer
+            "D. Bidang":
+                "d. Bidang"
+                mc "Harusnya bidang, karena garis yang membuat ruang tertutup"
+                $ a_deAS += 5
+        hide screen countdown
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Desain elementer pada pagi hari ini."
 
-mc Warna primer itu merah, biru, sama kuning.
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        hide screen deas_4 with dissolve
+        jump soalde5
 
-Warna Sekunder:
-	
-	b. Warna Sekunder
+    label telat_de4:
 
-	mc Warna sekunder itu warna hasil pencampuran warna primer, semisal hijau kan.
-	
-Warna Irama:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
 
-	c. Warna Irama
+    hide screen deas_4 with dissolve
 
-	mc Irama kan salah satu prinsip, bukan pengelompokan warna
+    label soalde5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_de5'
 
-	+5
+        show screen deas_5 with dissolve
+        "5. Manakah dibawah ini yang bukan merupakan istilah yang mengacu pada teori warna?"
+        show screen countdown
+        menu:
 
-Warna Netral:
+            "A. Monolog":
+                "a. Monolog"
+                mc "Hah monolog?"
+                $ a_deAS +=5
 
-	d. Warna Netral
+            "B. Analog":
+                "b. Analog"
+                mc "Analog itu dalam roda warna itu kan…"
 
-	mc Warna netral itu yang hitam, putih, sama warna-warna bumi
+            "C. Tone":
+                "c. Tone"
+                mc "Tone itu kombinasi warna dengan warna putih itu kalau gak salah."
 
-Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya.
+            "D. Warna Kebumian":
+                "d. Warna Kebumian"
+                mc "Warna kebumian itu warna netral kaya coklat, krem, dan yang kaya gitu lah…"
+        hide screen countdown
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        hide screen deas_5 with dissolve
+        jump end_de
 
-3. Menggunakan warna-warna yang bersebelahan satu sama lain pada roda warna merupakan contoh pengaplikasian dari skema warna?
+    label telat_de5:
 
-Komplementer
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
 
-a. Komplementer
+    hide screen deas_5 with dissolve
 
-mc Kalau engga salah ini skema komplementer sihh…
+    label end_de:
 
-Monokromatik
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
-	b. Monokromatik
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
 
-	mc Monokromatik kalo ga salah warnanya mirip-mirip gitu kan? Kalau bersebelahan harusnya warnanya mirip.
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
 
-Analog
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
 
-	c. Analog
+        "Dengan selesainya ujian desain elementer pada siang hari ini, menandakan berakhirnya ujian pada hari ini."
 
-	mc Analog itu merupakan skema warna yang menggunakan warna yang bersebelahan pada roda warna.
+        "Setelah menjalani 3 ujian akhir, ujian hari pertama telah usai, kini tersisa dua hari ujian lagi sebelum minggu ujian selesai."
 
-	+5
+        "Kamu bersegera untuk pulang untuk berisitirahat di kosan."
 
-Triadic
-
-	d. Triadic
-
-	mc Duh lupaaa…. Jawab yang ini saja lah.
-	
-Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya.
-
-Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4.
-
-4. 	Gabungan dari beberapa garis yang membentuk suatu kesatuan dan membuat ruang yang tertutup merupakan pengertian dari unsur seni?
-
-
-Titik
-
-a. Titik
-
-mc Titik itu unsur seni paling dasar…
-
-Garis
-
-	b. Garis
-
-	mc Garis itu gabungan dari beberapa titik
-
-Ruang
-
-	c. Ruang
-
-	mc Ruang?? Bener gak yaa?
-
-Bidang
-
-	d. Bidang
-
-	mc Harusnya bidang, karena garis yang membuat ruang tertutup
-
-	+5
-
-Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Desain elementer pada pagi hari ini.
-
-Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian.
-
-5. Manakah dibawah ini yang bukan merupakan istilah yang mengacu pada teori warna?
-
-Monolog
-
-	a. Monolog
-
-	mc Hah monolog?
-
-	+5
-
-Analog
-
-b. Analog
-
-mc Analog itu dalam roda warna itu kan…
-
-Tone
-
-	c. Tone
-
-	mc Tone itu kombinasi warna dengan warna putih itu kalau gak salah.
-
-Warna Kebumian
-
-	d. Warna Kebumian
-
-	mc Warna kebumian itu warna netral kaya coklat, krem, dan yang kaya gitu lah…
-
-Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan.
-
-Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian.
-
-Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar.
-
-Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu.
-
-Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi.
-
-Dengan selesainya ujian desain elementer pada siang hari ini, menandakan berakhirnya ujian pada hari ini.
-
-Setelah menjalani 3 ujian akhir, ujian hari pertama telah usai, kini tersisa dua hari ujian lagi sebelum minggu ujian selesai.
-
-
+        call change_timephase
+        call screen mapUI
 
 label attend_de:
 

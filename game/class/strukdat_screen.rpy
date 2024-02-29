@@ -74,3 +74,25 @@ screen strukdat_4_5:
 
     add "kelas/strukdat-4/strukdat_4-5.png"
 
+
+#uas
+
+screen strukdatas_1:
+
+    add "kelas/strukdat-uas/uas_strukdat_1.png"
+
+screen strukdatas_2:
+
+    add "kelas/strukdat-uas/uas_strukdat_2.png"
+
+screen strukdatas_3:
+
+    add "kelas/strukdat-uas/uas_strukdat_3.png"
+
+screen strukdatas_4:
+
+    add "kelas/strukdat-uas/uas_strukdat_4.png"
+
+screen strukdatas_5:
+
+    add "kelas/strukdat-uas/uas_strukdat_5.png"

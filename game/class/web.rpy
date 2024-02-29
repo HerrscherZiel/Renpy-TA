@@ -679,6 +679,283 @@ label web_4:
     call change_timephase
     call screen mapUI with dissolve
 
+label uas_web:
+
+    scene bg campus upper hall with dissolve
+
+    "Selesai menggunakan jam istirahat, kamu kembali ke area dimana teman-temanmu sedang belajar bersama."
+
+    "Sama seperti sebelumnya, terlihat mahasiswa-mahasiswa lain juga sedang membaca materi perkuliahan yang akan diujikan."
+
+    "Masih tersisa sekitar 10 menit lagi sebelum ujian terakhir pada hari ini dimulai."
+
+    "Kamu duduk bersandar di tembok kelas sembari mengingat materi yang telah kamu pelajari."
+
+    "Mengisi beberapa menit sebelum ujianmu dengan mengingat-ingat materi perkuliahan sebelum mengikuti ujian berikutnya."
+
+    "Tidak lama kemudian pintu ruang kelas ujian dibuka, satu persatu mahasiswa memasuki ruang kelas, kemudian kamu juga ikut berdiri dan bergegas masuk ke ruang ujian."
+
+    scene bg campus class with fade
+
+    "Sebelum memasuki ruang kelas ujian tak lupa dirimu sempat mengecek dimana bangku ujian terakhir untuk hari ini."
+
+    "Setelah mengetahui dimana bangku ujian mu, kamu memasuki ruang kelas dan melihat dosen pengawas ujian yang sudah duduk dan siap menjelaskan instruksi ujian."
+
+    "Memasuki ruang kelas ujian, dosen pengawas ujian memberi instruksi kepada mahasiswa seperti instruksi yang ada pada ujian sebelumnya."
+
+    "Meletakkan tas atau ransel di depan kelas secara rapi. Lalu hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tas ransel milikmu di depan ruang kelas, kamu mengambil peralatan tulis sebelum berjalan menuju bangku ujianmu."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, dosen pengawas lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    "Dosen pengawas telah memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    label soalweb1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_web1'
+
+        show screen webas_1 with dissolve
+        "1. Pada sebuah struktur sebuah HTML, dimana kita meletakan informasi tentang dokumen seperti judul dan meta data?"
+
+        mc normal jacket "Judul itu kayaknya bagian atas, namanya apa ya?"
+        show screen countdown
+        menu:
+
+            "A. <body>":
+                "a. <body>"
+                mc "body??"
+
+            "B. <head>":
+                "b. <head>"
+                "mc <head> yaa, ini pasti diatas kalo di strukturnya sih."
+                $ a_webAS += 5
+
+            "C. <html>":
+                "c. <html>"
+                mc "html kan dokumennya….."
+
+            "D. <title>":
+                "d. <title>"
+                mc "Itu buat judul aja, terus meta datanya?"
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        hide screen webas_1 with dissolve
+        jump soalweb2
+
+    label telat_web1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+
+    hide screen webas_1 with dissolve
+
+    label soalweb2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_web2'
+
+        show screen webas_2 with dissolve
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+
+        "2. 	Manakah dibawah ini merupakan pernyataan yang benar mengenai syntax untuk membuat daftar atau list?"
+        show screen countdown
+        menu:
+
+            "A. <ul> digunakan untuk membuat daftar terurut":
+                "a. <ul> digunakan untuk membuat daftar terurut"
+                mc "Hmmm…."
+
+            "B. <ol> digunakan untuk membuat daftar terurut":
+                "b. <ol> digunakan untuk membuat daftar terurut"
+                mc "Yayayaya…."
+                $ a_webAS += 5
+
+            "C. <il> digunakan untuk membuat daftar terurut":
+                "c. <il> digunakan untuk membuat daftar terurut"
+                mc "il ???"
+
+            "D. <ul> dan <ol> digunakan untuk membuat daftar terurut":
+                "d. <ul> dan <ol> digunakan untuk membuat daftar terurut"
+                mc "Kayanya engga keduanya deh…"
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen webas_2 with dissolve
+        jump soalweb3
+
+    label telat_web2:
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+
+    hide screen webas_2 with dissolve
+
+    label soalweb3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_web3'
+
+        show screen webas_3 with dissolve
+        "3. Manakah syntax yang digunakan untuk membuat baris pertama menjadi tebal pada sebuah tabel pada HTML?"
+        show screen countdown
+        menu:
+
+            "A. <tr>":
+                "a. <tr>"
+                mc "tr… tr… tabel row?"
+
+            "B. <td>":
+                "b. <td>"
+                mc "td itu apa yaa??."
+
+            "C. <table>":
+                "c. <table>"
+                mc "Yakin aku jawab ini huh..."
+                $ a_webAS += 5
+
+            "D. <th>":
+                "d. <th>"
+                mc "table header… yupss"
+        hide screen countdown
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        hide screen webas_3 with dissolve
+        jump soalweb4
+
+    label telat_web3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+
+    hide screen webas_3 with dissolve
+
+    label soalweb4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_web4'
+
+        show screen webas_4 with dissolve
+        "4. 	Untuk membuat form yang berisi tanggal lahir dan tempat lahir baiknya kita menggunakan input type?"
+        show screen countdown
+        menu:
+
+            "A. Number dan date":
+                "a. number dan date"
+                mc "Emang tanggal pakai number…"
+
+            "B. Text dan date":
+                "b. Text dan date"
+                mc "Bukannya kebalik??"
+
+            "C. Date dan text":
+                "c. Date dan text"
+                mc "Yang ini harusnya!"
+                $ a_webAS += 5
+
+            "D. Date dan number":
+                "d. Date dan number"
+                mc "kayaknya salah…"
+        hide screen countdown
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Desain elementer pada pagi hari ini."
+
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        hide screen webas_4 with dissolve
+        jump soalweb5
+
+    label telat_web4:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+
+    hide screen webas_4 with dissolve
+
+    label soalweb5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_web5'
+
+        show screen webas_5 with dissolve
+        "5. Manakah dibawah ini yang tidak termasuk kedalam sebuah struktur dokumen HTML?"
+        show screen countdown
+        menu:
+
+            "A. <hand>":
+                "a. <hand>"
+                mc "Hah hand?"
+                $ a_webAS += 5
+
+            "B. <footer>":
+                "b. <footer>"
+                mc "Harusnya ada sih kalau ini…."
+
+            "C. <head>":
+                "c. <head>"
+                mc "Head ada kan??"
+
+            "D. <body>":
+                "d. <body>"
+                mc "Body ada kannn?"
+        hide screen countdown
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        hide screen webas_5 with dissolve
+        jump end_web
+
+    label telat_web5:
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+
+    hide screen webas_5 with dissolve
+
+    label end_web:
+
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+        "Dengan selesainya ujian desain elementer pada siang hari ini, menandakan berakhirnya ujian pada hari ini."
+
+        "Setelah menjalani 3 ujian akhir, ujian hari kedua telah usai, kini menyisakan satu hari ujian akhir lagi."
+
+        "Kamu keluar dari ruangan sambil tersenyum lalu bergegas menuju kos untuk beristirahat."
+
+        call change_timephase
+        call screen mapUI
+
 label attend_web:
 
     $ a_webA +=1

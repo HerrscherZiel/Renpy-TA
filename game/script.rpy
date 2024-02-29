@@ -129,17 +129,6 @@ label start:
 
     window hide
 
-    show day1 pro:
-        xalign 0.5 yalign 0.5
-    with dissolve
-    pause 2.5
-    hide day1 pro with dissolve
-
-    show day1 street:
-        xalign 0.5 yalign 0.5
-    with dissolve
-    pause 2.5
-
     scene bg streets with dissolve
 
     play music "audio/bgm/Aerosol of my Love.mp3" loop volume 0.1
@@ -301,8 +290,6 @@ label day2:
     with dissolve
 
     pause 3.0
-
-    hide day2 pro with dissolve
 
     call change_day
 
@@ -1311,40 +1298,65 @@ label days:
 
         jump bangun
 
-    elif day == 24:
-
-    show screen trans_screen with dissolve
-    scene bg kos morn with dissolve
-    pause 2.0
-
-    "RINGGG RINGGG RINGGG"
-    #sfx alarm
-
-    "Seperti hari-hari biasanya, matamu terbuka setelah mendengarkan bunyi alarm yang keluar dari HPmu."
-
-    "Memandang ke langit-langit kosan sambil mengucek-ucek matamu yang masih terasa berat untuk dibuka."
-
-    "Dengan mata yang masih setengah terbuka, kamu meraba-raba bagian tempat tidur disebelah kepalamu untuk mematikan sumber bunyi yang membuatmu terbangun pada pagi hari ini."
-
-    "Setelah merasakan dingin dari layar hpmu, kamu langsung mematikan alarm yang masih terus berdering nyaring."
-
-    "Dengan mata yang masih mengantuk, kamu menyempatkan dirimu untuk membuka Lane yang terlihat sudah terdapat banyak notifikasi."
-
-    "Salah satu pesan yang terdapat pada layar HPmu, adalah pesan dari [r] bertuliskan '{i}Semangat buat ujian hari ini!!{/i}'"
-
-    "Membaca pesan tersebut, kamu teringat akan ujian yang akan dimulai pada hari ini."
-
-    "Meskipun matamu masih terasa berat, namun kamu paksakan tubuhmu dari yang semula masih berbaring pada tempat tidurmu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk."
-
-    "Setelah duduk untuk sementara waktu, beberapa menit kemudian kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
-
-    "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini, sebelum berangkat menuju kampus dan memulai minggu ujian akhirmu."
-
-    call screen mapUI with dissolve
-
     elif day == 25:
 
-        "UAS"
+        show screen trans_screen with dissolve
+        scene bg kos morn with dissolve
+        pause 2.0
+
+        "RINGGG RINGGG RINGGG"
+        #sfx alarm
+
+        "Seperti hari-hari biasanya, matamu terbuka setelah mendengarkan bunyi alarm yang keluar dari HPmu."
+
+        "Memandang ke langit-langit kosan sambil mengucek-ucek matamu yang masih terasa berat untuk dibuka."
+
+        "Dengan mata yang masih setengah terbuka, kamu meraba-raba bagian tempat tidur disebelah kepalamu untuk mematikan sumber bunyi yang membuatmu terbangun pada pagi hari ini."
+
+        "Setelah merasakan dingin dari layar hpmu, kamu langsung mematikan alarm yang masih terus berdering nyaring."
+
+        "Dengan mata yang masih mengantuk, kamu menyempatkan dirimu untuk membuka Lane yang terlihat sudah terdapat banyak notifikasi."
+
+        "Salah satu pesan yang terdapat pada layar HPmu, adalah pesan dari [r] bertuliskan '{i}Semangat buat ujian hari ini!!{/i}'"
+
+        "Membaca pesan tersebut, kamu teringat akan ujian yang akan dimulai pada hari ini."
+
+        "Meskipun matamu masih terasa berat, namun kamu paksakan tubuhmu dari yang semula masih berbaring pada tempat tidurmu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk."
+
+        "Setelah duduk untuk sementara waktu, beberapa menit kemudian kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
+
+        "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini, sebelum berangkat menuju kampus dan memulai minggu ujian akhirmu."
+
+        call screen mapUI with dissolve
+
+    elif day == 26:
+
+        show screen trans_screen with dissolve
+        scene bg kos morn with dissolve
+        pause 2.0
+
+        "RINGGG RINGGG RINGGG"
+        #sfx alarm
+
+        "Seperti hari-hari biasanya, matamu terbuka setelah mendengarkan bunyi alarm yang keluar dari HPmu."
+
+        "Memandang ke langit-langit kosan sambil mengucek-ucek matamu yang masih terasa berat untuk dibuka."
+
+        "Dengan mata yang masih setengah terbuka, kamu meraba-raba bagian tempat tidur disebelah kepalamu untuk mematikan sumber bunyi yang membuatmu terbangun pada pagi hari ini."
+
+        "Setelah merasakan dingin dari layar hpmu, kamu langsung mematikan alarm yang masih terus berdering nyaring."
+
+        "Dengan mata yang masih mengantuk, kamu menyempatkan dirimu untuk membuka Lane yang terlihat sudah terdapat banyak notifikasi."
+
+        "Salah satu pesan yang terdapat pada layar HPmu, adalah pesan dari [r] bertuliskan '{i}Semangat buat ujian hari kedua!!{/i}'"
+
+        "Membaca pesan tersebut, kamu teringat kamu sedang berada pada minggu ujian dan sekarang adalah hari kedua dari ujian akhir."
+
+        "Meskipun matamu masih terasa berat, namun kamu paksakan tubuhmu dari yang semula masih berbaring pada tempat tidurmu untuk pindah ke posisi duduk, dan mencoba menghilangkan rasa kantuk."
+
+        "Setelah duduk untuk sementara waktu, beberapa menit kemudian kesadaranmu sudah hampir sepenuhnya kembali dan rasa kantuk sudah tidak kamu rasakan lagi."
+
+        "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini, sebelum berangkat menuju kampus dan memulai minggu ujian akhirmu."
 
     elif day == 27:
 
@@ -1540,6 +1552,16 @@ label sleep:
         "[r] menyerukan kepada teman-teman sekelas untuk bergabung dan meramaikan kegiatan belajar sama seperti sewaktu ujian tengah semester."
 
         "Kamu masih belum tahu apakah dirimu akan mengikuti kegiatan belajar tersebut atau tidak. Sekarang kamu hanya memikirkan apa yang ingin kamu lakukan esok hari."
+
+    elif day == 25 or day == 26 :
+
+        "Kamu telah menjalani hari ujian akhir semestermu."
+
+        "Kamu merasa sudah melakukan yang terbaik ketika mengerjakan ujian akhirmu hari ini."
+
+        "Kini kamu hanya bisa berharap untuk mendapatkan hasil yang maksimal."
+
+        "Kamu juga tidak sabar untuk melaksanakan ujian akhir esok hari dan segera menyelesaikan ujian akhir ini."
 
     else:
         pass

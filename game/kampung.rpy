@@ -373,7 +373,8 @@ label kamp_mornS1:
 
     call sport_mornS1
 
-    return
+    call change_timephase
+    call screen mapUI with dissolve
 
 label kamp_mornS2:
 
@@ -393,14 +394,15 @@ label kamp_noonS1:
 
     call eat
 
-    return
+    call change_timephase
+    call screen mapUI with dissolve
 
 label kamp_noonS2:
 
     "Merasa capek untuk mencuci pakaian kotormu, kamu berniat untuk melaundrykan semua pakaian kotor yang sudah menumpuk dikeranjang baju."
 
-    return
-
+    call change_timephase
+    call screen mapUI with dissolve
 #night
 label kamp_nightS1:
 

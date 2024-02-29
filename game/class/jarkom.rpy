@@ -772,6 +772,291 @@ label jarkom_4:
     call change_timephase
     call screen mapUI with dissolve
 
+label uas_jarkom:
+
+    scene bg campus hall with dissolve
+
+    "Keluar dari ruang ujian, kamu melihat ekspresi senang dari beberapa mahasiswa yang kamu temui."
+
+    "Ujian akhir memang belum berakhir, tapi untuk program studimu, kini tinggal tersisa satu mata kuliah terakhir yang belum diujikan."
+
+    "Kamu tidak tahu bagaimana kondisi program studi lainnya, karena yang kamu tahu tiap program studi memiliki jadwal dan jumlah ujian yang berbeda-beda."
+
+    "Kamu duduk di sebelah teman-temanmu yang sedang membaca buku catatan masing-masing untuk mempersiapkan ujian terakhir."
+
+    "Terlihat [r] yang baru saja keluar dari ruang ujian berjalan menghampirimu. Setelah berada di depanmu ia duduk dan mendekat kepadamu."
+
+    r normal2 "Heiiii gimana siap buat ujian terakhir?"
+
+    mc normal jacket "Siappp siap gak siap…"
+
+    mc "Kamu gimana? Udah senyum-senyum aja padahal ujian belum berakhir."
+
+    r "Hehehe keliatan ya senyum-senyum… Gak sabar ujian, biar cepet selesai hahaha…"
+
+    mc 'Sama sih… pengen cepet ujian biar cepet lega haha'
+
+    scene bg black with fade
+
+    pause 1.5
+
+    scene bg campus class with dissolve
+
+    "Kamu mengisi sela waktu sebelum ujian selanjutnya dengan mengobrol bersama [r] yang juga tidak mempersiapkan untuk ujian selanjutnya."
+
+    "Setelah mengobrol bersama [r] selama beberapa waktu kini dirimu menjadi lebih tenang untuk mengikuti ujian berikutnya."
+
+    "Sekarang sudah memasuki waktu ujian akhir yang terakhir, setelah pintu ujian dibuka kamu dan [r]  berdiri dan bergegas masuk ke ruang ujian."
+
+    "Memasuki ruang kelas ujian, dosen pengawas ujian memberi instruksi kepada mahasiswa untuk meletakkan tas atau ransel di depan kelas secara rapi. Lalu mahasiswa diinstruksikan untuk hanya membawa peralatan tulis dan kartu mahasiswa ke bangku ujian."
+
+    "Setelah meletakan tau di depan ruang kelas, kamu mengambil peralatan tulismu sebelum berjalan menuju bangku ujian."
+
+    "Terlihat lembar jawab ujian sudah diletakan pada masing-masing bangku ujian."
+
+    "Kemudian ketika semua bangku ujian telah terisi oleh peserta ujian, dosen pengawas ujian lalu menjelaskan peraturan ujian."
+
+    "Tidak ada yang berbeda seperti peraturan-peraturan ujian pada umumnya."
+
+    "Selesai menjelaskan, beberapa menit kemudian soal ujian disebarkan kepada seluruh peserta yang ada."
+
+    "Kamu menerima beberapa soal ujian dari bangku yang ada di depanmu, setelah mengambil salah satu soal ujian, kamu meneruskan pembagian soal-soal ujian lainnya ke bangku yang ada di belakangmu."
+
+    "Setelah dosen pengawas ujian memberi instruksi jika ujian sudah dimulai, dan mahasiswa bisa mulai mengerjakan soal ujian."
+
+    "Kamu berdiam dan berdoa terlebih dahulu sebelum mulai mengisi lembar jawaban dengan identitas dirimu."
+
+    "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
+
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+
+    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 45 detik{/i})"
+
+    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+
+    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+
+    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+
+    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+
+    "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
+
+    "Mulai mengerjakan UAS?"
+
+    menu: 
+        "Mulai":
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+
+    "Soal pertama yang terdapat lembar soal adalah:"
+
+    label soaljarkom1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_jarkom1'
+
+        show screen jarkomas_1 with dissolve
+        "1. Sebuah standar yang dibuat sehingga semua komputer mampu berkomunikasi satu sama lain adalah penjelasan dari?"
+
+        mc normal jacket "Sebuah standar…"
+        show screen countdown
+        menu:
+
+            "A. Model OSI":
+                "a. Model OSI"
+                mc "Yups, model OSI itu dibuat biar semua komputer bisa berkomunikasi."
+                $ a_jarkomAS +=5
+
+            "B. Topologi":
+                "b. Topologi"
+                mc "Topologi?"
+                
+            "C. Jaringan Komputer":
+                "c. Jaringan Komputer"
+                mc "Masa jaringan komputer sih…."
+
+            "D. Application Layer":
+                "d. Application Layer"
+                mc "Application layer itu termasuk itu gak sih? Apa yaa…."
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+        hide screen jarkomas_1 with dissolve
+        jump soaljarkom2
+
+    label telat_jarkom1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+
+    hide screen jarkomas_1 with dissolve
+
+    label soaljarkom2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_jarkom2'
+
+        show screen jarkomas_2 with dissolve
+        "2. 	Layer yang mengatur pembukaan dan penutupan sebuah sesi dan pengelolaan sesi antar perangkat yang berbeda merupakan tugas atau fungsi dari Layer?"
+
+        mc "Pengelolaan sesi……"
+        show screen countdown
+        menu:
+
+            "A. Application Layer":
+                "a. Application Layer"
+                mc "Application layer kalau gak salah yang berhubungan sama aplikasi langsung…."
+
+            "B. Network Layer":
+                "b. Network Layer"
+                mc "Network? Network?"
+
+            "C. Session Layer":
+                "c. Session Layer"
+                mc "Session layer… iyups"
+                $ a_jarkomAS +=5
+
+            "D. Presentation Layer":
+                "d. Presentation Layer"
+                mc "Bukannya layer ini tentang enkripsi itu kan ya?"
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen jarkomas_2 with dissolve
+        jump soaljarkom3
+
+    label telat_jarkom2:
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+
+    hide screen jarkomas_2 with dissolve
+
+    label soaljarkom3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_jarkom3'
+
+        show screen jarkomas_3 with dissolve
+        "3. Dibawah ini yang bukan merupakan salah satu Model OSI layer adalah?"
+        show screen countdown
+        menu:
+
+            "A. Data Layer":
+                "a. Data Layer"
+                mc "Data layer? Kaya ada yang kurang…."
+                $ a_jarkomAS +=5
+
+            "B. Transport Layer":
+                "b. Transport Layer"
+                mc "Kayaknya ada nih yang ini…."
+
+            "C. Physical Layer":
+                "c. Physical Layer"
+                mc "Ini layer yang pertama itu gak sih?"
+
+            "D. Session Layer":
+                "d. Session Layer"
+                mc "Session layer itu yang ngurus session itu kan…"
+        hide screen countdown
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        hide screen jarkomas_3 with dissolve
+        jump soaljarkom4
+
+    label telat_jarkom3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+
+    hide screen jarkomas_3 with dissolve
+
+    label soaljarkom4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_jarkom4'
+
+        show screen jarkomas_4 with dissolve
+        "4. 	Topologi yang relatif mudah untuk dibentuk, perangkat tidak terhubung secara langsung kepada perangkat lainnya, dan semua perangkat terhubung ke suatu pusat?"
+        show screen countdown
+        menu:
+
+            "A. Topologi Mesh":
+                "a. Topologi Mesh"
+                mc "Topologi Mesh itu yang gabungan kan?"
+
+            "B. Topologi Bintang":
+                "b. Topologi Bintang"
+                mc "Yups, yang ini!"
+                $ a_jarkomAS +=5
+
+            "C. Topologi Bus":
+                "c. Topologi Bus"
+                mc "Topologi bus seingetku yang ada kabel sentral itu kan."
+
+            "D. Topologi Cincin":
+                "d. Topologi Cincin"
+                mc "Harusnya ini perangkat malah terhubung satu sama lain secara langsung kan?" 
+        hide screen countdown
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Strukdat pada pagi hari ini."
+
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        hide screen jarkomas_4 with dissolve
+        jump soaljarkom5
+
+    label telat_jarkom4:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+
+    hide screen jarkomas_4 with dissolve
+
+    label soaljarkom5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_jarkom5'
+
+        show screen jarkomas_5 with dissolve
+        "5. Topologi yang merupakan topologi campuran dimana topologi ini memiliki redudansi namun memiliki tingkat keandalan yang tinggi, merupakan penjelasan dari topologi?"
+        show screen countdown
+        menu:
+
+            "A. Topologi Mesh":
+                "a. Topologi Mesh"
+                mc "Topologi Mesh, yups!"
+                $ a_jarkomAS +=5
+
+            "B. Topologi Bintang":
+                "b. Topologi Bintang"
+                mc "Bintang itu yang terhubung pada satu pusat itu…"
+
+            "C. Topologi Bus":
+                "c. Topologi Bus"
+                mc "Topologi bus seingetku yang ada kabel sentral itu kan."
+
+            "D. Topologi Cincin":
+                "d. Topologi Cincin"
+                mc "Harusnya ini perangkat malah terhubung satu sama lain secara langsung kan?" 
+        hide screen countdown
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        hide screen jarkomas_5 with dissolve
+        jump end_jarkom
+
+    label telat_jarkom5:
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+
+    hide screen jarkomas_5 with dissolve
+
+    label end_jarkom:
+
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+        "Ujian telah berakhir, kini hanya tinggal menunggu hasil ujian dan menikmati hari liburmu."
+
+
 label attend_jarkom:
 
     $ a_jarkomA +=1

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gallery.rpy", line 46: Line is indented, but the preceding yfill statement does not expect a block. Please check this line's indentation.
-    xalign 0.35
+File "game/class/pti.rpy", line 731: Line is indented, but the preceding show screen statement statement does not expect a block. Please check this line's indentation.
+    "2. 	Berikut ini yang bukan merupakan langkah pencegahan atau tindakan untuk meminimalisir terjadinya kerusakan atau pencurian data adalah?"
     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Mon Nov 20 15:17:41 2023
+Fri Jan  5 18:32:39 2024

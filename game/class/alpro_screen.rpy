@@ -84,3 +84,25 @@ screen alpro_4_9:
 
     add "kelas/alpro-4/alpro_4-9.png"
 
+#uas
+
+screen alproas_1:
+
+    add "kelas/alpro-uas/uas_alpro_1.png"
+
+screen alproas_2:
+
+    add "kelas/alpro-uas/uas_alpro_2.png"
+
+screen alproas_3:
+
+    add "kelas/alpro-uas/uas_alpro_3.png"
+
+screen alproas_4:
+
+    add "kelas/alpro-uas/uas_alpro_4.png"
+
+screen alproas_5:
+
+    add "kelas/alpro-uas/uas_alpro_5.png"
+

@@ -290,8 +290,6 @@ screen trivia_study_pti:
         hover "menuUI/stats/return_hover.png"
         action Return()
 
-
-
 #others change needed
 screen trivia_others:
 

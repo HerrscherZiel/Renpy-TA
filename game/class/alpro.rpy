@@ -752,7 +752,7 @@ label uas_alpro:
 
     "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
 
-    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 90 detik{/i})"
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
     "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar {/i})"
 
@@ -772,153 +772,235 @@ label uas_alpro:
 
     menu: 
         "Mulai":
-        "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
+            "Setelah mempersiapkan diri, kamu siap mengerjakan soal UAS"
 
     "Soal pertama yang terdapat lembar soal adalah:"
 
-    "1. Berikut merupakan beberapa pernyataan mengenai prosedur dan fungsi, pernyataan yang benar adalah?"
+    label soalalpro1:
 
-    mc normal jacket "fungsi dan prosedur yaa…"
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_alpro1'
 
-    menu:
-        "A. Prosedur dan Fungsi mengembalikan nilai":
-            "a. Prosedur dan Fungsi mengembalikan nilai."
-            mc "Emang dua duanya return value ya?"
+        show screen alproas_1 with dissolve
 
-        "B. Prosedur dan Fungsi tidak mengembalikan nilai":
-            "b. Prosedur dan Fungsi tidak mengembalikan nilai."
-            mc "Hmmmm masa sih keduanya ga ngembaliin nilai?"
+        "1. Berikut merupakan beberapa pernyataan mengenai prosedur dan fungsi, pernyataan yang benar adalah?"
 
-        "C. Prosedur tidak mengembalikan nilai":
-            "c.Prosedur tidak mengembalikan nilai."
-            mc "Ya prosedur engga ngereturn value?"
-            $ a_alproAS += 5
+        mc normal jacket "fungsi dan prosedur yaa…"
+        show screen countdown
+        menu:
+            "A. Prosedur dan Fungsi mengembalikan nilai":
+                "a. Prosedur dan Fungsi mengembalikan nilai."
+                mc "Emang dua duanya return value ya?"
 
-        "D. Fungsi tidak mengembalikan nilai":
-            "d. Fungsi tidak mengembalikan nilai."
-            mc "Fungsi harusnya ngembaliin nilai kan?"
+            "B. Prosedur dan Fungsi tidak mengembalikan nilai":
+                "b. Prosedur dan Fungsi tidak mengembalikan nilai."
+                mc "Hmmmm masa sih keduanya ga ngembaliin nilai?"
 
-    "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+            "C. Prosedur tidak mengembalikan nilai":
+                "c.Prosedur tidak mengembalikan nilai."
+                mc "Ya prosedur engga ngereturn value?"
+                $ a_alproAS += 5
 
-    "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
+            "D. Fungsi tidak mengembalikan nilai":
+                "d. Fungsi tidak mengembalikan nilai."
+                mc "Fungsi harusnya ngembaliin nilai kan?"
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
 
-    "2. 	Manakah dibawah ini yang bukan merupakan manfaat dari pemanfaatan prosedur dan fungsi?"
+        hide screen alproas_1 with dissolve
 
-    mc "Manfaat-manfaat prosedur dan fungsi itu…."
+        jump soalalpro2
 
-    menu:
+    label telat_alpro1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
 
-        "A. Modularitas":
-            "a. Modularitas."
-            mc "Modularitas itu kalau gak salah..."
+    hide screen alproas_1 with dissolve
 
-        "B. Reusabilitas":
-            "b. Reusabilitas."
-            mc "Menggunakan prosedur atau fungsi memang bisa dipanggil berkali-kali sih."
-	
-        "C. Memudahkan pemeliharaan kode":
-            "c. Memudahkan pemeliharaan kode."
-            mc "Harusnya juga pemeliharaannya jadi lebih mudah…"
+    label soalalpro2:
 
-        "D. Menambah estetika kode":
-            'd. Menambah estetika kode.'
-            mc "Kayanya engga ngaruh keestetika juga deh…"
-            $ a_alproAS += 5
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_alpro2'
 
-    "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        show screen alproas_2 with dissolve
 
-    "3. Algoritma pencarian yang dilakukan pada kumpulan data yang telah diurutkan sebelumnya. Pencarian ini dilakukan dengan membagi data menjadi dua bagian dan membandingkan elemen tengah dengan elemen yang dicari.
-    Merupakan penjelasan dari algoritma pencarian....?"
+        "Kemudian kamu lanjut menuju pertanyaan selanjutnya."
 
-    menu:
+        "2. 	Manakah dibawah ini yang bukan merupakan manfaat dari pemanfaatan prosedur dan fungsi?"
 
-        "A. Linear Search":
-            "a. Linear Search"
-            mc "Hmmmmm…."
+        mc "Manfaat-manfaat prosedur dan fungsi itu…."
+        show screen countdown
+        menu:
 
-        "B. Binary Search":
-            "b. Binary Search"
-            mc "Kayaknya kalau diurutin dulu itu yang binary dah…."
-            $ a_alproAS += 5
+            "A. Modularitas":
+                "a. Modularitas."
+                mc "Modularitas itu kalau gak salah..."
 
-        "C. Depth First Search":
-            "c. Depth First Search"
-            mc "Ini yang pake node-node itu ga sih?"
+            "B. Reusabilitas":
+                "b. Reusabilitas."
+                mc "Menggunakan prosedur atau fungsi memang bisa dipanggil berkali-kali sih."
 
-        "D. Tree Search":
-            "d. Tree Search"
-            mc "Baru denger ada yang namanya Tree Search…."
+            "C. Memudahkan pemeliharaan kode":
+                "c. Memudahkan pemeliharaan kode."
+                mc "Harusnya juga pemeliharaannya jadi lebih mudah…"
 
-    "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+            "D. Menambah estetika kode":
+                'd. Menambah estetika kode.'
+                mc "Kayanya engga ngaruh keestetika juga deh…"
+                $ a_alproAS += 5
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
 
-    "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        hide screen alproas_2 with dissolve
 
-    "4. 	Cara kerja algoritma dengan melakukan perbandingan dan penukaran terhadap elemen-elemen array yang ada hingga semua data terurutkan
-    Merupakan penjelasan dari cara kerja algoritma pengurutan....."
+        jump soalalpro3
 
-    menu:
+    label telat_alpro2:
+        
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
 
-        "A. Bubble Sort":
-            "a. Bubble Sort"
-            mc "Kalo ga salah yang paling simple itu bubble sort…"
-            $ a_alproAS += 5
+    hide screen alproas_2 with dissolve
 
-        "B. Insertion Sort":
-            "b. Insertion Sort"
-            mc "Insertion sort itu yang ngesisipin terus dibandingkan itu kan ya?"
+    label soalalpro3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_alpro3'
 
-        "C. Quick Sort":
-            "c. Quick Sort"
-            mc "Quick Sort?? Hmmm….."
+        show screen alproas_3 with dissolve
+        "3. Algoritma pencarian yang dilakukan pada kumpulan data yang telah diurutkan sebelumnya. Pencarian ini dilakukan dengan membagi data menjadi dua bagian dan membandingkan elemen tengah dengan elemen yang dicari.
+        Merupakan penjelasan dari algoritma pencarian....?"
+        show screen countdown
+        menu:
 
-        "D. Depth First Sort":
-            "d. Depth First Sort"
-            mc "Yang ini kali ya?"
+            "A. Linear Search":
+                "a. Linear Search"
+                mc "Hmmmmm…."
 
-    "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir ALPRO pada pagi hari ini."
+            "B. Binary Search":
+                "b. Binary Search"
+                mc "Kayaknya kalau diurutin dulu itu yang binary dah…."
+                $ a_alproAS += 5
 
-    "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+            "C. Depth First Search":
+                "c. Depth First Search"
+                mc "Ini yang pake node-node itu ga sih?"
 
-    "5. Apa manfaat dari penggunaan algoritma pencarian dan pengurutan, kecuali?"
+            "D. Tree Search":
+                "d. Tree Search"
+                mc "Baru denger ada yang namanya Tree Search…."
+        hide screen countdown
+        "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
+        hide screen alproas_3 with dissolve
 
-    menu:
+        jump soalalpro4
 
-        "A. Optimasi kinerja":
-            "a. Optimasi kinerja"
-            mc "Harusnya yang ini bener sih…"
+    label telat_alpro3:
 
-        "B. Memudahkan pencarian":
-            "b. Memudahkan pencarian"
-            mc "Namanya algoritma pencarian, harusnya ya jadi mudah pencariannya."
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
 
-        "C. Pemrograman lebih efisien":
-            "c. Pemrograman lebih efisien"
-            mc "Lebih simple terus bisa dipakai berkali-kali, bener berarti…"
+    hide screen alproas_3 with dissolve
 
-        "D. Redudansi kode":
-            "d. Redudansi kode"
-            mc "Harusnya kan bikin nggak redundant??"
-            $ alproAS += 5
+    label soalalpro4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_alpro4'
 
-    "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+        show screen alproas_4 with dissolve    
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
 
-    "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+        "4. 	Cara kerja algoritma dengan melakukan perbandingan dan penukaran terhadap elemen-elemen array yang ada hingga semua data terurutkan
+        Merupakan penjelasan dari cara kerja algoritma pengurutan....."
+        show screen countdown
+        menu:
 
-    "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+            "A. Bubble Sort":
+                "a. Bubble Sort"
+                mc "Kalo ga salah yang paling simple itu bubble sort…"
+                $ a_alproAS += 5
 
-    "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+            "B. Insertion Sort":
+                "b. Insertion Sort"
+                mc "Insertion sort itu yang ngesisipin terus dibandingkan itu kan ya?"
 
-    "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+            "C. Quick Sort":
+                "c. Quick Sort"
+                mc "Quick Sort?? Hmmm….."
 
-    "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah ALPRO, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa 1 ujian akhir mata kuliah Desain Elementer."
+            "D. Depth First Sort":
+                "d. Depth First Sort"
+                mc "Yang ini kali ya?"
+        hide screen countdown
+        "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir ALPRO pada pagi hari ini."
 
-    scene bg campus hall with dissolve
+        "Setelah mengecek jawaban no 4, kamu langsung membaca soal terakhir yang terdapat pada lembar soal ujian."
+        hide screen alproas_4 with dissolve
 
-    pause 1.5
+        jump soalalpro5
 
-    call istirahat_uas
+    label telat_alpro4:
 
-    jump uas_de
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+
+    hide screen alproas_4 with dissolve
+
+    label soalalpro5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telat_alpro5'
+
+        show screen alproas_5 with dissolve
+        "5. Apa manfaat dari penggunaan algoritma pencarian dan pengurutan, kecuali?"
+        show screen countdown
+        menu:
+
+            "A. Optimasi kinerja":
+                "a. Optimasi kinerja"
+                mc "Harusnya yang ini bener sih…"
+
+            "B. Memudahkan pencarian":
+                "b. Memudahkan pencarian"
+                mc "Namanya algoritma pencarian, harusnya ya jadi mudah pencariannya."
+
+            "C. Pemrograman lebih efisien":
+                "c. Pemrograman lebih efisien"
+                mc "Lebih simple terus bisa dipakai berkali-kali, bener berarti…"
+
+            "D. Redudansi kode":
+                "d. Redudansi kode"
+                mc "Harusnya kan bikin nggak redundant??"
+                $ alproAS += 5
+        hide screen countdown
+        hide screen alproas_5 with dissolve
+        jump end_alpro
+
+    label telat_alpro5:
+
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+
+    hide screen alproas_5 with dissolve
+
+    label end_alpro:
+
+        "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
+
+        "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
+
+        "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
+
+        "Selesai mengecek, kamu berdiri dari bangkumu dan berjalan menuju meja dosen untuk mengumpulkan lembar jawaban ujianmu."
+
+        "Lalu tidak lupa untuk mengambil tas ransel milikmu yang ketika ujian berlangsung diletakkan di depan kelas secara rapi."
+
+        "Keluar dari ruang kelas ujian, menandakan kamu telah menyelesaikan ujian akhir mata kuliah ALPRO, kamu merasa senang namun kamu belum bisa merasa lega karena pada hari ini masih tersisa 1 ujian akhir mata kuliah Desain Elementer."
+
+        scene bg campus hall with dissolve
+
+        pause 1.5
+
+        call istirahat_uas
+
+        jump uas_de
 
 
 label attend_alpro:
