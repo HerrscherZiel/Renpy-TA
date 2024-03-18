@@ -79,20 +79,20 @@ screen strukdat_4_5:
 
 screen strukdatas_1:
 
-    add "kelas/strukdat-uas/uas_strukdat_1.png"
+    add "kelas/strukdat_uas/uas_Strukdat_1.png"
 
 screen strukdatas_2:
 
-    add "kelas/strukdat-uas/uas_strukdat_2.png"
+    add "kelas/strukdat_uas/uas_struk2.png"
 
 screen strukdatas_3:
 
-    add "kelas/strukdat-uas/uas_strukdat_3.png"
+    add "kelas/strukdat_uas/uas_struk3.png"
 
 screen strukdatas_4:
 
-    add "kelas/strukdat-uas/uas_strukdat_4.png"
+    add "kelas/strukdat_uas/uas_struk4.png"
 
 screen strukdatas_5:
 
-    add "kelas/strukdat-uas/uas_strukdat_5.png"
+    add "kelas/strukdat_uas/uas_struk5.png"

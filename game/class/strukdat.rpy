@@ -883,11 +883,11 @@ label uas_strukdat:
 
     "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
 
-    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+    "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 
-    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+    "({i}Perlu diketahui UAS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
 
-    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+    "({i}Soal UAS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
 
     "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
 
@@ -921,7 +921,7 @@ label uas_strukdat:
             "C. Tree":
                 "c. Tree"
                 mc "Tree kan kalau gak salah dari node paling atas terus ke node yang bawah atau node anaknya. "
-                $ a_strukdatAs += 5
+                $ a_strukdatAS += 5
 
             "D. Queue":
                 "d. Queue"
@@ -956,7 +956,7 @@ label uas_strukdat:
             "B. Linked List":
                 "b. Linked list"
                 mc "Kayaknya linked list deh, nanti head atau tailnya terus ada hubungannya sama pointer-pointer itu.."
-                $ a_strukdatAs += 5
+                $ a_strukdatAS += 5
 
             "C. Tree":
                 "c. Tree"
@@ -996,7 +996,7 @@ label uas_strukdat:
             "C. String dan Integer":
                 "c. String dan Integer"
                 mc "Yuppss… string untuk nama, dan integer buat umurnya."
-                $ a_strukdatAs += 5
+                $ a_strukdatAS += 5
 
             "D. Float dan Text":
                 "d. Float dan Text"
@@ -1004,7 +1004,7 @@ label uas_strukdat:
         hide screen countdown
         "Setelah menjawab pertanyaan nomor 3, kamu bergegas menuju pertanyaan selanjutnya."
 
-        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan quiz ini, kamu langsung membaca pertanyaan nomor 4."
+        "Tersisa dua soal ujian lagi, merasa cepat ingin menyelesaikan ujian ini, kamu langsung membaca pertanyaan nomor 4."
         hide screen strukdatas_3 with dissolve
         jump soalstrukdat4
 
@@ -1038,7 +1038,7 @@ label uas_strukdat:
             "D. Meningkatkan estetika program yang dikembangkan.":
                 "d. Meningkatkan estetika program yang dikembangkan."
                 mc "Estetika? Kan cuma dikodenya, bukan programnnya."
-                $ a_strukdatAs += 5
+                $ a_strukdatAS += 5
         hide screen countdown
         "Selesai menjawab pertanyaan ke 4, kini hanya tinggal satu pertanyaan lagi yang tersisa sebelum kamu menyelesaikan ujian akhir Strukdat pada pagi hari ini."
 
@@ -1068,7 +1068,7 @@ label uas_strukdat:
             "B. Float, double, int":
                 "b. Float, double, int"
                 mc "Hmmm sama-sama angka tapi int kan bilangan bulat ya.."
-                $ a_strukdatAs += 5
+                $ a_strukdatAS += 5
 
             "C. Int dan short":
                 "c. Int dan double"

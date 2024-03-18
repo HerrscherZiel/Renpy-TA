@@ -125,7 +125,10 @@ label sport_nightS1:
 
     call jog
 
-    jump sleep
+    if day == 28:
+        jump day29
+    else:
+        jump sleep
   
 
 label sport_nightS2:
@@ -133,6 +136,9 @@ label sport_nightS2:
     "Kamu mendapatkan ajakan untuk bermain futsal bersama dengan teman sekelasmu."
 
     call futsal
+    if day == 28:
+        jump day29
+    else:
+        jump sleep
 
-    jump sleep
   

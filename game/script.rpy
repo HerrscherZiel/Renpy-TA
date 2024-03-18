@@ -62,6 +62,7 @@ default weak = False
 #friends
 default rissa_fond = 0
 default trije_fond = 0
+default kevin_fond = 0
 
 #days
 default day = 1
@@ -1176,6 +1177,305 @@ label day5:
     # $ timephase = 3
     call screen mapUI with dissolve
 
+label day28:
+    
+    call change_day
+    $placeKeys = 3
+    show screen trans_screen with dissolve
+    scene bg kos night with fade
+    pause 2.0
+
+    "Sepulang dari bioskop, kini kamu telah merebahkan badan di tempat tidurmu."
+
+    "Kamu memandang langit-langit kosan dan memikirkan kuliahmu selama satu tahun ajaran ini."
+
+    "Awalnya memang semua terasa sangat baru untukmu, namun lama kelamaan semuanya terasa biasa saja."
+
+    "Dan dalam lubuk hatimu kamu juga merasakan kebosanan dari pengulangan-pengulangan yang terjadi tiap harinya."
+
+    "Meskipun begitu, kamu tetap merasa bersyukur telah melewati perkuliahan satu tahun ini."
+
+    "Entah bagaimana hasil yang kamu dapatkan, tapi paling tidak kamu telah melewatinya."
+
+    "Hari ini adalah hari terakhir ujian dilaksanakan, yang berarti sudah tidak ada lagi perkuliahan hingga pergantian semester nanti."
+
+    "Kini kamu hanya tinggal menikmati waktu liburan sembari menunggu hasil kuliahmu keluar."
+
+    "Setelah lama berpikir dan menikmati waktu malam harimu di tempat tidur, kini rasa kantuk telah menyelimutimu."
+
+    "Kamu memutuskan untuk mengakhiri harimu dan tidur."
+
+    scene bg black  with fade
+
+    call change_day
+
+    show screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    with vpunch
+    with vpunch
+
+    "Pagi harinya, kamu terbangun oleh suara  alarm harianmu yang selalu berbunyi pada waktu yang sama."
+
+    "Dengan rasa kantuk yang masih membuat kepalamu berat, kamu paksakan untuk bangun dan melakukan peregangan."
+
+    "Kamu mengambil HPmu yang masih terus berdering dengan suara alarm."
+
+    "Setelah mematikan alarm, kamu melihat sudah banyak notifikasi pesan masuk yang terdapat pada aplikasi Lane."
+
+    "Hari ini merupakan hari perayaan selesainya ujian akhir yang diadakan minggu lalu."
+
+    "Seharusnya acara yang akan diadakan hari sudah ditentukan oleh teman-temanmu."
+
+    "Kamu kemudian membuka aplikasi Lane dan membaca chat yang sudah terdapat di dalamnya sejak semalem."
+
+    "Setelah membaca cukup banyak percakapan untuk saling merekomendasikan apa yang akan dilakukan untuk kegiatan tersebut, akhirnya teman sekelasmu setuju untuk melakukan sebuah pesta pada suatu rumah makan."
+
+    "Tempat tersebut telah disewa mulai pukul 11 pagi hingga pukul 4 sore. Siapapun yang ingin ikut hanya tinggal datang dan membayar uang sewa yang sudah ditentukan."
+
+    "Di acara tersebut kita akan disediakan menu makanan dan minuman untuk masing-masing peserta. Selain itu terdapat beberapa permainan board games yang dapat dimainkan untuk mengisi waktu luang. "
+
+    "Jika tidak kita bisa hangout dan menghabiskan waktu dengan mengobrol dengan teman sekelas."
+
+    "Selain chat yang terdapat pada grup Lanemu, terdapat pesan masuk lainnya dari [r]."
+
+    "‘Hai… jadi gimana? Nanti ikut enggak ke pestanya?’ merupakan pesan yang dikirimkan oleh [r] untukmu."
+
+    "Selain tersebut terdapat beberapa pesan di bawahnya yang berisi lokasi dan informasi detail mengenai pesta tersebut."
+
+    "Kemudian pada pesan terakhir [r] mengirimkan ‘Kalau bisa dijawab segera ya, biar bisa tahu nanti kira-kira butuh apa aja, kutunggu!’."
+
+    "Dengan begitu kamu harus mengirimkan jawabanmu secepat mungkin untuk mempermudah teman-temanmu yang mengurus penyewaan tempat untuk pesta tersebut."
+
+    "Kamu masih memikirkan apa yang akan kamu jawab, apakah kamu akan menghadiri pesta tersebut atau tidak."
+
+    "Berdiam sejenak kamu memikirkan apa yang akan kamu tulis pada pesan balasan tersebut."
+
+    scene bg black with fade
+
+    if social >= 70: 
+
+        "Setelah mengirimkan balasan kamu melanjutkan aktivitas pagi seperti biasanya."
+
+        "Tidak lama setelah kamu pergi menuju kamar mandi, HPmu bergetar pertanda terdapat pesan masuk."
+
+        "‘Oke! Nanti aku kabarin lagi yaa…’"
+
+        "Terlihat pada notifikasi pesan Lane yang muncul pada layar HPmu."
+
+        jump pesta_akhir
+
+    else:
+
+        "Setelah mengirimkan balasan kamu melanjutkan aktivitas pagi seperti biasanya."
+
+        "Tidak lama setelah kamu pergi menuju kamar mandi, HPmu berdering yang menandakan terdapat pesan masuk untuk dirimu."
+
+        "‘Yahhh! Tapi kalau mau nyusul, tinggal berangkat aja yaa…’"
+
+        "Terlihat pada notifikasi pesan Lane yang muncul pada layar HPmu."
+
+        "Setelah mengirim balasan kamu pergi menuju kamar mandi untuk melakukan aktivitas pagimu seperti biasanya"
+
+        call screen mapUI with dissolve
+
+label day29:
+
+    $placeKeys = 3
+    show screen trans_screen with dissolve
+    scene bg kos night with fade
+    pause 2.0
+
+    "Selesai dengan aktivitas malammu, kini dirimu sedang memainkan HP di meja belajar kosan."
+
+    "Membuka aplikasi Lane, kamu mendapati banyak notifikasi pesan di grup kelasmu."
+
+    "Setelah membuka pesan grup kelasmu itu, kebanyakan pesan membahas pesta kelas yang tadi siang diadakan."
+
+    "Kebanyakan mahasiswa di kelasmu mengikutinya, sehingga bukan menjadi hal yang aneh ketika kegiatan tersebut dibicarakan lagi."
+
+    "Terlihat pesta kelas yang diadakan tadi siang diminati oleh banyak teman kelasmu."
+
+    "Menscroll pesan sampai pesan yang paling baru, kini teman-temanmu sedang membahas pembayaran bagi yang mengikuti kegiatan tersebut."
+
+    "Karena pembayaran dilakukan setelah acara selesai, maka sedang dilakukan pendataan di grup kelas."
+
+    "Terdapat list dari temanmu yang mengikuti pesta kelas tersebut, untuk yang sudah membayar terlihat ikon centang di sebelah kanan namanya."
+
+    "Kamu tidak  lupa membayar bagianmu untuk pesta yang tadi siang kamu ikuti."
+
+    "Dapat dilihat ikon centang juga sudah terdapat di sebelah kanan namamu yang terdapat dalam list mahasiswa yang datang ke pesta."
+
+    "Setelah merasa cukup membaca pesan pada Lane, kamu beranjak dari meja belajar dan merebahkan tubuhmu untuk tidur."
+
+    "Setelah selesai mengatur alarm, ketika kamu akan mengunci HPmu, tiba-tiba terdapat pesan masuk dari [r]."
+
+    "Kamu tidak langsung membuka pesan itu, kamu hanya membacanya saja melalui jendela pop  up dari notifikasi."
+
+    "“[name] besok ada kelas tambahan untuk pengembangan game, bukan kelas sih lebih ke kakak tingkat mau berbagi ilmu…”"
+
+    "“Jadi kalau bisa datang yaa… ikut ngeramain acara sama nambah ilmu kan lumayan hehe…”"
+
+    "“Kutunggu yaa besok!!”"
+
+    "Sesuai isi pesan yang baru saja kamu baca, besok akan diadakan semacam kelas tambahan mengenai pengembangan gim."
+
+    "Sebenarnya kamu tertarik dengan materi yang akan dibawakan besok, namun untuk mengikutinya kamu masih memikirkannya."
+
+    "Meskipun tidak ada kejelasan mengenai lokasi kegiatan tersebut, kamu menebak seharusnya kegiatan tersebut akan dilakukan di kampus."
+
+    "Untuk sekarang kamu memilih untuk tidak memikirkan apakah kamu akan mengikutinya atau tidak, memejamkan matamu kamu memilih untuk mengakhiri malam ini."
+
+    "Day [day] END"
+
+    scene bg black with fade
+
+    call change_day
+
+    show screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    "Pagi harinya seperti pagi-pagi sebelumnya kamu terbangun setelah alarm dari HPmu berbunyi selama beberapa detik."
+
+    "Mengingat kini sudah memasuki hari libur dari perkuliahan kamu memilih untuk melanjutkan tidurmu lagi."
+
+    "Zzzzzz"
+    with vpunch
+    "Zzzzzz"
+    with vpunch
+
+    "Zzzzz"
+    with vpunch
+    "Zzzzz"
+    with vpunch
+
+    "Getaran dari HPmu ketika alarm berbunyi membangunkanmu untuk kedua kalinya pada pagi ini."
+
+    "Kamu masih merasa sangat mengantuk dan malas untuk beraktivitas pada pagi hari ini. Kamu ingin bermalas-malasan sedikit lebih lama di hari liburmu."
+
+    "Untuk kedua kalinya kamu memejamkan matamu kembali setelah menunda dan memundurkan waktu di alarm yang di HPmu."
+
+    "Merasa matamu masih memerlukan beberapa menit untuk diistirahatkan kembali."
+
+    Zzzzzz
+    with vpunch
+    Zzzzzz
+    with vpunch
+
+    Zzzzzz
+    with vpunch
+    Zzzzzz
+    with vpunch
+
+    "Untuk ketiga kalinya di pagi hari ini, alarmmu berbunyi dan untuk ketiga kalinya juga di pagi hari ini kamu terbangun oleh deringan dan getaran dari alarmmu."
+
+    mc normal jacket "Huhhhhh"
+
+    mc "Maless bangettt…."
+
+    mc "Kenapa tidur waktu tidur begini kaya cepet banget sih… perasaan aku nyetting alarmnya juga lamaan…."
+
+    "Setelah mengeluh untuk beberapa saat kamu beranjak dari tempat tidurmu dan melakukan aktivitas pagi harimu seperti biasanya."
+
+    scene bg black with dissolve
+
+    "Kembali dari kamar mandi seusai menggosok gigi dan mencuci muka, kini kamu memutuskan untuk melakukan aktvitas di pagi hari ini."
+
+    "Kamu memilih untuk:"
+
+    call screen mapUI with dissolve    
+
+label day30:
+
+    call change_day
+    show screen trans_screen with dissolve
+    scene bg kos morn with dissolve
+    pause 2.0
+
+    "ZZZZZZZZZZ"
+    with vpunch
+    "ZZZZZZZZZZ"
+    with vpunch
+
+    "Kamu terbangun setelah merasakan getaran dari HPmu."
+
+    "Hari ini merupakan hari dimana dirimu akan pulang ke rumah."
+
+    "Seperti pagi-pagi sebelumnya, kamu melakukan rutinitas pagimu."
+
+    "Pergi ke kamar mandi untuk menggosok gigi dan mencuci mukamu."
+
+    "Melihat ke arah langit pagi hari ini, terlihat cerah dan matahari mulai menjulang tinggi."
+
+    "Dengan cuaca yang cerah seperti ini, kamu memutuskan untuk pulang hari ini."
+
+    "Kembali ke kamar kosan, kamu mengambil peralatan mandi dan membawanya kembali ke kamar mandi."
+
+    scene bg black with dissolve
+
+    scene bg kos morn with fade
+
+    "Selesai mandi, kini dirimu sudah berada di kamar kosan, memakai pakaian kemudian mengemas barang-barang yang akan kamu bawa pulang."
+
+    "Karena belum mempersiapkan dari malam sebelumnya, masih banyak barang yang harus kamu kemas, dan akan memerlukan beberapa waktu untuk mengemasnya."
+
+    mc normal jacket "Huhhh… banyak juga ternyata, karena bakalan pulang agak lama juga sih, jadi sekalian banyak yang ku bawa pulang…"
+
+    mc "Hadehh…"
+
+    "Dengan mengeluh kamu memulai mengemas barang-barangmu."
+
+    scene bg black with dissolve
+
+    scene bg kos morn with dissolve
+
+    "Kini waktu sudah menunjukkan pukul 9.30, semua barang yang akan kamu bawa pulang sudah kamu kemas."
+
+    "Sekarang dirimu sedang menyiapkan dan mengikat barang-barangmu di sepeda motor."
+
+    "Setelah hampir semua barang sudah terikat di sepeda motormu, dan semua tas sudah terisi barang-barang lainnya kamu kemudian menutup dan mengunci pintu kamar kosan."
+
+    mc "Huhh… akhirnya pulang juga yaa… setelah setahun gak pulang…."
+
+    "Setelah memastikan semua siap, kamu menghidupkan sepeda motormu dan menaikinya."
+
+    "Dengan semua barang dan tasmu yang kamu bawa pulang, sepeda motormu menjadi terasa lebih berat dan penuh."
+
+    "Sebelum kamu memulai perjalanan pulangmu, kamu mengeluarkan HP untuk mengecek chat yang mungkin dikirimkan kepadamu."
+
+    if rissa_fond >= 70:
+
+        "Terdapat pesan yang kamu terima dan kamu bisa melihatnya dari notifikasi yang muncul pada layar HPmu."
+
+        "[r] mengirim pesan kepadamu yang berisi ‘hati-hati dijalan’"
+
+    if trije_fond >= 70 :
+
+        "[TriJe] mengirim pesan kepadamu yang berisi ‘katanya pulang ya? Hati-hati di jalan’."
+
+    if kevin_fond >= 70 :
+
+        "[k] mengirimkan pesan kepadamu yang berisi ‘Hati-hati bro dijalan, selamat liburan!!’"
+
+    else:
+
+        "Kamu tidak memiliki pesan masuk yang dikirimkan kepadamu."
+    
+        "Setelah melihat ke arah layar HPmu, kamu hanya bisa tersenyum."
+
+    "Kamu mengembalikan HP ke dalam saku celana, kemudian memulai perjalanan pulang kampungmu."
+
+    "FIN"
+
+    # Show stats screen
+
+    # Show Ending screen
+
+    # Ending screen…
+
+
 label days:
 
     call change_day
@@ -1191,7 +1491,8 @@ label days:
         pause 2.0
 
         "RINGGG RINGGG RINGGG"
-        #sfx alarm
+        with vpunch
+        with vpunch
 
         "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
 
@@ -1305,7 +1606,8 @@ label days:
         pause 2.0
 
         "RINGGG RINGGG RINGGG"
-        #sfx alarm
+        with vpunch
+        with vpunch
 
         "Seperti hari-hari biasanya, matamu terbuka setelah mendengarkan bunyi alarm yang keluar dari HPmu."
 
@@ -1336,7 +1638,8 @@ label days:
         pause 2.0
 
         "RINGGG RINGGG RINGGG"
-        #sfx alarm
+        with vpunch
+        with vpunch
 
         "Seperti hari-hari biasanya, matamu terbuka setelah mendengarkan bunyi alarm yang keluar dari HPmu."
 
@@ -1358,9 +1661,41 @@ label days:
 
         "Kamu berdiri dan berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini, sebelum berangkat menuju kampus dan memulai minggu ujian akhirmu."
 
+        call screen mapUI with dissolve
+
     elif day == 27:
 
-        "ban bocor"
+        show screen trans_screen with dissolve
+        
+        scene bg kos morn with dissolve
+        pause 2.0
+
+        "RINGGG RINGGG RINGGG"
+        with vpunch
+        with vpunch
+
+        "Seperti hari-hari biasanya, matamu terbuka setelah mendengarkan bunyi alarm yang keluar dari HPmu."
+
+        "Kamu bangun dari tidurmu lalu mematikan alarm yang masih terus berbunyi."
+
+        "Kesedaranmu masih belum sepenuhnya pulih, pandanganmu masih kabur dan kamu masih belum bisa berpikir jernih."
+
+        "Untuk beberapa menit kemudian, kamu hanya duduk terdiam di kasur sembari menunggu kesadaranmu kembali."
+
+        "Setelah merasa cukup bugar, kamu mengambil HP yang berada di atas tempat tidurmu."
+
+        "Terdapat pesan masuk yang terlihat dari jendela notifikasi."
+
+        "Pesan itu merupakan pesan yang dikirim oleh [r] bertuliskan '{i}Semangat buat ujian hari terakhir!!! Jangan sampai telat yaa!{/i}'"
+
+        "Kamu tersadar hari ini merupakan hari ujian akhir dilakukan, yang berarti setelah hari ini kuliahmu untuk tahun ini akan berakhir."
+
+        "Setelah duduk dan membaca beberapa pesan yang terdapat pada group chat untuk sementara waktu, kamu beranjak dari tempat tidurmu."
+
+        "Kamu berjalan keluar dari kamar menuju kamar mandi, lalu bersiap melakukan aktivitas pagi hari ini, sebelum berangkat untuk menghadapi ujian akhirmu yang terakhir."
+
+        call screen mapUI with dissolve
+
     else:
 
         jump bangun
@@ -1371,7 +1706,7 @@ label sleep:
 
     $placeKeys = 3
     show screen trans_screen with dissolve
-    scene bg kos night
+    scene bg kos night with fade
     pause 2.0
 
     "Seusai selesai dengan kegiatan malammu, kini kamu sudah berada di atas tempat tidur."
@@ -1563,6 +1898,8 @@ label sleep:
 
         "Kamu juga tidak sabar untuk melaksanakan ujian akhir esok hari dan segera menyelesaikan ujian akhir ini."
 
+    elif day == 28:
+
     else:
         pass
 
@@ -1595,11 +1932,56 @@ label mandi:
 
     scene bg kos morn with fade
 
-    "Selesai mandi, kamu kembali ke kamar kos."
+    "Selesai mandi, kamu kembali ke kamar untuk bersiap-siap."
 
-    "Mengenakan pakaian ganti, dan bersiap melakukan aktivitas untuk mengisi harimu."
-    call change_timephase
-    call screen mapUI with dissolve
+    "Berganti pakaian dan berdandan, bersiap untuk melakukan aktivitas yang akan kamu lakukan siang hari ini."
+
+    if day == 27:
+        call change_timephase
+        jump bocor
+
+    elif day == 29:
+
+        call change_timephase
+
+        scene bg kos morn with fade
+
+        "Siang harinya, kamu teringat kamu mendapatkan pesan dari [r] mengenai kegiatan dari kakak tingkat mengenai kelas pengembangan gim."
+
+        "Kamu membuka riwayat pesanmu dengan [r], kini sudah ada terdapat beberapa pesan tambahan yang memberikan detail mengenai kegiatan tersebut."
+
+        mc normal jacket "Hmmm… jam 11 sampai jam 2, di ruangan 402 ya."
+
+        mc "Sekarang jam… eh… udah jam 10.40 ternyata, ikut kegiatan ini enggak ya?"
+
+        if community >= 50:
+
+            mc normal jacket "Hmmm… sebelum pulang rumah mungkin ikut acara ini aja apa ya? Lagipula siang ini aku enggak ada acara apa-apa, bosen di kosan terus."
+
+            mc "Hmmm… iyalah, ikut aja toh bisa pergi ditengah acara kalau aku bosen hahaha"
+
+            mc "Oh iya… bales chat [r] dulu jangan lupa."
+
+            "Mengeluarkan HP dari saku celanamu, kamu membalas ajakan [r] untuk mengikuti kegiatan kelas tambahan."
+
+            jump kelas_game
+
+        else: 
+
+            mc normal jacket "Kayaknya enggak dulu deh, capek banget dah rasanya hari ini, mending molor lagi ahh…"
+
+            mc "Oh iya, harus bales chat [r] dulu… ‘sorry kayaknya aku skip dulu deh hari ini.’"
+
+            mc "Yeahh… send…"
+            
+            "Setelah membalas pesan dari [r], kamu kembali ke tempat tidurmu tidak lupa menghidupkan kipas angin lalu merebahkan badanmu."
+
+            jump rebahan 
+
+
+    else:
+        call change_timephase
+        call screen mapUI with dissolve
 
 label bangun:
 
@@ -1608,7 +1990,8 @@ label bangun:
     pause 2.0
 
     "RINGGG RINGGG RINGGG"
-    #sfx alarm
+    with vpunch
+    with vpunch
 
     "Bunyi alarm membangunkan dirimu dari tidur lelapmu."
 

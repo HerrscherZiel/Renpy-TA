@@ -765,7 +765,7 @@ label uas_basdat:
 
         show screen basdatas_1 with dissolve
         "1. Manakah dibawah ini yang merupakan kode perintah dari DDL dan DML?"
-        mc "DDL dan DML yaa…..?"
+        mc normal jacket "DDL dan DML yaa…..?"
         show screen countdown
         menu:
 

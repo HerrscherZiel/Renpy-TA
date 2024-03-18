@@ -1027,6 +1027,8 @@ label istirahat_uas:
 
             "Kamu dan teman-temanmu berdiri, dan bersiap untuk melaksanakan ujian akhir berikutnya."
 
+            return
+
         "Pergi ke kantin untuk mencari makan":
 
             "Kamu memilih untuk tetap berada di kampus, dan pergi ke kantin untuk mengisi perutmu."
@@ -1071,6 +1073,8 @@ label istirahat_uas:
 
             "Menunggu hingga masuk waktu kelas berikutnya dimulai."
 
+            return
+
         "Pulang ke kos dan istirahat sejenak":
 
             "Kamu lebih memilih untuk meninggalkan kampus dan kembali ke kos."
@@ -1112,7 +1116,11 @@ label istirahat_uas:
 
             "Setelah siap, kamu langsung mengendarai motormu menuju kampus."
 
+            return
+
     scene bg campus hall with fade
+
+    return
 
 label uts_1:
 
@@ -1268,6 +1276,428 @@ label pre_uas:
 
     jump uas_pti
     
+label bocor:
+
+    scene bg town street 2 with dissolve
+
+    "Setelah mengendarai motormu melewati perkampungan, kini kamu berada jalan raya menuju gedung kampusmu."
+
+    "Kamu mengendarai motormu secara pelan dan menikmati waktumu sebelum melakukan ujian akhir terakhir pada hari ini."
+
+    "Bersantai melewati jalanan kampus karena dirimu hari ini berangkat lebih awal daripada waktumu biasanya."
+
+    "Ketika sedang menikmati perjalananmu, kamu merasakan sesuat yang mengganjal pada bagian belakang motor."
+
+    "Awalnya kamu menghiraukan rasa aneh yang kamu rasakan itu, namun lambat laun rasa itu semakin terasa."
+
+    "Bukannya tidak tahu apa yang terjadi di bagian belakang mtormu, hanya saja kamu mencoba untuk tidak merasakannya."
+
+    "Namun ketika menoleh kebelakang, kecurigaanmu benar."
+
+    "Hal ini pernah kamu rasakan beberapa kali sebelumnya, ya ban bocor."
+
+    scene bg town street 3 with fade
+
+    "Setelah mengetahui ban belakang sepeda motormu bocor, kamu segera menepi ke pinggir jalan."
+
+    "Kamu turun dari motormu dan mengecek seberapa parah kondisi ban belakangmu."
+
+    "Mengamati kondisi ban belakang motormu, kamu menemukan sebuah benda yang tertancap dan masuk kedalam ban belakang sepeda motormu."
+
+    "Tidak ingin membuat kondisi ban yang sudah kempes semakin parah, kamu membiarkan benda itu tertancap pada ban belakang."
+
+    mc normal jacket "Huhhh... kalau aku paksa naikin sampe kampus bakalan tambah parah nihh..."
+
+    mc "Ini aja udah hampir habis gini anginnya... Sepertinya harus kubawa ketambal ban terlebih dahulu."
+
+    mc "Di daerah sini dimana ya...."
+
+    "Melihat ke area di sekelilingmu, kamu akhirnya menemukan salah satu kios tambal ban yang sudah buka pada pagi hari ini."
+
+    "Karena terletak diseberang jalan dari posisimu saat ini, kamu harus mendorong motormu menyebrang dan berbalik beberapa meter."
+
+    mc "Sekarang jam...."
+
+    "Khawatir akan melewatkan ujian akhirmu, kamu melihat waktu di HPmu."
+
+    mc "Hmm... masih sempat lah ya, asal gak lama-lama banget... harus buruan nih..."
+
+    "Kamu mendorong motormu menuju seberang jalan dari posisimu saat ini."
+
+    "Kemudian kamu masih harus mendorongnya kembali beberapa puluh meter karena kios tambal ban yang ingin kamu tuju berada beberapa puluh meter
+    dari posisimu saat ini."
+
+    "Tanpa lelah kamu mendorongnya hingga depan kios tambal ban yang kamu tuju."
+
+    "Kamu langsung meminta penjaga kios tersebut untuk segera menambal ban sepeda motormu."
+
+    scene bg black with dissolve
+
+    scene bg town street 3 with dissolve
+
+    "Beberapa menit terlah berlalu sejak kamu diam menunggu ban belakang sepeda motormu yang sedang ditambal."
+
+    "Benda yang menancap pada ban belakangmu sudah ditarik keluar. Benda tersebut ternyata merupakan sebuah besi kecil tumpul berbentuk silinder."
+
+    "Kamu tidak tahu bagaimana besi itu bisa menancap pada ban belakangmu, namun paling tidak kini benda tersebut telah dikeluarkan."
+
+    "Ban belakang sepeda motormu juga sudah selesai di tambal dan sudah siap untuk dipakai."
+
+    "Setelah membayar dan mengucapkan terima kasih pada penjaga kios tambal ban, kamu segera menaiki sepeda motormu dan melanjutkan perjalan menuju kampus."
+
+    "Sebelum mulai menarik gas kamu sempat berhenti untuk melihat jam lagi."
+
+    mc normal jacket "Ohhh mepet banget nihh... harus buru-buru!!!"
+
+    "Melihat waktu yang sudah mepet, kamu langsung merarik gas dan segera menuju kampus."
+
+    jump uas_pbo
+
+label kelas_game:
+
+    $placeKeys = 8
+
+    show screen trans_screen with dissolve
+
+    scene bg parking lot with fade
+    pause 2.0
+
+    "Sesampainya di kampus, setelah memarkir sepeda motormu kamu mengalihkan pandanganmu di sekitar tempat parkir kampus."
+
+    "Kamu mendapati beberapa sepeda motor lainnya sudah terparkir rapi bersebelahan di sisi yang berbeda dengan dimana kamu memarkir sepeda motormu."
+
+    "Dilihat dari jumlah sepeda motor yang ada, kamu dapat menebak jumlah mahasiswa yang hadir untuk kegiatan kelas tambahan ini."
+
+    "Kamu dapat mengira mahasiswa yang hadir untuk kelas ini cukup untuk mengisi satu ruang kelas biasa yang biasanya digunakan untuk kegiatan perkuliahan."
+
+    "ZZzzZZzz"
+    with vpunch
+
+    "Tiba-tiba terdengar suara getaran dari HP yang kamu letakkan pada saku celanamu."
+
+    "“Hoiii ayo masuk, malah diem aja di parkiran.” Merupakan pesan yang kamu baca dari jendela notifikasi yang muncul. [r] merupakan pengirim pesan yang baru saja kamu terima."
+
+    "Kemudian kamu menoleh ke arah pintu masuk gedung kampus, kamu melihat [r] sudah melambaikan tangannya kepadamu."
+
+    "Kemudian kamu bergegas berjalan ke arah [r]"
+
+    scene bg black with dissolve
+
+    scene bg campus hall with fade
+
+    r normal2 "Ternyata datang juga kamu, kukira nggak bakalan datang hari ini."
+
+    mc normal jacket "Yaa.. sebenernya males juga sih, tapi sedikit penasaran dengan materi yang mau dibawakan."
+
+    r "Hmmm gitu ya…"
+
+    mc "Toh kalau nanti bosen atau ngantuk bisa izin terus pulang hahahaha…."
+
+    r "Heyyy jangan gitu dongg, kasian lhoo pengisi acaranya…"
+
+    mc "Kamu sendiri kenapa datang [r]?"
+
+    r "Sudah janji sih sama yang mengisi acara, kebetulan dia kakak kelasku waktu SMA ya gitu lah, terus kan lumayan dapat ilmu juga."
+
+    mc "Hooo gitu ya.."
+
+    mc "Di ruang 202 kan?"
+
+    r "Iyaa… udah pada masuk katanya, belum mulai sih."
+
+    mc "Eh dapet snack engga?"
+
+    r "Hahahaha dasar kamu… kayaknya ada sih."
+
+    mc "Yeyyy letsgoo!!"
+
+    "Kamu meneruskan obrolanmu dengan [r] sampai kalian berdua memasuki ruang yang digunakan untuk kegiatan tersebut."
+
+    scene bg campus class with dissolve
+
+    "Seperti yang diinformasikan sebelumnya, kegiatan ini dibawakan oleh beberapa kakak tingkat pada kampusmu."
+
+    "Materi yang akan diajarkan adalah pengembangan gim menggunakan game engine RenPy."
+
+    "mc Hmmm kalau engga salah RenPy itu game engine novel visual ya…"
+
+    "Masih terdapat beberapa menit sebelum kegiatan dimulai, untuk mengisi waktu dan menunggu mahasiswa lainnya kini kakak tingkatmu sedang memperkenalkan diri mereka."
+
+    "Kamu mengamati sekitarmu dan mendapati mahasiswa-mahasiswa yang hadir pada kegiatan ini tidak hanya berasal dari program studimu, terdapat banyak mahasiswa yang tidak pernah kamu lihat atau temui sebelumnya."
+
+    scene bg black with fade
+
+    scene bg campus class with dissolve
+
+    "Sekitar 10 menit kemudian kegiatan kelas tambahan pengembangan gim dimulai."
+
+    k normal "Halooo semuanya selamat pagi menjelang siang… terimakasih sudah menyempatkan waktunya dan datang ke kelas tambahan ini meskipun sudah memasuki hari libur yaa…"
+
+    k "Agar tidak terlalu lama mungkin langsung kita mulai saja ya kegiatannya."
+
+    k "Disini aku akan sedikit menjelaskan kepada kalian mengenai pengembangan gim."
+
+    k "Kedepannya kalian akan mendapatkan materinya dari mata kuliah yang ada, namun untuk kali ini kita akan mengajarkan pengembangan gim menggunakan gim engine Ren’Py."
+
+    k  "Mungkin disini ada yang sudah tahu apa itu game engine Ren’Py itu?"
+
+    "Setelah mengajukan pertanyaan dan menunggu selama beberapa waktu tidak ada satupun mahasiswa yang mengangkat tangannya."
+
+    "Meskipun dirimu tahu mengenai game engine itu, namun kamu memilih untuk diam dan memperhatikan saja."
+
+    k "Tidak ada ya? Atau mungkin ada yang malu-malu buat angkat tangan nih… hahaha"
+
+    show screen game_1 with fade
+
+    k "Jadi… Ren’Py itu merupakan salah satu game engine yang umumnya digunakan untuk membuat gim novel visual."
+
+    k "Ren’Py menggunakan bahasa pemrograman python dalam pengoperasiannya dan merupakan game engine yang free dan open source."
+
+    "k Apa itu novel visual? Novel visual merupakan salah satu jenis gim yang menggabungkan cerita naratif dengan berbagai media seperti gambar, animasi, dan audio."
+
+    k "Gim novel visual dapat hanya berisi teks dengan media tanpa adanya interaksi pemain atau bisa dibilang tidak memiliki aksi lain selain jalan cerita itu sendiri."
+
+    hide screen game_1
+
+    show screen game_2 with fade
+
+    k "Gim novel visual yang seperti itu bisa dibilang dengan novel visual yang statik, yang memberatkan pada pembawaan ceritanya saja."
+
+    k "Namun terdapat juga gim novel visual yang dapat memiliki banyak aksi, novel visual yang seperti ini biasanya juga dikarenakan terdapat gameplay tambahan di dalamnya."
+
+    k "Interaksi dalam gim novel visual memang dapat berbeda-beda, dari yang terdapat penambahan gameplay aksi sampai yang paling umum dan sering digunakan dalam gim novel visual adalah opsi choice."
+
+    k "Opsi choice merupakan hal yang sering ditemui di novel visual, opsi choice biasa digunakan oleh pengembang gim untuk menentukan atau merubah alur cerita."
+
+    k "Mungkin pengenalan untuk novel visualnya itu saja ya."
+
+    k "Sekarang kita lanjutkan materinya ke bagaimana cara menggunakan Ren’Py."
+
+    hide screen game_2
+
+    show screen game_3 with fade
+
+    k "Pertama kita harus memiliki beberapa perangkat lunak yang akan kita gunakan untuk pengoperasiannya."
+
+    k "Perangkat lunak yang dibutuhkan itu sendiri adalah Ren’py yang bisa kita download melalui situs websitenya."
+
+    k "Kemudian teks editor seperti Visual Studio Code atau teks editor lainnya."
+
+    k "Pastikan Python sudah terinstall juga ya teman-teman."
+
+    k "Lalu kita hanya tinggal mengekstrak file Ren’py yang kita download sebelumnya."
+
+    k "Selesai mengekstrak file Ren’Py, langkah selanjutnya adalah mencari file .exe dari Ren’Py lalu membukanya."
+
+    k "Nah dari sini kita akan mulai membahas mengenai apa saja yang terdapat pada launcher game engine Ren’Py"
+
+    k "Tampilan launchernya sendiri dapat dilihat pada gambar dibawah."
+
+    hide screen game_3
+
+    show screen game_3ss with fade
+
+    k "Seperti ini ya tampilan launcher dari Ren'Py"
+
+    k "Dari tampilan launchernya, kita dapat melihat beberapa hal disini."
+
+    hide screen game_3ss
+
+    show screen game_4 with fade
+
+    k "Pada bagian kiri tampilan akan disajikan berbagai proyek gim yang terdaftar pada launchernya."
+
+    k "Sementara pada bagian kanan tampilan, dapat dilihat detail dari proyek yang dipilih pada bagian kiri."
+
+    k "Semisal gambar dibawah menunjukkan kita sedang memilih proyek tutorial sehingga bagian kanan akan menampilkan detail mengenai proyek tersebut seperti file text dari proyek, direktorinya."
+
+    k "Selain itu terdapat aksi yang dapat dilakukan pada proyek seperti build distribution proyek tersebut."
+
+    k "Kemudian pada bagian bawah tampilan launcher, kalian dapat melihat beberapa menu yang dapat digunakan untuk berbagai macam hal."
+
+    k "Seperti untuk menambahkan proyek baru, menjalankan proyek gim, membuka dokumentasi, dan lain sebagainya."
+
+    hide screen game_4
+
+    show screen game_4ss with fade
+
+    k "Itu merupakan penjelasan untuk tampilan launcher Ren’Pynya. "
+
+    k "Kini kita akan berlanjut ke bagaimana pengembangannya teman-teman."
+
+    k "Kita akan menggunakan proyek tutorial, dan akan membahas hal-hal dasar yang digunakan pada proyek gim tersebut."
+
+    k "Sebelumnya kita akan melaunch Tutorial dari launchernya terlebih dahulu, dan tampilan awalnya akan seperti ini ya."
+
+    k "Pada awalnya ketika kita membuat sebuah proyek baru, akan secara otomatis terbuat beberapa file seperti screen.rpy, gui.rpy, options.rpy, dan script.rpy."
+
+    k "Pertama kita akan membahas mengenai file screen.rpy."
+
+    hide screen game_4ss
+
+    show screen game_5 with fade
+
+    k "Tampilan awal gim atau yang biasa disebut main menu ini terdapat pada file screen.rpy yang bisa kita buka dari launchernya."
+
+    k "Pada screens.rpy ini merupakan file yang dapat kita gunakan untuk mengatur main menu, choice, teks box, dan in game menu dalam gim, hal ini termasuk tombol dan tampilan atau ilustrasi yang digunakan dalam gim."
+
+    k "Seperti pada contohnya, pada baris 293 hingga baris 356 pada file screen.rpy merupakan baris yang dapat digunakan untuk mengatur tombol menu navigasi pada halaman main menu."
+
+    k "Kemudian, setelah itu terdapat file gui.rpy."
+
+    hide screen game_5
+
+    show screen game_6 with fade
+
+    k "Pada file ini, pemain dapat merubah pengaturan dari berbagai macam hal yang terdapat dalam gim yang berhubungan dengan tampilan."
+
+    k "Hal-hal tersebut seperti warna, ukuran, dan font dari teks, lalu background yang digunakan dalam sebuah menu, pengaturan spacing teks atau tombol, pengaturan borders, pengaturan posisi sebuah tampilan, dan lain sebagainya."
+
+    k "Pengaturan yang terdapat pada file ini dapat dipanggil dan diterapkan pada file lainnya seperti pada file screen.rpy yang memanggil background yang sudah ditetapkan pada file gui.rpy sebelumnya."
+
+    k "Contohnya pada screen.rpy baris 362 yang memanggil gui.main_menu_background"
+
+    k "Dapat dlihat pada gambar di bawah."
+
+    k "Berlanjut pada file berikutnya yaitu options.rpy."
+
+    hide screen game_6
+
+    show screen game_7 with fade
+
+    k "File ini merupakan file yang berisi konfigurasi dasar utama yang digunakan dalam gim."
+
+    k "Konfigurasi seperti penamaan nama gim atau proyek, versi gim, direktori penyimpanan gim dan lain sebagainya."
+
+    k "Setelah options, kita akan mempelajari apa itu script.rpy."
+
+    hide screen game_7
+
+    show screen game_8 with fade
+
+    k "Script.rpy merupakan file awal yang kita gunakan untuk menuliskan cerita dalam gim yang kita kembangkan."
+
+    k "Dalam file ini kita bisa melakukan berbagai macam hal."
+
+    k "Pertama kita bisa mendefinisikan variabel yang akan kita gunakan dalam cerita atau gim."
+
+    k "Kemudian kita mulai menuliskan cerita pada label Start."
+
+    hide screen game_8
+
+    show screen game_9 with fade
+
+    k "Saat kita menuliskan cerita atau teks dalam gim, kita juga bisa menambahnya dengan berbagai macam media, transisi, atau audio untuk membuat gim atau cerita yang kita tulis menjadi lebih menarik."
+
+    k "Untuk menjelaskan berbagai macam hal yang dapat kita tambahkan dalam alur cerita atau gim kita akan menjelaskan beberapa perintah dasar yang dapat kita gunakan sebagai berikut."
+
+    k "Label: label merupakan bagian dari gim yang berisi teks alur cerita, disini kita bisa menuliskan segala macam teks yang kita inginkan, baik monolog, dialog, ataupun narasi."
+
+    k "Dalam label kita dapat menambahkan ilustrasi ataupun audio untuk membuat cerita lebih menarik."
+
+    k "Scene dalam sebuah label merupakan perintah untuk menampilkan sebuah background atau gambar latar belakang."
+
+    hide screen game_9
+
+    show screen game_10 with fade
+
+    k "Show dalam sebuah label dapat digunakan untuk menampilkan sebuah ilustrasi yang terletak di depan gambar latar belakang."
+
+    k "Lalu untuk memainkan audio, kita dapat menggunakan perintah Play."
+
+    k "Label juga bisa digunakan untuk membedakan suatu kejadian atau kegiatan dengan kegiatan yang lainnya yang bisa terjadi dalam gim."
+
+    k "Ketika memainkan gim kita dapat berubah atau mengunjungi ulang sebuah label menggunakan choice yang ada."
+
+    k "Menu: perintah ini merupakan perintah yang digunakan untuk memunculkan choice dalam gim, yang dapat digunakan oleh pengembang untuk mengubah label ataupun variabel berdasarkan pilihan yang dipilih oleh pemain."
+
+    k  "Dalam akhir sebuah label atau sebuah choice biasanya terdapat menu Jump atau Call."
+
+    k "Jump merupakan sebuah menu yang dapat digunakan oleh pengembang untuk berpindah dari suatu label ke label yang lain."
+
+    k "Sementara Call dapat digunakan untuk memanggil sebuah screen yang sudah dibuat."
+
+    hide screen game_10
+
+    show screen game_11 with fade
+
+    k "Terus, apa itu Screen? Screen sendiri merupakan tampilan atau layar yang berbeda dari tampilan utama alur cerita yang dapat ditampilkan dan dihilangkan."
+
+    k "Screen biasanya digunakan untuk menampilkan sebuah tombol atau menu yang tampil selama beberapa kali saja. "
+
+    k "Meskipun begitu screen juga dapat digunakan untuk menampilkan menu yang ingin ditampilkan secara penuh."
+
+    k "Hmm… sudah banyak yang saya sampaikan pada materi ini, mungkin ada yang ingin ditanyakan oleh teman-teman?"
+
+    "Tidak lama setelah itu banyak mahasiswa yang mengangkat tangan mereka untuk mengajukan pertanyaan seputar materi yang baru saja diterangkan."
+
+    scene bg black with dissolve
+    pause 2.0
+
+    scene bg campus class with fade
+
+    r normal2 "[name] gimana barusan materinya?"
+
+    mc normal jacket "Ohh [r]... ummm gimana ya? Mungkin karena dasar ya paham-paham aja… tapi kalau suruh praktik ya engga tau hahaha…"
+
+    r "Tapi tertarik enggak tuh buat nyoba?"
+
+    mc "Tertarik sih… karena aku pernah nyoba main gim yang kaya gituan."
+
+    r "Oh yaa? Ya mungkin bisa kamu coba terus siapa tahu jadi bahan skripsi mu kan? Hahahaha"
+
+    mc "Ya mungkin juga sihh… hahaha siapa tahu ya…"
+
+    "(Please don’t, especially if u’re solo dev ing, trust)"
+
+    mc "Kamu sendiri gimana [r]?"
+
+    r "Yaa.. mungkin karena aku enggak begitu into game ya jadi pengetahuan aja gituu."
+
+    r "Oh iya [name] jadi pulang kampung?"
+
+    mc "Sepertinya iya…"
+
+    r "Kapan tuhh?"
+
+    mc "Besok? Atau lusa mungkin? Belum pasti sih…"
+
+    r "Hati-hati aja dah dijalannya… Pakai motor sendiri kan?"
+
+    mc "Iyaa… pakai motor sendiri dong."
+
+    mc "Kamu enak ya ga perlu pulang kampung…"
+
+    r "Ya gimana.. Kan aku asli orang sini hahaha…"
+
+    scene bg black with dissolve
+
+    scene bg campus upper hall with dissolve
+
+    "Kamu masih meneruskan obrolanmu dengan [r] hingga kegiatan berakhir."
+
+    "Kini kalian sudah berada di luar ruang kelas dan sedang berjalan menuju pintu gedung kampus."
+
+    r normal2 "Kamu langsung pulang habis ini [name]?"
+
+    mc normal jacket "Kayaknya iya deh…"
+
+    r "Yaudah aku masih mau belanja dulu… hati-hati ya.."
+
+    mc "Okey hati-hati juga dijalan [r]."
+
+    r "Yaa… byee…"
+
+    scene bg campus parking lot  with dissolve
+
+    "Setelah keluar dari gedung kampus kalian berpisah, [r] berjalan menuju minimart yang berada di seberang kampus sementara dirimu langsung menuju tempat parkir menuju kendaraanmu."
+
+    "Sebelum menuju kosan, kamu sempat mampir ke salah satu rumah makan untuk makan siang."
+
+    "Selesai makan siang kamu langsung kembali menuju kosan untuk beristirahat."
+
+    jump day29_night
+
 #hari ke 3 minggu ke 1
 label pre_libur:
 

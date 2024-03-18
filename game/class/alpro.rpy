@@ -969,7 +969,7 @@ label uas_alpro:
             "D. Redudansi kode":
                 "d. Redudansi kode"
                 mc "Harusnya kan bikin nggak redundant??"
-                $ alproAS += 5
+                $ a_alproAS += 5
         hide screen countdown
         hide screen alproas_5 with dissolve
         jump end_alpro

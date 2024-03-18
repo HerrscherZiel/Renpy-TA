@@ -55,11 +55,11 @@ screen mapUI:
             background "menuUI/time/noon.png"
         else:
             background "menuUI/time/night.png"
-    imagebutton:
-        xpos 320
-        ypos 60
-        auto "map/tasks_%s.png"
-        action ShowMenu("task_list")
+    # imagebutton:
+    #     xpos 320
+    #     ypos 60
+    #     auto "map/tasks_%s.png"
+    #     action ShowMenu("task_list")
 
     if prologue == True:
         if prologueCount == 1 or prologueCount == 5 and day !=4 and KRS3 == False:

@@ -1108,7 +1108,198 @@ label kos_nightS3:
 
     jump sleep
 
+label rebahan:
 
-label nonton_film:
+    scene bg kos morn with fade
 
+    "Tidak ada aktivitas yang kamu lakukan pada siang hari."
+
+    "Kamu hanya merebahkan tubuhmu dan menghabiskan waktu dengan beristirahat."
+
+    jump day29_night
+
+label day29_night:
+
+    $placeKeys = 3
+    call change_timephase
+    show screen trans_screen with dissolve
+    scene bg kos night with fade
+    pause 2.0
+
+    "Sekarang waktu sudah menunjukan pukul 20.15 malam, kini dirimu sedang bersantai di depan teras kosan menikmati angin malam yang sejuk dan semilir."
+
+    "Namun malam ini kamu tidak sendirian berada pada teras depan kosanmu."
+
+    "[k] salah satu teman kosanmu sedang menemani mengobrol di teras depan kosanmu."
+
+    k normal "Gimana semester ini? Kampusmu udah kelar kan bro?"
+
+    mc normal jacket "Yaaa begitulah… lu sendiri gimana? Bukannya ma"sih ujian besok?
+
+    k "Hahaha jangan tanya dong kalau aku, ya pasti ga baik-baik aja lahh"
+
+    mc "Dasarrr… udah ga baik-baik aja malah nyantai gini… masih ujian kan lu besok?"
+
+    k "Yoii… santai aja bro… jangan dipikir susah, udah usaha semaksimal mungkin kan? Hehe…"
+
+    mc "Semaksimal mungkin gimana? Sekarang aja malah engga belajar gini… hadehh…"
+
+    k "Udah broo… sekarang lagi penuh pikiranku jadi perlu refreshing dulu…"
+
+    mc "Yaelah… bilang aja udah males apa capek belajar kan?"
+
+    k "Hehehe benar sekali."
+
+    "[k] menghadap kearahmu dan memberikan isyarat jempol kepadamu."
+
+    k "Bro.. mau ke burjo gak? Makan apa minum kek?"
+
+    mc "Lu kalo habis belajar jadi laper ya?"
+
+    k "Engga lah hahaha ini emang pengen nongkrong aja disana broo…"
+
+    k "Gimana mau engga? Kalau engga aku sendiri juga gapapa."
+
+    mc "Yuk lah cuss… pengen minum yang seger-seger gue."
+
+    k "Asikk… jalan dulu aku ambil dompet bentar bro."
+
+    "Kemudian kamu mulai berjalan sendiri ke arah warmindo untuk membeli minuman."
+
+    "Tidak lama setelah itu [k] berlari dan menyusulmu."
+
+    "Kalian kemudian mengobrol dan pergi ke warmindo bersama."
+
+    scene bg warmindo with dissolve
+
+    mc normal jacket "Es kopinya satu A’"
+
+    a normal "A’ yang satunya ? "
+
+    k normal "Aku magelangannya satu ya, sama es jeruk."
+
+    a "Oke-oke tunggu bentar yaa…"
+
+    "Sesampainya di warmindo kalian langsung memesan menu yang kalian inginkan."
+
+    mc "Oh iya, lu ujiannya sampai kapan sih?"
+
+    k "Keseluruhan masih sampai minggu depan sih, tapi prodiku cuma sampai lusa aja."
+
+    mc "Enak dong, bisa langsung cabut pulang?"
+
+    k "Pengennya sih gitu… tapi kayaknya masih ada kerjaan lain deh."
+
+    mc "Yahh sok sibuk lu…"
+
+    k "Bukan sok sibuk… emang ada kerjaan aja hadeh…"
+
+    k "Lu jadi pulang besok kan bro?"
+
+    mc "Niatnya pulang besok sih… kalau engga hujan hahaha"
+
+    k "Males juga ya kalau hujan… emang perjalanan berapa jam sih?"
+
+    mc "Ya ga jauh-jauh amat perjalanannya… sekitar 2 sampai 2 setengah jam an."
+
+    k "Wohh lumayan juga ya…"
+
+    mc "Kalo lu berapa lama emang?"
+
+    k "Sekitar 4 jam?"
+
+    mc "Lah lu sendiri malah lebih lama gitu bro…"
+
+    k "Ya gimana, kan emang begitu."
+
+    "Tidak lama mengobrol pesanan kalian datang."
+
+    a "Ini a’ es kopinya, terus ini magelangan sama es jeruknya ya…"
+
+    k "Makasih"
+
+    mc "Makasih…"
+
+    k "Waktunya makannn!!!"
+
+    mc "Kalau makan aja semangat… giliran belajar kabur lu…"
+
+    k "Udah-dah belajarnya nanti lagi, makan nih…"
+
+    mc "Silahkan-silahkan dinikmati…"
+
+    "[k] menikmati makan malamnya dengan gembira."
+
+    "Sementara dirimu hanya meminum minumanmu sembari membuka HP."
+
+    "Kamu membuka notifikasi dari Lane yang sudah menumpuk. Di dalamnya sudah terdapat banyak chat antara teman sekelasmu mengenai liburan."
+
+    "Terdapat berbagai hal yang temanmu lakukan pada liburan kali ini. Beberapa dari mereka ada yang menetap di kota ini dan menikmati liburan mereka bermain ke daerah sekitar."
+
+    "Beberapa temanmu yang lain juga ada yang berlibur terlebih dahulu di kota sekitar, namun kemudian pulang ke kampung halaman mereka."
+
+    "Dan yang terakhir, seperti dirimu yang langsung pulang ke kampung halaman ketika liburan dimulai."
+
+    "Setelah membaca chat dari teman-temanmu, kamu menutup Lane kemudian berpindah membuka gim yang ada di HP."
+
+    "Kamu menghabiskan waktumu di warmindo dengan bermain gim HP sembari menunggu dan mengobrol dengan [k]."
+
+    scene bg black  with dissolve
+
+    scene bg kos night with fade
+
+    "Sekitar 40 menit berlalu, kini kamu sudah berada di area teras depan kosanmu bersama [k]."
+
+    "Sebelum kembali ke kosan, kamu membeli lagi es kopi di warmindo."
     
+    "Kamu kembali menyinggahi kursi di area teras depan kosan sambil menikmati es kopi dibungkus plastik yang ada di tanganmu."
+
+    k normal "Bro aku lanjut belajar lagi ya…"
+
+    mc normal jacket "Nah gitu dong rajin luu."
+
+    k "Yee emang anak rajin ini!"
+
+    mc "Hahaha yaudah sana, aku mau ngadem dulu…"
+
+    k "Oke-okee, duluan bro!"
+
+    "Beberapa menit menemanimu di teras kosan, [k] memutuskan untuk kembali ke kamarnya dan belajar."
+
+    "Kini tinggal dirimu sendiri yang berada di teras kosan. Sembari menikmati minuman kamu memandang langit malam."
+
+    "Malam ini langit terlihat cerah, tidak terdapat awan yang menutupi lautan bintang."
+
+    mc "Hmm… sudah setahun yah… lama juga ternyata."
+
+    mc "Satu tahun ini aku belajar banyak selama hidup disini."
+
+    mc "Aku mulai beradaptasi dengan lingkungan yang ada di sekitarku."
+
+    mc "Aku juga sudah memiliki beberapa teman disini."
+
+    mc "Aku sudah mempelajari banyak hal baru yang ada di perkuliahan."
+
+    mc "Aku juga sudah melalui beberapa ujian di perkuliahan."
+
+    mc "Satu tahun ini, menurutku bukanlah hal yang buruk bagiku."
+
+    mc "Meskipun begitu aku masih harus memperbaiki beberapa hal ketika aku hidup disini…"
+
+    mc "Tahun-tahun berikutnya bakalan kaya gimana ya?"
+
+    mc "Hmmm…."
+
+    "Beberapa menit kamu menikmati waktu sendirimu malam ini."
+
+    "Merasa cukup, dan kini badanmu sudah merasakan hawa dingin yang dibawa angin malam, kamu memutuskan untuk kembali ke kamar dan menyudahi harimu."
+
+    scene bg kos night with fade
+
+    "Tidak ada aktivitas lain yang kamu lakukan malam ini, kamu mengatur alarmmu sebelum mulai memejamkan kedua matamu."
+
+    "Beberapa menit berselang, kamu telah terlelap di atas tempat tidur kosanmu."
+
+    "Day [day] END"
+
+    jump day30

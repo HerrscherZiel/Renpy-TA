@@ -94,20 +94,20 @@ screen web_4_3g:
 
 screen webas_1:
 
-    add "kelas/web-uas/uas_web_1.png"
+    add "kelas/web_uas/uas_web_1.png"
 
 screen webas_2:
 
-    add "kelas/web-uas/uas_web_2.png"
+    add "kelas/web_uas/uas_web_2.png"
 
 screen webas_3:
 
-    add "kelas/web-uas/uas_web_3.png"
+    add "kelas/web_uas/uas_web_3.png"
 
 screen webas_4:
 
-    add "kelas/web-uas/uas_web_4.png"
+    add "kelas/web_uas/uas_web_4.png"
 
 screen webas_5:
 
-    add "kelas/web-uas/uas_web_5.png"
+    add "kelas/web_uas/uas_web_5.png"

@@ -1305,7 +1305,11 @@ label belajar_uas3:
 
     jump sleep
 
-
+    $ energy += 10
+    $ fit -= 5
+    $ public += 10
+    $ rissa_fond += 10
+    $ hunger += 15
 #Special Events   
 
 label makan_makan:

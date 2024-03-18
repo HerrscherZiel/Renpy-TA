@@ -954,7 +954,7 @@ label uas_web:
         "Kamu keluar dari ruangan sambil tersenyum lalu bergegas menuju kos untuk beristirahat."
 
         call change_timephase
-        call screen mapUI
+        jump bioskop_akhir
 
 label attend_web:
 

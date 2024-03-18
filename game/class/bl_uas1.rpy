@@ -858,20 +858,20 @@ screen bl_uas_strukdat0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/strukdat-uas/bl_strukdat_1.png"
+        background "images/kelas/strukdat-uas/bl_strukdat_0.png"
 
     imagebutton:
         xpos 1500
         ypos 950
-        auto "tutorial/left_%s.png"
-        action [Hide('bl_uas_strukdat1'), Show('bl_uas_strukdat0', dissolve)]
+        auto "tutorial/right_%s.png"
+        action [Hide('bl_uas_strukdat0'), Show('bl_uas_strukdat1', dissolve)]
 
     imagebutton:
         xpos 70
         ypos 950
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
-        action [Hide('bl_uas_strukdat1'), Return()]
+        action [Hide('bl_uas_strukdat0'), Return()]
 
 screen bl_uas_strukdat1:
 
@@ -898,20 +898,20 @@ screen bl_uas_basdat0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/basdat-uas/bl_basdat_1.png"
+        background "images/kelas/basdat-uas/bl_basdat_0.png"
 
     imagebutton:
         xpos 1500
         ypos 950
-        auto "tutorial/left_%s.png"
-        action [Hide('bl_uas_basdat1'), Show('bl_uas_basdat0', dissolve)]
+        auto "tutorial/right_%s.png"
+        action [Hide('bl_uas_basdat0'), Show('bl_uas_basdat1', dissolve)]
 
     imagebutton:
         xpos 70
         ypos 950
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
-        action [Hide('bl_uas_basdat1'), Return()]
+        action [Hide('bl_uas_basdat0'), Return()]
 
 screen bl_uas_basdat1:
 
@@ -938,20 +938,20 @@ screen bl_uas_web0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/web-uas/bl_web_1.png"
+        background "images/kelas/web-uas/bl_web_0.png"
 
     imagebutton:
         xpos 1500
         ypos 950
-        auto "tutorial/left_%s.png"
-        action [Hide('bl_uas_web1'), Show('bl_uas_web0', dissolve)]
+        auto "tutorial/right_%s.png"
+        action [Hide('bl_uas_web0'), Show('bl_uas_web1', dissolve)]
 
     imagebutton:
         xpos 70
         ypos 950
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
-        action [Hide('bl_uas_web1'), Return()]
+        action [Hide('bl_uas_web0'), Return()]
 
 screen bl_uas_web1:
 
@@ -978,20 +978,20 @@ screen bl_uas_pbo0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/pbo-uas/bl_pbo_1.png"
+        background "images/kelas/pbo-uas/bl_pbo_0.png"
 
     imagebutton:
         xpos 1500
         ypos 950
-        auto "tutorial/left_%s.png"
-        action [Hide('bl_uas_pbo1'), Show('bl_uas_pbo0', dissolve)]
+        auto "tutorial/right_%s.png"
+        action [Hide('bl_uas_pbo0'), Show('bl_uas_pbo1', dissolve)]
 
     imagebutton:
         xpos 70
         ypos 950
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
-        action [Hide('bl_uas_pbo1'), Return()]
+        action [Hide('bl_uas_pbo0'), Return()]
 
 screen bl_uas_pbo1:
 
@@ -1018,20 +1018,20 @@ screen bl_uas_jarkom0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/jarkom-uas/bl_jarkom_1.png"
+        background "images/kelas/jarkom-uas/bl_jarkom_0.png"
 
     imagebutton:
         xpos 1500
         ypos 950
-        auto "tutorial/left_%s.png"
-        action [Hide('bl_uas_jarkom1'), Show('bl_uas_jarkom0', dissolve)]
+        auto "tutorial/right_%s.png"
+        action [Hide('bl_uas_jarkom0'), Show('bl_uas_jarkom1', dissolve)]
 
     imagebutton:
         xpos 70
         ypos 950
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
-        action [Hide('bl_uas_jarkom1'), Return()]
+        action [Hide('bl_uas_jarkom0'), Return()]
 
 screen bl_uas_jarkom1:
 

@@ -608,55 +608,53 @@ label pbo_4:
 
 label uas_pbo:
 
-    scene bg campus hall  with dissolve
+    scene bg black with fade
 
-    "Hari ini merupakan hari terakhir dalam minggu ujian akhir, suasana di sekitaran area gedung kampus tidak jauh berbeda dengan hari-hari sebelumnya."
+    scene bg  campus parking lot with Dissolve(2.0)
 
-    "Terlihat banyak mahasiswa-mahasiswa lain baik dari program studimu maupun program studi lainnya telah hadir dan duduk berjajar di area dalam kampus."
+    scene bg campus hall  with Dissolve(2.0)
 
-    "Kebanyakan dari mereka sedang memegang kertas-kertas maupun handphone masing-masing dan tampak sedang fokus membaca materi perkuliahan."
+    scene bg campus upper hall with Dissolve(2.0)
 
-    "Meskipun ada juga yang hanya duduk dan mengobrol dengan orang disebelah mereka."
+    "Setelah sampai ke kampus, kamu segera memarkir motormu dan berlari menuju ruang kelas ujian."
 
-    "Kamu berjalan menuju kelas dimana ujian akhir mata kuliah PBO akan dilaksanakan sambil melihat-lihat kondisi di sekitar ruang kelas ujian."
+    if academic >= 50 and social >= 50:
 
-    'Setelah sampai di area ruangan kelas yang akan digunakan untuk ujian akhir Strukdat, teman-teman sekelasmu telah ramai duduk mengelompok dan membaca catatan mereka masing-masing.'
+        scene bg campus class with fade
 
-    r normal2 "Pagi [name]!"
+        "Kamu berlari dan bergegas menuju ruang ujian akhir dilaksanakan."
 
-    mc normal jacket "Pagi [r], gimana belajarnya??"
+        "Dengan nafas yang masih terengah-engah kamu akhirnya sampai di depan ruangan ujian."
 
-    r "Hari terakhir harus siap dongg, kan cuma 2…. Udah siap belum?"
+        "Tepat sebelum pengawas akan menutup pintu ruangan dan memulai ujian."
 
-    mc "Sama juga… karena cuma 2 mata kuliah jadi lebih siap hehehe…"
+        "Kamu menyapa pengawas ujian dan menanyakan apakah dirimu masih bisa mengikuti ujian."
 
-    r "Yaudah aku lanjut belajar sama yang lain dulu yaa…"
+        "Pengawas ujian akhir kali ini menganggukkan kepalanya dan mempersilahkan dirimu untuk memasuki ruangan."
 
-    mc "Okeyyy…"
+        "Setelah mendapat konfirmasi, kamu segera masuk ke ruang kelas ujian dan mempersiapkan diri untuk melaksanakan ujian akhir."
 
-    r "Gaikut??"
+    else:  
 
-    mc "Pakai tanyaaa ahahaha"
+        "Setelah kamu sampai di depan ruang kelas ujian kamu mendapati pintu ruang kelas telah tertutup."
 
-    r "Huuu dasar…."
+        "Dari luar ruang kelas ujian terlihat ujian sudah berlangsung."
 
-    "[r] membalikkan badannya dan kembali bersama kerumunan teman kelasmu untuk belajar bersama."
+        "Kamu mencoba untuk mengetuk pintu kelas."
 
-    "Kamu yang masih berdiri kemudian duduk dan bersandar pada tembok ruang kelas, kemudian melihat jam digital yang ada pada HPmu."
+        "Setelah mengetuk pintu kelas, pengawas ujian menghampirimu dan menyuruhmu untuk masuk."
 
-    "Waktu telah menunjukkan pukul 7.25, masih tersisa lima menit sebelum pintu ruang kelas ujian akhir dibuka. "
+        "Kamu kemudian menanyakan apakah kamu masih bisa mengikuti ujian kepada pengawas ujian."
 
-    "Merasa sudah cukup siap untuk melakukan ujian akhir, kamu hanya duduk diam sambil mengingat-ingat materi yang akan diujikan."
+        "Pengawas ujian memberikan konfirmasi bahwa kamu masih bisa mengikuti ujian hanya saja tidak ada waktu tambahan."
 
-    scene bg black
+        "Kamu yang mengetahui bahwa kamu masih bisa melakukan ujian kemudian langsung mempersiapkan dirimu."
 
-    scene bg campus upper hall with dissolve
+        "Setelah berterima kasih kepada pengawas ujian dan menyiapkan peralatan ujian kamu segera mengerjakan soal ujian."
 
-    "Lima menit berlalu dengan cepat, kini dosen pengawas ujian telah membuka pintu ruang ujian. pa] yang akan menjadi dosen pengawas ujian pada ujian PBO kali ini."
+        scene bg campus class with fade
 
-    "Seperti ujian tengah semester lalu, posisi tempat duduk untuk ujian telah ditentukan dan terlihat pada kertas yang ditempelkan pada pintu ruang kelas."
-
-    "Setelah melihat dimana kamu akan duduk, kamu memasuki ruang kelas untuk melaksanakan ujian akhir pertamamu di hari terakhir ini. "
+        jump soalpbo4
 
     scene bg campus class with fade
 
@@ -840,7 +838,7 @@ label uas_pbo:
 
             "A. Abstraksi":
                 "a. Abstraksi"
-                mc "Abstraksi bukan deh…."
+                mc normal jacket "Abstraksi bukan deh…."
 
             "B. Inheritance":
                 "b. Inheritance"
