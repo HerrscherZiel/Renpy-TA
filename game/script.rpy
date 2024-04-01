@@ -92,7 +92,7 @@ default maps = False
 default hima = False
 default hima_intro = False
 
-
+default bolos = 0
 # The game starts here.
 
 
@@ -1179,7 +1179,6 @@ label day5:
 
 label day28:
     
-    call change_day
     $placeKeys = 3
     show screen trans_screen with dissolve
     scene bg kos night with fade
@@ -1254,7 +1253,7 @@ label day28:
 
     scene bg black with fade
 
-    if social >= 70: 
+    if (friend+community+public) / 3 >= 50: 
 
         "Setelah mengirimkan balasan kamu melanjutkan aktivitas pagi seperti biasanya."
 
@@ -1359,14 +1358,14 @@ label day29:
 
     "Merasa matamu masih memerlukan beberapa menit untuk diistirahatkan kembali."
 
-    Zzzzzz
+    "Zzzzzz"
     with vpunch
-    Zzzzzz
+    "Zzzzzz"
     with vpunch
 
-    Zzzzzz
+    "Zzzzzz"
     with vpunch
-    Zzzzzz
+    "Zzzzzz"
     with vpunch
 
     "Untuk ketiga kalinya di pagi hari ini, alarmmu berbunyi dan untuk ketiga kalinya juga di pagi hari ini kamu terbangun oleh deringan dan getaran dari alarmmu."
@@ -1437,7 +1436,7 @@ label day30:
 
     "Setelah hampir semua barang sudah terikat di sepeda motormu, dan semua tas sudah terisi barang-barang lainnya kamu kemudian menutup dan mengunci pintu kamar kosan."
 
-    mc "Huhh… akhirnya pulang juga yaa… setelah setahun gak pulang…."
+    mc normal jacket "Huhh… akhirnya pulang juga yaa… setelah setahun gak pulang…."
 
     "Setelah memastikan semua siap, kamu menghidupkan sepeda motormu dan menaikinya."
 
@@ -1451,7 +1450,7 @@ label day30:
 
         "[r] mengirim pesan kepadamu yang berisi ‘hati-hati dijalan’"
 
-    if trije_fond >= 70 :
+    if trije_fond >= 50 :
 
         "[TriJe] mengirim pesan kepadamu yang berisi ‘katanya pulang ya? Hati-hati di jalan’."
 
@@ -1469,12 +1468,19 @@ label day30:
 
     "FIN"
 
+    jump ending
+
+    # show screen rankuman_screen with dissolve
+
     # Show stats screen
 
     # Show Ending screen
 
     # Ending screen…
 
+label ending:
+
+    $ renpy.full_restart()
 
 label days:
 
@@ -1897,8 +1903,6 @@ label sleep:
         "Kini kamu hanya bisa berharap untuk mendapatkan hasil yang maksimal."
 
         "Kamu juga tidak sabar untuk melaksanakan ujian akhir esok hari dan segera menyelesaikan ujian akhir ini."
-
-    elif day == 28:
 
     else:
         pass

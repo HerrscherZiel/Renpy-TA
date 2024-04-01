@@ -1056,6 +1056,7 @@ label uas_jarkom:
 
         "Ujian telah berakhir, kini hanya tinggal menunggu hasil ujian dan menikmati hari liburmu."
 
+        jump bioskop_akhir
 
 label attend_jarkom:
 

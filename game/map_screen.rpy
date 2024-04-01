@@ -127,8 +127,8 @@ screen mapUI:
             imagebutton:
                 xpos 1000
                 ypos 210
-                idle "map/house idle.png"
-                hover "map/house hover.png"
+                idle "map/kosan idle.png"
+                hover "map/kosan hover.png"
                 action Jump("go_do_sport")
 
         else:

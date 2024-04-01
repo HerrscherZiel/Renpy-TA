@@ -106,15 +106,45 @@ label sport_dayS1:
 label sport_noonS2:
 
     "Untuk mengembalikan kebugaran tubuhmu, kamu memutuskan untuk melakukan senam lantai."
-
+    call change_timephase
+    call screen mapUI with dissolve
     return
 
 label sport_noonS3:
-    "Ketika matahari sudah terlihat redup, kamu keluar dari kos dan menuju ke area grha di kampusmu."
+
+    scene bg kampus graha
+
+    "Ketika matahari sudah terlihat redup, kamu keluar dari kos dan menuju ke area graha di kampusmu."
     
     "Mengenakan sepatu lari dan celana training, kamu berniat berjogging di sore hari mengelilingi area kampus."
 
     call jog
+
+    if day == 28:
+        scene bg black with dissolve
+
+        $placeKeys = 3
+
+        call change_timephase
+
+        show screen trans_screen with dissolve
+
+        scene bg kos night with dissolve
+
+        "Pukul 8 malam tepat, kamu baru saja terbangun dari tidurmu sejak sore tadi."
+
+        "Sebenarnya kamu tidak merasakan mengantuk karena siang tadi kamu sudah cukup mengisi waktumu dengan tidur siang."
+
+        "Hanya saja tidak banyak aktivitas yang kamu dapat lakukan sore hari ini, kemudian kamu memutuskan untuk merebahkan badanmu untuk sementara."
+
+        "Kini dirimu sudah merasa capai merebahkan tubuhmu di tempat tidur, kamu merasa sudah saatnya dirimu untuk melakukan aktivitas lainnya."
+
+        "Malam ini kamu memutuskan untuk:"
+
+        jump choice_kota_night
+
+    else:
+        jump sleep
 
     return
 

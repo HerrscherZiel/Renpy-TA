@@ -952,9 +952,9 @@ label uas_web:
         "Setelah menjalani 3 ujian akhir, ujian hari kedua telah usai, kini menyisakan satu hari ujian akhir lagi."
 
         "Kamu keluar dari ruangan sambil tersenyum lalu bergegas menuju kos untuk beristirahat."
-
         call change_timephase
-        jump bioskop_akhir
+        call screen mapUI
+
 
 label attend_web:
 

@@ -1011,7 +1011,7 @@ label belajar_uas1:
 
     "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
     $ energy += 10
-    $ fit -= 5
+    $ vit -= 5
     $ public += 10
     $ rissa_fond += 10
     $ hunger += 15

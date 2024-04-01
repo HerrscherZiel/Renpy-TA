@@ -172,8 +172,10 @@ label choice_kota_noon:
 
 label choice_kota_night:
 
+    #
+    $placeKeys = 7
     show screen trans_screen with dissolve
-    scene bg town street 2 with dissolve
+    scene bg town street 2 malam with dissolve
     pause 2.0
 
     "Merasa penat berada di kosan, kamu memilih untuk mengunjungi kota pada malam harinya."
@@ -293,8 +295,10 @@ label kota_nightS3:
     call sport_nightS2
 
 label bioskop_akhir:
-
+    call change_timephase
+    show screen trans_screen with dissolve
     scene bg kos night with dissolve
+    pause 2.0
 
     "Ujian akhir telah selesai dilaksanakan."
 
@@ -324,11 +328,11 @@ label bioskop_akhir:
 
     "Tanpa mengetahui apa yang sedang tayang saat ini di bioskop, kamu mengendarai motor menuju bioskop terdekat dari kosanmu."
 
-    scene bg town street 1 night with Dissolve(2.0)
+    scene bg town street 1 malam with Dissolve(2.0)
 
-    scene bg town street 2 night with Dissolve(2.0)
+    scene bg town street 2 malam with Dissolve(2.0)
 
-    scene bg town street 3 night with Dissolve(2.0)
+    scene bg town street 3 malam with Dissolve(2.0)
 
     "Jalanan malam ini terasa lebih ramai daripada malam-malam biasanya."
 
@@ -448,7 +452,8 @@ label bioskop_akhir:
 
 label pesta_akhir:
 
-    scene bg kos morning with dissolve
+    scene bg black with Fade(1,2,1)
+    scene bg kos morn with dissolve
 
     "Waktu sudah menunjukkan pukul 10.40, masih terdapat 20 menit lagi sebelum pesta kelas dimulai."
 
@@ -560,6 +565,8 @@ label pesta_akhir:
     scene bg black with dissolve
 
     scene bg pesta 2 with fade
+
+    call eat
 
     "Sekarang waktu telah menunjukan pukul 13.45, hampir seluruh temanmu yang terdapat dalam daftar hadir telah berada pada ruangan pesta. Beberapa dari mereka sedang menikmati makanan yang telah disediakan pada ruangan. "
 
@@ -673,7 +680,7 @@ label pesta_akhir:
 
     r "Heeeyy! Jangan begitu, kasihan orang tua di rumah tau kalau bolos begitu."
 
-    mc "Iyaaa… cuma bercanda kok, aku juga [bolos] kok."
+    mc "Iyaaa… cuma bercanda kok, aku aja [bolos] kali bolos kok."
 
     r "Awas aja ya kalau bolos terus, kulaporin ke orang tuamu nanti wleee!"
 
@@ -741,7 +748,8 @@ label pesta_akhir:
 
             "Selang beberapa menit, tugasmu sudah selesai, kamu juga melihat teman-temanmu yang lain juga sudah hampir menyelesaikan tugas mereka."
 
-            $social += 5
+            $friend += 20
+            $rissa_fond += 15
 
         "Memilih untuk pulang":
 
@@ -771,7 +779,8 @@ label pesta_akhir:
 
     show screen trans_screen with dissolve
 
-    scene bg kos morn with dissolve
+    scene bg kos night with dissolve
+    pause 2.0
 
     "Pukul 8 malam tepat, kamu baru saja terbangun dari tidurmu sejak sore tadi."
 

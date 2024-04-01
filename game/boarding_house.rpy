@@ -1113,6 +1113,8 @@ label rebahan:
     scene bg kos morn with fade
 
     "Tidak ada aktivitas yang kamu lakukan pada siang hari."
+    call nap
+    pause 2.0
 
     "Kamu hanya merebahkan tubuhmu dan menghabiskan waktu dengan beristirahat."
 
@@ -1132,37 +1134,37 @@ label day29_night:
 
     "[k] salah satu teman kosanmu sedang menemani mengobrol di teras depan kosanmu."
 
-    k normal "Gimana semester ini? Kampusmu udah kelar kan bro?"
+    kev normal "Gimana semester ini? Kampusmu udah kelar kan bro?"
 
-    mc normal jacket "Yaaa begitulah… lu sendiri gimana? Bukannya ma"sih ujian besok?
+    mc normal jacket "Yaaa begitulah… lu sendiri gimana? Bukannya masih ujian besok?"
 
-    k "Hahaha jangan tanya dong kalau aku, ya pasti ga baik-baik aja lahh"
+    kev "Hahaha jangan tanya dong kalau aku, ya pasti ga baik-baik aja lahh"
 
     mc "Dasarrr… udah ga baik-baik aja malah nyantai gini… masih ujian kan lu besok?"
 
-    k "Yoii… santai aja bro… jangan dipikir susah, udah usaha semaksimal mungkin kan? Hehe…"
+    kev "Yoii… santai aja bro… jangan dipikir susah, udah usaha semaksimal mungkin kan? Hehe…"
 
     mc "Semaksimal mungkin gimana? Sekarang aja malah engga belajar gini… hadehh…"
 
-    k "Udah broo… sekarang lagi penuh pikiranku jadi perlu refreshing dulu…"
+    kev "Udah broo… sekarang lagi penuh pikiranku jadi perlu refreshing dulu…"
 
     mc "Yaelah… bilang aja udah males apa capek belajar kan?"
 
-    k "Hehehe benar sekali."
+    kev "Hehehe benar sekali."
 
     "[k] menghadap kearahmu dan memberikan isyarat jempol kepadamu."
 
-    k "Bro.. mau ke burjo gak? Makan apa minum kek?"
+    kev "Bro.. mau ke burjo gak? Makan apa minum kek?"
 
     mc "Lu kalo habis belajar jadi laper ya?"
 
-    k "Engga lah hahaha ini emang pengen nongkrong aja disana broo…"
+    kev "Engga lah hahaha ini emang pengen nongkrong aja disana broo…"
 
-    k "Gimana mau engga? Kalau engga aku sendiri juga gapapa."
+    kev "Gimana mau engga? Kalau engga aku sendiri juga gapapa."
 
     mc "Yuk lah cuss… pengen minum yang seger-seger gue."
 
-    k "Asikk… jalan dulu aku ambil dompet bentar bro."
+    kev "Asikk… jalan dulu aku ambil dompet bentar bro."
 
     "Kemudian kamu mulai berjalan sendiri ke arah warmindo untuk membeli minuman."
 
@@ -1174,57 +1176,57 @@ label day29_night:
 
     mc normal jacket "Es kopinya satu A’"
 
-    a normal "A’ yang satunya ? "
+    aa1 normal "A’ yang satunya ? "
 
-    k normal "Aku magelangannya satu ya, sama es jeruk."
+    kev normal "Aku magelangannya satu ya, sama es jeruk."
 
-    a "Oke-oke tunggu bentar yaa…"
+    aa1 "Oke-oke tunggu bentar yaa…"
 
     "Sesampainya di warmindo kalian langsung memesan menu yang kalian inginkan."
 
     mc "Oh iya, lu ujiannya sampai kapan sih?"
 
-    k "Keseluruhan masih sampai minggu depan sih, tapi prodiku cuma sampai lusa aja."
+    kev "Keseluruhan masih sampai minggu depan sih, tapi prodiku cuma sampai lusa aja."
 
     mc "Enak dong, bisa langsung cabut pulang?"
 
-    k "Pengennya sih gitu… tapi kayaknya masih ada kerjaan lain deh."
+    kev "Pengennya sih gitu… tapi kayaknya masih ada kerjaan lain deh."
 
     mc "Yahh sok sibuk lu…"
 
-    k "Bukan sok sibuk… emang ada kerjaan aja hadeh…"
+    kev "Bukan sok sibuk… emang ada kerjaan aja hadeh…"
 
-    k "Lu jadi pulang besok kan bro?"
+    kev "Lu jadi pulang besok kan bro?"
 
     mc "Niatnya pulang besok sih… kalau engga hujan hahaha"
 
-    k "Males juga ya kalau hujan… emang perjalanan berapa jam sih?"
+    kev "Males juga ya kalau hujan… emang perjalanan berapa jam sih?"
 
     mc "Ya ga jauh-jauh amat perjalanannya… sekitar 2 sampai 2 setengah jam an."
 
-    k "Wohh lumayan juga ya…"
+    kev "Wohh lumayan juga ya…"
 
     mc "Kalo lu berapa lama emang?"
 
-    k "Sekitar 4 jam?"
+    kev "Sekitar 4 jam?"
 
     mc "Lah lu sendiri malah lebih lama gitu bro…"
 
-    k "Ya gimana, kan emang begitu."
+    kev "Ya gimana, kan emang begitu."
 
     "Tidak lama mengobrol pesanan kalian datang."
 
-    a "Ini a’ es kopinya, terus ini magelangan sama es jeruknya ya…"
+    aa1 "Ini a’ es kopinya, terus ini magelangan sama es jeruknya ya…"
 
-    k "Makasih"
+    kev "Makasih"
 
     mc "Makasih…"
 
-    k "Waktunya makannn!!!"
+    kev "Waktunya makannn!!!"
 
     mc "Kalau makan aja semangat… giliran belajar kabur lu…"
 
-    k "Udah-dah belajarnya nanti lagi, makan nih…"
+    kev "Udah-dah belajarnya nanti lagi, makan nih…"
 
     mc "Silahkan-silahkan dinikmati…"
 
@@ -1248,21 +1250,23 @@ label day29_night:
 
     scene bg kos night with fade
 
+    call eat
+
     "Sekitar 40 menit berlalu, kini kamu sudah berada di area teras depan kosanmu bersama [k]."
 
     "Sebelum kembali ke kosan, kamu membeli lagi es kopi di warmindo."
     
     "Kamu kembali menyinggahi kursi di area teras depan kosan sambil menikmati es kopi dibungkus plastik yang ada di tanganmu."
 
-    k normal "Bro aku lanjut belajar lagi ya…"
+    kev normal "Bro aku lanjut belajar lagi ya…"
 
     mc normal jacket "Nah gitu dong rajin luu."
 
-    k "Yee emang anak rajin ini!"
+    kev "Yee emang anak rajin ini!"
 
     mc "Hahaha yaudah sana, aku mau ngadem dulu…"
 
-    k "Oke-okee, duluan bro!"
+    kev "Oke-okee, duluan bro!"
 
     "Beberapa menit menemanimu di teras kosan, [k] memutuskan untuk kembali ke kamarnya dan belajar."
 

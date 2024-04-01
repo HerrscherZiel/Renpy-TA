@@ -1359,7 +1359,7 @@ label kelas_game:
 
     show screen trans_screen with dissolve
 
-    scene bg parking lot with fade
+    scene bg campus parking lot with fade
     pause 2.0
 
     "Sesampainya di kampus, setelah memarkir sepeda motormu kamu mengalihkan pandanganmu di sekitar tempat parkir kampus."
@@ -1419,7 +1419,7 @@ label kelas_game:
 
     "Materi yang akan diajarkan adalah pengembangan gim menggunakan game engine RenPy."
 
-    "mc Hmmm kalau engga salah RenPy itu game engine novel visual ya…"
+    mc normal jacket"Hmmm kalau engga salah RenPy itu game engine novel visual ya…"
 
     "Masih terdapat beberapa menit sebelum kegiatan dimulai, untuk mengisi waktu dan menunggu mahasiswa lainnya kini kakak tingkatmu sedang memperkenalkan diri mereka."
 
@@ -1459,7 +1459,7 @@ label kelas_game:
 
     hide screen game_1
 
-    show screen game_2 with fade
+    show screen game_2
 
     k "Gim novel visual yang seperti itu bisa dibilang dengan novel visual yang statik, yang memberatkan pada pembawaan ceritanya saja."
 
@@ -1475,7 +1475,7 @@ label kelas_game:
 
     hide screen game_2
 
-    show screen game_3 with fade
+    show screen game_3
 
     k "Pertama kita harus memiliki beberapa perangkat lunak yang akan kita gunakan untuk pengoperasiannya."
 
@@ -1495,7 +1495,7 @@ label kelas_game:
 
     hide screen game_3
 
-    show screen game_3ss with fade
+    show screen game_3ss
 
     k "Seperti ini ya tampilan launcher dari Ren'Py"
 
@@ -1503,7 +1503,7 @@ label kelas_game:
 
     hide screen game_3ss
 
-    show screen game_4 with fade
+    show screen game_4
 
     k "Pada bagian kiri tampilan akan disajikan berbagai proyek gim yang terdaftar pada launchernya."
 
@@ -1519,7 +1519,7 @@ label kelas_game:
 
     hide screen game_4
 
-    show screen game_4ss with fade
+    show screen game_4ss
 
     k "Itu merupakan penjelasan untuk tampilan launcher Ren’Pynya. "
 
@@ -1535,7 +1535,7 @@ label kelas_game:
 
     hide screen game_4ss
 
-    show screen game_5 with fade
+    show screen game_5
 
     k "Tampilan awal gim atau yang biasa disebut main menu ini terdapat pada file screen.rpy yang bisa kita buka dari launchernya."
 
@@ -1547,8 +1547,7 @@ label kelas_game:
 
     hide screen game_5
 
-    show screen game_6 with fade
-
+    show screen game_6
     k "Pada file ini, pemain dapat merubah pengaturan dari berbagai macam hal yang terdapat dalam gim yang berhubungan dengan tampilan."
 
     k "Hal-hal tersebut seperti warna, ukuran, dan font dari teks, lalu background yang digunakan dalam sebuah menu, pengaturan spacing teks atau tombol, pengaturan borders, pengaturan posisi sebuah tampilan, dan lain sebagainya."
@@ -1563,7 +1562,7 @@ label kelas_game:
 
     hide screen game_6
 
-    show screen game_7 with fade
+    show screen game_7
 
     k "File ini merupakan file yang berisi konfigurasi dasar utama yang digunakan dalam gim."
 
@@ -1573,7 +1572,7 @@ label kelas_game:
 
     hide screen game_7
 
-    show screen game_8 with fade
+    show screen game_8
 
     k "Script.rpy merupakan file awal yang kita gunakan untuk menuliskan cerita dalam gim yang kita kembangkan."
 
@@ -1585,7 +1584,7 @@ label kelas_game:
 
     hide screen game_8
 
-    show screen game_9 with fade
+    show screen game_9
 
     k "Saat kita menuliskan cerita atau teks dalam gim, kita juga bisa menambahnya dengan berbagai macam media, transisi, atau audio untuk membuat gim atau cerita yang kita tulis menjadi lebih menarik."
 
@@ -1599,7 +1598,7 @@ label kelas_game:
 
     hide screen game_9
 
-    show screen game_10 with fade
+    show screen game_10
 
     k "Show dalam sebuah label dapat digunakan untuk menampilkan sebuah ilustrasi yang terletak di depan gambar latar belakang."
 
@@ -1619,7 +1618,7 @@ label kelas_game:
 
     hide screen game_10
 
-    show screen game_11 with fade
+    show screen game_11 
 
     k "Terus, apa itu Screen? Screen sendiri merupakan tampilan atau layar yang berbeda dari tampilan utama alur cerita yang dapat ditampilkan dan dihilangkan."
 
@@ -1630,7 +1629,8 @@ label kelas_game:
     k "Hmm… sudah banyak yang saya sampaikan pada materi ini, mungkin ada yang ingin ditanyakan oleh teman-teman?"
 
     "Tidak lama setelah itu banyak mahasiswa yang mengangkat tangan mereka untuk mengajukan pertanyaan seputar materi yang baru saja diterangkan."
-
+    
+    hide screen game_11
     scene bg black with dissolve
     pause 2.0
 
@@ -1693,6 +1693,9 @@ label kelas_game:
     "Setelah keluar dari gedung kampus kalian berpisah, [r] berjalan menuju minimart yang berada di seberang kampus sementara dirimu langsung menuju tempat parkir menuju kendaraanmu."
 
     "Sebelum menuju kosan, kamu sempat mampir ke salah satu rumah makan untuk makan siang."
+
+    call eat
+    pause 2.0
 
     "Selesai makan siang kamu langsung kembali menuju kosan untuk beristirahat."
 

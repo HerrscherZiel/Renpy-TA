@@ -2,9 +2,33 @@
 errors listed below, and try again.
 
 
-File "game/class/pti.rpy", line 731: Line is indented, but the preceding show screen statement statement does not expect a block. Please check this line's indentation.
-    "2. 	Berikut ini yang bukan merupakan langkah pencegahan atau tindakan untuk meminimalisir terjadinya kerusakan atau pencurian data adalah?"
-    ^
+File "game/boarding_house.rpy", line 1137: end of line expected.
+    mc normal jacket "Yaaa begitulah… lu sendiri gimana? Bukannya ma"sih ujian besok?
+                                                                     ^
+
+File "game/script.rpy", line 1362: expected statement.
+    Zzzzzz
+          ^
+
+File "game/script.rpy", line 1364: expected statement.
+    Zzzzzz
+          ^
+
+File "game/script.rpy", line 1367: expected statement.
+    Zzzzzz
+          ^
+
+File "game/script.rpy", line 1369: expected statement.
+    Zzzzzz
+          ^
+
+File "game/script.rpy", line 1901: elif clause expects a non-empty block.
+    elif day == 28:
+                   ^
+
+File "game/script.rpy", line 1903: expected statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Fri Jan  5 18:32:39 2024
+Tue Mar 26 18:02:40 2024

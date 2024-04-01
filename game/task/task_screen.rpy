@@ -52,14 +52,14 @@ screen pti_task:
             ypos 280
             spacing 25
             textbutton "Pertemuan 1" action ToggleScreen("pti_task_1")
-            textbutton "Pertemuan 2" action NullAction()
+            textbutton "Pertemuan 2" action ToggleScreen("pti_task_2")
             textbutton "Pertemuan 3" action NullAction()
             textbutton "Pertemuan 4" action NullAction()
 
     imagebutton:
         xpos 145
         ypos 97
-        idle "menuUI/alpro.png"
+        idle "menuUI/pti.png"
         action NullAction()
 
     imagebutton:
@@ -81,9 +81,9 @@ screen pti_task_1:
             xpos 350
             ypos 250
             spacing 20
-            for task in my_task.task_list:
-                if not(task.completed):
-                    text "[task.name]: [task.description] | [task.completed]" size 25
+            text "Pasangkan kata-kata dibawah ini!"
+
+            textbutton "Mulai" action Show('pti_task')
 
     imagebutton:
         xpos 70
@@ -91,4 +91,25 @@ screen pti_task_1:
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
         action Hide("pti_task_1")
+
+screen pti_task_2:
+
+    #content
+    frame:
+        xsize 1200
+        ysize 1080
+        background "trivia/menu/desc_layer.png"
+
+        vbox:
+            xpos 350
+            ypos 250
+            spacing 20
+            text "No Task Available"
+
+    imagebutton:
+        xpos 70
+        ypos 950
+        idle "menuUI/stats/return_idle.png"
+        hover "menuUI/stats/return_hover.png"
+        action Hide("pti_task_2")
 
