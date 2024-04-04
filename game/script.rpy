@@ -42,27 +42,21 @@ default social = round((friend+community+public) /3)
 
 #status
 default obesseCount = 0
-default obesse = False
-
 default thinCount = 0
-default thin = False
-
+default thins = 0
 default healthyCount = 0
-default healthy = False
-
 default sickCount = 0
-default sick = False
-
+default sicks = 0
 default fitCount = 0
-default fitt = False
-
 default weakCount = 0
-default weak = False
+default weaks = 0
 
 #friends
 default rissa_fond = 0
 default trije_fond = 0
 default kevin_fond = 0
+default friendc = 0
+default kenalan = 0
 
 #days
 default day = 1
@@ -82,6 +76,17 @@ default firstKos = True
 default firstKampung = True
 default firstKampus = True
 default placeKeys = 1
+
+#choicecount
+default makanc = 0
+default jajanc = 0
+default mainc = 0
+default bersihc = 0
+default malasc = 0
+default olahragac = 0
+default tidurc = 0
+default jalanc = 0
+default sosialc = 0
 
 #sub keys
 default rotiAwal = False
@@ -1468,6 +1473,12 @@ label day30:
 
     "FIN"
 
+    scene bg black with Dissolve(2.0)
+
+    call stat_change
+
+    call screen rangkuman_screen1 with fade
+
     jump ending
 
     # show screen rankuman_screen with dissolve
@@ -1479,6 +1490,10 @@ label day30:
     # Ending screen…
 
 label ending:
+
+
+
+    # "End"
 
     $ renpy.full_restart()
 
@@ -2180,6 +2195,7 @@ label jalan_sehatS:
     $ vit += 35
     $ energy -= 30
     $ hunger -= 20
+    $ publicc +=1
 
     "Stats Berubah!!!"
     show screen stats_changer("jalan_sehatS", 0)
@@ -2192,7 +2208,7 @@ label futsal:
     $ public += 10
     $ energy -= 30
     $ hunger -= 25
-
+    $ communityc +=1
     "Stats Berubah!!!"
     show screen stats_changer("futsal", 0)
 
@@ -2211,7 +2227,7 @@ label attend_class:
 
 #social
 label kerja_bakti_kampung:
-    
+    $ publicc +=1
     $ public += 20
     $ vit += 15
     $ community += 10
@@ -2223,7 +2239,7 @@ label kerja_bakti_kampung:
     return
 
 label hangout:
-
+    $ communityc +=1
     $ public += 10
     $ hunger += 10
     $ friend += 5
@@ -2232,41 +2248,15 @@ label hangout:
     "Stat Berubah!!!"
 
 label hima_act:
-
+    $ communityc +=1
     $ public += 10
-    $ community += 20
+    $ community += 15
     $ friend += 5
     show screen stats_changer("hima_act", 0)
 
     "Stat Berubah!!!"
 
-label stat_change:
 
-    if hunger >= 100:
-        $hunger = 100
-        $obesseCount +=1
-
-    if hunger <= 0:
-        $hunger = 0
-        $thinCount +=1
-
-    if energy >= 100:
-        $energy = 100
-        $healthyCount +=1
-
-    if energy <= 0:
-        $energy = 0
-        $sickCount +=1
-
-    if vit >= 100:
-        $vit = 100
-        $fitCount +=1
-
-    if vit <= 0:
-        $vit = 0
-        $weakCount +=1 
-    
-    return
 
 
 

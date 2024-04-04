@@ -5,7 +5,7 @@ While running game code:
     call sport_mornS1
   File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1484, in script call
+  File "game/script.rpy", line 1495, in script call
     call bangun_libur
   File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
@@ -13,11 +13,18 @@ While running game code:
     call sport_mornS1
   File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/town.rpy", line 293, in script call
+  File "game/town.rpy", line 295, in script call
     call sport_nightS2
-  File "game/town.rpy", line 679, in script
-    mc "Iyaaa… cuma bercanda kok, aku juga [bolos] kok."
-KeyError: 'bolos'
+  File "game/town.rpy", line 295, in script call
+    call sport_nightS2
+  File "game/script.rpy", line 1469, in script
+    call screen rangkuman_screen1 with fade
+  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+Exception: Screen rangkuman_screen4 is not known.
+
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -26,7 +33,7 @@ Full traceback:
     call sport_mornS1
   File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/script.rpy", line 1484, in script call
+  File "game/script.rpy", line 1495, in script call
     call bangun_libur
   File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
@@ -34,31 +41,56 @@ Full traceback:
     call sport_mornS1
   File "game/kampung.rpy", line 374, in script call
     call sport_mornS1
-  File "game/town.rpy", line 293, in script call
+  File "game/town.rpy", line 295, in script call
     call sport_nightS2
-  File "game/town.rpy", line 679, in script
-    mc "Iyaaa… cuma bercanda kok, aku juga [bolos] kok."
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\character.py", line 1253, in __call__
-    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\character.py", line 1172, in prefix_suffix
-    return (sub(prefix) + sub(body) + sub(suffix))
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\character.py", line 1152, in sub
-    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\substitutions.py", line 278, in substitute
-    s = formatter.vformat(s, (), kwargs) # type: ignore
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\substitutions.py", line 168, in get_field
-    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
-KeyError: 'bolos'
+  File "game/town.rpy", line 295, in script call
+    call sport_nightS2
+  File "game/script.rpy", line 1469, in script
+    call screen rangkuman_screen1 with fade
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2232, in execute
+    self.call("execute")
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2220, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\statements.py", line 281, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\exports.py", line 3180, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 4258, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\transition.py", line 53, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 743, in event
+    rv = self.child.event(ev, x, y, st)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 1073, in event
+    return handle_click(self.clicked)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 1008, in handle_click
+    rv = run(action)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 322, in run
+    new_rv = run(i, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 329, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_control.rpy", line 131, in __call__
+    renpy.show_screen(self.screen, *self.args, **self.kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 1185, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen rangkuman_screen4 is not known.
+
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090405
 Simulasi Kehidupan Kuliah 1.0
-Mon Apr  1 21:20:27 2024
+Wed Apr  3 22:51:41 2024

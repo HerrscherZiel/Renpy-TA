@@ -78,7 +78,7 @@ label pbo_1:
 
             pa "Jawaban yang bagus."
 
-            $a_pboC+=2
+            $a_pboC+=5
 
     "Kemudian tanya jawab masih terus berlangsung pada mahasiswa lain hingga jam perkuliahan selesai."
 

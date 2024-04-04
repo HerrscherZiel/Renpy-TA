@@ -2,33 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/boarding_house.rpy", line 1137: end of line expected.
-    mc normal jacket "Yaaa begitulah… lu sendiri gimana? Bukannya ma"sih ujian besok?
-                                                                     ^
-
-File "game/script.rpy", line 1362: expected statement.
-    Zzzzzz
+File "game/ending/rangkuman_screen.rpy", line 346: 'return' is not a keyword argument or valid child for the screen statement.
+    return
           ^
-
-File "game/script.rpy", line 1364: expected statement.
-    Zzzzzz
-          ^
-
-File "game/script.rpy", line 1367: expected statement.
-    Zzzzzz
-          ^
-
-File "game/script.rpy", line 1369: expected statement.
-    Zzzzzz
-          ^
-
-File "game/script.rpy", line 1901: elif clause expects a non-empty block.
-    elif day == 28:
-                   ^
-
-File "game/script.rpy", line 1903: expected statement.
-    else:
-        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Tue Mar 26 18:02:40 2024
+Thu Apr  4 16:38:54 2024

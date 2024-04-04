@@ -1,4 +1,31 @@
 
+#choice counter
+default lockota = 0
+default lockotap = 0
+default lockotas = 0
+default lockotam = 0
+
+default loclib = 0
+default loclibs = 0
+
+
+default loccamp = 0
+default loccamps = 0
+
+default lockamp = 0
+default lockampp = 0
+default lockamps = 0
+default lockampm = 0
+
+default lockos = 0
+default lockosp = 0
+default lockoss = 0
+default lockosm = 0
+
+default locmin = 0
+default locmins = 0
+default locminm = 0
+
 screen mapUI:
 
     add "bg black.png"
@@ -19,30 +46,6 @@ screen mapUI:
                 spacing 10
 
                 text "[day]" size 30 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-                
-            
-            # vbox xpos 120:
-            #     spacing 10
-            #     if placeKeys == 1:
-            #         text "Jalan Kampus" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 2:
-            #         text "Minimarket" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 3:
-            #         text "Kos" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 4:
-            #         text "Kampung" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 5:
-            #         text "Warmindo" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 6:
-            #         text "Perpustakaan" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 7:
-            #         text "Kota" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 8:
-            #         text "Kampus" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     elif placeKeys == 9:
-            #         text "Kelas" color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            #     else:
-            #         pass
 
     frame:
         xpos 5
@@ -290,21 +293,26 @@ label go_to_minimart:
             elif KRS3 == False and day ==3:
                 $ maps = False
                 call change_timephase
-                show screen trans_screen with dissolve              
+                show screen trans_screen with dissolve
+                $ locmin += 1              
                 jump mini3N
 
             elif day == 4:
                 $ maps = False
                 call change_timephase
-                show screen trans_screen with dissolve              
+                show screen trans_screen with dissolve
+                $ locmin += 1               
                 jump mart_noonS1
             
             else:
                 $ maps = False
+                $ locmin += 1  
                 show screen trans_screen with dissolve
                 if timephase == 2:
+                    $ locmins += 1  
                     jump choice_mart_noon
                 elif timephase == 3:
+                    $ locminm += 1  
                     jump choice_mart_night
                 else:
                     pass
@@ -330,16 +338,21 @@ label go_to_kos:
                 $ maps = False
                 call change_timephase
                 show screen trans_screen with dissolve
+                $ lockos += 1
                 jump kos_dayS1
             
             else:
                 $ maps = False
+                $ lockos += 1
                 show screen trans_screen with dissolve
                 if timephase == 2:
+                    $ lockoss += 1
                     jump choice_kos_noon
                 elif timephase == 3:
+                    $ lockosm += 1
                     jump choice_kos_night
                 else:
+                    $ lockosp += 1
                     jump choice_kos_morn
                 
         "Tunggu dulu...":
@@ -359,16 +372,21 @@ label go_to_kampung:
 
             elif day == 4:
                 $ maps = False
+                $ lockamp += 1
                 jump first_kota
             
             else:
                 $ maps = False
+                $ lockamp += 1
                 show screen trans_screen with dissolve
                 if timephase == 2:
+                    $ lockamps += 1
                     jump choice_kampung_noon
                 elif timephase == 3:
+                    $ lockampm += 1
                     jump choice_kampung_night
                 else:
+                    $ lockampp += 1
                     jump choice_kampung_morn
                 
         "Tunggu dulu...":
@@ -395,6 +413,57 @@ label go_do_sport:
         "Tunggu dulu...":
             call screen mapUI()
 
+label go_to_library:
+
+    $ maps = True
+    menu:
+        "Pergi ke Perpustakaan":
+            $ placeKeys = 6       
+
+            if KRS3 == True:
+                $ maps = False
+                $ loclib +=1
+                call change_timephase
+                show screen trans_screen with dissolve
+                $ loclibs +=1
+                jump krs
+            
+            else:
+                $ maps = False
+                $ loclib +=1
+                # call change_timephase
+                show screen trans_screen with dissolve
+                $ loclibs +=1
+                jump choice_libary_noon
+                
+        "Tunggu dulu...":
+            call screen mapUI()
+
+label go_to_kota:
+
+    $ maps = True
+    
+    menu:
+        "Pergi ke Kota":
+            $ placeKeys = 7
+            
+            $ maps = False
+            $ lockota += 1
+            show screen trans_screen with dissolve
+            
+            if timephase==1:
+                $ lockotap += 1
+                jump choice_kota_morn
+            elif timephase==2:
+                $ lockotas += 1
+                jump choice_kota_noon
+            else:
+                $ lockotam += 1
+                jump choice_kota_night
+            
+        "Tunggu dulu...":
+            call screen mapUI()
+
 label go_to_campus:
 
     $ maps = True
@@ -410,61 +479,25 @@ label go_to_campus:
 
             elif day == 8:
                 $ maps = False
+                $ loccamp += 1
                 show screen trans_screen with dissolve
+                $ loccamps += 1
                 jump join_hima
 
             elif day>7 and day%4 == 0:
                 $ maps = False
+                $ loccamp += 1
                 show screen trans_screen with dissolve
+                $ loccamps += 1
+                $ olahragac += 1
                 jump sport_noonS3
 
             else:
                 $ maps = False
+                $ loccamp += 1
                 show screen trans_screen with dissolve
+                $ loccamps += 1
                 jump datang_kampus
                 
-        "Tunggu dulu...":
-            call screen mapUI()
-
-label go_to_library:
-
-    $ maps = True
-    menu:
-        "Pergi ke Perpustakaan":
-            $ placeKeys = 6       
-
-            if KRS3 == True:
-                $ maps = False
-                call change_timephase
-                show screen trans_screen with dissolve
-                jump krs
-            
-            else:
-                $ maps = False
-                # call change_timephase
-                show screen trans_screen with dissolve
-                jump choice_libary_noon
-                
-        "Tunggu dulu...":
-            call screen mapUI()
-
-label go_to_kota:
-
-    $ maps = True
-    
-    menu:
-        "Pergi ke Kota":
-            $ placeKeys = 7
-            
-            $ maps = False
-            show screen trans_screen with dissolve
-            
-            if timephase==1:
-                jump choice_kota_morn
-            elif timephase==2:
-                jump choice_kota_noon
-            else:
-                jump choice_kota_night
-            
         "Tunggu dulu...":
             call screen mapUI()

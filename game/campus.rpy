@@ -1356,7 +1356,7 @@ label bocor:
 label kelas_game:
 
     $placeKeys = 8
-
+    $publicc += 1
     show screen trans_screen with dissolve
 
     scene bg campus parking lot with fade

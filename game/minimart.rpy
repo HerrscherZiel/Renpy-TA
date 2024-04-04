@@ -1,3 +1,5 @@
+
+
 #prologue fist mart
 label minimart_pertama:
 
@@ -506,7 +508,7 @@ label mart_noonS1:
     mc "Kopinya enak juga, besok kalau kesini lagi aku beli lah."
 
     "Membawa satu bungkus kopi yang kamu dapat dari promo, kamu keluar dari minimart dan mengendarai motor ke kos."
-
+    $ jajanc += 1
     window hide
 
     if day == 4:
@@ -521,8 +523,9 @@ label mart_noonS1:
 
 label mart_noonS2:
 
-    "Teringat ada beberapa barang yang perlu kamu beli, kamu "
-
+    "Teringat ada beberapa barang yang perlu kamu beli, kamu berbelanja kebutuhan yang diperlukan."
+    call small_eat
+    $ jajanc += 1
     call change_timephase
     call screen mapUI with dissolve
 
@@ -530,7 +533,7 @@ label mart_noonS2:
 label mart_nightS1:
 
     "Membeli camilan"
-
+    $ jajanc += 1
     call small_eat
 
     jump sleep
@@ -538,9 +541,9 @@ label mart_nightS1:
 label mart_nightS2:
 
     "Membaca pesan dari group Lane, kamu ikut bergabung bersama teman sekelasmu di minimart"
-
+    $ mainc += 1
     call hangout
-
+    $ sosialc += 1
     "Setelah berkumpul cukup lama bersama teman kelasmu, kamu akhirnya memutuskan untuk pulang."
 
     jump sleep
@@ -548,7 +551,8 @@ label mart_nightS2:
 #belajarUTS
 
 label belajar_1:
-
+    $ communityc +=1
+    $ sosialc += 1
     scene bg foodcourt with dissolve
 
     "Malam harinya kamu memutuskan untuk mengikuti kegiatan belajar bersama dengan teman sekelasmu untuk mempersiapkan UTS esok hari."
@@ -641,11 +645,12 @@ label belajar_1:
     r "Sip, hati-hati di jalan [name]."
 
     "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
-
+    $ public += 5
     jump sleep
 
 label belajar_2:
-
+    $ communityc +=1
+    $ sosialc += 1
     scene bg foodcourt with dissolve
 
     "Malam hari kedua sewaktu minggu ujian kamu memutuskan untuk mengikuti kegiatan belajar bersama dengan teman sekelasmu untuk kedua kalinya."
@@ -735,11 +740,12 @@ label belajar_2:
     r "Sip, hati-hati di jalan [name]."
 
     "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
-
+    $ public += 5
     jump sleep
 
 label belajar_3:
-
+    $ communityc +=1
+    $ sosialc += 1
     scene bg foodcourt with dissolve
 
     "Besok merupakan hari terakhir ujian tengah semester dilaksankan. 
@@ -865,13 +871,14 @@ label belajar_3:
     r "Siapp hati-hati!"
 
     "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
-
+    $ public += 5
     jump sleep
 
 
 #belajarUAS
 label belajar_uas1:
-
+    $ communityc +=1
+    $ sosialc += 1
     scene bg black with dissolve
 
     "Malam harinya kamu teringat perkataan [r] yang akan kembali mengadakan kegiatan belajar bersama untuk ujian akhir yang akan dimulai besok."
@@ -1012,13 +1019,14 @@ label belajar_uas1:
     "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
     $ energy += 10
     $ vit -= 5
-    $ public += 10
+    $ public += 5
     $ rissa_fond += 10
     $ hunger += 15
     jump sleep
 
 label belajar_uas2:
-
+    $ communityc +=1
+    $ sosialc += 1
     scene bg black with dissolve
 
     "Seperti perkataan [r] semalam kegiatan belajar bersama untuk ujian akhir hari yang kedua akan dilaksanakan lagi malam ini."
@@ -1166,14 +1174,15 @@ label belajar_uas2:
 
     $ energy += 10
     $ fit -= 5
-    $ public += 10
+    $ public += 5
     $ rissa_fond += 10
     $ hunger += 15
 
     jump sleep
 
 label belajar_uas3:
-
+    $ communityc +=1
+    $ sosialc += 1
     scene bg black with dissolve
 
     "Malam ini adalah malam terakhir kegiatan belajar bersama akan diadakan."
@@ -1307,13 +1316,13 @@ label belajar_uas3:
 
     $ energy += 10
     $ fit -= 5
-    $ public += 10
+    $ public += 5
     $ rissa_fond += 10
     $ hunger += 15
 #Special Events   
 
 label makan_makan:
-
+    $ publicc +=1
     scene bg minimart_out with dissolve
 
     "Panas terik hari ini membuat dirimu ingin segera memasuki minimart."

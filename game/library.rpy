@@ -712,6 +712,6 @@ label jalan_sehat:
     "Kamu mengikuti acara jalan sehat di perpustakaan."
 
     call jalan_sehatS
-
+    $ sosialc += 1
     call change_timephase
     call screen mapUI with dissolve

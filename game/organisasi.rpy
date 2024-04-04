@@ -792,13 +792,13 @@ label penerimaan_hima:
             call screen mapUI with dissolve
 
 label hima_1:
-
+    $ sosialc += 1
     "Kamu mengikuti kegiatan organisasimu untuk pertama kali."
 
     call hima_act
 
 label hima_2:
-
+    $ sosialc += 1
     "Kamu mengikuti kegiatan organisasimu untuk kedua kalinya."
 
     call hima_act

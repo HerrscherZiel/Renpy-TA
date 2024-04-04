@@ -171,6 +171,42 @@ screen stats:
             xysize(294,33)
             xpos 1190
             ypos 765
+
+        #status
+        vbox:
+            xpos 1550
+            ypos 240
+            spacing 20
+            if fulls == True:
+                #kenyang
+                imagebutton:
+                    idle "status/kenyang.png"
+                    action NullAction()
+            if thin == True:
+                #kurus
+                imagebutton:
+                    idle "status/kurus.png"
+                    action NullAction()
+            if healthy == True:
+                #sehat
+                imagebutton:
+                    idle "status/sehat.png"
+                    action NullAction()
+            if sick == True:    
+                #sakit
+                imagebutton:
+                    idle "status/sakit.png"
+                    action NullAction()
+            if fitt == True:
+                #bugar
+                imagebutton:
+                    idle "status/bugar.png"
+                    action NullAction()
+            if weak == True:    
+                #loyo
+                imagebutton:
+                    idle "status/loyo.png"
+                    action NullAction()
     #return
     imagebutton:
         xpos 70

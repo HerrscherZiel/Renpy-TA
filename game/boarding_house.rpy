@@ -956,7 +956,7 @@ label kos_mornS1:
     "Silau sinar matahari yang masuk lewat celah-celah jendela ditambah hembusan kipas angin yang kamu hidupkan membuat matamu tertutup secara perlahan."
 
     "Pada akhirnya kamu hanya menghabiskan sisa waktu di siang harimu dengan kembali tertidur pulas."
-
+    $ malasc += 1
     call nap
 
     "Tidak melakukan hal produktif seperti yang kamu inginkan. Tapi paling tidak, kamu telah menambah energi untuk melakukan kegiatan selanjutnya."
@@ -977,7 +977,7 @@ label kos_mornS1:
 label kos_mornS2:
 
     "Mengambil peralatan kebersihan, kamu membersihkan area kosmu."
-
+    $ bersihc += 1
     $vit += 5
     $energy -= 15
     $hunger -= 10
@@ -1054,7 +1054,7 @@ label kos_dayS1:
     "Silau sinar matahari yang masuk lewat celah-celah jendela ditambah hembusan kipas angin yang kamu hidupkan membuat matamu tertutup secara perlahan."
 
     "Pada akhirnya kamu hanya menghabiskan sisa waktu di siang harimu dengan kembali tertidur pulas."
-
+    $ tidurc += 1
     call nap
 
     "Tidak melakukan hal produktif seperti yang kamu inginkan. Tapi paling tidak, kamu telah menambah energi untuk melakukan kegiatan selanjutnya."
@@ -1076,11 +1076,16 @@ label kos_dayS1:
 label kos_noonS2:
 
     "Mengambil peralatan kebersihan, kamu membersihkan area kosmu."
+    $ bersihc += 1
+    $vit += 5
+    $energy -= 15
+    $hunger -= 10
+    $public +=5
 
     return
 
 label kos_noonS3:
-
+    $ olahragac += 1
     jump sport_noonS2
 
 #night
@@ -1089,6 +1094,8 @@ label kos_nightS1:
     "Waktu menunjukkan pukul 08.30 malam."
     
     "Dari pada melakukan aktivitas lainnya pada malam hari ini, kamu lebih memilih untuk menyudahi harimu lebih awal."
+    $ malasc += 1
+    $ tidurc += 1
 
     call nap
 
@@ -1097,13 +1104,14 @@ label kos_nightS1:
 label kos_nightS2:
 
     "Kamu memutuskan untuk menikmati angin malam(beli makan asongan) duduk di depan kos"
-
+    $ jajanc += 1
+    $ mainc += 1
     call small_eat
 
     jump sleep
 
 label kos_nightS3:
-
+    $ malasc += 1
     "Membuka laptop, lalu bermain gim dengan teman temanmu"
 
     jump sleep

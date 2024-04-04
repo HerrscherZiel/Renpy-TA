@@ -372,14 +372,14 @@ label choice_kampung_night:
 label kamp_mornS1:
 
     call sport_mornS1
-
+    $ olahragac += 1
     call change_timephase
     call screen mapUI with dissolve
 
 label kamp_mornS2:
 
     "Keluar dari kamar, kamu berjalan menuju warmindo yang berada dekat dengan kosan."
-
+    $ makanc += 1
     call eat
 
     if day == 5:
@@ -391,14 +391,14 @@ label kamp_mornS2:
 label kamp_noonS1:
 
     "Merasa perutmu keroncongan, kamu mencari tempat makan yang ada disekitaran kampung."
-
+    $ makanc += 1
     call eat
 
     call change_timephase
     call screen mapUI with dissolve
 
 label kamp_noonS2:
-
+    $ malasc += 1
     "Merasa capek untuk mencuci pakaian kotormu, kamu berniat untuk melaundrykan semua pakaian kotor yang sudah menumpuk dikeranjang baju."
 
     call change_timephase
@@ -407,13 +407,13 @@ label kamp_noonS2:
 label kamp_nightS1:
 
     "Membawa HPmu kamu pergi menuju warmindo yang ada di dekat kos."
-
+    $ makanc += 1
     call eat
 
     jump sleep
   
 label kamp_nightS2:
-
+    $ jalanc += 1
     "Penat berada di dalam kamar kos terus menerus, kamu keluar dari kamar dan berjalan di sekitaran kampung untuk menikmati angin malam."
 
     jump sleep

@@ -213,7 +213,7 @@ label kota_mornS1:
     pause 2.0
 
     "Kamu memutuskan untuk mencari sarapan di warung-warung makan kali lima yang ada disekitaran kota."
-
+    $ makanc += 1
     call eat
 
     "Selesai menghabiskan sarapanmu, kamu segera kembali kos bersiap-siap untuk kuliah nanti."
@@ -234,7 +234,7 @@ label kota_mornS2:
     "melewati ...."
 
     scene bg town street 1 with fade
-
+    $ jalanc += 1
     "Merasa cukup mengelilingi kota, kamu memutar arah motormu melaju dan mengendarainya menuju dimana tempat kosmu berada."
     jump mandi
 
@@ -247,7 +247,7 @@ label kota_noonS1:
     "Sesampainya di Mall kamu hanya menghabiskan waktu untuk berjalan dan mengamati barang-barang yang menarik perhatianmu."
 
     "Kamu juga sempat membeli jajanan yang dijual di stand-stand makanan yang ada."
-
+    $ jajanc += 1
     call small_eat
 
     "Setelah cukup lama menghabiskan waktumu di Mall, kamu memutuskan untuk pulang."
@@ -264,7 +264,7 @@ label kota_noonS2:
     "Kamu ingin mencoba merasakan rasa makanan yang terdapat pada konten tersebut."
 
     "Mengunjungi restoran yang menyajikan menu makanan itu."
-
+    $ makanc += 1
     call eat
 
     return
@@ -274,6 +274,8 @@ label kota_noonS2:
 label kota_nightS1:
 
     "Kamu memutuskan untuk berjalan-jalan mengelilingi kota untuk mencari angin."
+    $ mainc += 1
+    $ jalanc += 1
     if day == 28:
         jump day29
     else:
@@ -282,7 +284,7 @@ label kota_nightS1:
 label kota_nightS2:
 
     "Kamu memutuskan untuk menonton film di bioskop"
-
+    $ jajanc += 1
     call small_eat
     
     if day == 28:
@@ -291,7 +293,7 @@ label kota_nightS2:
         jump sleep
 
 label kota_nightS3:
-
+    $ olahragac += 1
     call sport_nightS2
 
 label bioskop_akhir:
@@ -452,6 +454,8 @@ label bioskop_akhir:
 
 label pesta_akhir:
 
+    $ sosialc += 1
+    $communityc += 1
     scene bg black with Fade(1,2,1)
     scene bg kos morn with dissolve
 
@@ -680,7 +684,7 @@ label pesta_akhir:
 
     r "Heeeyy! Jangan begitu, kasihan orang tua di rumah tau kalau bolos begitu."
 
-    mc "Iyaaa… cuma bercanda kok, aku aja [bolos] kali bolos kok."
+    mc "Iyaaa… cuma bercanda kok, aku aja [32 - [masuk]] kali bolos kok."
 
     r "Awas aja ya kalau bolos terus, kulaporin ke orang tuamu nanti wleee!"
 
