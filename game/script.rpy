@@ -97,6 +97,15 @@ default maps = False
 default hima = False
 default hima_intro = False
 
+default persistent.edkutucg = False
+default persistent.ednolifecg = False
+default persistent.edantikupucg = False
+default persistent.edbagaikudacg = False
+default persistent.edsehatnocg = False
+default persistent.edbadendcg = False
+default persistent.ednormiescg = False
+default persistent.edidamancg = False
+
 default bolos = 0
 # The game starts here.
 
@@ -1471,8 +1480,6 @@ label day30:
 
     "Kamu mengembalikan HP ke dalam saku celana, kemudian memulai perjalanan pulang kampungmu."
 
-    "FIN"
-
     scene bg black with Dissolve(2.0)
 
     call stat_change
@@ -1491,11 +1498,104 @@ label day30:
 
 label ending:
 
+    hide screen stats_screen
+    hide screen days_screen
+    hide screen jadwal_btn
+    hide screen kalendar_btn
 
+    $ health = round((hunger+energy+vit) / 3)
+    $ academic = round((knowledge+practice+application) / 3)
+    $ social = round((friend+community+public) / 3)
 
+    if social >= 70 and health >= 70 and academic >= 70:
+        $ edidaman = True
+        $ persistent.edidamancg = True
+        scene ed idaman mertua with Dissolve(2.0)
+    elif social >= 40 and health >= 40 and academic >= 40 and social < 70 and health < 70 and academic < 70:
+        $ ednormies = True
+        $ persistent.ednormiescg =True 
+        scene ed normies1 with Dissolve(2.0)
+    elif social < 40 and health < 40 and academic < 40:
+        $ edbadend = True
+        $ persistent.edbadendcg = True 
+        scene ed bad end with Dissolve(2.0)
+    #aca
+    elif academic > health and academic > social:
+        #hi mid mid
+        if academic >= 70 and social <70 and social >= 40 and health <70 and health >= 40: 
+            $ edkutu = True
+            $ persistent.edkutucg = True
+            scene ed kutu buku with Dissolve(2.0)
+        #hi low low
+        elif academic >= 70 and social < 40 and health < 40: 
+            $ ednolife = True
+            $ persistent.ednolifecg = True
+            scene ed no life with Dissolve(2.0)
+        #mid low low
+        elif academic <70 and academic >= 40 and social < 40 and health < 40:
+            $ ednormies = True 
+            $ persistent.ednormiescg =True
+            scene ed normies2 with Dissolve(2.0)
+        #else
+        else:
+            $ persistent.edkutucg = True
+            $ edkutu = True 
+            scene ed kutu buku with Dissolve(2.0)
+
+    #soc
+    elif social > health and social > academic:
+        #hi mid mid
+        if social >= 70 and academic <70 and academic >= 40 and health <70 and health >= 40: 
+            $ edantikupu = True
+            $ persistent.edantikupucg = True
+            scene ed anti kupu with Dissolve(2.0)
+        #hi low low
+        elif social >= 70 and academic < 40 and health < 40: 
+            $ edbagaikuda = True
+            $ persistent.edbagaikudacg = True
+            scene ed bagai kuda with Dissolve(2.0)
+        #mid low low
+        elif social <70 and social >= 40 and academic < 40 and health < 40: 
+            $ ednormies = True
+            $ persistent.ednormiescg =True
+            scene ed normies3 with Dissolve(2.0)
+        #else
+        else:
+            $ persistent.edantikupucg = True
+            $ edantikupu = True 
+            scene ed anti kupu2 with Dissolve(2.0)
+
+    #health
+    elif health > academic and health > social: 
+        #hi mid mid
+        if health >= 70 and academic <70 and academic >= 40 and social <70 and social >= 40: 
+            $ edsehatno = True
+            $ persistent.edsehatnocg = True
+            scene ed sehat no 1 with Dissolve(2.0)
+        #hi low low
+        elif health >= 70 and academic < 40 and social < 40: 
+            $ edsehatno = True
+            $ persistent.edsehatnocg = True
+            scene ed sehat no 1 with Dissolve(2.0)
+        #mid low low
+        elif health <70 and health >= 40 and academic < 40 and social < 40:
+            $ ednormies = True
+            $ persistent.ednormiescg =True 
+            scene ed normies4 with Dissolve(2.0)
+        #else
+        else:
+            $ edsehatno = True
+            $ persistent.edsehatnocg = True 
+            scene ed sehat no 1 with Dissolve(2.0)
+
+    pause 5.0
+
+    "FIN"
+
+    scene bg black with Dissolve(3.0)
     # "End"
 
-    $ renpy.full_restart()
+    call end
 
 label days:
 
@@ -2256,7 +2356,9 @@ label hima_act:
 
     "Stat Berubah!!!"
 
+label end:
 
+    $ renpy.full_restart()
 
 
 

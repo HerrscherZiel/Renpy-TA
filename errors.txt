@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/ending/rangkuman_screen.rpy", line 346: 'return' is not a keyword argument or valid child for the screen statement.
-    return
-          ^
+File "game/ending/rangkuman_screen.rpy", line 398: 'edidaman' is not a keyword argument or valid child for the hbox statement.
+    edidaman = True
+            ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Thu Apr  4 16:38:54 2024
+Fri Apr  5 21:06:47 2024

@@ -18,17 +18,44 @@ init python:
 
     gallery = Gallery()
 
-    gallery.button("alvea")
+    # gallery.button("edkutu")
     # gallery.image("cg_alvea")
-    gallery.unlock_image("cg_alvea")
+    # gallery.unlock_image("cg_alvea")
 
-    gallery.button("kaga")
-    gallery.image("cg_kaga")
-    gallery.condition("persistent.kaga_unlocked")
+    #cuma nama
+    gallery.button("kutu")
+    #gambar asli ketika unlocked
+    gallery.image("cg_kutubuku")
+    #var persistent nya
+    gallery.condition("persistent.edkutucg")
 
-    gallery.button("akagi")
-    gallery.image("cg_beatrice")
-    gallery.condition("persistent.beatrice_unlocked")
+    gallery.button("nolife")
+    gallery.image("cg_nolife")
+    gallery.condition("persistent.ednolifecg")
+
+    gallery.button("anti_kupu")
+    gallery.image("cg_antikupu")
+    gallery.condition("persistent.edantikupucg")
+
+    gallery.button("bagai_kuda")
+    gallery.image("cg_bagaikuda")
+    gallery.condition("persistent.edbagaikudacg")
+
+    gallery.button("sehatno")
+    gallery.image("cg_sehatno")
+    gallery.condition("persistent.edsehatnocg")
+
+    gallery.button("badend")
+    gallery.image("cg_badend")
+    gallery.condition("persistent.edbadendcg")
+
+    gallery.button("normies")
+    gallery.image("cg_normies")
+    gallery.condition("persistent.ednormiescg")
+
+    gallery.button("idaman")
+    gallery.image("cg_idaman")
+    gallery.condition("persistent.edidamancg")
 
     # $ persistent.kaga_unlocked = True
 
@@ -51,29 +78,32 @@ screen gallery():
                     hover "menuUI/stats/return_hover.png"
                     action Return()
 
-            grid 3 2:
+            grid 4 2:
 
                 # xfill True
                 # yfill True
-                xpos 720
+                xpos 700
                 ypos 100
                 # hbox:
                 xalign 0.35
                 yalign 1
-                spacing 35
+                spacing 15
 
 
                 # add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
-                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
-                add gallery.make_button(name="akagi", unlocked="cg_kaga2.png", locked="lock.png")
+                add gallery.make_button(name="kutu", unlocked="cg_kaga2.png", locked="lock.png")
+                add gallery.make_button(name="nolife", unlocked="cg_kaga2.png", locked="lock.png")
 
                 # add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
-                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
-                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
+                add gallery.make_button(name="anti_kupu", unlocked="cg_kaga2.png", locked="lock.png")
+                add gallery.make_button(name="bagai_kuda", unlocked="cg_beatrice.png", locked="lock.png")
 
                 # add gallery.make_button(name="alvea", unlocked="cg_alvea2.png", locked="lock.png")
-                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
-                add gallery.make_button(name="akagi", unlocked="cg_beatrice.png", locked="lock.png")
+                add gallery.make_button(name="sehatno", unlocked="cg_beatrice.png", locked="lock.png")
+                add gallery.make_button(name="badend", unlocked="cg_beatrice.png", locked="lock.png")
+
+                add gallery.make_button(name="normies", unlocked="cg_beatrice.png", locked="lock.png")
+                add gallery.make_button(name="idaman", unlocked="cg_beatrice.png", locked="lock.png")
 
 
             

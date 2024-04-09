@@ -1,4 +1,13 @@
 
+default edkutu = False
+default ednolife = False
+default edantikupu = False
+default edbagaikuda = False
+default edsehatno = False
+default ednormies = False
+default edbadend = False
+default edidaman = False
+
 screen rangkuman_screen1:
 
     frame:
@@ -380,6 +389,123 @@ screen ending_page:
             $ social = round((friend+community+public) / 3)
             text "[social]" size 76 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
   
+        hbox:
+            # xpos 300
+            xalign 0.5
+            ypos 355
+            #ed1
+            if social >= 70 and health >= 70 and academic >= 70:
+                $ edidaman = True
+                imagebutton:
+                    ypos 120
+                    idle "rangkuman/idaman.png"
+                    action NullAction()
+            elif social >= 40 and health >= 40 and academic >= 40 and social < 70 and health < 70 and academic < 70:
+                $ ednormies = True 
+                imagebutton:
+                    ypos 120
+                    idle "rangkuman/normies.png"
+                    action NullAction()
+            elif social < 40 and health < 40 and academic < 40:
+                $ edbadend = True 
+                imagebutton:
+                    ypos 120
+                    idle "rangkuman/bad_end.png"
+                    action NullAction()
+
+            #aca
+            elif academic > health and academic > social:
+                #hi mid mid
+                if academic >= 70 and social <70 and social >= 40 and health <70 and health >= 40: 
+                    $ edkutu = True
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/kutu.png"
+                        action NullAction()
+                #hi low low
+                elif academic >= 70 and social < 40 and health < 40: 
+                    $ ednolife = True
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/no_life.png"
+                        action NullAction()
+                #mid low low
+                elif academic <70 and academic >= 40 and social < 40 and health < 40:
+                    $ ednormies = True 
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/normies.png"
+                        action NullAction()
+                #else
+                else:
+                    $ edkutu = True 
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/kutu.png"
+                        action NullAction()
+
+            #soc
+            elif social > health and social > academic:
+                #hi mid mid
+                if social >= 70 and academic <70 and academic >= 40 and health <70 and health >= 40: 
+                    $ edantikupu = True
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/anti_kupu.png"
+                        action NullAction()
+                #hi low low
+                elif social >= 70 and academic < 40 and health < 40: 
+                    $ edbagaikuda = True
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/bagai_kuda.png"
+                        action NullAction()
+                #mid low low
+                elif social <70 and social >= 40 and academic < 40 and health < 40: 
+                    $ ednormies = True
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/normies.png"
+                        action NullAction()
+                #else
+                else:
+                    $ edantikupu = True 
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/anti_kupu.png"
+                        action NullAction()
+
+            #health
+            elif health > academic and health > social: 
+                #hi mid mid
+                if health >= 70 and academic <70 and academic >= 40 and social <70 and social >= 40: 
+                    $ edsehatno = True
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/sehat_no.png"
+                        action NullAction()
+                #hi low low
+                elif health >= 70 and academic < 40 and social < 40: 
+                    $ edsehatno = True
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/sehat_no.png"
+                        action NullAction()
+                #mid low low
+                elif health <70 and health >= 40 and academic < 40 and social < 40:
+                    $ ednormies = True 
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/normies.png"
+                        action NullAction()
+                #else
+                else:
+                    $ edsehatno = True 
+                    imagebutton:
+                        ypos 120
+                        idle "rangkuman/sehat_no.png"
+                        action NullAction()
+
 
     #slide left
     imagebutton:

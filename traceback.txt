@@ -1,96 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/script.rpy", line 1495, in script call
-    call bangun_libur
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/town.rpy", line 295, in script call
-    call sport_nightS2
-  File "game/town.rpy", line 295, in script call
-    call sport_nightS2
-  File "game/script.rpy", line 1469, in script
-    call screen rangkuman_screen1 with fade
-  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "renpy/common/00action_control.rpy", line 131, in __call__
-    renpy.show_screen(self.screen, *self.args, **self.kwargs)
-Exception: Screen rangkuman_screen4 is not known.
-
+After initialization, but before game start.
+  File "game/ending/rangkuman_screen.rpy", line 364, in analyze_screen
+    screen ending_page:
+  File "game/ending/rangkuman_screen.rpy", line 364, in analyze
+    screen ending_page:
+  File "game/ending/rangkuman_screen.rpy", line 364, in analyze
+    screen ending_page:
+  File "game/ending/rangkuman_screen.rpy", line 366, in analyze
+    frame:
+  File "game/ending/rangkuman_screen.rpy", line 366, in analyze
+    frame:
+  File "game/ending/rangkuman_screen.rpy", line 383, in analyze
+    vbox:
+  File "game/ending/rangkuman_screen.rpy", line 383, in analyze
+    vbox:
+  File "game/ending/rangkuman_screen.rpy", line 394, in analyze
+    if academic >= 60 social >= 30 and social <60:
+SyntaxError: invalid syntax (game/ending/rangkuman_screen.rpy, line 394)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/script.rpy", line 1495, in script call
-    call bangun_libur
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/kampung.rpy", line 374, in script call
-    call sport_mornS1
-  File "game/town.rpy", line 295, in script call
-    call sport_nightS2
-  File "game/town.rpy", line 295, in script call
-    call sport_nightS2
-  File "game/script.rpy", line 1469, in script
-    call screen rangkuman_screen1 with fade
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2232, in execute
-    self.call("execute")
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 2220, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\statements.py", line 281, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 609, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\exports.py", line 3180, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 4258, in interact_core
-    rv = root_widget.event(ev, x, y, 0)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\transition.py", line 53, in event
-    return self.new_widget.event(ev, x, y, st) # E1101
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 743, in event
-    rv = self.child.event(ev, x, y, st)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\layout.py", line 1175, in event
-    rv = i.event(ev, x - xo, y - yo, cst)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 1073, in event
-    return handle_click(self.clicked)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 1008, in handle_click
-    rv = run(action)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 322, in run
-    new_rv = run(i, *args, **kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\behavior.py", line 329, in run
-    return action(*args, **kwargs)
-  File "renpy/common/00action_control.rpy", line 131, in __call__
-    renpy.show_screen(self.screen, *self.args, **self.kwargs)
-  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 1185, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen rangkuman_screen4 is not known.
-
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\main.py", line 87, in run
+    renpy.display.screen.analyze_screens()
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\screen.py", line 946, in analyze_screens
+    s.ast.analyze_screen()
+  File "game/ending/rangkuman_screen.rpy", line 364, in analyze_screen
+    screen ending_page:
+  File "game/ending/rangkuman_screen.rpy", line 364, in analyze
+    screen ending_page:
+  File "game/ending/rangkuman_screen.rpy", line 364, in analyze
+    screen ending_page:
+  File "game/ending/rangkuman_screen.rpy", line 366, in analyze
+    frame:
+  File "game/ending/rangkuman_screen.rpy", line 366, in analyze
+    frame:
+  File "game/ending/rangkuman_screen.rpy", line 383, in analyze
+    vbox:
+  File "game/ending/rangkuman_screen.rpy", line 383, in analyze
+    vbox:
+  File "game/ending/rangkuman_screen.rpy", line 394, in analyze
+    if academic >= 60 social >= 30 and social <60:
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\py3analysis.py", line 540, in is_constant_expr
+    node, literal = ccache.ast_eval_literal(expr)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\py3analysis.py", line 772, in ast_eval_literal
+    expr = py_compile(expr, 'eval', ast_node=True)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 1027, in py_compile
+    raise e
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 979, in py_compile
+    raise orig_e
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\python.py", line 972, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/ending/rangkuman_screen.rpy, line 394)
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090405
 Simulasi Kehidupan Kuliah 1.0
-Wed Apr  3 22:51:41 2024
+Fri Apr  5 02:10:35 2024
