@@ -215,6 +215,11 @@ label alpro_2:
 
     "Kemudian kelas dilanjutkan dengan sesi tanya jawab hingga waktu pertemuan berakhir."
 
+    "Sebelum kelas diakhiri [bn] sempat memberikan tugas untuk dikerjakan minggu ini."
+
+    $taskalpro = True
+    call n_task
+
     bn normal "Saya tutup pertemuan kali ini, terimakasih sudah berpartisipasi pada kelas hari ini dan sampai jumpa dipertemuan selanjutnya…"
 
     t normal "Terimakasih buuu…"

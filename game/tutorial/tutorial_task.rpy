@@ -38,12 +38,20 @@ screen tutorial_task1:
             action  [SetVariable("tutorial_task1", If(tutorial_task1<=3, tutorial_task1+1, )), Show("tutorial_task_image")]
 
     #close
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action [Hide("tutorial_task1", transition=fade), Hide("tutorial_task_image", transition=fade), Return()]
+    if t_task == True:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_task1", transition=fade), Hide('tutorial_task_image'), SetVariable('t_task', False)]
+    else:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_task1", transition=fade), Hide('tutorial_task_image'), Return()]
 
 screen tutorial_task_image:
 

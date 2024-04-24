@@ -106,18 +106,19 @@ default persistent.edbadendcg = False
 default persistent.ednormiescg = False
 default persistent.edidamancg = False
 
+#task
+default taskpti = False
+default taskalpro = False
+default taskbasdat = False
+default taskweb = False
+
 default bolos = 0
 # The game starts here.
 
 
 label start:
-    # $ my_task.addTask(task_eat_your_first_food)
-    # $ my_task.addTask(task_choose_best_girl)
-    # $ my_task.addTask(task_dont_be_greedy)
-    # $ my_task.addTask(task_survive_too_long)
 
-    # show screen tasks_screen
-    # These display lines of dialogue.
+    stop music fadeout 1.0
 
     scene bg black
     with Dissolve(2.0)
@@ -134,7 +135,9 @@ label start:
     
     "Berhamburan keluar dari ruang kelas dengan berbagai atribut orientasi yang mereka bawa."
 
-    "Bermacam-macam ekspresi terlihat dari raut muka mahasiswa baru yang sedang berhamburan keluar."
+    play music kampus loop
+
+    "Berbagai macam ekspresi terlihat dari raut muka mahasiswa baru yang sedang berhamburan keluar."
 
     "Meski terdapat berbagai macam ekspresi yang terlihat, namun pada umumnya para mahasiswa baru merasakan hal yang sama, yaitu senang dan tidak sabar."
 
@@ -146,7 +149,6 @@ label start:
 
     scene bg streets with dissolve
 
-    play music "audio/bgm/Aerosol of my Love.mp3" loop volume 0.1
 
     "Setelah keluar dari ruang kelas, mahasiswa baru menyebar ke berbagai arah sesuai dengan kepentingan masing-masing."
     
@@ -1601,8 +1603,15 @@ label days:
 
     call change_day
 
-    if day == 8:
-
+    if day == 9:
+        $taskpti = False
+    elif day == 13:
+        $taskalpro = False
+    elif day == 22:
+        $taskbasdat = False
+    elif day == 25:
+        $taskweb = False
+        
         call bangun_libur
 
     elif day == 13:
@@ -2275,6 +2284,20 @@ label change_day:
 
     show screen stats_changer("change_day", 0)
     call stat_change
+
+    return
+
+#task
+
+label n_task:
+
+    show screen stats_changer('n_task', 0)
+
+    return
+
+label c_task:
+
+    show screen stats_changer('c_task', 0)
 
     return
 

@@ -185,10 +185,42 @@ screen stats_changer(tstats, tpoint):
     elif tstats == "hima_act":
 
         timer 0.1 action [Hide("stats_changer"), Show("hima_change", dissolve)]
+    
+    #task
+    elif tstats == "n_task":
+
+        timer 0.1 action [Hide("stats_changer"), Show("tasknew_change", dissolve)]
+    
+    elif tstats == "c_task":
+
+        timer 0.1 action [Hide("stats_changer"), Show("taskcom_change", dissolve)]
 
     else:
 
         text "How"
+
+#task
+screen tasknew_change:
+
+    frame:
+        xsize 1920
+        ysize 1080
+        xpos 1300
+        ypos 30
+        background "menuUI/stats/new task.png"
+
+    timer 4.0 action Hide("tasknew_change", dissolve)
+
+screen taskcom_change:
+
+    frame:
+        xsize 1920
+        ysize 1080
+        xpos 1300
+        ypos 30
+        background "menuUI/stats/task completed.png"
+
+    timer 4.0 action Hide("taskcom_change", dissolve)
 
 #social
 screen fond_change:
@@ -201,7 +233,6 @@ screen fond_change:
         background "menuUI/stats/fond_up.png"
 
     timer 4.0 action Hide("fond_change", dissolve)
-
 
 #health
 screen eat_change:

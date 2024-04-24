@@ -1,301 +1,286 @@
-Sat Apr  6 05:19:14 2024
+Wed Apr 24 14:05:08 2024
 Windows-10-10.0.19045
 Ren'Py 8.0.3.22090405
  
 
 Bootstrap to the start of init.init took 0.06s
-Early init took 0.00s
-Loader init took 0.39s
-Loading error handling took 0.07s
-Loading script took 1.79s
-Loading save slot metadata. took 1.52s
+Early init took 0.04s
+Loader init took 0.25s
+Loading error handling took 0.04s
+Loading script took 1.52s
+Loading save slot metadata. took 0.25s
 Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.14s
-Loading analysis data took 0.05s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
+
+File "game/audio/bgm.rpy", line 2: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" loop volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 3: invalid syntax
+    "audio/bgm/study-in-a-minor-113931.mp3" loop volume 0.1
+                                             ^
+
+File "game/audio/bgm.rpy", line 4: invalid syntax
+    "audio/bgm/Asmooth-sexy-rampb-coffee-music-155218.mp3" loop volume 0.1
+                                                            ^
+
+File "game/audio/bgm.rpy", line 5: invalid syntax
+    "audio/bgm/separation-185196.mp3" loop volume 0.1
+                                       ^
+
+File "game/audio/bgm.rpy", line 6: invalid syntax
+    "audio/bgm/our-summer-in-provence-176854.mp3" loop volume 0.1
+                                                   ^
+
+File "game/audio/bgm.rpy", line 7: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" loop volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 8: invalid syntax
+    "audio/lofi-study-112191.mp3" loop volume 0.1
+                                   ^
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.75s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.05s
-Analyze screens took 0.03s
-Save screen analysis took 0.07s
-Prepare screens took 0.18s
-Save pyanalysis. took 0.04s
-Save bytecode. took 0.06s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.13s
+Interface start took 0.72s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
+Version: b'4.6.0 NVIDIA 552.22'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 45.96s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.06s
-Loading script took 0.44s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.11s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.06s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 883.29s
+Bootstrap to the start of init.init took 226.10s
 Early init took 0.00s
 Loader init took 0.06s
 Loading error handling took 0.02s
-Loading script took 0.46s
-Loading save slot metadata. took 0.06s
+Loading script took 0.68s
+Loading save slot metadata. took 0.05s
 Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.15s
+
+File "game/audio/bgm.rpy", line 2: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 3: invalid syntax
+    "audio/bgm/study-in-a-minor-113931.mp3" volume 0.1
+                                             ^
+
+File "game/audio/bgm.rpy", line 4: invalid syntax
+    "audio/bgm/Asmooth-sexy-rampb-coffee-music-155218.mp3" volume 0.1
+                                                            ^
+
+File "game/audio/bgm.rpy", line 5: invalid syntax
+    "audio/bgm/separation-185196.mp3" volume 0.1
+                                       ^
+
+File "game/audio/bgm.rpy", line 6: invalid syntax
+    "audio/bgm/our-summer-in-provence-176854.mp3" volume 0.1
+                                                   ^
+
+File "game/audio/bgm.rpy", line 7: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 8: invalid syntax
+    "audio/lofi-study-112191.mp3" volume 0.1
+                                   ^
+
+File "game/options.rpy", line 65: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.45s
-Cleaning stores took 0.00s
-Init translation took 0.17s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.07s
-Prepare screens took 0.18s
-Save pyanalysis. took 0.09s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
+Interface start took 0.57s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
+Version: b'4.6.0 NVIDIA 552.22'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 888.39s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.03s
-Loading script took 0.69s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.10s
-Analyze screens took 0.01s
-Save screen analysis took 0.00s
-Prepare screens took 0.20s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.11s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init took 1014.55s
-Early init took 0.00s
-Loader init took 0.08s
-Loading error handling took 0.03s
-Loading script took 0.48s
-Loading save slot metadata. took 0.07s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.16s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.44s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.22s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1046.81s
+Bootstrap to the start of init.init took 230.44s
 Early init took 0.00s
 Loader init took 0.06s
 Loading error handling took 0.03s
-Loading script took 0.44s
+Loading script took 0.67s
+Loading save slot metadata. took 0.05s
+Loading persistent took 0.00s
+
+File "game/audio/bgm.rpy", line 2: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 3: invalid syntax
+    "audio/bgm/study-in-a-minor-113931.mp3" volume 0.1
+                                             ^
+
+File "game/audio/bgm.rpy", line 4: invalid syntax
+    "audio/bgm/Asmooth-sexy-rampb-coffee-music-155218.mp3" volume 0.1
+                                                            ^
+
+File "game/audio/bgm.rpy", line 5: invalid syntax
+    "audio/bgm/separation-185196.mp3" volume 0.1
+                                       ^
+
+File "game/audio/bgm.rpy", line 6: invalid syntax
+    "audio/bgm/our-summer-in-provence-176854.mp3" volume 0.1
+                                                   ^
+
+File "game/audio/bgm.rpy", line 7: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 8: invalid syntax
+    "audio/lofi-study-112191.mp3" volume 0.1
+                                   ^
+
+File "game/options.rpy", line 65: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.58s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 552.22'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 232.13s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.71s
 Loading save slot metadata. took 0.07s
 Loading persistent took 0.00s
+
+File "game/audio/bgm.rpy", line 2: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 3: invalid syntax
+    "audio/bgm/study-in-a-minor-113931.mp3" volume 0.1
+                                             ^
+
+File "game/audio/bgm.rpy", line 4: invalid syntax
+    "audio/bgm/Asmooth-sexy-rampb-coffee-music-155218.mp3" volume 0.1
+                                                            ^
+
+File "game/audio/bgm.rpy", line 5: invalid syntax
+    "audio/bgm/separation-185196.mp3" volume 0.1
+                                       ^
+
+File "game/audio/bgm.rpy", line 6: invalid syntax
+    "audio/bgm/our-summer-in-provence-176854.mp3" volume 0.1
+                                                   ^
+
+File "game/audio/bgm.rpy", line 7: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 8: invalid syntax
+    "audio/lofi-study-112191.mp3" volume 0.1
+                                   ^
+
+File "game/options.rpy", line 65: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.88s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 552.22'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 261.87s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.87s
+Loading save slot metadata. took 0.06s
+Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
+Running init code took 0.14s
 Loading analysis data took 0.04s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.12s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.13s
+Initial gc. took 0.09s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.41s
+Creating interface object took 0.40s
 Cleaning stores took 0.00s
 Init translation took 0.08s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.03s
-Save screen analysis took 0.08s
-Prepare screens took 0.26s
-Save pyanalysis. took 0.06s
+Save screen analysis took 0.09s
+Prepare screens took 0.25s
+Save pyanalysis. took 0.07s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.09s
+Interface start took 0.08s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
+Version: b'4.6.0 NVIDIA 552.22'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 1124.91s
+Bootstrap to the start of init.init took 350.00s
 Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.02s
-Loading script took 0.47s
-Loading save slot metadata. took 0.06s
+Loader init took 0.08s
+Loading error handling took 0.04s
+Loading script took 0.80s
+Loading save slot metadata. took 0.07s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
 Running init code took 0.06s
-Loading analysis data took 0.04s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.14s
+Initial gc. took 0.11s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
@@ -304,36 +289,164 @@ Cleaning stores took 0.00s
 Init translation took 0.08s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.07s
-Prepare screens took 0.34s
+Analyze screens took 0.03s
+Save screen analysis took 0.08s
+Prepare screens took 0.24s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.11s
+Interface start took 0.09s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
+Version: b'4.6.0 NVIDIA 552.22'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 150, in script
+    "Setelah keluar dari ruang kelas, mahasiswa baru menyebar ke berbagai arah sesuai dengan kepentingan masing-masing."
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
+    display_say(who,
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\display\core.py", line 4103, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1166, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1144, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1086, in periodic_pass
+    c.periodic()
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\audio\audio.py", line 517, in periodic
+    topf = load(filename)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\audio\audio.py", line 70, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Users\ASUS\Downloads\renpy-8.0.3-sdk.7z\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'audio/lofi-study-112191.mp3'.
+
+While running game code:
+  File "game/script.rpy", line 150, in script
+    "Setelah keluar dari ruang kelas, mahasiswa baru menyebar ke berbagai arah sesuai dengan kepentingan masing-masing."
+OSError: Couldn't find file 'audio/lofi-study-112191.mp3'.
 Resetting cache.
-Bootstrap to the start of init.init took 1164.70s
+Bootstrap to the start of init.init took 396.29s
 Early init took 0.00s
 Loader init took 0.06s
 Loading error handling took 0.02s
-Loading script took 0.64s
-Loading save slot metadata. took 0.07s
+Loading script took 0.50s
+Loading save slot metadata. took 0.06s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.07s
+Running init code took 0.06s
 Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.14s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.49s
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.09s
+Prepare screens took 0.27s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.12s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 552.22'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 408.09s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.02s
+Loading script took 0.50s
+Loading save slot metadata. took 0.06s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.17s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.47s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.00s
+Load screen analysis took 0.28s
+Analyze screens took 0.01s
+Save screen analysis took 0.00s
+Prepare screens took 0.49s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 552.22'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 566.61s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.02s
+Loading script took 0.71s
+Loading save slot metadata. took 0.06s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
@@ -344,207 +457,124 @@ Initial gc. took 0.16s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.42s
+Creating interface object took 0.51s
 Cleaning stores took 0.00s
-Init translation took 0.07s
+Init translation took 0.10s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.22s
-Save pyanalysis. took 0.05s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1200.06s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.02s
-Loading script took 0.45s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.12s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.40s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.07s
-Prepare screens took 0.22s
-Save pyanalysis. took 0.04s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1206.53s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.02s
-Loading script took 0.45s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.13s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.56s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
+Analyze screens took 0.04s
 Save screen analysis took 0.10s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.05s
+Prepare screens took 0.25s
+Save pyanalysis. took 0.07s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.09s
+Interface start took 0.12s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
+Version: b'4.6.0 NVIDIA 552.22'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.12s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init took 1257.02s
+Bootstrap to the start of init.init took 637.15s
 Early init took 0.00s
-Loader init took 0.06s
+Loader init took 0.07s
 Loading error handling took 0.03s
-Loading script took 0.52s
+Loading script took 0.79s
 Loading save slot metadata. took 0.06s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
 Running init code took 0.06s
-Loading analysis data took 0.03s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
+Dump and make backups. took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.16s
+Initial gc. took 0.15s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.38s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.08s
+Prepare screens took 0.25s
+Save pyanalysis. took 0.06s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 552.22'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 646.81s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.83s
+Loading save slot metadata. took 0.08s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.07s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
+Dump and make backups. took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.13s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Creating interface object took 0.41s
 Cleaning stores took 0.00s
-Init translation took 0.08s
+Init translation took 0.14s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.22s
-Prepare screens took 0.25s
-Save pyanalysis. took 0.00s
+Analyze screens took 0.05s
+Save screen analysis took 0.13s
+Prepare screens took 0.26s
+Save pyanalysis. took 0.06s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.09s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
-Windowed mode.
+Fullscreen mode.
 Vendor: "b'NVIDIA Corporation'"
 Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
+Version: b'4.6.0 NVIDIA 552.22'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1265.01s
-Early init took 0.00s
-Loader init took 0.06s
-Loading error handling took 0.02s
-Loading script took 0.47s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\ASUS\\Downloads\\renpy-8.0.3-sdk.7z\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\ASUS\\AppData\\Roaming/RenPy/backups\\Simulasi Kehidupan Kuliah':
-Dump and make backups. took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.13s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.43s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.08s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.04s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1050/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 551.61'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096

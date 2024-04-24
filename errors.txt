@@ -2,9 +2,37 @@
 errors listed below, and try again.
 
 
-File "game/ending/rangkuman_screen.rpy", line 398: 'edidaman' is not a keyword argument or valid child for the hbox statement.
-    edidaman = True
-            ^
+File "game/audio/bgm.rpy", line 2: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 3: invalid syntax
+    "audio/bgm/study-in-a-minor-113931.mp3" volume 0.1
+                                             ^
+
+File "game/audio/bgm.rpy", line 4: invalid syntax
+    "audio/bgm/Asmooth-sexy-rampb-coffee-music-155218.mp3" volume 0.1
+                                                            ^
+
+File "game/audio/bgm.rpy", line 5: invalid syntax
+    "audio/bgm/separation-185196.mp3" volume 0.1
+                                       ^
+
+File "game/audio/bgm.rpy", line 6: invalid syntax
+    "audio/bgm/our-summer-in-provence-176854.mp3" volume 0.1
+                                                   ^
+
+File "game/audio/bgm.rpy", line 7: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
+
+File "game/audio/bgm.rpy", line 8: invalid syntax
+    "audio/lofi-study-112191.mp3" volume 0.1
+                                   ^
+
+File "game/options.rpy", line 65: invalid syntax
+    "audio/bgm/Aerosol of my Love.mp3" volume 0.1
+                                        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Fri Apr  5 21:06:47 2024
+Wed Apr 24 14:09:01 2024

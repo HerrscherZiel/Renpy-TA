@@ -24,13 +24,20 @@ screen tutorial_daytimes1:
         action [Hide("tutorial_daytimes1"), Show("tutorial_daytimes2")]
 
     #close
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action [Hide("tutorial_daytimes1", transition=fade), Return()]
-
+    if t_times == True:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_daytimes1", transition=fade), SetVariable('t_times', False)]
+    else:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_daytimes1", transition=fade), Return()]
 
 screen tutorial_daytimes2:
 
@@ -54,10 +61,18 @@ screen tutorial_daytimes2:
         hover "tutorial/right_idle.png"
 
     #close
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action [Hide("tutorial_daytimes2", transition=fade), Return()]
+    if t_times == True:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_daytimes2", transition=fade), SetVariable('t_times', False)]
+    else:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_daytimes2", transition=fade), Return()]
 

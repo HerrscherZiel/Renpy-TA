@@ -14,13 +14,13 @@ screen task:
             spacing 7
             xanchor 1
             textbutton "PTI" action Show("pti_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Pengantar Tekonologi Informasi{/b}")
-            textbutton "Alpro" action ToggleScreen("trivia_study") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Algoritma Pemrograman{/b}")
-            textbutton "DE" action ToggleScreen("trivia_others") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Desain Elementer{/b}")
-            textbutton "Strukdat" action ToggleScreen("trivia_others") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Struktur Data{/b}")
-            textbutton "Basdat" action ToggleScreen("trivia_others") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Basis Data{/b}")
-            textbutton "Web 1" action ToggleScreen("trivia_others") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Pemrograman Web 1{/b}")
-            textbutton "PBO" action ToggleScreen("trivia_others") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Pemrograman Berorientasi Objek{/b}")
-            textbutton "Jarkom" action ToggleScreen("trivia_others") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Jaringan Komputer{/b}")
+            textbutton "Alpro" action ToggleScreen("alpro_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Algoritma Pemrograman{/b}")
+            textbutton "DE" action ToggleScreen("de_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Desain Elementer{/b}")
+            textbutton "Strukdat" action ToggleScreen("strukdat_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Struktur Data{/b}")
+            textbutton "Basdat" action ToggleScreen("basdat_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Basis Data{/b}")
+            textbutton "Web 1" action ToggleScreen("web_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Pemrograman Web 1{/b}")
+            textbutton "PBO" action ToggleScreen("pbo_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Pemrograman Berorientasi Objek{/b}")
+            textbutton "Jarkom" action ToggleScreen("jarkom_task") hovered tt.Action("Pilih untuk melihat informasi mengenai tugas pada mata kuliah {b}Jaringan Komputer{/b}")
 
 
     frame:
@@ -40,76 +40,4 @@ screen task:
         action Return()
 
 
-screen pti_task:
-
-    frame:
-        xsize 1920
-        ysize 1080
-        background "menuUI/task_detail.png"
-
-        vbox:
-            xpos 50
-            ypos 280
-            spacing 25
-            textbutton "Pertemuan 1" action ToggleScreen("pti_task_1")
-            textbutton "Pertemuan 2" action ToggleScreen("pti_task_2")
-            textbutton "Pertemuan 3" action NullAction()
-            textbutton "Pertemuan 4" action NullAction()
-
-    imagebutton:
-        xpos 145
-        ypos 97
-        idle "menuUI/pti.png"
-        action NullAction()
-
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action Hide("pti_task")
-
-screen pti_task_1:
-
-    #content
-    frame:
-        xsize 1200
-        ysize 1080
-        background "trivia/menu/desc_layer.png"
-
-        vbox:
-            xpos 350
-            ypos 250
-            spacing 20
-            text "Pasangkan kata-kata dibawah ini!"
-
-            textbutton "Mulai" action Show('pti_task')
-
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action Hide("pti_task_1")
-
-screen pti_task_2:
-
-    #content
-    frame:
-        xsize 1200
-        ysize 1080
-        background "trivia/menu/desc_layer.png"
-
-        vbox:
-            xpos 350
-            ypos 250
-            spacing 20
-            text "No Task Available"
-
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action Hide("pti_task_2")
 

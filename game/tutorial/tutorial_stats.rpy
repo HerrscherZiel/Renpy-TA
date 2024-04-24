@@ -24,12 +24,20 @@ screen tutorial_stats1:
         action [Hide("tutorial_stats1"), Show("tutorial_stats2")]
 
     #close
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action [Hide("tutorial_stats1", transition=fade), Return()]
+    if t_stats == True:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_stats1", transition=fade), SetVariable('t_stats', False)]
+    else:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_stats1", transition=fade), Return()]
 
 
 screen tutorial_stats2:
@@ -54,10 +62,18 @@ screen tutorial_stats2:
         hover "tutorial/right_idle.png"
 
     #close
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action [Hide("tutorial_stats2", transition=fade), Return()]
+    if t_stats == True:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_stats2", transition=fade), SetVariable('t_stats', False)]
+    else:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_stats2", transition=fade), Return()]
 

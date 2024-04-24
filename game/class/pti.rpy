@@ -81,10 +81,10 @@ label pti_1:
 
     "Tugas akan habis waktu pengerjaannya ketika sudah melakukan pertemuan mata kuliah tersebut pada minggu setelahnya."
 
-    $ my_task.addTask(task_pti_1)
-
+    $ taskpti = True
     call screen tutorial_task1 with dissolve
 
+    call n_task
     pa "Nanti hasilnya dijadikan satu dan diupload di drive, lalu bapak tolong dikirimi linknya ya."
 
     r "Baik pak."

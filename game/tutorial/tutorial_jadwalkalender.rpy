@@ -39,12 +39,20 @@ screen tutorial_jadwalkalender1:
             action  [SetVariable("tutorial_jadwalkalender1", If(tutorial_jadwalkalender1<=3, tutorial_jadwalkalender1+1, )), Show("tutorial_jadwalkalender_image")]
 
     #close
-    imagebutton:
-        xpos 70
-        ypos 950
-        idle "menuUI/stats/return_idle.png"
-        hover "menuUI/stats/return_hover.png"
-        action [Hide("tutorial_jadwalkalender1", transition=fade), Hide("tutorial_jadwalkalender_image", transition=fade), Return()]
+    if t_jadkal == True:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_jadwalkalender1", transition=fade), Hide('tutorial_jadwalkalender_image'), SetVariable('t_jadkal', False)]
+    else:
+        imagebutton:
+            xpos 70
+            ypos 950
+            idle "menuUI/stats/return_idle.png"
+            hover "menuUI/stats/return_hover.png"
+            action [Hide("tutorial_jadwalkalender1", transition=fade), Hide('tutorial_jadwalkalender_image'), Return()]
 
 screen tutorial_jadwalkalender_image:
 

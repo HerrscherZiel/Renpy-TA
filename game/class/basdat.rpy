@@ -502,6 +502,12 @@ label basdat_3:
 
     "Setelah semua pertanyaan terjawab [pa] menutup pertemuan pagi hari ini."
 
+    "[pa] meninggalkan sebuah tugas untuk dikerjakan sampai minggu depan."
+
+    $taskbasdat = True
+
+    call n_task
+
     pa normal "Terimakasih teman-teman sudah aktif dalam pertemuan kali ini."
 
     pa "Saya tutup pertemuan kali ini sampai jumpa di pertemuan selanjutnya."

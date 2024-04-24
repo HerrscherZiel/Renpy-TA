@@ -66,12 +66,6 @@ label web_1:
 
     scene bg campus class with fade
 
-    "Sebelum perkuliahan ditutup, [pa] meninggalkan sebuah tugas untuk mata kuliah Pemorgaman Web."
-
-    pa normal "Ini bapak siapkan tugas, nanti kalian kerjakan dan kumpulkan jadi satu sebelum dikirim ke saya ya…"
-
-    $ my_task.addTask(task_web_1)
-
     pa "Ya sudah kalau begitu, bapak tutup pertemuan kali ini, terimakasih dan sampai jumpa di pertemuan berikutnya."
 
     t normal "Terimakasih…."
@@ -654,6 +648,14 @@ label web_4:
 
     "Sesi pertanyaan masih berlanjut hingga waktu perkuliahan berakhir."
 
+    "Tidak lupa [pa] juga meninggalkan tugas untuk dikerjakan sebelum ujian akhir dimulai."
+
+    "Sebelum perkuliahan ditutup, [pa] meninggalkan sebuah tugas untuk mata kuliah Pemorgaman Web."
+
+    pa normal "Ini bapak siapkan tugas, nanti kalian kerjakan dan kumpulkan jadi satu sebelum dikirim ke saya ya…"
+
+    $taskweb = True
+    call n_task
     "Setelah waktu perkuliahan telah habis, [pa] kemudian menutup pertemuan terakhir pada hari ini."
 
     scene bg black with Dissolve(1.5)
