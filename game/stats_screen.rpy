@@ -45,7 +45,7 @@ screen stats_screen:
             xalign 1.0
             ypos 133
             auto "menuUI/button/menu_%s.png"
-            action ShowMenu("stats")
+            action [MainMenu()]
 
         imagebutton:
             xpos 1740

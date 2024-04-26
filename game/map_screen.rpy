@@ -283,7 +283,7 @@ label go_to_minimart:
     menu:
         "Pergi ke minimart":
             $ placeKeys = 2
-
+            play music minimart loop
             if firstMart == True:
                 $ maps = False
                 call change_timephase
@@ -327,7 +327,9 @@ label go_to_kos:
     menu:
         "Pergi ke Kos":
             $ placeKeys = 3
-            
+            stop music fadeout 2.0
+            play music kos loop
+
             if firstKos == True:
                 $ maps = False
                 call change_timephase
@@ -362,9 +364,9 @@ label go_to_kampung:
 
     $ maps = True
     menu:
-        "Pergi keluar?":
-            $ placeKeys = 4
-
+        "Pergi ke kampung?":
+            stop music fadeout 2.0
+            play music kampung loop
             if firstKampung == True and day < 4:
                 $ maps = False
                 show screen trans_screen with dissolve
@@ -398,6 +400,8 @@ label go_do_sport:
     menu:
         "Pergi Berolahraga?":
             $ placeKeys = 4
+            stop music fadeout 2.0
+            play music kota loop
 
             if day == 4:
                 $ maps = False
@@ -418,7 +422,9 @@ label go_to_library:
     $ maps = True
     menu:
         "Pergi ke Perpustakaan":
-            $ placeKeys = 6       
+            $ placeKeys = 6
+            stop music fadeout 2.0   
+            play music library loop
 
             if KRS3 == True:
                 $ maps = False
@@ -446,6 +452,8 @@ label go_to_kota:
     menu:
         "Pergi ke Kota":
             $ placeKeys = 7
+            stop music fadeout 2.0
+            play music kota loop
             
             $ maps = False
             $ lockota += 1
@@ -470,6 +478,8 @@ label go_to_campus:
     menu:
         "Pergi ke Kampus":
             $ placeKeys = 8         
+            stop music fadeout 2.0
+            play music kampus loop
 
             if firstKampus == True and day <5:
                 $ maps = False

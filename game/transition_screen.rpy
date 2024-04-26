@@ -5,7 +5,6 @@ screen trans_screen:
     # ysize 1080
 
     add "bg black.png"
-
     frame:
 
         xsize 1920
