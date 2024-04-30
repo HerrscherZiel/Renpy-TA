@@ -8,21 +8,21 @@ label sport_mornS1:
 
     "Mengambil sepatu larimu, kamu mulai berlari kecil mengelilingi kampung."
 
-    call jog
+    call jog from _call_jog
     jump mandi
 
 label sport_mornS2:
 
     "Keluar dari kamar, kamu berjalan menuju warmindo yang dekat dengan kosan."
 
-    call eat
+    call eat from _call_eat_19
     jump mandi
 
 label sport_mornS3:
 
     "Keluar dari kamar, kamu berjalan menuju warmindo yang dekat dengan kosan."
 
-    call jog
+    call jog from _call_jog_1
     jump mandi
 #noon
 label sport_dayS1:
@@ -89,7 +89,7 @@ label sport_dayS1:
 
     scene bg town street 1 with fade
 
-    call jog
+    call jog from _call_jog_2
 
     "Hal pertama yang kamu lakukan setelah sampai di kosmu adalah melakukan pendinginan, sebelum kembali beristirahat hingga keringat selesai bercucuran dari dalam tubuhmu. "
 
@@ -106,26 +106,26 @@ label sport_dayS1:
 label sport_noonS2:
 
     "Untuk mengembalikan kebugaran tubuhmu, kamu memutuskan untuk melakukan senam lantai."
-    call change_timephase
+    call change_timephase from _call_change_timephase_46
     call screen mapUI with dissolve
     return
 
 label sport_noonS3:
 
-    scene bg kampus graha
+    scene bg streets with dissolve
 
     "Ketika matahari sudah terlihat redup, kamu keluar dari kos dan menuju ke area graha di kampusmu."
     
     "Mengenakan sepatu lari dan celana training, kamu berniat berjogging di sore hari mengelilingi area kampus."
 
-    call jog
+    call jog from _call_jog_3
 
     if day == 28:
         scene bg black with dissolve
 
         $placeKeys = 3
 
-        call change_timephase
+        call change_timephase from _call_change_timephase_47
 
         show screen trans_screen with dissolve
 
@@ -143,17 +143,15 @@ label sport_noonS3:
 
         jump choice_kota_night
 
-    else:
-        jump sleep
-
-    return
+    call change_timephase from _call_change_timephase_48
+    call screen mapUI with dissolve
 
 #night
 label sport_nightS1:
 
     "Kamu memutuskan untuk berolahraga malam, jogging di malam hari mengelilingi area kota."
 
-    call jog
+    call jog from _call_jog_4
 
     if day == 28:
         jump day29
@@ -165,7 +163,7 @@ label sport_nightS2:
 
     "Kamu mendapatkan ajakan untuk bermain futsal bersama dengan teman sekelasmu."
 
-    call futsal
+    call futsal from _call_futsal
     if day == 28:
         jump day29
     else:

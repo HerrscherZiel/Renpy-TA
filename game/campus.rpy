@@ -462,7 +462,7 @@ label first_kampus:
 
     "Kamu memesan dan memakannya di tempat."
 
-    call eat
+    call eat from _call_eat_3
 
     "Kemudian setelah makanan yang kamu pesan habis, kamu langsung melanjutkan perjalanan ke kos karena merasakan badanmu yang sudah sangat lelah."
 
@@ -488,7 +488,7 @@ label first_kampus:
 
     pause 2.0
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_6
 
     show screen trans_screen with dissolve
 
@@ -595,7 +595,7 @@ label first_kampus:
 
     "Menunggu proses booting selesai, tanpa sadar kamu sudah menghabiskan apa yang ada di dalam box makanan tersebut."
 
-    call eat
+    call eat from _call_eat_4
 
     "Setelah laptopmu selesai booting, kamu kemudian membuka aplikasi Stem dan masuk menggunakan akunmu."
 
@@ -633,7 +633,7 @@ label first_kampus:
 
 label first_class:
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_7
     show screen trans_screen with dissolve
     scene bg campus class with dissolve
     pause 2.0
@@ -898,7 +898,7 @@ label istirahat:
 
             "Kalian berdua duduk di kursi yang terdapat disekitar kantin, lalu menikmati jajanan yang dibeli sambil bergurau."
 
-            call small_eat
+            call small_eat from _call_small_eat_1
 
             scene bg canteen with fade
 
@@ -936,7 +936,7 @@ label istirahat:
 
             "Setelah itu kamu memejamkan mata dan memanfaatkan waktu istirahatmu untuk tidur siang."
 
-            call nap
+            call nap from _call_nap_4
 
             scene bg black with fade
             pause 2.0
@@ -977,7 +977,7 @@ label istirahat:
 
             "Kamu menikmati makan siang bersama temanmu."
 
-            call eat
+            call eat from _call_eat_5
 
             scene bg warkop with fade
 
@@ -1065,7 +1065,7 @@ label istirahat_uas:
 
             "Kalian berdua duduk di kursi yang terdapat disekitar kantin, lalu menikmati jajanan yang dibeli sambil bergurau."
 
-            call small_eat
+            call small_eat from _call_small_eat_2
 
             scene bg canteen with fade
 
@@ -1105,7 +1105,7 @@ label istirahat_uas:
 
             "Setelah itu kamu memejamkan mata dan memanfaatkan waktu istirahatmu untuk tidur siang."
 
-            call nap
+            call nap from _call_nap_5
 
             scene bg black with fade
             pause 2.0
@@ -1694,7 +1694,7 @@ label kelas_game:
 
     "Sebelum menuju kosan, kamu sempat mampir ke salah satu rumah makan untuk makan siang."
 
-    call eat
+    call eat from _call_eat_6
     pause 2.0
 
     "Selesai makan siang kamu langsung kembali menuju kosan untuk beristirahat."

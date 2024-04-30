@@ -13,7 +13,7 @@ label jarkom_1:
     
     scene bg campus class with dissolve
 
-    call awal_kelas
+    call awal_kelas from _call_awal_kelas_1
 
     scene bg campus class with fade
 
@@ -79,8 +79,8 @@ label jarkom_1:
 
     "Namun sebelum ada satupun mahasiswa yang meninggalkan ruangan, tiba-tiba [r] berdiri dan membicarakan suatu hal."
 
-    call attend_jarkom
-    call attend_class
+    call attend_jarkom from _call_attend_jarkom
+    call attend_class from _call_attend_class_12
 
     jump first_hima
 
@@ -90,7 +90,7 @@ label jarkom_2:
 
     scene bg campus class with dissolve
 
-    call awal_kelas
+    call awal_kelas from _call_awal_kelas_2
 
     scene bg campus class with fade
 
@@ -221,8 +221,8 @@ label jarkom_2:
 
     "Dengan ditutupnya pembelajaran mata kuliah ini, berakhir sudah kuliah pada hari ini."
 
-    call attend_jarkom
-    call attend_class
+    call attend_jarkom from _call_attend_jarkom_1
+    call attend_class from _call_attend_class_13
 
     if hima == True:
         jump penerimaan_hima
@@ -232,7 +232,7 @@ label jarkom_2:
 
         "Sebelum pulang ke kos kamu sempat mampir pada suatu warung makan untuk mengisi perutmu."
 
-        call eat
+        call eat from _call_eat_7
 
         "Setelah perutmu terisi, kamar kos merupakan tujuan selanjutnya pada siang hari ini."
 
@@ -240,7 +240,7 @@ label jarkom_2:
 
         "Kamu melanjutkan perjalanan dan pulang ke kos."
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_14
     call screen mapUI with dissolve
 
 label uts_jarkom:
@@ -371,7 +371,7 @@ label uts_jarkom:
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari menunggu temanmu yang lain menyelesaikan ujian mereka."
-
+    $application += 6
     jump uts_akhir
 
 label jarkom_3:
@@ -497,15 +497,15 @@ label jarkom_3:
 
     "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk pulang."
 
-    call attend_jarkom
-    call attend_class
+    call attend_jarkom from _call_attend_jarkom_2
+    call attend_class from _call_attend_class_14
 
     if hima == True:
-        call hima_1
+        call hima_1 from _call_hima_1
     else:
         scene bg black with fade
         pause 1.5
-    call change_timephase
+    call change_timephase from _call_change_timephase_15
     call screen mapUI with dissolve
 
 label jarkom_4:
@@ -761,15 +761,15 @@ label jarkom_4:
 
     "Setelah terdiam untuk beberapa waktu di bangkumu memikirkan ujian akhir nanti, akhirnya kamu berdiri dan bergegas untuk pulang."
 
-    call attend_jarkom
-    call attend_class
+    call attend_jarkom from _call_attend_jarkom_3
+    call attend_class from _call_attend_class_15
 
     if hima == True:
-        call hima_2
+        call hima_2 from _call_hima_2
     else:
         scene bg black with fade
         pause 1.5
-    call change_timephase
+    call change_timephase from _call_change_timephase_16
     call screen mapUI with dissolve
 
 label uas_jarkom:
@@ -828,21 +828,21 @@ label uas_jarkom:
 
     "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
 
-    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
 
-    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 45 detik{/i})"
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
-    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+    "({i}Ketika waktu 45 detik habis, soal akan hilang dari layar{/i})"
 
-    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
 
-    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
 
-    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+    "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 
-    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+    "({i}Perlu diketahui UAS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
 
-    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+    "({i}Soal UAS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
 
     "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
 
@@ -1045,7 +1045,7 @@ label uas_jarkom:
     hide screen jarkomas_5 with dissolve
 
     label end_jarkom:
-
+        $application += 6
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
         "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."

@@ -3,7 +3,7 @@ label first_kota:
 
     scene bg town street 1 with dissolve
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_49
 
     show screen trans_screen with dissolve
 
@@ -214,7 +214,7 @@ label kota_mornS1:
 
     "Kamu memutuskan untuk mencari sarapan di warung-warung makan kali lima yang ada disekitaran kota."
     $ makanc += 1
-    call eat
+    call eat from _call_eat_20
 
     "Selesai menghabiskan sarapanmu, kamu segera kembali kos bersiap-siap untuk kuliah nanti."
 
@@ -248,11 +248,11 @@ label kota_noonS1:
 
     "Kamu juga sempat membeli jajanan yang dijual di stand-stand makanan yang ada."
     $ jajanc += 1
-    call small_eat
+    call small_eat from _call_small_eat_7
 
     "Setelah cukup lama menghabiskan waktumu di Mall, kamu memutuskan untuk pulang."
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_50
     call screen mapUI with dissolve
 
     return
@@ -265,7 +265,7 @@ label kota_noonS2:
 
     "Mengunjungi restoran yang menyajikan menu makanan itu."
     $ makanc += 1
-    call eat
+    call eat from _call_eat_21
 
     return
 
@@ -285,7 +285,7 @@ label kota_nightS2:
 
     "Kamu memutuskan untuk menonton film di bioskop"
     $ jajanc += 1
-    call small_eat
+    call small_eat from _call_small_eat_8
     
     if day == 28:
         jump day29
@@ -294,10 +294,10 @@ label kota_nightS2:
 
 label kota_nightS3:
     $ olahragac += 1
-    call sport_nightS2
+    call sport_nightS2 from _call_sport_nightS2
 
 label bioskop_akhir:
-    call change_timephase
+    call change_timephase from _call_change_timephase_51
     show screen trans_screen with dissolve
     scene bg kos night with dissolve
     pause 2.0
@@ -382,7 +382,7 @@ label bioskop_akhir:
 
     "Kamu menghabiskan waktumu dengan memainkan HP selagi menikmati camilan yang kamu beli."
 
-    call small_eat
+    call eat from _call_eat_22
 
     # /////
     
@@ -441,7 +441,7 @@ label bioskop_akhir:
 
     "Kini waktu telah menunjukan pukul 11.15 malam, kamu sudah merasa mengantuk dan ingin cepat-cepat beristirahat."
 
-    scene bg outside bioskop with dissolve
+    scene bg outer bioskop with dissolve
 
     "Sesampainya di parkiran, kamu langsung menunggangi sepeda motormu lalu mengendarainya menuju arah kosan."
 
@@ -493,7 +493,7 @@ label pesta_akhir:
 
     scene bg black with dissolve
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_52
 
     $placeKeys = 7
     
@@ -570,7 +570,7 @@ label pesta_akhir:
 
     scene bg pesta 2 with fade
 
-    call eat
+    call eat from _call_eat_23
 
     "Sekarang waktu telah menunjukan pukul 13.45, hampir seluruh temanmu yang terdapat dalam daftar hadir telah berada pada ruangan pesta. Beberapa dari mereka sedang menikmati makanan yang telah disediakan pada ruangan. "
 
@@ -779,7 +779,7 @@ label pesta_akhir:
 
     $placeKeys = 3
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_53
 
     show screen trans_screen with dissolve
 

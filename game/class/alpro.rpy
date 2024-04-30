@@ -134,8 +134,8 @@ label alpro_1:
 
     t "terimakasih bu!"
 
-    call attend_alpro
-    call attend_class
+    call attend_alpro from _call_attend_alpro
+    call attend_class from _call_attend_class
 
     jump istirahat_1
 
@@ -218,7 +218,7 @@ label alpro_2:
     "Sebelum kelas diakhiri [bn] sempat memberikan tugas untuk dikerjakan minggu ini."
 
     $taskalpro = True
-    call n_task
+    call n_task from _call_n_task
 
     bn normal "Saya tutup pertemuan kali ini, terimakasih sudah berpartisipasi pada kelas hari ini dan sampai jumpa dipertemuan selanjutnya…"
 
@@ -228,10 +228,10 @@ label alpro_2:
 
     "Kelas berakhir dan setelah ini merupakan jam istirahat, mahasiswa-mahasiswa mulai meninggalkan kelas."
 
-    call attend_alpro
-    call attend_class
+    call attend_alpro from _call_attend_alpro_1
+    call attend_class from _call_attend_class_1
 
-    call istirahat
+    call istirahat from _call_istirahat
 
     jump de_2
 
@@ -355,7 +355,7 @@ label uts_alpro:
 
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
 
-    call istirahat
+    call istirahat from _call_istirahat_1
     jump uts_de
 
 label alpro_3:
@@ -511,10 +511,10 @@ label alpro_3:
 
     "Kelas berakhir dan setelah ini merupakan jam istirahat, mahasiswa-mahasiswa mulai meninggalkan ruang kelas."
 
-    call attend_alpro
-    call attend_class
+    call attend_alpro from _call_attend_alpro_2
+    call attend_class from _call_attend_class_2
 
-    call istirahat
+    call istirahat from _call_istirahat_2
 
     jump de_3
 
@@ -678,10 +678,10 @@ label alpro_4:
 
     "Sebelum kelas terakhir pada hari ini, terdapat waktu istirahat yang bisa kamu gunakan untuk melakukan aktivitas lain."
 
-    call attend_alpro
-    call attend_class
+    call attend_alpro from _call_attend_alpro_3
+    call attend_class from _call_attend_class_3
 
-    call istirahat
+    call istirahat from _call_istirahat_3
 
     jump de_4
 
@@ -759,17 +759,17 @@ label uas_alpro:
 
     "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
-    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar {/i})"
+    "({i}Ketika waktu 45 detik habis, soal akan hilang dari layar{/i})"
 
     "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
 
     "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
 
-    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+    "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 
-    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+    "({i}Perlu diketahui UAS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
 
-    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+    "({i}Soal UAS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
 
     "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
 
@@ -1003,7 +1003,7 @@ label uas_alpro:
 
         pause 1.5
 
-        call istirahat_uas
+        call istirahat_uas from _call_istirahat_uas
 
         jump uas_de
 

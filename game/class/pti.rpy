@@ -10,7 +10,7 @@ label pti_1:
 
     scene bg campus class with fade
 
-    pa normal "Kalau begitu bapak mulai perkuliahannya, hari ini kita akan memperlajari mengenai Pengantar Teknologi Informasi."
+    pa "Kalau begitu bapak mulai perkuliahannya, hari ini kita akan memperlajari mengenai Pengantar Teknologi Informasi."
 
     pa "Karena ini baru pertemuan pertama, bapak akan menjelaskan dasarnya terlebih dahulu."
 
@@ -59,7 +59,7 @@ label pti_1:
 
     r normal2 "Pak untuk materi presentasi pertemuan ini apakah kami boleh memintanya pak?"
 
-    pa "Ohh boleh-boleh, nanti kamu atau perwakilan kelas chat saya saja, akan saya share materi hari ini."
+    pa normal "Ohh boleh-boleh, nanti kamu atau perwakilan kelas chat saya saja, akan saya share materi hari ini."
 
     r "Baik pak, terimakasih."
 
@@ -84,7 +84,7 @@ label pti_1:
     $ taskpti = True
     call screen tutorial_task1 with dissolve
 
-    call n_task
+    call n_task from _call_n_task_2
     pa "Nanti hasilnya dijadikan satu dan diupload di drive, lalu bapak tolong dikirimi linknya ya."
 
     r "Baik pak."
@@ -93,8 +93,8 @@ label pti_1:
 
     t normal "Terimakasihhh…."
 
-    call attend_pti
-    call attend_class
+    call attend_pti from _call_attend_pti
+    call attend_class from _call_attend_class_20
 
     pause 1.5
 
@@ -185,8 +185,8 @@ label pti_2:
 
     "[pa] meninggalkan ruangan, dan kelas pertama pada hari ini berakhir."
 
-    call attend_pti
-    call attend_class
+    call attend_pti from _call_attend_pti_1
+    call attend_class from _call_attend_class_21
 
     pause 1.5
     jump alpro_2
@@ -271,7 +271,7 @@ label uts_pti:
             $a_ptiTS +=20
         "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi.":
             "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi."
-    "4. Dari beberapa opsi dibawah ini apakah yang termasuk data yang diambil dari lingkungan sekolah?"
+    "4. Dari beberapa opsi dibawah ini manakah yang bukan termasuk data yang diambil dari lingkungan sekolah?"
     menu:
         "A. Jumlah murid.":
             "A. Jumlah kendaraan."
@@ -476,8 +476,8 @@ label pti_3:
 
     "Kelas berakhir, mahasiswa satu persatu meninggalkan ruangan. Menunggu untuk beberapa menit sebelum memasuki ruang kelas selanjutnya."
 
-    call attend_pti
-    call attend_class
+    call attend_pti from _call_attend_pti_2
+    call attend_class from _call_attend_class_22
 
     pause 1.5
     jump alpro_3
@@ -617,8 +617,8 @@ label pti_4:
 
     "Masih terdapat beberapa menit sebelum kelas selanjutnya dimulai."
 
-    call attend_pti
-    call attend_class
+    call attend_pti from _call_attend_pti_3
+    call attend_class from _call_attend_class_23
 
     pause 1.5
     jump alpro_4
@@ -652,17 +652,17 @@ label uas_pti:
 
     "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
-    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+    "({i}Ketika waktu 45 detik habis, soal akan hilang dari layar{/i})"
 
     "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
 
     "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
 
-    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+    "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 
-    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+    "({i}Perlu diketahui UAS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
 
-    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+    "({i}Soal UAS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
 
     "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
 

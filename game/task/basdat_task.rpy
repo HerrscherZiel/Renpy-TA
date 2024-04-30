@@ -11,7 +11,7 @@ screen basdat_task:
             xpos 50
             ypos 280
             spacing 25
-            if taskbasdat == False:
+            if taskbasdat == True:
                 textbutton "Pertemuan 3" action ToggleScreen("basdat_prev")
             else:
                 hbox:
@@ -77,7 +77,7 @@ screen basdat_task1:
             ypos 670
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_basdatT", a_basdatT+3),Hide('basdat_task1'), Show("basdat_task2")]
+            action [SetVariable("a_basdatT", a_basdatT+3), SetVariable("application", application + 3), Hide('basdat_task1'), Show("basdat_task2")]
 
         #B
         imagebutton:
@@ -139,7 +139,7 @@ screen basdat_task2:
             ypos 670
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_basdatT", a_basdatT+2),Hide('basdat_task2'), Show("basdat_task3")]
+            action [SetVariable("a_basdatT", a_basdatT+2), SetVariable("application", application + 3), Hide('basdat_task2'), Show("basdat_task3")]
         
         #D
         imagebutton:
@@ -177,7 +177,7 @@ screen basdat_task3:
             ypos 670
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_basdatT", a_basdatT+3),Hide('basdat_task3'), Show("basdat_task4")]
+            action [SetVariable("a_basdatT", a_basdatT+3), SetVariable("application", application + 3), Hide('basdat_task3'), Show("basdat_task4")]
         
         #C
         imagebutton:
@@ -239,7 +239,7 @@ screen basdat_task4:
             ypos 670
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_basdatT", a_basdatT+2),Hide('basdat_task4'), Show("basdat_done")]
+            action [SetVariable("a_basdatT", a_basdatT+2), SetVariable("application", application + 6), Hide('basdat_task4'), Show("basdat_done")]
         
 
 screen basdat_done:

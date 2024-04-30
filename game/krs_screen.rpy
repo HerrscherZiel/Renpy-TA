@@ -326,11 +326,11 @@ screen isi_krs:
         else:
             pass
 
-        imagebutton:
-            xpos 1480
-            ypos 65
-            auto "krs/close_%s.png"
-            action Return()
+        # imagebutton:
+        #     xpos 1480
+        #     ypos 65
+        #     auto "krs/close_%s.png"
+        #     action Return()
 
 screen captcha(x):
 

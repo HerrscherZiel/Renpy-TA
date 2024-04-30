@@ -28,9 +28,9 @@ screen rangkuman_screen1:
             ypos 555
             xsize 750
             spacing 100
-            if health <= 20:
+            if health <= 30:
                 text "Kesehatan Rendah - Kamu memiliki tingkat kesehatan yang rendah pada akhir permainanmu.\n \nIngat!!! Badan yang tidak sehat akan selalu menjadi hambatan untuk melakukan aktivitas secara maksimal. Tingkatkan kesehatanmu dengan mulai mengatur pola hidupmu menjadi  lebih baik!! Kamu dapat memulai pola hidup sehat dengan mengatur pola makan, olahraga yang terjadwal, dan cukup istirahat !!!" size 25 font "fonts/Montserrat-SemiBoldItalic.ttf"
-            elif health > 20 and health <= 60:
+            elif health > 30 and health <= 60:
                 text "Kesehatan Menengah - Kamu memiliki tingkat kesehatan yang cukup baik pada akhir permainanmu.\n \nIngat!!! Kesehatan merupakan langkah pertama untuk dapat menjalani kehidupan perkuliahan dengan baik. Dengan menjaga kesehatan kamu dapat beraktivitas secara lebih leluasa dan maksimal. Jangan lupa untuk mengatur pola makan, olahraga yang terjadwal, dan cukup istirahat !!!" size 25 font "fonts/Montserrat-SemiBoldItalic.ttf"
             else:
                 text "Kesehatan Tinggi - Kamu memiliki tingkat kesehatan yang tinggi pada akhir permainanmu.\n \nIngat!!! Selalu jaga kesehatanmu untuk mendapatkan hasil yang maksimal. Pertahankan pola hidup sehat, atur pola makan, olahraga yang terjadwal, dan cukup istirahat !!!" size 25 font "fonts/Montserrat-SemiBoldItalic.ttf"
@@ -102,7 +102,7 @@ screen rangkuman_screen2:
             spacing 100
             if academic < 50:
                 text "Akademik Rendah - Kamu memiliki nilai akademik yang rendah pada akhir permainanmu.\n \nIngat!!! Meskipun kehidupan perkuliahan memanglah lebih bebas, namun jangan sampai lupa tujuan kita berkuliah untuk masa depan yang lebih baik. Tingkatkan nilai akademikmu dengan cara giat belajar, jangan takut bertanya, dan ikuti semua perkuliahan dengan sungguh-sungguh!!" size 25 font "fonts/Montserrat-SemiBoldItalic.ttf"
-            elif academic >= 50 and academic <= 75:
+            elif academic >= 50 and academic <= 70:
                 text "Akademik Menengah - Kamu memiliki nilai akademik yang cukup baik pada akhir permainanmu.\n \nIngat!!! Untuk mendapatkan hasil akademik yang lebih maksimal kamu perlu lebih tekun dalam belajar. Jangan menyerah dan cepat putus asa ketika menghadapi masalah yang sulit. Belajarlah dengan sungguh-sungguh dan jangan sungkan untuk bertanya !!!" size 25 font "fonts/Montserrat-SemiBoldItalic.ttf"
             else:
                 text "Akademik Tinggi - Kamu memiliki nilai akademik yang tinggi pada akhir permainanmu.\n \nIngat!!! Pertahankan nilai akademikmu saat ini, jangan mudah untuk cepat puas dengan hasil yang telah didapatkan. Terus belajar dan raih hasil yang lebih memuaskan !!!" size 25 font "fonts/Montserrat-SemiBoldItalic.ttf"
@@ -125,9 +125,9 @@ screen rangkuman_screen2:
             $ quiz = a_alproC + a_basdatC + a_deC + a_jarkomC + a_pboC + a_ptiC + a_webC + a_strukdatC 
             $ quizz = quiz/40*100
             $ tugas = a_alproT + a_basdatT + a_ptiT + a_webT
-            $ tugass = tugas/40*100
+            $ tugass = tugas/50*100
             text ": [quiz]/40 \n [quizz] %" size 42 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
-            text ": [tugas]/40 \n [tugass] %" size 42 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+            text ": [tugas]/50 \n [tugass] %" size 42 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
 
         hbox:
             xpos 1100

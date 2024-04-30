@@ -80,17 +80,17 @@ label web_1:
 
     "Sesampainya di tempat parkir, kamu langsung mengendarai motormu untuk pulang."
 
-    call attend_web
-    call attend_class
+    call attend_web from _call_attend_web
+    call attend_class from _call_attend_class_28
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_17
     call screen mapUI with dissolve
 
 label web_2:
 
     scene bg campus class with dissolve
 
-    call awal_kelas
+    call awal_kelas from _call_awal_kelas_6
 
     scene bg campus class with fade
 
@@ -201,11 +201,11 @@ label web_2:
 
     "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk pulang."
 
-    call attend_web
-    call attend_class
+    call attend_web from _call_attend_web_1
+    call attend_class from _call_attend_class_29
 
     if hima == True:
-        call pengumuman_hima
+        call pengumuman_hima from _call_pengumuman_hima
     else:
         scene bg black with fade
         pause 1.5
@@ -246,7 +246,7 @@ label web_2:
 
         "Setelah selesai mengeprint kosan merupakan tempat selanjutnya yang kamu tuju."   
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_18
     call screen mapUI with dissolve
 
 label uts_web:
@@ -375,8 +375,8 @@ label uts_web:
     "Ujian pada hari ini telah berakhir, kamu langsung menuju motormu yang berada di parkiran kampus."
 
     "Setelah menyalakan mesin motor, kamu langsung mengendarainya menuju kosan."
-
-    call change_timephase
+    $application += 7
+    call change_timephase from _call_change_timephase_19
     call screen mapUI
 
 label web_3:
@@ -529,10 +529,10 @@ label web_3:
 
     "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk pulang."
 
-    call attend_web
-    call attend_class
+    call attend_web from _call_attend_web_2
+    call attend_class from _call_attend_class_30
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_20
     call screen mapUI with dissolve
 
 label web_4:
@@ -655,7 +655,7 @@ label web_4:
     pa normal "Ini bapak siapkan tugas, nanti kalian kerjakan dan kumpulkan jadi satu sebelum dikirim ke saya ya…"
 
     $taskweb = True
-    call n_task
+    call n_task from _call_n_task_3
     "Setelah waktu perkuliahan telah habis, [pa] kemudian menutup pertemuan terakhir pada hari ini."
 
     scene bg black with Dissolve(1.5)
@@ -675,10 +675,10 @@ label web_4:
     "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. 
     Kamu keluar dari ruangan kelas dan melanjutkan aktivitasmu berikutnya."
 
-    call attend_web
-    call attend_class
+    call attend_web from _call_attend_web_3
+    call attend_class from _call_attend_class_31
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_21
     call screen mapUI with dissolve
 
 label uas_web:
@@ -940,7 +940,7 @@ label uas_web:
     hide screen webas_5 with dissolve
 
     label end_web:
-
+        $application += 7
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
         "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
@@ -954,7 +954,7 @@ label uas_web:
         "Setelah menjalani 3 ujian akhir, ujian hari kedua telah usai, kini menyisakan satu hari ujian akhir lagi."
 
         "Kamu keluar dari ruangan sambil tersenyum lalu bergegas menuju kos untuk beristirahat."
-        call change_timephase
+        call change_timephase from _call_change_timephase_22
         call screen mapUI
 
 

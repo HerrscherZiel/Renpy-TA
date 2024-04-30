@@ -100,7 +100,7 @@ screen alpro_answer:
                 xpos 170
                 ypos 110
                 auto "krs/ok_%s.png"
-                action [SetVariable("a_alproT", a_alproT + 10), Hide('alpro_answer'), Show('alpro_done')]
+                action [SetVariable("a_alproT", a_alproT + 10), SetVariable("application", application + 15), Hide('alpro_answer'), Show('alpro_done')]
 
     else:
         frame:

@@ -309,7 +309,7 @@ label krs:
 
                     $energy -= 10
 
-                    call stat_change
+                    call stat_change from _call_stat_change
 
                     "Stas UP!!!"
 
@@ -711,7 +711,7 @@ label jalan_sehat:
 
     "Kamu mengikuti acara jalan sehat di perpustakaan."
 
-    call jalan_sehatS
+    call jalan_sehatS from _call_jalan_sehatS
     $ sosialc += 1
-    call change_timephase
+    call change_timephase from _call_change_timephase_27
     call screen mapUI with dissolve

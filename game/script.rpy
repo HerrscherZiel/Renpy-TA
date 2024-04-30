@@ -131,11 +131,11 @@ label start:
 
     "......"
 
-    "Hari telah menunjukan pukul 4, menandakan program orientasi mahasiswa baru di univ X telah usai."
+    "Waktu telah menunjukan pukul 4, menandakan program orientasi mahasiswa baru di universitas telah usai."
     
-    "Berhamburan keluar dari ruang kelas dengan berbagai atribut orientasi yang mereka bawa."
+    "Mahasiswa baru berhamburan keluar dari ruang kelas dengan berbagai atribut orientasi yang mereka bawa."
 
-    play music kampus loop
+    play music kampus loop volume 0.3
 
     "Berbagai macam ekspresi terlihat dari raut muka mahasiswa baru yang sedang berhamburan keluar."
 
@@ -158,11 +158,11 @@ label start:
 
     "Mahasiswa itu berjalan sendirian tidak seperti kebanyakan mahasiswa lain yang bersenda gurau dengan teman di sebelah mereka." 
     
-    show mc normal jacket:
-        xalign 0.2 yalign -0.3
-    with dissolve
+    # show mc normal jacket:
+    #     xalign 0.2 yalign -0.3
+    # with dissolve
     
-    mc "Akhirnya selesai juga, capek juga seminggu ini orientasinya."
+    mc normal jacket "Akhirnya selesai juga, capek juga seminggu ini orientasinya."
 
     mc  "Tapi seru juga sih, dapet pengalaman baru, ga sabar nanti kuliahnya kaya apa."
 
@@ -177,9 +177,10 @@ label start:
         linear 0.8 xalign 0.9
     with dissolve
 
+    
     mc  "Ohh.. maaf-maaf ada apa ya?"
-
-    r   "Tidak apa-apa kok, cuma mau manggil saja, kamu tadi tiba-tiba berhenti tepat di depanku."
+    hide r normal2 
+    r normal2 "Tidak apa-apa kok, cuma mau manggil saja, kamu tadi tiba-tiba berhenti tepat di depanku."
 
     mc  "Maaf-maaf hehehe…."
 
@@ -302,13 +303,7 @@ label day2:
 
     pause 3.0
 
-    show day2 pro:
-        xalign 0.5 yalign 0.5
-    with dissolve
-
-    pause 3.0
-
-    call change_day
+    call change_day from _call_change_day
 
     show screen trans_screen with dissolve
 
@@ -340,11 +335,11 @@ label day2:
 
     "Setelah selesai merapikan tempat tidur, kamu berjalan ke arah kamar mandi untuk membasuh mukamu."
 
-    show mc normal jacket:
-        xalign 0.2 yalign -0.3
-    with dissolve
+    # show mc normal jacket:
+    #     xalign 0.2 yalign -0.3
+    # with dissolve
 
-    mc "Uahhhh….. Masih ngantuk…"
+    mc normal jacket"Uahhhh….. Masih ngantuk…"
 
     "Sambil menguap, kamu mengggosok-gosok matamu dengan tangan"
 
@@ -386,7 +381,7 @@ label day2:
 
         "Kamu mengambil roti yang kamu beli di Minimart kemarin dan langsung memakannya."
 
-        call eat
+        call eat from _call_eat_17
 
         "Lumayan buat ganjel perut hehehe."
 
@@ -410,15 +405,15 @@ label day2:
 
     "Kemudian anggota grup lainnya mulai muncul membalas dengan chat maupun hanya dengan sticker."
 
-    "Scroll"
+    "Scroll......."
 
-    "Scroll"
+    "Scroll....."
 
-    "Scroll"
+    "Scroll.."
 
     "Kamu mulai membaca chat dengan timestamp pagi hari ini."
 
-    "Beberapa chat masih berisi candaan antar anggota grup, namun pada beberapa chat terakhir terdapat chat dengan text bold yang dikirimkan oleh username bernama Claris."
+    "Beberapa chat masih berisi candaan antar anggota grup, namun pada beberapa chat terakhir terdapat chat dengan text bold yang dikirimkan oleh username bernama Rissa."
 
     mc "{i}Untuk mahasiswa dengan DPA Pak Andy, diharapkan dapat hadir di kampus siang ini untuk melakukan bimbingan bersama{/b}."
 
@@ -506,7 +501,7 @@ label day2:
 
     t "{i}Untuk jam berapanya masih kutanyakan ya teman-temann{/i}."
 
-    t "{i}Okee Clariss{/i}."
+    t "{i}Okee Rissa{/i}."
 
     "Scroll"
 
@@ -514,7 +509,7 @@ label day2:
 
     "Chat yang ada dibawahnya dilanjutkan dengan candaan oleh beberapa orang yang ada di grup."
 
-    mc "{i}Hmmm sepertinya si Claris ini bakal jadi tokoh ketua di angkatan deh{/i}."
+    mc "{i}Hmmm sepertinya si Rissa ini bakal jadi tokoh ketua di angkatan deh{/i}."
 
     mc "{i}Belum masuk kuliah aja sudah jadi informan begini..{/i}"
 
@@ -524,7 +519,7 @@ label day2:
 
     t "{i}Oh ini teman-teman Pak Andy sudah bales chatku!{/i}"
 
-    t "{i}Jam berapa tuh Claris?{/i}"
+    t "{i}Jam berapa tuh Rissa?{/i}"
 
     t "{i}Iya jam berapa?{/i}"
 
@@ -575,7 +570,7 @@ label day3:
 
     hide day3 pro with dissolve
 
-    call change_day
+    call change_day from _call_change_day_1
 
     show screen trans_screen with dissolve
 
@@ -900,7 +895,7 @@ label day3:
 
     "Menghabiskan waktu dengan percakapan basa-basi dengan penjaga warung warmindo, tidak terasa apa yang disajikan di depanmu sudah habis."
 
-    call eat 
+    call eat from _call_eat_18 
     
     "Kamu menikmati sarapanmu dengan santai sambil bermain HP."
 
@@ -948,7 +943,7 @@ label day4:
 
     hide day4 pro with dissolve
 
-    call change_day
+    call change_day from _call_change_day_2
 
     pause 2.0
 
@@ -1115,7 +1110,7 @@ label day4:
 
     "Meletakan hp di meja belajar, kamu memutar video di internet untuk menemani sarapanmu."
 
-    call small_eat
+    call small_eat from _call_small_eat_6
 
     "Setelah selesai sarapan, tepatnya pukul 9 lebih kamu mengambil handuk yang ada pada gantungan pakaian dan keluar kamar untuk mandi pagi."
 
@@ -1143,7 +1138,7 @@ label day4:
 
 label day5:
 
-    call change_day
+    call change_day from _call_change_day_3
     pause 2.0
     show screen stats_screen with dissolve
     show screen days_screen with dissolve
@@ -1222,7 +1217,7 @@ label day28:
 
     scene bg black  with fade
 
-    call change_day
+    call change_day from _call_change_day_4
 
     show screen trans_screen with dissolve
     scene bg kos morn with dissolve
@@ -1346,7 +1341,7 @@ label day29:
 
     scene bg black with fade
 
-    call change_day
+    call change_day from _call_change_day_5
 
     show screen trans_screen with dissolve
     scene bg kos morn with dissolve
@@ -1404,7 +1399,7 @@ label day29:
 
 label day30:
 
-    call change_day
+    call change_day from _call_change_day_6
     show screen trans_screen with dissolve
     scene bg kos morn with dissolve
     pause 2.0
@@ -1484,7 +1479,7 @@ label day30:
 
     scene bg black with Dissolve(2.0)
 
-    call stat_change
+    call stat_change from _call_stat_change_1
 
     call screen rangkuman_screen1 with fade
 
@@ -1597,25 +1592,19 @@ label ending:
     scene bg black with Dissolve(3.0)
     # "End"
 
-    call end
+    call end from _call_end
 
 label days:
 
-    call change_day
+    call change_day from _call_change_day_7
 
     if day == 9:
         $taskpti = False
+        jump bangun
+        # call bangun_libur
+
     elif day == 13:
         $taskalpro = False
-    elif day == 22:
-        $taskbasdat = False
-    elif day == 25:
-        $taskweb = False
-        
-        call bangun_libur
-
-    elif day == 13:
-
         show screen trans_screen with dissolve
         scene bg kos morn with dissolve
         pause 2.0
@@ -1729,8 +1718,12 @@ label days:
 
         jump bangun
 
-    elif day == 25:
+    elif day == 22:
+        $taskbasdat = False
+        jump bangun
 
+    elif day == 25:
+        $taskweb = False
         show screen trans_screen with dissolve
         scene bg kos morn with dissolve
         pause 2.0
@@ -1839,6 +1832,9 @@ label sleep:
     scene bg kos night with fade
     pause 2.0
 
+    stop music fadeout 2.0
+    play music kos fadein 1.0 volume 0.3 loop
+
     "Seusai selesai dengan kegiatan malammu, kini kamu sudah berada di atas tempat tidur."
 
     "Memegang hp, kamu memastikan alarm sudah di set pada waktu yang tepat."
@@ -1847,7 +1843,7 @@ label sleep:
 
     #check info baru
 
-    if day == 11 and hima_intro == False:
+    if day == 11 and hima_intro == False and hima == True:
         "Kamu teringat hari ini ada pertemuan pertama untuk pengurus himpunan mahasiswa program studimu yang kamu tidak hadiri."
 
         "Terdapat chat dari [r] yang berisi '[name] ini ada informasi kamu masuk aja di grup ini."
@@ -2065,12 +2061,12 @@ label mandi:
     "Berganti pakaian dan berdandan, bersiap untuk melakukan aktivitas yang akan kamu lakukan siang hari ini."
 
     if day == 27:
-        call change_timephase
+        call change_timephase from _call_change_timephase_43
         jump bocor
 
     elif day == 29:
 
-        call change_timephase
+        call change_timephase from _call_change_timephase_44
 
         scene bg kos morn with fade
 
@@ -2108,7 +2104,7 @@ label mandi:
 
 
     else:
-        call change_timephase
+        call change_timephase from _call_change_timephase_45
         call screen mapUI with dissolve
 
 label bangun:
@@ -2262,7 +2258,7 @@ label change_timephase:
     $ hunger -= 15
 
     show screen stats_changer("change_timephase", 0)
-    call stat_change
+    call stat_change from _call_stat_change_2
 
     return
 
@@ -2283,7 +2279,7 @@ label change_day:
     show screen trans_screen with dissolve
 
     show screen stats_changer("change_day", 0)
-    call stat_change
+    call stat_change from _call_stat_change_3
 
     return
 
@@ -2369,6 +2365,8 @@ label hangout:
     show screen stats_changer("hangout", 0)
 
     "Stat Berubah!!!"
+
+    return
 
 label hima_act:
     $ communityc +=1

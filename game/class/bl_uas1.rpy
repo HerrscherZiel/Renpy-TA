@@ -38,7 +38,7 @@ label belajar_pti_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_pti_1
+            call belajar_pti_1 from _call_belajar_pti_1
 
 label belajar_pti_2:
 
@@ -85,7 +85,7 @@ label belajar_pti_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_pti_2
+            call belajar_pti_2 from _call_belajar_pti_2
 
 label belajar_alpro_1:
 
@@ -124,7 +124,7 @@ label belajar_alpro_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_alpro_1
+            call belajar_alpro_1 from _call_belajar_alpro_1
 
 label belajar_alpro_2:
 
@@ -172,7 +172,7 @@ label belajar_alpro_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_alpro_2
+            call belajar_alpro_2 from _call_belajar_alpro_2
 
 label belajar_de_1:
 
@@ -222,7 +222,7 @@ label belajar_de_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_de_1
+            call belajar_de_1 from _call_belajar_de_1
 
 label belajar_de_2:
 
@@ -270,7 +270,7 @@ label belajar_de_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_de_2
+            call belajar_de_2 from _call_belajar_de_2
 
 label belajar_strukdat_1:
 
@@ -310,7 +310,7 @@ label belajar_strukdat_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_strukdat_1
+            call belajar_strukdat_1 from _call_belajar_strukdat_1
 
 label belajar_strukdat_2:
 
@@ -358,7 +358,7 @@ label belajar_strukdat_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_strukdat_2
+            call belajar_strukdat_2 from _call_belajar_strukdat_2
 
 label belajar_basdat_1:
 
@@ -397,7 +397,7 @@ label belajar_basdat_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_basdat_1
+            call belajar_basdat_1 from _call_belajar_basdat_1
 
 label belajar_basdat_2:
 
@@ -445,7 +445,7 @@ label belajar_basdat_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_basdat_2
+            call belajar_basdat_2 from _call_belajar_basdat_2
 
 label belajar_web_1:
 
@@ -485,7 +485,7 @@ label belajar_web_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_web_1
+            call belajar_web_1 from _call_belajar_web_1
 
 label belajar_web_2:
 
@@ -546,7 +546,7 @@ label belajar_web_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_web_2
+            call belajar_web_2 from _call_belajar_web_2
 
 label belajar_pbo_1:
 
@@ -586,7 +586,7 @@ label belajar_pbo_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_pbo_1
+            call belajar_pbo_1 from _call_belajar_pbo_1
 
 label belajar_pbo_2:
 
@@ -634,7 +634,7 @@ label belajar_pbo_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_pbo_2
+            call belajar_pbo_2 from _call_belajar_pbo_2
 
 label belajar_jarkom_1:
 
@@ -673,7 +673,7 @@ label belajar_jarkom_1:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_jarkom_1
+            call belajar_jarkom_1 from _call_belajar_jarkom_1
 
 label belajar_jarkom_2:
 
@@ -729,7 +729,7 @@ label belajar_jarkom_2:
 
             "Belum, bisa diulaingi sekali lagi?"
 
-            call belajar_jarkom_2
+            call belajar_jarkom_2 from _call_belajar_jarkom_2
 
 #uas bl screen
 
@@ -858,7 +858,7 @@ screen bl_uas_strukdat0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/strukdat-uas/bl_strukdat_0.png"
+        background "images/kelas/strukdat_uas/bl_strukdat_0.png"
 
     imagebutton:
         xpos 1500
@@ -878,7 +878,7 @@ screen bl_uas_strukdat1:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/strukdat-uas/bl_strukdat_1.png"
+        background "images/kelas/strukdat_uas/bl_strukdat_1.png"
 
     imagebutton:
         xpos 1500
@@ -898,7 +898,7 @@ screen bl_uas_basdat0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/basdat-uas/bl_basdat_0.png"
+        background "images/kelas/basdat_uas/bl_basdat_0.png"
 
     imagebutton:
         xpos 1500
@@ -918,7 +918,7 @@ screen bl_uas_basdat1:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/basdat-uas/bl_basdat_1.png"
+        background "images/kelas/basdat_uas/bl_basdat_1.png"
 
     imagebutton:
         xpos 1500
@@ -938,7 +938,7 @@ screen bl_uas_web0:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/web-uas/bl_web_0.png"
+        background "images/kelas/web_uas/bl_web_0.png"
 
     imagebutton:
         xpos 1500
@@ -958,7 +958,7 @@ screen bl_uas_web1:
     frame:
         xsize 1920
         ysize 1080
-        background "images/kelas/web-uas/bl_web_1.png"
+        background "images/kelas/web_uas/bl_web_1.png"
 
     imagebutton:
         xpos 1500

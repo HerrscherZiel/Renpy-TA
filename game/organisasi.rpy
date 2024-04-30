@@ -59,7 +59,7 @@ label first_hima:
 
     "Sebelum pulang ke kos kamu sempat mampir pada suatu warung makan untuk mengisi perutmu."
 
-    call eat
+    call eat from _call_eat_13
 
     "Setelah perutmu terisi, kamar kos merupakan tujuan selanjutnya pada siang hari ini."
 
@@ -67,7 +67,7 @@ label first_hima:
 
     "Kamu melanjutkan perjalanan dan pulang ke kos."
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_39
     call screen mapUI with dissolve
 
 label join_hima:
@@ -426,7 +426,7 @@ label join_hima:
 
             "Kalian berdua menikmati makan siang dengan berbagai candaan sembari mengenal lebih satu sama lain."
 
-            call eat
+            call eat from _call_eat_14
 
             $ trije_fond += 20
 
@@ -470,7 +470,7 @@ label join_hima:
 
             "Memesan satu nasi telur dan es teh, kamu menikmati makan siangmu di warmindo dekat kos tersebut."
 
-            call eat
+            call eat from _call_eat_15
 
             "Menghabiskan makananmu, kamu tidak langsung meninggalkan warmindo."
 
@@ -492,7 +492,7 @@ label join_hima:
 
     "Kamu mengistirahatkan tubuh ditemani dengan angin sepoi-sepoi yang berhembus dari kipas angin."
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_40
     call screen mapUI with dissolve
             #call eat
 
@@ -721,7 +721,7 @@ label penerimaan_hima:
 
             "Sebelum pulang ke kos kamu sempat mampir pada suatu warung makan untuk mengisi perutmu."
 
-            call eat
+            call eat from _call_eat_16
 
             "Setelah perutmu terisi, kamar kos merupakan tujuan selanjutnya pada siang hari ini."
 
@@ -729,7 +729,7 @@ label penerimaan_hima:
 
             "Kamu melanjutkan perjalanan dan pulang ke kos."
 
-            call change_timephase
+            call change_timephase from _call_change_timephase_41
             call screen mapUI with dissolve
 
         "Memilih untuk tidak mengikuti pertemuan pertama himpunan mahasiswa baru":
@@ -788,20 +788,20 @@ label penerimaan_hima:
 
             "Setelah itu [r] mengikuti acara pertemuan pertama himpunan mahasiswa baru sementara dirimu pulang ke kosan."
 
-            call change_timephase
+            call change_timephase from _call_change_timephase_42
             call screen mapUI with dissolve
 
 label hima_1:
     $ sosialc += 1
     "Kamu mengikuti kegiatan organisasimu untuk pertama kali."
 
-    call hima_act
+    call hima_act from _call_hima_act
 
 label hima_2:
     $ sosialc += 1
     "Kamu mengikuti kegiatan organisasimu untuk kedua kalinya."
 
-    call hima_act
+    call hima_act from _call_hima_act_1
 
     
 

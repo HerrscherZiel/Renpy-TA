@@ -73,9 +73,9 @@ label first_kampung:
 
     menu: 
         "Membantu mengambil barang-barang yang terjatuh":
-            call ambil_jatuh
+            call ambil_jatuh from _call_ambil_jatuh
         "Membantu mengeluarkan ban mobil yang jeblos":
-            call mobil_jeblos
+            call mobil_jeblos from _call_mobil_jeblos
 
     scene bg town street 1 with dissolve
     
@@ -302,7 +302,7 @@ label kerja_bakti:
 
     "Matahari yang sudah mulai menyengat ditambah keringat setelah melakukan aktivitas sebelumnya membuatmu harus segera mandi."
 
-    call kerja_bakti_kampung
+    call kerja_bakti_kampung from _call_kerja_bakti_kampung
 
     "Sama seperti waktu berangkat, kamu berjalan pulang menuju kosan sambil mengobrol bersama kawan kosmu."
 
@@ -310,7 +310,7 @@ label kerja_bakti:
 
     "Selesai mandi, kamu bersiap untuk mengisi waktu siang harimu."
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_23
     call screen mapUI with dissolve
 
 
@@ -349,7 +349,7 @@ label choice_kampung_noon:
         "Mencari makan siang":
             jump kamp_noonS1
         
-        "Pergi ke Warmindo untuk sarapan":
+        "Mencuci pakaian kotor":
             jump kamp_noonS2
 
 label choice_kampung_night:
@@ -371,16 +371,16 @@ label choice_kampung_night:
 #morn
 label kamp_mornS1:
 
-    call sport_mornS1
+    call sport_mornS1 from _call_sport_mornS1
     $ olahragac += 1
-    call change_timephase
+    call change_timephase from _call_change_timephase_24
     call screen mapUI with dissolve
 
 label kamp_mornS2:
 
     "Keluar dari kamar, kamu berjalan menuju warmindo yang berada dekat dengan kosan."
     $ makanc += 1
-    call eat
+    call eat from _call_eat_8
 
     if day == 5:
         jump persiapan_kuliah
@@ -392,23 +392,23 @@ label kamp_noonS1:
 
     "Merasa perutmu keroncongan, kamu mencari tempat makan yang ada disekitaran kampung."
     $ makanc += 1
-    call eat
+    call eat from _call_eat_9
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_25
     call screen mapUI with dissolve
 
 label kamp_noonS2:
     $ malasc += 1
     "Merasa capek untuk mencuci pakaian kotormu, kamu berniat untuk melaundrykan semua pakaian kotor yang sudah menumpuk dikeranjang baju."
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_26
     call screen mapUI with dissolve
 #night
 label kamp_nightS1:
 
     "Membawa HPmu kamu pergi menuju warmindo yang ada di dekat kos."
     $ makanc += 1
-    call eat
+    call eat from _call_eat_10
 
     jump sleep
   

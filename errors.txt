@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/audio/bgm.rpy", line 19: 'play' is not a keyword argument or valid child for the screen statement.
-    play music minimart fadein 2 loop
-        ^
+File "game/class/timer.rpy", line 24: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Wed Apr 24 16:02:22 2024
+Sat Apr 27 23:10:42 2024

@@ -11,20 +11,14 @@ label minimart_pertama:
     pause 2.0
 
     show screen days_screen with dissolve
-    
-    show r normal2 at right
-    with dissolve
 
-    r   "[name] ! Itu minimartnya ada di seberang jalan."
+    r normal2 "[name] ! Itu minimartnya ada di seberang jalan."
 
     "Tidak ada 5 menit setelah berjalan dari kampus, terlihat sebuah bangunan bertingkat di seberang jalan."
 
     "Rissa kembali melambai-lambaikan tangannya kepadamu, menyuruhmu untuk mendekat selagi menunggu jalanan sepi."
 
-    show mc normal jacket:
-        xalign 0.2 yalign -0.3
-
-    mc "Dekat juga ya ternyata."
+    mc normal jacket "Dekat juga ya ternyata."
 
     r   "Iya sudah kubilangkan, minimartnya tidak jauh dari kampus."
 
@@ -50,21 +44,15 @@ label minimart_pertama:
 
     "Setelah berada di dalam minimart, kamu melihat berbagai barang yang terpampang di sektor masing-masing."
 
-    show mc normal jacket:
-        xalign 0.2 yalign -0.5
-
-    mc  "Woww, ternyata di dalam sangat luas yaa.."
-
-    show r normal2 at right
-    with dissolve
+    mc  normal jacket "Woww, ternyata di dalam sangat luas yaa.."
     
-    r   "Iya, meskipun luas seperti ini, jika sedang ramai tetap saja penuh."
+    r normal2  "Iya, meskipun luas seperti ini, jika sedang ramai tetap saja penuh."
 
     mc  "Apakah di sini biasanya sering ramai?"
 
     r   "Hahaha, kamu perlu merasakannya sendiri ketika sudah memasuki waktu kuliah normal."
 
-    mc "hmmmm...."
+    mc "Hmmmm...."
 
     r   "Oh ya, kalau begitu aku ke lantai 2 dulu ya, temanku sudah menunggu di sana."
 
@@ -169,23 +157,22 @@ label minimart_pertama:
             show mc normal jacket:
                 xalign 0.2 yalign -0.5
             
-            mc  "Langsung kumakan sekarang saja lah, sudah agak lapar juga."
+            mc normal jacket"Langsung kumakan sekarang saja lah, sudah agak lapar juga."
         
             "Kamu duduk di kursi umum yang berada di pinggir jalan untuk menikmati roti yang dibeli di minimart sebelumnya."
 
             "Kamu memakan roti yang kamu beli!"
             "Stats berubah!"
 
-            call eat
+            call eat from _call_eat_11
             
 
         "Menyimpannya untuk besok pagi.":
 
             $ rotiAwal = True
 
-            show mc normal jacket:
-                xalign 0.2 yalign -0.5
-            mc  "Buat besok sajalah makannya, nanti keburu petang."
+
+            mc normal jacket"Buat besok sajalah makannya, nanti keburu petang."
     
     "Kemudian kamu bergegas ke arah parkiran motor kampus dan segera mengendarai motormu untuk pulang."
 
@@ -330,7 +317,7 @@ label mini3N:
 
     "Seru dalam duniamu sendiri, tak sadar satu cup kopi yang kamu beli sudah habis."
 
-    call drink
+    call drink from _call_drink
 
     "Indikator baterai dari HPmu juga sudah berubah menjadi warna merah. Kamu menutup permainan dan memasukan HPmu ke dalam saku."
 
@@ -493,7 +480,7 @@ label mart_noonS1:
 
     scene bg foodcourt with fade
 
-    call drink
+    call drink from _call_drink_1
 
     "Seru dalam duniamu sendiri, tak sadar satu cup kopi yang kamu beli sudah habis."
 
@@ -518,15 +505,15 @@ label mart_noonS1:
     else:
         pass
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_36
     call screen mapUI with dissolve
 
 label mart_noonS2:
 
     "Teringat ada beberapa barang yang perlu kamu beli, kamu berbelanja kebutuhan yang diperlukan."
-    call small_eat
+    call small_eat from _call_small_eat_4
     $ jajanc += 1
-    call change_timephase
+    call change_timephase from _call_change_timephase_37
     call screen mapUI with dissolve
 
 #night
@@ -534,7 +521,7 @@ label mart_nightS1:
 
     "Membeli camilan"
     $ jajanc += 1
-    call small_eat
+    call small_eat from _call_small_eat_5
 
     jump sleep
 
@@ -542,7 +529,7 @@ label mart_nightS2:
 
     "Membaca pesan dari group Lane, kamu ikut bergabung bersama teman sekelasmu di minimart"
     $ mainc += 1
-    call hangout
+    call hangout from _call_hangout
     $ sosialc += 1
     "Setelah berkumpul cukup lama bersama teman kelasmu, kamu akhirnya memutuskan untuk pulang."
 
@@ -595,32 +582,32 @@ label belajar_1:
 
     r normal2 "Jadi langsung kujelaskan ya kisi-kisinya."
 
-    call belajar_pti_1
+    call belajar_pti_1 from _call_belajar_pti_1_1
 
     r "Kemudian pada pertemuan kedua PTI yang dipelajari adalah:"
 
-    call belajar_pti_2
+    call belajar_pti_2 from _call_belajar_pti_2_1
 
     r normal2 "Kurang lebih itu yang pernah kita pelajari pada mata kuliah pengantar teknologi informasi, 
     sekiranya soal yang keluar untuk uts ada pada esok hari dari materi pelajaran tersebut."
 
     r "Kemudian kita lanjut mengenai materi-materi pada mata kuliah Algoritma Pemrograman."
 
-    call belajar_alpro_1
+    call belajar_alpro_1 from _call_belajar_alpro_1_1
 
     r normal2"Kemudian pada pertemuan kedua Alpro yang dipelajari adalah"
 
-    call belajar_alpro_2
+    call belajar_alpro_2 from _call_belajar_alpro_2_1
 
     r normal2"Itu semua merupakan hal yang sudah kita pelajari pada mata kuliah Alpro, kemudian mata kuliah terakhir yang akan di UTSkan besok adalah Desain Elementer."
 
     r "Berikut materi yang sudah kita terima pada mata kuliah DE pada pertemuan pertama"
 
-    call belajar_de_1
+    call belajar_de_1 from _call_belajar_de_1_1
 
     r normal2"Kemudian pada pertemuan kedua DE yang dipelajari adalah"
 
-    call belajar_de_2
+    call belajar_de_2 from _call_belajar_de_2_1
 
     r normal2"Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Desain Elementer."
 
@@ -688,11 +675,11 @@ label belajar_2:
 
     r "Untuk besok yang pertama ada Struktur Data, jadi pada minggu pertama materi yang kita dapatkan adalah:"
 
-    call belajar_strukdat_1
+    call belajar_strukdat_1 from _call_belajar_strukdat_1_1
 
     r normal2 "Kemudian pada pertemuan kedua Struktur Data yang dipelajari adalah:"
 
-    call belajar_strukdat_2
+    call belajar_strukdat_2 from _call_belajar_strukdat_2_1
 
     r normal2 "Kurang lebih itu yang pernah kita pelajari pada mata kuliah Struktur Data, 
     sekiranya soal yang keluar untuk uts ada pada esok hari dari materi pelajaran tersebut."
@@ -701,21 +688,21 @@ label belajar_2:
 
     r "Minggu pertama pada mata kuliah Basis Data adalah:"
 
-    call belajar_basdat_1
+    call belajar_basdat_1 from _call_belajar_basdat_1_1
 
     r normal2 "Kemudian pada pertemuan kedua Basis Data yang dipelajari adalah:"
 
-    call belajar_basdat_2
+    call belajar_basdat_2 from _call_belajar_basdat_2_1
 
     r normal2 "Itu semua merupakan hal yang sudah kita pelajari pada mata kuliah Basis Data, kemudian mata kuliah terakhir yang akan diujikan besok adalah Pemrograman Web."
 
     r "Berikut materi yang sudah kita terima pada mata kuliah Web pada pertemuan pertama:"
 
-    call belajar_web_1
+    call belajar_web_1 from _call_belajar_web_1_1
 
     r normal2"Kemudian pada pertemuan kedua Web yang dipelajari adalah:"
 
-    call belajar_web_2
+    call belajar_web_2 from _call_belajar_web_2_1
 
     r normal2 "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Pemrograman Web."
 
@@ -782,11 +769,11 @@ label belajar_3:
 
     "Materi untuk minggu pertama pertemuan mata kuliah tersebut adalah sebagai berikut:"
 
-    call belajar_pbo_1
+    call belajar_pbo_1 from _call_belajar_pbo_1_1
 
     "Kemudian pada pertemuan kedua PBO yang dipelajari adalah:"
 
-    call belajar_pbo_2
+    call belajar_pbo_2 from _call_belajar_pbo_2_1
 
     "Selesai membaca materi PBO, kamu sudah menyusul teman-temanmu yang sedang membahas materi mata kuliah yang selanjutnya."
 
@@ -796,11 +783,11 @@ label belajar_3:
 
     r "Materi pada minggu pertama pertemuan mata kuliah Jaringan Komputer adalah:"
 
-    call belajar_jarkom_1
+    call belajar_jarkom_1 from _call_belajar_jarkom_1_1
 
     r normal2 "Kemudian pada pertemuan kedua Jaringan Komputer yang dipelajari adalah:"
 
-    call belajar_jarkom_2
+    call belajar_jarkom_2 from _call_belajar_jarkom_2_1
 
     r normal2 "Kira-kira itu semua yang sudah kita pelajari pada mata kuliah Jaringan Komputer."
 
@@ -1173,7 +1160,7 @@ label belajar_uas2:
     "Setelah berpamitan pada [r] kamu keluar dari minimart dan langsung pulang ke kosan."
 
     $ energy += 10
-    $ fit -= 5
+    $ vit -= 5
     $ public += 5
     $ rissa_fond += 10
     $ hunger += 15
@@ -1315,7 +1302,7 @@ label belajar_uas3:
     jump sleep
 
     $ energy += 10
-    $ fit -= 5
+    $ vit -= 5
     $ public += 5
     $ rissa_fond += 10
     $ hunger += 15
@@ -1367,11 +1354,11 @@ label makan_makan:
 
     "Dari awal hingga akhir acara hanya diisi dengan cerita-cerita teman kelasmu sebagai pelampiasan stress ujian dari beberapa hari lalu."
 
-    call eat
+    call eat from _call_eat_12
 
     "Acara berakhir ketika matahari sudah mulai terbenam."
 
     "Satu persatu temanmu mulai meninggalkan minimart, tidak lama kemudian kamupun ikut menyusul."
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_38
     call screen mapUI with dissolve

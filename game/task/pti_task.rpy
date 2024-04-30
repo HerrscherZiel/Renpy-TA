@@ -1,3 +1,11 @@
+init:
+    $ time2 = 30
+    $ timer_range2 = 30
+    $ timer_jump = 'ptit_done'
+
+# default time2 = 30
+# default timer_range2 = 30
+
 screen pti_task:
 
     frame:
@@ -28,12 +36,12 @@ screen pti_task:
         hover "menuUI/stats/return_hover.png"
         action Hide("pti_task")
 
+
+
 screen pti_prev:
 
     #content
-    $ time = 15
-    $ timer_range = 15
-    $ timer_jump = 'ptit_done'
+
     frame:
         xsize 1200
         ysize 1080
@@ -45,7 +53,7 @@ screen pti_prev:
             spacing 100
             text "Jawab semua pertanyaan dibawah ini sebelum timer habis!" size 36 font "fonts/Montserrat-SemiBoldItalic.ttf"
 
-            textbutton "Mulai" action [Hide("pti_prev"), Show("pti_task1"), ToggleScreen("countdown2")]
+            textbutton "Mulai" action [Hide("pti_prev"), Show("pti_task1"), Show("countdown2")]
 
     imagebutton:
         xpos 70
@@ -53,6 +61,11 @@ screen pti_prev:
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
         action Hide("pti_prev")
+
+label jumpas:
+
+    "loncat"
+
 
 screen pti_task1:
 
@@ -100,7 +113,7 @@ screen pti_task1:
             ypos 740
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_ptiT", a_ptiT+2),Hide('pti_task1'), Show("pti_task2")]
+            action [SetVariable("a_ptiT", a_ptiT+2), SetVariable("application", application + 3), Hide('pti_task1'), Show("pti_task2")]
 
 screen pti_task2:
     
@@ -131,7 +144,7 @@ screen pti_task2:
             ypos 740
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_ptiT", a_ptiT+2),Hide('pti_task2'), Show("pti_task3")]
+            action [SetVariable("a_ptiT", a_ptiT+2), SetVariable("application", application + 3), Hide('pti_task2'), Show("pti_task3")]
         
         #C
         imagebutton:
@@ -194,7 +207,7 @@ screen pti_task3:
             ypos 740
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_ptiT", a_ptiT+2), Hide('pti_task3'), Show("pti_task4")]
+            action [SetVariable("a_ptiT", a_ptiT+2), SetVariable("application", application + 3), Hide('pti_task3'), Show("pti_task4")]
 
 screen pti_task4:
     
@@ -225,7 +238,7 @@ screen pti_task4:
             ypos 740
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_ptiT", a_ptiT+2), Hide('pti_task4'), Show("pti_task5")]
+            action [SetVariable("a_ptiT", a_ptiT+2), SetVariable("application", application + 3), Hide('pti_task4'), Show("pti_task5")]
         
         #C
         imagebutton:
@@ -264,7 +277,7 @@ screen pti_task5:
             ypos 570
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_ptiT", a_ptiT+2),Hide('pti_task5'), Show("ptit_done")]
+            action [SetVariable("a_ptiT", a_ptiT+2),SetVariable("application", application + 3), Hide('pti_task5'), Show("ptit_done")]
 
         #B
         imagebutton:
@@ -316,4 +329,4 @@ screen ptit_done:
         ypos 950
         idle "menuUI/stats/return_idle.png"
         hover "menuUI/stats/return_hover.png"
-        action [Hide("ptit_done"), Hide("pti_task")]    
+        action [Hide("ptit_done"), Hide("pti_task"), Hide("pti_task1"), Hide("pti_task2"), Hide("pti_task3"), Hide("pti_task4"), Hide("pti_task5")]    

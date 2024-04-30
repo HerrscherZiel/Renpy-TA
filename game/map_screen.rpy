@@ -283,23 +283,23 @@ label go_to_minimart:
     menu:
         "Pergi ke minimart":
             $ placeKeys = 2
-            play music minimart loop
+            play music minimart loop volume 0.3
             if firstMart == True:
                 $ maps = False
-                call change_timephase
+                call change_timephase from _call_change_timephase_28
                 show screen trans_screen with dissolve             
                 jump minimart_pertama
 
             elif KRS3 == False and day ==3:
                 $ maps = False
-                call change_timephase
+                call change_timephase from _call_change_timephase_29
                 show screen trans_screen with dissolve
                 $ locmin += 1              
                 jump mini3N
 
             elif day == 4:
                 $ maps = False
-                call change_timephase
+                call change_timephase from _call_change_timephase_30
                 show screen trans_screen with dissolve
                 $ locmin += 1               
                 jump mart_noonS1
@@ -328,17 +328,17 @@ label go_to_kos:
         "Pergi ke Kos":
             $ placeKeys = 3
             stop music fadeout 2.0
-            play music kos loop
+            play music kos loop volume 0.3
 
             if firstKos == True:
                 $ maps = False
-                call change_timephase
+                call change_timephase from _call_change_timephase_31
                 show screen trans_screen with dissolve
                 jump first_kos
 
             elif day == 4:
                 $ maps = False
-                call change_timephase
+                call change_timephase from _call_change_timephase_32
                 show screen trans_screen with dissolve
                 $ lockos += 1
                 jump kos_dayS1
@@ -365,8 +365,9 @@ label go_to_kampung:
     $ maps = True
     menu:
         "Pergi ke kampung?":
+            $ placeKeys = 4
             stop music fadeout 2.0
-            play music kampung loop
+            play music kampung loop volume 0.3
             if firstKampung == True and day < 4:
                 $ maps = False
                 show screen trans_screen with dissolve
@@ -405,7 +406,7 @@ label go_do_sport:
 
             if day == 4:
                 $ maps = False
-                call change_timephase
+                call change_timephase from _call_change_timephase_33
                 show screen trans_screen with dissolve
                 jump sport_dayS1
             
@@ -424,12 +425,12 @@ label go_to_library:
         "Pergi ke Perpustakaan":
             $ placeKeys = 6
             stop music fadeout 2.0   
-            play music library loop
+            play music library loop volume 0.3
 
-            if KRS3 == True:
+            if KRS3 == True and day == 3:
                 $ maps = False
                 $ loclib +=1
-                call change_timephase
+                call change_timephase from _call_change_timephase_34
                 show screen trans_screen with dissolve
                 $ loclibs +=1
                 jump krs
@@ -453,7 +454,7 @@ label go_to_kota:
         "Pergi ke Kota":
             $ placeKeys = 7
             stop music fadeout 2.0
-            play music kota loop
+            play music kota loop volume 0.3
             
             $ maps = False
             $ lockota += 1
@@ -479,11 +480,11 @@ label go_to_campus:
         "Pergi ke Kampus":
             $ placeKeys = 8         
             stop music fadeout 2.0
-            play music kampus loop
+            play music kampus loop volume 0.3
 
             if firstKampus == True and day <5:
                 $ maps = False
-                call change_timephase
+                call change_timephase from _call_change_timephase_35
                 show screen trans_screen with dissolve
                 jump first_kampus
 

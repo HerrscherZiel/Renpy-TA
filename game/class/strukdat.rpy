@@ -91,8 +91,8 @@ label strukdat_1:
 
     "Setelah [bn] pergi meninggalkan ruang kelas, kamu dan teman sekelasmu mengemas barang-barang dan berpindah pada ruang kelas berikutnya."
 
-    call attend_strukdat
-    call attend_class
+    call attend_strukdat from _call_attend_strukdat
+    call attend_class from _call_attend_class_24
     
     jump basdat_1
 
@@ -100,7 +100,7 @@ label strukdat_2:
 
     scene bg campus class with dissolve
 
-    call awal_kelas
+    call awal_kelas from _call_awal_kelas_5
 
     bn normal "Selamat pagi teman-teman, semoga hari ini kalian dalam keadaan baik-baik saja."
 
@@ -180,8 +180,8 @@ label strukdat_2:
 
     "Masih terdapat 2 kelas lain, kini mahasiswa sudah mulai keluar dari ruang kelas dan berpindah pada kelas selanjutnya."
 
-    call attend_strukdat
-    call attend_class
+    call attend_strukdat from _call_attend_strukdat_1
+    call attend_class from _call_attend_class_25
 
     jump basdat_2
 
@@ -503,8 +503,8 @@ label strukdat_3:
 
     "Masih terdapat 2 kelas lain pada hari ini, mahasiswa mulai keluar dari ruang kelas dan berpindah ke kelas selanjutnya."
 
-    call attend_strukdat
-    call attend_class
+    call attend_strukdat from _call_attend_strukdat_2
+    call attend_class from _call_attend_class_26
 
     jump basdat_3
 
@@ -774,8 +774,8 @@ label strukdat_4:
 
     "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. Kamu keluar dari ruangan kelas dan bersiap untuk kelas berikutnya."
 
-    call attend_strukdat
-    call attend_class
+    call attend_strukdat from _call_attend_strukdat_3
+    call attend_class from _call_attend_class_27
 
     jump basdat_4
 
@@ -873,15 +873,15 @@ label uas_strukdat:
 
     "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
 
-    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
 
-    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 45 detik{/i})"
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
-    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+    "({i}Ketika waktu 45 detik habis, soal akan hilang dari layar{/i})"
 
-    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
 
-    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
 
     "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 

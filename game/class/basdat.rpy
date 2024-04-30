@@ -93,10 +93,10 @@ label basdat_1:
 
     "Tanpa pikir panjang kamu mengemas barang-barangmu dan keluar dari kelas."
 
-    call attend_basdat
-    call attend_class
+    call attend_basdat from _call_attend_basdat
+    call attend_class from _call_attend_class_4
 
-    call istirahat
+    call istirahat from _call_istirahat_4
 
     jump web_1
 
@@ -104,7 +104,7 @@ label basdat_2:
 
     scene bg campus class with dissolve
 
-    call awal_kelas
+    call awal_kelas from _call_awal_kelas
 
     scene bg campus class with fade
 
@@ -196,10 +196,10 @@ label basdat_2:
 
     "Kelas selesai dan kini memasuki waktu istirahat sebelum kelas selanjutnya dimulai."
 
-    call attend_basdat
-    call attend_class
+    call attend_basdat from _call_attend_basdat_1
+    call attend_class from _call_attend_class_5
 
-    call istirahat
+    call istirahat from _call_istirahat_5
 
     jump web_2
 
@@ -330,7 +330,7 @@ label uts_basdat:
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari menunggu temanmu yang lain selesai menyelesaikan ujian mereka."
 
-    call istirahat
+    call istirahat from _call_istirahat_6
     jump uts_web
 
 label basdat_3:
@@ -506,7 +506,7 @@ label basdat_3:
 
     $taskbasdat = True
 
-    call n_task
+    call n_task from _call_n_task_1
 
     pa normal "Terimakasih teman-teman sudah aktif dalam pertemuan kali ini."
 
@@ -520,10 +520,10 @@ label basdat_3:
 
     "Kelas selesai dan kini memasuki waktu istirahat sebelum kelas selanjutnya dimulai."
 
-    call attend_basdat
-    call attend_class
+    call attend_basdat from _call_attend_basdat_2
+    call attend_class from _call_attend_class_6
 
-    call istirahat
+    call istirahat from _call_istirahat_7
 
     jump web_3
 
@@ -675,10 +675,10 @@ label basdat_4:
 
     "Kelas selesai dan kini memasuki waktu istirahat sebelum kelas selanjutnya dimulai."
 
-    call attend_basdat
-    call attend_class
+    call attend_basdat from _call_attend_basdat_3
+    call attend_class from _call_attend_class_7
 
-    call istirahat
+    call istirahat from _call_istirahat_8
 
     jump web_4
 
@@ -738,21 +738,21 @@ label uas_basdat:
 
     "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
 
-    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
 
-    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 90 detik{/i})"
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
-    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+    "({i}Ketika waktu 45 detik habis, soal akan hilang dari layar{/i})"
 
-    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
 
-    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
 
-    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+    "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 
-    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+    "({i}Perlu diketahui UAS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
 
-    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+    "({i}Soal UAS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
 
     "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
 
@@ -971,7 +971,7 @@ label uas_basdat:
 
         pause 1.5
 
-        call istirahat_uas
+        call istirahat_uas from _call_istirahat_uas_1
 
         jump uas_web
 

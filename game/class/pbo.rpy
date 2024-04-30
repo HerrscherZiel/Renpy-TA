@@ -11,7 +11,7 @@ label pbo_1:
 
     scene bg campus class with dissolve    
 
-    call awal_kelas
+    call awal_kelas from _call_awal_kelas_3
 
     pa normal "Selamat pagi teman-teman, hari ini kita bertemu lagi dengan saya dalam mata kuliah yang berbeda."
 
@@ -100,8 +100,8 @@ label pbo_1:
 
     "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk kelas berikutnya."
 
-    call attend_pbo
-    call attend_class
+    call attend_pbo from _call_attend_pbo
+    call attend_class from _call_attend_class_16
     jump jarkom_1
 
 label pbo_2:
@@ -110,7 +110,7 @@ label pbo_2:
 
     scene bg campus class with dissolve
 
-    call awal_kelas
+    call awal_kelas from _call_awal_kelas_4
 
     scene bg campus class with fade
 
@@ -195,8 +195,8 @@ label pbo_2:
 
     "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk kelas berikutnya."
 
-    call attend_pbo
-    call attend_class
+    call attend_pbo from _call_attend_pbo_1
+    call attend_class from _call_attend_class_17
 
     jump jarkom_2
 
@@ -309,7 +309,7 @@ label uts_pbo:
     menu:
         "A. Kelas yang diwarisi dapat memiliki atribut yang sama dengan yang mewarisi.":
             "A. Kelas yang diwarisi dapat memiliki atribut yang sama dengan yang mewarisi."
-        "B. Kelas yang mewarisi menurunkan atribut yang kepada kelas yang diwarisi.":
+        "B. Kelas yang mewarisi menurunkan atribut yang sama kepada kelas yang diwarisi.":
             "B. Kelas yang mewarisi menurunkan atribut yang kepada kelas yang diwarisi."
         "C. Prinsip pewarisan merupakan prinsip yang berbentuk hirarki.":
             "C. Prinsip pewarisan merupakan prinsip yang berbentuk hirarki."
@@ -465,8 +465,8 @@ label pbo_3:
 
     "Setelah selesai mengemas barang-barangmu, kamu meninggalkan ruang kelas dan bersiap untuk kelas berikutnya."
 
-    call attend_pbo
-    call attend_class
+    call attend_pbo from _call_attend_pbo_2
+    call attend_class from _call_attend_class_18
     jump jarkom_3
 
 label pbo_4:
@@ -602,8 +602,8 @@ label pbo_4:
 
     "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. Kamu keluar dari ruangan kelas dan melanjutkan aktivitasmu berikutnya."
 
-    call attend_pbo
-    call attend_class
+    call attend_pbo from _call_attend_pbo_3
+    call attend_class from _call_attend_class_19
     jump jarkom_4
 
 label uas_pbo:
@@ -684,21 +684,21 @@ label uas_pbo:
 
     "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
 
-    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
 
-    "({i}Setiap pertanyaan akan ditampilkan dan akan ditampilkan selama 45 detik{/i})"
+    "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
-    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+    "({i}Ketika waktu 45 detik habis, soal akan hilang dari layar{/i})"
 
-    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya.{/i})"
+    "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
 
-    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal.{/i})"
+    "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
 
-    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+    "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 
-    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+    "({i}Perlu diketahui UAS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
 
-    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+    "({i}Soal UAS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
 
     "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
 

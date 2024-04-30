@@ -47,7 +47,7 @@ label istirahat_1:
 
     scene bg canteen with fade
 
-    call small_eat
+    call small_eat from _call_small_eat_3
 
     $vit += 10
 
@@ -145,10 +145,10 @@ label de_1:
 
     "Brummmm"
 
-    call attend_de
-    call attend_class
+    call attend_de from _call_attend_de
+    call attend_class from _call_attend_class_8
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_8
     call screen mapUI
 
 label de_2:
@@ -223,10 +223,10 @@ label de_2:
 
     "Setelah mengemas barang-barang dan mengobrol untuk sebentar bersama teman sekelasmu, kamupun meninggalkan ruangan untuk pulang."
 
-    call attend_de
-    call attend_class
+    call attend_de from _call_attend_de_1
+    call attend_class from _call_attend_class_9
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_9
     call screen mapUI
 
 label uts_de:
@@ -353,8 +353,8 @@ label uts_de:
     "Setelah mengobrol dengan teman-temanmu untuk beberapa menit, kamu memutuskan untuk pulang ke kosan."
 
     "Istirahat merupakan hal yang kamu perlukan saat ini. Setelah berpamitan dengan teman-temanmu kamu meninggalkan kampus."
-
-    call change_timephase
+    $application += 7
+    call change_timephase from _call_change_timephase_10
     call screen mapUI
 
 label de_3:
@@ -488,10 +488,10 @@ label de_3:
 
     "Kelas ditutup dan mahasiswa mulai keluar dari ruang kelas. Tidak ada kelas lagi siang hari ini, pertanda sudah waktunya dirimu untuk pulang."
 
-    call attend_de
-    call attend_class
+    call attend_de from _call_attend_de_2
+    call attend_class from _call_attend_class_10
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_11
     call screen mapUI
 
 label de_4:
@@ -733,10 +733,10 @@ label de_4:
 
     "Dengan begitu kelas ditutup dan pembelajaran untuk hari ini telah usai. Kamu keluar dari ruangan kelas dan melanjutkan aktivitasmu berikutnya."
 
-    call attend_de
-    call attend_class
+    call attend_de from _call_attend_de_3
+    call attend_class from _call_attend_class_11
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_12
     call screen mapUI
 
 label uas_de:
@@ -787,21 +787,21 @@ label uas_de:
 
     "Membuka lembar soal ujian, terdapat beberapa panduan pengerjaan soal pada bagian atas lembar. Kamu menyempatkan diri untuk membaca beberapa panduan pengerjaan tersebut."
 
-    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian{/i})"
+    "({i}Ketika {b}UAS{/b} terdapat 5 soal pilihan ganda yang harus dikerjakan untuk menyelesaikan ujian)"
 
     "({i}Setiap pertanyaan akan ditampilkan dan akan muncul dalam waktu 45 detik{/i})"
 
-    "({i}Ketika waktu 90 detik habis, soal akan hilang dari layar{/i})"
+    "({i}Ketika waktu 45 detik habis, soal akan hilang dari layar{/i})"
 
     "({i}Setelah menjawab pertanyaan, akan langsung menuju pertanyaan berikutnya{/i})"
 
     "({i}Jawaban tidak bisa diubah dan Soal akan ditampilkan secara urut berdasarkan nomor soal{/i})"
 
-    "({i}Setelah pemain menjawab nomor terakhir, maka uts akan berakhir.{/i})"
+    "({i}Setelah pemain menjawab nomor terakhir, maka UAS akan berakhir.{/i})"
 
-    "({i}Perlu diketahui UTS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
+    "({i}Perlu diketahui UAS pada kampus dapat dilaksanakan dengan berbagai macam cara, dengan cara ujian umumnya mahasiswa akan menjawab soal yang diberikan dalam batas waktu tertentu.{/i})"
 
-    "({i}Soal UTS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
+    "({i}Soal UAS seringkali berbentuk uraian dan penilaiannya tergantung dari masing-masing dosen pengajar.{/i})"
 
     "Selesai membaca panduan pengerjaan pada lembar soal, kamu lalu bersiap menjawab soal-soal ujian yang ada."
 
@@ -1020,8 +1020,8 @@ label uas_de:
         "Setelah menjalani 3 ujian akhir, ujian hari pertama telah usai, kini tersisa dua hari ujian lagi sebelum minggu ujian selesai."
 
         "Kamu bersegera untuk pulang untuk berisitirahat di kosan."
-
-        call change_timephase
+        $application += 7
+        call change_timephase from _call_change_timephase_13
         call screen mapUI
 
 label attend_de:

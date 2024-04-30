@@ -38,10 +38,10 @@ label first_kos:
         linear 0.8 xalign 0.8
         ease 50
 
-    show mc normal jacket:
-        xalign 0.2 yalign -0.3
+    # show mc normal jacket:
+    #     xalign 0.2 yalign -0.3
 
-    mc "Sebelum memulai kegiatan perkuliahan, kalian nantinya harus melakukan pengambilan SKS terlebih dahulu setiap awal semesternya."
+    mc normal jacket "Sebelum memulai kegiatan perkuliahan, kalian nantinya harus melakukan pengambilan SKS terlebih dahulu setiap awal semesternya."
 
     mc  "Dalam pengambilan SKS nantinya kalian akan memilih kode mata kuliah yang akan kalian dapatkan selama satu semester."
 
@@ -118,7 +118,7 @@ label kos_krs3:
 
         scene bg black with dissolve
 
-        call change_timephase
+        call change_timephase from _call_change_timephase
         show screen trans_screen with dissolve
 
         scene bg kos night with fade
@@ -166,7 +166,7 @@ label kos_krs3:
 
         "Video yang diputar pada Utube menjadi teman yang menemaniw makan malammu."
 
-        call eat
+        call eat from _call_eat
         show screen stats_changer("eat", 0)
 
         "Merasa santai karena sudah melakukan kewajiban Pengisian KRS, kamu berniat untuk menikmati malammu dengan menonton film semalaman."
@@ -201,7 +201,7 @@ label kos_krs3:
 
         "Tidak memakan waktu yang lama untuk tertidur dengan pulas."
 
-        call change_timephase
+        call change_timephase from _call_change_timephase_1
         pause 1.0
         scene bg kos night with fade
         pause 1.0
@@ -284,7 +284,7 @@ label kos_krs4:
 
     scene bg kos morn with dissolve
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_2
 
     show screen trans_screen with dissolve
 
@@ -522,7 +522,7 @@ label kos_krs4:
 
 label kos_krs4_night:
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_3
 
     $ placeKeys = 3 
 
@@ -651,7 +651,7 @@ label kos_krs4_night:
 
     "Lama menatapi langit tidak terasa es kopi yang ada di bungkus plastik yang kamu pegang sudah habis. Badanmu juga sudah mulai merasakan dinginnya malam di kota yang baru ini."
 
-    call eat
+    call eat from _call_eat_1
     
     "Membuang sampah pada tempat sampah yang ada di depan kos, kamu kemudian kembali ke dalam kamar kos."
 
@@ -677,6 +677,10 @@ label persiapan_kuliah:
     show screen trans_screen
     scene bg kos morn with fade
     pause 2.0
+
+    stop music fadeout 2.0
+
+    play music kos loop
 
     "Setelah menyelesaikan aktivitas pada pagi harimu, sekarang sudah waktunya untuk dirimu mempersiapkan diri sebelum kuliah."
     
@@ -731,6 +735,9 @@ label persiapan_kuliah:
 
     scene bg campus parking lot with fade
     $ placeKeys = 8
+
+    stop music fadeout 1.5
+    play music kampus loop volume 0.4 fadein 0.5
 
     "Sekitar 10 menit mengendarai sepeda motormu, kamu telah sampai di parkiran motor yang ada di area kampus."
 
@@ -792,7 +799,7 @@ label kos_d5N:
 
     scene bg black with fade
 
-    call change_timephase
+    call change_timephase from _call_change_timephase_4
 
     call screen trans_screen with dissolve
 
@@ -957,7 +964,7 @@ label kos_mornS1:
 
     "Pada akhirnya kamu hanya menghabiskan sisa waktu di siang harimu dengan kembali tertidur pulas."
     $ malasc += 1
-    call nap
+    call nap from _call_nap
 
     "Tidak melakukan hal produktif seperti yang kamu inginkan. Tapi paling tidak, kamu telah menambah energi untuk melakukan kegiatan selanjutnya."
 
@@ -1055,7 +1062,7 @@ label kos_dayS1:
 
     "Pada akhirnya kamu hanya menghabiskan sisa waktu di siang harimu dengan kembali tertidur pulas."
     $ tidurc += 1
-    call nap
+    call nap from _call_nap_1
 
     "Tidak melakukan hal produktif seperti yang kamu inginkan. Tapi paling tidak, kamu telah menambah energi untuk melakukan kegiatan selanjutnya."
 
@@ -1097,7 +1104,7 @@ label kos_nightS1:
     $ malasc += 1
     $ tidurc += 1
 
-    call nap
+    call nap from _call_nap_2
 
     jump sleep
 
@@ -1106,7 +1113,7 @@ label kos_nightS2:
     "Kamu memutuskan untuk menikmati angin malam(beli makan asongan) duduk di depan kos"
     $ jajanc += 1
     $ mainc += 1
-    call small_eat
+    call small_eat from _call_small_eat
 
     jump sleep
 
@@ -1121,7 +1128,7 @@ label rebahan:
     scene bg kos morn with fade
 
     "Tidak ada aktivitas yang kamu lakukan pada siang hari."
-    call nap
+    call nap from _call_nap_3
     pause 2.0
 
     "Kamu hanya merebahkan tubuhmu dan menghabiskan waktu dengan beristirahat."
@@ -1131,7 +1138,7 @@ label rebahan:
 label day29_night:
 
     $placeKeys = 3
-    call change_timephase
+    call change_timephase from _call_change_timephase_5
     show screen trans_screen with dissolve
     scene bg kos night with fade
     pause 2.0
@@ -1258,7 +1265,7 @@ label day29_night:
 
     scene bg kos night with fade
 
-    call eat
+    call eat from _call_eat_2
 
     "Sekitar 40 menit berlalu, kini kamu sudah berada di area teras depan kosanmu bersama [k]."
 

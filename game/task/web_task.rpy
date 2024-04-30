@@ -1,4 +1,7 @@
-
+init:
+    $ time3 = 30
+    $ timer_range3 = 30
+    $ timer_jump = 'ptit_done'
 
 
 screen web_task:
@@ -39,16 +42,14 @@ screen web_prev:
         xsize 1200
         ysize 1080
         background "trivia/menu/desc_layer.png"
-        $ time = 60
-        $ timer_range = 60
-        $ timer_jump = 'web_task2'
+
         vbox:
             xpos 350
             ypos 250
             spacing 100
             text "Jawab semua pertanyaan dibawah ini sebelum timer habis!" size 36 font "fonts/Montserrat-SemiBoldItalic.ttf"
 
-            textbutton "Mulai" action [Hide("web_prev"), Show("web_task1"), Show('countdown2')]
+            textbutton "Mulai" action [Hide("web_prev"), Show("web_task1"), Show('countdown3')]
 
     imagebutton:
         xpos 70
@@ -79,7 +80,7 @@ screen web_task1:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task1'), Show("web_task2")]
+            action [SetVariable("a_webT", a_webT+2), SetVariable("application", application + 1),  Hide('web_task1'), Show("web_task2")]
 
         #B
         imagebutton:
@@ -109,7 +110,7 @@ screen web_task2:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task2'), Show("web_task3")]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 1),  Hide('web_task2'), Show("web_task3")]
 
         #B
         imagebutton:
@@ -119,7 +120,6 @@ screen web_task2:
             hover "task/radio_hover.png"
             action [Hide('web_task2'), Show("web_task3")]
         
-
 screen web_task3:
     
     #content
@@ -148,8 +148,7 @@ screen web_task3:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task3'), Show("web_task4")]
-        
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 1),  Hide('web_task3'), Show("web_task4")]
 
 screen web_task4:
     
@@ -171,7 +170,7 @@ screen web_task4:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task4'), Show("web_task5")]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 1),  Hide('web_task4'), Show("web_task5")]
 
         #B
         imagebutton:
@@ -210,7 +209,7 @@ screen web_task5:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task5'), Show("web_task6")]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 1),  Hide('web_task5'), Show("web_task6")]
 
 screen web_task6:
     
@@ -232,7 +231,7 @@ screen web_task6:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task6'), Show("web_task7")]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 1),  Hide('web_task6'), Show("web_task7")]
 
         #B
         imagebutton:
@@ -270,7 +269,7 @@ screen web_task7:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task7'), Show("web_task8")]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 1),  Hide('web_task7'), Show("web_task8")]
 
 screen web_task8:
     
@@ -300,7 +299,7 @@ screen web_task8:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task8'), Show("web_task9")]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 1),  Hide('web_task8'), Show("web_task9")]
 
 screen web_task9:
     
@@ -330,7 +329,7 @@ screen web_task9:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task9'), Show("web_task10")]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 3),  Hide('web_task9'), Show("web_task10")]
 
 screen web_task10:
     
@@ -352,7 +351,7 @@ screen web_task10:
             ypos 520
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [SetVariable("a_webT", a_webT+2), Hide('web_task10'), Show("web_done"), Hide('countdown2')]
+            action [SetVariable("a_webT", a_webT+2),  SetVariable("application", application + 4),  Hide('web_task10'), Show("web_done"), Hide('countdown2')]
 
         #B
         imagebutton:

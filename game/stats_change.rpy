@@ -102,6 +102,12 @@ label stat_change:
             $ weaks += 1
             $ weakcount = 6
 
+    if public >= 100:
+        $ public = 100
+
+    if community >= 100:
+        $ community = 100
+
 #friend
     if rissa_fond >= 30 and rissa_fond < 60:
         $ kenalan +=1

@@ -210,3 +210,9 @@ screen gallery():
 #                 add g.make_button(item.name, item.thumb, idle_border="gallery_idle_overlay", xalign=0.5, yalign=0.5)
 #             for i in range(end - start + 1, max_page):
 #                 null
+
+
+#images copyright
+#canteen Photo by <a href="https://unsplash.com/@anhvygor?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Anh Vy</a> on <a href="https://unsplash.com/photos/assorted-foods-on-tray-display-I0aBAeof-nk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+#rumah makan Photo by <a href="https://unsplash.com/@innasafa?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Inna Safa</a> on <a href="https://unsplash.com/photos/a-restaurant-with-tables-and-chairs-and-a-tree-in-the-middle-of-the-room-rAGCUafRVM4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+#bioskop dalam Image by <a href="https://pixabay.com/users/derks24-5892478/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2502213">Alfred Derks</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2502213">Pixabay</a>
