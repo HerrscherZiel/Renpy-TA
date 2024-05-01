@@ -307,7 +307,15 @@ label uts_pti:
     "Di luar ruangan, kamu dan temanmu yang telah selesai mengerjakan UTS Pengantar Teknologi Informasi sempat membahas mengenai jawaban dari masing-masing soal yang ada."
 
     "Lalu sembari menunggu mahasiswa lain selesai mengerjakan dan UTS mata kuliah berikutnya dilakukan kamu mengobrol santai dan membaca materi dari mata kuliah yang akan di UTSkan berikutnya."
-
+    if a_ptiTS < 50:
+        $ knowledge+=1
+        $ practice+=1
+    elif a_ptiTS < 81:
+        $ knowledge+=2
+        $ practice+=2
+    else:
+        $ knowledge+=3
+        $ practice+=3
     jump uts_alpro
 
 label pti_3:
@@ -905,7 +913,15 @@ label uas_pti:
     hide screen ptias_5 with dissolve
 
     label end_pti:
-
+        if a_ptiAS*4 < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_ptiAS*4 < 81:
+            $ knowledge+=3
+            $ practice+=3
+        else:
+            $ knowledge+=4
+            $ practice+=4
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
         "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."

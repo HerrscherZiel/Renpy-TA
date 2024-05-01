@@ -58,6 +58,14 @@ init python:
     gallery.condition("persistent.edidamancg")
 
     # $ persistent.kaga_unlocked = True
+image cg_kutubuku = "ed/ed_kutu.png"
+image cd_nolife = "rangkuman/no_life.png"
+image cd_antikupu = "rangkuman/anti_kupu.png"
+image cd_bagaikuda = "rangkuman/bagai_kuda.png" 
+image cd_sehatno = "rangkuman/sehat_no.png"
+image cd_badend = "rangkuman/bad_end.png"
+image cd_normies = "rangkuman/normies.png"
+image cd_idaman = "rangkuman/idaman.png" 
 
 screen gallery():
     tag menu

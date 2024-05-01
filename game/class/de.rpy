@@ -354,6 +354,15 @@ label uts_de:
 
     "Istirahat merupakan hal yang kamu perlukan saat ini. Setelah berpamitan dengan teman-temanmu kamu meninggalkan kampus."
     $application += 7
+    if a_deTS < 50:
+        $ knowledge+=1
+        $ practice+=1
+    elif a_deTS < 81:
+        $ knowledge+=2
+        $ practice+=2
+    else:
+        $ knowledge+=3
+        $ practice+=3
     call change_timephase from _call_change_timephase_10
     call screen mapUI
 
@@ -1006,6 +1015,16 @@ label uas_de:
     hide screen deas_5 with dissolve
 
     label end_de:
+
+        if a_deAS*4 < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_deAS*4 < 81:
+            $ knowledge+=3
+            $ practice+=3
+        else:
+            $ knowledge+=4
+            $ practice+=4
 
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 

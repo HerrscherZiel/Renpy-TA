@@ -430,7 +430,7 @@ screen ending_page:
                         idle "rangkuman/no_life.png"
                         action NullAction()
                 #mid low low
-                elif academic <70 and academic >= 40 and social < 40 and health < 40:
+                elif academic <70 and academic >= 50 and social < 40 and health < 40:
                     $ ednormies = True 
                     imagebutton:
                         ypos 120

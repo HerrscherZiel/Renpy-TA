@@ -376,6 +376,15 @@ label uts_web:
 
     "Setelah menyalakan mesin motor, kamu langsung mengendarainya menuju kosan."
     $application += 7
+    if a_webTS < 50:
+        $ knowledge+=1
+        $ practice+=1
+    elif a_webTS < 81:
+        $ knowledge+=2
+        $ practice+=2
+    else:
+        $ knowledge+=3
+        $ practice+=3
     call change_timephase from _call_change_timephase_19
     call screen mapUI
 
@@ -941,6 +950,15 @@ label uas_web:
 
     label end_web:
         $application += 7
+        if a_webAS*4 < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_webAS*4 < 81:
+            $ knowledge+=3
+            $ practice+=3
+        else:
+            $ knowledge+=4
+            $ practice+=4      
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
         "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."

@@ -29,13 +29,18 @@ screen characters(x):
             xsize 1920
             ysize 1080
             background "trivia/menu/desc_layer.png"
-
-            vbox:
-                xpos 780
-                ypos 430
-                spacing 10
-                textbutton "MC" action NullAction()
-                image "menuUI/pass.png"
+            
+            hbox:
+                vbox:
+                    xpos 780
+                    ypos 430
+                    spacing 10
+                    textbutton "Main Characters" action NullAction() hovered tt.Action("Tokoh utama dalam gim, seorang pelajar dari luar kota yang baru pertama kali merantau.")
+                    image "char/side mc normal jacket.png"
+                vbox:
+                    xpos 900        
+                    ypos 430
+                    image "char/mc normal jacket trivia.png"
 
     if x == 2:
 
@@ -44,12 +49,17 @@ screen characters(x):
             ysize 1080
             background "trivia/menu/desc_layer.png"
 
-            vbox:
-                xpos 780
-                ypos 430
-                spacing 10
-                textbutton "Rissa" action NullAction()
-                image "menuUI/today.png"
+            hbox:
+                vbox:
+                    xpos 780
+                    ypos 430
+                    spacing 10
+                    textbutton "Clarissa Rossaine" action NullAction() hovered tt.Action("Teman tokoh utama, seorang sosok pemimpin dalam kelas dan seorang teman yang baik.")
+                    image "char/side r normal2.png"
+                vbox:
+                    xpos 900        
+                    ypos 430
+                    image "char/r normal2 trivia.png"
 
     if x == 3:
 
@@ -58,12 +68,17 @@ screen characters(x):
             ysize 1080
             background "trivia/menu/desc_layer.png"
 
-            vbox:
-                xpos 780
-                ypos 430
-                spacing 10
-                textbutton "Pak Andy" action NullAction()
-                image "menuUI/today.png"
+            hbox:
+                vbox:
+                    xpos 780
+                    ypos 430
+                    spacing 10
+                    textbutton "Andika Raharja" action NullAction() hovered tt.Action("Seorang dosen pengajar pada kampus dimana tokoh utama berkuliah, sering dan mudah bercanda dengan mahasiswa.")
+                    image "char/side pa normal.png"
+                vbox:
+                    xpos 900        
+                    ypos 430
+                    image "char/pa normal trivia.png"
 
     if x == 4:
 
@@ -76,8 +91,8 @@ screen characters(x):
                 xpos 780
                 ypos 430
                 spacing 10
-                textbutton "Bu Nira" action NullAction()
-                image "menuUI/today.png"
+                textbutton "Madelyn Lanira" action NullAction() hovered tt.Action("Seorang dosen pengajar pada kampus dimana tokoh utama berkuliah, dosen yang baik hati dan dihormati oleh banyak mahasiswa.")
+                image "char/side bn normal.png"
 
     if x == 5:
 
@@ -90,8 +105,8 @@ screen characters(x):
                 xpos 780
                 ypos 430
                 spacing 10
-                textbutton "Kevin" action NullAction()
-                image "menuUI/today.png"
+                textbutton "Kevin" action NullAction() hovered tt.Action("Teman tokoh utama, tinggal pada kosan yang sama dengan tokoh utama, merupakan mahasiswa semester akhir pada kampus yang berbeda.")
+                image "char/side kev normal.png"
 
     if x == 6:
 
@@ -104,5 +119,5 @@ screen characters(x):
                 xpos 780
                 ypos 430
                 spacing 10
-                textbutton "Trije" action NullAction()
-                image "menuUI/today.png"
+                textbutton "Trije" action NullAction() hovered tt.Action("Teman tokoh utama, merupakan salah satu teman yang berada pada program studi yang sama, orang kikuk yang suka berorganisasi.")
+                image "char/side t normal.png"

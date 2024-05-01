@@ -354,7 +354,15 @@ label uts_alpro:
     "Mengumpulkan kertas ujianmu, kamu memasukan barang-barangmu pada tas yang sebelumnya dikelompokan dengan rapi di depan kelas."
 
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
-
+    if a_alproTS < 50:
+        $ knowledge+=1
+        $ practice+=1
+    elif a_alproTS < 81:
+        $ knowledge+=2
+        $ practice+=2
+    else:
+        $ knowledge+=3
+        $ practice+=3
     call istirahat from _call_istirahat_1
     jump uts_de
 
@@ -986,6 +994,16 @@ label uas_alpro:
     hide screen alproas_5 with dissolve
 
     label end_alpro:
+
+        if a_alproAS*4 < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_alproAS*4 < 81:
+            $ knowledge+=3
+            $ practice+=3
+        else:
+            $ knowledge+=4
+            $ practice+=4
 
         "Setelah memilih jawaban untuk pertanyaan terakhir, semua soal yang terdapat pada lembar soal ujian sudah kamu selesaikan."
 

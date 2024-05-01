@@ -372,6 +372,16 @@ label uts_jarkom:
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari menunggu temanmu yang lain menyelesaikan ujian mereka."
     $application += 6
+    if a_jarkomTS < 50:
+        $ knowledge+=1
+        $ practice+=1
+    elif a_jarkomTS < 81:
+        $ knowledge+=2
+        $ practice+=2
+    else:
+        $ knowledge+=3
+        $ practice+=3  
+
     jump uts_akhir
 
 label jarkom_3:
@@ -1046,6 +1056,15 @@ label uas_jarkom:
 
     label end_jarkom:
         $application += 6
+        if a_jarkomAS*4 < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_jarkomAS*4 < 81:
+            $ knowledge+=3
+            $ practice+=3
+        else:
+            $ knowledge+=4
+            $ practice+=4   
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
         "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."

@@ -328,7 +328,15 @@ label uts_pbo:
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari membaca materi mata kuliah terakhir yang akan diujikan."
-
+    if a_pboTS < 50:
+        $ knowledge+=1
+        $ practice+=1
+    elif a_pboTS < 81:
+        $ knowledge+=2
+        $ practice+=2
+    else:
+        $ knowledge+=3
+        $ practice+=3
     jump uts_jarkom
 
 label pbo_3:
@@ -901,7 +909,15 @@ label uas_pbo:
     hide screen pboas_5 with dissolve
 
     label end_pbo:
-
+        if a_pboAS*4 < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_pboAS*4 < 81:
+            $ knowledge+=3
+            $ practice+=3
+        else:
+            $ knowledge+=4
+            $ practice+=4   
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
         "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."

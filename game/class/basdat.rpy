@@ -329,7 +329,15 @@ label uts_basdat:
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari menunggu temanmu yang lain selesai menyelesaikan ujian mereka."
-
+    if a_basdatTS < 50:
+        $ knowledge+=1
+        $ practice+=1
+    elif a_basdatTS < 81:
+        $ knowledge+=2
+        $ practice+=2
+    else:
+        $ knowledge+=3
+        $ practice+=3
     call istirahat from _call_istirahat_6
     jump uts_web
 
@@ -954,7 +962,15 @@ label uas_basdat:
     hide screen basdatas_5 with dissolve
 
     label end_basdat:
-
+        if a_basdatAS*4 < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_basdatAS*4 < 81:
+            $ knowledge+=3
+            $ practice+=3
+        else:
+            $ knowledge+=4
+            $ practice+=4      
         "Kamu melihat sekelilingmu, masih ada temanmu yang masih mengerjakan ujian, namun ada juga yang sudah beranjak dari bangku ujian."
 
         "Sebelum mengumpulkan jawaban, tidak lupa kamu mengecek apakah biodata dan jawaban yang kamu isi semuanya sudah benar."
