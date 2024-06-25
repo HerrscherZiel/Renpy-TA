@@ -232,71 +232,167 @@ label uts_pti:
         "Mulai":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS"
     
-    "1. Manakah dari pernyataan dibawah yang benar dan sebaiknya kita lakukan mengenai teknologi informasi?"
-    menu:
-        "A. Teknologi Informasi merupakan teknologi-teknologi yang bisa dan hanya bisa membantu dalam bidang kesehatan.":
-            "A. Teknologi Informasi merupakan teknologi-teknologi yang bisa dan hanya bisa membantu dalam bidang kesehatan."
-        "B. Teknologi Informasi baiknya kita jauhi karena hanya dapat memberi dampak-dampak yang buruk.":
-            "B. Teknologi Informasi baiknya kita jauhi karena hanya dapat memberi dampak-dampak yang buruk."
-        "C. Teknologi Informasi sudah layaknya tidak kita gunakan, lebih baik menggunakan cara yang lebih tradisional.":
-            "C. Teknologi Informasi sudah layaknya tidak kita gunakan, lebih baik menggunakan cara yang lebih tradisional."
-        "D. Teknologi Informasi adalah semua teknologi yang dapat digunakan untuk dapat digunakan oleh manusia untuk dapat membuat, mengubah, menyimpan, memproses, dan menyebarkan serta menerima informasi.":
-            "D. Teknologi Informasi adalah semua teknologi yang dapat digunakan untuk dapat digunakan oleh manusia untuk dapat membuat, mengubah, menyimpan, memproses, dan menyebarkan serta menerima informasi."
-            $a_ptiTS +=20
-        "E. Teknologi Informasi baiknya hanya kita gunakan hanya dalam bidang pendidikan.":
-            "E. Teknologi Informasi baiknya hanya kita gunakan hanya dalam bidang pendidikan."
-    "2. Manakah dari teknologi informasi dibawah yang dapat kita gunakan untuk membantu kita dalam berkomunikasi jarak jauh dengan teman kita yang berada pada pulau yang berbeda?"
-    menu:
-        "A. Handphone.":
-            "A. Handphone."
-            $a_ptiTS +=20
-        "B. Mobil.":
-            "B. Mobil."
-        "C. Kereta.":
-            "C. Kereta."
-        "D. Kamera":
-            "D. Kamera."
-        "E. Teropong.":
-            "E. Teropong."
-    "3. Apakah yang dimaksud dengan Informasi?"
-    menu:
-        "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian.":
-            "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian."
-        "B. Informasi merupakan data lapangan dari suatu kegiatan praktik.":
-            "B. Informasi merupakan data lapangan dari suatu kegiatan praktik."
-        "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan.":
-            "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan."
-        "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu.":
-            "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu."
-            $a_ptiTS +=20
-        "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi.":
-            "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi."
-    "4. Dari beberapa opsi dibawah ini manakah yang bukan termasuk data yang diambil dari lingkungan sekolah?"
-    menu:
-        "A. Jumlah murid.":
-            "A. Jumlah kendaraan."
-        "B. Jumlah guru.":
-            "B. Jumlah guru."
-        "C. Jumlah ruang kelas.":
-            "C. Jumlah ruang kelas."
-        "D. Jumlah mata pelajaran.":
-            "D. Jumlah mata pelajaran."
-        "E. Jumlah kendaraan.":
-            "E. Jumlah kendaraan."
-            $a_ptiTS +=20
-    "5. Manakah dari pernyataan dibawah ini yang merupakan fungsi sebuah Sistem Operasi?"
-    menu:
-        "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya.":
-            "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya."
-        "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi.":
-            "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi."
-        "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer.":
-            "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer."
-            $a_ptiTS +=20
-        "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi.":
-            "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi."
-        "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras.":
-            "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras."
+    label soaltspti1: 
+
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspti1'
+    
+        show screen ptits_1 with dissolve
+
+        "1. Manakah dari pernyataan dibawah yang benar dan sebaiknya kita lakukan mengenai teknologi informasi?"
+
+        show screen countdown
+
+        menu:
+            "A. Teknologi Informasi merupakan teknologi-teknologi yang bisa dan hanya bisa membantu dalam bidang kesehatan.":
+                "A. Teknologi Informasi merupakan teknologi-teknologi yang bisa dan hanya bisa membantu dalam bidang kesehatan."
+            "B. Teknologi Informasi baiknya kita jauhi karena hanya dapat memberi dampak-dampak yang buruk.":
+                "B. Teknologi Informasi baiknya kita jauhi karena hanya dapat memberi dampak-dampak yang buruk."
+            "C. Teknologi Informasi sudah layaknya tidak kita gunakan, lebih baik menggunakan cara yang lebih tradisional.":
+                "C. Teknologi Informasi sudah layaknya tidak kita gunakan, lebih baik menggunakan cara yang lebih tradisional."
+            "D. Teknologi Informasi adalah semua teknologi yang dapat digunakan untuk dapat digunakan oleh manusia untuk dapat membuat, mengubah, menyimpan, memproses, dan menyebarkan serta menerima informasi.":
+                "D. Teknologi Informasi adalah semua teknologi yang dapat digunakan untuk dapat digunakan oleh manusia untuk dapat membuat, mengubah, menyimpan, memproses, dan menyebarkan serta menerima informasi."
+                $a_ptiTS +=20
+            "E. Teknologi Informasi baiknya hanya kita gunakan hanya dalam bidang pendidikan.":
+                "E. Teknologi Informasi baiknya hanya kita gunakan hanya dalam bidang pendidikan."
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        hide screen ptits_1 with dissolve
+
+        jump soaltspti2
+
+    label telattspti1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+
+    hide screen ptits_1 with dissolve
+
+    label soaltspti2: 
+
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspti2'
+    
+        show screen ptits_2 with dissolve    
+        "2. Manakah dari teknologi informasi dibawah yang dapat kita gunakan untuk membantu kita dalam berkomunikasi jarak jauh dengan teman kita yang berada pada pulau yang berbeda?"
+        show screen countdown
+        menu:
+            "A. Handphone.":
+                "A. Handphone."
+                $a_ptiTS +=20
+            "B. Mobil.":
+                "B. Mobil."
+            "C. Kereta.":
+                "C. Kereta."
+            "D. Kamera":
+                "D. Kamera."
+            "E. Teropong.":
+                "E. Teropong."
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 2, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen ptits_2 with dissolve
+
+        jump soaltspti3
+
+    label telattspti2:
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+
+    hide screen ptits_2 with dissolve
+
+    label soaltspti3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspti3'
+    
+        show screen ptits_3 with dissolve    
+        "3. Apakah yang dimaksud dengan Informasi?"
+        show screen countdown
+        menu:
+            "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian.":
+                "A. Informasi merupakan sebuah fakta-fakta yang kita dapatkan melalui penelitian."
+            "B. Informasi merupakan data lapangan dari suatu kegiatan praktik.":
+                "B. Informasi merupakan data lapangan dari suatu kegiatan praktik."
+            "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan.":
+                "C. Informasi merupakan pengetahuan mengenai fakta-fakta yang ada untuk memecahkan suatu permasalahan."
+            "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu.":
+                "D. Informasi merupakan hasil pemrosesan dari fakta-fakta yang mampu memberikan gambaran lebih jelas mengenai sesuatu."
+                $a_ptiTS +=20
+            "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi.":
+                "E. Informasi merupakan sebuah pengetahuan yang didapatkan dari sebuah hal fiksi."
+
+        hide screen countdown
+        "Berhasil menjawab pertanyaan nomor 3, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen ptits_3 with dissolve
+
+        jump soaltspti4
+
+    label telattspti3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+
+    hide screen ptits_3 with dissolve
+
+    label soaltspti4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspti4'
+    
+        show screen ptits_3 with dissolve    
+
+        "4. Dari beberapa opsi dibawah ini manakah yang bukan termasuk data yang diambil dari lingkungan sekolah?"
+        show screen countdown
+        menu:
+            "A. Jumlah murid.":
+                "A. Jumlah kendaraan."
+            "B. Jumlah guru.":
+                "B. Jumlah guru."
+            "C. Jumlah ruang kelas.":
+                "C. Jumlah ruang kelas."
+            "D. Jumlah mata pelajaran.":
+                "D. Jumlah mata pelajaran."
+            "E. Jumlah kendaraan.":
+                "E. Jumlah kendaraan."
+                $a_ptiTS +=20
+        hide screen countdown
+        "Menyelesaikan pertanyaan nomor 4, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen ptits_4 with dissolve
+
+        jump soaltspti5
+
+    label telattspti4:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+
+    hide screen ptits_4 with dissolve
+
+
+    label soaltspti5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspti5'
+    
+        show screen ptits_4 with dissolve        
+        "5. Manakah dari pernyataan dibawah ini yang merupakan fungsi sebuah Sistem Operasi?"
+        show screen countdown
+        menu:
+            "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya.":
+                "A. Sistem operasi tidak dapat berfungsi sebagai tempat penyimpanan perangkat lunak lainnya."
+            "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi.":
+                "B. Visualisasi bukanlah merupakan salah satu hasil dari olahan dari sistem operasi."
+            "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer.":
+                "C. Sistem Operasi bukan hanya mampu memberikan keamanan data namun juga mampu mengatur kinerja dari komputer."
+                $a_ptiTS +=20
+            "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi.":
+                "D. Sistem operasi tidak menjadi merupakan dasar untuk perangkat lunak lain untuk melakukan operasi."
+            "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras.":
+                "E. Tidak adanya sistem operasi tidak akan memengaruhi kinerja perangkat keras."
+        hide screen countdown
+        "Menyelesaikan pertanyaan nomor 5, kamu telah mengerjakan semua soal ujian kali ini."
+        hide screen ptits_5 with dissolve
+        jump endtsti
+
+    label telattspti5:
+        "Kamu terlambat menjawab pertanyaan, soal no 5 dilewati"
+
+    hide screen ptits_5 with dissolve
 
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
 
@@ -307,16 +403,18 @@ label uts_pti:
     "Di luar ruangan, kamu dan temanmu yang telah selesai mengerjakan UTS Pengantar Teknologi Informasi sempat membahas mengenai jawaban dari masing-masing soal yang ada."
 
     "Lalu sembari menunggu mahasiswa lain selesai mengerjakan dan UTS mata kuliah berikutnya dilakukan kamu mengobrol santai dan membaca materi dari mata kuliah yang akan di UTSkan berikutnya."
-    if a_ptiTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_ptiTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3
-    jump uts_alpro
+    
+    label endtsti:
+        if a_ptiTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_ptiTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3
+        jump uts_alpro
 
 label pti_3:
 

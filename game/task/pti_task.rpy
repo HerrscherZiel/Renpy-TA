@@ -36,8 +36,6 @@ screen pti_task:
         hover "menuUI/stats/return_hover.png"
         action Hide("pti_task")
 
-
-
 screen pti_prev:
 
     #content
@@ -65,7 +63,6 @@ screen pti_prev:
 label jumpas:
 
     "loncat"
-
 
 screen pti_task1:
 
@@ -301,8 +298,7 @@ screen pti_task5:
             ypos 740
             idle "task/radio_idle.png"
             hover "task/radio_hover.png"
-            action [Hide('pti_task5'), Show("ptit_done")]
-        
+            action [Hide('pti_task5'), Show("ptit_done")]  
 
 screen ptit_done:
 

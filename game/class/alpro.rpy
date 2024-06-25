@@ -283,19 +283,24 @@ label uts_alpro:
         "Mulai":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS"
 
-    "1. Terdapat 3 tingkat atau level dari bahasa pemrograman, manakah dibawah ini yang merupakan bahasa pemrograman tingkat tinggi?"
-    menu:
-        "A. Biner.":
-            "A. Biner."
-        "B. Add.":
-            "B. Add."
-        "C. SUB.":
-            "C. SUB."
-        "D. Assembly.":
-            "D. Assembly."
-        "E. Java.":
-            "E. Java."
-            $a_alproTS +=20
+    label alprots1:
+
+        "1. Terdapat 3 tingkat atau level dari bahasa pemrograman, manakah dibawah ini yang merupakan bahasa pemrograman tingkat tinggi?"
+        menu:
+            "A. Biner.":
+                "A. Biner."
+            "B. Add.":
+                "B. Add."
+            "C. SUB.":
+                "C. SUB."
+            "D. Assembly.":
+                "D. Assembly."
+            "E. Java.":
+                "E. Java."
+                $a_alproTS +=20
+
+    label alprots2:
+
     "2. Dari beberapa pernyataan dibawah, manakah yang benar mengenai ciri suatu algoritma?"
     menu:
         "A. Sebuah algoritma memiliki jumlah langkah yang tentu dan tidak ambigu.":
@@ -309,6 +314,9 @@ label uts_alpro:
             "D. Algoritma yang baik tidak perlu memerhatikan keefektivitasan karena hal terpenting adalah algoritma menyelesaikan masalah."
         "E. Algoritma tidak memerlukan suatu stopping point.":
             "E. Algoritma tidak memerlukan suatu stopping point."
+
+    label alprots3:
+
     "3. Dari beberapa pernyataan dibawah, manakah yang salah mengenai ciri suatu algoritma?"
     menu:
         "A. Sebuah algoritma bisa memiliki jumlah langkah yang tak terbatas.":
@@ -322,6 +330,9 @@ label uts_alpro:
             "D. Sebuah instruksi efektif dibutuhkan agar instruksi tersebut dapat dijalankan oleh pemroses."
         "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu.":
             "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu."
+    
+    label alprots4:
+
     "4. Dari beberapa algoritma dibawah manakah yang termasuk algoritma percabangan?"
     menu:
         "A. Algoritma cara memasak nasi goreng.":
@@ -335,6 +346,9 @@ label uts_alpro:
             "D. Algoritma mencari luas segitiga."
         "E. Algoritma membuat kopi.":
             "E. Algoritma membuat kopi."
+    
+    label alprots5:
+
     "5. Manakah dibawah yang merupakan sebuah Pseudocode untuk mencari volume sebuah balok?"
     menu:
         "A. Algoritma mencari volume balok | Input sisi, tinggi | volume = sisi*tinggi":

@@ -45,7 +45,7 @@ screen stats_screen:
             xalign 1.0
             ypos 133
             auto "menuUI/button/menu_%s.png"
-            action [MainMenu()]
+            action ShowMenu('history')
 
         imagebutton:
             xpos 1740
@@ -88,6 +88,7 @@ screen stats:
             spacing 460
             $ social = round((friend+community+public) / 3)
             text "[social]" size 40 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
+        
         #health
         bar:
             value hunger
@@ -207,6 +208,7 @@ screen stats:
                 imagebutton:
                     idle "status/loyo.png"
                     action NullAction()
+    
     #return
     imagebutton:
         xpos 70

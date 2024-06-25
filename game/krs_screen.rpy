@@ -61,9 +61,6 @@ screen isi_krs:
 
     frame:
         
-        # xsize 1920
-        # ysize 2249
-        
         side ("c r"):
             # area (1,0,1920,2278)
             viewport id "my_scroller": #REMEMBER YOUR VIEWPORT ID SO THE SCROLLBAR IS PLACED FOR IT
@@ -326,11 +323,6 @@ screen isi_krs:
         else:
             pass
 
-        # imagebutton:
-        #     xpos 1480
-        #     ypos 65
-        #     auto "krs/close_%s.png"
-        #     action Return()
 
 screen captcha(x):
 
@@ -338,7 +330,6 @@ screen captcha(x):
     key "K_a" action NullAction()
 
     $ krsroll = renpy.random.randint(1111, 9999)
-    # $ capt = "%d" % krsroll
     $ inStr = "%d" % krsroll
 
     frame:
@@ -369,12 +360,8 @@ screen captcha(x):
             id "conf"
             xpos 160
             ypos 210
-            # Show("test2", pic2=pic1)
-            # , If(capt==note, alpro2==True)
             auto "krs/confirm_%s.png"
             action [SetVariable("capt", inStr), Hide('captcha'), Show('check', None, x)]
-
-            # action Hide('captcha')
 
         #batal
         imagebutton:

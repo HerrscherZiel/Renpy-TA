@@ -115,7 +115,6 @@ screen alpro_answer:
                 auto "krs/ok_%s.png"
                 action [SetVariable("a_alproT", a_alproT + 4), Hide('alpro_answer'), Show('alpro_done')]
 
-
 screen alpro_done:
 
     frame:

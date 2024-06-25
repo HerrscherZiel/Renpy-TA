@@ -27,26 +27,21 @@ default locmins = 0
 default locminm = 0
 
 screen mapUI:
-
     add "bg black.png"
     add "map/map new.png" 
     frame:
         background "menuUI/days.png"
-
         xalign 0.0
         yalign 0.0
         xsize 600
         ysize 200
-
-
         hbox:
             spacing 20
-
             vbox xpos 200 ypos 62:
                 spacing 10
-
                 text "[day]" size 30 color '#ffffff' font "fonts/Montserrat-SemiBoldItalic.ttf"
 
+    #dayphase conditional
     frame:
         xpos 5
         ypos 10
@@ -58,11 +53,6 @@ screen mapUI:
             background "menuUI/time/noon.png"
         else:
             background "menuUI/time/night.png"
-    # imagebutton:
-    #     xpos 320
-    #     ypos 60
-    #     auto "map/tasks_%s.png"
-    #     action ShowMenu("task_list")
 
     if prologue == True:
         if prologueCount == 1 or prologueCount == 5 and day !=4 and KRS3 == False:
@@ -136,9 +126,8 @@ screen mapUI:
 
         else:
             pass
-
-    else:
-        
+    
+    else: 
         if timephase == 3:
             #night
             #kos
@@ -278,12 +267,12 @@ screen mapUI:
                 action Jump("go_to_library")
     
 label go_to_minimart:
-
     $ maps = True
     menu:
         "Pergi ke minimart":
             $ placeKeys = 2
             play music minimart loop volume 0.3
+
             if firstMart == True:
                 $ maps = False
                 call change_timephase from _call_change_timephase_28

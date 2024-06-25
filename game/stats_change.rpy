@@ -253,17 +253,17 @@ screen eat_change:
   
         hbox:
             spacing 15
-
+            #hunger
             imagebutton:
                 xpos -6
                 ypos -6
                 idle "menuUI/stats/hunger_up.png"
                 action NullAction()
-
+            #energy
             imagebutton:
                 idle "menuUI/stats/energy_up.png"
                 action NullAction()
-
+            #fit
             imagebutton:
                 idle "menuUI/stats/fit_up.png"
                 action NullAction()        

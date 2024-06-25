@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/class/timer.rpy", line 24: Indentation mismatch.
+File "game/stats_screen.rpy", line 48: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+                action ShowMenu('navigation()'')
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Sat Apr 27 23:10:42 2024
+Sat Jun  8 15:53:19 2024
