@@ -28,6 +28,28 @@ screen web_2_5:
 
     add "kelas/web_2-5.png"
 
+#uts
+
+screen webts1:
+
+    add "kelas/web_uts/uts_web_1.png"
+
+screen webts2:
+
+    add "kelas/web_uts/uts_web_2.png"
+
+screen webts3:
+
+    add "kelas/web_uts/uts_web_3.png"
+
+screen webts4:
+
+    add "kelas/web_uts/uts_web_4.png"
+
+screen webts5:
+
+    add "kelas/web_uts/uts_web_5.png"
+
 #3
 screen web_3_1:
 

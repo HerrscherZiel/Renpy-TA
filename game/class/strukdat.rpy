@@ -238,89 +238,169 @@ label uts_strukdat:
     menu: 
         "Mulai":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS."
-    "1. FIFO atau First In First Out merupakan sebuah konsep yang digunakan pada struktur data?"
-    menu:
-        "A. Tree.":
-            "A. Tree."
-        "B. Stack.":
-            "B. Stack."
-        "C. Queue.":
-            "C. Queue."
-            $a_strukdatTS +=20
-        "D. Linked List.":
-            "D. Linked List."
-        "E. Graph.":
-            "E. Graph."
-    "2. Pada struktur data manakah yang menggunakan konsep dimana data yang terlebih dahulu keluar adalah data yang terakhir masuk?"
-    menu:
-        "A. Tree.":
-            "A. Tree."
-        "B. Stack.":
-            "B. Stack."
-            $a_strukdatTS +=20
-        "C. Queue.":
-            "C. Queue."
-        "D. Linked List.":
-            "D. Linked List."
-        "E. Graph.":
-            "E. Graph."
-    "3. Apa yang dimaksud node Leaf pada struktur data Tree?"
-    menu:
-        "A. Node yang berada pada paling atas pada tree.":
-            "A. Node yang berada pada paling atas pada tree."
-        "B. Node yang berada pada posisi paling bawah pada tree.":
-            "B. Node yang berada pada posisi paling bawah pada tree."
-        "C. Node turunan dari node yang ada diatasnya.":
-            "C. Node turunan dari node yang ada diatasnya."
-        "D. Merupakan child node yang tidak memiliki child lagi.":
-            "D. Merupakan child node yang tidak memiliki child lagi."
-            $a_strukdatTS +=20
-        "E. Garis penghubung tiap node.":
-            "E. Garis penghubung tiap node."
-    "4. (...) Merupakan istilah untuk garis yang menghubungkan suatu node ke node yang lain pada struktur data Graph?"
-    menu:    
-        "A. Verteks.":
-            "A. Verteks."
-        "B. Edge.":
-            "B. Edge."
-            $a_strukdatTS +=20
-        "C. Simpul.":
-            "C. Simpul."
-        "D. List.":
-            "D. List."
-        "E. Graph List.":
-            "E. Graph List."
-    "5. Manakah dibawah ini yang bukan merupakan keuntungan penggunaan struktur data?"
-    menu:      
-        "A. Membuat penyimpanan dan pengaturan data lebih rapi, efisien, dan terorganisir.":
-            "A. Membuat penyimpanan dan pengaturan data lebih rapi, efisien, dan terorganisir."
-        "B. Pencarian dapat dilakukan secara lebih cepat ketika mengaplikasikan struktur data.":
-            "B. Pencarian dapat dilakukan secara lebih cepat ketika mengaplikasikan struktur data.."
-        "C. Bisa digunakan untuk menghindari pengindeksan yang akan memperlambat pencarian.":
-            "C. Bisa digunakan untuk menghindari pengindeksan yang akan memperlambat pencarian."
-            $a_strukdatTS +=20
-        "D. Dapat digunakan untuk mengelola sumber daya dan layanan semisal pada sistem operasi.":
-            "D. Dapat digunakan untuk mengelola sumber daya dan layanan semisal pada sistem operasi."
-        "E. Mampu membuat pemrograman lebih mudah.":
-            "E. Mampu membuat pemrograman lebih mudah."
 
-    "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
+    label strukts1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatstruk1'
+    
+        show screen strukts_1 with dissolve      
+        "1. FIFO atau First In First Out merupakan sebuah konsep yang digunakan pada struktur data?"
+        show screen countdown        
+        menu:
+            "A. Tree.":
+                "A. Tree."
+            "B. Stack.":
+                "B. Stack."
+            "C. Queue.":
+                "C. Queue."
+                $a_strukdatTS +=20
+            "D. Linked List.":
+                "D. Linked List."
+            "E. Graph.":
+                "E. Graph."
+        hide screen countdown
+        "Pertanyaan nomor 1 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen strukts1 with dissolve
+        jump strukts2
+
+    label telatstruk1:
+        "Waktu habis, pertanyaan no 1 kamu lewati."
+        hide screen strukts_1 with dissolve
+
+    label strukts2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatstruk2'
+    
+        show screen strukts_2 with dissolve    
+        "2. Pada struktur data manakah yang menggunakan konsep dimana data yang terlebih dahulu keluar adalah data yang terakhir masuk?"
+        show screen countdown        
+        menu:
+            "A. Tree.":
+                "A. Tree."
+            "B. Stack.":
+                "B. Stack."
+                $a_strukdatTS +=20
+            "C. Queue.":
+                "C. Queue."
+            "D. Linked List.":
+                "D. Linked List."
+            "E. Graph.":
+                "E. Graph."
+        hide screen countdown
+        "Pertanyaan nomor 2 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen strukts2 with dissolve
+        jump strukts3
+
+    label telatstruk2:
+        "Waktu habis, pertanyaan no 2 kamu lewati."
+        hide screen strukts_2 with dissolve
+
+    label strukts3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatstruk3'
+    
+        show screen strukts_3 with dissolve    
+        "3. Apa yang dimaksud node Leaf pada struktur data Tree?"
+        show screen countdown
+        menu:
+            "A. Node yang berada pada paling atas pada tree.":
+                "A. Node yang berada pada paling atas pada tree."
+            "B. Node yang berada pada posisi paling bawah pada tree.":
+                "B. Node yang berada pada posisi paling bawah pada tree."
+            "C. Node turunan dari node yang ada diatasnya.":
+                "C. Node turunan dari node yang ada diatasnya."
+            "D. Merupakan child node yang tidak memiliki child lagi.":
+                "D. Merupakan child node yang tidak memiliki child lagi."
+                $a_strukdatTS +=20
+            "E. Garis penghubung tiap node.":
+                "E. Garis penghubung tiap node."
+        hide screen countdown
+        "Pertanyaan nomor 3 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen strukts3 with dissolve
+        jump strukts4
+
+    label telatstruk3:
+        "Waktu habis, pertanyaan no 3 kamu lewati."
+        hide screen strukts_3 with dissolve
+
+    label strukts4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatstruk4'
+    
+        show screen strukts_4 with dissolve    
+        "4. (...) Merupakan istilah untuk garis yang menghubungkan suatu node ke node yang lain pada struktur data Graph?"
+        show screen countdown
+        menu:    
+            "A. Verteks.":
+                "A. Verteks."
+            "B. Edge.":
+                "B. Edge."
+                $a_strukdatTS +=20
+            "C. Simpul.":
+                "C. Simpul."
+            "D. List.":
+                "D. List."
+            "E. Graph List.":
+                "E. Graph List."
+        hide screen countdown
+        "Pertanyaan nomor 4 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen strukts4 with dissolve
+        jump strukts5
+
+    label telatstruk4:
+        "Waktu habis, pertanyaan no 4 kamu lewati."
+        hide screen strukts_4 with dissolve
+
+    label strukts5:
+
+        "5. Manakah dibawah ini yang bukan merupakan keuntungan penggunaan struktur data?"
+        show screen countdown
+        menu:      
+            "A. Membuat penyimpanan dan pengaturan data lebih rapi, efisien, dan terorganisir.":
+                "A. Membuat penyimpanan dan pengaturan data lebih rapi, efisien, dan terorganisir."
+            "B. Pencarian dapat dilakukan secara lebih cepat ketika mengaplikasikan struktur data.":
+                "B. Pencarian dapat dilakukan secara lebih cepat ketika mengaplikasikan struktur data.."
+            "C. Bisa digunakan untuk menghindari pengindeksan yang akan memperlambat pencarian.":
+                "C. Bisa digunakan untuk menghindari pengindeksan yang akan memperlambat pencarian."
+                $a_strukdatTS +=20
+            "D. Dapat digunakan untuk mengelola sumber daya dan layanan semisal pada sistem operasi.":
+                "D. Dapat digunakan untuk mengelola sumber daya dan layanan semisal pada sistem operasi."
+            "E. Mampu membuat pemrograman lebih mudah.":
+                "E. Mampu membuat pemrograman lebih mudah."
+        hide screen countdown
+        "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
+        hide screen strukts5 with dissolve
+        jump endtsstruk
+
+    label telatstruk5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatstruk5'
+    
+        show screen strukts_5 with dissolve    
+        "Kamu terlambat menjawab pertanyaan terakhir, waktu telah habis kamu tidak bisa mengerjakan ujianmu lagi."
+        hide screen strukts_5 with dissolve
 
     "Mengumpulkan kertas ujianmu, kamu memasukan barang-barangmu pada tas yang sebelumnya dikelompokan dengan rapi di depan kelas."
 
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari membaca materi mata kuliah yang akan diujikan setelahnya."
-    if a_strukdatTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_strukdatTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3
-    jump uts_basdat
+    label endtsstruk:
+        if a_strukdatTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_strukdatTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3
+        jump uts_basdat
             
 label strukdat_3:
 

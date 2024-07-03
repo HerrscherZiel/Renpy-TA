@@ -252,72 +252,152 @@ label uts_pbo:
     menu:
         "Mulai":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS."
-    "1. Dalam PBO terdapat konsep yang dinamakan dengan Kelas, manakah dibawah ini yang benar mengenai Kelas?"
-    menu:
-        "A. Kelas merupakan sebuah template untuk suatu objek, yang akan menuntukan struktur dan perilakunya.":
-            "A. Kelas merupakan sebuah template untuk suatu objek, yang akan menuntukan struktur dan perilakunya."
-            $a_pboTS +=20
-        "B. Kelas merupakan dasar dari pemrograman berbasis objek, yang merupakan sebuah instance atau bentukan dari suatu objek.":
-            "B. Kelas merupakan dasar dari pemrograman berbasis objek, yang merupakan sebuah instance atau bentukan dari suatu objek."
-        "C. Kelas merupakan fungsi-fungsi yang dapat dilakukan oleh suatu objek.":
-            "C. Kelas merupakan fungsi-fungsi yang dapat dilakukan oleh suatu objek."
-        "D. Kelas merupakan atribut-atribut dasar yang ada pada suatu objek.":
-            "D. Kelas merupakan atribut-atribut dasar yang ada pada suatu objek."
-        "E. Kelas dan Objek pada PBO merupakan suatu konsep yang sama, tidak ada perbedaan diantara keduanya.":
-            "E. Kelas dan Objek pada PBO merupakan suatu konsep yang sama, tidak ada perbedaan diantara keduanya."
-    "2. Behaviour yang mungkin terdapat dalam Kelas Burung yang benar dibawah ini adalah?"
-    menu:
-        "A. Bertelur, Berkicau, Terbang.":
-            "A. Bertelur, Berkicau, Terbang."
-            $a_pboTS += 20
-        "B. Bergerak, Bersuara, Berklorofil.":
-            "B. Bergerak, Bersuara, Berklorofil."
-        "C. Bergerak, Berkembang biak, Beroda.":
-            "C. Bergerak, Berkembang biak, Beroda."
-        "D. Bermesin, Beroda, Berjalan":
-            "D. Bermesin, Beroda, Berjalan"
-        "E. Beranak, Berkicau, Menyusui":
-            "E. Beranak, Berkicau, Menyusui"
 
-    "3. Dibawah ini yang bukan merupakan prinsip-prinsip yang ada pada PBO kecuali?"
-    menu:
-        "A. Polymorphism":
-            "A. Polymorphism"
-        "B. Encapsulation":
-            "B. Encapsulation"
-        "C. Inheritance":
-            "C. Inheritance"
-        "D. Abstract":
-            "D. Abstract"
-        "E. Class and Object":
-            "E. Class and Object"
-            $a_pboTS += 20
-    "4. Prinsip yang mampu menyembunyikan hal-hal yang rumit dan memperlihatkan hanya hal-hal yang penting saja merupakan prinsip PBO yaitu?"
-    menu:
-        "A. Abstraction":
-            "A. Abstraction"
-            $a_pboTS += 20
-        "B. Polymorphism":
-            "B. Polymorphism"
-        "C. Inheritance":
-            "C. Inheritance"
-        "D. Encapsulation":
-            "D. Encapsulation"
-        "E. Class and Object":
-            "E. Class and Object"
-    "5. Berikut beberapa pernyataan dari prinsip Pewarisan pada PBO, pernyataan yang benar kecuali?"
-    menu:
-        "A. Kelas yang diwarisi dapat memiliki atribut yang sama dengan yang mewarisi.":
-            "A. Kelas yang diwarisi dapat memiliki atribut yang sama dengan yang mewarisi."
-        "B. Kelas yang mewarisi menurunkan atribut yang sama kepada kelas yang diwarisi.":
-            "B. Kelas yang mewarisi menurunkan atribut yang kepada kelas yang diwarisi."
-        "C. Prinsip pewarisan merupakan prinsip yang berbentuk hirarki.":
-            "C. Prinsip pewarisan merupakan prinsip yang berbentuk hirarki."
-        "D. Semakin lama pewarisan dilakukan, kelas yang berada di paling bawah memiliki kesamaan yang paling sedikit dari kelas awal pewarisan.":
-            "D. Semakin lama pewarisan dilakukan, kelas yang berada di paling bawah memiliki kesamaan yang paling sedikit dari kelas awal pewarisan."
-        "E. Pewarisan mampu melindungi kelas dari perubahan-perubahan yang tidak diinginkan.":
-            "E. Pewarisan mampu melindungi kelas dari perubahan-perubahan yang tidak diinginkan."
-            $a_pboTS += 20
+    label pbots1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspbo1'
+    
+        show screen pbots_1 with dissolve   
+        "1. Dalam PBO terdapat konsep yang dinamakan dengan Kelas, manakah dibawah ini yang benar mengenai Kelas?"
+        show screen countdown
+        menu:
+            "A. Kelas merupakan sebuah template untuk suatu objek, yang akan menuntukan struktur dan perilakunya.":
+                "A. Kelas merupakan sebuah template untuk suatu objek, yang akan menuntukan struktur dan perilakunya."
+                $a_pboTS +=20
+            "B. Kelas merupakan dasar dari pemrograman berbasis objek, yang merupakan sebuah instance atau bentukan dari suatu objek.":
+                "B. Kelas merupakan dasar dari pemrograman berbasis objek, yang merupakan sebuah instance atau bentukan dari suatu objek."
+            "C. Kelas merupakan fungsi-fungsi yang dapat dilakukan oleh suatu objek.":
+                "C. Kelas merupakan fungsi-fungsi yang dapat dilakukan oleh suatu objek."
+            "D. Kelas merupakan atribut-atribut dasar yang ada pada suatu objek.":
+                "D. Kelas merupakan atribut-atribut dasar yang ada pada suatu objek."
+            "E. Kelas dan Objek pada PBO merupakan suatu konsep yang sama, tidak ada perbedaan diantara keduanya.":
+                "E. Kelas dan Objek pada PBO merupakan suatu konsep yang sama, tidak ada perbedaan diantara keduanya."
+        hide screen countdown
+        "Pertanyaan nomor 1 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen pbots_1 with dissolve
+        jump pbots2
+
+    label telattspbo1:
+        "Waktu menjawab habis, pertanyaan no 1 kamu lewati."
+        hide screen pbots_1 with dissolve
+
+    label pbots2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspbo2'
+    
+        show screen pbots_2 with dissolve 
+        "2. Behaviour yang mungkin terdapat dalam Kelas Burung yang benar dibawah ini adalah?"
+        show screen countdown
+        menu:
+            "A. Bertelur, Berkicau, Terbang.":
+                "A. Bertelur, Berkicau, Terbang."
+                $a_pboTS += 20
+            "B. Bergerak, Bersuara, Berklorofil.":
+                "B. Bergerak, Bersuara, Berklorofil."
+            "C. Bergerak, Berkembang biak, Beroda.":
+                "C. Bergerak, Berkembang biak, Beroda."
+            "D. Bermesin, Beroda, Berjalan":
+                "D. Bermesin, Beroda, Berjalan"
+            "E. Beranak, Berkicau, Menyusui":
+                "E. Beranak, Berkicau, Menyusui"
+        hide screen countdown
+        "Pertanyaan nomor 2 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen pbots_2 with dissolve
+        jump pbots3
+ 
+    label telattspbo2:
+        "Waktu menjawab habis, pertanyaan no 2 kamu lewati."
+        hide screen pbots_2 with dissolve
+
+    label pbots3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspbo3'
+    
+        show screen pbots_3 with dissolve 
+        "3. Dibawah ini yang bukan merupakan prinsip-prinsip yang ada pada PBO kecuali?"
+        show screen countdown
+        menu:
+            "A. Polymorphism":
+                "A. Polymorphism"
+            "B. Encapsulation":
+                "B. Encapsulation"
+            "C. Inheritance":
+                "C. Inheritance"
+            "D. Abstract":
+                "D. Abstract"
+            "E. Class and Object":
+                "E. Class and Object"
+                $a_pboTS += 20
+        hide screen countdown
+        "Pertanyaan nomor 3 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen pbots_3 with dissolve
+        jump pbots4
+ 
+    label telattspbo3:
+        "Waktu menjawab habis, pertanyaan no 3 kamu lewati."
+        hide screen pbots_3 with dissolve
+
+    label pbots4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspbo4'
+    
+        show screen pbots_4 with dissolve 
+        "4. Prinsip yang mampu menyembunyikan hal-hal yang rumit dan memperlihatkan hanya hal-hal yang penting saja merupakan prinsip PBO yaitu?"
+        show screen countdown
+        menu:
+            "A. Abstraction":
+                "A. Abstraction"
+                $a_pboTS += 20
+            "B. Polymorphism":
+                "B. Polymorphism"
+            "C. Inheritance":
+                "C. Inheritance"
+            "D. Encapsulation":
+                "D. Encapsulation"
+            "E. Class and Object":
+                "E. Class and Object"
+        hide screen countdown
+        "Pertanyaan nomor 4 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen pbots_4 with dissolve
+        jump pbots5
+ 
+    label telattspbo4:
+        "Waktu menjawab habis, pertanyaan no 4 kamu lewati."
+        hide screen pbots_4 with dissolve
+
+    label pbots5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspbo5'
+    
+        show screen pbots_5 with dissolve 
+        "5. Berikut beberapa pernyataan dari prinsip Pewarisan pada PBO, pernyataan yang benar kecuali?"
+        show screen countdown
+        menu:
+            "A. Kelas yang diwarisi dapat memiliki atribut yang sama dengan yang mewarisi.":
+                "A. Kelas yang diwarisi dapat memiliki atribut yang sama dengan yang mewarisi."
+            "B. Kelas yang mewarisi menurunkan atribut yang sama kepada kelas yang diwarisi.":
+                "B. Kelas yang mewarisi menurunkan atribut yang kepada kelas yang diwarisi."
+            "C. Prinsip pewarisan merupakan prinsip yang berbentuk hirarki.":
+                "C. Prinsip pewarisan merupakan prinsip yang berbentuk hirarki."
+            "D. Semakin lama pewarisan dilakukan, kelas yang berada di paling bawah memiliki kesamaan yang paling sedikit dari kelas awal pewarisan.":
+                "D. Semakin lama pewarisan dilakukan, kelas yang berada di paling bawah memiliki kesamaan yang paling sedikit dari kelas awal pewarisan."
+            "E. Pewarisan mampu melindungi kelas dari perubahan-perubahan yang tidak diinginkan.":
+                "E. Pewarisan mampu melindungi kelas dari perubahan-perubahan yang tidak diinginkan."
+                $a_pboTS += 20
+        hide screen countdown
+        "Pertanyaan nomor 5 berhasil kamu jawab, pertanyaan terakhir pada lembar ujian telah kamu jawab."
+        hide screen pbots_5 with dissolve
+        jump endtspbo
+ 
+    label telattspbo5:
+        "Kamu terlambat menjawab pertanyaan terakhir, waktu telah habis kamu tidak bisa mengerjakan ujianmu lagi."
+        hide screen pbots_5 with dissolve
+
 
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
 
@@ -328,15 +408,16 @@ label uts_pbo:
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari membaca materi mata kuliah terakhir yang akan diujikan."
-    if a_pboTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_pboTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3
+    label endtspbo:    
+        if a_pboTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_pboTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3
     jump uts_jarkom
 
 label pbo_3:

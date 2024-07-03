@@ -21,6 +21,28 @@ screen alpro_2_3:
 
     add "kelas/alpro_2-3.png"
 
+#uts
+
+screen prots_1:
+
+    add "kelas/alpro-uts/uts_alpro_1.png"
+
+screen prots_2:
+
+    add "kelas/alpro-uts/uts_alpro_2.png"
+
+screen prots_3:
+
+    add "kelas/alpro-uts/uts_alpro_3.png"
+
+screen prots_4:
+
+    add "kelas/alpro-uts/uts_alpro_4.png"
+
+screen prots_5:
+
+    add "kelas/alpro-uts/uts_alpro_5.png"
+
 #3
 screen alpro_3_1:
 

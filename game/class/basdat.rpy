@@ -254,71 +254,147 @@ label uts_basdat:
     menu:
         "Mulai":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS."
-    "1. Apakah yang dimaksud dengan Basis Data?"
-    menu:
-        "A. Basis data merupakan data-data yang tersebar dalam suatu ruang penyimpanan.":
-            "A. Basis data merupakan data-data yang tersebar dalam suatu ruang penyimpanan."
-        "B. Basis data merupakan fakta-fakta mengenai suatu penelitian.":
-            "B. Basis data merupakan fakta-fakta mengenai suatu penelitian."
-        "C. Basis data merupakan sekumpulan data-data yang memiliki relasi yang disimpan secara sistematis.":
-            "C. Basis data merupakan sekumpulan data-data yang memiliki relasi yang disimpan secara sistematis."
-            $a_basdatTS +=20
-        "D. Basis data merupakan tempat penyimpanan data-data yang dikumpulkan.":
-            "D. Basis data merupakan tempat penyimpanan data-data yang dikumpulkan."
-        "E. Basis data teridiri dari data-data yang tidak memiliki relasi.":
-            "E. Basis data teridiri dari data-data yang tidak memiliki relasi."
-    "2. Dari beberapa pernyataan dibawah, manakah pernyataan yang benar mengenai manfaat penggunaan Basis Data?"
-    menu:
-        "A. Basis data memperbesar atau menambah ruang penyimpanan data.":
-            "A. Basis data memperbesar atau menambah ruang penyimpanan data."
-        "B. Basis data hanya memiliki manfaat terhadap bidang pembiayaan saja.":
-            "B. Basis data hanya memiliki manfaat terhadap bidang pembiayaan saja."
-        "C. Basis data sangat berguna ketika digunakan pada jumlah data yang sangat kecil.":
-            "C. Basis data sangat berguna ketika digunakan pada jumlah data yang sangat kecil."
-        "D. Basis data mampu menjaga konsistensi dari data-data yang ada di dalamnya":
-            "D. Basis data mampu menjaga konsistensi dari data-data yang ada di dalamnya"
-            $a_basdatTS +=20
-        "E. Basis data merupakan suatu cara untuk menyimpan data dengan cara yang masih manual.": 
-            "E. Basis data merupakan suatu cara untuk menyimpan data dengan cara yang masih manual."
-    "3. Berikut merupakan contoh sistem atau aplikasi Sistem Manajemen Basis Data, kecuali?" 
-    menu:
-        "A. MySQL.":
-            "A. MySQL."
-        "B. PostgreSQL.":
-            "B. PostgreSQL."
-        "C. Oracle.":
-            "C. Oracle."
-        "D. MongoDB.":
-            "D. MongoDB."
-        "E. DataSQL.":
-            "E. DataSQL."
-            $a_basdatTS +=20
-    "4. Manakah dibawah ini yang merupakan penjelasan dari Database Manipulation Language(DML) yang benar?"
-    menu:
-        "A. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menciptakan table.":
-            "A. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menciptakan table."
-        "B. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menghapus table.":
-            "B. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menghapus table."
-        "C. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menambah basis data.":
-            "C. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menambah basis data."
-        "D. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nama table.":
-            "D. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nama table."
-        "E. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nilai suatu data.":
-            "E. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nilai suatu data."
-            $a_basdatTS +=20
-    "5. Manakah dibawah ini merupakan pernyataan yang benar mengenai sistem manajemen basis data(SMBD)?"
-    menu:
-        "A. SMBD mampu menjaga integritas data namun tidak bisa mengurangi redudansi data.":
-            "A. SMBD mampu menjaga integritas data namun tidak bisa mengurangi redudansi data."
-        "B. SMBD mampu mengurangi redudansi data namun tidak bisa menjaga integritas data.":
-            "B. SMBD mampu mengurangi redudansi data namun tidak bisa menjaga integritas data."
-        "C. Tidak perlu keahlian dalam pengoperasian atau manajemen SMBD.":
-            "C. Tidak perlu keahlian dalam pengoperasian atau manajemen SMBD."
-        "D. SMBD tidak dapat digunakan untuk membackup atau merecover basis data.":
-            "D. SMBD tidak dapat digunakan untuk membackup atau merecover basis data."
-        "E. Memerlukan keahlian dalam pengoperasian atau manajemen SMBD.":
-            "E. Memerlukan keahlian dalam pengoperasian atau manajemen SMBD."
-            $a_basdatTS +=20
+
+    label basts1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatbas1'
+    
+        show screen basts_1 with dissolve     
+        "1. Apakah yang dimaksud dengan Basis Data?"
+        show screen countdown        
+        menu:
+            "A. Basis data merupakan data-data yang tersebar dalam suatu ruang penyimpanan.":
+                "A. Basis data merupakan data-data yang tersebar dalam suatu ruang penyimpanan."
+            "B. Basis data merupakan fakta-fakta mengenai suatu penelitian.":
+                "B. Basis data merupakan fakta-fakta mengenai suatu penelitian."
+            "C. Basis data merupakan sekumpulan data-data yang memiliki relasi yang disimpan secara sistematis.":
+                "C. Basis data merupakan sekumpulan data-data yang memiliki relasi yang disimpan secara sistematis."
+                $a_basdatTS +=20
+            "D. Basis data merupakan tempat penyimpanan data-data yang dikumpulkan.":
+                "D. Basis data merupakan tempat penyimpanan data-data yang dikumpulkan."
+            "E. Basis data teridiri dari data-data yang tidak memiliki relasi.":
+                "E. Basis data teridiri dari data-data yang tidak memiliki relasi."
+        hide screen countdown
+        "Pertanyaan nomor 1 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen basts_1 with dissolve
+        jump basts2
+    label telatbas1:
+        "Waktu menjawab habis, pertanyaan no 1 kamu lewati."
+        hide screen basts_1 with dissolve
+
+
+    label basts2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatbas2'
+    
+        show screen basts_2 with dissolve   
+        "2. Dari beberapa pernyataan dibawah, manakah pernyataan yang benar mengenai manfaat penggunaan Basis Data?"
+        show screen countdown
+        menu:
+            "A. Basis data memperbesar atau menambah ruang penyimpanan data.":
+                "A. Basis data memperbesar atau menambah ruang penyimpanan data."
+            "B. Basis data hanya memiliki manfaat terhadap bidang pembiayaan saja.":
+                "B. Basis data hanya memiliki manfaat terhadap bidang pembiayaan saja."
+            "C. Basis data sangat berguna ketika digunakan pada jumlah data yang sangat kecil.":
+                "C. Basis data sangat berguna ketika digunakan pada jumlah data yang sangat kecil."
+            "D. Basis data mampu menjaga konsistensi dari data-data yang ada di dalamnya":
+                "D. Basis data mampu menjaga konsistensi dari data-data yang ada di dalamnya"
+                $a_basdatTS +=20
+            "E. Basis data merupakan suatu cara untuk menyimpan data dengan cara yang masih manual.": 
+                "E. Basis data merupakan suatu cara untuk menyimpan data dengan cara yang masih manual."
+        hide screen countdown
+        "Pertanyaan nomor 2 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen basts_2 with dissolve
+        jump basts3
+    label telatbas2:
+        "Waktu menjawab habis, pertanyaan no 2 kamu lewati."
+        hide screen basts_2 with dissolve
+
+    label basts3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatbas3'
+    
+        show screen basts_3 with dissolve   
+        "3. Berikut merupakan contoh sistem atau aplikasi Sistem Manajemen Basis Data, kecuali?" 
+        show screen countdown
+        menu:
+            "A. MySQL.":
+                "A. MySQL."
+            "B. PostgreSQL.":
+                "B. PostgreSQL."
+            "C. Oracle.":
+                "C. Oracle."
+            "D. MongoDB.":
+                "D. MongoDB."
+            "E. DataSQL.":
+                "E. DataSQL."
+                $a_basdatTS +=20
+        hide screen countdown
+        "Pertanyaan nomor 3 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen basts_3 with dissolve
+        jump basts4
+    label telatbas3:
+        "Waktu menjawab habis, pertanyaan no 3 kamu lewati."
+        hide screen basts_3 with dissolve
+
+    label basts4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatbas4'
+    
+        show screen basts_4 with dissolve   
+        "4. Manakah dibawah ini yang merupakan penjelasan dari Database Manipulation Language(DML) yang benar?"
+        show screen countdown
+        menu:
+            "A. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menciptakan table.":
+                "A. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menciptakan table."
+            "B. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menghapus table.":
+                "B. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menghapus table."
+            "C. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menambah basis data.":
+                "C. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk menambah basis data."
+            "D. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nama table.":
+                "D. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nama table."
+            "E. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nilai suatu data.":
+                "E. DML merupakan sebuah bahasa pada sistem manajemen basis data yang digunakan untuk mengubah nilai suatu data."
+                $a_basdatTS +=20
+        hide screen countdown
+        "Pertanyaan nomor 4 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen basts_4 with dissolve
+        jump basts5
+    label telatbas4:
+        "Waktu menjawab habis, pertanyaan no 4 kamu lewati."
+        hide screen basts_4 with dissolve
+
+    label basts5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatbas5'
+    
+        show screen basts_5 with dissolve   
+        "5. Manakah dibawah ini merupakan pernyataan yang benar mengenai sistem manajemen basis data(SMBD)?"
+        show screen countdown
+        menu:
+            "A. SMBD mampu menjaga integritas data namun tidak bisa mengurangi redudansi data.":
+                "A. SMBD mampu menjaga integritas data namun tidak bisa mengurangi redudansi data."
+            "B. SMBD mampu mengurangi redudansi data namun tidak bisa menjaga integritas data.":
+                "B. SMBD mampu mengurangi redudansi data namun tidak bisa menjaga integritas data."
+            "C. Tidak perlu keahlian dalam pengoperasian atau manajemen SMBD.":
+                "C. Tidak perlu keahlian dalam pengoperasian atau manajemen SMBD."
+            "D. SMBD tidak dapat digunakan untuk membackup atau merecover basis data.":
+                "D. SMBD tidak dapat digunakan untuk membackup atau merecover basis data."
+            "E. Memerlukan keahlian dalam pengoperasian atau manajemen SMBD.":
+                "E. Memerlukan keahlian dalam pengoperasian atau manajemen SMBD."
+                $a_basdatTS +=20
+        hide screen countdown
+        "Pertanyaan nomor 5 berhasil kamu jawab, semua soal berhasil kamu jawab."
+        hide screen basts_5 with dissolve
+        jump endtsbas
+    label telatbas5:
+        "Kamu terlambat menjawab pertanyaan terakhir, waktu telah habis kamu tidak bisa mengerjakan ujianmu lagi."
+        hide screen basts_5 with dissolve
 
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
 
@@ -329,15 +405,16 @@ label uts_basdat:
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari menunggu temanmu yang lain selesai menyelesaikan ujian mereka."
-    if a_basdatTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_basdatTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3
+    label endtsbas:    
+        if a_basdatTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_basdatTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3
     call istirahat from _call_istirahat_6
     jump uts_web
 

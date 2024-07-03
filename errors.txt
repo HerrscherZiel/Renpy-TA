@@ -2,9 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/stats_screen.rpy", line 48: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-                action ShowMenu('navigation()'')
+File "game/class/de.rpy", line 402: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/class/de.rpy", line 403: expected statement.
+    "A. Merah, Ungu, Kuning.":
+                             ^
+
+File "game/class/de.rpy", line 405: expected statement.
+    "B. Biru, Ungu, Merah.":
+                           ^
+
+File "game/class/de.rpy", line 407: expected statement.
+    "C. Kuning, Biru, Ungu.":
+                            ^
+
+File "game/class/de.rpy", line 409: expected statement.
+    "D. Kuning, Merah, Biru.":
+                             ^
+
+File "game/class/de.rpy", line 412: expected statement.
+    "E. Kuning, Merah, Putih.":
+                              ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090405
-Sat Jun  8 15:53:19 2024
+Tue Jul  2 15:03:16 2024

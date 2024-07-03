@@ -298,72 +298,152 @@ label uts_web:
     menu:
         "Mulai":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS."
-    "1. Kumpulan halaman-halaman web yang menampilkan informasi dengan berbagai macam bentuk dan dihubungkan menggunakan hyperlink disebut?"
-    menu:
-        "A. Websites.":
-            "A. Websites."
-            $a_webTS +=20
-        "B. Laman.":
-            "B. Laman."
-        "C. URL.":
-            "C. URL."
-        "D. HTTP.":
-            "D. HTTP."
-        "E. Web.":
-            "E. Web."
-    "2. Dibawah ini yang kita perlukan sewaktu akan mengakses web adalah?"
-    menu:
-        "A. URL laman tujuan.":
-            "A. URL laman tujuan."
-        "B. Browser.":
-            "B. Browser."
-        "C. Client.":
-            "C. Client."
-        "D. Server.":
-            "D. HTTP."
-        "E. Akun admin.":
-            "E. Akun admin."
-            $a_webTS +=20
-    "3. Sebuah protokol standard yang menyediakan aturan dalam proses pengaksesan sebuah halaman Web. Merupakan sebuah pengertian dari?"
-    menu:
-        "A. Websites.":
-            "A. Websites."
-        "B. HTML.":
-            "B. HTML."
-        "C. URL.":
-            "C. URL."
-        "D. HTTP.":
-            "D. HTTP."
-            $a_webTS +=20
-        "E. Web.":
-            "E. Web."
-    "4. Pernyataan yang benar mengenai URL adalah?"
-    menu:
-        "A. URL merupakan protokol standard yang dibutuhkan untuk mengakses web.":
-            "A. URL merupakan protokol standard yang dibutuhkan untuk mengakses web."
-        "B. URL merupakan perangkat lunak yang digunakan untuk menerima dan menyajikan informasi yang ada di web.":
-            "B. URL merupakan perangkat lunak yang digunakan untuk menerima dan menyajikan informasi yang ada di web."
-        "C. URL merupakan salah satu bahasa pemrograman yang digunakan untuk membuat suatu halaman web menjadi lebih rapi.":
-            "C. URL merupakan salah satu bahasa pemrograman yang digunakan untuk membuat suatu halaman web menjadi lebih rapi."
-        "D. Merupakan alamat web yang mengarahkan ke suatu websites, halaman web, atau dokumen tertentu.":
-            "D. Merupakan alamat web yang mengarahkan ke suatu websites, halaman web, atau dokumen tertentu."
-            $a_webTS +=20
-        "E. URL hanya terdiri dari protokol html saja.":
-            "E. Web." 
-    "5. Dibawah ini yang merupakan komponen dari HTML adalah?"
-    menu:
-        "A. Tag, Element, dan Atribut.":
-            "A. Tag, Element, dan Atribut."
-            $a_webTS +=20
-        "B. Tag, Element, dan Body":
-            "B. Tag, Element, dan Body"
-        "C. Head, Body, dan Footer":
-            "C. Head, Body, dan Footer"
-        "D. Head, Body, dan Atribut":
-            "D. Head, Body, dan Atribut"
-        "E. CSS, JavaScript, PHP":
-            "E. CSS, JavaScript, PHP"
+
+    label webts1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatweb1'
     
+        show screen webts_1 with dissolve   
+        "1. Kumpulan halaman-halaman web yang menampilkan informasi dengan berbagai macam bentuk dan dihubungkan menggunakan hyperlink disebut?"
+        show screen countdown
+        menu:
+            "A. Websites.":
+                "A. Websites."
+                $a_webTS +=20
+            "B. Laman.":
+                "B. Laman."
+            "C. URL.":
+                "C. URL."
+            "D. HTTP.":
+                "D. HTTP."
+            "E. Web.":
+                "E. Web."
+        hide screen countdown
+        "Pertanyaan nomor 1 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen webts_1 with dissolve
+        jump webts2
+
+    label telatweb1:
+        "Waktu menjawab habis, pertanyaan no 1 kamu lewati."
+        hide screen webts_1 with dissolve
+
+    label webts2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatweb2'
+    
+        show screen webts_2 with dissolve   
+        "2. Dibawah ini yang kita perlukan sewaktu akan mengakses web adalah?"
+        show screen countdown
+        menu:
+            "A. URL laman tujuan.":
+                "A. URL laman tujuan."
+            "B. Browser.":
+                "B. Browser."
+            "C. Client.":
+                "C. Client."
+            "D. Server.":
+                "D. HTTP."
+            "E. Akun admin.":
+                "E. Akun admin."
+                $a_webTS +=20
+        hide screen countdown
+        "Pertanyaan nomor 2 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen webts_2 with dissolve
+        jump webts3
+        
+    label telatweb2:
+        "Waktu menjawab habis, pertanyaan no 2 kamu lewati."
+        hide screen webts_2 with dissolve
+
+    label webts3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatweb3'
+    
+        show screen webts_3 with dissolve   
+        "3. Sebuah protokol standard yang menyediakan aturan dalam proses pengaksesan sebuah halaman Web. Merupakan sebuah pengertian dari?"
+        show screen countdown
+        menu:
+            "A. Websites.":
+                "A. Websites."
+            "B. HTML.":
+                "B. HTML."
+            "C. URL.":
+                "C. URL."
+            "D. HTTP.":
+                "D. HTTP."
+                $a_webTS +=20
+            "E. Web.":
+                "E. Web."
+        hide screen countdown
+        "Pertanyaan nomor 3 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen webts_3 with dissolve
+        jump webts4
+        
+    label telatweb3:
+        "Waktu menjawab habis, pertanyaan no 3 kamu lewati."
+        hide screen webts_3 with dissolve
+
+    label webts4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatweb4'
+    
+        show screen webts_4 with dissolve   
+        "4. Pernyataan yang benar mengenai URL adalah?"
+        show screen countdown
+        menu:
+            "A. URL merupakan protokol standard yang dibutuhkan untuk mengakses web.":
+                "A. URL merupakan protokol standard yang dibutuhkan untuk mengakses web."
+            "B. URL merupakan perangkat lunak yang digunakan untuk menerima dan menyajikan informasi yang ada di web.":
+                "B. URL merupakan perangkat lunak yang digunakan untuk menerima dan menyajikan informasi yang ada di web."
+            "C. URL merupakan salah satu bahasa pemrograman yang digunakan untuk membuat suatu halaman web menjadi lebih rapi.":
+                "C. URL merupakan salah satu bahasa pemrograman yang digunakan untuk membuat suatu halaman web menjadi lebih rapi."
+            "D. Merupakan alamat web yang mengarahkan ke suatu websites, halaman web, atau dokumen tertentu.":
+                "D. Merupakan alamat web yang mengarahkan ke suatu websites, halaman web, atau dokumen tertentu."
+                $a_webTS +=20
+            "E. URL hanya terdiri dari protokol html saja.":
+                "E. Web." 
+        hide screen countdown
+        "Pertanyaan nomor 4 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen webts_4 with dissolve
+        jump webts5
+        
+    label telatweb4:
+        "Waktu menjawab habis, pertanyaan no 4 kamu lewati."
+        hide screen webts_4 with dissolve
+
+    label webts5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatweb5'
+    
+        show screen webts_5 with dissolve   
+        "5. Dibawah ini yang merupakan komponen dari HTML adalah?"
+        show screen countdown
+        menu:
+            "A. Tag, Element, dan Atribut.":
+                "A. Tag, Element, dan Atribut."
+                $a_webTS +=20
+            "B. Tag, Element, dan Body":
+                "B. Tag, Element, dan Body"
+            "C. Head, Body, dan Footer":
+                "C. Head, Body, dan Footer"
+            "D. Head, Body, dan Atribut":
+                "D. Head, Body, dan Atribut"
+            "E. CSS, JavaScript, PHP":
+                "E. CSS, JavaScript, PHP"
+        hide screen countdown
+        "Pertanyaan nomor 5 berhasil kamu jawab, pertanyaan terakhir pada lembar ujian telah kamu jawab."
+        hide screen webts_5 with dissolve
+        jump endtsweb
+        
+    label telatweb5:
+        "Kamu terlambat menjawab pertanyaan terakhir, waktu telah habis kamu tidak bisa mengerjakan ujianmu lagi."
+        hide screen webts_5 with dissolve
+
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
 
     "Mengkoreksi dan meneliti kertas jawaban dan biodatamu selama beberapa kali akhirnya kamu beranjak dari tempat dudukmu."
@@ -376,15 +456,17 @@ label uts_web:
 
     "Setelah menyalakan mesin motor, kamu langsung mengendarainya menuju kosan."
     $application += 7
-    if a_webTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_webTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3
+    
+    label endtsweb:
+        if a_webTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_webTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3
     call change_timephase from _call_change_timephase_19
     call screen mapUI
 

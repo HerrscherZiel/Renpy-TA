@@ -24,6 +24,29 @@ screen jarkom_2_4:
 
     add "kelas/jarkom_2-4.png"
 
+
+#uts
+
+screen jarkomts1:
+
+    add "kelas/jarkom-uts/uts_jarkom_1.png"
+
+screen jarkomts2:
+
+    add "kelas/jarkom-uts/uts_jarkom_2.png"
+
+screen jarkomts3:
+
+    add "kelas/jarkom-uts/uts_jarkom_3.png"
+
+screen jarkomts4:
+
+    add "kelas/jarkom-uts/uts_jarkom_4.png"
+
+screen jarkomts5:
+
+    add "kelas/jarkom-uts/uts_jarkom_5.png"
+
 #3
 screen jarkom_3_1:
 

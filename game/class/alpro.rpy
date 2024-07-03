@@ -284,8 +284,14 @@ label uts_alpro:
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS"
 
     label alprots1:
-
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspro1'
+    
+        show screen prots_1 with dissolve
         "1. Terdapat 3 tingkat atau level dari bahasa pemrograman, manakah dibawah ini yang merupakan bahasa pemrograman tingkat tinggi?"
+        show screen countdown
+
         menu:
             "A. Biner.":
                 "A. Biner."
@@ -299,86 +305,157 @@ label uts_alpro:
                 "E. Java."
                 $a_alproTS +=20
 
-    label alprots2:
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        hide screen prots_1 with dissolve
+        jump alprots2
 
-    "2. Dari beberapa pernyataan dibawah, manakah yang benar mengenai ciri suatu algoritma?"
-    menu:
-        "A. Sebuah algoritma memiliki jumlah langkah yang tentu dan tidak ambigu.":
-            "A. Sebuah algoritma memiliki jumlah langkah yang tentu dan tidak ambigu."
-            $a_alproTS +=20
-        "B. Algoritma dapat melakukan perintah-perintah meskipun tidak tertulis pada perintah awal.":
-            "B. Algoritma dapat melakukan perintah-perintah meskipun tidak tertulis pada perintah awal."
-        "C. Algoritma tidak memerlukan sebuah keluaran.":
-            "C. Algoritma tidak memerlukan sebuah keluaran."
-        "D. Algoritma yang baik tidak perlu memerhatikan keefektivitasan karena hal terpenting adalah algoritma menyelesaikan masalah.":
-            "D. Algoritma yang baik tidak perlu memerhatikan keefektivitasan karena hal terpenting adalah algoritma menyelesaikan masalah."
-        "E. Algoritma tidak memerlukan suatu stopping point.":
-            "E. Algoritma tidak memerlukan suatu stopping point."
+    label telattspro1:
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+
+    hide screen prots_1 with dissolve
+
+    label alprots2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspro2'
+    
+        show screen prots_2 with dissolve
+        "2. Dari beberapa pernyataan dibawah, manakah yang benar mengenai ciri suatu algoritma?"
+        show screen countdown
+        menu:
+            "A. Sebuah algoritma memiliki jumlah langkah yang tentu dan tidak ambigu.":
+                "A. Sebuah algoritma memiliki jumlah langkah yang tentu dan tidak ambigu."
+                $a_alproTS +=20
+            "B. Algoritma dapat melakukan perintah-perintah meskipun tidak tertulis pada perintah awal.":
+                "B. Algoritma dapat melakukan perintah-perintah meskipun tidak tertulis pada perintah awal."
+            "C. Algoritma tidak memerlukan sebuah keluaran.":
+                "C. Algoritma tidak memerlukan sebuah keluaran."
+            "D. Algoritma yang baik tidak perlu memerhatikan keefektivitasan karena hal terpenting adalah algoritma menyelesaikan masalah.":
+                "D. Algoritma yang baik tidak perlu memerhatikan keefektivitasan karena hal terpenting adalah algoritma menyelesaikan masalah."
+            "E. Algoritma tidak memerlukan suatu stopping point.":
+                "E. Algoritma tidak memerlukan suatu stopping point."
+        hide screen countdown
+        "Kamu menjawab pertanyaan kedua pada lembar ujian, setelah beberapa kali memeriksa jawaban kamu berlanjut pada pertanyaan berikutnya."
+        hide screen prots_2 with dissolve
+        jump alprots3
+
+    label telattspro2:
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+
+    hide screen prots_2 with dissolve
 
     label alprots3:
-
-    "3. Dari beberapa pernyataan dibawah, manakah yang salah mengenai ciri suatu algoritma?"
-    menu:
-        "A. Sebuah algoritma bisa memiliki jumlah langkah yang tak terbatas.":
-            "A. Sebuah algoritma bisa memiliki jumlah langkah yang tak terbatas."
-            $a_alproTS +=20
-        "B. Algoritma akan berhenti setelah melakukan perintah-perintah yang ada.":
-            "B. Algoritma akan berhenti setelah melakukan perintah-perintah yang ada."
-        "C. Algoritma harus memiliki suatu keluaran.":
-            "C. Algoritma harus memiliki suatu keluaran."
-        "D. Sebuah instruksi efektif dibutuhkan agar instruksi tersebut dapat dijalankan oleh pemroses.":
-            "D. Sebuah instruksi efektif dibutuhkan agar instruksi tersebut dapat dijalankan oleh pemroses."
-        "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu.":
-            "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu."
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspro3'
     
+        show screen prots_3 with dissolve
+        "3. Dari beberapa pernyataan dibawah, manakah yang salah mengenai ciri suatu algoritma?"
+        show screen countdown
+        menu:
+            "A. Sebuah algoritma bisa memiliki jumlah langkah yang tak terbatas.":
+                "A. Sebuah algoritma bisa memiliki jumlah langkah yang tak terbatas."
+                $a_alproTS +=20
+            "B. Algoritma akan berhenti setelah melakukan perintah-perintah yang ada.":
+                "B. Algoritma akan berhenti setelah melakukan perintah-perintah yang ada."
+            "C. Algoritma harus memiliki suatu keluaran.":
+                "C. Algoritma harus memiliki suatu keluaran."
+            "D. Sebuah instruksi efektif dibutuhkan agar instruksi tersebut dapat dijalankan oleh pemroses.":
+                "D. Sebuah instruksi efektif dibutuhkan agar instruksi tersebut dapat dijalankan oleh pemroses."
+            "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu.":
+                "E. Algoritma sebaiknya tidak memiliki suatu perintah yang ambigu."
+        
+        hide screen countdown
+        "Pertanyaan nomor 3 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen prots_3 with dissolve
+        jump alprots4
+
+    label telattspro3:
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+
+    hide screen prots_3 with dissolve
+
     label alprots4:
-
-    "4. Dari beberapa algoritma dibawah manakah yang termasuk algoritma percabangan?"
-    menu:
-        "A. Algoritma cara memasak nasi goreng.":
-            "A. Algoritma cara memasak nasi goreng."
-        "B. Algoritma menjemur cucian basah.":
-            "B. Algoritma menjemur cucian basah."
-        "C. Algoritma pengelompokan siswa berdasarkan umur.":
-            "C. Algoritma pengelompokan siswa berdasarkan umur."
-            $a_alproTS +=20
-        "D. Algoritma mencari luas segitiga.":
-            "D. Algoritma mencari luas segitiga."
-        "E. Algoritma membuat kopi.":
-            "E. Algoritma membuat kopi."
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspro4'
     
-    label alprots5:
+        show screen prots_4 with dissolve
+        "4. Dari beberapa algoritma dibawah manakah yang termasuk algoritma percabangan?"
+        show screen countdown
+        menu:
+            "A. Algoritma cara memasak nasi goreng.":
+                "A. Algoritma cara memasak nasi goreng."
+            "B. Algoritma menjemur cucian basah.":
+                "B. Algoritma menjemur cucian basah."
+            "C. Algoritma pengelompokan siswa berdasarkan umur.":
+                "C. Algoritma pengelompokan siswa berdasarkan umur."
+                $a_alproTS +=20
+            "D. Algoritma mencari luas segitiga.":
+                "D. Algoritma mencari luas segitiga."
+            "E. Algoritma membuat kopi.":
+                "E. Algoritma membuat kopi."
 
-    "5. Manakah dibawah yang merupakan sebuah Pseudocode untuk mencari volume sebuah balok?"
-    menu:
-        "A. Algoritma mencari volume balok | Input sisi, tinggi | volume = sisi*tinggi":
-            "A. Algoritma mencari volume balok | Input sisi, tinggi | volume = sisi*tinggi"
-        "B. Input panjang, lebar, tinggi | volume = panjang*lebar*tinggi":
-            "B. Input panjang, lebar, tinggi | volume = panjang*lebar*tinggi"
-        "C. Algoritma mencari volume balok | Input panjang*lebar*tinggi | output = volume":
-            "C. Algoritma mencari volume balok | Input panjang*lebar*tinggi | output = volume"
-        "D. Algoritma mencari volume balok | Input panjang*lebar*tinggi | volume = panjang*lebar*tinggi | output = volume":
-            "D. Algoritma mencari volume balok | Input panjang*lebar*tinggi | volume = panjang*lebar*tinggi | output = volume"
-            $a_alproTS += 20
-        "E. Algoritma mencari volume balok | Input sisi*sisi*tinggi | volume = sisi*sisi*tinggi | output = volume":
-            "E. Algoritma mencari volume balok | Input sisi*sisi*tinggi | volume = sisi*sisi*tinggi | output = volume"
+        hide screen countdown
+        "Pertanyaan nomor 4 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen prots_4 with dissolve
+        jump alprots5
+
+    label telattspro4:
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+
+    hide screen prots_4 with dissolve
+
+    label alprots5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattspro5'
+    
+        show screen prots_5 with dissolve
+        "5. Manakah dibawah yang merupakan sebuah Pseudocode untuk mencari volume sebuah balok?"
+        show screen countdown
+        menu:
+            "A. Algoritma mencari volume balok | Input sisi, tinggi | volume = sisi*tinggi":
+                "A. Algoritma mencari volume balok | Input sisi, tinggi | volume = sisi*tinggi"
+            "B. Input panjang, lebar, tinggi | volume = panjang*lebar*tinggi":
+                "B. Input panjang, lebar, tinggi | volume = panjang*lebar*tinggi"
+            "C. Algoritma mencari volume balok | Input panjang*lebar*tinggi | output = volume":
+                "C. Algoritma mencari volume balok | Input panjang*lebar*tinggi | output = volume"
+            "D. Algoritma mencari volume balok | Input panjang*lebar*tinggi | volume = panjang*lebar*tinggi | output = volume":
+                "D. Algoritma mencari volume balok | Input panjang*lebar*tinggi | volume = panjang*lebar*tinggi | output = volume"
+                $a_alproTS += 20
+            "E. Algoritma mencari volume balok | Input sisi*sisi*tinggi | volume = sisi*sisi*tinggi | output = volume":
+                "E. Algoritma mencari volume balok | Input sisi*sisi*tinggi | volume = sisi*sisi*tinggi | output = volume"
+
+        hide screen countdown
+        "Pertanyaan nomor 5 berhasil kamu jawab, ujian selesai kamu kerjakan."
+        hide screen prots_5 with dissolve
+        jump endprots
+
+    label telattspro5:
+        "Waktu habis, kamu tidak bisa mengerjakan soal ujian lagi."
+
+    hide screen prots_5 with dissolve
 
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
 
     "Mengumpulkan kertas ujianmu, kamu memasukan barang-barangmu pada tas yang sebelumnya dikelompokan dengan rapi di depan kelas."
 
     "Kemudian kamu segera keluar dari dalam kelas. Di luar sebelumnya sudah ada beberapa mahasiswa yang keluar lebih dahulu sebelum dirimu."
-    if a_alproTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_alproTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3
-    call istirahat from _call_istirahat_1
-    jump uts_de
+    
+    label endprots:
+        if a_alproTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_alproTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3
+        call istirahat from _call_istirahat_1
+        jump uts_de
 
 label alpro_3:
 

@@ -25,6 +25,27 @@ screen de_2_3:
 
     add "kelas/de_2-3.png"
 
+#uts
+
+screen dets1:
+
+    add "kelas/de-uts/uts_de_1.png"
+
+screen dets2:
+
+    add "kelas/de-uts/uts_de_2.png"
+
+screen dets3:
+
+    add "kelas/de-uts/uts_de_3.png"
+
+screen dets4:
+
+    add "kelas/de-uts/uts_de_4.png"
+
+screen dets5:
+
+    add "kelas/de-uts/uts_de_5.png"
 
 #3
 screen de_3_1:

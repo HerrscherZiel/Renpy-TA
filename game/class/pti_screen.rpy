@@ -21,6 +21,28 @@ screen pti_2_3:
 
     add "kelas/pti_2-3.png"
 
+#uts
+screen ptits_1:
+
+    add "kelas/pti-uts/uts_pti_1.png"
+
+screen ptits_2:
+
+    add "kelas/pti-uts/uts_pti_2.png"
+
+screen ptits_3:
+
+    add "kelas/pti-uts/uts_pti_3.png"
+
+screen ptits_4:
+
+    add "kelas/pti-uts/uts_pti_4.png"
+
+screen ptits_5:
+
+    add "kelas/pti-uts/uts_pti_5.png"
+
+
 #3
 screen pti_3_1:
 

@@ -20,6 +20,27 @@ screen basdat_2_3:
 
     add "kelas/basdat_2-3.png"
 
+#uts
+
+screen basts1:
+
+    add "kelas/basdat_uts/uts_basdat_1.png"
+
+screen basts2:
+
+    add "kelas/basdat_uts/uts_basdat_2.png"
+
+screen basts3:
+
+    add "kelas/basdat_uts/uts_basdat_3.png"
+
+screen basts4:
+
+    add "kelas/basdat_uts/uts_basdat_4.png"
+
+screen basts5:
+
+    add "kelas/basdat_uts/uts_basdat_5.png"
 
 #3
 screen basdat_3_1:

@@ -336,7 +336,7 @@ label uts_pti:
         $ timer_range = 45
         $ timer_jump = 'telattspti4'
     
-        show screen ptits_3 with dissolve    
+        show screen ptits_4 with dissolve    
 
         "4. Dari beberapa opsi dibawah ini manakah yang bukan termasuk data yang diambil dari lingkungan sekolah?"
         show screen countdown
@@ -369,7 +369,7 @@ label uts_pti:
         $ timer_range = 45
         $ timer_jump = 'telattspti5'
     
-        show screen ptits_4 with dissolve        
+        show screen ptits_5 with dissolve        
         "5. Manakah dari pernyataan dibawah ini yang merupakan fungsi sebuah Sistem Operasi?"
         show screen countdown
         menu:

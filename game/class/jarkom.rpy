@@ -294,72 +294,153 @@ label uts_jarkom:
     menu:
         "Mulai":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS."
-    "1. Jenis jaringan komputer WAN merupakan jaringan komputer yang ....?"
-    menu:
-        "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas.":
-            "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas."
-            $a_jarkomTS +=20
-        "B. Jenis jaringan komputer yang memiliki jangkauan dalam satu kota.":
-            "B. Jenis jaringan komputer yang memiliki jangkauan geografis yang memiliki jangkauan dalam satu kota."
-        "C. Jenis jaringan komputer yang memiliki jangkauan dalam satu bangunan.":
-            "C. Jenis jaringan komputer yang memiliki jangkauan dalam satu bangunan."
-        "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil.":
-            "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil."
-        "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota.":
-            "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota."
-    "2. Jenis jaringan komputer LAN merupakan jaringan komputer yang ...?"
-    menu:
-        "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas.":
-            "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas."
-        "B. Jenis jaringan komputer yang memiliki jangkauan dalam satu kota.":
-            "B. Jenis jaringan komputer yang memiliki jangkauan geografis yang memiliki jangkauan dalam satu kota."
-        "C. Jenis jaringan komputer yang memiliki jangkauan antar kota dan daerah.":
-            "C. Jenis jaringan komputer yang memiliki jangkauan antar kota dan daerah."
-        "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil.":
-            "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil."
-            $a_jarkomTS +=20
-        "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota.":
-            "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota."
-    "3. Model jaringan komputer menurut fungsinya dimana sisi client hanya dapat meminta atau request layanan kepada sisi penyedia layanan saja disebut model jaringan?"
-    menu:
-        "A. Jaringan Peer-to-Peer":
-            "A. Jaringan Peer-to-Peer"
-        "B. Jaringan LAN.":
-            "B. Jaringan LAN."
-        "C. Jaringan MAN.":
-            "C. Jaringan MAN."
-        "D. Jaringan Client-to Server.":
-            "D. Jaringan Client-to Server."
-            $a_jarkomTS += 20
-        "E. Jaringan Wireless.":
-            "E. Jaringan Wireless."
-    "4. Apakah yang dimaksud dengan model jaringan komputer Terdistribusi?"
-    menu:
-        "A. Jaringan komputer dimana hanya terdapat satu induk komputer yang mendistribusikan layanan":
-            "A. Jaringan komputer dimana hanya terdapat satu induk komputer yang mendistribusikan layanan"
-        "B. Jaringan komputer dimana terdapat banyak induk komputer yang mampu menyediakan layanan untuk berbagai komputer":
-            "B. Jaringan komputer dimana terdapat banyak induk komputer yang mampu menyediakan layanan untuk berbagai komputer"
-            $a_jarkomTS += 20
-        "C. Jaringan komputer dimana komputer-komputer menggunakan komputer induk yang sama yang ada dalam satu bangunan.":
-            "C. Jaringan komputer dimana komputer-komputer menggunakan komputer induk yang sama yang ada dalam satu bangunan."
-        "D. Jaringan komputer yang menggunakan teknologi nirkabel.":
-            "D. Jaringan komputer yang menggunakan teknologi nirkabel."
-        "E. Jaringan komputer yang tidak memiliki komputer induk, dan memerlukan penyedia layanan eksternal.":
-            "E. Jaringan komputer yang tidak memiliki komputer induk, dan memerlukan penyedia layanan eksternal."
-    "5. Menurut media transmisinya, manakah jenis jaringan yang memiliki kecepatan paling cepat?"
-    menu:
-        "A. Terdisitribusi":
-            "A. Terdisitribusi"
-        "B. Terpusat.":
-            "B. Terpusat."
-        "C. Wired.":
-            "C. Wired."
-            $a_jarkomTS += 20
-        "D. Wireless.":
-            "D. Wireless."
-        "E. LAN.":
-            "E. LAN."    
+
+    label jarkomts1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattskom1'
     
+        show screen komts_1 with dissolve   
+        "1. Jenis jaringan komputer WAN merupakan jaringan komputer yang ....?"
+        show screen countdown
+        menu:
+            "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas.":
+                "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas."
+                $a_jarkomTS +=20
+            "B. Jenis jaringan komputer yang memiliki jangkauan dalam satu kota.":
+                "B. Jenis jaringan komputer yang memiliki jangkauan geografis yang memiliki jangkauan dalam satu kota."
+            "C. Jenis jaringan komputer yang memiliki jangkauan dalam satu bangunan.":
+                "C. Jenis jaringan komputer yang memiliki jangkauan dalam satu bangunan."
+            "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil.":
+                "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil."
+            "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota.":
+                "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota."
+        hide screen countdown
+        "Pertanyaan nomor 1 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen komts_1 with dissolve
+        jump jarkomts2
+
+    label telattskom1:
+        "Waktu menjawab habis, pertanyaan no 1 kamu lewati."
+        hide screen komts_1 with dissolve
+
+
+    label jarkomts2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattskom2'
+    
+        show screen komts_2 with dissolve   
+        "2. Jenis jaringan komputer LAN merupakan jaringan komputer yang ...?"
+        show screen countdown
+        menu:
+            "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas.":
+                "A. Jenis jaringan komputer yang memiliki jangkauan geografis paling luas."
+            "B. Jenis jaringan komputer yang memiliki jangkauan dalam satu kota.":
+                "B. Jenis jaringan komputer yang memiliki jangkauan geografis yang memiliki jangkauan dalam satu kota."
+            "C. Jenis jaringan komputer yang memiliki jangkauan antar kota dan daerah.":
+                "C. Jenis jaringan komputer yang memiliki jangkauan antar kota dan daerah."
+            "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil.":
+                "D. Jenis jaringan komputer yang memiliki jangkauan geografis paling kecil."
+                $a_jarkomTS +=20
+            "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota.":
+                "E. Jenis jangkauan yang tidak mencakup jangkauan antar kota."
+        hide screen countdown
+        "Pertanyaan nomor 2 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen komts_2 with dissolve
+        jump jarkomts3
+
+    label telattskom2:
+        "Waktu menjawab habis, pertanyaan no 2 kamu lewati."
+        hide screen komts_2 with dissolve
+
+    label jarkomts3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattskom3'
+    
+        show screen komts_3 with dissolve   
+        "3. Model jaringan komputer menurut fungsinya dimana sisi client hanya dapat meminta atau request layanan kepada sisi penyedia layanan saja disebut model jaringan?"
+        show screen countdown
+        menu:
+            "A. Jaringan Peer-to-Peer":
+                "A. Jaringan Peer-to-Peer"
+            "B. Jaringan LAN.":
+                "B. Jaringan LAN."
+            "C. Jaringan MAN.":
+                "C. Jaringan MAN."
+            "D. Jaringan Client-to Server.":
+                "D. Jaringan Client-to Server."
+                $a_jarkomTS += 20
+            "E. Jaringan Wireless.":
+                "E. Jaringan Wireless."
+        hide screen countdown
+        "Pertanyaan nomor 3 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen komts_3 with dissolve
+        jump jarkomts4
+
+    label telattskom3:
+        "Waktu menjawab habis, pertanyaan no 3 kamu lewati."
+        hide screen komts_3 with dissolve
+
+    label jarkomts4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattskom4'
+    
+        show screen komts_4 with dissolve   
+        "4. Apakah yang dimaksud dengan model jaringan komputer Terdistribusi?"
+        show screen countdown
+        menu:
+            "A. Jaringan komputer dimana hanya terdapat satu induk komputer yang mendistribusikan layanan":
+                "A. Jaringan komputer dimana hanya terdapat satu induk komputer yang mendistribusikan layanan"
+            "B. Jaringan komputer dimana terdapat banyak induk komputer yang mampu menyediakan layanan untuk berbagai komputer":
+                "B. Jaringan komputer dimana terdapat banyak induk komputer yang mampu menyediakan layanan untuk berbagai komputer"
+                $a_jarkomTS += 20
+            "C. Jaringan komputer dimana komputer-komputer menggunakan komputer induk yang sama yang ada dalam satu bangunan.":
+                "C. Jaringan komputer dimana komputer-komputer menggunakan komputer induk yang sama yang ada dalam satu bangunan."
+            "D. Jaringan komputer yang menggunakan teknologi nirkabel.":
+                "D. Jaringan komputer yang menggunakan teknologi nirkabel."
+            "E. Jaringan komputer yang tidak memiliki komputer induk, dan memerlukan penyedia layanan eksternal.":
+                "E. Jaringan komputer yang tidak memiliki komputer induk, dan memerlukan penyedia layanan eksternal."
+        hide screen countdown
+        "Pertanyaan nomor 4 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen komts_4 with dissolve
+        jump jarkomts5
+        
+    label telattskom4:
+        "Waktu menjawab habis, pertanyaan no 4 kamu lewati."
+        hide screen komts_4 with dissolve
+
+    label jarkomts5:    
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telattskom5'
+    
+        show screen komts_5 with dissolve       
+        "5. Menurut media transmisinya, manakah jenis jaringan yang memiliki kecepatan paling cepat?"
+        show screen countdown        
+        menu:
+            "A. Terdisitribusi":
+                "A. Terdisitribusi"
+            "B. Terpusat.":
+                "B. Terpusat."
+            "C. Wired.":
+                "C. Wired."
+                $a_jarkomTS += 20
+            "D. Wireless.":
+                "D. Wireless."
+            "E. LAN.":
+                "E. LAN."    
+        hide screen countdown
+        "Pertanyaan nomor 5 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen komts_5 with dissolve
+        jump endkomts
+        
+    label telattskom5:
+        "Kamu terlambat menjawab pertanyaan terakhir, waktu telah habis kamu tidak bisa mengerjakan ujianmu lagi."
+        hide screen komts_5 with dissolve
+
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega karena ujian tengah semester telah berakhir."
 
     "Mengkoreksi dan meneliti kertas jawaban dan biodatamu selama beberapa kali akhirnya kamu beranjak dari tempat dudukmu."
@@ -372,15 +453,16 @@ label uts_jarkom:
 
     "Kamu menghabiskan waktu dengan mengobrol dengan temanmu sembari menunggu temanmu yang lain menyelesaikan ujian mereka."
     $application += 6
-    if a_jarkomTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_jarkomTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3  
+    label endkomts:
+        if a_jarkomTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_jarkomTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3  
 
     jump uts_akhir
 

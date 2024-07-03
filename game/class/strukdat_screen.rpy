@@ -20,6 +20,28 @@ screen strukdat_2_3:
 
     add "kelas/strukdat_2-3.png"
 
+#uts
+
+screen strukts_1:
+
+    add "kelas/strukdat_uts/uts_struk_1.png"
+
+screen strukts_2:
+
+    add "kelas/strukdat_uts/uts_struk2.png"
+
+screen strukts_3:
+
+    add "kelas/strukdat_uts/uts_struk3.png"
+
+screen strukts_4:
+
+    add "kelas/strukdat_uts/uts_struk4.png"
+
+screen strukts_5:
+
+    add "kelas/strukdat_uts/uts_struk5.png"
+
 #3
 screen strukdat_3_1:
 

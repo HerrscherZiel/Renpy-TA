@@ -276,72 +276,151 @@ label uts_de:
     menu:
         "Mulai!":
             "Setelah mempersiapkan diri, kamu siap mengerjakan soal UTS."
-    "1. Unsur seni paling dasar dan merupkan satuan paling kecil yaitu?"
-    menu:
-        "A. Garis.":
-            "A. Garis."
-        "B. Ruang.":
-            "B. Ruang."
-        "C. Titik.":
-            "C. Titik."
-            $a_deTS += 20 
-        "D. Warna.":
-            "D. Warna."
-        "E. Bidang.":
-            "E. Bidang."
-    "2. Kenapa ketika kita membuat sebuah seni atau desain kita memerlukan untuk mengetahui unsur-unsur seni yang ada didalamnya kecuali?"
-    menu:
-        "A. Agar karya seni yang dibuat lebih dapat bisa dinikmati lebih baik.":
-            "A. Agar karya seni yang dibuat lebih dapat bisa dinikmati lebih baik."
-        "B. Sehingga unsur yang ada dalam karya seni mencipatakan harmoni satu sama lain.":
-            "B. Sehingga unsur yang ada dalam karya seni mencipatakan harmoni satu sama lain."
-        "C. Sehingga karya seni mampu menampilkan seni yang lebih menarik.":
-            "C. Sehingga karya seni mampu menampilkan seni yang lebih menarik."
-        "D. Sehingga karya seni menjadi lebih mahal.":
-            "D. Sehingga karya seni menjadi lebih mahal."
-            $a_deTS += 20
-        "E. Agar karya seni mampu menampilkan unsur-unsurnya secara lebih jelas.":
-            "E. Agar karya seni mampu menampilkan unsur-unsurnya secara lebih jelas."
-    "3. Penggunaan suatu unsur seni agar lebih menonjol atau lebih dominan pada suatu unsur ketimbang unsur lainnya merupakan penjelasan dari prinsip seni?"
-    menu:
-        "A. Kesatuan.":
-            "A. Kesatuan."
-        "B. Harmoni.":
-            "B. Harmoni."
-        "C. Penekanan.":
-            "C. Penekanan."
-            $a_deTS += 20
-        "D. Irama.":
-            "D. Irama."
-        "E. Proprosi.":
-            "E. Proprosi."
-    "4. Pernyataan yang benar mengenai teori warna pada suatu desain?"
-    menu:
-        "A. Pengaplikasian teori warna yang baik pada desain mampu menjadikan desain lebih bermakna atau lebih jelas.":
-            "A. Pengaplikasian teori warna yang baik pada desain mampu menjadikan desain lebih bermakna atau lebih jelas."
-            $a_deTS += 20
-        "B. Teori warna tidak begitu berpengaruh pada desain.":
-            "B. Teori warna tidak begitu berpengaruh pada desain."
-        "C. Teori warna membuat desain lebih tidak menarik.":
-            "C. Teori warna membuat desain lebih tidak menarik."
-        "D. Dengan teori warna desain menjadi lebih rumit.":
-            "D. Dengan teori warna desain menjadi lebih rumit."
-        "E. Teori warna tidak memiliki banyak manfaat pada desain.":
-            "E. Teori warna tidak memiliki banyak manfaat pada desain."
-    "5. Contoh warna dari kelompok warna primer adalah?"
-    menu:
-        "A. Merah, Ungu, Kuning.":
-            "A. Merah, Ungu, Kuning."
-        "B. Biru, Ungu, Merah.":
-            "B. Biru, Ungu, Merah."
-        "C. Kuning, Biru, Ungu.":
-            "C. Kuning, Biru, Ungu."
-        "D. Kuning, Merah, Biru.":
-            "D. Kuning, Merah, Biru."
-            $a_deTS += 20
-        "E. Kuning, Merah, Putih.":
-            "E. Kuning, Merah, Putih."        
-            
+
+    label dets1:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatdets1'
+    
+        show screen dets_1 with dissolve        
+        "1. Unsur seni paling dasar dan merupkan satuan paling kecil yaitu?"
+        show screen countdown
+        menu:
+            "A. Garis.":
+                "A. Garis."
+            "B. Ruang.":
+                "B. Ruang."
+            "C. Titik.":
+                "C. Titik."
+                $a_deTS += 20 
+            "D. Warna.":
+                "D. Warna."
+            "E. Bidang.":
+                "E. Bidang."
+        hide screen countdown
+        "Kamu menjawab pertanyaan pertama dengan lancar, setelah beberapa kali memeriksa jawaban kamu yakin akan jawaban pertamamu."
+        hide screen dets_1 with dissolve
+        jump dets2
+    label telatdets1:        
+        "Kamu terlambat menjawab pertanyaan, soal no 1 dilewati"
+    hide screen dets_1 with dissolve   
+
+    label dets2:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatdets2'
+    
+        show screen dets_2 with dissolve        
+        "2. Kenapa ketika kita membuat sebuah seni atau desain kita memerlukan untuk mengetahui unsur-unsur seni yang ada didalamnya kecuali?"
+        show screen countdown
+        menu:
+            "A. Agar karya seni yang dibuat lebih dapat bisa dinikmati lebih baik.":
+                "A. Agar karya seni yang dibuat lebih dapat bisa dinikmati lebih baik."
+            "B. Sehingga unsur yang ada dalam karya seni mencipatakan harmoni satu sama lain.":
+                "B. Sehingga unsur yang ada dalam karya seni mencipatakan harmoni satu sama lain."
+            "C. Sehingga karya seni mampu menampilkan seni yang lebih menarik.":
+                "C. Sehingga karya seni mampu menampilkan seni yang lebih menarik."
+            "D. Sehingga karya seni menjadi lebih mahal.":
+                "D. Sehingga karya seni menjadi lebih mahal."
+                $a_deTS += 20
+            "E. Agar karya seni mampu menampilkan unsur-unsurnya secara lebih jelas.":
+                "E. Agar karya seni mampu menampilkan unsur-unsurnya secara lebih jelas."
+        hide screen countdown
+        "Kamu menjawab pertanyaan kedua pada lembar ujian, setelah beberapa kali memeriksa jawaban kamu berlanjut pada pertanyaan berikutnya."
+        hide screen dets_2 with dissolve
+        jump dets3
+    label telatdets2:        
+        "Kamu terlambat menjawab pertanyaan, soal no 2 dilewati"
+    hide screen dets_2 with dissolve    
+
+    label dets3:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatdets3'
+    
+        show screen dets_3 with dissolve          
+        "3. Penggunaan suatu unsur seni agar lebih menonjol atau lebih dominan pada suatu unsur ketimbang unsur lainnya merupakan penjelasan dari prinsip seni?"
+        show screen countdown
+        menu:
+            "A. Kesatuan.":
+                "A. Kesatuan."
+            "B. Harmoni.":
+                "B. Harmoni."
+            "C. Penekanan.":
+                "C. Penekanan."
+                $a_deTS += 20
+            "D. Irama.":
+                "D. Irama."
+            "E. Proprosi.":
+                "E. Proprosi."
+        hide screen countdown
+        "Pertanyaan nomor 3 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen dets_3 with dissolve
+        jump dets4
+    label telatdets3:        
+        "Kamu terlambat menjawab pertanyaan, soal no 3 dilewati"
+    hide screen dets_3 with dissolve    
+    
+    label dets4:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatdets4'
+    
+        show screen dets_4 with dissolve      
+        "4. Pernyataan yang benar mengenai teori warna pada suatu desain?"
+        show screen countdown
+        menu:
+            "A. Pengaplikasian teori warna yang baik pada desain mampu menjadikan desain lebih bermakna atau lebih jelas.":
+                "A. Pengaplikasian teori warna yang baik pada desain mampu menjadikan desain lebih bermakna atau lebih jelas."
+                $a_deTS += 20
+            "B. Teori warna tidak begitu berpengaruh pada desain.":
+                "B. Teori warna tidak begitu berpengaruh pada desain."
+            "C. Teori warna membuat desain lebih tidak menarik.":
+                "C. Teori warna membuat desain lebih tidak menarik."
+            "D. Dengan teori warna desain menjadi lebih rumit.":
+                "D. Dengan teori warna desain menjadi lebih rumit."
+            "E. Teori warna tidak memiliki banyak manfaat pada desain.":
+                "E. Teori warna tidak memiliki banyak manfaat pada desain."
+    
+        hide screen countdown
+        "Pertanyaan nomor 4 berhasil kamu jawab, kamu berlanjut ke pertanyaan berikutnya."
+        hide screen dets_4 with dissolve
+        jump dets5
+
+    label telatdets4:        
+        "Kamu terlambat menjawab pertanyaan, soal no 4 dilewati"
+    hide screen dets_4 with dissolve
+
+    label dets5:
+        $ time = 45
+        $ timer_range = 45
+        $ timer_jump = 'telatdets5'
+    
+        show screen dets_5 with dissolve      
+        "5. Contoh warna dari kelompok warna primer adalah?"
+        show screen countdown
+        menu:
+            "A. Merah, Ungu, Kuning.":
+                "A. Merah, Ungu, Kuning."
+            "B. Biru, Ungu, Merah.":
+                "B. Biru, Ungu, Merah."
+            "C. Kuning, Biru, Ungu.":
+                "C. Kuning, Biru, Ungu."
+            "D. Kuning, Merah, Biru.":
+                "D. Kuning, Merah, Biru."
+                $a_deTS += 20
+            "E. Kuning, Merah, Putih.":
+                "E. Kuning, Merah, Putih."        
+
+        hide screen countdown
+        "Pertanyaan nomor 5 berhasil kamu jawab, ujian telas selesai dilaksanakan."
+        hide screen dets_5 with dissolve
+        jump enddets
+
+    label telatdets5:        
+        "Waktu habis, kamu tidak bisa mengerjakan soal ujian lagi."
+    hide screen dets_5 with dissolve
+
     "Setelah menjawab semua pertanyaan yang ada, kamu merasa lega sekaligus cemas akan hasil yang didapat nanti."
 
     "Mengumpulkan kertas ujianmu, kamu memasukan barang-barangmu pada tas yang sebelumnya dikelompokan dengan rapi di depan kelas."
@@ -354,15 +433,17 @@ label uts_de:
 
     "Istirahat merupakan hal yang kamu perlukan saat ini. Setelah berpamitan dengan teman-temanmu kamu meninggalkan kampus."
     $application += 7
-    if a_deTS < 50:
-        $ knowledge+=1
-        $ practice+=1
-    elif a_deTS < 81:
-        $ knowledge+=2
-        $ practice+=2
-    else:
-        $ knowledge+=3
-        $ practice+=3
+    
+    label enddets:
+        if a_deTS < 50:
+            $ knowledge+=1
+            $ practice+=1
+        elif a_deTS < 81:
+            $ knowledge+=2
+            $ practice+=2
+        else:
+            $ knowledge+=3
+            $ practice+=3
     call change_timephase from _call_change_timephase_10
     call screen mapUI
 

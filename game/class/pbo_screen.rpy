@@ -20,6 +20,29 @@ screen pbo_2_3:
 
     add "kelas/pbo_2-3.png"
 
+
+#uas
+
+screen pbots1:
+
+    add "kelas/pbo-uts/uts_pbo_1.png"
+
+screen pbots2:
+
+    add "kelas/pbo-uts/uts_pbo_2.png"
+
+screen pbots3:
+
+    add "kelas/pbo-uts/uts_pbo_3.png"
+
+screen pbots4:
+
+    add "kelas/pbo-uts/uts_pbo_4.png"
+
+screen pbots5:
+
+    add "kelas/pbo-uts/uts_pbo_5.png"
+
 #3
 screen pbo_3_1:
 
